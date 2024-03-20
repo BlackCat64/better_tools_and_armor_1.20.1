@@ -56,7 +56,7 @@ public class CrystalliteChestplateEmeraldProcedureProcedure {
 					}
 					if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).nature_ring_equipped
 							&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()) {
-						time_delay = time_delay * 1.5;
+						time_delay = time_delay * 0.75;
 					}
 					{
 						double _setval = time_delay;
