@@ -23106,7 +23106,7 @@
       "name": "EarthCirclet",
       "type": "curiosbauble",
       "sortid": 110,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "earth_circlet",
       "metadata": {
@@ -23891,6 +23891,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EarthCircletOreIlluminationProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"

@@ -41,9 +41,6 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
-    "curioTick": {
-      "name": "EarthCircletOreIllumination"
-    },
     "onEquip": {
       "name": "CharmCounterIncrement"
     },
