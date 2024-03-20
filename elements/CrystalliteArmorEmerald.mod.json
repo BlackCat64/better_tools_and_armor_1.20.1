@@ -10,9 +10,6 @@
     "textureLeggings": "crystallite_leggings_emerald",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_emerald",
-    "onBodyTick": {
-      "name": "CrystalliteChestplateEmeraldProcedure"
-    },
     "creativeTab": {
       "value": "CUSTOM:CrystalliteTab"
     },

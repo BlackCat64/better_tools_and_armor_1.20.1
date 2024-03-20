@@ -11,9 +11,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteChestplateEmeraldProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CharmCounterIncrementProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CharmCounterDecrementProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.NatureRingUnequippedProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.NatureRingEquippedProcedure;
 
 import java.util.List;
 
@@ -30,17 +29,12 @@ public class NatureRingItem extends Item implements ICurioItem {
 	}
 
 	@Override
-	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		CrystalliteChestplateEmeraldProcedureProcedure.execute(slotContext.entity().level, slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
-	}
-
-	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		CharmCounterIncrementProcedure.execute(slotContext.entity());
+		NatureRingEquippedProcedure.execute(slotContext.entity());
 	}
 
 	@Override
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		CharmCounterDecrementProcedure.execute(slotContext.entity());
+		NatureRingUnequippedProcedure.execute(slotContext.entity());
 	}
 }

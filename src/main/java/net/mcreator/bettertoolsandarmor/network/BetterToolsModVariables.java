@@ -110,6 +110,7 @@ public class BetterToolsModVariables {
 				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
 				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
 				clone.fall_start_y = original.fall_start_y;
+				clone.nature_ring_equipped = original.nature_ring_equipped;
 			}
 		}
 	}
@@ -181,6 +182,7 @@ public class BetterToolsModVariables {
 		public ItemStack last_food_eaten = ItemStack.EMPTY;
 		public boolean last_food_was_carbonated = false;
 		public double fall_start_y = 0;
+		public boolean nature_ring_equipped = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -225,6 +227,7 @@ public class BetterToolsModVariables {
 			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
 			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
 			nbt.putDouble("fall_start_y", fall_start_y);
+			nbt.putBoolean("nature_ring_equipped", nature_ring_equipped);
 			return nbt;
 		}
 
@@ -266,6 +269,7 @@ public class BetterToolsModVariables {
 			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
 			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
 			fall_start_y = nbt.getDouble("fall_start_y");
+			nature_ring_equipped = nbt.getBoolean("nature_ring_equipped");
 		}
 	}
 
@@ -326,6 +330,7 @@ public class BetterToolsModVariables {
 					variables.last_food_eaten = message.data.last_food_eaten;
 					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;
 					variables.fall_start_y = message.data.fall_start_y;
+					variables.nature_ring_equipped = message.data.nature_ring_equipped;
 				}
 			});
 			context.setPacketHandled(true);
