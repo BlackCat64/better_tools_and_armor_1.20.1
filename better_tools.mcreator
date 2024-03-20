@@ -20939,7 +20939,7 @@
       "name": "WardenHeadband",
       "type": "curiosbauble",
       "sortid": 106,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "warden_headband",
       "metadata": {
@@ -29962,6 +29962,42 @@
         ]
       },
       "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "WardenHeadbandProcedure",
+      "type": "procedure",
+      "sortid": 1746,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_headband_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WardenHeadbandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
     }
   ],
   "variable_elements": [

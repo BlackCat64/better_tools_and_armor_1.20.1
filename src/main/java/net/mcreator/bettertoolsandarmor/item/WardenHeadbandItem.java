@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteHelmetSculkProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.CharmCounterIncrementProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.CharmCounterDecrementProcedure;
 
@@ -28,11 +27,6 @@ public class WardenHeadbandItem extends Item implements ICurioItem {
 		list.add(Component.literal("\u00A77When worn:"));
 		list.add(Component.literal("\u00A79Gain night vision when in the dark"));
 		list.add(Component.literal("\u00A73Darkness immunity"));
-	}
-
-	@Override
-	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		CrystalliteHelmetSculkProcedureProcedure.execute(slotContext.entity().level, slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
 	}
 
 	@Override
