@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "better_tools:block/light_polished_gold_slab"
+    },
+    "type=top": {
+      "model": "better_tools:block/light_polished_gold_slab_top"
+    },
+    "type=double": {
+      "model": "better_tools:block/light_polished_gold_slab_full"
+    }
+  }
+}

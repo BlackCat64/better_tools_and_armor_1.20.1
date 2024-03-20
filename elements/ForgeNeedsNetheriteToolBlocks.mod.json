@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:EndTitaniumBlock"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBlock"
+      },
+      {
+        "value": "CUSTOM:CutCrystalliteBlock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "needs_netherite_tool",
+    "namespace": "forge"
+  }
+}

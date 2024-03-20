@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_armor_sky_boots"
+    },
+    "title": {
+      "translate": "advancements.low_gravity_adv.title"
+    },
+    "description": {
+      "translate": "advancements.low_gravity_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "low_gravity_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

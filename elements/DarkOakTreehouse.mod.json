@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "dark_oak_treehouse",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 18,
+    "separation": 7,
+    "restrictionBiomes": [
+      {
+        "value": "roofed_forest"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}

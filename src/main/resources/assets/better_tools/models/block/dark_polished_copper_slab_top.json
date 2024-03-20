@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "better_tools:block/dark_polished_copper_block",
+    "top": "better_tools:block/dark_polished_copper_block",
+    "side": "better_tools:block/dark_polished_copper_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,40 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RubyOre"
+      },
+      {
+        "value": "CUSTOM:RandomOre"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumOre"
+      },
+      {
+        "value": "CUSTOM:SapphireOre"
+      },
+      {
+        "value": "CUSTOM:TopazOre"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRubyOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRandomOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ores",
+    "namespace": "forge"
+  }
+}

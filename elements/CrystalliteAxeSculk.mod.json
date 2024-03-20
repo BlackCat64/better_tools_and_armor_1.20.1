@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_axe_sculk",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Axe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Resonance - Mines whole stacks of logs at once",
+        "§3Deep Dweller - Increased attack damage in the dark"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 11.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 11.0,
+    "usageCount": 2250,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

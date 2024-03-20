@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "sapphire_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Sapphire Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 0.8,
+    "enchantability": 10,
+    "damageVsEntity": 5.5,
+    "usageCount": 600,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Sapphire"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:cactus_chestplate"
+    },
+    "title": {
+      "translate": "advancements.cactus_crystal_adv.title"
+    },
+    "description": {
+      "translate": "advancements.cactus_crystal_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cactus_crystal_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:effect_armor_section"
+}

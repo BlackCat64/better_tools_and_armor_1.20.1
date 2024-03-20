@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "extinguishing_tools",
+    "namespace": "mod"
+  }
+}

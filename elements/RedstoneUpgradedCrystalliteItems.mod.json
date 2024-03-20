@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
+      },
+      {
+        "value": "CUSTOM:HealCrystal"
+      },
+      {
+        "value": "CUSTOM:HeartCharm"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "redstone_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

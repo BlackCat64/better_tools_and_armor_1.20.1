@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "end_titanium_hoe",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_HOE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EndTitaniumIngot"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EndTitaniumHoe"
+    },
+    "name": "end_titanium_hoe_smith",
+    "namespace": "mod"
+  }
+}

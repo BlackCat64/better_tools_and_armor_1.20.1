@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "withered_gauntlet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SpikedCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WitheredGauntlet"
+    },
+    "name": "withered_gauntlet_recipe",
+    "namespace": "mod"
+  }
+}

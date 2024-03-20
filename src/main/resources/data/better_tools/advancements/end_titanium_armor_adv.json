@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:end_titanium_chestplate"
+    },
+    "title": {
+      "translate": "advancements.end_titanium_armor_adv.title"
+    },
+    "description": {
+      "translate": "advancements.end_titanium_armor_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "end_titanium_armor_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:end_titanium_tools_adv"
+}

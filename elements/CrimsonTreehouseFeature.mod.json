@@ -1,0 +1,13 @@
+{
+  "_fv": 57,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "crimson_forest"
+      }
+    ],
+    "featurexml": "<xml><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\">\n<value name=\"feature\"><block type=\"feature_custom_structure\">\n\t<field name=\"structure\">crimson_treehouse_2</field>\n\t<field name=\"x\">0</field>\n\t<field name=\"y\">-1</field>\n\t<field name=\"z\">0</field>\n\t<field name=\"random_rotation\">FALSE</field>\n\t<field name=\"random_mirror\">FALSE</field>\n\t<value name=\"ignored_blocks\">\n\t\t<block type=\"block_holderset_list\"><mutation inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block>\n\t</value>\n</block>\n</value>\n<next><block type=\"placement_rarity\">\n\t<field name=\"rarity\">1</field>\n\t<next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\">\n\t<value name=\"min\">\n\t\t<block type=\"vertical_anchor_above_bottom\">\n\t\t\t<field name=\"value\">8</field>\n\t\t</block>\n\t</value>\n\t<value name=\"max\">\n\t\t<block type=\"vertical_anchor_absolute\">\n\t\t\t<field name=\"value\">128</field>\n\t\t</block>\n\t</value>\n\t<next>\n\t\t<block type=\"placement_surface_relative_threshold\">\n\t\t\t<field name=\"heightmap\">OCEAN_FLOOR_WG</field>\n\t\t\t<field name=\"min\">-192</field>\n\t\t\t<field name=\"max\">-8</field>\n\t<next><block type=\"placement_block_predicate_filter\">\n\t<value name=\"condition\">\n\t\t<block type=\"block_predicate_matching_blocks\">\n\t\t\t<field name=\"x\">0</field>\n\t\t\t<field name=\"y\">-1</field>\n\t\t\t<field name=\"z\">0</field>\n\t\t\t<value name=\"blockSet\">\n\t\t\t\t<block type=\"block_holderset_list\">\n\t\t\t\t\t<mutation inputs=\"4\"></mutation>\n\t\t\t\t\t<field name=\"block0\">Blocks.CRIMSON_NYLIUM</field><field name=\"block1\">Blocks.CRIMSON_ROOTS</field><field name=\"block2\">Blocks.WARPED_FUNGUS</field><field name=\"block3\">Blocks.CRIMSON_FUNGUS</field>\n\t\t\t\t</block>\n\t\t\t</value>\n\t\t</block>\n\t</value>\n\t<next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>\n"
+  }
+}

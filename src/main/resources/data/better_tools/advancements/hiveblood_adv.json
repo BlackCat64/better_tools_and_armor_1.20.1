@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_armor_honey_chestplate"
+    },
+    "title": {
+      "translate": "advancements.hiveblood_adv.title"
+    },
+    "description": {
+      "translate": "advancements.hiveblood_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hiveblood_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "better_tools:combo_jump_adv"
+}

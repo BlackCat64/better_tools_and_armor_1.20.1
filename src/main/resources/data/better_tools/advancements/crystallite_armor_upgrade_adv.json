@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_armor_nether_diamond_chestplate"
+    },
+    "title": {
+      "translate": "advancements.crystallite_armor_upgrade_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_armor_upgrade_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_armor_upgrade_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:crystallite_gem_adv"
+}

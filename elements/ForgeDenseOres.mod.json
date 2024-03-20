@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:RubyOre"
+      },
+      {
+        "value": "CUSTOM:TopazOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRubyOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ore_rates/dense",
+    "namespace": "forge"
+  }
+}

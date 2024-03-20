@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tough_crystal",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_block"
+    },
+    "b": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:tough_crystal",
+    "count": 1
+  }
+}

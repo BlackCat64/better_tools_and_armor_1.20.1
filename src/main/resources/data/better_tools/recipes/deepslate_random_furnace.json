@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "deepslate_random_ore",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "better_tools:deepslate_random_ore"
+  },
+  "result": "better_tools:mixed_essence"
+}

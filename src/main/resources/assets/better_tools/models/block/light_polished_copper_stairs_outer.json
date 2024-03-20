@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "better_tools:block/polished_copper_block",
+    "top": "better_tools:block/polished_copper_block",
+    "side": "better_tools:block/polished_copper_block"
+  },
+  "render_type": "solid"
+}

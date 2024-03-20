@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "better_tools:block/light_polished_amethyst_block",
+    "top": "better_tools:block/light_polished_amethyst_block",
+    "side": "better_tools:block/light_polished_amethyst_block"
+  },
+  "render_type": "solid"
+}

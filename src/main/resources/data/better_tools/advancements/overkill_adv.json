@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:battle_axe"
+    },
+    "title": {
+      "translate": "advancements.overkill_adv.title"
+    },
+    "description": {
+      "translate": "advancements.overkill_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overkill_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "better_tools:battle_axe_adv"
+}

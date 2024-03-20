@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DeepslateRubyOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRandomOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ores_in_ground/deepslate",
+    "namespace": "forge"
+  }
+}

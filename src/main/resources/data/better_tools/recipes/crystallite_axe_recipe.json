@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystallite_axe",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "b": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystallite_axe",
+    "count": 1
+  }
+}

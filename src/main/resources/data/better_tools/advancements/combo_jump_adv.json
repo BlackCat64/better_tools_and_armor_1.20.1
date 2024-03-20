@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_armor_honey_boots"
+    },
+    "title": {
+      "translate": "advancements.combo_jump_adv.title"
+    },
+    "description": {
+      "translate": "advancements.combo_jump_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "combo_jump_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "topaz_dagger",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Topaz Dagger",
+    "specialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on the target"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 2.8,
+    "enchantability": 16,
+    "damageVsEntity": 2.5,
+    "usageCount": 600,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Topaz"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "TopazSwordProcedure"
+    }
+  }
+}

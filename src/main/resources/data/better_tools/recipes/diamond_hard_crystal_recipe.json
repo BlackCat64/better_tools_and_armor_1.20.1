@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_hard_crystal",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_hard_crystal",
+    "count": 1
+  }
+}

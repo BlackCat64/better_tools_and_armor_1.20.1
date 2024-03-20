@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "phantom_boots",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_wart"
+    },
+    "b": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "c": {
+      "item": "minecraft:blaze_powder"
+    },
+    "d": {
+      "tag": "forge:armors/boots"
+    }
+  },
+  "result": {
+    "item": "better_tools:phantom_boots",
+    "count": 1
+  }
+}

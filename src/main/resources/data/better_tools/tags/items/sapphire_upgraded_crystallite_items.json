@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_sapphire",
+    "better_tools:crystallite_pickaxe_sapphire",
+    "better_tools:crystallite_axe_sapphire",
+    "better_tools:crystallite_shovel_sapphire",
+    "better_tools:crystallite_hoe_sapphire",
+    "better_tools:crystallite_dagger_sapphire",
+    "better_tools:crystallite_armor_sapphire_helmet",
+    "better_tools:crystallite_armor_sapphire_chestplate",
+    "better_tools:crystallite_armor_sapphire_leggings",
+    "better_tools:crystallite_armor_sapphire_boots",
+    "better_tools:ice_crystal",
+    "better_tools:icy_bracelet"
+  ]
+}

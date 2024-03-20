@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "nether_diamond_helmet_upgrade",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:NetherDiamondArmor.helmet"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "smithingReturnStack": {
+      "value": "Items.NETHERITE_HELMET"
+    },
+    "name": "nether_diamond_helmet_upgrade",
+    "namespace": "mod"
+  }
+}

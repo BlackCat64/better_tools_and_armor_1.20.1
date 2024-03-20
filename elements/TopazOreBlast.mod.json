@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "topaz_ore",
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:TopazOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Topaz"
+    },
+    "name": "topaz_ore_blast",
+    "namespace": "mod"
+  }
+}

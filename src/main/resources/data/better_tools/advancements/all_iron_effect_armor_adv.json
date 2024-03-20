@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:iron_cactus_chestplate"
+    },
+    "title": {
+      "translate": "advancements.all_iron_effect_armor_adv.title"
+    },
+    "description": {
+      "translate": "advancements.all_iron_effect_armor_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_iron_effect_armor_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "better_tools:all_effect_armor_adv"
+}

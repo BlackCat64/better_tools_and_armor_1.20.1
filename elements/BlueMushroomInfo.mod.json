@@ -1,0 +1,18 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:BlueMushroom"
+      },
+      {
+        "value": "CUSTOM:BlueMushroomBlock"
+      }
+    ],
+    "information": [
+      "Blue Mushrooms generate exclusively on Mushroom Islands, along with giant variants.",
+      "They can be bone-mealed to become giant."
+    ]
+  }
+}

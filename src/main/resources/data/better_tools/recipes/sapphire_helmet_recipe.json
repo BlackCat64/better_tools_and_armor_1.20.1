@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sapphire_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:sapphire"
+    },
+    "b": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "better_tools:sapphire_helmet",
+    "count": 1
+  }
+}

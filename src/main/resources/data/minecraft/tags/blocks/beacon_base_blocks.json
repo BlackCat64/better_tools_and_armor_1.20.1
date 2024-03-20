@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_block",
+    "better_tools:ruby_block",
+    "better_tools:end_titanium_block",
+    "better_tools:sapphire_block",
+    "better_tools:topaz_block",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:lapis_block",
+    "minecraft:diamond_block",
+    "minecraft:emerald_block",
+    "minecraft:netherite_block",
+    "minecraft:quartz_block",
+    "better_tools:cut_crystallite_block",
+    "minecraft:copper_block",
+    "minecraft:waxed_copper_block",
+    "minecraft:amethyst_block"
+  ]
+}

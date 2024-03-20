@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ElectricStaff"
+      },
+      {
+        "value": "CUSTOM:IceStaff"
+      },
+      {
+        "value": "CUSTOM:FireStaff"
+      },
+      {
+        "value": "CUSTOM:WardenStaff"
+      },
+      {
+        "value": "CUSTOM:GuardianStaff"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "staffs",
+    "namespace": "mod"
+  }
+}

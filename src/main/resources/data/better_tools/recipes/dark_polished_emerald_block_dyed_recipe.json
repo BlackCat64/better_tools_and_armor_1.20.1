@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_polished_emerald_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:light_polished_emerald_block"
+    },
+    "b": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "item": "better_tools:dark_polished_emerald_block",
+    "count": 8
+  }
+}

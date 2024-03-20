@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:blackstone_leggings"
+    },
+    "title": {
+      "translate": "advancements.blackstone_rabbit_adv.title"
+    },
+    "description": {
+      "translate": "advancements.blackstone_rabbit_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blackstone_rabbit_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:effect_armor_section"
+}

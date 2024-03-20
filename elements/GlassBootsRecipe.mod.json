@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "glass_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "CUSTOM:GoldenPotato"
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Items.FERMENTED_SPIDER_EYE"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.GLASS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GlassArmor.boots"
+    },
+    "name": "glass_boots_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glide",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:sapphire"
+    },
+    "b": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "c": {
+      "item": "better_tools:music_disc_blank"
+    }
+  },
+  "result": {
+    "item": "better_tools:glide",
+    "count": 1
+  }
+}

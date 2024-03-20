@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 24,
+    "group": "polished_gold_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "Blocks.GOLD_BLOCK"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedGoldBlock"
+    },
+    "name": "polished_gold_block_recipe",
+    "namespace": "mod"
+  }
+}

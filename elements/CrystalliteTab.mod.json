@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "BT+A - Crystallite",
+    "icon": {
+      "value": "CUSTOM:CrystaliteGem"
+    },
+    "showSearch": false
+  }
+}

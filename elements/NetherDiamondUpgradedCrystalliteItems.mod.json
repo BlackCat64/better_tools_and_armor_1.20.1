@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:FireCore"
+      },
+      {
+        "value": "CUSTOM:FlamingCirclet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "nether_diamond_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

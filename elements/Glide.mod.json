@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "glide_disc",
+    "description": "C418 - Glide",
+    "creativeTab": {
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
+    },
+    "specialInformation": {
+      "fixedValue": [
+        "§7Super Smash Bros. Ultimate Remix"
+      ]
+    },
+    "music": {
+      "value": "CUSTOM:glide"
+    },
+    "lengthInTicks": 6400,
+    "analogOutput": 0
+  }
+}

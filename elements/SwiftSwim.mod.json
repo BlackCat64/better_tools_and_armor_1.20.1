@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Swift Swim",
+    "icon": "swift_swim.png",
+    "color": {
+      "value": -9263976,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SwiftSwimProcedure"
+    },
+    "onExpired": {
+      "name": "SwiftSwimExpires"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedRubySlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystSlab"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "slabs",
+    "namespace": "minecraft"
+  }
+}

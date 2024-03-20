@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_polished_lapis_stairs",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:dark_polished_lapis_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:dark_polished_lapis_stairs",
+    "count": 8
+  }
+}

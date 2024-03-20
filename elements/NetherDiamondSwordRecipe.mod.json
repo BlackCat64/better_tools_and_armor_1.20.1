@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "nether_diamond_sword",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ObsidianStick"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherDiamondSword"
+    },
+    "name": "nether_diamond_sword_recipe",
+    "namespace": "mod"
+  }
+}

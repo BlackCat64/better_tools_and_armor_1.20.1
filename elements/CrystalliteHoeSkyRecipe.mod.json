@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_hoe_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_hoes"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SkyCrystal"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteHoeSky"
+    },
+    "name": "crystallite_hoe_sky_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "guardian_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GuardianSpike"
+      },
+      {
+        "value": "Items.HEART_OF_THE_SEA"
+      },
+      {
+        "value": "CUSTOM:GuardianSpike"
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Blocks.PRISMARINE#2"
+      },
+      {
+        "value": "CUSTOM:GuardianSpike"
+      },
+      {
+        "value": "Blocks.PRISMARINE#1"
+      },
+      {
+        "value": "CUSTOM:GuardianSpike"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GuardianCrystal"
+    },
+    "name": "guardian_crystal_recipe",
+    "namespace": "mod"
+  }
+}

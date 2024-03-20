@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 2,
+    "group": "polished_amethyst_slab",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:PolishedAmethystBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedAmethystSlab"
+    },
+    "name": "polished_amethyst_slab_stonecut",
+    "namespace": "mod"
+  }
+}

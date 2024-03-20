@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hive_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:honeycomb_block"
+    },
+    "b": {
+      "item": "minecraft:honey_block"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:hive_crystal",
+    "count": 1
+  }
+}

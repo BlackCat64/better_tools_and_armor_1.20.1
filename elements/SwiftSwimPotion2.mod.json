@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Rapidity",
+    "splashName": "Splash Potion of Rapidity",
+    "lingeringName": "Lingering Potion of Rapidity",
+    "arrowName": "Arrow of Rapidity",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:SwiftSwim"
+        },
+        "duration": 1800,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

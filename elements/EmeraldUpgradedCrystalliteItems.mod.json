@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NatureCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.boots"
+      },
+      {
+        "value": "CUSTOM:NatureRing"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "emerald_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

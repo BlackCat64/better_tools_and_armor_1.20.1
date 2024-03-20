@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:FlintBlock"
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumBlock"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBlock"
+      },
+      {
+        "value": "CUSTOM:CutCrystalliteBlock"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "storage_blocks",
+    "namespace": "forge"
+  }
+}

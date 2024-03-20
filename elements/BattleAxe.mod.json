@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "new_battle_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Battle Axe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 8.0,
+    "attackSpeed": 0.6,
+    "enchantability": 10,
+    "damageVsEntity": 15.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

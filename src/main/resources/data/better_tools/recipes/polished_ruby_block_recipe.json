@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_ruby_block",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "better_tools:ruby_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:polished_ruby_block",
+    "count": 24
+  }
+}

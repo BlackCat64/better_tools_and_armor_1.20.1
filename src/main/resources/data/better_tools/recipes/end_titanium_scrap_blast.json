@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "end_titanium_scrap",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:end_titanium_ore"
+  },
+  "result": "better_tools:end_titanium_scrap"
+}

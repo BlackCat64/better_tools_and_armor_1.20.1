@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:sky_crystal",
+    "better_tools:crystallite_sword_sky",
+    "better_tools:crystallite_pickaxe_sky",
+    "better_tools:crystallite_axe_sky",
+    "better_tools:crystallite_shovel_sky",
+    "better_tools:crystallite_hoe_sky",
+    "better_tools:crystallite_dagger_sky",
+    "better_tools:crystallite_armor_sky_helmet",
+    "better_tools:crystallite_armor_sky_chestplate",
+    "better_tools:crystallite_armor_sky_leggings",
+    "better_tools:crystallite_armor_sky_boots",
+    "better_tools:reflect_charm"
+  ]
+}

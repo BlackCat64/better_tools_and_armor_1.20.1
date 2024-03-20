@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "glass_helmet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Items.FERMENTED_SPIDER_EYE"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "CUSTOM:GoldenPotato"
+      },
+      {
+        "value": "Items.NETHER_WART"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GlassArmor.helmet"
+    },
+    "name": "glass_helmet_recipe",
+    "namespace": "mod"
+  }
+}

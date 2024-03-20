@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "karma_potion",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:AWKWARD"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:PurpleMushroom"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:KarmaPotionPotionItem"
+    },
+    "name": "karma_potion_recipe",
+    "namespace": "mod"
+  }
+}

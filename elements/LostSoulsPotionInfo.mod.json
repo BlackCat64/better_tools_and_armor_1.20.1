@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:LostSoulsPotion"
+      }
+    ],
+    "information": [
+      "Teleports you to your last death location, if it is in the same dimension.",
+      "It will fail if you died in lava, or inside a solid block.",
+      "If you died in the void, you will be placed on a small floating platform."
+    ]
+  }
+}

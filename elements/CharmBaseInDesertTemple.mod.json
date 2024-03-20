@@ -1,0 +1,8 @@
+{
+  "_fv": 57,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "minecraft:chests/desert_pyramid",
+    "modifierTable": "CharmBaseTreasure"
+  }
+}

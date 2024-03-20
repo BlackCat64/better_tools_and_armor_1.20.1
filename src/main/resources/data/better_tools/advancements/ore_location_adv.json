@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_pickaxe_amethyst"
+    },
+    "title": {
+      "translate": "advancements.ore_location_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ore_location_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ore_location_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

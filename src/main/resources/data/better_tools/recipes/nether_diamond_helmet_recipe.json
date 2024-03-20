@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nether_diamond_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:nether_diamond"
+    },
+    "b": {
+      "item": "better_tools:blackstone_magma"
+    }
+  },
+  "result": {
+    "item": "better_tools:nether_diamond_helmet",
+    "count": 1
+  }
+}

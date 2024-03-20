@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "combo_weapons",
+    "namespace": "mod"
+  }
+}

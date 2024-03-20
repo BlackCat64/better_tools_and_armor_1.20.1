@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_axes"
+  },
+  "addition": {
+    "item": "better_tools:earth_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_axe_amethyst"
+  }
+}

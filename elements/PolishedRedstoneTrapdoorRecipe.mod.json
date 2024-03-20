@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "polished_redstone_trapdoor",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedRedstoneTrapdoor"
+    },
+    "name": "polished_redstone_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

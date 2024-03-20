@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.CRIMSON_PLANKS"
+      },
+      {
+        "value": "Blocks.CRIMSON_STAIRS"
+      },
+      {
+        "value": "Blocks.CRIMSON_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_DOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_BUTTON"
+      },
+      {
+        "value": "Blocks.CRIMSON_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_SLAB"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "crimson_planks",
+    "namespace": "mod"
+  }
+}

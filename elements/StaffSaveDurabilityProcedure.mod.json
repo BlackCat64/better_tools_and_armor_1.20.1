@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"75\" y=\"58\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"entity_iscreative\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></value><statement name=\"DO0\"><block type=\"item_set_damage\"><comment pinned=\"false\" h=\"80\" w=\"160\">would use 2 durability otherwise</comment><value name=\"item\"><block type=\"entity_get_use_item\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"amount\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"item_get_damage\"><value name=\"item\"><block type=\"entity_get_use_item\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value></block></statement></block></next></block></xml>"
+  }
+}

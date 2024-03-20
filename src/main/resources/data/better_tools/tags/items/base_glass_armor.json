@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:glass_helmet",
+    "better_tools:glass_chestplate",
+    "better_tools:glass_leggings",
+    "better_tools:glass_boots"
+  ]
+}

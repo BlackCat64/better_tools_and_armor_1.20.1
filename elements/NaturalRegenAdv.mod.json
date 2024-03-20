@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Natural Medicine",
+    "achievementDescription": "Wear a Nature Ring and Emerald-upgraded Crystallite Chestplate at the same time for maximum natural regeneration",
+    "achievementIcon": {
+      "value": "CUSTOM:NatureCrystal"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 30,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:CrystalliteUpgradesSection"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"35\" y=\"49\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "hive_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HiveCrystal"
+    },
+    "name": "hive_crystal_recipe",
+    "namespace": "mod"
+  }
+}

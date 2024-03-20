@@ -1,0 +1,121 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.legs"
+      },
+      {
+        "value": "CUSTOM:RubyArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:BlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondRubyLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondCrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondBlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumArmor.legs"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.legs"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.legs"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
+      },
+      {
+        "value": "Items.LEATHER_LEGGINGS"
+      },
+      {
+        "value": "Items.CHAINMAIL_LEGGINGS"
+      },
+      {
+        "value": "Items.IRON_LEGGINGS"
+      },
+      {
+        "value": "Items.GOLDEN_LEGGINGS"
+      },
+      {
+        "value": "Items.DIAMOND_LEGGINGS"
+      },
+      {
+        "value": "Items.NETHERITE_LEGGINGS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "armors/leggings",
+    "namespace": "forge"
+  }
+}

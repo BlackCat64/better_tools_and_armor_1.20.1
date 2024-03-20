@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blank_disc",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:coal_block"
+    },
+    "b": {
+      "item": "minecraft:obsidian"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:music_disc_blank",
+    "count": 1
+  }
+}

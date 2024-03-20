@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystallitePickaxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSky"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "air_affinity_tools",
+    "namespace": "mod"
+  }
+}

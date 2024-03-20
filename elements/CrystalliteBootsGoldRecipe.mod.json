@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_boots_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_boots"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:GildedCrystal"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteArmorGold.boots"
+    },
+    "name": "crystallite_boots_gold_recipe",
+    "namespace": "mod"
+  }
+}

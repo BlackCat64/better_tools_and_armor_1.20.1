@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_pickaxe_sculk",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
+        "§3Resonance - Mines multiple ores at once"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 11.0,
+    "attackSpeed": 1.2,
+    "enchantability": 20,
+    "damageVsEntity": 7.5,
+    "usageCount": 2250,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "CrystallitePickaxeSculkProcedure"
+    }
+  }
+}

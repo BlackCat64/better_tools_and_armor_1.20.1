@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisWall"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldWall"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneWall"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperWall"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazWall"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldWall"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondWall"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystWall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

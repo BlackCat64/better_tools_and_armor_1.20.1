@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystStairs"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "stairs",
+    "namespace": "minecraft"
+  }
+}

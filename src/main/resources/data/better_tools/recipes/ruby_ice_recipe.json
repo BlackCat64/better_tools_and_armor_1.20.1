@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "red_ice",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "better_tools:ruby"
+    },
+    "c": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "better_tools:charged_ice_on",
+    "count": 4
+  }
+}

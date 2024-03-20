@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_ruby_legs",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:ruby_block"
+    },
+    "c": {
+      "item": "better_tools:ruby_leggings"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_ruby_leggings",
+    "count": 1
+  }
+}

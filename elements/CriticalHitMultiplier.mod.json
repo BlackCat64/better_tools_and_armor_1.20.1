@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "attribute",
+  "definition": {
+    "description": "Critical Hit Multiplier",
+    "minValue": 1.0,
+    "maxValue": 10.0,
+    "defaultValue": 1.5,
+    "isPersistent": false,
+    "entities": [
+      {
+        "value": "EntityPlayer"
+      },
+      {
+        "value": "EntityPlayerMP"
+      }
+    ]
+  }
+}

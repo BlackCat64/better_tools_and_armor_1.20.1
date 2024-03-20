@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GuardianCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
+      },
+      {
+        "value": "CUSTOM:GuardianNecklace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "prismarine_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

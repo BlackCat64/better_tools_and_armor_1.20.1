@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_blackstone_legs",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:magma_cream"
+    },
+    "c": {
+      "item": "better_tools:blackstone_leggings"
+    },
+    "d": {
+      "item": "minecraft:gilded_blackstone"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_blackstone_leggings",
+    "count": 1
+  }
+}

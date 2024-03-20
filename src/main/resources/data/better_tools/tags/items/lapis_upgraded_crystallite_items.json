@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_lapis",
+    "better_tools:crystallite_pickaxe_lapis",
+    "better_tools:crystallite_axe_lapis",
+    "better_tools:crystallite_shovel_lapis",
+    "better_tools:crystallite_hoe_lapis",
+    "better_tools:crystallite_dagger_lapis",
+    "better_tools:crystallite_armor_lapis_helmet",
+    "better_tools:crystallite_armor_lapis_chestplate",
+    "better_tools:crystallite_armor_lapis_leggings",
+    "better_tools:crystallite_armor_lapis_boots",
+    "better_tools:magic_crystal",
+    "better_tools:magic_ring"
+  ]
+}

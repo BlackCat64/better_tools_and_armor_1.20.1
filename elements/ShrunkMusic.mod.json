@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "shrunk_disc",
+    "description": "Gareth Coker - Toys on a Tear",
+    "creativeTab": {
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:shrunk_music"
+    },
+    "lengthInTicks": 3000,
+    "analogOutput": 0
+  }
+}

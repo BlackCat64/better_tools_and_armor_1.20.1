@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:tough_crystal",
+    "better_tools:gilded_crystal",
+    "better_tools:magic_crystal",
+    "better_tools:heal_crystal",
+    "better_tools:diamond_hard_crystal",
+    "better_tools:spiked_crystal",
+    "better_tools:speedy_crystal",
+    "better_tools:sky_crystal",
+    "better_tools:nature_crystal",
+    "better_tools:echo_crystal",
+    "better_tools:earth_crystal",
+    "better_tools:guardian_crystal",
+    "better_tools:hive_crystal",
+    "better_tools:fire_crystal",
+    "better_tools:ice_crystal",
+    "better_tools:electric_crystal"
+  ]
+}

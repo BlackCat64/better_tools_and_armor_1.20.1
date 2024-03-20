@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      },
+      {
+        "value": "CUSTOM:ElectricCore"
+      },
+      {
+        "value": "CUSTOM:ElectricNecklace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "topaz_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

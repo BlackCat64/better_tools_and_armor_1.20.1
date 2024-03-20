@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:IronGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "iron_glass_armor",
+    "namespace": "mod"
+  }
+}

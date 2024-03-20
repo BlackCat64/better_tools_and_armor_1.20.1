@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_coal_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "Items.DYE#8"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedCoalBlock"
+    },
+    "name": "light_polished_coal_block_dyed_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "dark_polished_copper_wall",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedCopperWall"
+    },
+    "name": "dark_polished_copper_wall_recipe",
+    "namespace": "mod"
+  }
+}

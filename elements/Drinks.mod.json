@@ -1,0 +1,40 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.HONEY_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:AppleJuice"
+      },
+      {
+        "value": "CUSTOM:BerrySmoothie"
+      },
+      {
+        "value": "Items.BEETROOT_SOUP"
+      },
+      {
+        "value": "Items.MUSHROOM_STEW"
+      },
+      {
+        "value": "Items.SUSPICIOUS_STEW"
+      },
+      {
+        "value": "Items.RABBIT_STEW"
+      },
+      {
+        "value": "Items.POTIONITEM"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "drinks",
+    "namespace": "mod"
+  }
+}

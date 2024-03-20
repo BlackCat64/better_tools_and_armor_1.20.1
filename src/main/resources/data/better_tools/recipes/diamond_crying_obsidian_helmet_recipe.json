@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_crying_helmet",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "c": {
+      "item": "better_tools:crying_obsidian_helmet"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_crying_obsidian_helmet",
+    "count": 1
+  }
+}

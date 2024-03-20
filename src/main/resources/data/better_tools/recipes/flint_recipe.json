@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "flint",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:flint_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:flint",
+    "count": 4
+  }
+}

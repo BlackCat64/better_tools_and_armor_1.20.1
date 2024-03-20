@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "guardian_necklace",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "b": {
+      "item": "minecraft:string"
+    },
+    "c": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "d": {
+      "item": "better_tools:guardian_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:guardian_necklace",
+    "count": 1
+  }
+}

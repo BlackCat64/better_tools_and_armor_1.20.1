@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "deepslate_random_ore",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:deepslate_random_ore"
+  },
+  "result": "better_tools:mixed_essence"
+}

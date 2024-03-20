@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_sword",
+    "better_tools:flint_sword",
+    "better_tools:ruby_sword",
+    "better_tools:end_titanium_sword",
+    "better_tools:sapphire_sword",
+    "better_tools:topaz_sword",
+    "better_tools:crystallite_sword",
+    "better_tools:crystallite_sword_iron",
+    "better_tools:crystallite_sword_gold",
+    "better_tools:crystallite_sword_lapis",
+    "better_tools:crystallite_sword_redstone",
+    "better_tools:crystallite_sword_diamond",
+    "better_tools:crystallite_sword_netherite",
+    "better_tools:crystallite_sword_ruby",
+    "better_tools:crystallite_sword_sapphire",
+    "better_tools:crystallite_sword_topaz",
+    "better_tools:crystallite_sword_nether_diamond",
+    "better_tools:crystallite_sword_emerald",
+    "better_tools:crystallite_sword_sculk",
+    "better_tools:crystallite_sword_sky",
+    "better_tools:crystallite_sword_amethyst",
+    "better_tools:crystallite_sword_prismarine",
+    "better_tools:crystallite_sword_honey"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "better_tools:large_spruce_treehouse",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "better_tools:large_spruce_treehouse",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:FireStaff"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.19999999999999998,
+    "knockback": 0,
+    "entityModel": "Modelfire_staff_projectile",
+    "customModelTexture": "flame_effect.png",
+    "onHitsBlock": {
+      "name": "FireStaffProjectileMisses"
+    },
+    "onHitsEntity": {
+      "name": "FireStaffProjectileFromDispenserHits"
+    },
+    "onFlyingTick": {
+      "name": "FireStaffProjectileParticles"
+    }
+  }
+}

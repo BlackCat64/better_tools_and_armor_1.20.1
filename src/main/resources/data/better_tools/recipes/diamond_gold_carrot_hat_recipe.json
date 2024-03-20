@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_gold_carrot_hat",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:golden_carrot"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "better_tools:iron_gold_carrot_helmet"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_gold_carrot_helmet",
+    "count": 1
+  }
+}

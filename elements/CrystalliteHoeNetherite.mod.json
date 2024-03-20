@@ -1,0 +1,51 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_hoe_netherite",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §8Netherite",
+        "§7Abilities:",
+        "§8Nether Infused - Right-click to remove any Wither effects",
+        "§8Mines all Crimson and Warped blocks instantly"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 11.0,
+    "attackSpeed": 4.0,
+    "enchantability": 20,
+    "damageVsEntity": 4.5,
+    "usageCount": 2250,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CrystalliteNetheriteShovelRemoveWither"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "better_tools:structure_feature",
+  "config": {
+    "structure": "better_tools:warped_treehouse_2",
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

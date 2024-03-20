@@ -1,0 +1,47 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_shovel_emerald",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Shovel",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §aEmerald",
+        "§7Ability:",
+        "§aSmart - Breaks the top block first when mining sand or gravel"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 10.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 7.5,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "deepslate_random_ore",
+    "cookingBookCategory": "MISC",
+    "xpReward": 3.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:DeepslateRandomOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:RandomGem"
+    },
+    "name": "deepslate_random_smelt",
+    "namespace": "mod"
+  }
+}

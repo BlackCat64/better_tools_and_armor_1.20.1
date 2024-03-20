@@ -1,0 +1,47 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_shovel_ruby",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Shovel",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §cRuby",
+        "§7Ability:",
+        "§cSpeedy - Increased attack and mining speeds"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 15.0,
+    "attackSpeed": 1.5,
+    "enchantability": 20,
+    "damageVsEntity": 7.5,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

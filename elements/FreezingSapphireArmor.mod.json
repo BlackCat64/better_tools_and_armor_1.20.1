@@ -1,0 +1,40 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SapphireArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.body"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "freezing_armor",
+    "namespace": "mod"
+  }
+}

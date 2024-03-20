@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:four_leaf_clover"
+    },
+    "title": {
+      "translate": "advancements.luck_adv.title"
+    },
+    "description": {
+      "translate": "advancements.luck_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "luck_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "better_tools:karma_adv"
+}

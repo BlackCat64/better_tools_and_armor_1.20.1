@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_ruby_trapdoor",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:polished_ruby_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:polished_ruby_trapdoor",
+    "count": 4
+  }
+}

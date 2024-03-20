@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Double Jump",
+    "splashName": "Splash Potion of Double Jump",
+    "lingeringName": "Lingering Potion of Double Jump",
+    "arrowName": "Arrow of Double Jump",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:DoubleJump"
+        },
+        "duration": 1800,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

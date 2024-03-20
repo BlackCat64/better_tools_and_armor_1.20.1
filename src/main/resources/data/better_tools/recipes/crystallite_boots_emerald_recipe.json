@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_boots"
+  },
+  "addition": {
+    "item": "better_tools:nature_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_armor_emerald_boots"
+  }
+}

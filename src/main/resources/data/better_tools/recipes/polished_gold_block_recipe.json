@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_gold_block",
+  "count": 24,
+  "ingredient": {
+    "item": "minecraft:gold_block"
+  },
+  "result": "better_tools:polished_gold_block"
+}

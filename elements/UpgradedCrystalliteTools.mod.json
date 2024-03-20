@@ -1,0 +1,304 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordIron"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordGold"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordLapis"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordRuby"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSculk"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSky"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "upgraded_crystallite_tools",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mogus_drip",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Amogus"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Amogus"
+      },
+      {
+        "value": "CUSTOM:MusicDiscBlank"
+      },
+      {
+        "value": "CUSTOM:Amogus"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Amogus"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MogusDripDisc"
+    },
+    "name": "mogus_drip_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "electric_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ElectricCore"
+    },
+    "name": "electric_core_recipe",
+    "namespace": "mod"
+  }
+}

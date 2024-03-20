@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ice_staff"
+    },
+    "title": {
+      "translate": "advancements.frozen_adv.title"
+    },
+    "description": {
+      "translate": "advancements.frozen_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "frozen_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "better_tools:ice_staff_adv"
+}

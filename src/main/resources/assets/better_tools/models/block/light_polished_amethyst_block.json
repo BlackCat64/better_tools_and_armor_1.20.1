@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "better_tools:block/light_polished_amethyst_block",
+    "up": "better_tools:block/light_polished_amethyst_block",
+    "north": "better_tools:block/light_polished_amethyst_block",
+    "east": "better_tools:block/light_polished_amethyst_block",
+    "south": "better_tools:block/light_polished_amethyst_block",
+    "west": "better_tools:block/light_polished_amethyst_block",
+    "particle": "better_tools:block/light_polished_amethyst_block"
+  },
+  "render_type": "solid"
+}

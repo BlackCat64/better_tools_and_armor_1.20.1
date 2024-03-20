@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_pickaxe",
+    "better_tools:flint_pickaxe",
+    "better_tools:ruby_pickaxe",
+    "better_tools:end_titanium_pickaxe",
+    "better_tools:sapphire_pickaxe",
+    "better_tools:topaz_pickaxe",
+    "better_tools:crystallite_pickaxe",
+    "better_tools:crystallite_pickaxe_iron",
+    "better_tools:crystallite_pickaxe_gold",
+    "better_tools:crystallite_pickaxe_lapis",
+    "better_tools:crystallite_pickaxe_redstone",
+    "better_tools:crystallite_pickaxe_diamond",
+    "better_tools:crystallite_pickaxe_netherite",
+    "better_tools:crystallite_pickaxe_ruby",
+    "better_tools:crystallite_pickaxe_sapphire",
+    "better_tools:crystallite_pickaxe_topaz",
+    "better_tools:crystallite_pickaxe_nether_diamond",
+    "better_tools:crystallite_pickaxe_emerald",
+    "better_tools:crystallite_pickaxe_sculk",
+    "better_tools:crystallite_pickaxe_sky",
+    "better_tools:crystallite_pickaxe_amethyst",
+    "better_tools:crystallite_pickaxe_prismarine",
+    "better_tools:crystallite_pickaxe_honey"
+  ]
+}

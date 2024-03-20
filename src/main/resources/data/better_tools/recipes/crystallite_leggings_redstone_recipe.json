@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_leggings"
+  },
+  "addition": {
+    "item": "better_tools:heal_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_armor_redstone_leggings"
+  }
+}

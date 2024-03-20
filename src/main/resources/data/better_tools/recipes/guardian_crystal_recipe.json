@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "guardian_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:guardian_spike"
+    },
+    "b": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "c": {
+      "item": "minecraft:prismarine"
+    },
+    "d": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "e": {
+      "item": "minecraft:dark_prismarine"
+    },
+    "f": {
+      "item": "minecraft:prismarine_bricks"
+    }
+  },
+  "result": {
+    "item": "better_tools:guardian_crystal",
+    "count": 1
+  }
+}

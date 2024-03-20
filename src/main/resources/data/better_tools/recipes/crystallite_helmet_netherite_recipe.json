@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_helmets"
+  },
+  "addition": {
+    "item": "better_tools:spiked_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_armor_netherite_helmet"
+  }
+}

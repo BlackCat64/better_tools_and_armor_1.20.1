@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "better_tools:block/dark_polished_coal_block",
+    "top": "better_tools:block/dark_polished_coal_block",
+    "side": "better_tools:block/dark_polished_coal_block"
+  },
+  "render_type": "solid"
+}

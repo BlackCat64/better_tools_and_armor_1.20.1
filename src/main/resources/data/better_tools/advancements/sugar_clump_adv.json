@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:sugar_clump"
+    },
+    "title": {
+      "translate": "advancements.sugar_clump_adv.title"
+    },
+    "description": {
+      "translate": "advancements.sugar_clump_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sugar_clump_adv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "better_tools:sugar_clump"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "better_tools:consumables_section"
+}

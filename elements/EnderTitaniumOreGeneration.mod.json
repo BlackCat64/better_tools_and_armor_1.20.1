@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "UNDERGROUND_ORES",
+    "restrictionBiomes": [
+      {
+        "value": "end_barrens"
+      },
+      {
+        "value": "end_highlands"
+      },
+      {
+        "value": "end_midlands"
+      },
+      {
+        "value": "small_end_islands"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"68\" y=\"36\"><value name=\"feature\"><block type=\"feature_scattered_ore\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"/><field name=\"size\">4</field><field name=\"discardOnAirChance\">0.25</field><comment h=\"82\" pinned=\"false\" w=\"290\">This block represents a feature for ancient debris ore. Nether ores should be generated during the UNDERGROUND_DECORATION generation stage.</comment><value name=\"target0\"><block type=\"ore_target\"><comment h=\"80\" pinned=\"false\" w=\"160\">If the target block is one of the Nether base stones, replace it with ancient debris</comment><value name=\"target\"><block type=\"rule_test_block_match\"><field name=\"block\">Blocks.END_STONE</field></block></value><value name=\"state\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:EndTitaniumOre</field></block></value></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">4</field></block></value><next><block type=\"placement_in_square\"><comment h=\"80\" pinned=\"false\" w=\"189\">We move each feature horizontally, so that they don't generate in the corner of the chunk</comment><next><block type=\"placement_height_triangular\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">30</field></block></value><next><block type=\"placement_biome_filter\"><comment h=\"85\" pinned=\"false\" w=\"210\">Finally, we check that the feature isn't outside of the biome. This placement modifier should always be the last one.</comment></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

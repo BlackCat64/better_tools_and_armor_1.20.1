@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_nether_diamond_trapdoor",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:polished_nether_diamond_block"
+  },
+  "result": "better_tools:polished_nether_diamond_trapdoor"
+}

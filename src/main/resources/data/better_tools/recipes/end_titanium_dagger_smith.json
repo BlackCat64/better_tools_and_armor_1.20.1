@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "better_tools:netherite_dagger"
+  },
+  "addition": {
+    "item": "better_tools:end_titanium_ingot"
+  },
+  "result": {
+    "item": "better_tools:end_titanium_dagger"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:topaz_chestplate"
+    },
+    "title": {
+      "translate": "advancements.topaz_adv.title"
+    },
+    "description": {
+      "translate": "advancements.topaz_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "topaz_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "better_tools:topaz_gem_adv"
+}

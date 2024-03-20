@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "base_glass_armor",
+    "namespace": "mod"
+  }
+}

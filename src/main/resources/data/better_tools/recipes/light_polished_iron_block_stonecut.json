@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_iron_block",
+  "count": 24,
+  "ingredient": {
+    "item": "minecraft:iron_block"
+  },
+  "result": "better_tools:light_polished_iron_block"
+}

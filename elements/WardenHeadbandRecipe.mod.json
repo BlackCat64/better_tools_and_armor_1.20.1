@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "warden_headband",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:CrystalliteCharmBase"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EchoCrystal"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:WardenHeadband"
+    },
+    "name": "warden_headband_recipe",
+    "namespace": "mod"
+  }
+}

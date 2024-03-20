@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "end_titanium_hoe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Ender Titanium Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "§5Mines Purpur instantly"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 4,
+    "efficiency": 12.0,
+    "attackSpeed": 4.0,
+    "enchantability": 18,
+    "damageVsEntity": 3.0,
+    "usageCount": 2700,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

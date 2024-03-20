@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "polished_gold_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:PolishedGoldBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedGoldStairs"
+    },
+    "name": "polished_gold_stairs_stonecut",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "topaz_helmet",
+    "enableBody": true,
+    "textureBody": "topaz_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "topaz_leggings",
+    "enableBoots": true,
+    "textureBoots": "topaz_boots",
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "armorTextureFile": "topaz_",
+    "helmetName": "Topaz Helmet",
+    "bodyName": "Topaz Chestplate",
+    "leggingsName": "Topaz Leggings",
+    "bootsName": "Topaz Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on attackers"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on attackers"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on attackers"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on attackers"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 20,
+    "damageValueHelmet": 3,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 16,
+    "toughness": 0.5,
+    "knockbackResistance": 0.03,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Topaz"
+      }
+    ]
+  }
+}

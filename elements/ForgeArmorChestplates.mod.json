@@ -1,0 +1,127 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.body"
+      },
+      {
+        "value": "CUSTOM:CactusBody.body"
+      },
+      {
+        "value": "CUSTOM:HeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:IronCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:IronHeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondHeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumArmor.body"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:MagmaBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondMagmaBody.body"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.body"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmor.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.body"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.body"
+      },
+      {
+        "value": "Items.LEATHER_CHESTPLATE"
+      },
+      {
+        "value": "Items.CHAINMAIL_CHESTPLATE"
+      },
+      {
+        "value": "Items.IRON_CHESTPLATE"
+      },
+      {
+        "value": "Items.GOLDEN_CHESTPLATE"
+      },
+      {
+        "value": "Items.DIAMOND_CHESTPLATE"
+      },
+      {
+        "value": "Items.NETHERITE_CHESTPLATE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "armors/chestplates",
+    "namespace": "forge"
+  }
+}

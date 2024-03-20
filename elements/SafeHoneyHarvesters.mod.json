@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "safe_honey_harvesters",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherite"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "mines_nether_wood_instantly",
+    "namespace": "mod"
+  }
+}

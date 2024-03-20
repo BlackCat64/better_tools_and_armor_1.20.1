@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:EchoCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSculk"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      },
+      {
+        "value": "CUSTOM:WardenHeadband"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "sculk_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

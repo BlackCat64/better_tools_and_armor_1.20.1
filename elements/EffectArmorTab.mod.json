@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "BT+A - Effect Armor",
+    "icon": {
+      "value": "CUSTOM:CactusBody.body"
+    },
+    "showSearch": false
+  }
+}

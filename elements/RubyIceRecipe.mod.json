@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "red_ice",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChargedIceOn"
+    },
+    "name": "ruby_ice_recipe",
+    "namespace": "mod"
+  }
+}

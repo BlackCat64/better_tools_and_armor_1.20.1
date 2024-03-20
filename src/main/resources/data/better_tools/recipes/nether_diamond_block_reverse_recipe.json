@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nether_diamond_block_reverse",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:nether_diamond_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:nether_diamond",
+    "count": 9
+  }
+}

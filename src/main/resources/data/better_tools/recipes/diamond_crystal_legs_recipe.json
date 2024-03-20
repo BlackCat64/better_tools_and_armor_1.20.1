@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_crystal_legs",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:sea_lantern"
+    },
+    "c": {
+      "item": "better_tools:crystal_leggings"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_crystal_leggings",
+    "count": 1
+  }
+}

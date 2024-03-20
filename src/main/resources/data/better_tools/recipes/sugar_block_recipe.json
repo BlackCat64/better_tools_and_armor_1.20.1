@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sugar_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "better_tools:sugar_block",
+    "count": 1
+  }
+}

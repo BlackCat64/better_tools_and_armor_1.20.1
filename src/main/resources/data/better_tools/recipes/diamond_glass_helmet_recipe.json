@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_glass_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:iron_glass_armor_helmet"
+    },
+    "c": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_glass_armor_helmet",
+    "count": 1
+  }
+}

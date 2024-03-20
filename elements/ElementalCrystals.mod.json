@@ -1,0 +1,64 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ToughCrystal"
+      },
+      {
+        "value": "CUSTOM:GildedCrystal"
+      },
+      {
+        "value": "CUSTOM:MagicCrystal"
+      },
+      {
+        "value": "CUSTOM:HealCrystal"
+      },
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": "CUSTOM:SpikedCrystal"
+      },
+      {
+        "value": "CUSTOM:SpeedyCrystal"
+      },
+      {
+        "value": "CUSTOM:SkyCrystal"
+      },
+      {
+        "value": "CUSTOM:NatureCrystal"
+      },
+      {
+        "value": "CUSTOM:EchoCrystal"
+      },
+      {
+        "value": "CUSTOM:EarthCrystal"
+      },
+      {
+        "value": "CUSTOM:GuardianCrystal"
+      },
+      {
+        "value": "CUSTOM:HiveCrystal"
+      },
+      {
+        "value": "CUSTOM:FireCore"
+      },
+      {
+        "value": "CUSTOM:IceCore"
+      },
+      {
+        "value": "CUSTOM:ElectricCore"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "elemental_crystals",
+    "namespace": "mod"
+  }
+}

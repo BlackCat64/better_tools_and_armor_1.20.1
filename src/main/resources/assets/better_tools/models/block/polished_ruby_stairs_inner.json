@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "better_tools:block/polished_ruby_block",
+    "top": "better_tools:block/polished_ruby_block",
+    "side": "better_tools:block/polished_ruby_block"
+  },
+  "render_type": "solid"
+}

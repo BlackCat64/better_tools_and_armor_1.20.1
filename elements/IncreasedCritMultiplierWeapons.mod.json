@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSky"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "increased_crit_multiplier_weapons",
+    "namespace": "mod"
+  }
+}

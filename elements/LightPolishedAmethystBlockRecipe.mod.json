@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 12,
+    "group": "light_polished_amethyst_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#13"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Items.DYE#13"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedAmethystBlock"
+    },
+    "name": "light_polished_amethyst_block_recipe",
+    "namespace": "mod"
+  }
+}

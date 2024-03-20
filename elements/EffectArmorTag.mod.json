@@ -1,0 +1,139 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:RabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:PhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:CactusBody.body"
+      },
+      {
+        "value": "CUSTOM:HeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:RubyArmor.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:GoldCarrotArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:BlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:IronSugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronRabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronPhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:IronHeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:IronGoldCarrotHat.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondSugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondRabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondPhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondHeartyBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondRubyLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondCrystalLegs.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGoldCarrotHat.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondBlackstoneLegs.legs"
+      },
+      {
+        "value": "CUSTOM:CryingObsidianHelmet.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:MagmaBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondMagmaBody.body"
+      },
+      {
+        "value": "CUSTOM:WingedBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "effect_armor",
+    "namespace": "mod"
+  }
+}

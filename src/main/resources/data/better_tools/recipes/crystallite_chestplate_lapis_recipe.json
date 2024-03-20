@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_chestplates"
+  },
+  "addition": {
+    "item": "better_tools:magic_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_armor_lapis_chestplate"
+  }
+}

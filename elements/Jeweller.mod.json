@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Jeweller",
+    "pointOfInterest": {
+      "value": "CUSTOM:JewelleryTable"
+    },
+    "actionSound": {
+      "value": "entity.villager.work_toolsmith"
+    },
+    "hat": "Partial",
+    "professionTextureFile": "jeweller.png",
+    "zombifiedProfessionTextureFile": "jeweller.png"
+  }
+}

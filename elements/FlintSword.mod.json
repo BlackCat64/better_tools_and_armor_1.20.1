@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "flint_sword",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Flint Sword",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 1,
+    "efficiency": 5.0,
+    "attackSpeed": 1.8,
+    "enchantability": 8,
+    "damageVsEntity": 3.5,
+    "usageCount": 150,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "Items.FLINT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "FlintToolsProcedure"
+    }
+  }
+}

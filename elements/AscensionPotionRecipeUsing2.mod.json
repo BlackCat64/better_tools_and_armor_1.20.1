@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:STRONG_LEAPING"
+    },
+    "brewingIngredientStack": {
+      "value": "Items.ENDER_PEARL"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:AscensionPotion"
+    },
+    "name": "ascension_potion_recipe_using_2",
+    "namespace": "mod"
+  }
+}

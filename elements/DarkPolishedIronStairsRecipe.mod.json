@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "dark_polished_iron_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedIronStairs"
+    },
+    "name": "dark_polished_iron_stairs_recipe",
+    "namespace": "mod"
+  }
+}

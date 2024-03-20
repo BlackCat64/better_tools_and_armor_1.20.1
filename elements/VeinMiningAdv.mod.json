@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Vein Miner",
+    "achievementDescription": "Mine 16 ore blocks at once",
+    "achievementIcon": {
+      "value": "CUSTOM:CrystallitePickaxeSculk"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 20,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:CrystalliteUpgradesSection"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"167\" y=\"132\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

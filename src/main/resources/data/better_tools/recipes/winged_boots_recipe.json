@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "winged_boots",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "better_tools:sapphire"
+    },
+    "c": {
+      "tag": "better_tools:crystallite_boots"
+    },
+    "d": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "e": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:winged_boots_boots",
+    "count": 1
+  }
+}

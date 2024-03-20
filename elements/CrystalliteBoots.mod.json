@@ -1,0 +1,67 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "crystallite_boots",
+    "namespace": "mod"
+  }
+}

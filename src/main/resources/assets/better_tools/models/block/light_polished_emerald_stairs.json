@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "better_tools:block/light_polished_emerald_block",
+    "top": "better_tools:block/light_polished_emerald_block",
+    "side": "better_tools:block/light_polished_emerald_block"
+  },
+  "render_type": "solid"
+}

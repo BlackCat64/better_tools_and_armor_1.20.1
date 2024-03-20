@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "end_titanium_scrap",
+    "cookingBookCategory": "MISC",
+    "xpReward": 3.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:EndTitaniumOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:EndTitaniumScrap"
+    },
+    "name": "end_titanium_scrap_blast",
+    "namespace": "mod"
+  }
+}

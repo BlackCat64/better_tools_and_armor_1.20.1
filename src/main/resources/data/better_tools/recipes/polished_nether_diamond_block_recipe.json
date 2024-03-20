@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_nether_diamond_block",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    "aba",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "better_tools:nether_diamond"
+    }
+  },
+  "result": {
+    "item": "better_tools:polished_nether_diamond_block",
+    "count": 32
+  }
+}

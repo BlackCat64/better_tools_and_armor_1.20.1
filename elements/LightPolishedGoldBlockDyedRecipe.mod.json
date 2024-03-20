@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_gold_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "Items.DYE#19"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedGoldBlock"
+    },
+    "name": "light_polished_gold_block_dyed_recipe",
+    "namespace": "mod"
+  }
+}

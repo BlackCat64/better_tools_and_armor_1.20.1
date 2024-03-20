@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "topaz_ore",
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:TopazOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Topaz"
+    },
+    "name": "topaz_ore_smelt",
+    "namespace": "mod"
+  }
+}

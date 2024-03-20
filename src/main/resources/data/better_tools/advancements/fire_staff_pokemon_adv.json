@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:fire_staff"
+    },
+    "title": {
+      "translate": "advancements.fire_staff_pokemon_adv.title"
+    },
+    "description": {
+      "translate": "advancements.fire_staff_pokemon_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fire_staff_pokemon_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "better_tools:flaming_adv"
+}

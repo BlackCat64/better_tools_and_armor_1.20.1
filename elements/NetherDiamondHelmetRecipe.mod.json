@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "nether_diamond_helmet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetherDiamondArmor.helmet"
+    },
+    "name": "nether_diamond_helmet_recipe",
+    "namespace": "mod"
+  }
+}

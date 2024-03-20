@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_sword_prismarine",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Sword",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Marine Might - Increased attack damage when wet"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 10.0,
+    "attackSpeed": 1.6,
+    "enchantability": 20,
+    "damageVsEntity": 7.0,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.PRISMARINE_CRYSTALS"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

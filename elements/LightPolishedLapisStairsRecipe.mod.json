@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_lapis_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedLapisStairs"
+    },
+    "name": "light_polished_lapis_stairs_recipe",
+    "namespace": "mod"
+  }
+}

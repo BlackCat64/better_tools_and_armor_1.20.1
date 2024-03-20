@@ -1,0 +1,87 @@
+{
+  "_fv": 57,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:NetherDiamond"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "Items.DIAMOND"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 16,
+            "xp": 15,
+            "priceMultiplier": 0.1
+          },
+          {
+            "price1": {
+              "value": "Items.DIAMOND"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:NetherDiamond"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 16,
+            "xp": 15,
+            "priceMultiplier": 0.1
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 20,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:NetherDiamondDagger"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 3,
+            "xp": 25,
+            "priceMultiplier": 0.2
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:DiamondDagger"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 3,
+            "xp": 25,
+            "priceMultiplier": 0.2
+          }
+        ]
+      }
+    ]
+  }
+}

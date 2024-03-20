@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sugar_clump",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "better_tools:sugar_clump",
+    "count": 1
+  }
+}

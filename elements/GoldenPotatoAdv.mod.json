@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Gilded Gardening",
+    "achievementDescription": "Eat a Golden Potato",
+    "achievementIcon": {
+      "value": "CUSTOM:GoldenPotato"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 2,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:SugarClumpAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"75\" y=\"82\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:GoldenPotato</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

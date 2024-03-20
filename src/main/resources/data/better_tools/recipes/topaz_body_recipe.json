@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "topaz_chestplate",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:topaz"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "item": "better_tools:topaz_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cut_crystallite_reverse",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:cut_crystallite_block"
+    }
+  ],
+  "result": {
+    "item": "better_tools:crystallite_gem",
+    "count": 4
+  }
+}

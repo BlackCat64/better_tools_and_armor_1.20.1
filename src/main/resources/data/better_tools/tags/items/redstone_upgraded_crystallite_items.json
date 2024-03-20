@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_redstone",
+    "better_tools:crystallite_pickaxe_redstone",
+    "better_tools:crystallite_axe_redstone",
+    "better_tools:crystallite_shovel_redstone",
+    "better_tools:crystallite_hoe_redstone",
+    "better_tools:crystallite_dagger_redstone",
+    "better_tools:crystallite_armor_redstone_helmet",
+    "better_tools:crystallite_armor_redstone_chestplate",
+    "better_tools:crystallite_armor_redstone_leggings",
+    "better_tools:crystallite_armor_redstone_boots",
+    "better_tools:heal_crystal",
+    "better_tools:heart_charm"
+  ]
+}

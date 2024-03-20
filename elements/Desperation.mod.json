@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Desperation",
+    "type": "ARMOR_CHEST",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:LifeAura"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

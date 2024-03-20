@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:PurpleMushroom"
+      },
+      {
+        "value": "CUSTOM:PurpleMushroomBlock"
+      }
+    ],
+    "information": [
+      "Purple Mushrooms generate in Fungal Caves, along with giant variants.",
+      "They can be bone-mealed to become giant, if there is enough space.",
+      "Standing on one makes you take damage, however!"
+    ]
+  }
+}

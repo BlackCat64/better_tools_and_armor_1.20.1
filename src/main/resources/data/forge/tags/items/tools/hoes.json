@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_hoe",
+    "better_tools:flint_hoe",
+    "better_tools:ruby_hoe",
+    "better_tools:end_titanium_hoe",
+    "better_tools:sapphire_hoe",
+    "better_tools:topaz_hoe",
+    "better_tools:crystallite_hoe",
+    "better_tools:crystallite_hoe_iron",
+    "better_tools:crystallite_hoe_gold",
+    "better_tools:crystallite_hoe_lapis",
+    "better_tools:crystallite_hoe_redstone",
+    "better_tools:crystallite_hoe_diamond",
+    "better_tools:crystallite_hoe_netherite",
+    "better_tools:crystallite_hoe_ruby",
+    "better_tools:crystallite_hoe_sapphire",
+    "better_tools:crystallite_hoe_topaz",
+    "better_tools:crystallite_hoe_nether_diamond",
+    "better_tools:crystallite_hoe_emerald",
+    "better_tools:crystallite_hoe_sculk",
+    "better_tools:crystallite_hoe_sky",
+    "better_tools:crystallite_hoe_amethyst",
+    "better_tools:crystallite_hoe_prismarine",
+    "better_tools:crystallite_hoe_honey"
+  ]
+}

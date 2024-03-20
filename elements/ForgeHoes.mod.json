@@ -1,0 +1,85 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondHoe"
+      },
+      {
+        "value": "CUSTOM:FlintHoe"
+      },
+      {
+        "value": "CUSTOM:RubyToolsHoe"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumHoe"
+      },
+      {
+        "value": "CUSTOM:SapphireHoe"
+      },
+      {
+        "value": "CUSTOM:TopazHoe"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoe"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "tools/hoes",
+    "namespace": "forge"
+  }
+}

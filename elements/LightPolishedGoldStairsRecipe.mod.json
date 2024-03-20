@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_gold_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedGoldStairs"
+    },
+    "name": "light_polished_gold_stairs_recipe",
+    "namespace": "mod"
+  }
+}

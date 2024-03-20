@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nether_diamond_shovel",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:nether_diamond"
+    },
+    "b": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:nether_diamond_shovel",
+    "count": 1
+  }
+}

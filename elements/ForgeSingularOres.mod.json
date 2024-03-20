@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:RandomOre"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumOre"
+      },
+      {
+        "value": "CUSTOM:SapphireOre"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRandomOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ore_rates/singular",
+    "namespace": "forge"
+  }
+}

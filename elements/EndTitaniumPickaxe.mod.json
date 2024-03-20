@@ -1,0 +1,36 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "end_titanium_pickaxe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Ender Titanium Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "§5Breaks hard blocks quickly"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 12.0,
+    "attackSpeed": 1.2,
+    "enchantability": 18,
+    "damageVsEntity": 8.0,
+    "usageCount": 2700,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

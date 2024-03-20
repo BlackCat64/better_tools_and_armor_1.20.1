@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "ruby_smelt",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:ruby_ore"
+  },
+  "result": "better_tools:ruby"
+}

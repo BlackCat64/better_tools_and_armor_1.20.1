@@ -1,0 +1,44 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumBlock"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "CUSTOM:CutCrystalliteBlock"
+      },
+      {
+        "value": "Blocks.LAPIS_BLOCK"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK#3"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.WAXED_COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      }
+    ],
+    "information": [
+      "Better Tools and Armor allows these blocks to be used as Beacon bases."
+    ]
+  }
+}

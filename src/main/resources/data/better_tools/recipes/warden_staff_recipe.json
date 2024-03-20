@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "warden_staff",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:echo_crystal"
+    },
+    "b": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:warden_staff",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "winged_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.FEATHER"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "Items.FEATHER"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "TAG:better_tools:crystallite_boots"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      },
+      {
+        "value": "Items.END_CRYSTAL"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WingedBoots.boots"
+    },
+    "name": "winged_boots_recipe",
+    "namespace": "mod"
+  }
+}

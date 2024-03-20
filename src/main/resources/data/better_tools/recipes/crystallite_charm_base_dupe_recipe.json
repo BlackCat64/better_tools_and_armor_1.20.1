@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystallite_charm_base_dupe",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "b": {
+      "item": "better_tools:crystallite_shards"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystallite_charm_base",
+    "count": 2
+  }
+}

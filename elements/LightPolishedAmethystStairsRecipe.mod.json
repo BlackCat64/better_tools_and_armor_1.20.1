@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_amethyst_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedAmethystStairs"
+    },
+    "name": "light_polished_amethyst_stairs_recipe",
+    "namespace": "mod"
+  }
+}

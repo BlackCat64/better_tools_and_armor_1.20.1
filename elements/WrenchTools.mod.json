@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "block_rotating_tools",
+    "namespace": "mod"
+  }
+}

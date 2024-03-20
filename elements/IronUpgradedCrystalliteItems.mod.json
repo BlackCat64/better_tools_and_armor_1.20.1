@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordIron"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.boots"
+      },
+      {
+        "value": "CUSTOM:ToughCrystal"
+      },
+      {
+        "value": "CUSTOM:ToughNecklace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "iron_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

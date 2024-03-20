@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Stop right there, criminal scum!",
+    "achievementDescription": "Freeze a Baby Zombie with an Ice Staff",
+    "achievementIcon": {
+      "value": "CUSTOM:IceStaff"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 15,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:IceStaffAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"87\" y=\"136\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

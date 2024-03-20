@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:diamond_hard_plate"
+    },
+    "title": {
+      "translate": "advancements.charms_all_slots_adv.title"
+    },
+    "description": {
+      "translate": "advancements.charms_all_slots_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "charms_all_slots_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "better_tools:charming_adv"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystallitePickaxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeGold"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "increased_reach_tools",
+    "namespace": "mod"
+  }
+}

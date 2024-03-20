@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "soul_torch_bulk",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "TAG:soul_fire_base_blocks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.SOUL_TORCH"
+    },
+    "name": "soul_torch_bulk_recipe",
+    "namespace": "mod"
+  }
+}

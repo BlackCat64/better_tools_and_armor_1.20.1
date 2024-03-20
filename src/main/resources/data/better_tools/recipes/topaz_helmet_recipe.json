@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "topaz_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:topaz"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "item": "better_tools:topaz_helmet",
+    "count": 1
+  }
+}

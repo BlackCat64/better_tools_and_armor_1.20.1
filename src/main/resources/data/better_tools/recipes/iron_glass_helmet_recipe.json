@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "iron_glass_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "better_tools:glass_helmet"
+    },
+    "c": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "better_tools:iron_glass_armor_helmet",
+    "count": 1
+  }
+}

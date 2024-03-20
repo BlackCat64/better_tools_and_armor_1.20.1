@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"add_modifier\"><field name=\"attribute\">ATTACK_KNOCKBACK</field><field name=\"permanent\">FALSE</field><field name=\"checkExiting\">TRUE</field><value name=\"modifier\"><block inline=\"false\" type=\"create_new_modifier\"><field name=\"operation\">ADDITION</field><value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">78907ff0-98e5-4349-b8a4-d43e27bbdd7e</field></block></value><value name=\"name\"><block type=\"text\"><field name=\"TEXT\">bouncy_bracelet</field></block></value><value name=\"value\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"call_procedure\"><field name=\"procedure\">CharmCounterIncrement</field></block></next></block></next></block><block type=\"entity_execute_command\" x=\"367\" y=\"614\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">attribute @s minecraft:generic.attack_knockback modifier add 78907ff0-98e5-4349-b8a4-d43e27bbdd7e bouncy_bracelet 2 add</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></xml>"
+  }
+}

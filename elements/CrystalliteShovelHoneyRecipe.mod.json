@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_shovel_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_shovels"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:HiveCrystal"
+    },
+    "smithingInputTemplateStack": {
+      "value": ""
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteShovelHoney"
+    },
+    "name": "crystallite_shovel_honey_recipe",
+    "namespace": "mod"
+  }
+}

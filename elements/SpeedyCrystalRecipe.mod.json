@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "speedy_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpeedyCrystal"
+    },
+    "name": "speedy_crystal_recipe",
+    "namespace": "mod"
+  }
+}

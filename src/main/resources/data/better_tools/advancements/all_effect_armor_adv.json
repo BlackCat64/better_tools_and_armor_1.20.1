@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ruby_leggings"
+    },
+    "title": {
+      "translate": "advancements.all_effect_armor_adv.title"
+    },
+    "description": {
+      "translate": "advancements.all_effect_armor_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_effect_armor_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:effect_armor_section"
+}

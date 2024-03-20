@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:sapphire_sword"
+    },
+    "title": {
+      "translate": "advancements.sapphire_adv.title"
+    },
+    "description": {
+      "translate": "advancements.sapphire_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sapphire_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "better_tools:sapphire_gem_adv"
+}

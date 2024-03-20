@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "flaming_circlet",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:obsidian_stick"
+    },
+    "b": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "c": {
+      "item": "better_tools:fire_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:flaming_circlet",
+    "count": 1
+  }
+}

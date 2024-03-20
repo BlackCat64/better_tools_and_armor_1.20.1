@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_topaz_wall",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:polished_topaz_block"
+  },
+  "result": "better_tools:polished_topaz_wall"
+}

@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "sapphire_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Sapphire Axe",
+    "specialInformation": {
+      "fixedValue": [
+        "§bHas a chance to freeze the target"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 0.75,
+    "enchantability": 10,
+    "damageVsEntity": 10.0,
+    "usageCount": 600,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Sapphire"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "SapphireSwordProcedure2"
+    }
+  }
+}

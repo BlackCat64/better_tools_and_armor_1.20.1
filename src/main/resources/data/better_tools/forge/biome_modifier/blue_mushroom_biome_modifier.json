@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mushroom_fields",
+  "features": "better_tools:blue_mushroom",
+  "step": "vegetal_decoration"
+}

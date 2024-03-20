@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "nether_diamond",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:NetherDiamondOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:NetherDiamond"
+    },
+    "name": "nether_diamond_ore_blast",
+    "namespace": "mod"
+  }
+}

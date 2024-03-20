@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      },
+      {
+        "value": "CUSTOM:IceCore"
+      },
+      {
+        "value": "CUSTOM:IcyBracelet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "sapphire_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

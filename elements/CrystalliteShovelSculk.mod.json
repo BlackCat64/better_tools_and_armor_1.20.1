@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_shovel_sculk",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Shovel",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
+        "§3Resonance - Excavates in a 3x3 area"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 11.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 2250,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "CrystalliteShovelSculkProcedure"
+    }
+  }
+}

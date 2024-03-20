@@ -1,0 +1,17 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      }
+    ],
+    "information": [
+      "Used to craft or smith Crystallite Charms.",
+      "Can be found rarely in Dungeon and Mineshaft chests.",
+      "Use Crystallite Shards to duplicate.",
+      "Can also be duplicated without using Crystallite, through trading with a Jeweller villager."
+    ]
+  }
+}

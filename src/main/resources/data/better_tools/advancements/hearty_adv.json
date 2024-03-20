@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:hearty_chestplate"
+    },
+    "title": {
+      "translate": "advancements.hearty_adv.title"
+    },
+    "description": {
+      "translate": "advancements.hearty_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hearty_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:effect_armor_section"
+}

@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:RecallPotion"
+      }
+    ],
+    "information": [
+      "Teleports you to your current spawn point, if it is in the same dimension.",
+      "In the Overworld, if it is obstructed, you will be placed at the world spawn instead.",
+      "To use in the Nether, you must have a Respawn Anchor with charges remaining."
+    ]
+  }
+}

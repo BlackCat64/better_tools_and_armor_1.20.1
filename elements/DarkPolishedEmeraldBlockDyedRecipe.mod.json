@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "dark_polished_emerald_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedEmeraldBlock"
+    },
+    "name": "dark_polished_emerald_block_dyed_recipe",
+    "namespace": "mod"
+  }
+}

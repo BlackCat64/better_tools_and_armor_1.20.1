@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "tag": "better_tools:crystallite_hoes"
+  },
+  "addition": {
+    "item": "better_tools:fire_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_hoe_nether_diamond"
+  }
+}

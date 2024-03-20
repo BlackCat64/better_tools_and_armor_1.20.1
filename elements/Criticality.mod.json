@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Criticality",
+    "icon": "criticality.png",
+    "color": {
+      "value": -3975635,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "CriticalHitEffectApplied"
+    },
+    "onExpired": {
+      "name": "CriticalHitEffectExpires"
+    }
+  }
+}

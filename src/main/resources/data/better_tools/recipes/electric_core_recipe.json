@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "electric_crystal",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "aca",
+    "bba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:topaz_block"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:electric_crystal",
+    "count": 1
+  }
+}

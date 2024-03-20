@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SapphireSword"
+      },
+      {
+        "value": "CUSTOM:SapphireAxe"
+      },
+      {
+        "value": "CUSTOM:SapphireDagger"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSapphire"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "freezing_tools",
+    "namespace": "mod"
+  }
+}

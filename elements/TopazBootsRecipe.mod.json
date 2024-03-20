@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "topaz_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TopazArmor.boots"
+    },
+    "name": "topaz_boots_recipe",
+    "namespace": "mod"
+  }
+}

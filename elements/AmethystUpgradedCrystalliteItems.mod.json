@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:EarthCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.boots"
+      },
+      {
+        "value": "CUSTOM:EarthCirclet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "amethyst_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

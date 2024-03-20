@@ -1,0 +1,85 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondPickaxe"
+      },
+      {
+        "value": "CUSTOM:FlintPickaxe"
+      },
+      {
+        "value": "CUSTOM:RubyToolsPickaxe"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumPickaxe"
+      },
+      {
+        "value": "CUSTOM:SapphirePickaxe"
+      },
+      {
+        "value": "CUSTOM:TopazPickaxe"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxe"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "tools/pickaxes",
+    "namespace": "forge"
+  }
+}

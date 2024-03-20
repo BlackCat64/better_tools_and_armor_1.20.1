@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_glass_leggings",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:iron_glass_armor_leggings"
+    },
+    "c": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_glass_armor_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordRuby"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.boots"
+      },
+      {
+        "value": "CUSTOM:SpeedyCrystal"
+      },
+      {
+        "value": "CUSTOM:SpeedyNecklace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ruby_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

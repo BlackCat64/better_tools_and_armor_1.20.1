@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "dark_polished_copper_trapdoor",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedCopperTrapdoor"
+    },
+    "name": "dark_polished_copper_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "rick_roll_disc",
+    "description": "Rick Astley - Never Gonna Give You Up",
+    "creativeTab": {
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:rick_roll"
+    },
+    "lengthInTicks": 4240,
+    "analogOutput": 0
+  }
+}

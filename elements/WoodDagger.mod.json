@@ -1,0 +1,61 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "wooden_dagger",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Wooden Dagger",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 0,
+    "efficiency": 2.0,
+    "attackSpeed": 2.5,
+    "enchantability": 15,
+    "damageVsEntity": 0.0,
+    "usageCount": 45,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "Blocks.PLANKS#0"
+      },
+      {
+        "value": "Blocks.PLANKS#1"
+      },
+      {
+        "value": "Blocks.PLANKS#2"
+      },
+      {
+        "value": "Blocks.PLANKS#3"
+      },
+      {
+        "value": "Blocks.PLANKS#4"
+      },
+      {
+        "value": "Blocks.PLANKS#5"
+      },
+      {
+        "value": "Blocks.CRIMSON_PLANKS"
+      },
+      {
+        "value": "Blocks.WARPED_PLANKS"
+      },
+      {
+        "value": "Blocks.MANGROVE_PLANKS"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "DaggersProcedure"
+    }
+  }
+}

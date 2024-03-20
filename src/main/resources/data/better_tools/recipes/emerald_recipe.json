@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emerald_mixed",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "item": "better_tools:mixed_essence"
+    }
+  ],
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 2
+  }
+}

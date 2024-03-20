@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "cde"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "c": {
+      "item": "minecraft:blaze_powder"
+    },
+    "d": {
+      "item": "better_tools:golden_potato"
+    },
+    "e": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "result": {
+    "item": "better_tools:glass_helmet",
+    "count": 1
+  }
+}

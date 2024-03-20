@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_pickaxe_diamond"
+    },
+    "title": {
+      "translate": "advancements.crystallite_tool_upgrade_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_tool_upgrade_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_tool_upgrade_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:crystallite_gem_adv"
+}

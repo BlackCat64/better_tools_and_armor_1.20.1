@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:golden_potato"
+    },
+    "title": {
+      "translate": "advancements.golden_potato_adv.title"
+    },
+    "description": {
+      "translate": "advancements.golden_potato_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "golden_potato_adv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "better_tools:golden_potato"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "better_tools:sugar_clump_adv"
+}

@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.boots"
+      },
+      {
+        "value": "CUSTOM:SpikedCrystal"
+      },
+      {
+        "value": "CUSTOM:WitheredGauntlet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "netherite_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

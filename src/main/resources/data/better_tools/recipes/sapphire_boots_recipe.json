@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sapphire_boots",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:sapphire"
+    },
+    "b": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "result": {
+    "item": "better_tools:sapphire_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "ice_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IceCore"
+    },
+    "name": "ice_core_recipe",
+    "namespace": "mod"
+  }
+}

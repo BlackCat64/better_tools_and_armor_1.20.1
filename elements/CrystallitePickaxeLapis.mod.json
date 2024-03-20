@@ -1,0 +1,47 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_pickaxe_lapis",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §9Lapis Lazuli",
+        "§7Ability:",
+        "§9Magic - All ores drop more XP"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 10.0,
+    "attackSpeed": 1.2,
+    "enchantability": 30,
+    "damageVsEntity": 7.0,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.DYE#4"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

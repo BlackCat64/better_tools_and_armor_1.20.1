@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_block",
+    "better_tools:flint_block",
+    "better_tools:sugar_block",
+    "better_tools:ruby_block",
+    "better_tools:end_titanium_block",
+    "better_tools:sapphire_block",
+    "better_tools:topaz_block",
+    "better_tools:crystallite_block",
+    "better_tools:cut_crystallite_block"
+  ]
+}

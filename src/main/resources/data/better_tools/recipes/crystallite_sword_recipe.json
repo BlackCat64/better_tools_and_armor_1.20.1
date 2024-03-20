@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystallite_sword",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "b": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystallite_sword",
+    "count": 1
+  }
+}

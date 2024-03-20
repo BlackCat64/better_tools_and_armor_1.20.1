@@ -1,0 +1,85 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondSword"
+      },
+      {
+        "value": "CUSTOM:FlintSword"
+      },
+      {
+        "value": "CUSTOM:RubyToolsSword"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumSword"
+      },
+      {
+        "value": "CUSTOM:SapphireSword"
+      },
+      {
+        "value": "CUSTOM:TopazSword"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSword"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "tools/swords",
+    "namespace": "forge"
+  }
+}

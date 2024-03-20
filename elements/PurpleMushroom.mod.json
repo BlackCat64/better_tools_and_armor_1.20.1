@@ -1,0 +1,107 @@
+{
+  "_fv": 57,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "purple_mushroom",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SATURATION",
+    "suspiciousStewDuration": 0,
+    "growapableSpawnType": "Cave",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Purple Mushroom",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 4,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": true,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DAMAGE_OTHER",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.MYCELIUM"
+      }
+    ],
+    "isBonemealable": true,
+    "bonemealSuccessCondition": {
+      "name": "PurpleMushroomSpaceCheck"
+    },
+    "onBonemealSuccess": {
+      "name": "PurpleMushroomGrowProcedure"
+    },
+    "frequencyOnChunks": 40,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:FungalCaves"
+      }
+    ],
+    "generationType": "Grass",
+    "patchSize": 64,
+    "generateAtAnyHeight": true,
+    "onEntityCollides": {
+      "name": "PurpleMushroomProcedure"
+    }
+  }
+}

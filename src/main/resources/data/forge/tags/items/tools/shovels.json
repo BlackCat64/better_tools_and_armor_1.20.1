@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_shovel",
+    "better_tools:flint_shovel",
+    "better_tools:ruby_shovel",
+    "better_tools:end_titanium_shovel",
+    "better_tools:sapphire_shovel",
+    "better_tools:topaz_shovel",
+    "better_tools:crystallite_shovel",
+    "better_tools:crystallite_shovel_iron",
+    "better_tools:crystallite_shovel_gold",
+    "better_tools:crystallite_shovel_lapis",
+    "better_tools:crystallite_shovel_redstone",
+    "better_tools:crystallite_shovel_diamond",
+    "better_tools:crystallite_shovel_netherite",
+    "better_tools:crystallite_shovel_ruby",
+    "better_tools:crystallite_shovel_sapphire",
+    "better_tools:crystallite_shovel_topaz",
+    "better_tools:crystallite_shovel_nether_diamond",
+    "better_tools:crystallite_shovel_emerald",
+    "better_tools:crystallite_shovel_sculk",
+    "better_tools:crystallite_shovel_sky",
+    "better_tools:crystallite_shovel_amethyst",
+    "better_tools:crystallite_shovel_prismarine",
+    "better_tools:crystallite_shovel_honey",
+    "better_tools:crystallite_pickaxe_emerald"
+  ]
+}

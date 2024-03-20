@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "nether_diamond_pickaxe_upgrade",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:NetherDiamondPickaxe"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "smithingReturnStack": {
+      "value": "Items.NETHERITE_PICKAXE"
+    },
+    "name": "nether_diamond_pickaxe_upgrade",
+    "namespace": "mod"
+  }
+}

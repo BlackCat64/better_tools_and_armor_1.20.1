@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "better_tools:block/polished_gold_block",
+    "particle": "better_tools:block/polished_gold_block"
+  },
+  "render_type": "solid"
+}

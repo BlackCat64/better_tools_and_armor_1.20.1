@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_hoe_lapis",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §9Lapis Lazuli",
+        "§7Ability:",
+        "§9Magic - Tilling farmland has a chance to drop XP"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "harvestLevel": 5,
+    "efficiency": 10.0,
+    "attackSpeed": 4.0,
+    "enchantability": 30,
+    "damageVsEntity": 2.5,
+    "usageCount": 1800,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.DYE#4"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "CrystalliteHoeLapisProcedure"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondAxe"
+      },
+      {
+        "value": "CUSTOM:BattleAxe"
+      },
+      {
+        "value": "CUSTOM:FlintAxe"
+      },
+      {
+        "value": "CUSTOM:RubyToolsAxe"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumAxe"
+      },
+      {
+        "value": "CUSTOM:SapphireAxe"
+      },
+      {
+        "value": "CUSTOM:TopazAxe"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxe"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "tools/axes",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:flint_axe"
+    },
+    "title": {
+      "translate": "advancements.flint_axe_adv.title"
+    },
+    "description": {
+      "translate": "advancements.flint_axe_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flint_axe_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:flint_axe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "parent": "better_tools:progression_section"
+}

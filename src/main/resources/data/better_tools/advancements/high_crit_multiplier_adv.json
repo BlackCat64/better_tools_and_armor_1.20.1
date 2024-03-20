@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:guardian_spike"
+    },
+    "title": {
+      "translate": "advancements.high_crit_multiplier_adv.title"
+    },
+    "description": {
+      "translate": "advancements.high_crit_multiplier_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "high_crit_multiplier_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "better_tools:get_guardian_spike_adv"
+}

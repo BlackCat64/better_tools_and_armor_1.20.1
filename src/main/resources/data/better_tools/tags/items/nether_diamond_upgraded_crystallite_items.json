@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_nether_diamond",
+    "better_tools:crystallite_pickaxe_nether_diamond",
+    "better_tools:crystallite_axe_nether_diamond",
+    "better_tools:crystallite_shovel_nether_diamond",
+    "better_tools:crystallite_hoe_nether_diamond",
+    "better_tools:crystallite_dagger_nether_diamond",
+    "better_tools:crystallite_armor_nether_diamond_helmet",
+    "better_tools:crystallite_armor_nether_diamond_chestplate",
+    "better_tools:crystallite_armor_nether_diamond_leggings",
+    "better_tools:crystallite_armor_nether_diamond_boots",
+    "better_tools:fire_crystal",
+    "better_tools:flaming_circlet"
+  ]
+}

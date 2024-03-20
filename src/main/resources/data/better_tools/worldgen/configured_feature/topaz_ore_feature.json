@@ -1,0 +1,18 @@
+{
+  "type": "better_tools:topaz_ore_feature",
+  "config": {
+    "size": 4,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "stone_ore_replaceables"
+        },
+        "state": {
+          "Name": "better_tools:topaz_ore"
+        }
+      }
+    ]
+  }
+}

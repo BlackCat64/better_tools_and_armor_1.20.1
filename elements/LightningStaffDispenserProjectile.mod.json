@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:ElectricStaff"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.2,
+    "knockback": 0,
+    "entityModel": "Modellightning_staff_projectile",
+    "customModelTexture": "zap_effect.png",
+    "onHitsBlock": {
+      "name": "LightningStaffProjectileMisses"
+    },
+    "onHitsEntity": {
+      "name": "LightningStaffDispenserProjectileHits"
+    },
+    "onFlyingTick": {
+      "name": "LightningStaffProjectileParticles"
+    }
+  }
+}

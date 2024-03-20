@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ruby_sword"
+    },
+    "title": {
+      "translate": "advancements.ruby_tools_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ruby_tools_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ruby_tools_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:ruby_pickaxe_adv"
+}

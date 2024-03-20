@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.PURPUR_STAIRS"
+      },
+      {
+        "value": "Blocks.PURPUR_BLOCK"
+      },
+      {
+        "value": "Blocks.PURPUR_PILLAR"
+      },
+      {
+        "value": "Blocks.PURPUR_SLAB"
+      },
+      {
+        "value": "Blocks.PURPUR_DOUBLE_SLAB"
+      },
+      {
+        "value": "Blocks.CHORUS_PLANT"
+      },
+      {
+        "value": "Blocks.CHORUS_FLOWER"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "purpur_blocks",
+    "namespace": "mod"
+  }
+}

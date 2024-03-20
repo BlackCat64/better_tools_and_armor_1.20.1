@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "light_polished_nether_diamond_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "Items.DYE#9"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedNetherDiamondBlock"
+    },
+    "name": "light_polished_nether_diamond_block_dyed_recipe",
+    "namespace": "mod"
+  }
+}

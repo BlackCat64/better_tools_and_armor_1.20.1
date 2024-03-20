@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "dark_polished_coal_trapdoor",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedCoalTrapdoor"
+    },
+    "name": "dark_polished_coal_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

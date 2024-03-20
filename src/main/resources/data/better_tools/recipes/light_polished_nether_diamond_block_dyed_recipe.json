@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "light_polished_nether_diamond_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:polished_nether_diamond_block"
+    },
+    "b": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "result": {
+    "item": "better_tools:light_polished_nether_diamond_block",
+    "count": 8
+  }
+}

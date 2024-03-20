@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_iron_slab",
+  "count": 2,
+  "ingredient": {
+    "item": "better_tools:dark_polished_iron_block"
+  },
+  "result": "better_tools:dark_polished_iron_slab"
+}

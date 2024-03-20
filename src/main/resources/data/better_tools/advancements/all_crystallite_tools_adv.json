@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_sword_netherite"
+    },
+    "title": {
+      "translate": "advancements.all_crystallite_tools_adv.title"
+    },
+    "description": {
+      "translate": "advancements.all_crystallite_tools_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_crystallite_tools_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "better_tools:crystallite_tool_upgrade_adv"
+}

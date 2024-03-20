@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerLapis"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "magic_damage_tools",
+    "namespace": "mod"
+  }
+}

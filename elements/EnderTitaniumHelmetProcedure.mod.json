@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"157\" y=\"128\"><field name=\"trigger\">entity_attacked</field><next><block type=\"controls_if\"><value name=\"IF0\"><block inline=\"false\" type=\"logic_binary_ops\"><field name=\"OP\">AND</field><value name=\"A\"><block type=\"compare_mcitems\"><value name=\"a\"><block type=\"entity_get_armor_slot_item\"><value name=\"slotid\"><block type=\"math_number\"><field name=\"NUM\">3</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"b\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EndTitaniumArmor.helmet</field></block></value></block></value><value name=\"B\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityEnderman</field><value name=\"compareTo\"><block type=\"source_entity_from_deps\"/></value></block></value></block></value><statement name=\"DO0\"><block type=\"cancel_event\"/></statement></block></next></block></xml>"
+  }
+}

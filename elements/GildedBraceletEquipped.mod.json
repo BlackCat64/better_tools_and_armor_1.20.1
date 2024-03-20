@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"119\" y=\"68\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"add_modifier\"><field name=\"attribute\">FORGE:REACH_DISTANCE</field><field name=\"permanent\">FALSE</field><field name=\"checkExiting\">TRUE</field><value name=\"modifier\"><block inline=\"false\" type=\"create_new_modifier\"><field name=\"operation\">ADDITION</field><value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">690220ea-a287-43e1-8ba3-ddc831edb69c</field></block></value><value name=\"name\"><block type=\"text\"><field name=\"TEXT\">gilded_bracelet</field></block></value><value name=\"value\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"call_procedure\"><field name=\"procedure\">CharmCounterIncrement</field></block></next></block></next></block></xml>"
+  }
+}

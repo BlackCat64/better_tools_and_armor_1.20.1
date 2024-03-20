@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ice_effect"
+    },
+    "title": {
+      "translate": "advancements.freeze_shatter_adv.title"
+    },
+    "description": {
+      "translate": "advancements.freeze_shatter_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "freeze_shatter_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "better_tools:sapphire_adv"
+}

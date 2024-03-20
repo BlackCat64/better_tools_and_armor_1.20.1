@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_netherite",
+    "better_tools:crystallite_pickaxe_netherite",
+    "better_tools:crystallite_axe_netherite",
+    "better_tools:crystallite_shovel_netherite",
+    "better_tools:crystallite_hoe_netherite",
+    "better_tools:crystallite_dagger_netherite",
+    "better_tools:crystallite_armor_netherite_helmet",
+    "better_tools:crystallite_armor_netherite_chestplate",
+    "better_tools:crystallite_armor_netherite_leggings",
+    "better_tools:crystallite_armor_netherite_boots",
+    "better_tools:spiked_crystal",
+    "better_tools:withered_gauntlet"
+  ]
+}

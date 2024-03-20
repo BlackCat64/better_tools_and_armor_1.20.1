@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "light_polished_amethyst_trapdoor",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightPolishedAmethystTrapdoor"
+    },
+    "name": "light_polished_amethyst_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

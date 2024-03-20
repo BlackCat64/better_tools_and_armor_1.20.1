@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:sugar_boots"
+    },
+    "title": {
+      "translate": "advancements.ruby_sugar_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ruby_sugar_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ruby_sugar_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:effect_armor_section"
+}

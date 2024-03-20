@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "better_tools:fungal_caves",
+  "features": "better_tools:purple_mushroom",
+  "step": "vegetal_decoration"
+}

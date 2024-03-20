@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "better_tools:block/polished_gold_block",
+    "top": "better_tools:block/polished_gold_block",
+    "side": "better_tools:block/polished_gold_block"
+  },
+  "render_type": "solid"
+}

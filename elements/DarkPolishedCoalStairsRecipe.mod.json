@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "dark_polished_coal_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedCoalStairs"
+    },
+    "name": "dark_polished_coal_stairs_recipe",
+    "namespace": "mod"
+  }
+}

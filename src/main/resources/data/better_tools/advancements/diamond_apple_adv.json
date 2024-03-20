@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:diamond_apple"
+    },
+    "title": {
+      "translate": "advancements.diamond_apple_adv.title"
+    },
+    "description": {
+      "translate": "advancements.diamond_apple_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_apple_adv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "better_tools:diamond_apple"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:berry_pie_adv"
+}

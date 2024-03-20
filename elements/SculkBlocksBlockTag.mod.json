@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.SCULK_SENSOR"
+      },
+      {
+        "value": "Blocks.SCULK"
+      },
+      {
+        "value": "Blocks.SCULK_CATALYST"
+      },
+      {
+        "value": "Blocks.SCULK_VEIN"
+      },
+      {
+        "value": "Blocks.SCULK_SHRIEKER"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "sculk_blocks",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "end_titanium_chestplate",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_CHESTPLATE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EndTitaniumIngot"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EndTitaniumArmor.body"
+    },
+    "name": "end_titanium_chestplate_smith",
+    "namespace": "mod"
+  }
+}

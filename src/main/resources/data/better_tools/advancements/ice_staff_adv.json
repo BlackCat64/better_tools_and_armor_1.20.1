@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ice_staff"
+    },
+    "title": {
+      "translate": "advancements.ice_staff_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ice_staff_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ice_staff_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:freeze_shatter_adv"
+}

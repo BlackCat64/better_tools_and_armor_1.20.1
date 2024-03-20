@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nature_crystal",
+    "better_tools:crystallite_sword_emerald",
+    "better_tools:crystallite_pickaxe_emerald",
+    "better_tools:crystallite_axe_emerald",
+    "better_tools:crystallite_shovel_emerald",
+    "better_tools:crystallite_hoe_emerald",
+    "better_tools:crystallite_dagger_emerald",
+    "better_tools:crystallite_armor_emerald_helmet",
+    "better_tools:crystallite_armor_emerald_chestplate",
+    "better_tools:crystallite_armor_emerald_leggings",
+    "better_tools:crystallite_armor_emerald_boots",
+    "better_tools:nature_ring"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "better_tools:block/light_polished_nether_diamond_block",
+    "top": "better_tools:block/light_polished_nether_diamond_block",
+    "side": "better_tools:block/light_polished_nether_diamond_block"
+  },
+  "render_type": "solid"
+}

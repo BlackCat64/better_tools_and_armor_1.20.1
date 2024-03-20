@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "polished_topaz_trapdoor",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:PolishedTopazBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedTopazTrapdoor"
+    },
+    "name": "polished_topaz_trapdoor_stonecut",
+    "namespace": "mod"
+  }
+}

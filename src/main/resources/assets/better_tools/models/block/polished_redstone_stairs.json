@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "better_tools:block/polished_redstone_block",
+    "top": "better_tools:block/polished_redstone_block",
+    "side": "better_tools:block/polished_redstone_block"
+  },
+  "render_type": "solid"
+}

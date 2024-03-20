@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "fire_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:NetherDiamond"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FireCore"
+    },
+    "name": "fire_core_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "sugar_clump",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Sugar Clump",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 10,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§9Speed (0:05)",
+        "§9Effect time stacks"
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "SugarClumpProcedure"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": true,
+    "nutritionalValue": 1,
+    "saturation": 0.25,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

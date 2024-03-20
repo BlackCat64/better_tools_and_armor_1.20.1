@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_hoe_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_hoes"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:GuardianCrystal"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteHoePrismarine"
+    },
+    "name": "crystallite_hoe_prismarine_recipe",
+    "namespace": "mod"
+  }
+}

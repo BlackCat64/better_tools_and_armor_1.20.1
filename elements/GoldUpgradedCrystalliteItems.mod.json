@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordGold"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.boots"
+      },
+      {
+        "value": "CUSTOM:GildedCrystal"
+      },
+      {
+        "value": "CUSTOM:GildedBracelet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "gold_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "dark_polished_copper_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedCopperStairs"
+    },
+    "name": "dark_polished_copper_stairs_recipe",
+    "namespace": "mod"
+  }
+}

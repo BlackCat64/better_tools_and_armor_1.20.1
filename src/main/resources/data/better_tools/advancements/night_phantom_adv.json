@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:phantom_boots"
+    },
+    "title": {
+      "translate": "advancements.night_phantom_adv.title"
+    },
+    "description": {
+      "translate": "advancements.night_phantom_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "night_phantom_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "better_tools:effect_armor_section"
+}

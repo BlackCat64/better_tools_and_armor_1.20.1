@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass_block",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "b": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "minecraft:grass_block",
+    "count": 1
+  }
+}

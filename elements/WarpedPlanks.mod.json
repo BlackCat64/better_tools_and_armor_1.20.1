@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.WARPED_PLANKS"
+      },
+      {
+        "value": "Blocks.WARPED_STAIRS"
+      },
+      {
+        "value": "Blocks.WARPED_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_DOOR"
+      },
+      {
+        "value": "Blocks.WARPED_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.WARPED_BUTTON"
+      },
+      {
+        "value": "Blocks.WARPED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.WARPED_SLAB"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "warped_planks",
+    "namespace": "mod"
+  }
+}

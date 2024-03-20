@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "better_tools:block/blackstone_magma_animated",
+    "particle": "better_tools:block/blackstone_magma_animated"
+  },
+  "render_type": "solid"
+}

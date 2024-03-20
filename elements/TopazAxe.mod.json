@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "topaz_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Topaz Axe",
+    "specialInformation": {
+      "fixedValue": [
+        "§6Has a chance to summon lightning on the target"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.0,
+    "enchantability": 16,
+    "damageVsEntity": 9.0,
+    "usageCount": 600,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Topaz"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "TopazSwordProcedure"
+    }
+  }
+}

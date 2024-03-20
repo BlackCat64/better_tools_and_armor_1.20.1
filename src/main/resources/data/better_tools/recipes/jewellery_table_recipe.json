@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jewellery_table",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:gold_ingot"
+    },
+    "d": {
+      "item": "minecraft:smithing_table"
+    }
+  },
+  "result": {
+    "item": "better_tools:jewellery_table",
+    "count": 1
+  }
+}

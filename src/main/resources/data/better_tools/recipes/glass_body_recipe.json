@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_body",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "better_tools:glass_chestplate",
+    "count": 1
+  }
+}

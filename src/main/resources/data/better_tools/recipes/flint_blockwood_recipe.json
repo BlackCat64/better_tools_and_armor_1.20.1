@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "flint_blockwood",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:flint_block"
+    },
+    {
+      "item": "minecraft:oak_wood"
+    }
+  ],
+  "result": {
+    "item": "better_tools:flint_blockwood",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "topaz_leggings",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:topaz"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "item": "better_tools:topaz_leggings",
+    "count": 1
+  }
+}

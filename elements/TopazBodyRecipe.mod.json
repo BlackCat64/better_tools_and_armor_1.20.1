@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "topaz_chestplate",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TopazArmor.body"
+    },
+    "name": "topaz_body_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_fv": 57,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Freeze Shot",
+    "type": "BREAKABLE",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:ThunderShot"
+      },
+      {
+        "value": "FLAME"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [
+      {
+        "value": "Items.BOW"
+      },
+      {
+        "value": "Items.CROSSBOW"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

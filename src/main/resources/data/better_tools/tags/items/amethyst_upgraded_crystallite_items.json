@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:earth_crystal",
+    "better_tools:crystallite_sword_amethyst",
+    "better_tools:crystallite_pickaxe_amethyst",
+    "better_tools:crystallite_axe_amethyst",
+    "better_tools:crystallite_shovel_amethyst",
+    "better_tools:crystallite_hoe_amethyst",
+    "better_tools:crystallite_dagger_amethyst",
+    "better_tools:crystallite_armor_amethyst_helmet",
+    "better_tools:crystallite_armor_amethyst_chestplate",
+    "better_tools:crystallite_armor_amethyst_leggings",
+    "better_tools:crystallite_armor_amethyst_boots",
+    "better_tools:earth_circlet"
+  ]
+}

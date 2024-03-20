@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "shrunk_music_disc",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.BOOKSHELF"
+      },
+      {
+        "value": "Items.CAKE"
+      },
+      {
+        "value": "Items.COOKIE"
+      },
+      {
+        "value": "TAG:beds"
+      },
+      {
+        "value": "CUSTOM:MusicDiscBlank"
+      },
+      {
+        "value": "CUSTOM:BlueSlimeBlock"
+      },
+      {
+        "value": "Items.POTIONITEM"
+      },
+      {
+        "value": "Items.LEATHER_CHESTPLATE"
+      },
+      {
+        "value": "Items.CLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ShrunkMusic"
+    },
+    "name": "shrunk_music_recipe",
+    "namespace": "mod"
+  }
+}

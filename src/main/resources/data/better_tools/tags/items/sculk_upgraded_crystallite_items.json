@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:echo_crystal",
+    "better_tools:crystallite_sword_sculk",
+    "better_tools:crystallite_pickaxe_sculk",
+    "better_tools:crystallite_axe_sculk",
+    "better_tools:crystallite_shovel_sculk",
+    "better_tools:crystallite_hoe_sculk",
+    "better_tools:crystallite_dagger_sculk",
+    "better_tools:crystallite_armor_sculk_helmet",
+    "better_tools:crystallite_armor_sculk_chestplate",
+    "better_tools:crystallite_armor_sculk_leggings",
+    "better_tools:crystallite_armor_sculk_boots",
+    "better_tools:warden_headband"
+  ]
+}

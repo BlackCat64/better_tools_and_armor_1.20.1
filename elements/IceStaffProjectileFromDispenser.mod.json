@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:IceStaff"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.2,
+    "knockback": 0,
+    "entityModel": "Modelice_staff_projectile",
+    "customModelTexture": "ice_effect.png",
+    "onHitsBlock": {
+      "name": "IceStaffProjectileMisses"
+    },
+    "onHitsEntity": {
+      "name": "IceStaffProjectileFromDispenserHits"
+    },
+    "onFlyingTick": {
+      "name": "IceStaffProjectileParticles"
+    }
+  }
+}

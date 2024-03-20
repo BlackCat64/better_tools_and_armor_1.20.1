@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "echo_crystal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.SCULK_SENSOR"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Blocks.SCULK_SENSOR"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Blocks.SCULK_CATALYST"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Blocks.SCULK_CATALYST"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EchoCrystal"
+    },
+    "name": "echo_crystal_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "emerald_mixed",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      },
+      {
+        "value": "CUSTOM:RandomGem"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.EMERALD"
+    },
+    "name": "emerald_recipe",
+    "namespace": "mod"
+  }
+}

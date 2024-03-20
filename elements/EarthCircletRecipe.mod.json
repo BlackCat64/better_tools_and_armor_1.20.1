@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "earth_circlet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ObsidianStick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ObsidianStick"
+      },
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      },
+      {
+        "value": "CUSTOM:ObsidianStick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EarthCrystal"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EarthCirclet"
+    },
+    "name": "earth_circlet_recipe",
+    "namespace": "mod"
+  }
+}

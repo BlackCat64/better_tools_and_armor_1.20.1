@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "crimson_forest",
+  "features": "better_tools:crimson_treehouse_feature",
+  "step": "underground_structures"
+}

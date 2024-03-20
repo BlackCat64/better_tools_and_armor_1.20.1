@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "dark_polished_iron_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "Items.DYE#7"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkPolishedIronBlock"
+    },
+    "name": "dark_polished_iron_block_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "polished_topaz_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedTopazStairs"
+    },
+    "name": "polished_topaz_stairs_recipe",
+    "namespace": "mod"
+  }
+}

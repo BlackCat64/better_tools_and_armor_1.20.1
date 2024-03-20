@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordLapis"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.boots"
+      },
+      {
+        "value": "CUSTOM:MagicCrystal"
+      },
+      {
+        "value": "CUSTOM:MagicRing"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "lapis_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

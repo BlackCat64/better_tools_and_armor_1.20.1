@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "mangrove_treehouse",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 12,
+    "separation": 5,
+    "restrictionBiomes": [
+      {
+        "value": "mangrove_swamp"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystTrapdoor"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "trapdoors",
+    "namespace": "minecraft"
+  }
+}

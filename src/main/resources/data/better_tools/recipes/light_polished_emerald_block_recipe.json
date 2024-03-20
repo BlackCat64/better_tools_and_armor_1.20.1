@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "light_polished_emerald_block",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:light_polished_emerald_block",
+    "count": 24
+  }
+}

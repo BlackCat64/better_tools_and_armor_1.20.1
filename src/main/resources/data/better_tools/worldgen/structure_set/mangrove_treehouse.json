@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_tools:mangrove_treehouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 12,
+    "separation": 5,
+    "salt": 1197981522
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "dark_polished_emerald_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:DarkPolishedEmeraldBlock"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:DarkPolishedEmeraldStairs"
+    },
+    "name": "dark_polished_emerald_stairs_stonecut",
+    "namespace": "mod"
+  }
+}

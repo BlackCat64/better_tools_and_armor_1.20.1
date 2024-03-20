@@ -1,0 +1,10 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "better_tools:flaming_circlet",
+    "better_tools:warden_headband",
+    "better_tools:earth_circlet",
+    "better_tools:ender_goggles"
+  ]
+}

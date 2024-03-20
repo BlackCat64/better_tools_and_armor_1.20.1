@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Luck",
+    "splashName": "Splash Potion of Luck",
+    "lingeringName": "Lingering Potion of Luck",
+    "arrowName": "Arrow of Luck",
+    "effects": [
+      {
+        "effect": {
+          "value": "LUCK"
+        },
+        "duration": 3000,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

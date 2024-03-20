@@ -1,0 +1,133 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.boots"
+      },
+      {
+        "value": "CUSTOM:SugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:RabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:PhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronSugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronRabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:IronPhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondSugarBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondRabbitBoots.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondPhantomBoots.boots"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumArmor.boots"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.boots"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:WingedBoots.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
+      },
+      {
+        "value": "Items.LEATHER_BOOTS"
+      },
+      {
+        "value": "Items.CHAINMAIL_BOOTS"
+      },
+      {
+        "value": "Items.IRON_BOOTS"
+      },
+      {
+        "value": "Items.GOLDEN_BOOTS"
+      },
+      {
+        "value": "Items.DIAMOND_BOOTS"
+      },
+      {
+        "value": "Items.NETHERITE_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "armors/boots",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "bouncy_bracelet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlueSlimeBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlueSlimeBlock"
+      },
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      },
+      {
+        "value": "CUSTOM:BlueSlimeBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlueSlimeBlock"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BouncyBracelet"
+    },
+    "name": "bouncy_bracelet_recipe",
+    "namespace": "mod"
+  }
+}

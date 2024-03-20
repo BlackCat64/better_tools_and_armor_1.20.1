@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hearty_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "b": {
+      "tag": "forge:armors/chestplates"
+    },
+    "c": {
+      "item": "minecraft:nether_wart"
+    },
+    "d": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "better_tools:hearty_chestplate",
+    "count": 1
+  }
+}

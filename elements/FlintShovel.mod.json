@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "flint_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Flint Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ToolsAndArmorTab"
+    },
+    "harvestLevel": 1,
+    "efficiency": 5.0,
+    "attackSpeed": 1.2,
+    "enchantability": 8,
+    "damageVsEntity": 4.0,
+    "usageCount": 150,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "Items.FLINT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

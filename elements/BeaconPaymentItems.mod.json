@@ -1,0 +1,61 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "beacon_payment_items",
+    "namespace": "minecraft"
+  }
+}

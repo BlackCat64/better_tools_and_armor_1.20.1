@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.boots"
+      },
+      {
+        "value": "CUSTOM:HiveCrystal"
+      },
+      {
+        "value": "CUSTOM:CuringCharm"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "honey_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

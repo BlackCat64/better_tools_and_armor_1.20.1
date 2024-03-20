@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "large_spruce_treehouse",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 25,
+    "separation": 10,
+    "restrictionBiomes": [
+      {
+        "value": "redwood_taiga"
+      },
+      {
+        "value": "mutated_redwood_taiga"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}

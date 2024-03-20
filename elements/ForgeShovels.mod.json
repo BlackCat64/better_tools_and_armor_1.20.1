@@ -1,0 +1,88 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondShovel"
+      },
+      {
+        "value": "CUSTOM:FlintShovel"
+      },
+      {
+        "value": "CUSTOM:RubyToolsShovel"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumShovel"
+      },
+      {
+        "value": "CUSTOM:SapphireShovel"
+      },
+      {
+        "value": "CUSTOM:TopazShovel"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovel"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelGold"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelLapis"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherite"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRuby"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelAmethyst"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "tools/shovels",
+    "namespace": "forge"
+  }
+}

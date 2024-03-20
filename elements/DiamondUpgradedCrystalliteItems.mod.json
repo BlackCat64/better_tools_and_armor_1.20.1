@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": "CUSTOM:DiamondHardPlate"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "diamond_upgraded_crystallite_items",
+    "namespace": "mod"
+  }
+}

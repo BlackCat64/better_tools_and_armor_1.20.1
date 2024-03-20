@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:tough_necklace"
+    },
+    "title": {
+      "translate": "advancements.max_knockback_resistance_adv.title"
+    },
+    "description": {
+      "translate": "advancements.max_knockback_resistance_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "max_knockback_resistance_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

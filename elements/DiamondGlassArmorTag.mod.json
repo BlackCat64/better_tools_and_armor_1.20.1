@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DiamondGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "diamond_glass_armor",
+    "namespace": "mod"
+  }
+}

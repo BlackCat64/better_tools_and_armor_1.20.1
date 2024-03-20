@@ -1,0 +1,91 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "TAG:forge:ores"
+      },
+      {
+        "value": "CUSTOM:CrystalliteClusterAir"
+      },
+      {
+        "value": "Blocks.CHEST"
+      },
+      {
+        "value": "Blocks.MOB_SPAWNER"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:RubyBlock"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumBlock"
+      },
+      {
+        "value": "CUSTOM:SapphireBlock"
+      },
+      {
+        "value": "CUSTOM:TopazBlock"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBlock"
+      },
+      {
+        "value": "CUSTOM:CutCrystalliteBlock"
+      },
+      {
+        "value": "Blocks.RAW_IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.RAW_GOLD_BLOCK"
+      },
+      {
+        "value": "Blocks.RAW_COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Blocks.LAPIS_BLOCK"
+      },
+      {
+        "value": "Blocks.DIAMOND_BLOCK"
+      },
+      {
+        "value": "Blocks.EMERALD_BLOCK"
+      },
+      {
+        "value": "Blocks.NETHERITE_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.BUDDING_AMETHYST"
+      },
+      {
+        "value": "Blocks.AMETHYST_CLUSTER"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "loot_blocks",
+    "namespace": "mod"
+  }
+}

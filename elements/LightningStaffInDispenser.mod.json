@@ -1,0 +1,18 @@
+{
+  "_fv": 57,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:ElectricStaff"
+    },
+    "enableFuel": false,
+    "fuelPower": {
+      "fixedValue": 1600.0
+    },
+    "hasDispenseBehavior": true,
+    "dispenseResultItemstack": {
+      "name": "LightningStaffDispensed"
+    },
+    "compostLayerChance": 0.0
+  }
+}

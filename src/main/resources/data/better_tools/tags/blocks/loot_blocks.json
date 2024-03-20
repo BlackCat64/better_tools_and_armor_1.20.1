@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores",
+    "better_tools:crystallite_cluster_air",
+    "minecraft:chest",
+    "minecraft:spawner",
+    "better_tools:nether_diamond_block",
+    "better_tools:ruby_block",
+    "better_tools:end_titanium_block",
+    "better_tools:sapphire_block",
+    "better_tools:topaz_block",
+    "better_tools:crystallite_block",
+    "better_tools:cut_crystallite_block",
+    "minecraft:raw_iron_block",
+    "minecraft:raw_gold_block",
+    "minecraft:raw_copper_block",
+    "minecraft:coal_block",
+    "minecraft:iron_block",
+    "minecraft:redstone_block",
+    "minecraft:gold_block",
+    "minecraft:lapis_block",
+    "minecraft:diamond_block",
+    "minecraft:emerald_block",
+    "minecraft:netherite_block",
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst",
+    "minecraft:amethyst_cluster"
+  ]
+}

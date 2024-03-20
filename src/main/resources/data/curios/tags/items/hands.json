@@ -1,0 +1,12 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "better_tools:gilded_bracelet",
+    "better_tools:magic_ring",
+    "better_tools:withered_gauntlet",
+    "better_tools:icy_bracelet",
+    "better_tools:nature_ring",
+    "better_tools:bouncy_bracelet"
+  ]
+}

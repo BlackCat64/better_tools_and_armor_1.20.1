@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:flint_sword"
+    },
+    "title": {
+      "translate": "advancements.flint_tools_adv.title"
+    },
+    "description": {
+      "translate": "advancements.flint_tools_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flint_tools_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "better_tools:flint_axe_adv"
+}

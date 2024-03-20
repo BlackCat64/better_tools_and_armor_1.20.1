@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:diamond_crying_obsidian_helmet"
+    },
+    "title": {
+      "translate": "advancements.all_diamond_effect_armor_adv.title"
+    },
+    "description": {
+      "translate": "advancements.all_diamond_effect_armor_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_diamond_effect_armor_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "better_tools:all_iron_effect_armor_adv"
+}

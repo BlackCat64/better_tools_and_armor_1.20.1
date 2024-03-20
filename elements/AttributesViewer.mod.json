@@ -1,0 +1,915 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 170,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attribute_viewer",
+          "text": {
+            "fixedValue": "Player Attributes"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 25
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attribute",
+          "text": {
+            "fixedValue": "Attribute"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_modifier",
+          "text": {
+            "fixedValue": "Modifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 215,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_value",
+          "text": {
+            "fixedValue": "Value"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_horizontal_line.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_horizontal_line.png",
+          "use1Xscale": true,
+          "x": 186,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_vertical_line.png",
+          "use1Xscale": true,
+          "x": 210,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_vertical_line.png",
+          "use1Xscale": true,
+          "x": 257,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_vertical_line.png",
+          "use1Xscale": true,
+          "x": 210,
+          "y": 85
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_vertical_line.png",
+          "use1Xscale": true,
+          "x": 257,
+          "y": 84
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_line_crossover.png",
+          "use1Xscale": true,
+          "x": 256,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_line_crossover.png",
+          "use1Xscale": true,
+          "x": 210,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hp_heart.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 54
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armor.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armor_toughness.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 79
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "strength.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "attack_knockback.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 115
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "knockback_resistance.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 92
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grass_block_side.png",
+          "use1Xscale": true,
+          "x": 133,
+          "y": 159
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slow_falling.png",
+          "use1Xscale": true,
+          "x": 133,
+          "y": 147
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speed.png",
+          "use1Xscale": true,
+          "x": 131,
+          "y": 170
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "luck.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 194
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "critical_hit_multiplier.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 131
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "swift_swim.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 183
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spiked_crystal.png",
+          "use1Xscale": true,
+          "x": 132,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_max_health",
+          "text": {
+            "fixedValue": "Max Health"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 144,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_armor",
+          "text": {
+            "fixedValue": "Armor"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 144,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_toughness",
+          "text": {
+            "fixedValue": "Toughness"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_damage",
+          "text": {
+            "fixedValue": "Attack Dmg."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_knockback",
+          "text": {
+            "fixedValue": "Knockback"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 115
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_atk_speed",
+          "text": {
+            "fixedValue": "Knockbk. Res."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_atk_reach",
+          "text": {
+            "fixedValue": "Gravity"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_crit_multiplier",
+          "text": {
+            "fixedValue": "Critical Hit"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 127
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_multiplier",
+          "text": {
+            "fixedValue": "Multiplier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_block_reach",
+          "text": {
+            "fixedValue": "Block Reach"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 159
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movement_speed",
+          "text": {
+            "fixedValue": "Movement Spd."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_swim_speed",
+          "text": {
+            "fixedValue": "Swim Speed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 183
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_luck",
+          "text": {
+            "fixedValue": "Luck"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_thorns_dmg",
+          "text": {
+            "fixedValue": "Thorns Dmg."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_line_crossover.png",
+          "use1Xscale": true,
+          "x": 212,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_line_crossover.png",
+          "use1Xscale": true,
+          "x": 259,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00",
+          "text": {
+            "fixedValue": "00",
+            "name": "AttributeViewerGetMaxHealthModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_001",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetArmorPointsModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_002",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetArmorToughnessModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00001",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetCritHitMultiplierModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0002",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetGravityModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00002",
+          "text": {
+            "fixedValue": "00.00",
+            "name": "GetBlockReachModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 159
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00003",
+          "text": {
+            "fixedValue": "0.000",
+            "name": "GetMovementSpeedModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0003",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetSwimSpeedModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_003",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetThornsDamageModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_004",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetLuckModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 195
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_005",
+          "text": {
+            "fixedValue": "00",
+            "name": "AttributesViewerGetMaxHealth"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_006",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetArmorPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 67
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_007",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetArmorToughness"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0006",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetCritHitMultiplier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0007",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetGravity"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00005",
+          "text": {
+            "fixedValue": "00.00",
+            "name": "GetBlockReach"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 159
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_00006",
+          "text": {
+            "fixedValue": "0.000",
+            "name": "GetMovementSpeed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0008",
+          "text": {
+            "fixedValue": "0.00",
+            "name": "GetSwimSpeed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_008",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetLuck"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 195
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_009",
+          "text": {
+            "fixedValue": "00",
+            "name": "GetThornsDamage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_attack_damage",
+          "text": {
+            "fixedValue": "attack_damage_val",
+            "name": "GetAttackDamageProcedure"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 263,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_attack_knockback_modifi",
+          "text": {
+            "fixedValue": "attack_knockback_mod",
+            "name": "GetAttackKnockbackModifier"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_attack_knockback",
+          "text": {
+            "fixedValue": "attack_knockback_val",
+            "name": "GetAttackKnockback"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 263,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_knockback_resistance_mo",
+          "text": {
+            "fixedValue": "knockback_res_mod",
+            "name": "GetKnockbackResistanceModifierVar"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_knockback_resistance",
+          "text": {
+            "fixedValue": "knockback_res_val",
+            "name": "GetKnockbackResistanceVar"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 263,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_attack_damage_modifier",
+          "text": {
+            "fixedValue": "",
+            "name": "GetAttackDamageModifierProcedure"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 221,
+          "y": 104
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 6,
+      "sy": 6,
+      "ox": 11,
+      "oy": 11,
+      "snapOnGrid": false
+    }
+  }
+}

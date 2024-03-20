@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Criticality",
+    "splashName": "Splash Potion of Criticality",
+    "lingeringName": "Lingering Potion of Criticality",
+    "arrowName": "Arrow of Criticality",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Criticality"
+        },
+        "duration": 1800,
+        "amplifier": 1,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

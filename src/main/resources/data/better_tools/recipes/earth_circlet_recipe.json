@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "earth_circlet",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:obsidian_stick"
+    },
+    "b": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "c": {
+      "item": "better_tools:earth_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:earth_circlet",
+    "count": 1
+  }
+}

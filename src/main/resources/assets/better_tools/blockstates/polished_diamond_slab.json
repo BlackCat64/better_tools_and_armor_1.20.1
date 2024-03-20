@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "better_tools:block/polished_diamond_slab"
+    },
+    "type=top": {
+      "model": "better_tools:block/polished_diamond_slab_top"
+    },
+    "type=double": {
+      "model": "better_tools:block/polished_diamond_slab_full"
+    }
+  }
+}

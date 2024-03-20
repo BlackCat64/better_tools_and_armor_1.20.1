@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_armor_amethyst_boots"
+    },
+    "title": {
+      "translate": "advancements.shockwave_adv.title"
+    },
+    "description": {
+      "translate": "advancements.shockwave_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shockwave_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "better_tools:aimbot_adv"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystallitePickaxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelIron"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeIron"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "magnetic_tools",
+    "namespace": "mod"
+  }
+}

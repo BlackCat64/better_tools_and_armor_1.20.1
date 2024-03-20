@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "title": {
+      "translate": "advancements.crystallite_gem_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_gem_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_gem_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:crystallite_gem"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "better_tools:crystallite_cave_adv"
+}

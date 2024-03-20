@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "poison_barbed_weapons",
+    "namespace": "mod"
+  }
+}

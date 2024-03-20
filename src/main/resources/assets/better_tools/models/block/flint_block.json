@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "better_tools:block/flint_block",
+    "particle": "better_tools:block/flint_block"
+  },
+  "render_type": "solid"
+}

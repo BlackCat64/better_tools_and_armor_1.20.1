@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:nether_diamond_dagger"
+    },
+    "title": {
+      "translate": "advancements.daggers_adv.title"
+    },
+    "description": {
+      "translate": "advancements.daggers_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "daggers_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "better_tools:pirate_adv"
+}

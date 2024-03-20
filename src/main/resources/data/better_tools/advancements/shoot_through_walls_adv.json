@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:warden_staff"
+    },
+    "title": {
+      "translate": "advancements.shoot_through_walls_adv.title"
+    },
+    "description": {
+      "translate": "advancements.shoot_through_walls_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shoot_through_walls_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "better_tools:warden_staff_adv"
+}

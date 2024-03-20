@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Decay",
+    "splashName": "Splash Potion of Decay",
+    "lingeringName": "Lingering Potion of Decay",
+    "arrowName": "Arrow of Decay",
+    "effects": [
+      {
+        "effect": {
+          "value": "WITHER"
+        },
+        "duration": 800,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "PERIOD",
+    "keyBindingName": "Open Attribute Viewer",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "AttributesViewerOpenProcedure"
+    }
+  }
+}

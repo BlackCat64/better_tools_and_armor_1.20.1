@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_dagger_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_daggers"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EchoCrystal"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteDaggerSculk"
+    },
+    "name": "crystallite_dagger_sculk_recipe",
+    "namespace": "mod"
+  }
+}

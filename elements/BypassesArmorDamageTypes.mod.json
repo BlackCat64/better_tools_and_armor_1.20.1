@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Damage types",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [
+      {
+        "value": "CUSTOM:KarmaDamage"
+      },
+      {
+        "value": "CUSTOM:PoisonMushroomDamage"
+      },
+      {
+        "value": "CUSTOM:WaterPulseDamage"
+      },
+      {
+        "value": "CUSTOM:MagicWeaponDamage"
+      }
+    ],
+    "name": "bypasses_armor",
+    "namespace": "minecraft"
+  }
+}
