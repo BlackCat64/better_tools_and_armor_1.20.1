@@ -83,11 +83,11 @@ public class CrystalliteArmorGoldReachProcedure {
 			armor_pieces = armor_pieces + 1;
 		}
 		if (armor_pieces > 0) {
-			((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).removeModifier(UUID.fromString("8fc891d7-b275-4cc5-a6d6-2c75a021eab1"));
-			((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get())
+			((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).removeModifier(UUID.fromString("8fc891d7-b275-4cc5-a6d6-2c75a021eab1"));
+			((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get())
 					.addTransientModifier((new AttributeModifier(UUID.fromString("8fc891d7-b275-4cc5-a6d6-2c75a021eab1"), "crystallite_gold_armor", armor_pieces, AttributeModifier.Operation.ADDITION)));
 		} else {
-			((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).removeModifier(UUID.fromString("8fc891d7-b275-4cc5-a6d6-2c75a021eab1"));
+			((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).removeModifier(UUID.fromString("8fc891d7-b275-4cc5-a6d6-2c75a021eab1"));
 		}
 	}
 }

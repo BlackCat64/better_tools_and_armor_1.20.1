@@ -10,7 +10,7 @@ public class GetBlockReachModifierProcedure {
 		if (entity == null)
 			return "";
 		double modifier = 0;
-		modifier = ((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).getValue() - ((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).getBaseValue();
+		modifier = ((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).getValue() - ((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).getBaseValue();
 		if (modifier > 0) {
 			return "+" + new java.text.DecimalFormat("#.##").format(modifier);
 		}

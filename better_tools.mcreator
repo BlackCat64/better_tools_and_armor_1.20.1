@@ -7750,7 +7750,7 @@
       "name": "CrystalliteGoldReach",
       "type": "procedure",
       "sortid": 735,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_gold_reach",
       "metadata": {
@@ -21054,7 +21054,7 @@
       "name": "GildedBraceletEquipped",
       "type": "procedure",
       "sortid": 1303,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gilded_bracelet_equipped",
       "metadata": {
@@ -21074,7 +21074,7 @@
       "name": "GildedBraceletUnequipped",
       "type": "procedure",
       "sortid": 1304,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gilded_bracelet_unequipped",
       "metadata": {
@@ -24376,7 +24376,7 @@
       "name": "CrystalliteArmorGoldReach",
       "type": "procedure",
       "sortid": 1453,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_armor_gold_reach",
       "metadata": {
@@ -24962,7 +24962,7 @@
       "name": "GetAttackReach",
       "type": "procedure",
       "sortid": 1480,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "get_attack_reach",
       "metadata": {
@@ -24983,7 +24983,7 @@
       "name": "GetAttackReachModifier",
       "type": "procedure",
       "sortid": 1481,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "get_attack_reach_modifier",
       "metadata": {
@@ -25046,7 +25046,7 @@
       "name": "GetBlockReach",
       "type": "procedure",
       "sortid": 1484,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "get_block_reach",
       "metadata": {
@@ -25067,7 +25067,7 @@
       "name": "GetBlockReachModifier",
       "type": "procedure",
       "sortid": 1485,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "get_block_reach_modifier",
       "metadata": {
@@ -29347,7 +29347,7 @@
       "name": "AttributeAdvancementProcedure",
       "type": "procedure",
       "sortid": 1705,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "attribute_advancement_procedure",
       "metadata": {

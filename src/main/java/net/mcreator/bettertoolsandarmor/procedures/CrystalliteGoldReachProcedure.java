@@ -34,11 +34,10 @@ public class CrystalliteGoldReachProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:increased_reach_tools")))) {
-			if (!(((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).hasModifier((new AttributeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"), "crystallite_gold_tool", 3, AttributeModifier.Operation.ADDITION)))))
-				((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get())
-						.addTransientModifier((new AttributeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"), "crystallite_gold_tool", 3, AttributeModifier.Operation.ADDITION)));
+			if (!(((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).hasModifier((new AttributeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"), "crystallite_gold_tool", 3, AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).addTransientModifier((new AttributeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"), "crystallite_gold_tool", 3, AttributeModifier.Operation.ADDITION)));
 		} else {
-			((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).removeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"));
+			((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).removeModifier(UUID.fromString("5e4c476e-fefb-45d9-ac4d-5642ad234de6"));
 		}
 	}
 }

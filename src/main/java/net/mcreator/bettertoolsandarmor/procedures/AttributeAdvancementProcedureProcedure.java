@@ -42,7 +42,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).getValue() >= 8) {
+		if (((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).getValue() >= 8) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:far_block_reach_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

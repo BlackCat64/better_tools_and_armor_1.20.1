@@ -9,6 +9,6 @@ public class GetAttackReachProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "" + new java.text.DecimalFormat("#.##").format(((LivingEntity) entity).getAttribute(ForgeMod.ATTACK_RANGE.get()).getValue());
+		return "" + new java.text.DecimalFormat("#.##").format(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_REACH.get()).getValue());
 	}
 }

@@ -9,6 +9,6 @@ public class GetBlockReachProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "" + new java.text.DecimalFormat("#.##").format(((LivingEntity) entity).getAttribute(ForgeMod.REACH_DISTANCE.get()).getValue());
+		return "" + new java.text.DecimalFormat("#.##").format(((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).getValue());
 	}
 }

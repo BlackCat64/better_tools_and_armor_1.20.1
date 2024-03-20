@@ -10,7 +10,7 @@ public class GetAttackReachModifierProcedure {
 		if (entity == null)
 			return "";
 		double modifier = 0;
-		modifier = ((LivingEntity) entity).getAttribute(ForgeMod.ATTACK_RANGE.get()).getValue() - ((LivingEntity) entity).getAttribute(ForgeMod.ATTACK_RANGE.get()).getBaseValue();
+		modifier = ((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_REACH.get()).getValue() - ((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_REACH.get()).getBaseValue();
 		if (modifier > 0) {
 			return "+" + new java.text.DecimalFormat("#.##").format(modifier);
 		}
