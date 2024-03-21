@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+      }
+    ],
+    "information": [
+      "Obtained through trading a Crystallite Gem with a Jeweller Villager.",
+      "Can be duplicated using Crystallite Shards and 7 Diamonds."
+    ]
+  }
+}
