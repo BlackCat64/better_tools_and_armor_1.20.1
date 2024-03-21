@@ -30035,6 +30035,18 @@
         ]
       },
       "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnderTitaniumUpgradeInfo",
+      "type": "jeiinformation",
+      "sortid": 1751,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_upgrade_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ender Titanium"
     }
   ],
   "variable_elements": [
@@ -30427,6 +30439,7 @@
       "item.minecraft.lingering_potion.effect.double_jump_potion_2": "Lingering Potion of Double Jump",
       "item.better_tools.diamond_cactus_chestplate": "Cactus Shirt",
       "advancements.topaz_gem_adv.descr": "Mine a Topaz Ore under a desert-like biome",
+      "jei.better_tools.ender_titanium_upgrade_info": "Found with a 1/16 chance in End City chest loot.",
       "item.minecraft.splash_potion.effect.swift_swim_potion_2": "Splash Potion of Rapidity",
       "item_group.better_tools.tools_and_armor_tab": "BT+A - Tools and Armor Sets",
       "advancements.ore_location_adv.descr": "Use echolocation to find some loot",
