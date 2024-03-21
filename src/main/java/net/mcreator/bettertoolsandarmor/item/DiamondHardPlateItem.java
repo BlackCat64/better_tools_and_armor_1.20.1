@@ -26,7 +26,7 @@ public class DiamondHardPlateItem extends Item implements ICurioItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
 		list.add(Component.literal("\u00A79+2 Armor"));
-		list.add(Component.literal("\u00A79+1 Armor Toughness"));
+		list.add(Component.literal("\u00A79+2 Armor Toughness"));
 	}
 
 	@Override
