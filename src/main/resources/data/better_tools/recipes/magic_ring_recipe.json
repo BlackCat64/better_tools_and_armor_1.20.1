@@ -1,13 +1,17 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "better_tools:crystallite_charm_base"
-  },
-  "addition": {
-    "item": "better_tools:magic_crystal"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "group": "magic_ring",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:magic_crystal"
+    }
+  ],
   "result": {
-    "item": "better_tools:magic_ring"
+    "item": "better_tools:magic_ring",
+    "count": 1
   }
 }

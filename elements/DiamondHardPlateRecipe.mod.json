@@ -2,21 +2,44 @@
   "_fv": 57,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "diamond_hard_plate",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:CrystalliteCharmBase"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:DiamondHardCrystal"
-    },
-    "smithingReturnStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      },
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:DiamondHardPlate"
     },
     "name": "diamond_hard_plate_recipe",

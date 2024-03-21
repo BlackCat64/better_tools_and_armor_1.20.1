@@ -1,13 +1,17 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": [],
-  "base": {
-    "item": "better_tools:crystallite_charm_base"
-  },
-  "addition": {
-    "item": "better_tools:heal_crystal"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "group": "heart_charm",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:heal_crystal"
+    }
+  ],
   "result": {
-    "item": "better_tools:heart_charm"
+    "item": "better_tools:heart_charm",
+    "count": 1
   }
 }

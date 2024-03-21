@@ -2,24 +2,44 @@
   "_fv": 57,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "curing_charm",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:CrystalliteCharmBase"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:HiveCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": ""
-    },
-    "smithingReturnStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      },
+      {
+        "value": "CUSTOM:HiveCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:CuringCharm"
     },
     "name": "curing_charm_recipe",
