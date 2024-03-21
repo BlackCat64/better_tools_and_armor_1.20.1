@@ -29836,7 +29836,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/chests/crystallite_charm_base_treasure.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInDesertTemple",
@@ -29849,7 +29850,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_desert_temple.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInJungleTemple",
@@ -29862,7 +29864,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_jungle_temple.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInWoodlandMansion",
@@ -29875,7 +29878,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_woodland_mansion.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInShipwreck",
@@ -29888,7 +29892,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_shipwreck.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "CharmBaseInBastionTreasure",
@@ -29901,7 +29906,8 @@
         "files": [
           "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_bastion_treasure.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
     },
     {
       "name": "NatureRingEquipped",
@@ -30088,6 +30094,20 @@
         "files": []
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "TrimmableArmor",
+      "type": "tag",
+      "sortid": 1740,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trimmable_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/trimmable_armor.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [
