@@ -310,6 +310,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> END_TITANIUM_ORE = block(BetterToolsModBlocks.END_TITANIUM_ORE);
 	public static final RegistryObject<Item> END_TITANIUM_BLOCK = block(BetterToolsModBlocks.END_TITANIUM_BLOCK);
 	public static final RegistryObject<Item> END_TITANIUM_INGOT = REGISTRY.register("end_titanium_ingot", () -> new EndTitaniumIngotItem());
+	public static final RegistryObject<Item> ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_titanium_upgrade_smithing_template", () -> new EnderTitaniumUpgradeSmithingTemplateItem());
 	public static final RegistryObject<Item> END_TITANIUM_SWORD = REGISTRY.register("end_titanium_sword", () -> new EndTitaniumSwordItem());
 	public static final RegistryObject<Item> END_TITANIUM_PICKAXE = REGISTRY.register("end_titanium_pickaxe", () -> new EndTitaniumPickaxeItem());
 	public static final RegistryObject<Item> END_TITANIUM_AXE = REGISTRY.register("end_titanium_axe", () -> new EndTitaniumAxeItem());
@@ -377,6 +378,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> JEWELLERY_TABLE = block(BetterToolsModBlocks.JEWELLERY_TABLE);
 	public static final RegistryObject<Item> CRYSTALLITE_SHARDS = REGISTRY.register("crystallite_shards", () -> new CrystalliteShardsItem());
 	public static final RegistryObject<Item> CRYSTALLITE_GEM = REGISTRY.register("crystallite_gem", () -> new CrystaliteGemItem());
+	public static final RegistryObject<Item> CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("crystallite_upgrade_smithing_template", () -> new CrystalliteUpgradeSmithingTemplateItem());
 	public static final RegistryObject<Item> CRYSTALLITE_CHARM_BASE = REGISTRY.register("crystallite_charm_base", () -> new CrystalliteCharmBaseItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CRYSTALLITE_BLOCK);
 	public static final RegistryObject<Item> CUT_CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK);
@@ -620,6 +622,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> BERRY_SMOOTHIE = REGISTRY.register("berry_smoothie", () -> new BerrySmoothieItem());
 	public static final RegistryObject<Item> ASCENSION_POTION = REGISTRY.register("ascension_potion", () -> new AscensionPotionItem());
 	public static final RegistryObject<Item> DESCENSION_POTION = REGISTRY.register("descension_potion", () -> new DescensionPotionItem());
+	public static final RegistryObject<Item> RECALL_POTION = REGISTRY.register("recall_potion", () -> new RecallPotionItem());
+	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
 	public static final RegistryObject<Item> CHARGED_ICE_ON = block(BetterToolsModBlocks.CHARGED_ICE_ON);
 	public static final RegistryObject<Item> DARK_POLISHED_COAL_BLOCK = block(BetterToolsModBlocks.DARK_POLISHED_COAL_BLOCK);
 	public static final RegistryObject<Item> DARK_POLISHED_COAL_SLAB = block(BetterToolsModBlocks.DARK_POLISHED_COAL_SLAB);
@@ -767,10 +771,6 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> FLINT_BLOCKWOOD = block(BetterToolsModBlocks.FLINT_BLOCKWOOD);
 	public static final RegistryObject<Item> CRYSTALLITE_CLUSTER_AIR = block(BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR);
 	public static final RegistryObject<Item> CLIMBABLE_WALL = block(BetterToolsModBlocks.CLIMBABLE_WALL);
-	public static final RegistryObject<Item> RECALL_POTION = REGISTRY.register("recall_potion", () -> new RecallPotionItem());
-	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
-	public static final RegistryObject<Item> ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_titanium_upgrade_smithing_template", () -> new EnderTitaniumUpgradeSmithingTemplateItem());
-	public static final RegistryObject<Item> CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("crystallite_upgrade_smithing_template", () -> new CrystalliteUpgradeSmithingTemplateItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

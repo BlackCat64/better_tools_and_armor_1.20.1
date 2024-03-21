@@ -76,6 +76,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModBlocks.END_TITANIUM_ORE.get().asItem());
 				tabData.accept(BetterToolsModBlocks.END_TITANIUM_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModItems.END_TITANIUM_INGOT.get());
+				tabData.accept(BetterToolsModItems.ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE.get());
 				tabData.accept(BetterToolsModItems.END_TITANIUM_SWORD.get());
 				tabData.accept(BetterToolsModItems.END_TITANIUM_PICKAXE.get());
 				tabData.accept(BetterToolsModItems.END_TITANIUM_AXE.get());
@@ -140,7 +141,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.FIRE_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
-				tabData.accept(BetterToolsModItems.ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE.get());
 			})
 
 					.build());
@@ -195,6 +195,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHARDS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_GEM.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_CHARM_BASE.get());
 				tabData.accept(BetterToolsModBlocks.CRYSTALLITE_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get().asItem());
@@ -404,7 +405,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE.get());
 			})
 
 					.build());
