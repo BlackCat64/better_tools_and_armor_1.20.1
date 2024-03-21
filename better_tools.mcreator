@@ -29978,6 +29978,63 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "EnderTitaniumUpgradeSmithingTemplate",
+      "type": "item",
+      "sortid": 1747,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_upgrade_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnderTitaniumUpgradeSmithingTemplateItem.java",
+          "src/main/resources/assets/better_tools/models/item/ender_titanium_upgrade_smithing_template.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnderTitaniumUpgradeDupeRecipe",
+      "type": "recipe",
+      "sortid": 1748,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_upgrade_dupe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/ender_titanium_upgrade_duplication.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EndCityLoot",
+      "type": "loottable",
+      "sortid": 1749,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_city_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/inject/chests/end_city.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EndCityLootModifier",
+      "type": "lootmodifier",
+      "sortid": 1750,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_city_loot_modifier",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/end_city_loot_modifier.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
     }
   ],
   "variable_elements": [
@@ -30684,6 +30741,7 @@
       "item.better_tools.crystallite_axe_prismarine": "Crystallite Axe",
       "item.better_tools.end_titanium_ingot": "Ender Titanium Ingot",
       "entity.better_tools.projectile_fire_staff_dispenser_projectile": "Dispenser using Fire Staff",
+      "item.better_tools.ender_titanium_upgrade_smithing_template": "Smithing Template",
       "jei.better_tools.beacon_payment_items_info": "Better Tools and Armor allows these items to be used as Beacon payment items.",
       "item.better_tools.master_builder": "Music Disc",
       "advancements.hearty_adv.descr": "Wear a Hearty Shirt",

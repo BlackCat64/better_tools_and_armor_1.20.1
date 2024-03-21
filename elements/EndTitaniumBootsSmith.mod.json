@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:EndTitaniumIngot"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:EndTitaniumArmor.boots"
     },

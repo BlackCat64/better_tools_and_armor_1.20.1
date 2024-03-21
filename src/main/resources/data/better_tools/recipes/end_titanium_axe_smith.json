@@ -1,6 +1,8 @@
 {
   "type": "minecraft:smithing_transform",
-  "template": [],
+  "template": {
+    "item": "better_tools:ender_titanium_upgrade_smithing_template"
+  },
   "base": {
     "item": "minecraft:netherite_axe"
   },

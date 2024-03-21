@@ -140,6 +140,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.FIRE_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
+				tabData.accept(BetterToolsModItems.ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE.get());
 			})
 
 					.build());

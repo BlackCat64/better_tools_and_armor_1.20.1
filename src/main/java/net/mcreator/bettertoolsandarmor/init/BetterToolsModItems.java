@@ -116,6 +116,7 @@ import net.mcreator.bettertoolsandarmor.item.FlamingCircletItem;
 import net.mcreator.bettertoolsandarmor.item.FireStaffItem;
 import net.mcreator.bettertoolsandarmor.item.FireCoreItem;
 import net.mcreator.bettertoolsandarmor.item.ExperiencePotionItem;
+import net.mcreator.bettertoolsandarmor.item.EnderTitaniumUpgradeSmithingTemplateItem;
 import net.mcreator.bettertoolsandarmor.item.EnderGogglesItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumSwordItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumShovelItem;
@@ -767,6 +768,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CLIMBABLE_WALL = block(BetterToolsModBlocks.CLIMBABLE_WALL);
 	public static final RegistryObject<Item> RECALL_POTION = REGISTRY.register("recall_potion", () -> new RecallPotionItem());
 	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
+	public static final RegistryObject<Item> ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_titanium_upgrade_smithing_template", () -> new EnderTitaniumUpgradeSmithingTemplateItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

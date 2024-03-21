@@ -7,7 +7,8 @@
     "better_tools:charm_base_in_jungle_temple",
     "better_tools:charm_base_in_woodland_mansion",
     "better_tools:charm_base_in_shipwreck",
-    "better_tools:charm_base_in_bastion_treasure"
+    "better_tools:charm_base_in_bastion_treasure",
+    "better_tools:end_city_loot_modifier"
   ],
   "replace": false
 }
