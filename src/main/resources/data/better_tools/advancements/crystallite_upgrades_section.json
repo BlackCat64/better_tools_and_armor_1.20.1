@@ -13,11 +13,11 @@
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "crystallite_upgrades_section": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }
