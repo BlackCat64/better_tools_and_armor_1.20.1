@@ -21,9 +21,9 @@
               "value": "Items.EMERALD"
             },
             "countOffer": 1,
-            "level": 1,
+            "level": 2,
             "maxTrades": 16,
-            "xp": 10,
+            "xp": 15,
             "priceMultiplier": 0.02
           },
           {
@@ -367,6 +367,24 @@
             "maxTrades": 3,
             "xp": 30,
             "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:CrystaliteGem"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 30,
+            "offer": {
+              "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 10,
+            "priceMultiplier": 0.0
           }
         ]
       }

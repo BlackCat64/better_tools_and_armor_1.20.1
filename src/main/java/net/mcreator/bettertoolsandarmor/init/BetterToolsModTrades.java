@@ -52,9 +52,9 @@ public class BetterToolsModTrades {
 					new ItemStack(BetterToolsModItems.DIAMOND_DAGGER.get()), 3, 25, 0.2f));
 		}
 		if (event.getType() == BetterToolsModVillagerProfessions.JEWELLER.get()) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(BetterToolsModItems.RUBY.get(), 3),
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(BetterToolsModItems.RUBY.get(), 3),
 
-					new ItemStack(Items.EMERALD), 16, 10, 0.02f));
+					new ItemStack(Items.EMERALD), 16, 15, 0.02f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(BetterToolsModItems.SAPPHIRE.get(), 2),
 
 					new ItemStack(Items.EMERALD), 16, 15, 0.02f));
@@ -78,6 +78,7 @@ public class BetterToolsModTrades {
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.END_CRYSTAL, 4), new ItemStack(Items.EMERALD, 40), new ItemStack(BetterToolsModItems.REFLECT_CHARM.get()), 2, 50, 0.01f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.AMETHYST_CLUSTER, 10), new ItemStack(Items.EMERALD, 40), new ItemStack(BetterToolsModItems.EARTH_CIRCLET.get()), 2, 50, 0.01f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(BetterToolsModBlocks.BLUE_SLIME_BLOCK.get(), 6), new ItemStack(Items.EMERALD, 12), new ItemStack(BetterToolsModItems.BOUNCY_BRACELET.get()), 3, 30, 0.01f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.EMERALD, 30), new ItemStack(BetterToolsModItems.CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE.get()), 5, 10, 0f));
 		}
 	}
 }

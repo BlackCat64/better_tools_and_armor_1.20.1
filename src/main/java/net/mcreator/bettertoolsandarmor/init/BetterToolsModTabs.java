@@ -404,6 +404,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE.get());
 			})
 
 					.build());

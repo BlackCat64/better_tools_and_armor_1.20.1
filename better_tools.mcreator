@@ -30047,6 +30047,35 @@
         "files": []
       },
       "path": "~/Ender Titanium"
+    },
+    {
+      "name": "CrystalliteUpgradeSmithingTemplate",
+      "type": "item",
+      "sortid": 1752,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_upgrade_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_upgrade_smithing_template.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteUpgradeSmithingTemplateItem.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteUpgradeDupeRecipe",
+      "type": "recipe",
+      "sortid": 1753,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_upgrade_dupe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_upgrade_duplication.json"
+        ]
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -31037,6 +31066,7 @@
       "gui.better_tools.attributes_viewer.label_block_reach": "Block Reach",
       "block.better_tools.light_polished_coal_stairs": "Light Metallic Coal Stairs",
       "item.better_tools.crystallite_armor_amethyst_leggings": "Crystallite Leggings",
+      "item.better_tools.crystallite_upgrade_smithing_template": "Smithing Template",
       "block.better_tools.four_leaf_clover": "Four Leaf Clover",
       "advancements.progression_section.descr": "Advancements to do with progression",
       "advancements.blackstone_rabbit_adv.title": "Resistant Rabbit",

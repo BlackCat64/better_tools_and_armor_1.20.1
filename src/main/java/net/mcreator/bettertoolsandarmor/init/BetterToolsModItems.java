@@ -151,6 +151,7 @@ import net.mcreator.bettertoolsandarmor.item.DiamondBlackstoneLegsItem;
 import net.mcreator.bettertoolsandarmor.item.DiamondAppleItem;
 import net.mcreator.bettertoolsandarmor.item.DescensionPotionItem;
 import net.mcreator.bettertoolsandarmor.item.CuringCharmItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteUpgradeSmithingTemplateItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteSwordTopazItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteSwordSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteSwordSculkItem;
@@ -769,6 +770,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> RECALL_POTION = REGISTRY.register("recall_potion", () -> new RecallPotionItem());
 	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
 	public static final RegistryObject<Item> ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_titanium_upgrade_smithing_template", () -> new EnderTitaniumUpgradeSmithingTemplateItem());
+	public static final RegistryObject<Item> CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("crystallite_upgrade_smithing_template", () -> new CrystalliteUpgradeSmithingTemplateItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
