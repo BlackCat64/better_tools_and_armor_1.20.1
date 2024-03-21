@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:NatureCrystal"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystalliteArmorEmerald.helmet"
     },

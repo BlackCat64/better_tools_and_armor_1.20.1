@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:GildedCrystal"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystalliteArmorGold.helmet"
     },

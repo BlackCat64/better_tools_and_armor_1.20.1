@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:ElectricCore"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystalliteArmorTopaz.boots"
     },

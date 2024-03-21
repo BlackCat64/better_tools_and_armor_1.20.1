@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:GuardianCrystal"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystallitePickaxePrismarine"
     },

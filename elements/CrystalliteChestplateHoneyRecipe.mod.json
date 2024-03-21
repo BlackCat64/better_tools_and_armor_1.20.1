@@ -17,7 +17,7 @@
       "value": "CUSTOM:HiveCrystal"
     },
     "smithingInputTemplateStack": {
-      "value": ""
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
     },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystalliteArmorHoney.body"

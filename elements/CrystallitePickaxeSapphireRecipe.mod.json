@@ -16,6 +16,9 @@
     "smithingInputAdditionStack": {
       "value": "CUSTOM:IceCore"
     },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
     "smithingReturnStack": {
       "value": "CUSTOM:CrystallitePickaxeSapphire"
     },

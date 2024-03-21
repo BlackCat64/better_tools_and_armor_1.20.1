@@ -1,6 +1,8 @@
 {
   "type": "minecraft:smithing_transform",
-  "template": [],
+  "template": {
+    "item": "better_tools:crystallite_upgrade_smithing_template"
+  },
   "base": {
     "tag": "better_tools:crystallite_leggings"
   },
