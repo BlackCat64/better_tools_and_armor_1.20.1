@@ -25,10 +25,11 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.MIXED_ESSENCE.get());
 				tabData.accept(BetterToolsModItems.OBSIDIAN_STICK.get());
 				tabData.accept(BetterToolsModBlocks.BLACKSTONE_MAGMA.get().asItem());
+				tabData.accept(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get().asItem());
+				tabData.accept(BetterToolsModItems.GUARDIAN_SPIKE.get());
 				tabData.accept(BetterToolsModBlocks.PURPLE_MUSHROOM.get().asItem());
 				tabData.accept(BetterToolsModBlocks.PURPLE_MUSHROOM_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModItems.PURPLE_MOOSHROOM_SPAWN_EGG.get());
-				tabData.accept(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get().asItem());
 				tabData.accept(BetterToolsModItems.BLUE_SLIMEBALL.get());
 				tabData.accept(BetterToolsModBlocks.BLUE_SLIME_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModItems.BLUE_SLIME_STICK.get());
@@ -42,18 +43,17 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.RICK_ROLL_DISC.get());
 				tabData.accept(BetterToolsModItems.AMOGUS.get());
 				tabData.accept(BetterToolsModItems.MOGUS_DRIP_DISC.get());
-				tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_APPLE.get());
-				tabData.accept(BetterToolsModItems.EXPERIENCE_POTION.get());
-				tabData.accept(BetterToolsModItems.BERRY_PIE.get());
 				tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
-				tabData.accept(BetterToolsModItems.GUARDIAN_SPIKE.get());
+				tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
+				tabData.accept(BetterToolsModItems.BERRY_PIE.get());
 				tabData.accept(BetterToolsModItems.APPLE_JUICE.get());
 				tabData.accept(BetterToolsModItems.BERRY_SMOOTHIE.get());
+				tabData.accept(BetterToolsModItems.EXPERIENCE_POTION.get());
 				tabData.accept(BetterToolsModItems.ASCENSION_POTION.get());
 				tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
 				tabData.accept(BetterToolsModItems.RECALL_POTION.get());
 				tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_APPLE.get());
 			})
 
 					.build());

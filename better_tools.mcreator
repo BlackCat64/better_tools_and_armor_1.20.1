@@ -138,7 +138,7 @@
     {
       "name": "MasterBuilder",
       "type": "musicdisc",
-      "sortid": 250,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "master_builder",
@@ -153,7 +153,7 @@
     {
       "name": "ShrunkMusic",
       "type": "musicdisc",
-      "sortid": 251,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shrunk_music",
@@ -168,7 +168,7 @@
     {
       "name": "BlockDance",
       "type": "musicdisc",
-      "sortid": 252,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_dance",
@@ -244,7 +244,7 @@
     {
       "name": "Glide",
       "type": "musicdisc",
-      "sortid": 253,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glide",
@@ -2888,7 +2888,7 @@
     {
       "name": "Amogus",
       "type": "item",
-      "sortid": 255,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus",
@@ -2917,7 +2917,7 @@
     {
       "name": "MogusDripDisc",
       "type": "musicdisc",
-      "sortid": 256,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mogus_drip_disc",
@@ -3441,7 +3441,7 @@
     {
       "name": "BlueSlimeball",
       "type": "item",
-      "sortid": 244,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_slimeball",
@@ -3456,7 +3456,7 @@
     {
       "name": "BlueSlimeBlock",
       "type": "block",
-      "sortid": 245,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_slime_block",
@@ -3535,7 +3535,7 @@
     {
       "name": "BlueMushroom",
       "type": "plant",
-      "sortid": 247,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_mushroom",
@@ -3555,7 +3555,7 @@
     {
       "name": "BlueMushroomBlock",
       "type": "block",
-      "sortid": 248,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_mushroom_block",
@@ -3762,7 +3762,7 @@
     {
       "name": "PurpleMushroom",
       "type": "plant",
-      "sortid": 240,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_mushroom",
@@ -3806,7 +3806,7 @@
     {
       "name": "PurpleMushroomBlock",
       "type": "block",
-      "sortid": 241,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_mushroom_block",
@@ -4067,7 +4067,7 @@
     {
       "name": "RickRollDisc",
       "type": "musicdisc",
-      "sortid": 254,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rick_roll_disc",
@@ -5330,7 +5330,7 @@
     {
       "name": "FourLeafClover",
       "type": "plant",
-      "sortid": 243,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "four_leaf_clover",
@@ -5522,7 +5522,7 @@
     {
       "name": "MusicDiscBlank",
       "type": "item",
-      "sortid": 249,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_blank",
@@ -10699,7 +10699,7 @@
     {
       "name": "GoldenPotato",
       "type": "item",
-      "sortid": 257,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "golden_potato",
@@ -10714,7 +10714,7 @@
     {
       "name": "DiamondApple",
       "type": "item",
-      "sortid": 258,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_apple",
@@ -10729,7 +10729,7 @@
     {
       "name": "ExperiencePotion",
       "type": "item",
-      "sortid": 259,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "experience_potion",
@@ -10759,7 +10759,7 @@
     {
       "name": "SugarClump",
       "type": "item",
-      "sortid": 261,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sugar_clump",
@@ -10835,7 +10835,7 @@
     {
       "name": "BlueSlimeStick",
       "type": "item",
-      "sortid": 246,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_slime_stick",
@@ -11374,7 +11374,7 @@
     {
       "name": "PurpleMooshroom",
       "type": "livingentity",
-      "sortid": 242,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_mooshroom",
@@ -22501,7 +22501,7 @@
     {
       "name": "GuardianSpike",
       "type": "item",
-      "sortid": 262,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "guardian_spike",
@@ -22766,7 +22766,7 @@
     {
       "name": "AppleJuice",
       "type": "item",
-      "sortid": 263,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_juice",
@@ -22795,7 +22795,7 @@
     {
       "name": "BerrySmoothie",
       "type": "item",
-      "sortid": 264,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berry_smoothie",
@@ -27972,7 +27972,7 @@
     {
       "name": "AscensionPotion",
       "type": "item",
-      "sortid": 265,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ascension_potion",
@@ -28001,7 +28001,7 @@
     {
       "name": "DescensionPotion",
       "type": "item",
-      "sortid": 266,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "descension_potion",
@@ -29052,7 +29052,7 @@
     {
       "name": "RecallPotion",
       "type": "item",
-      "sortid": 267,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "recall_potion",
@@ -29081,7 +29081,7 @@
     {
       "name": "LostSoulsPotion",
       "type": "item",
-      "sortid": 268,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lost_souls_potion",

@@ -162,9 +162,9 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> RANDOM_ORE = REGISTRY.register("random_ore", () -> new RandomOreBlock());
 	public static final RegistryObject<Block> DEEPSLATE_RANDOM_ORE = REGISTRY.register("deepslate_random_ore", () -> new DeepslateRandomOreBlock());
 	public static final RegistryObject<Block> BLACKSTONE_MAGMA = REGISTRY.register("blackstone_magma", () -> new BlackstoneMagmaBlock());
+	public static final RegistryObject<Block> FOUR_LEAF_CLOVER = REGISTRY.register("four_leaf_clover", () -> new FourLeafCloverBlock());
 	public static final RegistryObject<Block> PURPLE_MUSHROOM = REGISTRY.register("purple_mushroom", () -> new PurpleMushroomBlock());
 	public static final RegistryObject<Block> PURPLE_MUSHROOM_BLOCK = REGISTRY.register("purple_mushroom_block", () -> new PurpleMushroomBlockBlock());
-	public static final RegistryObject<Block> FOUR_LEAF_CLOVER = REGISTRY.register("four_leaf_clover", () -> new FourLeafCloverBlock());
 	public static final RegistryObject<Block> BLUE_SLIME_BLOCK = REGISTRY.register("blue_slime_block", () -> new BlueSlimeBlockBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM = REGISTRY.register("blue_mushroom", () -> new BlueMushroomBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM_BLOCK = REGISTRY.register("blue_mushroom_block", () -> new BlueMushroomBlockBlock());
