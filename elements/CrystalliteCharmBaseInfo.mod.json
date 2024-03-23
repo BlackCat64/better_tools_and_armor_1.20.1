@@ -8,10 +8,12 @@
       }
     ],
     "information": [
-      "Used to craft or smith Crystallite Charms.",
+      "Used to craft Crystallite Charms.",
       "Can be found rarely in Dungeon and Mineshaft chests.",
       "Use Crystallite Shards to duplicate.",
-      "Can also be duplicated without using Crystallite, through trading with a Jeweller villager."
+      "Can also be duplicated without using Crystallite, through trading with a Jeweller villager.",
+      "Spawns with a 1% chance in chests in these structures:",
+      "Desert Temples, Jungle Temples, Woodland Mansions, Shipwrecks and Bastions."
     ]
   }
 }
