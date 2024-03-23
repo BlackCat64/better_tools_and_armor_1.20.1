@@ -3,21 +3,17 @@
   "group": "jewellery_table",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bcb",
-    " d "
+    "aba",
+    " c "
   ],
   "key": {
     "a": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "b": {
       "item": "minecraft:diamond"
     },
-    "c": {
+    "b": {
       "item": "minecraft:gold_ingot"
     },
-    "d": {
+    "c": {
       "item": "minecraft:smithing_table"
     }
   },
