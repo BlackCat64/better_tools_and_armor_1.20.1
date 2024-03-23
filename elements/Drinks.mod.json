@@ -27,6 +27,21 @@
       },
       {
         "value": "Items.POTIONITEM"
+      },
+      {
+        "value": "CUSTOM:ExperiencePotion"
+      },
+      {
+        "value": "CUSTOM:AscensionPotion"
+      },
+      {
+        "value": "CUSTOM:DescensionPotion"
+      },
+      {
+        "value": "CUSTOM:RecallPotion"
+      },
+      {
+        "value": "CUSTOM:LostSoulsPotion"
       }
     ],
     "blocks": [],

@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 30,
-    "achievementType": "goal",
+    "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:AimbotAdv"
     },
