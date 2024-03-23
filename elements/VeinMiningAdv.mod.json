@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Vein Miner",
-    "achievementDescription": "Mine 16 ore blocks at once",
+    "achievementDescription": "Mine 10 ore blocks at once",
     "achievementIcon": {
       "value": "CUSTOM:CrystallitePickaxeSculk"
     },

@@ -103,7 +103,7 @@ public class CrystallitePickaxeSculkProcedureProcedure {
 						});
 					}
 				}
-				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe >= 16) {
+				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).blocks_broken_with_sculk_crystallite_pickaxe >= 10) {
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:vein_mining_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
