@@ -154,9 +154,6 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> SAPPHIRE_BLOCK = REGISTRY.register("sapphire_block", () -> new SapphireBlockBlock());
 	public static final RegistryObject<Block> TOPAZ_ORE = REGISTRY.register("topaz_ore", () -> new TopazOreBlock());
 	public static final RegistryObject<Block> TOPAZ_BLOCK = REGISTRY.register("topaz_block", () -> new TopazBlockBlock());
-	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
-	public static final RegistryObject<Block> CRYSTALLITE_BLOCK = REGISTRY.register("crystallite_block", () -> new CrystalliteBlockBlock());
-	public static final RegistryObject<Block> CUT_CRYSTALLITE_BLOCK = REGISTRY.register("cut_crystallite_block", () -> new CutCrystalliteBlockBlock());
 	public static final RegistryObject<Block> SUGAR_BLOCK = REGISTRY.register("sugar_block", () -> new SugarBlockBlock());
 	public static final RegistryObject<Block> FLINT_BLOCK = REGISTRY.register("flint_block", () -> new FlintBlockBlock());
 	public static final RegistryObject<Block> RANDOM_ORE = REGISTRY.register("random_ore", () -> new RandomOreBlock());
@@ -165,9 +162,12 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> FOUR_LEAF_CLOVER = REGISTRY.register("four_leaf_clover", () -> new FourLeafCloverBlock());
 	public static final RegistryObject<Block> PURPLE_MUSHROOM = REGISTRY.register("purple_mushroom", () -> new PurpleMushroomBlock());
 	public static final RegistryObject<Block> PURPLE_MUSHROOM_BLOCK = REGISTRY.register("purple_mushroom_block", () -> new PurpleMushroomBlockBlock());
-	public static final RegistryObject<Block> BLUE_SLIME_BLOCK = REGISTRY.register("blue_slime_block", () -> new BlueSlimeBlockBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM = REGISTRY.register("blue_mushroom", () -> new BlueMushroomBlock());
 	public static final RegistryObject<Block> BLUE_MUSHROOM_BLOCK = REGISTRY.register("blue_mushroom_block", () -> new BlueMushroomBlockBlock());
+	public static final RegistryObject<Block> BLUE_SLIME_BLOCK = REGISTRY.register("blue_slime_block", () -> new BlueSlimeBlockBlock());
+	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
+	public static final RegistryObject<Block> CRYSTALLITE_BLOCK = REGISTRY.register("crystallite_block", () -> new CrystalliteBlockBlock());
+	public static final RegistryObject<Block> CUT_CRYSTALLITE_BLOCK = REGISTRY.register("cut_crystallite_block", () -> new CutCrystalliteBlockBlock());
 	public static final RegistryObject<Block> CHARGED_ICE_ON = REGISTRY.register("charged_ice_on", () -> new ChargedIceOnBlock());
 	public static final RegistryObject<Block> DARK_POLISHED_COAL_BLOCK = REGISTRY.register("dark_polished_coal_block", () -> new DarkPolishedCoalBlockBlock());
 	public static final RegistryObject<Block> DARK_POLISHED_COAL_SLAB = REGISTRY.register("dark_polished_coal_slab", () -> new DarkPolishedCoalSlabBlock());

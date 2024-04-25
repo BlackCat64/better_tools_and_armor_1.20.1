@@ -10,7 +10,7 @@
     "name": "Lightning Staff",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
     },
     "stackSize": 1,
     "enchantability": 0,

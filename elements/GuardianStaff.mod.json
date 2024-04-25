@@ -10,7 +10,7 @@
     "name": "Guardian Staff",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmorTab"
+      "value": "CUSTOM:BetterToolsAndArmorMisc"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -44,7 +44,7 @@
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
-      "value": "CUSTOM:GuardianStaffProjectile"
+      "value": "CUSTOM:ElectricStaffProjectile"
     },
     "onRangedItemUsed": {
       "name": "GuardianStaffWaterPulse"
