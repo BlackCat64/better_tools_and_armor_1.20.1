@@ -35,14 +35,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.BLUE_SLIME_STICK.get());
 				tabData.accept(BetterToolsModBlocks.BLUE_MUSHROOM.get().asItem());
 				tabData.accept(BetterToolsModBlocks.BLUE_MUSHROOM_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.MUSIC_DISC_BLANK.get());
-				tabData.accept(BetterToolsModItems.MASTER_BUILDER.get());
-				tabData.accept(BetterToolsModItems.SHRUNK_MUSIC.get());
-				tabData.accept(BetterToolsModItems.BLOCK_DANCE.get());
-				tabData.accept(BetterToolsModItems.GLIDE.get());
-				tabData.accept(BetterToolsModItems.RICK_ROLL_DISC.get());
 				tabData.accept(BetterToolsModItems.AMOGUS.get());
-				tabData.accept(BetterToolsModItems.MOGUS_DRIP_DISC.get());
 				tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 				tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
 				tabData.accept(BetterToolsModItems.BERRY_PIE.get());

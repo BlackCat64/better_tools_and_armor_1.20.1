@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "better_tools:item/music_disc_blank"
-  }
-}

@@ -25,13 +25,19 @@ public class DescensionPotionProcedureProcedure {
 		if (entity == null)
 			return;
 		double y_iterator = 0;
+		double min_world_height = 0;
+		if ((entity.level().dimension()) == Level.OVERWORLD) {
+			min_world_height = -64;
+		} else {
+			min_world_height = 0;
+		}
 		if (entity.onGround()) {
 			y_iterator = y - 3;
 			while (!(!world.getBlockState(BlockPos.containing(x, y_iterator, z)).canOcclude() && !world.getBlockState(BlockPos.containing(x, y_iterator + 1, z)).canOcclude()
-					&& world.getBlockState(BlockPos.containing(x, y_iterator + 2, z)).canOcclude()) && y_iterator >= -64) {
+					&& world.getBlockState(BlockPos.containing(x, y_iterator + 2, z)).canOcclude()) && y_iterator >= min_world_height) {
 				y_iterator = y_iterator - 1;
 			}
-			if (y_iterator >= -64) {
+			if (y_iterator >= min_world_height) {
 				{
 					Entity _ent = entity;
 					_ent.teleportTo(x, y_iterator, z);
