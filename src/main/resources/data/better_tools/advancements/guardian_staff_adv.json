@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "guardian_staff_adv": {
+    "guardian_staff_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

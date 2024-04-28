@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_cave_adv": {
+    "crystallite_cave_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -116,6 +116,7 @@
           "src/main/resources/assets/better_tools/models/item/nether_diamond_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/NetherDiamondBlockBlock.java",
           "src/main/resources/assets/better_tools/blockstates/nether_diamond_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/block/nether_diamond_block.json"
         ]
       },
@@ -740,6 +741,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/sugar_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/sugar_block.json",
           "src/main/resources/assets/better_tools/blockstates/sugar_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/SugarBlockBlock.java",
           "src/main/resources/assets/better_tools/models/item/sugar_block.json"
@@ -1243,6 +1245,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/blockstates/ruby_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/ruby_block.json",
           "src/main/resources/assets/better_tools/models/item/ruby_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/RubyBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/ruby_block.json"
@@ -2837,8 +2840,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/AmogusItem.java",
           "src/main/resources/assets/better_tools/models/item/amogus.json"
         ]
-      },
-      "path": "~/Music Discs"
+      }
     },
     {
       "name": "AmogusRecipe",
@@ -2851,8 +2853,7 @@
         "files": [
           "src/main/resources/data/better_tools/recipes/amogus_recipe.json"
         ]
-      },
-      "path": "~/Music Discs"
+      }
     },
     {
       "name": "EndTitaniumOre",
@@ -2866,6 +2867,7 @@
           "src/main/resources/assets/better_tools/blockstates/end_titanium_ore.json",
           "src/main/resources/assets/better_tools/models/block/end_titanium_ore.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/EndTitaniumOreBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/end_titanium_ore.json",
           "src/main/resources/assets/better_tools/models/item/end_titanium_ore.json"
         ]
       },
@@ -3093,6 +3095,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/EndTitaniumBlockBlock.java",
           "src/main/resources/assets/better_tools/models/item/end_titanium_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/end_titanium_block.json",
           "src/main/resources/assets/better_tools/blockstates/end_titanium_block.json",
           "src/main/resources/assets/better_tools/models/block/end_titanium_block.json"
         ]
@@ -3373,6 +3376,7 @@
       "registry_name": "blue_slime_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/blue_slime_block.json",
           "src/main/resources/assets/better_tools/blockstates/blue_slime_block.json",
           "src/main/resources/assets/better_tools/models/block/blue_slime_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/BlueSlimeBlockBlock.java",
@@ -3457,6 +3461,7 @@
           "src/main/resources/assets/better_tools/models/item/blue_mushroom.json",
           "src/main/resources/assets/better_tools/models/block/blue_mushroom.json",
           "src/main/resources/data/better_tools/worldgen/placed_feature/blue_mushroom.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/blue_mushroom.json",
           "src/main/resources/data/better_tools/worldgen/configured_feature/blue_mushroom.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/BlueMushroomBlock.java"
         ]
@@ -3665,6 +3670,10 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3683,6 +3692,7 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/purple_mushroom.json",
           "src/main/resources/data/better_tools/worldgen/configured_feature/purple_mushroom.json",
           "src/main/resources/assets/better_tools/models/block/purple_mushroom.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/purple_mushroom.json",
           "src/main/resources/data/better_tools/forge/biome_modifier/purple_mushroom_biome_modifier.json",
           "src/main/resources/assets/better_tools/models/item/purple_mushroom.json",
           "src/main/resources/assets/better_tools/blockstates/purple_mushroom.json"
@@ -3785,6 +3795,7 @@
       "registry_name": "blackstone_magma",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/blackstone_magma.json",
           "src/main/resources/assets/better_tools/blockstates/blackstone_magma.json",
           "src/main/resources/assets/better_tools/models/block/blackstone_magma.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/BlackstoneMagmaBlock.java",
@@ -3956,6 +3967,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/ChargedIceOnBlock.java",
           "src/main/resources/assets/better_tools/blockstates/charged_ice_on.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/charged_ice_on.json",
           "src/main/resources/assets/better_tools/models/block/charged_ice_on.json",
           "src/main/resources/assets/better_tools/models/item/charged_ice_on.json"
         ]
@@ -4018,6 +4030,7 @@
           "src/main/resources/data/better_tools/worldgen/configured_feature/sapphire_ore.json",
           "src/main/resources/data/better_tools/worldgen/placed_feature/sapphire_ore.json",
           "src/main/resources/assets/better_tools/models/item/sapphire_ore.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/sapphire_ore.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/SapphireOreBlock.java",
           "src/main/resources/assets/better_tools/blockstates/sapphire_ore.json"
         ]
@@ -4036,6 +4049,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/SapphireBlockBlock.java",
           "src/main/resources/assets/better_tools/blockstates/sapphire_block.json",
           "src/main/resources/assets/better_tools/models/block/sapphire_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/sapphire_block.json",
           "src/main/resources/assets/better_tools/models/item/sapphire_block.json"
         ]
       },
@@ -4216,6 +4230,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/TopazBlockBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/topaz_block.json",
           "src/main/resources/assets/better_tools/blockstates/topaz_block.json",
           "src/main/resources/assets/better_tools/models/item/topaz_block.json",
           "src/main/resources/assets/better_tools/models/block/topaz_block.json"
@@ -5232,6 +5247,7 @@
       "registry_name": "four_leaf_clover",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/four_leaf_clover.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/FourLeafCloverBlock.java",
           "src/main/resources/assets/better_tools/models/item/four_leaf_clover.json",
           "src/main/resources/assets/better_tools/models/block/four_leaf_clover.json",
@@ -5534,32 +5550,6 @@
         ]
       },
       "path": "~/Nether Diamond"
-    },
-    {
-      "name": "BeaconBaseBlocks",
-      "type": "tag",
-      "sortid": 624,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beacon_base_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
-        ]
-      }
-    },
-    {
-      "name": "BeaconPaymentItems",
-      "type": "tag",
-      "sortid": 625,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beacon_payment_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/beacon_payment_items.json"
-        ]
-      }
     },
     {
       "name": "EndTitaniumSwordSmith",
@@ -6824,7 +6814,8 @@
           "src/main/resources/assets/better_tools/models/item/cut_crystallite_block.json",
           "src/main/resources/assets/better_tools/models/block/cut_crystallite_block.json",
           "src/main/resources/assets/better_tools/blockstates/cut_crystallite_block.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/CutCrystalliteBlockBlock.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/CutCrystalliteBlockBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/cut_crystallite_block.json"
         ]
       },
       "path": "~/Crystallite"
@@ -7355,146 +7346,6 @@
       "path": "~/Crystallite/Iron"
     },
     {
-      "name": "CrystalliteSwords",
-      "type": "tag",
-      "sortid": 711,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_swords",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_swords.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystallitePickaxes",
-      "type": "tag",
-      "sortid": 712,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_pickaxes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_pickaxes.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteAxes",
-      "type": "tag",
-      "sortid": 713,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_axes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_axes.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteShovels",
-      "type": "tag",
-      "sortid": 714,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_shovels",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_shovels.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteHoes",
-      "type": "tag",
-      "sortid": 715,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_hoes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_hoes.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteDaggers",
-      "type": "tag",
-      "sortid": 716,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_daggers",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_daggers.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteHelmets",
-      "type": "tag",
-      "sortid": 717,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_helmets",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_helmets.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteChestplates",
-      "type": "tag",
-      "sortid": 718,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_chestplates",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_chestplates.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteLeggings",
-      "type": "tag",
-      "sortid": 719,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_leggings",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_leggings.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteBoots",
-      "type": "tag",
-      "sortid": 720,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_boots",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/crystallite_boots.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
       "name": "CrystalliteSwordGold",
       "type": "tool",
       "sortid": 157,
@@ -7762,20 +7613,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipes/crystallite_boots_gold_recipe.json"
-        ]
-      },
-      "path": "~/Crystallite/Gold"
-    },
-    {
-      "name": "IncreasedReachTools",
-      "type": "tag",
-      "sortid": 732,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_reach_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/increased_reach_tools.json"
         ]
       },
       "path": "~/Crystallite/Gold"
@@ -10406,20 +10243,6 @@
       "path": "~/Ender Titanium"
     },
     {
-      "name": "PurpurBlocks",
-      "type": "tag",
-      "sortid": 836,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purpur_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/purpur_blocks.json"
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
       "name": "EndTitaniumHoeProcedure",
       "type": "procedure",
       "sortid": 837,
@@ -10827,34 +10650,6 @@
         ]
       },
       "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "UpgradedCrystalliteTools",
-      "type": "tag",
-      "sortid": 855,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upgraded_crystallite_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/upgraded_crystallite_tools.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "UpgradedCrystalliteArmor",
-      "type": "tag",
-      "sortid": 856,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "upgraded_crystallite_armor",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/upgraded_crystallite_armor.json"
-        ]
-      },
-      "path": "~/Crystallite"
     },
     {
       "name": "CrystalliteToolUpgradeAdvProcedure",
@@ -11479,356 +11274,6 @@
       "path": "~/Crystallite/Netherite"
     },
     {
-      "name": "ForgeOres",
-      "type": "tag",
-      "sortid": 882,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ores.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresStone",
-      "type": "tag",
-      "sortid": 883,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_stone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ores_in_ground/stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresDeepslate",
-      "type": "tag",
-      "sortid": 884,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_deepslate",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ores_in_ground/deepslate.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeStorageBlocks",
-      "type": "tag",
-      "sortid": 885,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_storage_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/storage_blocks.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeGems",
-      "type": "tag",
-      "sortid": 886,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_gems",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/gems.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeIngots",
-      "type": "tag",
-      "sortid": 887,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ingots",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ingots.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeMushrooms",
-      "type": "tag",
-      "sortid": 888,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_mushrooms",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/mushrooms.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresBlackstone",
-      "type": "tag",
-      "sortid": 889,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_blackstone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ores_in_ground/blackstone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeDenseOres",
-      "type": "tag",
-      "sortid": 890,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_dense_ores",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ore_rates/dense.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeSingularOres",
-      "type": "tag",
-      "sortid": 891,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_singular_ores",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ore_rates/singular.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresItem",
-      "type": "tag",
-      "sortid": 892,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ores.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresStoneItem",
-      "type": "tag",
-      "sortid": 893,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_stone_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ores_in_ground/stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresDeepslateItem",
-      "type": "tag",
-      "sortid": 894,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_deepslate_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ores_in_ground/deepslate.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOreGroundBlackstone",
-      "type": "tag",
-      "sortid": 895,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ore_ground_blackstone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ore_bearing_ground/blackstone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOreGroundBlackstoneItem",
-      "type": "tag",
-      "sortid": 896,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ore_ground_blackstone_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ore_bearing_ground/blackstone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeStorageBlocksItem",
-      "type": "tag",
-      "sortid": 897,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_storage_blocks_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/storage_blocks.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeDenseOresItem",
-      "type": "tag",
-      "sortid": 898,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_dense_ores_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ore_rates/dense.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeSingularOresItem",
-      "type": "tag",
-      "sortid": 899,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_singular_ores_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ore_rates/singular.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresBlackstoneItem",
-      "type": "tag",
-      "sortid": 900,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_blackstone_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ores_in_ground/blackstone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOreGroundEndStone",
-      "type": "tag",
-      "sortid": 901,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ore_ground_end_stone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ore_bearing_ground/end_stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOreGroundEndStoneItem",
-      "type": "tag",
-      "sortid": 902,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ore_ground_end_stone_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ore_bearing_ground/end_stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresEndStone",
-      "type": "tag",
-      "sortid": 903,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_end_stone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/ores_in_ground/end_stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeOresEndStoneItem",
-      "type": "tag",
-      "sortid": 904,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_ores_end_stone_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/ores_in_ground/end_stone.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeRods",
-      "type": "tag",
-      "sortid": 905,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_rods",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/rods.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeSlimeballs",
-      "type": "tag",
-      "sortid": 906,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_slimeballs",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/slimeballs.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "CrystallitePickaxeTopazDoubleDrops",
       "type": "procedure",
       "sortid": 907,
@@ -11931,19 +11376,6 @@
         ]
       },
       "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "BeaconBaseBlocksItem",
-      "type": "tag",
-      "sortid": 910,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beacon_base_blocks_item",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/beacon_base_blocks.json"
-        ]
-      }
     },
     {
       "name": "FloatKey",
@@ -12288,34 +11720,6 @@
       "path": "~/Treehouses"
     },
     {
-      "name": "CrimsonPlanks",
-      "type": "tag",
-      "sortid": 934,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crimson_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/crimson_planks.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
-    },
-    {
-      "name": "WarpedPlanks",
-      "type": "tag",
-      "sortid": 935,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warped_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/warped_planks.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
-    },
-    {
       "name": "StopItemsProcedure",
       "type": "procedure",
       "sortid": 936,
@@ -12445,6 +11849,7 @@
           "src/main/resources/assets/better_tools/models/item/flint_blockwood.json",
           "src/main/resources/assets/better_tools/blockstates/flint_blockwood.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/FlintBlockwoodBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/flint_blockwood.json",
           "src/main/resources/assets/better_tools/models/block/flint_blockwood.json"
         ]
       },
@@ -13156,20 +12561,6 @@
       }
     },
     {
-      "name": "ForgeKnives",
-      "type": "tag",
-      "sortid": 973,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_knives",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/knives.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "CloverBoneMealSuccess",
       "type": "procedure",
       "sortid": 974,
@@ -13243,6 +12634,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/dark_polished_coal_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_coal_block.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_coal_block.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCoalBlockBlock.java"
@@ -13274,6 +12666,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCoalSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_coal_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_slab.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_coal_slab.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_coal_slab.json",
@@ -13321,6 +12714,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_stairs_inner.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_coal_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCoalStairsBlock.java",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_coal_stairs.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_stairs_outer.json",
@@ -13369,6 +12763,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCoalBlockBlock.java",
           "src/main/resources/assets/better_tools/blockstates/light_polished_coal_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_coal_block.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_coal_block.json"
         ]
@@ -13417,7 +12812,8 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_slab_top.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_slab.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_coal_slab.json",
-          "src/main/resources/assets/better_tools/blockstates/light_polished_coal_slab.json"
+          "src/main/resources/assets/better_tools/blockstates/light_polished_coal_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_coal_slab.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Gray"
@@ -13462,6 +12858,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_stairs.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_coal_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_coal_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_coal_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_stairs_outer.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCoalStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_stairs_inner.json"
@@ -13509,7 +12906,8 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_iron_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedIronBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_block.json",
-          "src/main/resources/assets/better_tools/models/item/light_polished_iron_block.json"
+          "src/main/resources/assets/better_tools/models/item/light_polished_iron_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_iron_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/White"
@@ -13538,6 +12936,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/light_polished_iron_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_iron_slab.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_iron_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_slab_full.json",
@@ -13586,6 +12985,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/light_polished_iron_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_stairs_outer.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_iron_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedIronStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_stairs_inner.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_iron_stairs.json",
@@ -13634,7 +13034,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedIronBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_block.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_iron_block.json",
-          "src/main/resources/assets/better_tools/blockstates/dark_polished_iron_block.json"
+          "src/main/resources/assets/better_tools/blockstates/dark_polished_iron_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_iron_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Light Gray"
@@ -13666,6 +13067,7 @@
           "src/main/resources/assets/better_tools/blockstates/dark_polished_iron_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_slab_full.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_iron_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedIronSlabBlock.java",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_slab_top.json"
         ]
@@ -13712,6 +13114,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedIronStairsBlock.java",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_iron_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_iron_stairs.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_iron_stairs.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_stairs_outer.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_stairs_inner.json"
@@ -13756,6 +13159,7 @@
       "registry_name": "dark_polished_lapis_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_lapis_block.json",
@@ -13790,6 +13194,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_slab_full.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_slab_top.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedLapisSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_slab.json"
@@ -13839,7 +13244,8 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_stairs.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_stairs_outer.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedLapisStairsBlock.java",
-          "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_stairs.json"
+          "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_lapis_stairs.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Blue"
@@ -13883,6 +13289,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedLapisBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_block.json"
         ]
@@ -13929,6 +13336,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedLapisSlabBlock.java",
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_slab_full.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_slab_top.json"
@@ -13977,6 +13385,7 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_stairs.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedLapisStairsBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_stairs.json"
         ]
@@ -14022,6 +13431,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedDiamondBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_diamond_block.json",
           "src/main/resources/assets/better_tools/models/item/polished_diamond_block.json",
           "src/main/resources/assets/better_tools/blockstates/polished_diamond_block.json"
         ]
@@ -14054,6 +13464,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_diamond_slab_full.json",
           "src/main/resources/assets/better_tools/models/item/polished_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_diamond_slab.json",
           "src/main/resources/assets/better_tools/blockstates/polished_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_slab_top.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedDiamondSlabBlock.java"
@@ -14103,6 +13514,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_diamond_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/item/polished_diamond_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_diamond_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_stairs.json"
         ]
       },
@@ -14148,6 +13560,7 @@
           "src/main/resources/assets/better_tools/models/item/light_polished_emerald_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedEmeraldBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_emerald_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_emerald_block.json"
         ]
       },
@@ -14178,6 +13591,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedEmeraldSlabBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_slab_top.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_emerald_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_slab_full.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_emerald_slab.json",
@@ -14226,6 +13640,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_stairs_outer.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_emerald_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_emerald_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedEmeraldStairsBlock.java",
           "src/main/resources/assets/better_tools/models/item/light_polished_emerald_stairs.json"
@@ -14273,7 +13688,8 @@
           "src/main/resources/assets/better_tools/models/item/dark_polished_emerald_block.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedEmeraldBlockBlock.java",
-          "src/main/resources/assets/better_tools/blockstates/dark_polished_emerald_block.json"
+          "src/main/resources/assets/better_tools/blockstates/dark_polished_emerald_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_emerald_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Green"
@@ -14317,6 +13733,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/dark_polished_emerald_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedEmeraldSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_emerald_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_slab_top.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_emerald_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_slab_full.json",
@@ -14363,6 +13780,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_stairs_outer.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_emerald_stairs.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_emerald_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_emerald_stairs.json",
@@ -14412,7 +13830,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRedstoneBlockBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_redstone_block.json",
           "src/main/resources/assets/better_tools/blockstates/polished_redstone_block.json",
-          "src/main/resources/assets/better_tools/models/block/polished_redstone_block.json"
+          "src/main/resources/assets/better_tools/models/block/polished_redstone_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_redstone_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Red"
@@ -14441,6 +13860,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRedstoneSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_redstone_slab.json",
           "src/main/resources/assets/better_tools/blockstates/polished_redstone_slab.json",
           "src/main/resources/assets/better_tools/models/item/polished_redstone_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_redstone_slab_full.json",
@@ -14492,7 +13912,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRedstoneStairsBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_redstone_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_redstone_stairs.json",
-          "src/main/resources/assets/better_tools/models/block/polished_redstone_stairs_outer.json"
+          "src/main/resources/assets/better_tools/models/block/polished_redstone_stairs_outer.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_redstone_stairs.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Red"
@@ -14537,7 +13958,8 @@
           "src/main/resources/assets/better_tools/models/item/polished_ruby_block.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRubyBlockBlock.java",
-          "src/main/resources/assets/better_tools/blockstates/polished_ruby_block.json"
+          "src/main/resources/assets/better_tools/blockstates/polished_ruby_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_ruby_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Dark Red"
@@ -14568,6 +13990,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_ruby_slab_full.json",
           "src/main/resources/assets/better_tools/models/item/polished_ruby_slab.json",
           "src/main/resources/assets/better_tools/blockstates/polished_ruby_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_ruby_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_slab_top.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRubySlabBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_slab.json"
@@ -14612,6 +14035,7 @@
       "registry_name": "polished_ruby_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_ruby_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_stairs_outer.json",
           "src/main/resources/assets/better_tools/models/item/polished_ruby_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_ruby_stairs.json",
@@ -14660,6 +14084,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_copper_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_copper_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCopperBlockBlock.java",
           "src/main/resources/assets/better_tools/blockstates/light_polished_copper_block.json"
@@ -14693,6 +14118,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_slab_top.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCopperSlabBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_copper_slab.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_copper_slab.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_copper_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_slab_full.json"
@@ -14738,6 +14164,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCopperStairsBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_copper_stairs.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_copper_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_stairs_outer.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_stairs_inner.json",
@@ -14787,6 +14214,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_block.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_copper_block.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_copper_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_copper_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCopperBlockBlock.java"
         ]
       },
@@ -14820,6 +14248,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_slab_full.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_copper_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_copper_slab.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_slab_top.json"
         ]
       },
@@ -14862,6 +14291,7 @@
       "registry_name": "dark_polished_copper_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_copper_stairs.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCopperStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_stairs.json",
@@ -14909,6 +14339,7 @@
       "registry_name": "polished_topaz_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_topaz_block.json",
           "src/main/resources/assets/better_tools/models/block/polished_topaz_block.json",
           "src/main/resources/assets/better_tools/models/item/polished_topaz_block.json",
           "src/main/resources/assets/better_tools/blockstates/polished_topaz_block.json",
@@ -14943,6 +14374,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_topaz_slab_full.json",
           "src/main/resources/assets/better_tools/models/block/polished_topaz_slab_top.json",
           "src/main/resources/assets/better_tools/blockstates/polished_topaz_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_topaz_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedTopazSlabBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_topaz_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_topaz_slab.json"
@@ -14992,7 +14424,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedTopazStairsBlock.java",
           "src/main/resources/assets/better_tools/blockstates/polished_topaz_stairs.json",
           "src/main/resources/assets/better_tools/models/item/polished_topaz_stairs.json",
-          "src/main/resources/assets/better_tools/models/block/polished_topaz_stairs.json"
+          "src/main/resources/assets/better_tools/models/block/polished_topaz_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_topaz_stairs.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Orange"
@@ -15036,6 +14469,7 @@
         "files": [
           "src/main/resources/assets/better_tools/blockstates/polished_gold_block.json",
           "src/main/resources/assets/better_tools/models/item/polished_gold_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_gold_block.json",
           "src/main/resources/assets/better_tools/models/block/polished_gold_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedGoldBlockBlock.java"
         ]
@@ -15070,6 +14504,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_gold_slab_top.json",
           "src/main/resources/assets/better_tools/blockstates/polished_gold_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedGoldSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_gold_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_gold_slab.json"
         ]
       },
@@ -15117,6 +14552,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedGoldStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_gold_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/item/polished_gold_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_gold_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_gold_stairs.json"
         ]
       },
@@ -15159,6 +14595,7 @@
       "registry_name": "light_polished_gold_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_gold_block.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_gold_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_gold_block.json",
@@ -15191,6 +14628,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/light_polished_gold_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_gold_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_slab_full.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_gold_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_slab.json",
@@ -15241,6 +14679,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_stairs_outer.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_gold_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_gold_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_stairs_inner.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_gold_stairs.json"
         ]
@@ -15273,6 +14712,7 @@
           "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondBlockBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_block.json"
         ]
       },
@@ -15302,6 +14742,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab_full.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondSlabBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab_top.json",
@@ -15349,6 +14790,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondStairsBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs_inner.json",
@@ -15396,6 +14838,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondBlockBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_block.json"
@@ -15429,6 +14872,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_top.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_full.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_slab.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_slab.json"
@@ -15474,6 +14918,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs_inner.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs.json",
@@ -15537,7 +14982,8 @@
           "src/main/resources/assets/better_tools/models/item/polished_amethyst_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedAmethystBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_block.json",
-          "src/main/resources/assets/better_tools/blockstates/polished_amethyst_block.json"
+          "src/main/resources/assets/better_tools/blockstates/polished_amethyst_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_amethyst_block.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Purple"
@@ -15567,6 +15013,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/polished_amethyst_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_slab.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_amethyst_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedAmethystSlabBlock.java",
           "src/main/resources/assets/better_tools/blockstates/polished_amethyst_slab.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_slab_top.json",
@@ -15614,6 +15061,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedAmethystStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_stairs_outer.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/models/item/polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_amethyst_stairs.json",
@@ -15661,6 +15109,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedAmethystBlockBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_block.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_amethyst_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_amethyst_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_amethyst_block.json"
         ]
@@ -15704,6 +15153,7 @@
       "registry_name": "light_polished_amethyst_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_amethyst_slab.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedAmethystSlabBlock.java",
           "src/main/resources/assets/better_tools/blockstates/light_polished_amethyst_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_slab.json",
@@ -15754,6 +15204,7 @@
           "src/main/resources/assets/better_tools/models/item/light_polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_stairs.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_amethyst_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_stairs_inner.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_stairs_outer.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedAmethystStairsBlock.java"
@@ -15799,6 +15250,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_coal_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_coal_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_coal_trapdoor.json",
@@ -15850,6 +15302,7 @@
           "src/main/resources/assets/better_tools/models/item/light_polished_coal_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_coal_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_coal_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCoalTrapdoorBlock.java"
         ]
       },
@@ -15893,6 +15346,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/blockstates/dark_polished_iron_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_iron_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_trapdoor_open.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedIronTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/models/item/dark_polished_iron_trapdoor.json",
@@ -15941,6 +15395,7 @@
         "files": [
           "src/main/resources/assets/better_tools/blockstates/light_polished_iron_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_iron_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_iron_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_trapdoor_open.json",
@@ -15989,6 +15444,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_trapdoor_open.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_lapis_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedLapisTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_lapis_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_trapdoor.json"
@@ -16033,6 +15489,7 @@
       "registry_name": "light_polished_lapis_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_trapdoor_open.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_trapdoor.json",
@@ -16080,6 +15537,7 @@
       "registry_name": "polished_diamond_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_trapdoor_open.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_trapdoor_top.json",
@@ -16130,6 +15588,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedEmeraldTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_trapdoor_top.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_emerald_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_emerald_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_trapdoor_open.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_trapdoor.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_emerald_trapdoor.json"
@@ -16179,6 +15638,7 @@
           "src/main/resources/assets/better_tools/blockstates/dark_polished_emerald_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_trapdoor_open.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_emerald_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedEmeraldTrapdoorBlock.java"
         ]
       },
@@ -16226,6 +15686,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_redstone_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/block/polished_redstone_trapdoor_open.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRedstoneTrapdoorBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_redstone_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/polished_redstone_trapdoor.json"
         ]
       },
@@ -16273,6 +15734,7 @@
           "src/main/resources/assets/better_tools/blockstates/polished_ruby_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_trapdoor_open.json",
           "src/main/resources/assets/better_tools/models/item/polished_ruby_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_ruby_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_trapdoor_top.json"
         ]
       },
@@ -16319,6 +15781,7 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_copper_trapdoor.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_copper_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_trapdoor_open.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_copper_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCopperTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_trapdoor_top.json"
         ]
@@ -16362,6 +15825,7 @@
       "registry_name": "dark_polished_copper_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_copper_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_copper_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_copper_trapdoor.json",
@@ -16414,7 +15878,8 @@
           "src/main/resources/assets/better_tools/models/block/polished_topaz_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedTopazTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/blockstates/polished_topaz_trapdoor.json",
-          "src/main/resources/assets/better_tools/models/block/polished_topaz_trapdoor_open.json"
+          "src/main/resources/assets/better_tools/models/block/polished_topaz_trapdoor_open.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_topaz_trapdoor.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Orange"
@@ -16457,6 +15922,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedGoldTrapdoorBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_gold_trapdoor.json",
           "src/main/resources/assets/better_tools/blockstates/polished_gold_trapdoor.json",
           "src/main/resources/assets/better_tools/models/item/polished_gold_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_gold_trapdoor.json",
@@ -16503,6 +15969,7 @@
       "registry_name": "light_polished_gold_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_gold_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_trapdoor_top.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_trapdoor_open.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedGoldTrapdoorBlock.java",
@@ -16550,6 +16017,7 @@
       "registry_name": "polished_nether_diamond_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_open.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_top.json",
@@ -16597,6 +16065,7 @@
       "registry_name": "light_polished_nether_diamond_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor_top.json",
@@ -16646,6 +16115,7 @@
         "files": [
           "src/main/resources/assets/better_tools/blockstates/polished_amethyst_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_trapdoor_open.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_amethyst_trapdoor.json",
           "src/main/resources/assets/better_tools/models/item/polished_amethyst_trapdoor.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedAmethystTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_trapdoor.json",
@@ -16696,7 +16166,8 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_amethyst_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_trapdoor_open.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedAmethystTrapdoorBlock.java",
-          "src/main/resources/assets/better_tools/models/item/light_polished_amethyst_trapdoor.json"
+          "src/main/resources/assets/better_tools/models/item/light_polished_amethyst_trapdoor.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_amethyst_trapdoor.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
@@ -16744,7 +16215,8 @@
           "src/main/resources/assets/better_tools/blockstates/dark_polished_coal_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_wall_post.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_coal_wall_side_tall.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCoalWallBlock.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedCoalWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_coal_wall.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Black"
@@ -16788,6 +16260,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_wall_post.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_coal_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_coal_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_wall_side_tall.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedCoalWallBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_coal_wall_inventory.json",
@@ -16839,6 +16312,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_wall_inventory.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedIronWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_iron_wall.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_iron_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_iron_wall_side_tall.json"
         ]
@@ -16884,6 +16358,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_wall_post.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedIronWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_iron_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_iron_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_iron_wall.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_iron_wall.json",
@@ -16934,6 +16409,7 @@
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_wall_post.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/item/dark_polished_lapis_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_lapis_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_lapis_wall_inventory.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedLapisWallBlock.java",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_lapis_wall.json"
@@ -16978,6 +16454,7 @@
       "registry_name": "light_polished_lapis_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_wall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_wall.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_lapis_wall.json",
@@ -17031,6 +16508,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_diamond_wall_inventory.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/block/polished_diamond_wall_post.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_diamond_wall.json",
           "src/main/resources/assets/better_tools/blockstates/polished_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/item/polished_diamond_wall.json"
         ]
@@ -17080,6 +16558,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_wall.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedEmeraldWallBlock.java",
           "src/main/resources/assets/better_tools/blockstates/light_polished_emerald_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_emerald_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_emerald_wall_post.json"
         ]
       },
@@ -17123,6 +16602,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_emerald_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_emerald_wall_post.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/DarkPolishedEmeraldWallBlock.java",
@@ -17172,6 +16652,7 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/polished_redstone_wall.json",
           "src/main/resources/assets/better_tools/blockstates/polished_redstone_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_redstone_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_redstone_wall_post.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRedstoneWallBlock.java",
           "src/main/resources/assets/better_tools/models/block/polished_redstone_wall.json",
@@ -17222,6 +16703,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedRubyWallBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_ruby_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_wall_inventory.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_ruby_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_ruby_wall_side_tall.json",
           "src/main/resources/assets/better_tools/blockstates/polished_ruby_wall.json"
@@ -17267,6 +16749,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/blockstates/light_polished_copper_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_copper_wall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_copper_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_wall_inventory.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_copper_wall.json",
@@ -17314,6 +16797,7 @@
       "registry_name": "dark_polished_copper_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/dark_polished_copper_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_wall_side_tall.json",
           "src/main/resources/assets/better_tools/blockstates/dark_polished_copper_wall.json",
           "src/main/resources/assets/better_tools/models/block/dark_polished_copper_wall.json",
@@ -17366,6 +16850,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_topaz_wall_inventory.json",
           "src/main/resources/assets/better_tools/models/item/polished_topaz_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_topaz_wall.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_topaz_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_topaz_wall_post.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedTopazWallBlock.java",
           "src/main/resources/assets/better_tools/blockstates/polished_topaz_wall.json"
@@ -17416,6 +16901,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_gold_wall_inventory.json",
           "src/main/resources/assets/better_tools/models/block/polished_gold_wall_side_tall.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedGoldWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_gold_wall.json",
           "src/main/resources/assets/better_tools/models/item/polished_gold_wall.json"
         ]
       },
@@ -17462,6 +16948,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_wall_post.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedGoldWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_gold_wall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_gold_wall.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_gold_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_gold_wall.json"
@@ -17512,6 +16999,7 @@
           "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_wall.json"
         ]
       },
@@ -17554,6 +17042,7 @@
       "registry_name": "light_polished_nether_diamond_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_side_tall.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_wall.json",
@@ -17602,6 +17091,7 @@
       "registry_name": "polished_amethyst_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_amethyst_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_wall_side_tall.json",
           "src/main/resources/assets/better_tools/models/block/polished_amethyst_wall_inventory.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedAmethystWallBlock.java",
@@ -17656,6 +17146,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_wall_inventory.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_wall_side_tall.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedAmethystWallBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_amethyst_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_amethyst_wall_post.json"
         ]
       },
@@ -17688,118 +17179,6 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
-    },
-    {
-      "name": "WallsTag",
-      "type": "tag",
-      "sortid": 1160,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "walls_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/walls.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "WallsItemTag",
-      "type": "tag",
-      "sortid": 1161,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "walls_item_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/walls.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "SlabsBlockTag",
-      "type": "tag",
-      "sortid": 1162,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "slabs_block_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/slabs.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "SlabsItemTag",
-      "type": "tag",
-      "sortid": 1163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "slabs_item_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/slabs.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "StairsBlockTag",
-      "type": "tag",
-      "sortid": 1164,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stairs_block_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/stairs.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "StairsItemTag",
-      "type": "tag",
-      "sortid": 1165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stairs_item_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/stairs.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "TrapdoorsBlockTag",
-      "type": "tag",
-      "sortid": 1166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trapdoors_block_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/trapdoors.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "TrapdoorsItemTag",
-      "type": "tag",
-      "sortid": 1167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trapdoors_item_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/trapdoors.json"
-        ]
-      },
-      "path": "~/Tags"
     },
     {
       "name": "NatureCrystal",
@@ -18576,20 +17955,6 @@
       "path": "~/Crystallite/Emerald"
     },
     {
-      "name": "CanBeTurnedIntoGrass",
-      "type": "tag",
-      "sortid": 1196,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "can_be_turned_into_grass",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/can_be_turned_into_grass.json"
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
       "name": "CrystalliteHelmetEmeraldProcedure",
       "type": "procedure",
       "sortid": 1197,
@@ -19154,20 +18519,6 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
-    },
-    {
-      "name": "SculkBlocksBlockTag",
-      "type": "tag",
-      "sortid": 1215,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sculk_blocks_block_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/sculk_blocks.json"
-        ]
-      },
-      "path": "~/Tags"
     },
     {
       "name": "CrystalliteHelmetSculkProcedure",
@@ -19853,20 +19204,6 @@
       "path": "~/Consumables"
     },
     {
-      "name": "DaggersTag",
-      "type": "tag",
-      "sortid": 1243,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daggers_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/daggers.json"
-        ]
-      },
-      "path": "~/Daggers"
-    },
-    {
       "name": "IronGlassArmor",
       "type": "armor",
       "sortid": 393,
@@ -20393,48 +19730,6 @@
         ]
       },
       "path": "~/Effect Armor/Crying Obsidian Helmet"
-    },
-    {
-      "name": "GlassArmorTag",
-      "type": "tag",
-      "sortid": 1272,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glass_armor_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/base_glass_armor.json"
-        ]
-      },
-      "path": "~/Effect Armor/Glass Armor"
-    },
-    {
-      "name": "IronGlassArmorTag",
-      "type": "tag",
-      "sortid": 1273,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_glass_armor_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/iron_glass_armor.json"
-        ]
-      },
-      "path": "~/Effect Armor/Glass Armor"
-    },
-    {
-      "name": "DiamondGlassArmorTag",
-      "type": "tag",
-      "sortid": 1274,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_glass_armor_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/diamond_glass_armor.json"
-        ]
-      },
-      "path": "~/Effect Armor/Glass Armor"
     },
     {
       "name": "GlassArmorTooltip",
@@ -22126,20 +21421,6 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "AirAffinityTools",
-      "type": "tag",
-      "sortid": 1345,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_affinity_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/air_affinity_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "CriticalHitMultiplier",
       "type": "attribute",
       "sortid": 1346,
@@ -23161,20 +22442,6 @@
         ]
       },
       "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "MagicDamageTools",
-      "type": "tag",
-      "sortid": 1390,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_damage_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/magic_damage_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
     },
     {
       "name": "GuardianCrystal",
@@ -24384,34 +23651,6 @@
       "path": "~/Effect Armor/Cactus Shirt"
     },
     {
-      "name": "FreezingSapphireTools",
-      "type": "tag",
-      "sortid": 1439,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freezing_sapphire_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/freezing_tools.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "FreezingSapphireArmor",
-      "type": "tag",
-      "sortid": 1440,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freezing_sapphire_armor",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/freezing_armor.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "BlocksTab",
       "type": "tab",
       "sortid": 1441,
@@ -24435,20 +23674,6 @@
         ]
       },
       "path": "~/Crystallite"
-    },
-    {
-      "name": "Drinks",
-      "type": "tag",
-      "sortid": 1443,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drinks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/drinks.json"
-        ]
-      },
-      "path": "~/Crystallite/Sky"
     },
     {
       "name": "AttributesViewer",
@@ -26864,20 +26089,6 @@
       "path": "~/Staffs/Lightning"
     },
     {
-      "name": "BypassesArmorDamageTypes",
-      "type": "tag",
-      "sortid": 1552,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bypasses_armor_damage_types",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "JewelleryTable",
       "type": "block",
       "sortid": 100,
@@ -26889,6 +26100,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/JewelleryTableBlock.java",
           "src/main/resources/assets/better_tools/models/block/jewellery_table.json",
           "src/main/resources/assets/better_tools/models/item/jewellery_table.json",
+          "src/main/resources/data/better_tools/loot_tables/blocks/jewellery_table.json",
           "src/main/resources/assets/better_tools/blockstates/jewellery_table.json"
         ]
       },
@@ -26933,62 +26145,6 @@
         ]
       },
       "path": "~/Crystallite"
-    },
-    {
-      "name": "ForgeArmorHelmets",
-      "type": "tag",
-      "sortid": 1556,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_armor_helmets",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/armors/helmets.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeArmorChestplates",
-      "type": "tag",
-      "sortid": 1557,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_armor_chestplates",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/armors/chestplates.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeArmorLeggings",
-      "type": "tag",
-      "sortid": 1558,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_armor_leggings",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/armors/leggings.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeArmorBoots",
-      "type": "tag",
-      "sortid": 1559,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_armor_boots",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/armors/boots.json"
-        ]
-      },
-      "path": "~/Tags"
     },
     {
       "name": "CrystalliteSwordHoney",
@@ -27327,20 +26483,6 @@
       "path": "~/Crystallite/Honey"
     },
     {
-      "name": "ComboWeapons",
-      "type": "tag",
-      "sortid": 1573,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "combo_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/combo_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Honey"
-    },
-    {
       "name": "ComboWeaponsTooltip",
       "type": "procedure",
       "sortid": 1574,
@@ -27360,20 +26502,6 @@
             "name": "tooltip",
             "type": "tooltip"
           }
-        ]
-      },
-      "path": "~/Crystallite/Honey"
-    },
-    {
-      "name": "ComboMiningTools",
-      "type": "tag",
-      "sortid": 1575,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "combo_mining_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/combo_mining_tools.json"
         ]
       },
       "path": "~/Crystallite/Honey"
@@ -27466,20 +26594,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Crystallite/Honey"
-    },
-    {
-      "name": "SafeHoneyHarvesters",
-      "type": "tag",
-      "sortid": 1579,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "safe_honey_harvesters",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/safe_honey_harvesters.json"
         ]
       },
       "path": "~/Crystallite/Honey"
@@ -27891,34 +27005,6 @@
       "path": "~/Consumables"
     },
     {
-      "name": "HighKnockbackWeapons",
-      "type": "tag",
-      "sortid": 1597,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "high_knockback_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/high_knockback_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Iron"
-    },
-    {
-      "name": "MagneticTools",
-      "type": "tag",
-      "sortid": 1598,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magnetic_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/magnetic_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Iron"
-    },
-    {
       "name": "MagicWeaponDamage",
       "type": "damagetype",
       "sortid": 1599,
@@ -27931,160 +27017,6 @@
         ]
       },
       "path": "~/Crystallite/Lapis"
-    },
-    {
-      "name": "BypassesCooldownDamageTypes",
-      "type": "tag",
-      "sortid": 1600,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bypasses_cooldown_damage_types",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/damage_type/bypasses_cooldown.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "LeechingWeapons",
-      "type": "tag",
-      "sortid": 1601,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leeching_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/leeching_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Redstone"
-    },
-    {
-      "name": "WrenchTools",
-      "type": "tag",
-      "sortid": 1602,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wrench_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/block_rotating_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Redstone"
-    },
-    {
-      "name": "DeepMiningTools",
-      "type": "tag",
-      "sortid": 1603,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_mining_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/deep_mining_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
-    },
-    {
-      "name": "SmeltingTouchTools",
-      "type": "tag",
-      "sortid": 1604,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smelting_touch_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/smelting_touch_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "ExtinguishingTools",
-      "type": "tag",
-      "sortid": 1605,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "extinguishing_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/extinguishing_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "PoisonBarbedWeapons",
-      "type": "tag",
-      "sortid": 1606,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "poison_barbed_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/poison_barbed_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
-      "name": "IncreasedCritMultiplierWeapons",
-      "type": "tag",
-      "sortid": 1607,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_crit_multiplier_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/increased_crit_multiplier_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
-      "name": "CanBeMinedSilently",
-      "type": "tag",
-      "sortid": 1608,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "can_be_mined_silently",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/can_drop_when_mined_silently.json"
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
-    },
-    {
-      "name": "EcholocationWeapons",
-      "type": "tag",
-      "sortid": 1609,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "echolocation_weapons",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/echolocation_weapons.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "ElementalCrystals",
-      "type": "tag",
-      "sortid": 1610,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elemental_crystals",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/elemental_crystals.json"
-        ]
-      },
-      "path": "~/Crystallite"
     },
     {
       "name": "ElementalCrystalsInfo",
@@ -28121,20 +27053,6 @@
         "files": []
       },
       "path": "~/Crystallite"
-    },
-    {
-      "name": "MinesNetherWoodInstantly",
-      "type": "tag",
-      "sortid": 1614,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mines_nether_wood_instantly",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/mines_nether_wood_instantly.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
     },
     {
       "name": "CrystalliteShovelNetheriteTooltip",
@@ -28183,258 +27101,6 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "EcholocationTools",
-      "type": "tag",
-      "sortid": 1617,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "echolocation_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/echolocation_tools.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "LootBlocks",
-      "type": "tag",
-      "sortid": 1618,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "loot_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/blocks/loot_blocks.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "IronUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1619,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/iron_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Iron"
-    },
-    {
-      "name": "GoldUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1620,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/gold_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Gold"
-    },
-    {
-      "name": "LapisUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1621,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lapis_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/lapis_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
-    },
-    {
-      "name": "RedstoneUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1622,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstone_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/redstone_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Redstone"
-    },
-    {
-      "name": "DiamondUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1623,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/diamond_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Diamond"
-    },
-    {
-      "name": "NetheriteUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1624,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "netherite_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/netherite_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
-    },
-    {
-      "name": "RubyUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1625,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/ruby_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Ruby"
-    },
-    {
-      "name": "SapphireUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1626,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/sapphire_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Sapphire"
-    },
-    {
-      "name": "TopazUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1627,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "topaz_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/topaz_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "NetherDiamondUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1628,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/nether_diamond_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "EmeraldUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1629,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "emerald_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/emerald_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
-      "name": "SculkUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1630,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sculk_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/sculk_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
-    },
-    {
-      "name": "SkyUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1631,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sky_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/sky_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
-      "name": "AmethystUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1632,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amethyst_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/amethyst_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "PrismarineUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1633,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prismarine_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/prismarine_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
-      "name": "HoneyUpgradedCrystalliteItems",
-      "type": "tag",
-      "sortid": 1634,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "honey_upgraded_crystallite_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/honey_upgraded_crystallite_items.json"
-        ]
-      },
-      "path": "~/Crystallite/Honey"
     },
     {
       "name": "IronCrystalliteInfo",
@@ -28675,20 +27341,6 @@
         ]
       },
       "path": "~/Staffs/Guardian"
-    },
-    {
-      "name": "EffectArmorTag",
-      "type": "tag",
-      "sortid": 1653,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "effect_armor_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/effect_armor.json"
-        ]
-      },
-      "path": "~/Effect Armor"
     },
     {
       "name": "EffectArmorJEIInformation",
@@ -28973,34 +27625,6 @@
         "files": []
       },
       "path": "~/Consumables"
-    },
-    {
-      "name": "ForgeNeedsNetheriteToolBlocks",
-      "type": "tag",
-      "sortid": 1669,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_needs_netherite_tool_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/blocks/needs_netherite_tool.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeNeedsNetheriteToolItems",
-      "type": "tag",
-      "sortid": 1670,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_needs_netherite_tool_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/needs_netherite_tool.json"
-        ]
-      },
-      "path": "~/Tags"
     },
     {
       "name": "CrystalliteUpgradesSection",
@@ -29427,90 +28051,6 @@
       "path": "~/Advancements/Crystallite Upgrades"
     },
     {
-      "name": "ForgeSwords",
-      "type": "tag",
-      "sortid": 1698,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_swords",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/swords.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgePickaxes",
-      "type": "tag",
-      "sortid": 1699,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_pickaxes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/pickaxes.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeAxes",
-      "type": "tag",
-      "sortid": 1700,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_axes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/axes.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeShovels",
-      "type": "tag",
-      "sortid": 1701,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_shovels",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/shovels.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "ForgeHoes",
-      "type": "tag",
-      "sortid": 1702,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_hoes",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/tools/hoes.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "StaffsTag",
-      "type": "tag",
-      "sortid": 1703,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "staffs_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/tags/items/staffs.json"
-        ]
-      },
-      "path": "~/Staffs"
-    },
-    {
       "name": "AncientCityLoot",
       "type": "loottable",
       "sortid": 1704,
@@ -29859,20 +28399,6 @@
       "path": "~/Crystallite"
     },
     {
-      "name": "TrimmableArmor",
-      "type": "tag",
-      "sortid": 1725,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trimmable_armor",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/items/trimmable_armor.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "UtilityPotionsInfo",
       "type": "jeiinformation",
       "sortid": 1726,
@@ -30168,37 +28694,1885 @@
       "subtitle": "Mysterious sparkle"
     }
   ],
+  "tag_elements": {
+    "ITEMS:forge:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:mod:smelting_touch_tools": [
+      "CUSTOM:CrystallitePickaxeNetherDiamond"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
+    ],
+    "ITEMS:mod:magnetic_tools": [
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteHoeIron"
+    ],
+    "ITEMS:mod:topaz_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystallitePickaxeTopaz",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteHoeTopaz",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:ElectricCore",
+      "CUSTOM:ElectricNecklace"
+    ],
+    "BLOCKS:mod:crimson_planks": [
+      "Blocks.CRIMSON_PLANKS",
+      "Blocks.CRIMSON_STAIRS",
+      "Blocks.CRIMSON_SIGN",
+      "Blocks.CRIMSON_WALL_SIGN",
+      "Blocks.CRIMSON_DOOR",
+      "Blocks.CRIMSON_TRAPDOOR",
+      "Blocks.CRIMSON_BUTTON",
+      "Blocks.CRIMSON_PRESSURE_PLATE",
+      "Blocks.CRIMSON_FENCE",
+      "Blocks.CRIMSON_FENCE_GATE",
+      "Blocks.CRIMSON_SLAB"
+    ],
+    "BLOCKS:mod:sculk_blocks": [
+      "Blocks.SCULK_SENSOR",
+      "Blocks.SCULK",
+      "Blocks.SCULK_CATALYST",
+      "Blocks.SCULK_VEIN",
+      "Blocks.SCULK_SHRIEKER"
+    ],
+    "ITEMS:mod:combo_mining_tools": [
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:mod:sky_upgraded_crystallite_items": [
+      "CUSTOM:SkyCrystal",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:ReflectCharm"
+    ],
+    "BLOCKS:minecraft:trapdoors": [
+      "CUSTOM:DarkPolishedCoalTrapdoor",
+      "CUSTOM:LightPolishedCoalTrapdoor",
+      "CUSTOM:DarkPolishedIronTrapdoor",
+      "CUSTOM:LightPolishedIronTrapdoor",
+      "CUSTOM:DarkPolishedLapisTrapdoor",
+      "CUSTOM:LightPolishedLapisTrapdoor",
+      "CUSTOM:PolishedDiamondTrapdoor",
+      "CUSTOM:LightPolishedEmeraldTrapdoor",
+      "CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "CUSTOM:PolishedRedstoneTrapdoor",
+      "CUSTOM:PolishedRubyTrapdoor",
+      "CUSTOM:LightPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
+      "CUSTOM:PolishedTopazTrapdoor",
+      "CUSTOM:PolishedGoldTrapdoor",
+      "CUSTOM:LightPolishedGoldTrapdoor",
+      "CUSTOM:PolishedNetherDiamondTrapdoor",
+      "CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "CUSTOM:PolishedAmethystTrapdoor",
+      "CUSTOM:LightPolishedAmethystTrapdoor"
+    ],
+    "ITEMS:mod:amethyst_upgraded_crystallite_items": [
+      "CUSTOM:EarthCrystal",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:EarthCirclet"
+    ],
+    "ITEMS:forge:tools/hoes": [
+      "CUSTOM:NetherDiamondHoe",
+      "CUSTOM:FlintHoe",
+      "CUSTOM:RubyToolsHoe",
+      "CUSTOM:EndTitaniumHoe",
+      "CUSTOM:SapphireHoe",
+      "CUSTOM:TopazHoe",
+      "CUSTOM:CrystalliteHoe",
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteHoeSapphire",
+      "CUSTOM:CrystalliteHoeTopaz",
+      "CUSTOM:CrystalliteHoeNetherDiamond",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteHoeSculk",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:forge:tools/swords": [
+      "CUSTOM:NetherDiamondSword",
+      "CUSTOM:FlintSword",
+      "CUSTOM:RubyToolsSword",
+      "CUSTOM:EndTitaniumSword",
+      "CUSTOM:SapphireSword",
+      "CUSTOM:TopazSword",
+      "CUSTOM:CrystalliteSword",
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystalliteSwordHoney"
+    ],
+    "BLOCKS:mod:warped_planks": [
+      "Blocks.WARPED_PLANKS",
+      "Blocks.WARPED_STAIRS",
+      "Blocks.WARPED_SIGN",
+      "Blocks.WARPED_WALL_SIGN",
+      "Blocks.WARPED_DOOR",
+      "Blocks.WARPED_TRAPDOOR",
+      "Blocks.WARPED_BUTTON",
+      "Blocks.WARPED_PRESSURE_PLATE",
+      "Blocks.WARPED_FENCE",
+      "Blocks.WARPED_FENCE_GATE",
+      "Blocks.WARPED_SLAB"
+    ],
+    "BLOCKS:forge:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
+    ],
+    "ITEMS:forge:tools/pickaxes": [
+      "CUSTOM:NetherDiamondPickaxe",
+      "CUSTOM:FlintPickaxe",
+      "CUSTOM:RubyToolsPickaxe",
+      "CUSTOM:EndTitaniumPickaxe",
+      "CUSTOM:SapphirePickaxe",
+      "CUSTOM:TopazPickaxe",
+      "CUSTOM:CrystallitePickaxe",
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystallitePickaxeSapphire",
+      "CUSTOM:CrystallitePickaxeTopaz",
+      "CUSTOM:CrystallitePickaxeNetherDiamond",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystallitePickaxeSculk",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystallitePickaxeHoney"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:DeepslateRubyOre",
+      "~CUSTOM:PurpleMushroomBlock",
+      "~CUSTOM:BlueMushroomBlock",
+      "~CUSTOM:RubyBlock",
+      "~CUSTOM:RubyOre"
+    ],
+    "ITEMS:mod:leeching_weapons": [
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteDaggerRedstone"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "CUSTOM:DarkPolishedCoalStairs",
+      "CUSTOM:LightPolishedCoalStairs",
+      "CUSTOM:LightPolishedIronStairs",
+      "CUSTOM:DarkPolishedIronStairs",
+      "CUSTOM:DarkPolishedLapisStairs",
+      "CUSTOM:LightPolishedLapisStairs",
+      "CUSTOM:PolishedDiamondStairs",
+      "CUSTOM:LightPolishedEmeraldStairs",
+      "CUSTOM:DarkPolishedEmeraldStairs",
+      "CUSTOM:PolishedRedstoneStairs",
+      "CUSTOM:PolishedRubyStairs",
+      "CUSTOM:LightPolishedCopperStairs",
+      "CUSTOM:DarkPolishedCopperStairs",
+      "CUSTOM:PolishedTopazStairs",
+      "CUSTOM:PolishedGoldStairs",
+      "CUSTOM:LightPolishedGoldStairs",
+      "CUSTOM:PolishedNetherDiamondStairs",
+      "CUSTOM:LightPolishedNetherDiamondStairs",
+      "CUSTOM:PolishedAmethystStairs",
+      "CUSTOM:LightPolishedAmethystStairs"
+    ],
+    "ITEMS:minecraft:beacon_payment_items": [
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:Ruby",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Topaz",
+      "Items.DYE#4",
+      "Items.IRON_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.DIAMOND",
+      "Items.NETHERITE_INGOT",
+      "Items.EMERALD",
+      "Items.QUARTZ",
+      "CUSTOM:CrystalliteShards",
+      "Items.AMETHYST_SHARD",
+      "Items.COPPER_INGOT"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:DeepslateRandomOre",
+      "~CUSTOM:NetherDiamondOre",
+      "~CUSTOM:TopazBlock",
+      "~CUSTOM:TopazOre",
+      "~CUSTOM:SapphireBlock",
+      "~CUSTOM:SapphireOre",
+      "~CUSTOM:BlackstoneMagma",
+      "~CUSTOM:RandomOre",
+      "~CUSTOM:NetherDiamondBlock"
+    ],
+    "ITEMS:mod:combo_weapons": [
+      "CUSTOM:CrystalliteSwordHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:forge:gems": [
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:Ruby",
+      "CUSTOM:RandomGem",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Topaz",
+      "CUSTOM:CrystaliteGem"
+    ],
+    "BLOCKS:forge:ore_bearing_ground/end_stone": [
+      "Blocks.END_STONE"
+    ],
+    "ITEMS:forge:tools/shovels": [
+      "CUSTOM:NetherDiamondShovel",
+      "CUSTOM:FlintShovel",
+      "CUSTOM:RubyToolsShovel",
+      "CUSTOM:EndTitaniumShovel",
+      "CUSTOM:SapphireShovel",
+      "CUSTOM:TopazShovel",
+      "CUSTOM:CrystalliteShovel",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteShovelSculk",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystallitePickaxeEmerald"
+    ],
+    "ITEMS:mod:poison_barbed_weapons": [
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald"
+    ],
+    "ITEMS:mod:daggers": [
+      "CUSTOM:WoodDagger",
+      "CUSTOM:StoneDagger",
+      "CUSTOM:IronDagger",
+      "CUSTOM:GoldDagger",
+      "CUSTOM:DiamondDagger",
+      "CUSTOM:NetheriteDagger",
+      "CUSTOM:NetherDiamondDagger",
+      "CUSTOM:FlintDagger",
+      "CUSTOM:RubyDagger",
+      "CUSTOM:EndTitaniumDagger",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteDagger",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteDaggerPrismarine"
+    ],
+    "ITEMS:minecraft:walls": [
+      "CUSTOM:DarkPolishedCoalWall",
+      "CUSTOM:LightPolishedCoalWall",
+      "CUSTOM:DarkPolishedIronWall",
+      "CUSTOM:LightPolishedIronWall",
+      "CUSTOM:DarkPolishedLapisWall",
+      "CUSTOM:LightPolishedLapisWall",
+      "CUSTOM:PolishedDiamondWall",
+      "CUSTOM:LightPolishedEmeraldWall",
+      "CUSTOM:DarkPolishedEmeraldWall",
+      "CUSTOM:PolishedRedstoneWall",
+      "CUSTOM:PolishedRubyWall",
+      "CUSTOM:LightPolishedCopperWall",
+      "CUSTOM:DarkPolishedCopperWall",
+      "CUSTOM:PolishedTopazWall",
+      "CUSTOM:PolishedGoldWall",
+      "CUSTOM:LightPolishedGoldWall",
+      "CUSTOM:PolishedNetherDiamondWall",
+      "CUSTOM:LightPolishedNetherDiamondWall",
+      "CUSTOM:PolishedAmethystWall",
+      "CUSTOM:LightPolishedAmethystWall"
+    ],
+    "BLOCKS:forge:needs_netherite_tool": [
+      "~CUSTOM:EndTitaniumOre",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:forge:ores_in_ground/deepslate": [
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:mod:ruby_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:SpeedyCrystal",
+      "CUSTOM:SpeedyNecklace"
+    ],
+    "ITEMS:forge:ore_bearing_ground/end_stone": [
+      "Blocks.END_STONE"
+    ],
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:FungalCaves"
+    ],
+    "ITEMS:mod:crystallite_boots": [
+      "CUSTOM:CrystalliteArmor.boots",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:CrystalliteArmorHoney.boots"
+    ],
+    "ITEMS:mod:crystallite_shovels": [
+      "CUSTOM:CrystalliteShovel",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteShovelSculk",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteShovelHoney"
+    ],
+    "ITEMS:mod:crystallite_chestplates": [
+      "CUSTOM:CrystalliteArmor.body",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorHoney.body"
+    ],
+    "ITEMS:forge:tools/axes": [
+      "CUSTOM:NetherDiamondAxe",
+      "CUSTOM:BattleAxe",
+      "CUSTOM:FlintAxe",
+      "CUSTOM:RubyToolsAxe",
+      "CUSTOM:EndTitaniumAxe",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:TopazAxe",
+      "CUSTOM:CrystalliteAxe",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteAxeHoney"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "CUSTOM:DarkPolishedCoalSlab",
+      "CUSTOM:LightPolishedCoalSlab",
+      "CUSTOM:LightPolishedIronSlab",
+      "CUSTOM:DarkPolishedIronSlab",
+      "CUSTOM:DarkPolishedLapisSlab",
+      "CUSTOM:LightPolishedLapisSlab",
+      "CUSTOM:PolishedDiamondSlab",
+      "CUSTOM:LightPolishedEmeraldSlab",
+      "CUSTOM:DarkPolishedEmeraldSlab",
+      "CUSTOM:PolishedRedstoneSlab",
+      "CUSTOM:PolishedRubySlab",
+      "CUSTOM:LightPolishedCopperSlab",
+      "CUSTOM:DarkPolishedCopperSlab",
+      "CUSTOM:PolishedTopazSlab",
+      "CUSTOM:PolishedGoldSlab",
+      "CUSTOM:LightPolishedGoldSlab",
+      "CUSTOM:PolishedNetherDiamondSlab",
+      "CUSTOM:LightPolishedNetherDiamondSlab",
+      "CUSTOM:PolishedAmethystSlab",
+      "CUSTOM:LightPolishedAmethystSlab"
+    ],
+    "ITEMS:mod:sapphire_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystallitePickaxeSapphire",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteHoeSapphire",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:IceCore",
+      "CUSTOM:IcyBracelet"
+    ],
+    "ITEMS:mod:crystallite_hoes": [
+      "CUSTOM:CrystalliteHoe",
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteHoeSapphire",
+      "CUSTOM:CrystalliteHoeTopaz",
+      "CUSTOM:CrystalliteHoeNetherDiamond",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteHoeSculk",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:mod:crystallite_swords": [
+      "CUSTOM:CrystalliteSword",
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystalliteSwordHoney"
+    ],
+    "ITEMS:mod:echolocation_weapons": [
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst"
+    ],
+    "ITEMS:mod:lapis_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:MagicCrystal",
+      "CUSTOM:MagicRing"
+    ],
+    "ITEMS:mod:nether_diamond_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystallitePickaxeNetherDiamond",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteHoeNetherDiamond",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:FireCore",
+      "CUSTOM:FlamingCirclet"
+    ],
+    "ITEMS:forge:rods": [
+      "CUSTOM:ObsidianStick",
+      "CUSTOM:BlueSlimeStick"
+    ],
+    "ITEMS:mod:block_rotating_tools": [
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteHoeRedstone"
+    ],
+    "ITEMS:mod:extinguishing_tools": [
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteHoeNetherDiamond"
+    ],
+    "ITEMS:mod:crystallite_leggings": [
+      "CUSTOM:CrystalliteArmor.legs",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorHoney.legs"
+    ],
+    "ITEMS:mod:crystallite_axes": [
+      "CUSTOM:CrystalliteAxe",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteAxeHoney"
+    ],
+    "ITEMS:forge:armors/chestplates": [
+      "CUSTOM:NetherDiamondArmor.body",
+      "CUSTOM:CactusBody.body",
+      "CUSTOM:HeartyBody.body",
+      "CUSTOM:IronCactusBody.body",
+      "CUSTOM:IronHeartyBody.body",
+      "CUSTOM:DiamondCactusBody.body",
+      "CUSTOM:DiamondHeartyBody.body",
+      "CUSTOM:EndTitaniumArmor.body",
+      "CUSTOM:GlassArmor.body",
+      "CUSTOM:MagmaBody.body",
+      "CUSTOM:DiamondMagmaBody.body",
+      "CUSTOM:SapphireArmor.body",
+      "CUSTOM:TopazArmor.body",
+      "CUSTOM:CrystalliteArmor.body",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:IronGlassArmor.body",
+      "CUSTOM:DiamondGlassArmor.body",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "Items.LEATHER_CHESTPLATE",
+      "Items.CHAINMAIL_CHESTPLATE",
+      "Items.IRON_CHESTPLATE",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.DIAMOND_CHESTPLATE",
+      "Items.NETHERITE_CHESTPLATE"
+    ],
+    "ITEMS:mod:crystallite_helmets": [
+      "CUSTOM:CrystalliteArmor.helmet",
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorHoney.helmet"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
+      "CUSTOM:MagicWeaponDamage",
+      "CUSTOM:KarmaDamage"
+    ],
+    "BLOCKS:forge:ore_rates/singular": [
+      "CUSTOM:RandomOre",
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:mod:elemental_crystals": [
+      "CUSTOM:ToughCrystal",
+      "CUSTOM:GildedCrystal",
+      "CUSTOM:MagicCrystal",
+      "CUSTOM:HealCrystal",
+      "CUSTOM:DiamondHardCrystal",
+      "CUSTOM:SpikedCrystal",
+      "CUSTOM:SpeedyCrystal",
+      "CUSTOM:SkyCrystal",
+      "CUSTOM:NatureCrystal",
+      "CUSTOM:EchoCrystal",
+      "CUSTOM:EarthCrystal",
+      "CUSTOM:GuardianCrystal",
+      "CUSTOM:HiveCrystal",
+      "CUSTOM:FireCore",
+      "CUSTOM:IceCore",
+      "CUSTOM:ElectricCore"
+    ],
+    "ITEMS:mod:diamond_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:DiamondHardCrystal",
+      "CUSTOM:DiamondHardPlate"
+    ],
+    "BLOCKS:forge:ores": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:forge:ingots": [
+      "CUSTOM:EndTitaniumIngot"
+    ],
+    "BLOCKS:mod:purpur_blocks": [
+      "Blocks.PURPUR_STAIRS",
+      "Blocks.PURPUR_BLOCK",
+      "Blocks.PURPUR_PILLAR",
+      "Blocks.PURPUR_SLAB",
+      "Blocks.PURPUR_DOUBLE_SLAB",
+      "Blocks.CHORUS_PLANT",
+      "Blocks.CHORUS_FLOWER"
+    ],
+    "ITEMS:mod:echolocation_tools": [
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst"
+    ],
+    "BLOCKS:mod:can_be_turned_into_grass": [
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM",
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.ROOTED_DIRT"
+    ],
+    "ITEMS:minecraft:beacon_base_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CutCrystalliteBlock",
+      "Blocks.IRON_BLOCK",
+      "Blocks.WAXED_COPPER_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.GOLD_BLOCK",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.DIAMOND_BLOCK",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.NETHERITE_BLOCK",
+      "Blocks.QUARTZ_BLOCK#3",
+      "Blocks.AMETHYST_BLOCK"
+    ],
+    "ITEMS:mod:drinks": [
+      "Items.HONEY_BOTTLE",
+      "CUSTOM:AppleJuice",
+      "CUSTOM:BerrySmoothie",
+      "Items.BEETROOT_SOUP",
+      "Items.MUSHROOM_STEW",
+      "Items.SUSPICIOUS_STEW",
+      "Items.RABBIT_STEW",
+      "Items.POTIONITEM",
+      "CUSTOM:ExperiencePotion",
+      "CUSTOM:AscensionPotion",
+      "CUSTOM:DescensionPotion",
+      "CUSTOM:RecallPotion",
+      "CUSTOM:LostSoulsPotion"
+    ],
+    "ITEMS:mod:high_knockback_weapons": [
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystalliteDaggerIron"
+    ],
+    "ITEMS:mod:magic_damage_tools": [
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteDaggerLapis"
+    ],
+    "ITEMS:mod:redstone_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:HealCrystal",
+      "CUSTOM:HeartCharm"
+    ],
+    "ITEMS:mod:crystallite_pickaxes": [
+      "CUSTOM:CrystallitePickaxe",
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystallitePickaxeSapphire",
+      "CUSTOM:CrystallitePickaxeTopaz",
+      "CUSTOM:CrystallitePickaxeNetherDiamond",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystallitePickaxeSculk",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystallitePickaxeHoney"
+    ],
+    "ITEMS:mod:iron_glass_armor": [
+      "CUSTOM:IronGlassArmor.helmet",
+      "CUSTOM:IronGlassArmor.body",
+      "CUSTOM:IronGlassArmor.legs",
+      "CUSTOM:IronGlassArmor.boots"
+    ],
+    "ITEMS:mod:mines_nether_wood_instantly": [
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteHoeNetherite"
+    ],
+    "ITEMS:mod:upgraded_crystallite_tools": [
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystallitePickaxeSapphire",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteHoeSapphire",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystallitePickaxeTopaz",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteHoeTopaz",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystallitePickaxeNetherDiamond",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteHoeNetherDiamond",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystallitePickaxeSculk",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteShovelSculk",
+      "CUSTOM:CrystalliteHoeSculk",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteSwordHoney",
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystalliteHoeHoney",
+      "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:forge:armors/helmets": [
+      "CUSTOM:NetherDiamondArmor.helmet",
+      "CUSTOM:GoldCarrotArmor.helmet",
+      "CUSTOM:IronGoldCarrotHat.helmet",
+      "CUSTOM:DiamondGoldCarrotHat.helmet",
+      "CUSTOM:CryingObsidianHelmet.helmet",
+      "CUSTOM:DiamondCryingObsidianHelmet.helmet",
+      "CUSTOM:EndTitaniumArmor.helmet",
+      "CUSTOM:GlassArmor.helmet",
+      "CUSTOM:SapphireArmor.helmet",
+      "CUSTOM:TopazArmor.helmet",
+      "CUSTOM:CrystalliteArmor.helmet",
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:IronGlassArmor.helmet",
+      "CUSTOM:DiamondGlassArmor.helmet",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "Items.LEATHER_HELMET",
+      "Items.CHAINMAIL_HELMET",
+      "Items.TURTLE_HELMET",
+      "Items.IRON_HELMET",
+      "Items.GOLDEN_HELMET",
+      "Items.DIAMOND_HELMET",
+      "Items.NETHERITE_HELMET"
+    ],
+    "ITEMS:forge:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
+    ],
+    "BLOCKS:forge:ore_rates/dense": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:DeepslateRubyOre"
+    ],
+    "ITEMS:forge:needs_netherite_tool": [
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:forge:ores_in_ground/blackstone": [
+      "CUSTOM:NetherDiamondOre"
+    ],
+    "ITEMS:mod:netherite_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:SpikedCrystal",
+      "CUSTOM:WitheredGauntlet"
+    ],
+    "ITEMS:forge:tools/knives": [
+      "CUSTOM:WoodDagger",
+      "CUSTOM:StoneDagger",
+      "CUSTOM:IronDagger",
+      "CUSTOM:GoldDagger",
+      "CUSTOM:DiamondDagger",
+      "CUSTOM:NetheriteDagger",
+      "CUSTOM:NetherDiamondDagger",
+      "CUSTOM:FlintDagger",
+      "CUSTOM:RubyDagger",
+      "CUSTOM:EndTitaniumDagger",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteDagger",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:mod:iron_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:ToughCrystal",
+      "CUSTOM:ToughNecklace"
+    ],
+    "ITEMS:mod:base_glass_armor": [
+      "CUSTOM:GlassArmor.helmet",
+      "CUSTOM:GlassArmor.body",
+      "CUSTOM:GlassArmor.legs",
+      "CUSTOM:GlassArmor.boots"
+    ],
+    "ITEMS:minecraft:slabs": [
+      "CUSTOM:DarkPolishedCoalSlab",
+      "CUSTOM:LightPolishedCoalSlab",
+      "CUSTOM:LightPolishedIronSlab",
+      "CUSTOM:DarkPolishedIronSlab",
+      "CUSTOM:DarkPolishedLapisSlab",
+      "CUSTOM:LightPolishedLapisSlab",
+      "CUSTOM:PolishedDiamondSlab",
+      "CUSTOM:LightPolishedEmeraldSlab",
+      "CUSTOM:DarkPolishedEmeraldSlab",
+      "CUSTOM:PolishedRedstoneSlab",
+      "CUSTOM:PolishedRubySlab",
+      "CUSTOM:LightPolishedCopperSlab",
+      "CUSTOM:DarkPolishedCopperSlab",
+      "CUSTOM:PolishedTopazSlab",
+      "CUSTOM:PolishedGoldSlab",
+      "CUSTOM:LightPolishedGoldSlab",
+      "CUSTOM:PolishedNetherDiamondSlab",
+      "CUSTOM:LightPolishedNetherDiamondSlab",
+      "CUSTOM:PolishedAmethystSlab",
+      "CUSTOM:LightPolishedAmethystSlab"
+    ],
+    "ITEMS:forge:ores": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "BLOCKS:forge:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:mod:crystallite_daggers": [
+      "CUSTOM:CrystalliteDagger",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:mod:emerald_upgraded_crystallite_items": [
+      "CUSTOM:NatureCrystal",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:NatureRing"
+    ],
+    "ITEMS:forge:ore_rates/dense": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:DeepslateRubyOre"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:FungalCaves"
+    ],
+    "ITEMS:forge:ores_in_ground/blackstone": [
+      "CUSTOM:NetherDiamondOre"
+    ],
+    "ITEMS:forge:armors/leggings": [
+      "CUSTOM:NetherDiamondArmor.legs",
+      "CUSTOM:RubyArmor.legs",
+      "CUSTOM:CrystalLegs.legs",
+      "CUSTOM:BlackstoneLegs.legs",
+      "CUSTOM:DiamondRubyLegs.legs",
+      "CUSTOM:DiamondCrystalLegs.legs",
+      "CUSTOM:DiamondBlackstoneLegs.legs",
+      "CUSTOM:EndTitaniumArmor.legs",
+      "CUSTOM:GlassArmor.legs",
+      "CUSTOM:SapphireArmor.legs",
+      "CUSTOM:TopazArmor.legs",
+      "CUSTOM:CrystalliteArmor.legs",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:IronGlassArmor.legs",
+      "CUSTOM:DiamondGlassArmor.legs",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "Items.LEATHER_LEGGINGS",
+      "Items.CHAINMAIL_LEGGINGS",
+      "Items.IRON_LEGGINGS",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.DIAMOND_LEGGINGS",
+      "Items.NETHERITE_LEGGINGS"
+    ],
+    "ITEMS:mod:increased_crit_multiplier_weapons": [
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteDaggerSky"
+    ],
+    "ITEMS:mod:prismarine_upgraded_crystallite_items": [
+      "CUSTOM:GuardianCrystal",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:GuardianNecklace"
+    ],
+    "ITEMS:forge:slimeballs": [
+      "CUSTOM:BlueSlimeball"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:LightPolishedAmethystWall",
+      "~CUSTOM:PolishedAmethystWall",
+      "~CUSTOM:LightPolishedNetherDiamondWall",
+      "~CUSTOM:PolishedNetherDiamondWall",
+      "~CUSTOM:LightPolishedGoldWall",
+      "~CUSTOM:PolishedGoldWall",
+      "~CUSTOM:PolishedTopazWall",
+      "~CUSTOM:DarkPolishedCopperWall",
+      "~CUSTOM:LightPolishedCopperWall",
+      "~CUSTOM:PolishedRubyWall",
+      "~CUSTOM:PolishedRedstoneWall",
+      "~CUSTOM:DarkPolishedEmeraldWall",
+      "~CUSTOM:LightPolishedEmeraldWall",
+      "~CUSTOM:PolishedDiamondWall",
+      "~CUSTOM:LightPolishedLapisWall",
+      "~CUSTOM:DarkPolishedLapisWall",
+      "~CUSTOM:LightPolishedIronWall",
+      "~CUSTOM:DarkPolishedIronWall",
+      "~CUSTOM:LightPolishedCoalWall",
+      "~CUSTOM:DarkPolishedCoalWall",
+      "~CUSTOM:LightPolishedAmethystTrapdoor",
+      "~CUSTOM:PolishedAmethystTrapdoor",
+      "~CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "~CUSTOM:PolishedNetherDiamondTrapdoor",
+      "~CUSTOM:LightPolishedGoldTrapdoor",
+      "~CUSTOM:PolishedGoldTrapdoor",
+      "~CUSTOM:PolishedTopazTrapdoor",
+      "~CUSTOM:DarkPolishedCopperTrapdoor",
+      "~CUSTOM:LightPolishedCopperTrapdoor",
+      "~CUSTOM:PolishedRubyTrapdoor",
+      "~CUSTOM:PolishedRedstoneTrapdoor",
+      "~CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "~CUSTOM:LightPolishedEmeraldTrapdoor",
+      "~CUSTOM:PolishedDiamondTrapdoor",
+      "~CUSTOM:LightPolishedLapisTrapdoor",
+      "~CUSTOM:DarkPolishedLapisTrapdoor",
+      "~CUSTOM:LightPolishedIronTrapdoor",
+      "~CUSTOM:DarkPolishedIronTrapdoor",
+      "~CUSTOM:LightPolishedCoalTrapdoor",
+      "~CUSTOM:DarkPolishedCoalTrapdoor",
+      "~CUSTOM:LightPolishedAmethystStairs",
+      "~CUSTOM:LightPolishedAmethystSlab",
+      "~CUSTOM:LightPolishedAmethystBlock",
+      "~CUSTOM:PolishedAmethystStairs",
+      "~CUSTOM:PolishedAmethystSlab",
+      "~CUSTOM:PolishedAmethystBlock",
+      "~CUSTOM:LightPolishedNetherDiamondStairs",
+      "~CUSTOM:LightPolishedNetherDiamondSlab",
+      "~CUSTOM:LightPolishedNetherDiamondBlock",
+      "~CUSTOM:PolishedNetherDiamondStairs",
+      "~CUSTOM:PolishedNetherDiamondSlab",
+      "~CUSTOM:PolishedNetherDiamondBlock",
+      "~CUSTOM:LightPolishedGoldStairs",
+      "~CUSTOM:LightPolishedGoldSlab",
+      "~CUSTOM:LightPolishedGoldBlock",
+      "~CUSTOM:PolishedGoldStairs",
+      "~CUSTOM:PolishedGoldSlab",
+      "~CUSTOM:PolishedGoldBlock",
+      "~CUSTOM:PolishedTopazStairs",
+      "~CUSTOM:PolishedTopazSlab",
+      "~CUSTOM:PolishedTopazBlock",
+      "~CUSTOM:DarkPolishedCopperStairs",
+      "~CUSTOM:DarkPolishedCopperSlab",
+      "~CUSTOM:DarkPolishedCopperBlock",
+      "~CUSTOM:LightPolishedCopperStairs",
+      "~CUSTOM:LightPolishedCopperSlab",
+      "~CUSTOM:LightPolishedCopperBlock",
+      "~CUSTOM:PolishedRubyStairs",
+      "~CUSTOM:PolishedRubySlab",
+      "~CUSTOM:PolishedRubyBlock",
+      "~CUSTOM:PolishedRedstoneStairs",
+      "~CUSTOM:PolishedRedstoneSlab",
+      "~CUSTOM:PolishedRedstoneBlock",
+      "~CUSTOM:DarkPolishedEmeraldStairs",
+      "~CUSTOM:DarkPolishedEmeraldSlab",
+      "~CUSTOM:DarkPolishedEmeraldBlock",
+      "~CUSTOM:LightPolishedEmeraldStairs",
+      "~CUSTOM:LightPolishedEmeraldSlab",
+      "~CUSTOM:LightPolishedEmeraldBlock",
+      "~CUSTOM:PolishedDiamondStairs",
+      "~CUSTOM:PolishedDiamondSlab",
+      "~CUSTOM:PolishedDiamondBlock",
+      "~CUSTOM:LightPolishedLapisStairs",
+      "~CUSTOM:LightPolishedLapisSlab",
+      "~CUSTOM:LightPolishedLapisBlock",
+      "~CUSTOM:DarkPolishedLapisStairs",
+      "~CUSTOM:DarkPolishedLapisSlab",
+      "~CUSTOM:DarkPolishedLapisBlock",
+      "~CUSTOM:DarkPolishedIronStairs",
+      "~CUSTOM:DarkPolishedIronSlab",
+      "~CUSTOM:DarkPolishedIronBlock",
+      "~CUSTOM:LightPolishedIronStairs",
+      "~CUSTOM:LightPolishedIronSlab",
+      "~CUSTOM:LightPolishedIronBlock",
+      "~CUSTOM:LightPolishedCoalStairs",
+      "~CUSTOM:LightPolishedCoalSlab",
+      "~CUSTOM:LightPolishedCoalBlock",
+      "~CUSTOM:DarkPolishedCoalStairs",
+      "~CUSTOM:DarkPolishedCoalSlab",
+      "~CUSTOM:DarkPolishedCoalBlock",
+      "~CUSTOM:FlintBlockwood",
+      "~CUSTOM:DeepslateRandomOre",
+      "~CUSTOM:DeepslateRubyOre",
+      "~CUSTOM:CutCrystalliteBlock",
+      "~CUSTOM:CrystalliteBlock",
+      "~CUSTOM:NetherDiamondOre",
+      "~CUSTOM:TopazBlock",
+      "~CUSTOM:TopazOre",
+      "~CUSTOM:SapphireBlock",
+      "~CUSTOM:SapphireOre",
+      "~CUSTOM:ChargedIceOn",
+      "~CUSTOM:BlackstoneMagma",
+      "~CUSTOM:EndTitaniumBlock",
+      "~CUSTOM:EndTitaniumOre",
+      "~CUSTOM:RandomOre",
+      "~CUSTOM:RubyBlock",
+      "~CUSTOM:RubyOre",
+      "~CUSTOM:FlintBlock",
+      "~CUSTOM:NetherDiamondBlock"
+    ],
+    "ITEMS:forge:armors/boots": [
+      "CUSTOM:NetherDiamondArmor.boots",
+      "CUSTOM:SugarBoots.boots",
+      "CUSTOM:RabbitBoots.boots",
+      "CUSTOM:PhantomBoots.boots",
+      "CUSTOM:IronSugarBoots.boots",
+      "CUSTOM:IronRabbitBoots.boots",
+      "CUSTOM:IronPhantomBoots.boots",
+      "CUSTOM:DiamondSugarBoots.boots",
+      "CUSTOM:DiamondRabbitBoots.boots",
+      "CUSTOM:DiamondPhantomBoots.boots",
+      "CUSTOM:EndTitaniumArmor.boots",
+      "CUSTOM:GlassArmor.boots",
+      "CUSTOM:SapphireArmor.boots",
+      "CUSTOM:TopazArmor.boots",
+      "CUSTOM:CrystalliteArmor.boots",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:WingedBoots.boots",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:IronGlassArmor.boots",
+      "CUSTOM:DiamondGlassArmor.boots",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "Items.LEATHER_BOOTS",
+      "Items.CHAINMAIL_BOOTS",
+      "Items.IRON_BOOTS",
+      "Items.GOLDEN_BOOTS",
+      "Items.DIAMOND_BOOTS",
+      "Items.NETHERITE_BOOTS"
+    ],
+    "BLOCKS:forge:ore_bearing_ground/blackstone": [
+      "Blocks.BLACKSTONE"
+    ],
+    "ITEMS:forge:ores_in_ground/deepslate": [
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:mod:sculk_upgraded_crystallite_items": [
+      "CUSTOM:EchoCrystal",
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystallitePickaxeSculk",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteShovelSculk",
+      "CUSTOM:CrystalliteHoeSculk",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:WardenHeadband"
+    ],
+    "ITEMS:forge:mushrooms": [
+      "CUSTOM:BlueMushroom",
+      "CUSTOM:PurpleMushroom"
+    ],
+    "ITEMS:mod:increased_reach_tools": [
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteHoeGold"
+    ],
+    "ITEMS:mod:freezing_tools": [
+      "CUSTOM:SapphireSword",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteDaggerSapphire"
+    ],
+    "ITEMS:minecraft:stairs": [
+      "CUSTOM:DarkPolishedCoalStairs",
+      "CUSTOM:LightPolishedCoalStairs",
+      "CUSTOM:LightPolishedIronStairs",
+      "CUSTOM:DarkPolishedIronStairs",
+      "CUSTOM:DarkPolishedLapisStairs",
+      "CUSTOM:LightPolishedLapisStairs",
+      "CUSTOM:PolishedDiamondStairs",
+      "CUSTOM:LightPolishedEmeraldStairs",
+      "CUSTOM:DarkPolishedEmeraldStairs",
+      "CUSTOM:PolishedRedstoneStairs",
+      "CUSTOM:PolishedRubyStairs",
+      "CUSTOM:LightPolishedCopperStairs",
+      "CUSTOM:DarkPolishedCopperStairs",
+      "CUSTOM:PolishedTopazStairs",
+      "CUSTOM:PolishedGoldStairs",
+      "CUSTOM:LightPolishedGoldStairs",
+      "CUSTOM:PolishedNetherDiamondStairs",
+      "CUSTOM:LightPolishedNetherDiamondStairs",
+      "CUSTOM:PolishedAmethystStairs",
+      "CUSTOM:LightPolishedAmethystStairs"
+    ],
+    "BLOCKS:mod:can_drop_when_mined_silently": [
+      "TAG:minecraft:mineable/hoe",
+      "Blocks.WOOL#0",
+      "Blocks.WOOL#1",
+      "Blocks.WOOL#2",
+      "Blocks.WOOL#3",
+      "Blocks.WOOL#4",
+      "Blocks.WOOL#5",
+      "Blocks.WOOL#6",
+      "Blocks.WOOL#7",
+      "Blocks.WOOL#8",
+      "Blocks.WOOL#9",
+      "Blocks.WOOL#10",
+      "Blocks.WOOL#11",
+      "Blocks.WOOL#12",
+      "Blocks.WOOL#13",
+      "Blocks.WOOL#14",
+      "Blocks.WOOL#15"
+    ],
+    "ITEMS:minecraft:trimmable_armor": [
+      "CUSTOM:NetherDiamondArmor.helmet",
+      "CUSTOM:NetherDiamondArmor.body",
+      "CUSTOM:NetherDiamondArmor.legs",
+      "CUSTOM:NetherDiamondArmor.boots",
+      "CUSTOM:EndTitaniumArmor.helmet",
+      "CUSTOM:EndTitaniumArmor.body",
+      "CUSTOM:EndTitaniumArmor.legs",
+      "CUSTOM:EndTitaniumArmor.boots",
+      "CUSTOM:SapphireArmor.helmet",
+      "CUSTOM:SapphireArmor.body",
+      "CUSTOM:SapphireArmor.legs",
+      "CUSTOM:SapphireArmor.boots",
+      "CUSTOM:TopazArmor.helmet",
+      "CUSTOM:TopazArmor.body",
+      "CUSTOM:TopazArmor.legs",
+      "CUSTOM:TopazArmor.boots",
+      "CUSTOM:CrystalliteArmor.helmet",
+      "CUSTOM:CrystalliteArmor.body",
+      "CUSTOM:CrystalliteArmor.legs",
+      "CUSTOM:CrystalliteArmor.boots",
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:CrystalliteArmorHoney.helmet",
+      "CUSTOM:CrystalliteArmorHoney.body",
+      "CUSTOM:CrystalliteArmorHoney.legs",
+      "CUSTOM:CrystalliteArmorHoney.boots"
+    ],
+    "ITEMS:mod:freezing_armor": [
+      "CUSTOM:SapphireArmor.helmet",
+      "CUSTOM:SapphireArmor.body",
+      "CUSTOM:SapphireArmor.legs",
+      "CUSTOM:SapphireArmor.boots",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots"
+    ],
+    "ITEMS:mod:gold_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:GildedCrystal",
+      "CUSTOM:GildedBracelet"
+    ],
+    "ITEMS:mod:air_affinity_tools": [
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteHoeSky"
+    ],
+    "ITEMS:mod:effect_armor": [
+      "CUSTOM:SugarBoots.boots",
+      "CUSTOM:RabbitBoots.boots",
+      "CUSTOM:PhantomBoots.boots",
+      "CUSTOM:CactusBody.body",
+      "CUSTOM:HeartyBody.body",
+      "CUSTOM:RubyArmor.legs",
+      "CUSTOM:CrystalLegs.legs",
+      "CUSTOM:GoldCarrotArmor.helmet",
+      "CUSTOM:BlackstoneLegs.legs",
+      "CUSTOM:IronSugarBoots.boots",
+      "CUSTOM:IronRabbitBoots.boots",
+      "CUSTOM:IronPhantomBoots.boots",
+      "CUSTOM:IronCactusBody.body",
+      "CUSTOM:IronHeartyBody.body",
+      "CUSTOM:IronGoldCarrotHat.helmet",
+      "CUSTOM:DiamondSugarBoots.boots",
+      "CUSTOM:DiamondRabbitBoots.boots",
+      "CUSTOM:DiamondPhantomBoots.boots",
+      "CUSTOM:DiamondCactusBody.body",
+      "CUSTOM:DiamondHeartyBody.body",
+      "CUSTOM:DiamondRubyLegs.legs",
+      "CUSTOM:DiamondCrystalLegs.legs",
+      "CUSTOM:DiamondGoldCarrotHat.helmet",
+      "CUSTOM:DiamondBlackstoneLegs.legs",
+      "CUSTOM:CryingObsidianHelmet.helmet",
+      "CUSTOM:DiamondCryingObsidianHelmet.helmet",
+      "CUSTOM:GlassArmor.helmet",
+      "CUSTOM:GlassArmor.body",
+      "CUSTOM:GlassArmor.legs",
+      "CUSTOM:GlassArmor.boots",
+      "CUSTOM:MagmaBody.body",
+      "CUSTOM:DiamondMagmaBody.body",
+      "CUSTOM:WingedBoots.boots",
+      "CUSTOM:IronGlassArmor.helmet",
+      "CUSTOM:IronGlassArmor.body",
+      "CUSTOM:IronGlassArmor.legs",
+      "CUSTOM:IronGlassArmor.boots",
+      "CUSTOM:DiamondGlassArmor.helmet",
+      "CUSTOM:DiamondGlassArmor.body",
+      "CUSTOM:DiamondGlassArmor.legs",
+      "CUSTOM:DiamondGlassArmor.boots"
+    ],
+    "ITEMS:mod:diamond_glass_armor": [
+      "CUSTOM:DiamondGlassArmor.helmet",
+      "CUSTOM:DiamondGlassArmor.body",
+      "CUSTOM:DiamondGlassArmor.legs",
+      "CUSTOM:DiamondGlassArmor.boots"
+    ],
+    "ITEMS:mod:deep_mining_tools": [
+      "CUSTOM:CrystallitePickaxeNetherite"
+    ],
+    "ITEMS:minecraft:trapdoors": [
+      "CUSTOM:DarkPolishedCoalTrapdoor",
+      "CUSTOM:LightPolishedCoalTrapdoor",
+      "CUSTOM:DarkPolishedIronTrapdoor",
+      "CUSTOM:LightPolishedIronTrapdoor",
+      "CUSTOM:DarkPolishedLapisTrapdoor",
+      "CUSTOM:LightPolishedLapisTrapdoor",
+      "CUSTOM:PolishedDiamondTrapdoor",
+      "CUSTOM:LightPolishedEmeraldTrapdoor",
+      "CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "CUSTOM:PolishedRedstoneTrapdoor",
+      "CUSTOM:PolishedRubyTrapdoor",
+      "CUSTOM:LightPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
+      "CUSTOM:PolishedTopazTrapdoor",
+      "CUSTOM:PolishedGoldTrapdoor",
+      "CUSTOM:LightPolishedGoldTrapdoor",
+      "CUSTOM:PolishedNetherDiamondTrapdoor",
+      "CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "CUSTOM:PolishedAmethystTrapdoor",
+      "CUSTOM:LightPolishedAmethystTrapdoor"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_armor": [
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:PoisonMushroomDamage",
+      "CUSTOM:WaterPulseDamage",
+      "CUSTOM:MagicWeaponDamage"
+    ],
+    "ITEMS:mod:upgraded_crystallite_armor": [
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:CrystalliteArmorHoney.helmet",
+      "CUSTOM:CrystalliteArmorHoney.body",
+      "CUSTOM:CrystalliteArmorHoney.legs",
+      "CUSTOM:CrystalliteArmorHoney.boots"
+    ],
+    "ITEMS:mod:honey_upgraded_crystallite_items": [
+      "CUSTOM:CrystalliteSwordHoney",
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystalliteHoeHoney",
+      "CUSTOM:CrystalliteDaggerHoney",
+      "CUSTOM:CrystalliteArmorHoney.helmet",
+      "CUSTOM:CrystalliteArmorHoney.body",
+      "CUSTOM:CrystalliteArmorHoney.legs",
+      "CUSTOM:CrystalliteArmorHoney.boots",
+      "CUSTOM:HiveCrystal",
+      "CUSTOM:CuringCharm"
+    ],
+    "ITEMS:mod:staffs": [
+      "CUSTOM:ElectricStaff",
+      "CUSTOM:IceStaff",
+      "CUSTOM:FireStaff",
+      "CUSTOM:WardenStaff",
+      "CUSTOM:GuardianStaff"
+    ],
+    "BLOCKS:mod:loot_blocks": [
+      "TAG:forge:ores",
+      "CUSTOM:CrystalliteClusterAir",
+      "Blocks.CHEST",
+      "Blocks.MOB_SPAWNER",
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock",
+      "Blocks.RAW_IRON_BLOCK",
+      "Blocks.RAW_GOLD_BLOCK",
+      "Blocks.RAW_COPPER_BLOCK",
+      "Blocks.COAL_BLOCK",
+      "Blocks.IRON_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.GOLD_BLOCK",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.DIAMOND_BLOCK",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.NETHERITE_BLOCK",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.BUDDING_AMETHYST",
+      "Blocks.AMETHYST_CLUSTER"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:JewelleryTable",
+      "~CUSTOM:PurpleMushroomBlock",
+      "~CUSTOM:BlueMushroomBlock"
+    ],
+    "ITEMS:forge:storage_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:FlintBlock",
+      "CUSTOM:SugarBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "CUSTOM:DarkPolishedCoalWall",
+      "CUSTOM:LightPolishedCoalWall",
+      "CUSTOM:DarkPolishedIronWall",
+      "CUSTOM:LightPolishedIronWall",
+      "CUSTOM:DarkPolishedLapisWall",
+      "CUSTOM:LightPolishedLapisWall",
+      "CUSTOM:PolishedDiamondWall",
+      "CUSTOM:LightPolishedEmeraldWall",
+      "CUSTOM:DarkPolishedEmeraldWall",
+      "CUSTOM:PolishedRedstoneWall",
+      "CUSTOM:PolishedRubyWall",
+      "CUSTOM:LightPolishedCopperWall",
+      "CUSTOM:DarkPolishedCopperWall",
+      "CUSTOM:PolishedTopazWall",
+      "CUSTOM:PolishedGoldWall",
+      "CUSTOM:LightPolishedGoldWall",
+      "CUSTOM:PolishedNetherDiamondWall",
+      "CUSTOM:LightPolishedNetherDiamondWall",
+      "CUSTOM:PolishedAmethystWall",
+      "CUSTOM:LightPolishedAmethystWall"
+    ],
+    "BLOCKS:forge:storage_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:FlintBlock",
+      "CUSTOM:SugarBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "ITEMS:forge:ore_rates/singular": [
+      "CUSTOM:RandomOre",
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:forge:ore_bearing_ground/blackstone": [
+      "Blocks.BLACKSTONE"
+    ],
+    "BLOCKS:minecraft:beacon_base_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "Blocks.IRON_BLOCK",
+      "Blocks.GOLD_BLOCK",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.DIAMOND_BLOCK",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.NETHERITE_BLOCK",
+      "Blocks.QUARTZ_BLOCK#3",
+      "CUSTOM:CutCrystalliteBlock",
+      "Blocks.COPPER_BLOCK",
+      "Blocks.WAXED_COPPER_BLOCK",
+      "Blocks.AMETHYST_BLOCK"
+    ],
+    "ITEMS:mod:safe_honey_harvesters": [
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystalliteHoeHoney"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "item.better_tools.curing_charm": "§6Curing Charm",
-      "item.better_tools.flint_hoe": "Flint Hoe",
       "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
+      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.curing_charm": "§6Curing Charm",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
-      "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
       "item.better_tools.poison_charm": "§5Poison Charm",
+      "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
       "item_group.better_tools.crystallite_tab": "BT+A - Crystallite",
       "block.better_tools.polished_ruby_trapdoor": "Metallic Ruby Trapdoor",
       "item.minecraft.splash_potion.effect.double_jump_potion": "Splash Potion of Double Jump",
       "item.minecraft.tipped_arrow.effect.double_jump_potion_2": "Arrow of Double Jump",
-      "block.better_tools.light_polished_copper_stairs": "Polished Copper Stairs",
       "item.better_tools.crystallite_armor_amethyst_chestplate": "Crystallite Chestplate",
+      "block.better_tools.light_polished_copper_stairs": "Polished Copper Stairs",
       "item.better_tools.fire_crystal": "Flame Crystal",
       "item.copper_tools_and_armor.master_builder": "Master Builder",
       "item.better_tools.crystallite_dagger_amethyst": "Crystallite Dagger",
       "item.better_tools.battle_axe": "Battle Axe",
       "block.better_tools.jewellery_table": "Jewellery Table",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
+      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "block.better_tools.light_polished_lapis_trapdoor": "Light Metallic Lapis Lazuli Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "block.better_tools.sugar_block": "Sugar Block",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "block.better_tools.sugar_block": "Sugar Block",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -30207,12 +30581,12 @@
       "item.copper_tools_and_armor.copper_shovel": "Copper Shovel",
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "advancements.high_crit_multiplier_adv.descr": "Deal at least double your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
-      "item.better_tools.fire_staff": "Fire Staff",
+      "advancements.high_crit_multiplier_adv.descr": "Deal at least double your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_sword": "Crystallite Sword",
-      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
+      "item.better_tools.fire_staff": "Fire Staff",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
       "block.better_tools.light_polished_iron_block": "Polished Iron Block",
@@ -30309,15 +30683,15 @@
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
-      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
+      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.better_tools.obsidian_stick": "Obsidian Stick",
       "item.minecraft.tipped_arrow.effect.potion_of_decay_long": "Arrow of Decay",
       "advancements.crystallite_gem_adv.descr": "Craft a Crystallite Gem",
       "item.better_tools.mixed_essence": "Mixed Essence",
       "subtitles.crystallite_shimmer": "Mysterious sparkle",
-      "advancements.high_max_hp_adv.descr": "Have at least 30 Max HP",
       "block.better_tools.dark_polished_iron_stairs": "Dark Polished Iron Stairs",
+      "advancements.high_max_hp_adv.descr": "Have at least 30 Max HP",
       "item.better_tools.end_titanium_hoe": "Ender Titanium Hoe",
       "item.better_tools.hive_crystal": "Hive Crystal",
       "advancements.reflect_projectile_adv.descr": "Reflect a projectile at an enemy",
@@ -30390,8 +30764,8 @@
       "item.better_tools.crystallite_sword_honey": "Crystallite Sword",
       "item.better_tools.crystallite_armor_prismarine_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_armor_lapis_boots": "Crystallite Boots",
-      "advancements.deal_dmg_through_armor_adv.title": "Mold Breaker",
       "block.better_tools.polished_diamond_trapdoor": "Metallic Diamond Trapdoor",
+      "advancements.deal_dmg_through_armor_adv.title": "Mold Breaker",
       "item.better_tools.crystallite_pickaxe_sculk": "Crystallite Pickaxe",
       "item.better_tools.diamond_dagger": "Diamond Dagger",
       "enchantment.better_tools.experience_ench.desc": "Kills drop more XP",
@@ -30409,8 +30783,8 @@
       "gui.better_tools.attributes_viewer.label_006": "00",
       "gui.better_tools.attributes_viewer.label_005": "00",
       "advancements.high_armor_points_adv.title": "\u0027Tis but a scratch!",
-      "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
       "gui.better_tools.attributes_viewer.label_004": "00",
+      "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
       "gui.better_tools.attributes_viewer.label_003": "00",
       "gui.better_tools.attributes_viewer.label_002": "00",
       "gui.better_tools.attributes_viewer.label_001": "00",
@@ -30421,8 +30795,8 @@
       "effect.karma_potion": "Karma",
       "item.better_tools.crystallite_armor_netherite_chestplate": "Crystallite Chestplate",
       "advancements.crystallite_upgrades_section.descr": "Advancements for true completionists!",
-      "item.better_tools.crystallite_armor_prismarine_boots": "Crystallite Boots",
       "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
+      "item.better_tools.crystallite_armor_prismarine_boots": "Crystallite Boots",
       "advancements.combo_jump_adv.title": "Wahoo!",
       "item.better_tools.crystallite_armor_iron_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_honey": "Crystallite Hoe",
@@ -30435,14 +30809,14 @@
       "item.copper_tools_and_armor.copper_axe": "Copper Axe",
       "item.better_tools.recall_potion": "Recall Potion",
       "advancements.shockwave_adv.descr": "Kill a mob with a shockwave when landing from a fall",
-      "item.better_tools.topaz_shovel": "Topaz Shovel",
       "advancements.sugar_clump_adv.title": "Sugar Rush",
-      "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",
+      "item.better_tools.topaz_shovel": "Topaz Shovel",
       "entity.better_tools.projectile_ice_staff_projectile": "Ice Staff",
+      "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",
       "advancements.guardian_staff_adv.descr": "Hit a mob with the water pulse from a Guardian Staff",
       "item.better_tools.sapphire_sword": "Sapphire Sword",
-      "item.better_tools.crystallite_shovel_honey": "Crystallite Shovel",
       "item.better_tools.crystallite_shovel_diamond": "Crystallite Shovel",
+      "item.better_tools.crystallite_shovel_honey": "Crystallite Shovel",
       "item.better_tools.nether_diamond_dagger": "Nether Diamond Dagger",
       "item.better_tools.tough_crystal": "Tough Crystal",
       "item.better_tools.echo_crystal": "Echo Crystal",
@@ -30457,22 +30831,22 @@
       "item.better_tools.iron_hearty_chestplate": "Hearty Shirt",
       "item.better_tools.crystallite_dagger_emerald": "Crystallite Dagger",
       "item.better_tools.crystallite_armor_topaz_leggings": "Crystallite Leggings",
-      "item.better_tools.magma_chestplate": "Magma Chestplate",
       "enchantment.copper_tools_and_armor.smelting_touch": "Smelting Touch",
-      "item.better_tools.crystallite_armor_honey_helmet": "Crystallite Helmet",
-      "item.better_tools.netherite_dagger": "Netherite Dagger",
+      "item.better_tools.magma_chestplate": "Magma Chestplate",
       "item.better_tools.heart_charm": "§cHeart Charm",
+      "item.better_tools.netherite_dagger": "Netherite Dagger",
+      "item.better_tools.crystallite_armor_honey_helmet": "Crystallite Helmet",
       "item.copper_tools_and_armor.nether_diamond_pickaxe": "Nether Diamond Pickaxe",
       "advancements.end_titanium_armor_adv.title": "One with the End",
       "item.better_tools.crystallite_shovel_ruby": "Crystallite Shovel",
       "item.better_tools.crystallite_sword_prismarine": "Crystallite Sword",
-      "item.minecraft.tipped_arrow.effect.swift_swim_potion_2": "Arrow of Rapidity",
       "item.minecraft.tipped_arrow.effect.criticality_potion": "Arrow of Criticality",
+      "item.minecraft.tipped_arrow.effect.swift_swim_potion_2": "Arrow of Rapidity",
       "advancements.crystallite_gem_adv.title": "Local Jeweller",
       "gui.better_tools.attributes_viewer.label_movement_speed": "Movement Spd.",
-      "item.better_tools.ruby_leggings": "Ruby Leggings",
-      "block.better_tools.polished_diamond_slab": "Metallic Diamond Slab",
       "item.better_tools.withered_gauntlet": "§8Withered Gauntlet",
+      "block.better_tools.polished_diamond_slab": "Metallic Diamond Slab",
+      "item.better_tools.ruby_leggings": "Ruby Leggings",
       "item.better_tools.earth_circlet": "§dEarth Circlet",
       "advancements.crystallite_tool_upgrade_adv.descr": "Upgrade a Crystallite tool for a useful effect",
       "item.better_tools.crystallite_armor_lapis_leggings": "Crystallite Leggings",
@@ -31180,10 +31554,6 @@
         "children": []
       },
       {
-        "name": "Music Discs",
-        "children": []
-      },
-      {
         "name": "Crystallite",
         "children": [
           {
@@ -31408,7 +31778,6 @@
     "author": "BlackCatGamer64, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "new_mod_logo_curseforge",
     "requiredMods": [
@@ -31423,8 +31792,7 @@
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.bettertoolsandarmor",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400117319
 }

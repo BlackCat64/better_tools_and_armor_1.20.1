@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "vein_mining_adv": {
+    "vein_mining_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

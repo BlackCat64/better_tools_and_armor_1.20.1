@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_gem_adv": {
+    "crystallite_gem_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

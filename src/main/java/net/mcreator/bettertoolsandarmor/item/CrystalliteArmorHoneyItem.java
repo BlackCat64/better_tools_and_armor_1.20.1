@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -73,8 +72,8 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Sticky - Can stick to ceilings by holding \u00A7b[SPACE]"));
@@ -86,11 +85,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_honey__layer_1.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Chestplate extends CrystalliteArmorHoneyItem {
@@ -99,8 +93,8 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates up to double your original Max HP"));
@@ -112,11 +106,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_honey__layer_1.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Leggings extends CrystalliteArmorHoneyItem {
@@ -125,8 +114,8 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Sticky - Slows melee attackers"));
@@ -138,11 +127,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_honey__layer_2.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Boots extends CrystalliteArmorHoneyItem {
@@ -151,8 +135,8 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Combo Jump - Jump repeatedly for increased jump height"));
@@ -163,11 +147,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_honey__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 }

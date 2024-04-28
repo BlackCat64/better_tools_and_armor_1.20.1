@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "glass_armor_adv": {
+    "glass_armor_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

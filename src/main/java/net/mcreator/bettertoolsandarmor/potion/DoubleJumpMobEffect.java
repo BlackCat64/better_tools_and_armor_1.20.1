@@ -13,11 +13,6 @@ public class DoubleJumpMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.better_tools.double_jump";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		DoubleJumpProcedureProcedure.execute(entity);
 	}

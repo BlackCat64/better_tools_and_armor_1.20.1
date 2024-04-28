@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fizzy_drinks_adv": {
+    "fizzy_drinks_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

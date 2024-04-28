@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "progression_section": {
+    "progression_section_0": {
       "trigger": "minecraft:tick"
     }
   }

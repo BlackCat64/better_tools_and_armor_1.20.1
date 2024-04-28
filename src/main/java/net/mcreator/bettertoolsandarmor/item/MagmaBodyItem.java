@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -15,12 +14,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.procedures.MagmaBodyProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
-
-import java.util.List;
 
 import com.google.common.collect.Iterables;
 
@@ -72,11 +68,6 @@ public abstract class MagmaBodyItem extends ArmorItem {
 	public static class Chestplate extends MagmaBodyItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

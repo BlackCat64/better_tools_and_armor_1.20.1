@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:deepslate_random_ore",
+    "better_tools:nether_diamond_ore",
+    "better_tools:topaz_block",
+    "better_tools:topaz_ore",
+    "better_tools:sapphire_block",
+    "better_tools:sapphire_ore",
+    "better_tools:blackstone_magma",
+    "better_tools:random_ore",
+    "better_tools:nether_diamond_block"
+  ]
+}

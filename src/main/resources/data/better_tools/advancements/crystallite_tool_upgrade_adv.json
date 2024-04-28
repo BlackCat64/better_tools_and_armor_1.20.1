@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_tool_upgrade_adv": {
+    "crystallite_tool_upgrade_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

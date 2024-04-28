@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "topaz_adv": {
+    "topaz_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

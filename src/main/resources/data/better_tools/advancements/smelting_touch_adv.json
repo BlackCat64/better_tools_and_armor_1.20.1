@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "smelting_touch_adv": {
+    "smelting_touch_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

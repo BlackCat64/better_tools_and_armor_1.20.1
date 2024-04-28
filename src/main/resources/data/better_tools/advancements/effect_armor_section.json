@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "effect_armor_section": {
+    "effect_armor_section_0": {
       "trigger": "minecraft:tick"
     }
   }

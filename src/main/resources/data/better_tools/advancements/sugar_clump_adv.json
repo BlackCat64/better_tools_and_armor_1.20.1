@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "sugar_clump_adv": {
+    "sugar_clump_adv_0": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "ice_staff_adv": {
+    "ice_staff_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

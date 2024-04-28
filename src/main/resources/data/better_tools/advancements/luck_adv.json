@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "luck_adv": {
+    "luck_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

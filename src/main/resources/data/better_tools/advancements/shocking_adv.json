@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "shocking_adv": {
+    "shocking_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

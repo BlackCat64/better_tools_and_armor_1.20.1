@@ -44,8 +44,8 @@ public class CrystallitePickaxeTopazItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A76Charged - Ores have a chance to drop double"));

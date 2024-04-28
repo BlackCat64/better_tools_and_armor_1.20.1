@@ -8,6 +8,7 @@ dependencies {
   runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1")
   compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1:api")
 }
+
 minecraft {
   runs {
      client {

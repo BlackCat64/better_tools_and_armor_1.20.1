@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "end_titanium_adv": {
+    "end_titanium_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -45,8 +45,8 @@ public class CrystallitePickaxeSkyItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A7fAir Affinity - Mines at the same speed while airborne"));

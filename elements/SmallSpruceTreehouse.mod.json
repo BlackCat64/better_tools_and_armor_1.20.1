@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "structure",
   "definition": {
     "structure": "small_spruce_treehouse",
@@ -26,6 +26,9 @@
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "beard_thin",
-    "generationStep": "SURFACE_STRUCTURES"
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
   }
 }

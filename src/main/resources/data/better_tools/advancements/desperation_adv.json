@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "desperation_adv": {
+    "desperation_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

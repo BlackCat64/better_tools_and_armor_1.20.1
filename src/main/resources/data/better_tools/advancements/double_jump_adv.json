@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "double_jump_adv": {
+    "double_jump_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

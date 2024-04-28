@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "nether_diamond_tools_adv": {
+    "nether_diamond_tools_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

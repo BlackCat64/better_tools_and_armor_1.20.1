@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "karma_adv": {
+    "karma_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

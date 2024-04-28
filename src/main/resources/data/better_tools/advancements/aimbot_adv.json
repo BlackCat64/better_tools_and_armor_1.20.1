@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "aimbot_adv": {
+    "aimbot_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

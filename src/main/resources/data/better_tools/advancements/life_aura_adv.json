@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "life_aura_adv": {
+    "life_aura_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

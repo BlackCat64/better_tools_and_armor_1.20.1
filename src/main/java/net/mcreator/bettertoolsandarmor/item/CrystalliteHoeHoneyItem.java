@@ -27,7 +27,7 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0.5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {
@@ -45,8 +45,8 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A76Hive Mind - Harvest Honeycomb from Beehives without angering nearby bees"));

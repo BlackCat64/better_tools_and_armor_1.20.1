@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "all_iron_effect_armor_adv": {
+    "all_iron_effect_armor_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

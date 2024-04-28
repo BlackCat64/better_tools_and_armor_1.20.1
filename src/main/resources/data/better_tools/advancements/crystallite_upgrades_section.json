@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_upgrades_section": {
+    "crystallite_upgrades_section_0": {
       "trigger": "minecraft:tick"
     }
   }

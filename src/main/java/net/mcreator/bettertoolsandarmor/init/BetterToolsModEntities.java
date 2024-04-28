@@ -32,20 +32,20 @@ public class BetterToolsModEntities {
 			EntityType.Builder.<PurpleMooshroomEntity>of(PurpleMooshroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PurpleMooshroomEntity::new)
 
 					.sized(0.9f, 1.4f));
-	public static final RegistryObject<EntityType<ElectricStaffProjectileEntity>> ELECTRIC_STAFF_PROJECTILE = register("projectile_electric_staff_projectile",
+	public static final RegistryObject<EntityType<ElectricStaffProjectileEntity>> ELECTRIC_STAFF_PROJECTILE = register("electric_staff_projectile",
 			EntityType.Builder.<ElectricStaffProjectileEntity>of(ElectricStaffProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(ElectricStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IceStaffProjectileEntity>> ICE_STAFF_PROJECTILE = register("projectile_ice_staff_projectile", EntityType.Builder.<IceStaffProjectileEntity>of(IceStaffProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<IceStaffProjectileEntity>> ICE_STAFF_PROJECTILE = register("ice_staff_projectile", EntityType.Builder.<IceStaffProjectileEntity>of(IceStaffProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(IceStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FireStaffProjectileEntity>> FIRE_STAFF_PROJECTILE = register("projectile_fire_staff_projectile", EntityType.Builder.<FireStaffProjectileEntity>of(FireStaffProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<FireStaffProjectileEntity>> FIRE_STAFF_PROJECTILE = register("fire_staff_projectile", EntityType.Builder.<FireStaffProjectileEntity>of(FireStaffProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(FireStaffProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FireStaffDispenserProjectileEntity>> FIRE_STAFF_DISPENSER_PROJECTILE = register("projectile_fire_staff_dispenser_projectile",
+	public static final RegistryObject<EntityType<FireStaffDispenserProjectileEntity>> FIRE_STAFF_DISPENSER_PROJECTILE = register("fire_staff_dispenser_projectile",
 			EntityType.Builder.<FireStaffDispenserProjectileEntity>of(FireStaffDispenserProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(FireStaffDispenserProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IceStaffProjectileFromDispenserEntity>> ICE_STAFF_PROJECTILE_FROM_DISPENSER = register("projectile_ice_staff_projectile_from_dispenser",
+	public static final RegistryObject<EntityType<IceStaffProjectileFromDispenserEntity>> ICE_STAFF_PROJECTILE_FROM_DISPENSER = register("ice_staff_projectile_from_dispenser",
 			EntityType.Builder.<IceStaffProjectileFromDispenserEntity>of(IceStaffProjectileFromDispenserEntity::new, MobCategory.MISC).setCustomClientFactory(IceStaffProjectileFromDispenserEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LightningStaffDispenserProjectileEntity>> LIGHTNING_STAFF_DISPENSER_PROJECTILE = register("projectile_lightning_staff_dispenser_projectile",
+	public static final RegistryObject<EntityType<LightningStaffDispenserProjectileEntity>> LIGHTNING_STAFF_DISPENSER_PROJECTILE = register("lightning_staff_dispenser_projectile",
 			EntityType.Builder.<LightningStaffDispenserProjectileEntity>of(LightningStaffDispenserProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(LightningStaffDispenserProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 

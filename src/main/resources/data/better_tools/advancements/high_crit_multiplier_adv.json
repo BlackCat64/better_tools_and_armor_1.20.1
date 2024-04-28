@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "high_crit_multiplier_adv": {
+    "high_crit_multiplier_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

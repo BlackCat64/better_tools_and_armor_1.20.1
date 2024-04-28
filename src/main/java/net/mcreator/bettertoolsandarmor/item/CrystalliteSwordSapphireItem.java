@@ -28,7 +28,7 @@ public class CrystalliteSwordSapphireItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 3f;
 			}
 
 			public int getLevel() {
@@ -53,8 +53,8 @@ public class CrystalliteSwordSapphireItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A7bFreezing - Can freeze opponents"));

@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -73,8 +72,8 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
@@ -85,11 +84,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_netherite__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 
@@ -99,8 +93,8 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
@@ -112,11 +106,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_netherite__layer_1.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Leggings extends CrystalliteArmorNetheriteItem {
@@ -125,8 +114,8 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
@@ -138,11 +127,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_netherite__layer_2.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Boots extends CrystalliteArmorNetheriteItem {
@@ -151,8 +135,8 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
@@ -163,11 +147,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_netherite__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 }

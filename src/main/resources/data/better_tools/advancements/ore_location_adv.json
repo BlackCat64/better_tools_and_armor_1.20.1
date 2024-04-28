@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "ore_location_adv": {
+    "ore_location_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -16,11 +16,6 @@ public class FrozenMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.better_tools.frozen";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		FrozenEffectAppliedProcedure.execute(entity);
 	}

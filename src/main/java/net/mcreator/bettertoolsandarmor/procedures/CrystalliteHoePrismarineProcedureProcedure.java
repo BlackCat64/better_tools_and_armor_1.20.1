@@ -23,8 +23,8 @@ import javax.annotation.Nullable;
 public class CrystalliteHoePrismarineProcedureProcedure {
 	@SubscribeEvent
 	public static void onUseHoe(BlockEvent.BlockToolModificationEvent event) {
-		if (!event.isSimulated() && event.getToolAction() == ToolActions.HOE_TILL) {
-			execute(event, event.getPlayer().level(), event.getContext().getClickedPos().getX(), event.getContext().getClickedPos().getY(), event.getContext().getClickedPos().getZ(), event.getPlayer());
+		if (!event.isSimulated() && event.getToolAction() == ToolActions.HOE_TILL && event.getPlayer() != null) {
+			execute(event, event.getContext().getLevel(), event.getContext().getClickedPos().getX(), event.getContext().getClickedPos().getY(), event.getContext().getClickedPos().getZ(), event.getPlayer());
 		}
 	}
 

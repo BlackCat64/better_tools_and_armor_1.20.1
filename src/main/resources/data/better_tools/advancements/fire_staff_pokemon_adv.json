@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fire_staff_pokemon_adv": {
+    "fire_staff_pokemon_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

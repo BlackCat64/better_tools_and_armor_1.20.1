@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:climbable_wall",
+    "better_tools:crystallite_cluster_air",
+    "better_tools:four_leaf_clover",
+    "better_tools:purple_mushroom"
+  ]
+}

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "daggers_adv": {
+    "daggers_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

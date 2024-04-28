@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "combo_jump_adv": {
+    "combo_jump_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

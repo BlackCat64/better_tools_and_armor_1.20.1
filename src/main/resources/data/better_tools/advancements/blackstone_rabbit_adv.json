@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "blackstone_rabbit_adv": {
+    "blackstone_rabbit_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

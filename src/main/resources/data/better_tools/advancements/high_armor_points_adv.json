@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "high_armor_points_adv": {
+    "high_armor_points_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

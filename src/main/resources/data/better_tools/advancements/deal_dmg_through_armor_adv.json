@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "deal_dmg_through_armor_adv": {
+    "deal_dmg_through_armor_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

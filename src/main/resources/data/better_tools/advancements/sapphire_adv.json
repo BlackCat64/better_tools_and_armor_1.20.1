@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "sapphire_adv": {
+    "sapphire_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

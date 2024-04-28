@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "overkill_adv": {
+    "overkill_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

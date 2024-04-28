@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "better_tools:jewellery_table",
     "better_tools:purple_mushroom_block",
-    "better_tools:blue_mushroom_block",
-    "better_tools:jewellery_table"
+    "better_tools:blue_mushroom_block"
   ]
 }

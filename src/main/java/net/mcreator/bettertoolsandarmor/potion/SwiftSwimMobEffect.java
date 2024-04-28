@@ -15,11 +15,6 @@ public class SwiftSwimMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.better_tools.swift_swim";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		SwiftSwimProcedureProcedure.execute(entity);
 	}

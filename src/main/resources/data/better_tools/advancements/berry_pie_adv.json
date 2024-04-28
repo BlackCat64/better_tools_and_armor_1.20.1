@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "berry_pie_adv": {
+    "berry_pie_adv_0": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

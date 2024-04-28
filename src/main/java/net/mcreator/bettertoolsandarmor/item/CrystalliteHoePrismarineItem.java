@@ -29,7 +29,7 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0.5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {
@@ -47,8 +47,8 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A73Hydration - All tilled farmland starts with full moisture"));

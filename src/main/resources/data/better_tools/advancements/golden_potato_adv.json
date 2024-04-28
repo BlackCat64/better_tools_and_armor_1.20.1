@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "golden_potato_adv": {
+    "golden_potato_adv_0": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "nether_diamond_adv": {
+    "nether_diamond_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

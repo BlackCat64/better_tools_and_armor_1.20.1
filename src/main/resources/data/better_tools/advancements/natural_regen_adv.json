@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "natural_regen_adv": {
+    "natural_regen_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

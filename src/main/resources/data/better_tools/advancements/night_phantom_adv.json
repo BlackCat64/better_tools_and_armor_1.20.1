@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "night_phantom_adv": {
+    "night_phantom_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -231,8 +231,8 @@ public class BetterToolsModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			respawn_xp = nbt.getDouble("respawn_xp");
 			extra_jumps = nbt.getDouble("extra_jumps");
 			charms_equipped = nbt.getDouble("charms_equipped");

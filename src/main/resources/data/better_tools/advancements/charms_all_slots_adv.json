@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "charms_all_slots_adv": {
+    "charms_all_slots_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

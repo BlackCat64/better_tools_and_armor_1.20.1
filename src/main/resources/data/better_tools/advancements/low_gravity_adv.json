@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "low_gravity_adv": {
+    "low_gravity_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

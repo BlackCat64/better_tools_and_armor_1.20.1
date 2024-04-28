@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "better_tools:end_titanium_ore",
     "better_tools:end_titanium_block",
     "better_tools:crystallite_block",
     "better_tools:cut_crystallite_block"

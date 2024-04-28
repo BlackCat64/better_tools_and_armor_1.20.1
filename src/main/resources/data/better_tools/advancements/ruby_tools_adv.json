@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "ruby_tools_adv": {
+    "ruby_tools_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

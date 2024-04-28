@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_armor_upgrade_adv": {
+    "crystallite_armor_upgrade_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

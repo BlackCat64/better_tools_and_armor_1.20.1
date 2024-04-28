@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "get_guardian_spike_adv": {
+    "get_guardian_spike_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "frozen_adv": {
+    "frozen_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

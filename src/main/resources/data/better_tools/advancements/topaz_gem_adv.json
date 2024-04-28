@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "topaz_gem_adv": {
+    "topaz_gem_adv_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

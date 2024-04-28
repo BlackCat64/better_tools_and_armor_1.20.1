@@ -15,11 +15,6 @@ public class CriticalityMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.better_tools.criticality";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		CriticalHitEffectAppliedProcedure.execute(entity);
 	}

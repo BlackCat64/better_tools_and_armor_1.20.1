@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "better_tools:blocks/blue_slime_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "better_tools:blue_slime_block"
+        }
+      ]
+    }
+  ]
+}

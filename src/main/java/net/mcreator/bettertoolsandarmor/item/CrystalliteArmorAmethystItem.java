@@ -12,7 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -77,8 +76,8 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7dAccuracy - A fully charged bow shoots arrows directly at the target"));
@@ -88,11 +87,6 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_amethyst__layer_1.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Chestplate extends CrystalliteArmorAmethystItem {
@@ -101,8 +95,8 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7dCrystallized - Gain Absorption health when underground and not in combat"));
@@ -111,11 +105,6 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_amethyst__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -133,8 +122,8 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7dCave Climber - Allows wall climbing on any solid block"));
@@ -144,11 +133,6 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_amethyst__layer_2.png";
 		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
-		}
 	}
 
 	public static class Boots extends CrystalliteArmorAmethystItem {
@@ -157,8 +141,8 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7dShockwave - Damage nearby mobs when landing from a fall"));
@@ -167,11 +151,6 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_amethyst__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 }

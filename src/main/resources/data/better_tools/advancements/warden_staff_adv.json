@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "warden_staff_adv": {
+    "warden_staff_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "shoot_through_walls_adv": {
+    "shoot_through_walls_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

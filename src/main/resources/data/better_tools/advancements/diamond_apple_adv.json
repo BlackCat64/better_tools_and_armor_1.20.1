@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "diamond_apple_adv": {
+    "diamond_apple_adv_0": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

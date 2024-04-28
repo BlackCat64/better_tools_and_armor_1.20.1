@@ -237,11 +237,6 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

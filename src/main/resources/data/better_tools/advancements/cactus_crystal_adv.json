@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "cactus_crystal_adv": {
+    "cactus_crystal_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

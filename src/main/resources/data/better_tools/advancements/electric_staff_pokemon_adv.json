@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "electric_staff_pokemon_adv": {
+    "electric_staff_pokemon_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

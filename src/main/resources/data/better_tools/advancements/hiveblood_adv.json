@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "hiveblood_adv": {
+    "hiveblood_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

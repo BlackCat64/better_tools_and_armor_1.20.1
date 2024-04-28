@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "ruby_sugar_adv": {
+    "ruby_sugar_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

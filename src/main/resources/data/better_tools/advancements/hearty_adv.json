@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "hearty_adv": {
+    "hearty_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

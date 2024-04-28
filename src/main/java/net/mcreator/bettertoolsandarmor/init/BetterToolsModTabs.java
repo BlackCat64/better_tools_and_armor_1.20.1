@@ -55,134 +55,6 @@ public class BetterToolsModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND.get());
-				tabData.accept(BetterToolsModBlocks.NETHER_DIAMOND_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.NETHER_DIAMOND_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_SWORD.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_AXE.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_HOE.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_DAGGER.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_HELMET.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_BOOTS.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_SCRAP.get());
-				tabData.accept(BetterToolsModBlocks.END_TITANIUM_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.END_TITANIUM_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_INGOT.get());
-				tabData.accept(BetterToolsModItems.ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_SWORD.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_AXE.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_HOE.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_DAGGER.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_HELMET.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.END_TITANIUM_BOOTS.get());
-				tabData.accept(BetterToolsModItems.RUBY.get());
-				tabData.accept(BetterToolsModBlocks.RUBY_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DEEPSLATE_RUBY_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.RUBY_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.RUBY_SWORD.get());
-				tabData.accept(BetterToolsModItems.RUBY_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.RUBY_AXE.get());
-				tabData.accept(BetterToolsModItems.RUBY_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.RUBY_HOE.get());
-				tabData.accept(BetterToolsModItems.RUBY_DAGGER.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE.get());
-				tabData.accept(BetterToolsModBlocks.SAPPHIRE_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.SAPPHIRE_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_SWORD.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_AXE.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_HOE.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_DAGGER.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_HELMET.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.SAPPHIRE_BOOTS.get());
-				tabData.accept(BetterToolsModItems.TOPAZ.get());
-				tabData.accept(BetterToolsModBlocks.TOPAZ_ORE.get().asItem());
-				tabData.accept(BetterToolsModBlocks.TOPAZ_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModItems.TOPAZ_SWORD.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_AXE.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_HOE.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_DAGGER.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_HELMET.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.TOPAZ_BOOTS.get());
-				tabData.accept(BetterToolsModItems.FLINT_SWORD.get());
-				tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
-				tabData.accept(BetterToolsModItems.FLINT_AXE.get());
-				tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
-				tabData.accept(BetterToolsModItems.FLINT_HOE.get());
-				tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
-				tabData.accept(BetterToolsModItems.WOOD_DAGGER.get());
-				tabData.accept(BetterToolsModItems.STONE_DAGGER.get());
-				tabData.accept(BetterToolsModItems.IRON_DAGGER.get());
-				tabData.accept(BetterToolsModItems.GOLD_DAGGER.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
-				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
-				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
-				tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());
-				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
-				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.HEARTY_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.MAGMA_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_MAGMA_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.RUBY_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_RUBY_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.CRYSTAL_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CRYSTAL_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.BLACKSTONE_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_BLACKSTONE_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.SUGAR_BOOTS.get());
-				tabData.accept(BetterToolsModItems.IRON_SUGAR_BOOTS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_SUGAR_BOOTS.get());
-				tabData.accept(BetterToolsModItems.RABBIT_BOOTS.get());
-				tabData.accept(BetterToolsModItems.IRON_RABBIT_BOOTS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_RABBIT_BOOTS.get());
-				tabData.accept(BetterToolsModItems.PHANTOM_BOOTS.get());
-				tabData.accept(BetterToolsModItems.IRON_PHANTOM_BOOTS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_PHANTOM_BOOTS.get());
-				tabData.accept(BetterToolsModItems.WINGED_BOOTS_BOOTS.get());
-				tabData.accept(BetterToolsModItems.GLASS_HELMET.get());
-				tabData.accept(BetterToolsModItems.GLASS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.GLASS_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.GLASS_BOOTS.get());
-				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_HELMET.get());
-				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_BOOTS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_HELMET.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
-			})
-
-					.build());
 	public static final RegistryObject<CreativeModeTab> CRYSTALLITE_TAB = REGISTRY.register("crystallite_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.crystallite_tab")).icon(() -> new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
@@ -401,6 +273,88 @@ public class BetterToolsModTabs {
 			})
 
 					.build());
+	public static final RegistryObject<CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND.get());
+				tabData.accept(BetterToolsModBlocks.NETHER_DIAMOND_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.NETHER_DIAMOND_BLOCK.get().asItem());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_SWORD.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_AXE.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_HOE.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_DAGGER.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_HELMET.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.NETHER_DIAMOND_BOOTS.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_SCRAP.get());
+				tabData.accept(BetterToolsModBlocks.END_TITANIUM_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.END_TITANIUM_BLOCK.get().asItem());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_INGOT.get());
+				tabData.accept(BetterToolsModItems.ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_SWORD.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_AXE.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_HOE.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_DAGGER.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_HELMET.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.END_TITANIUM_BOOTS.get());
+				tabData.accept(BetterToolsModItems.RUBY.get());
+				tabData.accept(BetterToolsModBlocks.RUBY_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.DEEPSLATE_RUBY_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.RUBY_BLOCK.get().asItem());
+				tabData.accept(BetterToolsModItems.RUBY_SWORD.get());
+				tabData.accept(BetterToolsModItems.RUBY_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.RUBY_AXE.get());
+				tabData.accept(BetterToolsModItems.RUBY_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.RUBY_HOE.get());
+				tabData.accept(BetterToolsModItems.RUBY_DAGGER.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE.get());
+				tabData.accept(BetterToolsModBlocks.SAPPHIRE_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.SAPPHIRE_BLOCK.get().asItem());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_SWORD.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_AXE.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_HOE.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_DAGGER.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_HELMET.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.SAPPHIRE_BOOTS.get());
+				tabData.accept(BetterToolsModItems.TOPAZ.get());
+				tabData.accept(BetterToolsModBlocks.TOPAZ_ORE.get().asItem());
+				tabData.accept(BetterToolsModBlocks.TOPAZ_BLOCK.get().asItem());
+				tabData.accept(BetterToolsModItems.TOPAZ_SWORD.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_AXE.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_HOE.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_DAGGER.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_HELMET.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.TOPAZ_BOOTS.get());
+				tabData.accept(BetterToolsModItems.FLINT_SWORD.get());
+				tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
+				tabData.accept(BetterToolsModItems.FLINT_AXE.get());
+				tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
+				tabData.accept(BetterToolsModItems.FLINT_HOE.get());
+				tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
+				tabData.accept(BetterToolsModItems.WOOD_DAGGER.get());
+				tabData.accept(BetterToolsModItems.STONE_DAGGER.get());
+				tabData.accept(BetterToolsModItems.IRON_DAGGER.get());
+				tabData.accept(BetterToolsModItems.GOLD_DAGGER.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
+				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
+				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> BLOCKS_TAB = REGISTRY.register("blocks_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.blocks_tab")).icon(() -> new ItemStack(BetterToolsModBlocks.DARK_POLISHED_IRON_BLOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.CHARGED_ICE_ON.get().asItem());
@@ -504,6 +458,52 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_STAIRS.get().asItem());
 				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_WALL.get().asItem());
 				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_TRAPDOOR.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
+				tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());
+				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
+				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.HEARTY_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.MAGMA_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_MAGMA_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.RUBY_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_RUBY_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.CRYSTAL_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CRYSTAL_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.BLACKSTONE_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_BLACKSTONE_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.SUGAR_BOOTS.get());
+				tabData.accept(BetterToolsModItems.IRON_SUGAR_BOOTS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_SUGAR_BOOTS.get());
+				tabData.accept(BetterToolsModItems.RABBIT_BOOTS.get());
+				tabData.accept(BetterToolsModItems.IRON_RABBIT_BOOTS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_RABBIT_BOOTS.get());
+				tabData.accept(BetterToolsModItems.PHANTOM_BOOTS.get());
+				tabData.accept(BetterToolsModItems.IRON_PHANTOM_BOOTS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_PHANTOM_BOOTS.get());
+				tabData.accept(BetterToolsModItems.WINGED_BOOTS_BOOTS.get());
+				tabData.accept(BetterToolsModItems.GLASS_HELMET.get());
+				tabData.accept(BetterToolsModItems.GLASS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.GLASS_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.GLASS_BOOTS.get());
+				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_HELMET.get());
+				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.IRON_GLASS_ARMOR_BOOTS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_HELMET.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
 			})
 
 					.build());
