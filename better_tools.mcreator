@@ -28409,6 +28409,47 @@
         "files": []
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "CrystalliteBow",
+      "type": "item",
+      "sortid": 1727,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowItem.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "ModItemProperties",
+      "type": "code",
+      "sortid": 1729,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_item_properties",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/ModItemProperties.java"
+        ]
+      }
+    },
+    {
+      "name": "E",
+      "type": "code",
+      "sortid": 1730,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/E.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30904,6 +30945,7 @@
       "item.better_tools.sapphire_leggings": "Sapphire Leggings",
       "item.better_tools.crystallite_axe_prismarine": "Crystallite Axe",
       "item.better_tools.end_titanium_ingot": "Ender Titanium Ingot",
+      "item.better_tools.crystallite_bow": "Crystallite Bow",
       "entity.better_tools.projectile_fire_staff_dispenser_projectile": "Dispenser using Fire Staff",
       "item.better_tools.ender_titanium_upgrade_smithing_template": "Smithing Template",
       "jei.better_tools.beacon_payment_items_info": "Better Tools and Armor allows these items to be used as Beacon payment items.",

@@ -233,6 +233,7 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerEmeraldItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerDiamondItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerAmethystItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteCharmBaseItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeTopazItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSculkItem;
@@ -757,6 +758,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> LOST_SOULS_POTION = REGISTRY.register("lost_souls_potion", () -> new LostSoulsPotionItem());
 	public static final RegistryObject<Item> ENDER_TITANIUM_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("ender_titanium_upgrade_smithing_template", () -> new EnderTitaniumUpgradeSmithingTemplateItem());
 	public static final RegistryObject<Item> CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("crystallite_upgrade_smithing_template", () -> new CrystalliteUpgradeSmithingTemplateItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW = REGISTRY.register("crystallite_bow", () -> new CrystalliteBowItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

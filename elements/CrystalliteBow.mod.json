@@ -1,0 +1,58 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "crystallite_bow",
+    "customModelName": "Ranged item",
+    "customProperties": {},
+    "states": [],
+    "name": "Crystallite Bow",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "stackSize": 1,
+    "enchantability": 20,
+    "useDuration": 72000,
+    "toolType": 1.0,
+    "damageCount": 1800,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §rNone"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onStoppedUsing": {
+      "name": "BowPullTimeTest"
+    },
+    "enableRanged": true,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "bow"
+  }
+}
