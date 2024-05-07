@@ -28439,17 +28439,92 @@
       }
     },
     {
-      "name": "E",
-      "type": "code",
+      "name": "CrystalliteBowRecipe",
+      "type": "recipe",
       "sortid": 1730,
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "e",
+      "locked_code": false,
+      "registry_name": "crystallite_bow_recipe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/E.java"
+          "src/main/resources/data/better_tools/recipes/crystallite_bow_recipe.json"
         ]
-      }
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowRecipe2",
+      "type": "recipe",
+      "sortid": 1731,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/crystallite_bow_recipe_2.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowIncreasedDamage",
+      "type": "procedure",
+      "sortid": 1732,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_increased_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowIncreasedDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "DamageTracker",
+      "type": "procedure",
+      "sortid": 1733,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DamageTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -29878,6 +29953,9 @@
       "CUSTOM:CrystalliteArmorEmerald.legs",
       "CUSTOM:CrystalliteArmorEmerald.boots",
       "CUSTOM:NatureRing"
+    ],
+    "ITEMS:mod:crystallite_bows": [
+      "CUSTOM:CrystalliteBow"
     ],
     "ITEMS:forge:ore_rates/dense": [
       "CUSTOM:RubyOre",
