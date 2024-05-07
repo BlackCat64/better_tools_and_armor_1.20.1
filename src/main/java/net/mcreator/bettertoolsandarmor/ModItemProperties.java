@@ -26,6 +26,8 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 public class ModItemProperties {
 	public static void addCustomItemProperties() {
 		makeBow(BetterToolsModItems.CRYSTALLITE_BOW.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
 	}
 
 	private static void makeBow(Item item) {

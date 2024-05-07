@@ -271,6 +271,9 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TEMP.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
 			})
 
 					.build());

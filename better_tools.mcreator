@@ -28525,6 +28525,51 @@
         ]
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowIron",
+      "type": "item",
+      "sortid": 1734,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowIronItem.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowTemp",
+      "type": "item",
+      "sortid": 1735,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_temp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowTempItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_temp.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowGold",
+      "type": "item",
+      "sortid": 1736,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowGoldItem.java"
+        ]
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -30949,6 +30994,7 @@
       "key.better_tools.attributes_viewer_open": "Open Attribute Viewer",
       "item.better_tools.iron_hearty_chestplate": "Hearty Shirt",
       "item.better_tools.crystallite_dagger_emerald": "Crystallite Dagger",
+      "item.better_tools.crystallite_bow_iron": "Crystallite Bow",
       "item.better_tools.crystallite_armor_topaz_leggings": "Crystallite Leggings",
       "enchantment.copper_tools_and_armor.smelting_touch": "Smelting Touch",
       "item.better_tools.magma_chestplate": "Magma Chestplate",
@@ -31263,6 +31309,7 @@
       "advancements.ruby_pickaxe_adv.title": "Ruby-fficiency",
       "death.attack.karma_damage.item": "%1$s got instant karma from %2$s using %3$s",
       "item.better_tools.ruby_sword": "Ruby Sword",
+      "item.better_tools.crystallite_bow_temp": "Crystallite Bow",
       "enchantment.better_tools.desperation.desc": "Deal a lot more damage the less HP you currently have, but has no effect at high HP",
       "item.better_tools.topaz_sword": "Topaz Sword",
       "item.better_tools.crystallite_armor_honey_leggings": "Crystallite Leggings",
@@ -31430,6 +31477,7 @@
       "item.better_tools.flint_axe": "Flint Axe",
       "advancements.low_gravity_adv.title": "Moon Walker",
       "item.better_tools.crystallite_sword_gold": "Crystallite Sword",
+      "item.better_tools.crystallite_bow_gold": "Crystallite Bow",
       "item.minecraft.splash_potion.effect.potion_of_decay_2": "Splash Potion of Decay",
       "item.copper_tools_and_armor.copper_pickaxe": "Copper Pickaxe",
       "advancements.kill_warden_adv.title": "Master of the Deep",

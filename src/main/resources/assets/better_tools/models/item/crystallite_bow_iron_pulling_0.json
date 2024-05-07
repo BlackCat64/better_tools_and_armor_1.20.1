@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_iron",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_iron_pulling_0"
+    }
+}
