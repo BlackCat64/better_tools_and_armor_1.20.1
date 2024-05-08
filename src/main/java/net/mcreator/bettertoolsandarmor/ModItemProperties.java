@@ -28,6 +28,20 @@ public class ModItemProperties {
 		makeBow(BetterToolsModItems.CRYSTALLITE_BOW.get());
 		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
 		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_LAPIS.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_REDSTONE.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_DIAMOND.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_NETHERITE.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_RUBY.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_NETHER_DIAMOND.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_SCULK.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_SKY.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get());
+		makeBow(BetterToolsModItems.CRYSTALLITE_BOW_HONEY.get());
 	}
 
 	private static void makeBow(Item item) {

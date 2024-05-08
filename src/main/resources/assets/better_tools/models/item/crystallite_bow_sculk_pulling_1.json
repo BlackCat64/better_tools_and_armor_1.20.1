@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_sculk",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_sculk_pulling_1"
+    }
+}

@@ -28539,7 +28539,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowIronItem.java"
         ]
       },
-      "path": "~/Crystallite"
+      "path": "~/Crystallite/Iron"
     },
     {
       "name": "CrystalliteBowTemp",
@@ -28569,7 +28569,217 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowGoldItem.java"
         ]
       },
-      "path": "~/Crystallite"
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteBowLapis",
+      "type": "item",
+      "sortid": 1737,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_lapis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowLapisItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_lapis.json"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "CrystalliteBowRedstone",
+      "type": "item",
+      "sortid": 1738,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_redstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_redstone.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowRedstoneItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteBowDiamond",
+      "type": "item",
+      "sortid": 1739,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_diamond.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowDiamondItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "CrystalliteBowNetherite",
+      "type": "item",
+      "sortid": 1740,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_netherite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_netherite.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowNetheriteItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystalliteBowRuby",
+      "type": "item",
+      "sortid": 1741,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_ruby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowRubyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby.json"
+        ]
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "CrystalliteBowSapphire",
+      "type": "item",
+      "sortid": 1742,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_sapphire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sapphire.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowSapphireItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "CrystalliteBowTopaz",
+      "type": "item",
+      "sortid": 1743,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_topaz",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_topaz.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowTopazItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamond",
+      "type": "item",
+      "sortid": 1744,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_nether_diamond",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowNetherDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond.json"
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowEmerald",
+      "type": "item",
+      "sortid": 1745,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_emerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowEmeraldItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_emerald.json"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteBowSculk",
+      "type": "item",
+      "sortid": 1746,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_sculk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowSculkItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sculk.json"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "CrystalliteBowSky",
+      "type": "item",
+      "sortid": 1747,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_sky",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sky.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowSkyItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "CrystalliteBowAmethyst",
+      "type": "item",
+      "sortid": 1748,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_amethyst",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_amethyst.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowAmethystItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteBowPrismarine",
+      "type": "item",
+      "sortid": 1749,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_prismarine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_prismarine.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowPrismarineItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteBowHoney",
+      "type": "item",
+      "sortid": 1750,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_bow_honey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowHoneyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_honey.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
@@ -30740,6 +30950,7 @@
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
+      "item.better_tools.crystallite_bow_nether_diamond": "Crystallite Bow",
       "item.minecraft.lingering_potion.effect.swift_swim_potion_2": "Lingering Potion of Rapidity",
       "jei.better_tools.amethyst_crystallite_info": "§lCrystallite Upgrades: \n§dAmethyst§r\n\nTheme:\nEarth and Echolocation",
       "item.copper_tools_and_armor.copper_shovel": "Copper Shovel",
@@ -30809,6 +31020,8 @@
       "gui.better_tools.attributes_viewer.label_max_health": "Max Health",
       "advancements.glass_armor_adv.title": "Glass Ghost",
       "advancements.get_guardian_spike_adv.descr": "Obtain a Guardian Spike",
+      "item.better_tools.crystallite_bow_lapis": "Crystallite Bow",
+      "item.better_tools.crystallite_bow_diamond": "Crystallite Bow",
       "block.better_tools.polished_gold_wall": "Polished Gold Wall",
       "advancements.progression_section.title": "BT+A - Progression",
       "item.better_tools.golden_potato": "Golden Potato",
@@ -30843,6 +31056,7 @@
       "item.better_tools.crystallite_hoe_amethyst": "Crystallite Hoe",
       "advancements.night_phantom_adv.descr": "Wear a Golden Carrot Hat and Phantom Boots at the same time",
       "death.attack.magic_weapon_damage.player": "%1$s was killed whilst trying to escape %2$s",
+      "item.better_tools.crystallite_bow_prismarine": "Crystallite Bow",
       "advancements.all_diamond_effect_armor_adv.title": "Effect God",
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
@@ -30885,6 +31099,7 @@
       "item.better_tools.crystallite_axe_sculk": "Crystallite Axe",
       "item.better_tools.crystallite_dagger_netherite": "Crystallite Dagger",
       "biome.better_tools.fungal_caves": "Fungal Caves",
+      "item.better_tools.crystallite_bow_topaz": "Crystallite Bow",
       "item.better_tools.crystallite_axe_gold": "Crystallite Axe",
       "item.better_tools.diamond_blackstone_leggings": "Gilded Blackstone Leggings",
       "item.better_tools.apple_juice": "Apple Juice",
@@ -30897,6 +31112,7 @@
       "item.better_tools.crystallite_armor_amethyst_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_leggings": "Ender Titanium Leggings",
       "effect.better_tools.frozen": "Frozen",
+      "item.better_tools.crystallite_bow_sculk": "Crystallite Bow",
       "item.better_tools.crystallite_shovel_nether_diamond": "Crystallite Shovel",
       "advancements.ruby_gem_adv.descr": "Mine a Ruby Ore",
       "advancements.life_aura_adv.descr": "Wear a Chestplate enchanted with Life Aura while at full HP",
@@ -31079,6 +31295,7 @@
       "gui.better_tools.attributes_viewer.label_00006": "0.000",
       "block.better_tools.purple_mushroom": "Purple Mushroom",
       "gui.better_tools.attributes_viewer.label_00004": "knockback_resistance_val",
+      "item.better_tools.crystallite_bow_ruby": "Crystallite Bow",
       "gui.better_tools.attributes_viewer.label_00005": "00.00",
       "gui.better_tools.attributes_viewer.label_00002": "00.00",
       "gui.better_tools.attributes_viewer.label_00003": "0.000",
@@ -31108,6 +31325,7 @@
       "advancements.far_block_reach_adv.title": "ARMS",
       "death.attack.poison_mushroom_damage.item": "%1$s was poisoned by a mushroom whilst fighting %2$s using %3$s",
       "item.better_tools.crystallite_sword_sculk": "Crystallite Sword",
+      "item.better_tools.crystallite_bow_emerald": "Crystallite Bow",
       "item.better_tools.sapphire_axe": "Sapphire Axe",
       "block.better_tools.dark_polished_copper_block": "Dark Polished Copper Block",
       "item.better_tools.diamond_hard_crystal": "Diamond Hard Crystal",
@@ -31152,6 +31370,7 @@
       "subtitles.down_under": "",
       "enchantment.better_tools.freeze_shot.desc": "Shots have a chance to freeze the target",
       "block.better_tools.light_polished_gold_slab": "Light Polished Gold Slab",
+      "item.better_tools.crystallite_bow_honey": "Crystallite Bow",
       "effect.better_tools.frozen.description": "Frozen mobs cannot move or jump. Shatter them for 1.25x damage (stacks with critical hits). Frozen players can jump repeatedly to shorten the effect time.",
       "jei.better_tools.effect_armor_jei_information": "§lEffect Armor§r\n\nApplies an effect to the wearer, as long as they don\u0027t already have the effect.\nIf the durability cost would destroy the armor, the effect stops being applied until the armor is repaired or upgraded.",
       "item.better_tools.topaz": "Topaz",
@@ -31176,6 +31395,7 @@
       "item.better_tools.iron_glass_armor_leggings": "Glass Leggings",
       "block.better_tools.dark_polished_lapis_block": "Metallic Lapis Lazuli Block",
       "gui.better_tools.attributes_viewer.label_luck": "Luck",
+      "item.better_tools.crystallite_bow_amethyst": "Crystallite Bow",
       "item.minecraft.lingering_potion.effect.double_jump_potion": "Lingering Potion of Double Jump",
       "item.minecraft.splash_potion.effect.criticality_potion": "Splash Potion of Criticality",
       "block.better_tools.polished_nether_diamond_block": "Metallic Nether Diamond Block",
@@ -31252,6 +31472,7 @@
       "item.minecraft.splash_potion.effect.karma_potion_2": "Splash Potion of Karma",
       "advancements.frozen_adv.title": "Stop right there, criminal scum!",
       "block.better_tools.dark_polished_iron_slab": "Dark Polished Iron Slab",
+      "item.better_tools.crystallite_bow_sapphire": "Crystallite Bow",
       "item.better_tools.diamond_crystal_leggings": "Crystal Leggings",
       "item.better_tools.electric_crystal": "Lightning Crystal",
       "item.better_tools.iron_glass_armor_boots": "Glass Boots",
@@ -31268,6 +31489,7 @@
       "item.better_tools.crystallite_armor_sculk_helmet": "Crystallite Helmet",
       "item.better_tools.magic_ring": "§9Magic Ring",
       "item.better_tools.bouncy_bracelet": "§bBouncy Bracelet",
+      "item.better_tools.crystallite_bow_sky": "Crystallite Bow",
       "advancements.end_titanium_tools_adv.title": "Titanic Tools",
       "advancements.charming_adv.descr": "Equip a Crystallite Charm",
       "item.better_tools.topaz_axe": "Topaz Axe",
@@ -31389,6 +31611,7 @@
       "item.better_tools.crystallite_axe": "Crystallite Axe",
       "gui.better_tools.attributes_viewer.label_thorns_dmg": "Thorns Dmg.",
       "item.better_tools.wood_dagger": "Wooden Dagger",
+      "item.better_tools.crystallite_bow_redstone": "Crystallite Bow",
       "block.better_tools.polished_redstone_wall": "Metallic Redstone Wall",
       "block.better_tools.nether_diamond_ore": "Nether Diamond Ore",
       "advancements.crystallite_cave_adv.descr": "Find a rare Crystallite Cluster and mine a Crystallite Block",
@@ -31411,6 +31634,7 @@
       "gui.better_tools.attributes_viewer.label_toughness": "Toughness",
       "item.minecraft.tipped_arrow.effect.swift_swim_potion": "Arrow of Rapidity",
       "item.better_tools.crystallite_axe_iron": "Crystallite Axe",
+      "item.better_tools.crystallite_bow_netherite": "Crystallite Bow",
       "item.better_tools.crystallite_pickaxe_diamond": "Crystallite Pickaxe",
       "advancements.hiveblood_adv.descr": "Have at least 30 Absorption Health",
       "block.better_tools.light_polished_gold_stairs": "Light Polished Gold Stairs",

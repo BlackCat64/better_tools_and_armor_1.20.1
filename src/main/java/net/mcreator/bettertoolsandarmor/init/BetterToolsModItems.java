@@ -233,10 +233,24 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerEmeraldItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerDiamondItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerAmethystItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteCharmBaseItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowTopazItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowTempItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSkyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSculkItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSapphireItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowRubyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowRedstoneItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowPrismarineItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowNetheriteItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowNetherDiamondItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowLapisItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowIronItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowHoneyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowGoldItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowEmeraldItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowDiamondItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteBowAmethystItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeTopazItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSculkItem;
@@ -765,6 +779,20 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_IRON = REGISTRY.register("crystallite_bow_iron", () -> new CrystalliteBowIronItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_TEMP = REGISTRY.register("crystallite_bow_temp", () -> new CrystalliteBowTempItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_GOLD = REGISTRY.register("crystallite_bow_gold", () -> new CrystalliteBowGoldItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_LAPIS = REGISTRY.register("crystallite_bow_lapis", () -> new CrystalliteBowLapisItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_REDSTONE = REGISTRY.register("crystallite_bow_redstone", () -> new CrystalliteBowRedstoneItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_DIAMOND = REGISTRY.register("crystallite_bow_diamond", () -> new CrystalliteBowDiamondItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_NETHERITE = REGISTRY.register("crystallite_bow_netherite", () -> new CrystalliteBowNetheriteItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_RUBY = REGISTRY.register("crystallite_bow_ruby", () -> new CrystalliteBowRubyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_SAPPHIRE = REGISTRY.register("crystallite_bow_sapphire", () -> new CrystalliteBowSapphireItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_TOPAZ = REGISTRY.register("crystallite_bow_topaz", () -> new CrystalliteBowTopazItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_NETHER_DIAMOND = REGISTRY.register("crystallite_bow_nether_diamond", () -> new CrystalliteBowNetherDiamondItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_EMERALD = REGISTRY.register("crystallite_bow_emerald", () -> new CrystalliteBowEmeraldItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_SCULK = REGISTRY.register("crystallite_bow_sculk", () -> new CrystalliteBowSculkItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_SKY = REGISTRY.register("crystallite_bow_sky", () -> new CrystalliteBowSkyItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_AMETHYST = REGISTRY.register("crystallite_bow_amethyst", () -> new CrystalliteBowAmethystItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_PRISMARINE = REGISTRY.register("crystallite_bow_prismarine", () -> new CrystalliteBowPrismarineItem());
+	public static final RegistryObject<Item> CRYSTALLITE_BOW_HONEY = REGISTRY.register("crystallite_bow_honey", () -> new CrystalliteBowHoneyItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

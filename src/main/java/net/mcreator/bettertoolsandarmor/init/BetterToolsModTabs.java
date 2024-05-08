@@ -274,6 +274,20 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TEMP.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_LAPIS.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_REDSTONE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_DIAMOND.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHERITE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_RUBY.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHER_DIAMOND.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SCULK.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SKY.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_HONEY.get());
 			})
 
 					.build());

@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_netherite",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_netherite_pulling_2"
+    }
+}

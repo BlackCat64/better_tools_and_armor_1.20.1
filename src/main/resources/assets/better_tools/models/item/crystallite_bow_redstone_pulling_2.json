@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_redstone",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_redstone_pulling_2"
+    }
+}

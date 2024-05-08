@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_honey",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_honey_pulling_1"
+    }
+}
