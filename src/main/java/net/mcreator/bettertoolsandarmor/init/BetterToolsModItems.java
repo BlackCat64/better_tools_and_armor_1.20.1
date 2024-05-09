@@ -234,7 +234,6 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerDiamondItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteDaggerAmethystItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteCharmBaseItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowTopazItem;
-import net.mcreator.bettertoolsandarmor.item.CrystalliteBowTempItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSculkItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteBowSapphireItem;
@@ -777,7 +776,6 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_UPGRADE_SMITHING_TEMPLATE = REGISTRY.register("crystallite_upgrade_smithing_template", () -> new CrystalliteUpgradeSmithingTemplateItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW = REGISTRY.register("crystallite_bow", () -> new CrystalliteBowItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_IRON = REGISTRY.register("crystallite_bow_iron", () -> new CrystalliteBowIronItem());
-	public static final RegistryObject<Item> CRYSTALLITE_BOW_TEMP = REGISTRY.register("crystallite_bow_temp", () -> new CrystalliteBowTempItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_GOLD = REGISTRY.register("crystallite_bow_gold", () -> new CrystalliteBowGoldItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_LAPIS = REGISTRY.register("crystallite_bow_lapis", () -> new CrystalliteBowLapisItem());
 	public static final RegistryObject<Item> CRYSTALLITE_BOW_REDSTONE = REGISTRY.register("crystallite_bow_redstone", () -> new CrystalliteBowRedstoneItem());

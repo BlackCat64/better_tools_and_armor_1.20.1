@@ -23,6 +23,9 @@
       },
       {
         "value": "Items.CROSSBOW"
+      },
+      {
+        "value": "TAG:better_tools:crystallite_bows"
       }
     ],
     "excludeItems": false,

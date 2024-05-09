@@ -24,6 +24,6 @@ public class CrystalliteBowAmethystItem extends BowItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7fTemp"));
+		list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 	}
 }

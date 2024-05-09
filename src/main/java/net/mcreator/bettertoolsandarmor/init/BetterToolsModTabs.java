@@ -70,6 +70,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_LEGGINGS.get());
@@ -116,6 +117,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_IRON.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_IRON.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_IRON.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_LEGGINGS.get());
@@ -126,6 +128,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_GOLD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_GOLD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_GOLD.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_LEGGINGS.get());
@@ -136,6 +139,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_LAPIS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_LAPIS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_LAPIS.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_LAPIS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_LEGGINGS.get());
@@ -146,6 +150,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_REDSTONE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_REDSTONE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get());
@@ -156,6 +161,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_DIAMOND.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_DIAMOND_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_DIAMOND_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_DIAMOND_LEGGINGS.get());
@@ -166,6 +172,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_NETHERITE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_NETHERITE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_NETHERITE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHERITE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get());
@@ -176,6 +183,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_RUBY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_RUBY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_RUBY.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_RUBY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get());
@@ -186,6 +194,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_SAPPHIRE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_SAPPHIRE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_SAPPHIRE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get());
@@ -196,6 +205,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_TOPAZ.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_TOPAZ.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_TOPAZ.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_LEGGINGS.get());
@@ -206,6 +216,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_NETHER_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_NETHER_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_NETHER_DIAMOND.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHER_DIAMOND.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_LEGGINGS.get());
@@ -216,6 +227,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_EMERALD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_EMERALD.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_LEGGINGS.get());
@@ -226,6 +238,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_SCULK.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_SCULK.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_SCULK.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SCULK.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get());
@@ -236,6 +249,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_SKY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_SKY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_SKY.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SKY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_LEGGINGS.get());
@@ -246,6 +260,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_AMETHYST.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_AMETHYST.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_AMETHYST.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_LEGGINGS.get());
@@ -256,6 +271,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_PRISMARINE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_PRISMARINE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_PRISMARINE.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get());
@@ -266,28 +282,11 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHOVEL_HONEY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_DAGGER_HONEY.get());
+				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_HONEY.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_IRON.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TEMP.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_GOLD.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_LAPIS.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_REDSTONE.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_DIAMOND.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHERITE.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_RUBY.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_NETHER_DIAMOND.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SCULK.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_SKY.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get());
-				tabData.accept(BetterToolsModItems.CRYSTALLITE_BOW_HONEY.get());
 			})
 
 					.build());

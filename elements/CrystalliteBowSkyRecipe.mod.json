@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_bow_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:mod:crystallite_bows"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SkyCrystal"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteBowSky"
+    },
+    "name": "crystallite_bow_sky_recipe",
+    "namespace": "mod"
+  }
+}
