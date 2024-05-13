@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "particle",
+  "definition": {
+    "texture": "crystallite_splash_damage_particle.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.15,
+    "height": 0.15,
+    "scale": 0.8,
+    "speedFactor": 1.0,
+    "gravity": 0.0,
+    "maxAge": 10,
+    "maxAgeDiff": 4,
+    "angularVelocity": -0.1,
+    "angularAcceleration": 0.025,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

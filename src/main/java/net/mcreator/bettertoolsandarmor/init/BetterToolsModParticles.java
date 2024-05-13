@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.bettertoolsandarmor.client.particle.OreLocationParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.IceParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.GuardianStaffBeamParticle;
+import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSplashDamageParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSparkleParticle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -22,5 +23,6 @@ public class BetterToolsModParticles {
 		event.registerSpriteSet(BetterToolsModParticleTypes.ICE_PARTICLE.get(), IceParticleParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.ORE_LOCATION_PARTICLE.get(), OreLocationParticleParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get(), GuardianStaffBeamParticle::provider);
+		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get(), CrystalliteSplashDamageParticle::provider);
 	}
 }
