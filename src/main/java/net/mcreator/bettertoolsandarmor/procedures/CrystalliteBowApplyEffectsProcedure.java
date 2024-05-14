@@ -79,16 +79,18 @@ public class CrystalliteBowApplyEffectsProcedure {
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:redstone_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_redstone_upgrade", true);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items")))) {
-										CompoundTag dataIndex25 = new CompoundTag();
-										entityiterator.saveWithoutId(dataIndex25);
-										dataIndex25.putDouble("damage", (new Object() {
-											public double getValue() {
-												CompoundTag dataIndex24 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex24);
-												return dataIndex24.getDouble("damage");
-											}
-										}.getValue() + 0.5));
-										entityiterator.load(dataIndex25);
+										if (Math.random() < 0.25) {
+											CompoundTag dataIndex25 = new CompoundTag();
+											entityiterator.saveWithoutId(dataIndex25);
+											dataIndex25.putDouble("damage", (new Object() {
+												public double getValue() {
+													CompoundTag dataIndex24 = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex24);
+													return dataIndex24.getDouble("damage");
+												}
+											}.getValue() + 2.5));
+											entityiterator.load(dataIndex25);
+										}
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
 										CompoundTag dataIndex29 = new CompoundTag();
 										entityiterator.saveWithoutId(dataIndex29);
@@ -98,7 +100,7 @@ public class CrystalliteBowApplyEffectsProcedure {
 												entityiterator.saveWithoutId(dataIndex28);
 												return dataIndex28.getDouble("damage");
 											}
-										}.getValue() + 2));
+										}.getValue() + 1.5));
 										entityiterator.load(dataIndex29);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_ruby_upgrade", true);

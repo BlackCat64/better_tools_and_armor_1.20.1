@@ -29067,6 +29067,30 @@
         ]
       },
       "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteBowRedstoneHeal",
+      "type": "procedure",
+      "sortid": 1655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_redstone_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowRedstoneHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
     }
   ],
   "variable_elements": [
