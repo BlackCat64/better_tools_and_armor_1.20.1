@@ -9,6 +9,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -42,15 +43,15 @@ public class CrystalliteBowApplyEffectsProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows")))) {
-			if (duration <= 71985) {
-				BetterToolsMod.queueServerWork(1, () -> {
-					{
-						final Vec3 _center = new Vec3(
-								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
-								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
-								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
+			BetterToolsMod.queueServerWork(1, () -> {
+				{
+					final Vec3 _center = new Vec3(
+							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getX()),
+							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
+							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (duration <= 71990) {
 							if (!(entityiterator == entity) && entityiterator instanceof Arrow) {
 								if (!(new Object() {
 									public boolean getValue() {
@@ -103,7 +104,16 @@ public class CrystalliteBowApplyEffectsProcedure {
 										}.getValue() + 1.5));
 										entityiterator.load(dataIndex29);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_ruby_upgrade", true);
+										CompoundTag dataIndex33 = new CompoundTag();
+										entityiterator.saveWithoutId(dataIndex33);
+										dataIndex33.putDouble("damage", (new Object() {
+											public double getValue() {
+												CompoundTag dataIndex32 = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex32);
+												return dataIndex32.getDouble("damage");
+											}
+										}.getValue() - 2));
+										entityiterator.load(dataIndex33);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_sapphire_upgrade", true);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
@@ -113,43 +123,53 @@ public class CrystalliteBowApplyEffectsProcedure {
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:emerald_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_emerald_upgrade", true);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-										CompoundTag dataIndex48 = new CompoundTag();
-										entityiterator.saveWithoutId(dataIndex48);
-										dataIndex48.putDouble("damage", (new Object() {
-											public double getValue() {
-												CompoundTag dataIndex47 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex47);
-												return dataIndex47.getDouble("damage");
-											}
-										}.getValue() + 0.5));
-										entityiterator.load(dataIndex48);
 										CompoundTag dataIndex49 = new CompoundTag();
 										entityiterator.saveWithoutId(dataIndex49);
-										dataIndex49.putDouble("PierceLevel", 100);
+										dataIndex49.putDouble("damage", (new Object() {
+											public double getValue() {
+												CompoundTag dataIndex48 = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex48);
+												return dataIndex48.getDouble("damage");
+											}
+										}.getValue() + 0.5));
 										entityiterator.load(dataIndex49);
+										CompoundTag dataIndex50 = new CompoundTag();
+										entityiterator.saveWithoutId(dataIndex50);
+										dataIndex50.putDouble("PierceLevel", 100);
+										entityiterator.load(dataIndex50);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
 										entityiterator.setNoGravity(true);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_amethyst_upgrade", true);
 									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
 										entityiterator.getPersistentData().putBoolean("crystallite_prismarine_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
 									}
-									if (!world.isClientSide() && world.getServer() != null)
-										world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Set damage of arrow to " + (new Object() {
-											public double getValue() {
-												CompoundTag dataIndex62 = new CompoundTag();
-												entityiterator.saveWithoutId(dataIndex62);
-												return dataIndex62.getDouble("damage");
-											}
-										}.getValue()))), false);
 								}
 							}
+						} else {
+							if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
+								CompoundTag dataIndex64 = new CompoundTag();
+								entityiterator.saveWithoutId(dataIndex64);
+								dataIndex64.putDouble("damage", (1 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.4));
+								entityiterator.load(dataIndex64);
+								CompoundTag dataIndex65 = new CompoundTag();
+								entityiterator.saveWithoutId(dataIndex65);
+								dataIndex65.putBoolean("crit", false);
+								entityiterator.load(dataIndex65);
+								entityiterator.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
+							}
 						}
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Set damage of arrow to " + (new Object() {
+								public double getValue() {
+									CompoundTag dataIndex67 = new CompoundTag();
+									entityiterator.saveWithoutId(dataIndex67);
+									return dataIndex67.getDouble("damage");
+								}
+							}.getValue()))), false);
 					}
-				});
-			}
+				}
+			});
 		}
 	}
 }

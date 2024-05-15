@@ -8,6 +8,7 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.util.thread.SidedThreadGroups;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,7 +53,6 @@ public class BetterToolsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		BetterToolsModSounds.REGISTRY.register(bus);
 		BetterToolsModBlocks.REGISTRY.register(bus);
-
 		BetterToolsModItems.REGISTRY.register(bus);
 		BetterToolsModEntities.REGISTRY.register(bus);
 		BetterToolsModEnchantments.REGISTRY.register(bus);
@@ -61,15 +61,19 @@ public class BetterToolsMod {
 		StructureFeature.REGISTRY.register(bus);
 		BetterToolsModMobEffects.REGISTRY.register(bus);
 		BetterToolsModPotions.REGISTRY.register(bus);
-
 		BetterToolsModParticleTypes.REGISTRY.register(bus);
 		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
 		BetterToolsModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
+		bus.addListener(this::clientSetup);
 		// End of user code block mod init
 	}
 
 	// Start of user code block mod methods
+	private void clientSetup(final FMLClientSetupEvent event) {
+		ModItemProperties.addCustomItemProperties();
+	}
+
 	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);

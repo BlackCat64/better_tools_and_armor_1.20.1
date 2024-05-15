@@ -32,8 +32,10 @@ public class DamageTrackerProcedure {
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_DAMAGE_VALUES)) {
 			if (sourceentity instanceof Player) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((amount + " damage dealt to " + entity.getDisplayName().getString())), false);
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((amount + " damage dealt to " + entity.getDisplayName().getString())), false);
+				}
 			}
 		}
 	}
