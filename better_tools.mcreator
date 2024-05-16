@@ -29152,6 +29152,46 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteBowHoneyProcedure",
+      "type": "procedure",
+      "sortid": 1658,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_honey_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowHoneyProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
     }
   ],
   "variable_elements": [
