@@ -29220,6 +29220,42 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "InvisibleArmorStandExplosion",
+      "type": "procedure",
+      "sortid": 1660,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisible_armor_stand_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/InvisibleArmorStandExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
     }
   ],
   "variable_elements": [

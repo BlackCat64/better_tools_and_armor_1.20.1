@@ -31,7 +31,7 @@ public class CrystalliteBowNetherDiamondImpactExplodeProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"execute as @e[nbt={ForgeData:{crystallite_nether_diamond_upgrade:1b}},nbt={inGround:1b}] at @s run summon tnt ~ ~ ~");
+					"execute as @e[nbt={ForgeData:{crystallite_nether_diamond_upgrade:1b}},nbt={inGround:1b}] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,ForgeData:{crystallite_nether_diamond_upgrade:1b}}");
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"execute as @e[nbt={ForgeData:{crystallite_nether_diamond_upgrade:1b}},nbt={inGround:1b}] at @s run kill @s");
