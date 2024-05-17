@@ -40,37 +40,33 @@ public class CrystalliteBowHoneyItem extends BowItem {
 	@Override
 	public void releaseUsing(ItemStack item, Level world, LivingEntity _player, int duration) {
 		if (_player instanceof Player player) {
-			boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, item) > 0;
+			boolean infinite_arrows = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, item) > 0;
 			ItemStack itemstack = player.getProjectile(item);
 			int i = this.getUseDuration(item) - duration;
-			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(item, world, player, i, !itemstack.isEmpty() || flag);
-			// Debug chat output
-			//			if (!world.isClientSide() && world.getServer() != null) {
-			//				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("i = " + i)), false);
-			//				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("int = " + duration)), false);
-			//			}
+			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(item, world, player, i, !itemstack.isEmpty() || infinite_arrows);
 			if (i < 0)
 				return;
-			if (!itemstack.isEmpty() || flag) {
+			if (!itemstack.isEmpty() || infinite_arrows) {
 				if (itemstack.isEmpty()) {
 					itemstack = new ItemStack(Items.ARROW);
 				}
 				float f = getPowerForTime(i * 20);
-				// 							^ Multiplying by 5 here causes rapid-fire. The animation is the same, however.
+				// 							^ Multiplying by 20 here causes rapid-fire. The animation is the same, however.
 				if (!((double) f < 0.1D)) {
-					boolean flag1 = player.getAbilities().instabuild || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem) itemstack.getItem()).isInfinite(itemstack, item, player));
+					boolean creative = player.getAbilities().instabuild || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem) itemstack.getItem()).isInfinite(itemstack, item, player));
 					if (!world.isClientSide) {
 						ArrowItem arrowitem = (ArrowItem) (itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
 						AbstractArrow abstractarrow = arrowitem.createArrow(world, itemstack, player);
 						abstractarrow = customArrow(abstractarrow);
-						abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, f * 3.0F, 1.0F);
-						if (f == 1.0F) {
-							abstractarrow.setCritArrow(true);
-						}
+						abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 3.0F, 1.0F);
+						// Shoot speed is always 3
+						// Rapid-fire arrows cannot be critical
 						int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, item);
 						if (j > 0) {
-							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
-						}
+							abstractarrow.setBaseDamage((double) (1 + j * 0.4));
+						} else
+							abstractarrow.setBaseDamage(1);
+						// Arrow damage = 1 + (0.4 * POWER LEVEL)
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, item);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);
@@ -81,13 +77,13 @@ public class CrystalliteBowHoneyItem extends BowItem {
 						item.hurtAndBreak(1, player, (p_289501_) -> {
 							p_289501_.broadcastBreakEvent(player.getUsedItemHand());
 						});
-						if (flag1 || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
+						if (creative || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 							abstractarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 						}
 						world.addFreshEntity(abstractarrow);
 					}
 					world.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-					if (!flag1 && !player.getAbilities().instabuild) {
+					if (!creative && !player.getAbilities().instabuild) {
 						itemstack.shrink(1);
 						if (itemstack.isEmpty()) {
 							player.getInventory().removeItem(itemstack);

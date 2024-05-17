@@ -29154,24 +29154,20 @@
       "path": "~/Crystallite/Honey"
     },
     {
-      "name": "CrystalliteBowHoneyProcedure",
+      "name": "CrystalliteBowNetherDiamondExplosion",
       "type": "procedure",
       "sortid": 1658,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystallite_bow_honey_procedure",
+      "registry_name": "crystallite_bow_nether_diamond_explosion",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowHoneyProcedureProcedure.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondExplosionProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "entity",
+            "name": "immediatesourceentity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -29191,7 +29187,39 @@
           }
         ]
       },
-      "path": "~/Crystallite/Honey"
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamondImpactExplode",
+      "type": "procedure",
+      "sortid": 1659,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_nether_diamond_impact_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondImpactExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
     }
   ],
   "variable_elements": [
