@@ -37,7 +37,7 @@ public class IceParticleParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 1.5f;
-		this.lifetime = 5;
+		this.lifetime = 10;
 		this.gravity = 0.5f;
 		this.hasPhysics = true;
 		this.xd = vx * 0.005;
@@ -48,7 +48,7 @@ public class IceParticleParticle extends TextureSheetParticle {
 
 	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+		return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
 	}
 
 	@Override

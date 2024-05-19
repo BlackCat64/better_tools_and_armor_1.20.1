@@ -66,9 +66,7 @@ public class ElectricStaffProcedureProcedure {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(BetterToolsModItems.ELECTRIC_STAFF.get(), 300);
 		}
-		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
-			if (!immediatesourceentity.level().isClientSide())
-				immediatesourceentity.discard();
-		}
+		if (!immediatesourceentity.level().isClientSide())
+			immediatesourceentity.discard();
 	}
 }

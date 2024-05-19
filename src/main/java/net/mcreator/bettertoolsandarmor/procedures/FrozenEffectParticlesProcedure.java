@@ -11,10 +11,8 @@ public class FrozenEffectParticlesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.dayTime() % 3 == 0) {
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight() / 2), z, 2, 0.33, 0.5, 0.33, 0.03);
-		}
+		if (world instanceof ServerLevel _level)
+			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
 		entity.setTicksFrozen(135);
 	}
 }

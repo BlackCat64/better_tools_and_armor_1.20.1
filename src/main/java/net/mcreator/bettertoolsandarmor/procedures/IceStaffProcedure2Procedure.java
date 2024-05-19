@@ -66,9 +66,7 @@ public class IceStaffProcedure2Procedure {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(), 200);
 		}
-		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
-			if (!immediatesourceentity.level().isClientSide())
-				immediatesourceentity.discard();
-		}
+		if (!immediatesourceentity.level().isClientSide())
+			immediatesourceentity.discard();
 	}
 }

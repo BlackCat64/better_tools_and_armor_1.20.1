@@ -69,9 +69,7 @@ public class FireStaffProcedureProcedure {
 					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(), 200);
 			}
 		}
-		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
-			if (!immediatesourceentity.level().isClientSide())
-				immediatesourceentity.discard();
-		}
+		if (!immediatesourceentity.level().isClientSide())
+			immediatesourceentity.discard();
 	}
 }
