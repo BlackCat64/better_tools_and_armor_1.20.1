@@ -6040,6 +6040,10 @@
             "type": "entity"
           },
           {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -29244,6 +29248,34 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "ThunderShotArrowShot",
+      "type": "procedure",
+      "sortid": 1661,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_shot_arrow_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ThunderShotArrowShotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
