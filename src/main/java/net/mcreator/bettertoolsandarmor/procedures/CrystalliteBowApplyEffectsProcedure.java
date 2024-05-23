@@ -119,25 +119,26 @@ public class CrystalliteBowApplyEffectsProcedure {
 											entityiterator.getPersistentData().putBoolean("crystallite_sapphire_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_topaz_upgrade", true);
+											entityiterator.getPersistentData().putBoolean("thunder_shot", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_nether_diamond_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:emerald_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_emerald_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-											CompoundTag dataIndex52 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex52);
-											dataIndex52.putDouble("damage", (new Object() {
-												public double getValue() {
-													CompoundTag dataIndex51 = new CompoundTag();
-													entityiterator.saveWithoutId(dataIndex51);
-													return dataIndex51.getDouble("damage");
-												}
-											}.getValue() + 0.5));
-											entityiterator.load(dataIndex52);
 											CompoundTag dataIndex53 = new CompoundTag();
 											entityiterator.saveWithoutId(dataIndex53);
-											dataIndex53.putDouble("PierceLevel", 100);
+											dataIndex53.putDouble("damage", (new Object() {
+												public double getValue() {
+													CompoundTag dataIndex52 = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex52);
+													return dataIndex52.getDouble("damage");
+												}
+											}.getValue() + 0.5));
 											entityiterator.load(dataIndex53);
+											CompoundTag dataIndex54 = new CompoundTag();
+											entityiterator.saveWithoutId(dataIndex54);
+											dataIndex54.putDouble("PierceLevel", 100);
+											entityiterator.load(dataIndex54);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
 											entityiterator.setNoGravity(true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))) {
