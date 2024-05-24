@@ -20,7 +20,7 @@ public class FlintDaggerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -2.5f;
+				return -0.5f;
 			}
 
 			public int getLevel() {

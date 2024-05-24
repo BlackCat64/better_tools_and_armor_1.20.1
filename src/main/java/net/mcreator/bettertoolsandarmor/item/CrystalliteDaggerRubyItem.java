@@ -26,7 +26,7 @@ public class CrystalliteDaggerRubyItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1f;
+				return 3f;
 			}
 
 			public int getLevel() {

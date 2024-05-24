@@ -19,9 +19,12 @@
     "efficiency": 9.0,
     "attackSpeed": 2.5,
     "enchantability": 15,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 6.0,
     "usageCount": 1524,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.NETHERITE_INGOT"

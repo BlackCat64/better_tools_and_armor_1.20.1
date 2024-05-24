@@ -20,7 +20,7 @@ public class NetheriteDaggerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 2f;
 			}
 
 			public int getLevel() {

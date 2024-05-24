@@ -28,7 +28,7 @@ public class TopazDaggerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -1.5f;
+				return 0.5f;
 			}
 
 			public int getLevel() {

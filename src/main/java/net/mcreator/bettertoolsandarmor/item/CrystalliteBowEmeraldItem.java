@@ -73,7 +73,7 @@ public class CrystalliteBowEmeraldItem extends BowItem {
 				if (!((double) f < 0.1D)) {
 					boolean flag1 = player.getAbilities().instabuild || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem) itemstack.getItem()).isInfinite(itemstack, item, player));
 					flag1 = true;
-					
+
 					if (!world.isClientSide) {
 						ArrowItem arrowitem = (ArrowItem) (itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
 						AbstractArrow abstractarrow = arrowitem.createArrow(world, itemstack, player);
@@ -96,13 +96,14 @@ public class CrystalliteBowEmeraldItem extends BowItem {
 						item.hurtAndBreak(1, player, (p_289501_) -> {
 							p_289501_.broadcastBreakEvent(player.getUsedItemHand());
 						});
-						if (flag1 || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
+						if (player.getAbilities().instabuild || !(itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 							abstractarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 						}
+
 						world.addFreshEntity(abstractarrow);
 					}
 					world.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-					if (!flag1 && !player.getAbilities().instabuild) {
+					if (!player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 						itemstack.shrink(1);
 						if (itemstack.isEmpty()) {
 							player.getInventory().removeItem(itemstack);

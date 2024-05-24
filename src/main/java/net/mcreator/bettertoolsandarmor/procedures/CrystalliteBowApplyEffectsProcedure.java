@@ -15,6 +15,7 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -122,34 +123,50 @@ public class CrystalliteBowApplyEffectsProcedure {
 											entityiterator.getPersistentData().putBoolean("thunder_shot", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_nether_diamond_upgrade", true);
-										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:emerald_upgraded_crystallite_items")))) {
-											entityiterator.getPersistentData().putBoolean("crystallite_emerald_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-											CompoundTag dataIndex53 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex53);
-											dataIndex53.putDouble("damage", (new Object() {
+											CompoundTag dataIndex50 = new CompoundTag();
+											entityiterator.saveWithoutId(dataIndex50);
+											dataIndex50.putDouble("damage", (new Object() {
 												public double getValue() {
-													CompoundTag dataIndex52 = new CompoundTag();
-													entityiterator.saveWithoutId(dataIndex52);
-													return dataIndex52.getDouble("damage");
+													CompoundTag dataIndex49 = new CompoundTag();
+													entityiterator.saveWithoutId(dataIndex49);
+													return dataIndex49.getDouble("damage");
 												}
 											}.getValue() + 0.5));
-											entityiterator.load(dataIndex53);
-											CompoundTag dataIndex54 = new CompoundTag();
-											entityiterator.saveWithoutId(dataIndex54);
-											dataIndex54.putDouble("PierceLevel", 100);
-											entityiterator.load(dataIndex54);
+											entityiterator.load(dataIndex50);
+											CompoundTag dataIndex51 = new CompoundTag();
+											entityiterator.saveWithoutId(dataIndex51);
+											dataIndex51.putDouble("PierceLevel", 100);
+											entityiterator.load(dataIndex51);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
 											entityiterator.setNoGravity(true);
-										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))) {
-											entityiterator.getPersistentData().putBoolean("crystallite_amethyst_upgrade", true);
 										} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
 											entityiterator.getPersistentData().putBoolean("crystallite_prismarine_upgrade", true);
+											if (entityiterator.isInWaterRainOrBubble()) {
+												CompoundTag dataIndex60 = new CompoundTag();
+												entityiterator.saveWithoutId(dataIndex60);
+												dataIndex60.putDouble("damage", (new Object() {
+													public double getValue() {
+														CompoundTag dataIndex59 = new CompoundTag();
+														entityiterator.saveWithoutId(dataIndex59);
+														return dataIndex59.getDouble("damage");
+													}
+												}.getValue() + 2.5));
+												entityiterator.load(dataIndex60);
+											}
 										}
 									}
 								}
 							}
 						}
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Set damage of arrow to " + (new Object() {
+								public double getValue() {
+									CompoundTag dataIndex61 = new CompoundTag();
+									entityiterator.saveWithoutId(dataIndex61);
+									return dataIndex61.getDouble("damage");
+								}
+							}.getValue()))), false);
 					}
 				}
 			});

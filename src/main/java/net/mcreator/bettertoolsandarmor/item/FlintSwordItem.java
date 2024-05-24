@@ -24,7 +24,7 @@ public class FlintSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -0.5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {

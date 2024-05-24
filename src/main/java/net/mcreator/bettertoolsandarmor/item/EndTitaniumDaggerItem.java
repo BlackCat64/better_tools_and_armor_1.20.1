@@ -32,7 +32,7 @@ public class EndTitaniumDaggerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 4f;
 			}
 
 			public int getLevel() {

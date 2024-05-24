@@ -19,9 +19,12 @@
     "efficiency": 4.0,
     "attackSpeed": 2.5,
     "enchantability": 5,
-    "damageVsEntity": 1.0,
+    "damageVsEntity": 3.0,
     "usageCount": 100,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Blocks.COBBLESTONE"

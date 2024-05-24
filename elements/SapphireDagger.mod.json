@@ -21,9 +21,12 @@
     "efficiency": 5.0,
     "attackSpeed": 2.2,
     "enchantability": 10,
-    "damageVsEntity": 3.5,
+    "damageVsEntity": 5.5,
     "usageCount": 450,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Sapphire"

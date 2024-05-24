@@ -27,7 +27,7 @@ public class CrystalliteDaggerDiamondItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1.5f;
+				return 3.5f;
 			}
 
 			public int getLevel() {

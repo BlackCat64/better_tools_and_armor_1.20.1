@@ -21,9 +21,12 @@
     "efficiency": 7.0,
     "attackSpeed": 2.8,
     "enchantability": 16,
-    "damageVsEntity": 2.5,
+    "damageVsEntity": 4.5,
     "usageCount": 600,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Topaz"

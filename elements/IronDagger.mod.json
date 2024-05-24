@@ -19,9 +19,12 @@
     "efficiency": 6.0,
     "attackSpeed": 2.5,
     "enchantability": 14,
-    "damageVsEntity": 2.0,
+    "damageVsEntity": 4.0,
     "usageCount": 188,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.IRON_INGOT"

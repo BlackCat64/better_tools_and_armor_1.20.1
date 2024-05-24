@@ -24,6 +24,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -59,8 +60,16 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 		double distance = 0;
 		double raycast = 0;
 		double speed = 0;
-		if (itemstack.getItem() == Items.BOW && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get()) {
-			if (duration <= 71978) {
+		double charge_time = 0;
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
+			charge_time = 71990;
+		} else {
+			charge_time = 71980;
+		}
+		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows"))))
+				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get()
+						|| itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items"))))) {
+			if (duration <= charge_time) {
 				raycast = 0;
 				for (int index0 = 0; index0 < 7; index0++) {
 					if (!shot) {

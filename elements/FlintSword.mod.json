@@ -19,9 +19,12 @@
     "efficiency": 5.0,
     "attackSpeed": 1.8,
     "enchantability": 8,
-    "damageVsEntity": 3.5,
+    "damageVsEntity": 5.5,
     "usageCount": 150,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.FLINT"
