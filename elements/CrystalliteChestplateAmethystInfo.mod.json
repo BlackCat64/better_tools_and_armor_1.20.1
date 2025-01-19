@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorAmethyst.body"
+      }
+    ],
+    "information": [
+      "Absorption Hearts will only be gained if no damage has been taken in the last 10s."
+    ]
+  }
+}

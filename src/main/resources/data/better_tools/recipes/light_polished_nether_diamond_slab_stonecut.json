@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_nether_diamond_slab",
+  "count": 2,
+  "ingredient": {
+    "item": "better_tools:light_polished_nether_diamond_block"
+  },
+  "result": "better_tools:light_polished_nether_diamond_slab"
+}

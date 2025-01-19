@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:descension_potion"
+    },
+    "title": {
+      "translate": "advancements.descend_to_bottom_of_world.title"
+    },
+    "description": {
+      "translate": "advancements.descend_to_bottom_of_world.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "descend_to_bottom_of_world_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "better_tools:descension_adv"
+}

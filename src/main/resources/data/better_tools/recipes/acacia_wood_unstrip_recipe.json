@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wood_unstrip",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_acacia_wood"
+    },
+    {
+      "item": "better_tools:bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_wood",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "phantom_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      },
+      {
+        "value": "TAG:forge:armors/boots"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PhantomBoots.boots"
+    },
+    "name": "phantom_boots_recipe",
+    "namespace": "mod"
+  }
+}

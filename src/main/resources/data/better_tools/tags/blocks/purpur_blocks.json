@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:purpur_stairs",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_slab",
+    "minecraft:chorus_plant",
+    "minecraft:chorus_flower"
+  ]
+}

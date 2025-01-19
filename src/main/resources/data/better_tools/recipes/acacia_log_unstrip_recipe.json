@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "log_unstrip",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_acacia_log"
+    },
+    {
+      "item": "better_tools:bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_log",
+    "count": 1
+  }
+}

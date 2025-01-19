@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:magic_weapon_damage",
+    "better_tools:karma_damage",
+    "better_tools:override_weapon_damage"
+  ]
+}

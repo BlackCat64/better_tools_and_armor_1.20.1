@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "better_tools:item/crystallite_sword_nether_diamond"
+  }
+}

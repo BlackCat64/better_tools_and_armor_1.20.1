@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "soul_torch_bulk",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "tag": "soul_fire_base_blocks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:soul_torch",
+    "count": 3
+  }
+}

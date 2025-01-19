@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:IceCore"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      },
+      {
+        "value": "CUSTOM:IcyBracelet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowSapphire"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§bSapphire§r",
+      "",
+      "Theme:",
+      "Ice"
+    ]
+  }
+}

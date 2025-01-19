@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:warden_staff"
+    },
+    "title": {
+      "translate": "advancements.warden_staff_adv.title"
+    },
+    "description": {
+      "translate": "advancements.warden_staff_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "warden_staff_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

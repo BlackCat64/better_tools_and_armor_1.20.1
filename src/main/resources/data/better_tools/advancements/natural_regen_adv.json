@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:nature_crystal"
+    },
+    "title": {
+      "translate": "advancements.natural_regen_adv.title"
+    },
+    "description": {
+      "translate": "advancements.natural_regen_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "natural_regen_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "better_tools:crystallite_sword_emerald_adv"
+}

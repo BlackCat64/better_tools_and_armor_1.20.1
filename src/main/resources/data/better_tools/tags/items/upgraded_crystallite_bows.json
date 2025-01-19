@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_bow_iron",
+    "better_tools:crystallite_bow_gold",
+    "better_tools:crystallite_bow_lapis",
+    "better_tools:crystallite_bow_redstone",
+    "better_tools:crystallite_bow_diamond",
+    "better_tools:crystallite_bow_netherite",
+    "better_tools:crystallite_bow_ruby",
+    "better_tools:crystallite_bow_sapphire",
+    "better_tools:crystallite_bow_topaz",
+    "better_tools:crystallite_bow_nether_diamond",
+    "better_tools:crystallite_bow_emerald",
+    "better_tools:crystallite_bow_sculk",
+    "better_tools:crystallite_bow_sky",
+    "better_tools:crystallite_bow_amethyst",
+    "better_tools:crystallite_bow_prismarine",
+    "better_tools:crystallite_bow_honey"
+  ]
+}

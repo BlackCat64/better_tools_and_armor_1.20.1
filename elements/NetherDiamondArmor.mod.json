@@ -1,0 +1,104 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "netherdiamond_helmet",
+    "enableBody": true,
+    "textureBody": "netherdiamond_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "netherdiamond_leggings",
+    "enableBoots": true,
+    "textureBoots": "netherdiamond_boots",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
+    "armorTextureFile": "netherdiamond_",
+    "helmetName": "Nether Diamond Helmet",
+    "bodyName": "Nether Diamond Chestplate",
+    "leggingsName": "Nether Diamond Leggings",
+    "bootsName": "Nether Diamond Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§4Has a chance to set attackers on fire",
+        "§4Effect is stronger in the Nether"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 33,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 10,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_diamond"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_fv": 66,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "quark:misc/monster_box",
+    "modifierTable": "QuarkMonsterBoxLoot"
+  }
+}

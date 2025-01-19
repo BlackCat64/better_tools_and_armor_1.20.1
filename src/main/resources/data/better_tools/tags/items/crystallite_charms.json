@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:tough_necklace",
+    "better_tools:gilded_bracelet",
+    "better_tools:magic_ring",
+    "better_tools:heart_charm",
+    "better_tools:diamond_hard_plate",
+    "better_tools:withered_gauntlet",
+    "better_tools:speedy_necklace",
+    "better_tools:icy_bracelet",
+    "better_tools:electric_necklace",
+    "better_tools:nature_ring",
+    "better_tools:warden_headband",
+    "better_tools:ender_goggles",
+    "better_tools:bouncy_bracelet",
+    "better_tools:poison_charm",
+    "better_tools:lucky_charm",
+    "better_tools:flaming_circlet",
+    "better_tools:reflect_charm",
+    "better_tools:earth_circlet",
+    "better_tools:guardian_necklace",
+    "better_tools:curing_charm"
+  ]
+}

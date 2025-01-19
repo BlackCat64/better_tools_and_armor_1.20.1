@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "magma_body",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "TAG:forge:armors/chestplates"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagmaBody.body"
+    },
+    "name": "magma_body_recipe",
+    "namespace": "mod"
+  }
+}

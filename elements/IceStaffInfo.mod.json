@@ -1,0 +1,17 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:IceStaff"
+      }
+    ],
+    "information": [
+      "§9When enchanted with Ensorcellation:§r",
+      "Projectiles freeze all mobs in a radius.",
+      "This applies even when no mob is directly hit.",
+      "Radius increases with level, and in a cold biome."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:FireCore"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:FlamingCirclet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowNetherDiamond"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§4Nether Diamond§r",
+      "",
+      "Theme:",
+      "Fire"
+    ]
+  }
+}

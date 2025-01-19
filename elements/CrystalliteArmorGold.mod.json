@@ -1,0 +1,114 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "crystallite_helmet_gold",
+    "enableBody": true,
+    "textureBody": "crystallite_chestplate_gold",
+    "enableLeggings": true,
+    "textureLeggings": "crystallite_leggings_gold",
+    "enableBoots": true,
+    "textureBoots": "crystallite_boots_gold",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "armorTextureFile": "crystallite_gold_",
+    "helmetName": "Crystallite Helmet",
+    "bodyName": "Crystallite Chestplate",
+    "leggingsName": "Crystallite Leggings",
+    "bootsName": "Crystallite Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §eGold",
+        "§7Ability:",
+        "§eGilded - Increased block reach"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §eGold",
+        "§7Ability:",
+        "§eGilded - Increased block reach"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §eGold",
+        "§7Ability:",
+        "§eGilded - Increased block reach"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §eGold",
+        "§7Ability:",
+        "§eGilded - Increased block reach"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": true
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "maxDamage": 35,
+    "damageValueHelmet": 4,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 4,
+    "enchantability": 20,
+    "toughness": 2.5,
+    "knockbackResistance": 0.125,
+    "equipSound": {
+      "value": "CUSTOM:crystallite_step"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ]
+  }
+}

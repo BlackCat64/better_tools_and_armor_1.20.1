@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.body"
+      },
+      {
+        "value": "CUSTOM:NatureRing"
+      }
+    ],
+    "information": [
+      "Starts healing after 10s without taking any damage.",
+      "",
+      "Healing is §ltwice as fast§r when:",
+      "- Under 50% HP",
+      "- In Sunlight",
+      "- Both items are worn"
+    ]
+  }
+}

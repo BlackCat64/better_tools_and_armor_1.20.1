@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wood_unstrip",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_warped_hyphae"
+    },
+    {
+      "item": "better_tools:bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:warped_hyphae",
+    "count": 1
+  }
+}

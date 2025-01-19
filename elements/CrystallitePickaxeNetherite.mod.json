@@ -1,0 +1,49 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_pickaxe_netherite",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §8Netherite",
+        "§7Ability:",
+        "§8Deep Miner - Mines all natural stones instantly when enchanted with Efficiency V"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "efficiency": 11.0,
+    "attackSpeed": 1.2,
+    "enchantability": 20,
+    "damageVsEntity": 9.0,
+    "usageCount": 2250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

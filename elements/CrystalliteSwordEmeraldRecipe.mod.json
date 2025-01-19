@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_sword_upgrades",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:better_tools:crystallite_swords"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:NatureCrystal"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteSwordEmerald"
+    },
+    "name": "crystallite_sword_emerald_recipe",
+    "namespace": "mod"
+  }
+}

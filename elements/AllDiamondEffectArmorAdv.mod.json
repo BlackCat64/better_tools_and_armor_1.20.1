@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Effect God",
+    "achievementDescription": "Craft every piece of Diamond Encrusted Effect Armor (auto-grants previous 2)",
+    "achievementIcon": {
+      "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 200,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:AllIronEffectArmorAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

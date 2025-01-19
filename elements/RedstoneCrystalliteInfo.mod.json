@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:HealCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
+      },
+      {
+        "value": "CUSTOM:HeartCharm"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowRedstone"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§cRedstone§r",
+      "",
+      "Theme:",
+      "HP and Utility"
+    ]
+  }
+}

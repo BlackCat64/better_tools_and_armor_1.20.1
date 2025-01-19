@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "curing_charm",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:hive_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:curing_charm",
+    "count": 1
+  }
+}

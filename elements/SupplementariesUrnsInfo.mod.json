@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:PurpleMushroom"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:GoldenPotato"
+      },
+      {
+        "value": "CUSTOM:ExperiencePotion"
+      },
+      {
+        "value": "CUSTOM:BerryPie"
+      },
+      {
+        "value": "CUSTOM:SugarClump"
+      },
+      {
+        "value": "CUSTOM:AscensionPotion"
+      },
+      {
+        "value": "CUSTOM:DescensionPotion"
+      },
+      {
+        "value": "CUSTOM:RecallPotion"
+      },
+      {
+        "value": "CUSTOM:LostSoulsPotion"
+      },
+      {
+        "value": "CUSTOM:CrystalliteCharmBase"
+      }
+    ],
+    "information": [
+      "If Supplementaries is installed:",
+      "Can drop from Cave Urns."
+    ]
+  }
+}

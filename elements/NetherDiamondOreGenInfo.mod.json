@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§4Nether Diamond Ore§r",
+      "",
+      "Generates at any y-level, in §4Basalt Deltas§r only.",
+      "Only generates inside of §8Blackstone§r clumps.",
+      "Spawns in medium-sized veins."
+    ]
+  }
+}

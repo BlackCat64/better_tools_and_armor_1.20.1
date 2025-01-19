@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lucky_charm",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:four_leaf_clover"
+    }
+  ],
+  "result": {
+    "item": "better_tools:lucky_charm",
+    "count": 1
+  }
+}

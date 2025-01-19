@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_sword",
+    "better_tools:nether_diamond_axe",
+    "better_tools:nether_diamond_dagger",
+    "better_tools:crystallite_sword_nether_diamond",
+    "better_tools:crystallite_axe_nether_diamond",
+    "better_tools:crystallite_dagger_nether_diamond"
+  ]
+}

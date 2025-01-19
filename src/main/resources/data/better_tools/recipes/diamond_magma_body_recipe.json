@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_magma_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:blackstone_magma"
+    },
+    "c": {
+      "item": "better_tools:magma_chestplate"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_magma_chestplate",
+    "count": 1
+  }
+}

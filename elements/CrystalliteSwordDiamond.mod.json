@@ -1,0 +1,50 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_sword_diamond",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Sword",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §bDiamond",
+        "§7Abilities:",
+        "§bPrecision - Deals increased damage to targets on full HP",
+        "§bDiamond Hard - Increased Durability"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "efficiency": 11.0,
+    "attackSpeed": 1.6,
+    "enchantability": 20,
+    "damageVsEntity": 9.5,
+    "usageCount": 3600,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "Items.DIAMOND"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

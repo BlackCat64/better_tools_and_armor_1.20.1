@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "polished_nether_diamond_trapdoor_reverse",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:PolishedNetherDiamondTrapdoor"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PolishedNetherDiamondBlock"
+    },
+    "name": "polished_nether_diamond_trapdoor_reverse_stonecut",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:GuardianCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoePrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerPrismarine"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
+      },
+      {
+        "value": "CUSTOM:GuardianNecklace"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowPrismarine"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§3Prismarine§r",
+      "",
+      "Theme:",
+      "Water"
+    ]
+  }
+}

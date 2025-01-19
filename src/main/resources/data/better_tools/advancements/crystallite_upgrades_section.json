@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "better_tools:textures/screens/crystallite_block.png",
+    "icon": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "title": {
+      "translate": "advancements.crystallite_upgrades_section.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_upgrades_section.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_upgrades_section_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

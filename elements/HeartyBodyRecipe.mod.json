@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "hearty_body",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "TAG:forge:armors/chestplates"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Items.SPECKLED_MELON"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HeartyBody.body"
+    },
+    "name": "hearty_body_recipe",
+    "namespace": "mod"
+  }
+}

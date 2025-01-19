@@ -1,0 +1,66 @@
+{
+  "_fv": 66,
+  "_type": "curiosbauble",
+  "definition": {
+    "renderType": 0,
+    "texture": "gilded_bracelet",
+    "customModelName": "Normal",
+    "name": "§eGilded Bracelet",
+    "rarity": "COMMON",
+    "slotType": "HANDS",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "creativeTab": {
+      "value": "CUSTOM:CrystalliteTab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "addSlot": true,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7When worn:",
+        "§9+1 Block Reach",
+        "§9Makes Piglins neutral"
+      ]
+    },
+    "hasGlow": false,
+    "customProperties": {},
+    "states": [],
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "slotAmount": 1,
+    "onEquip": {
+      "name": "GildedBraceletEquipped"
+    },
+    "onUnequip": {
+      "name": "GildedBraceletUnequipped"
+    },
+    "isFood": false,
+    "friendlyPigs": true,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "hasModel": false,
+    "animation": "none"
+  }
+}

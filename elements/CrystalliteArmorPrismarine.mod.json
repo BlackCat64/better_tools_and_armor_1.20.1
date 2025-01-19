@@ -1,0 +1,125 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "crystallite_helmet_prismarine",
+    "enableBody": true,
+    "textureBody": "crystallite_chestplate_prismarine",
+    "enableLeggings": true,
+    "textureLeggings": "crystallite_leggings_prismarine",
+    "enableBoots": true,
+    "textureBoots": "crystallite_boots_prismarine",
+    "onHelmetTick": {
+      "name": "CrystalliteHelmetPrismarineConduitPower"
+    },
+    "onBodyTick": {
+      "name": "CrystalliteChestplatePrismarineMiningFatigueRemove"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "armorTextureFile": "crystallite_prismarine_",
+    "helmetName": "Crystallite Helmet",
+    "bodyName": "Crystallite Chestplate",
+    "leggingsName": "Crystallite Leggings",
+    "bootsName": "Crystallite Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Amphibian - Gain Conduit Power when wet"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Ocean Dweller - Mining Fatigue immunity"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Abilities:",
+        "§3Buoyancy - Gain Low Gravity in rain",
+        "§3Gain Zero Gravity in water"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Prismarine",
+        "§7Abilities:",
+        "§3Rapid - Increased movement speed in rain",
+        "§3Increased swim speed"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 35,
+    "damageValueHelmet": 4,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 4,
+    "enchantability": 20,
+    "toughness": 2.5,
+    "knockbackResistance": 0.125,
+    "equipSound": {
+      "value": "CUSTOM:crystallite_step"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.PRISMARINE_CRYSTALS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "crystallite_dagger_ruby",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Crystallite Dagger",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §cRuby",
+        "§7Ability:",
+        "§cSpeedy - Increased attack and mining speeds"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "efficiency": 15.0,
+    "attackSpeed": 3.0,
+    "enchantability": 20,
+    "damageVsEntity": 7.0,
+    "usageCount": 1350,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

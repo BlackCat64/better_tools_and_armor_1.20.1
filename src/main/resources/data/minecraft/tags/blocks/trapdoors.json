@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:dark_polished_coal_trapdoor",
+    "better_tools:light_polished_coal_trapdoor",
+    "better_tools:dark_polished_iron_trapdoor",
+    "better_tools:light_polished_iron_trapdoor",
+    "better_tools:dark_polished_lapis_trapdoor",
+    "better_tools:light_polished_lapis_trapdoor",
+    "better_tools:polished_diamond_trapdoor",
+    "better_tools:light_polished_emerald_trapdoor",
+    "better_tools:dark_polished_emerald_trapdoor",
+    "better_tools:polished_redstone_trapdoor",
+    "better_tools:polished_ruby_trapdoor",
+    "better_tools:light_polished_copper_trapdoor",
+    "better_tools:dark_polished_copper_trapdoor",
+    "better_tools:polished_topaz_trapdoor",
+    "better_tools:polished_gold_trapdoor",
+    "better_tools:light_polished_gold_trapdoor",
+    "better_tools:polished_nether_diamond_trapdoor",
+    "better_tools:light_polished_nether_diamond_trapdoor",
+    "better_tools:polished_amethyst_trapdoor",
+    "better_tools:light_polished_amethyst_trapdoor"
+  ]
+}

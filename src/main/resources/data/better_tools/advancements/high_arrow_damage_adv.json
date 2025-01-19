@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_bow_netherite"
+    },
+    "title": {
+      "translate": "advancements.high_arrow_damage_adv.title"
+    },
+    "description": {
+      "translate": "advancements.high_arrow_damage_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "high_arrow_damage_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "better_tools:crystallite_bow_adv"
+}

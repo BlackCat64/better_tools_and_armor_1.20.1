@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:FireStaff"
+      }
+    ],
+    "information": [
+      "§4When enchanted with Ensorcellation:§r",
+      "Projectiles become explosive.",
+      "Explosion Power increases with level, and when in the Nether."
+    ]
+  }
+}

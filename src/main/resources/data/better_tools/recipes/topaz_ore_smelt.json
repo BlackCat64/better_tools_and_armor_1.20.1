@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "topaz_ore",
+  "category": "misc",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "better_tools:topaz_ore"
+  },
+  "result": "better_tools:topaz"
+}

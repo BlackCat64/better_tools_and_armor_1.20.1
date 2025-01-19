@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "speedy_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:sugar_block"
+    },
+    "b": {
+      "item": "better_tools:ruby_block"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:speedy_crystal",
+    "count": 1
+  }
+}

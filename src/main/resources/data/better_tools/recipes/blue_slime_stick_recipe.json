@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blue_slime_stick",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blue_slime_block"
+    },
+    "b": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:blue_slime_stick",
+    "count": 1
+  }
+}

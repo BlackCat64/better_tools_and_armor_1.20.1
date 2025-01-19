@@ -1,0 +1,32 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:TopazSword"
+      },
+      {
+        "value": "CUSTOM:TopazAxe"
+      },
+      {
+        "value": "CUSTOM:TopazDagger"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerTopaz"
+      }
+    ],
+    "information": [
+      "§6Electric Chaining§r",
+      "An Electric Chain damages any mobs it touches.",
+      "Any mob hit by an Electric Chain has a chance to continue the chain.",
+      "The chance and radius increase during a thunderstorm."
+    ]
+  }
+}

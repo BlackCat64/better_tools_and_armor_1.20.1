@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "crystal_legs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Items.HEART_OF_THE_SEA"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "TAG:forge:armors/leggings"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrystalLegs.legs"
+    },
+    "name": "crystal_legs_recipe",
+    "namespace": "mod"
+  }
+}

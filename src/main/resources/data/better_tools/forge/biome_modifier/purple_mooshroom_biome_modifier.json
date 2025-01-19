@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "better_tools:fungal_caves",
+  "spawners": {
+    "type": "better_tools:purple_mooshroom",
+    "weight": 60,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

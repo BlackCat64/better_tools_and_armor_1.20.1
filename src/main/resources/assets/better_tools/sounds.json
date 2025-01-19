@@ -1,0 +1,114 @@
+{
+  "crystallite_break": {
+    "subtitle": "subtitles.crystallite_break",
+    "sounds": [
+      {
+        "name": "better_tools:break1",
+        "stream": false
+      },
+      {
+        "name": "better_tools:break2",
+        "stream": false
+      },
+      {
+        "name": "better_tools:break3",
+        "stream": false
+      },
+      {
+        "name": "better_tools:break4",
+        "stream": false
+      }
+    ]
+  },
+  "crystallite_place": {
+    "subtitle": "subtitles.crystallite_place",
+    "sounds": [
+      {
+        "name": "better_tools:place1",
+        "stream": false
+      },
+      {
+        "name": "better_tools:place2",
+        "stream": false
+      },
+      {
+        "name": "better_tools:place3",
+        "stream": false
+      },
+      {
+        "name": "better_tools:place4",
+        "stream": false
+      }
+    ]
+  },
+  "crystallite_step": {
+    "subtitle": "subtitles.crystallite_step",
+    "sounds": [
+      {
+        "name": "better_tools:step1",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step10",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step11",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step12",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step13",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step14",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step2",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step3",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step4",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step5",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step6",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step7",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step8",
+        "stream": false
+      },
+      {
+        "name": "better_tools:step9",
+        "stream": false
+      }
+    ]
+  },
+  "crystallite_shimmer": {
+    "subtitle": "subtitles.crystallite_shimmer",
+    "sounds": [
+      {
+        "name": "better_tools:shimmer",
+        "stream": false
+      }
+    ]
+  }
+}

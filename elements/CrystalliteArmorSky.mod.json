@@ -1,0 +1,115 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "crystallite_helmet_sky",
+    "enableBody": true,
+    "textureBody": "crystallite_chestplate_sky",
+    "enableLeggings": true,
+    "textureLeggings": "crystallite_leggings_sky",
+    "enableBoots": true,
+    "textureBoots": "crystallite_boots_sky",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "armorTextureFile": "crystallite_sky_",
+    "helmetName": "Crystallite Helmet",
+    "bodyName": "Crystallite Chestplate",
+    "leggingsName": "Crystallite Leggings",
+    "bootsName": "Crystallite Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §fSky",
+        "§7Ability:",
+        "§fCarbonated - Eating gives a Regeneration effect",
+        "Drinking gives a level II effect"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §fSky",
+        "§7Ability:",
+        "§fGusty - Knocks back melee attackers"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §fSky",
+        "§7Ability:",
+        "§fFloaty - Low Gravity"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §fSky",
+        "§7Ability:",
+        "§fAir Affinity - Fall damage starts at a higher height"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 35,
+    "damageValueHelmet": 4,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 4,
+    "enchantability": 20,
+    "toughness": 2.5,
+    "knockbackResistance": 0.125,
+    "equipSound": {
+      "value": "CUSTOM:crystallite_step"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ]
+  }
+}

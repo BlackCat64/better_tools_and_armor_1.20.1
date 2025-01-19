@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "warped_forest",
+  "features": "better_tools:warped_treehouse_feature",
+  "step": "underground_structures"
+}

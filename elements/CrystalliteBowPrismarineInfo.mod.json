@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteBowPrismarine"
+      }
+    ],
+    "information": [
+      "Arrow damage increases when the shooter is in rain, or in water."
+    ]
+  }
+}

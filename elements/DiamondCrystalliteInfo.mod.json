@@ -1,0 +1,55 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondHardPlate"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowDiamond"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§bDiamond§r",
+      "",
+      "Theme:",
+      "Protection and Durability",
+      "All other stats increase slightly too!"
+    ]
+  }
+}

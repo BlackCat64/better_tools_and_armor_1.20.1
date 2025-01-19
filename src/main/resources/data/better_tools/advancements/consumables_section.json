@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "better_tools:textures/screens/blue_mushroom_block.png",
+    "icon": {
+      "item": "better_tools:golden_potato"
+    },
+    "title": {
+      "translate": "advancements.consumables_section.title"
+    },
+    "description": {
+      "translate": "advancements.consumables_section.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "consumables_section_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

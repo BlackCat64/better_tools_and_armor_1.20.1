@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:recall_potion"
+    },
+    "title": {
+      "translate": "advancements.recall_potion_adv.title"
+    },
+    "description": {
+      "translate": "advancements.recall_potion_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "recall_potion_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:lost_souls_potion_adv"
+}

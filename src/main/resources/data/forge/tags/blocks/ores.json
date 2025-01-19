@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:ruby_ore",
+    "better_tools:random_ore",
+    "better_tools:end_titanium_ore",
+    "better_tools:sapphire_ore",
+    "better_tools:topaz_ore",
+    "better_tools:nether_diamond_ore",
+    "better_tools:deepslate_ruby_ore",
+    "better_tools:deepslate_random_ore"
+  ]
+}

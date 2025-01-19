@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tough_necklace",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "c": {
+      "item": "better_tools:tough_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:tough_necklace",
+    "count": 1
+  }
+}

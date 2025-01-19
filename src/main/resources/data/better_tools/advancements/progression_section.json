@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "better_tools:textures/screens/ender_titanium_block.png",
+    "icon": {
+      "item": "better_tools:end_titanium_sword"
+    },
+    "title": {
+      "translate": "advancements.progression_section.title"
+    },
+    "description": {
+      "translate": "advancements.progression_section.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "progression_section_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

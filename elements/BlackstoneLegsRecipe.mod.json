@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "blackstone_legs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "TAG:forge:armors/leggings"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackstoneLegs.legs"
+    },
+    "name": "blackstone_legs_recipe",
+    "namespace": "mod"
+  }
+}

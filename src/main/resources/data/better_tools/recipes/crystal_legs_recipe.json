@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystal_legs",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sea_lantern"
+    },
+    "b": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "c": {
+      "tag": "forge:armors/leggings"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystal_leggings",
+    "count": 1
+  }
+}

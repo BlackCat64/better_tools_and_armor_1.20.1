@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "wooden_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bark"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WoodenArmor.boots"
+    },
+    "name": "wooden_boots_recipe",
+    "namespace": "mod"
+  }
+}

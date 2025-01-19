@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteBowEmerald"
+      }
+    ],
+    "information": [
+      "When no Arrows are in the user's inventory, this bow will shoot regular Arrows.",
+      "If any regular Arrows are in the inventory, they will not be used up.",
+      "Tipped Arrows are used up normally."
+    ]
+  }
+}

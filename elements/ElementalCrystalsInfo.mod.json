@@ -1,0 +1,62 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ToughCrystal"
+      },
+      {
+        "value": "CUSTOM:GildedCrystal"
+      },
+      {
+        "value": "CUSTOM:MagicCrystal"
+      },
+      {
+        "value": "CUSTOM:HealCrystal"
+      },
+      {
+        "value": "CUSTOM:DiamondHardCrystal"
+      },
+      {
+        "value": "CUSTOM:SpikedCrystal"
+      },
+      {
+        "value": "CUSTOM:SpeedyCrystal"
+      },
+      {
+        "value": "CUSTOM:SkyCrystal"
+      },
+      {
+        "value": "CUSTOM:NatureCrystal"
+      },
+      {
+        "value": "CUSTOM:EchoCrystal"
+      },
+      {
+        "value": "CUSTOM:EarthCrystal"
+      },
+      {
+        "value": "CUSTOM:GuardianCrystal"
+      },
+      {
+        "value": "CUSTOM:HiveCrystal"
+      },
+      {
+        "value": "CUSTOM:FireCore"
+      },
+      {
+        "value": "CUSTOM:IceCore"
+      },
+      {
+        "value": "CUSTOM:ElectricCore"
+      }
+    ],
+    "information": [
+      "§lElemental Crystals§r",
+      "",
+      "Use in a Smithing Table to upgrade Crystallite equipment with different elemental effects!",
+      "They can also be used to craft Crystallite Charms."
+    ]
+  }
+}

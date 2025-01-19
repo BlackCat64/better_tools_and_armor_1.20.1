@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      }
+    ],
+    "information": [
+      "When a mob is stuck in the ground, it cannot move.",
+      "It can still attack, however.",
+      "If a player jumps, they are instantly freed from the effect."
+    ]
+  }
+}

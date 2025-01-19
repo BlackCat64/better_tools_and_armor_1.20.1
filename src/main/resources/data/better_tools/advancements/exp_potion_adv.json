@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:experience_potion"
+    },
+    "title": {
+      "translate": "advancements.exp_potion_adv.title"
+    },
+    "description": {
+      "translate": "advancements.exp_potion_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "exp_potion_adv_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "better_tools:experience_potion"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "better_tools:consumables_section"
+}

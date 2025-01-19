@@ -1,0 +1,186 @@
+{
+  "pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "item",
+			"name": "better_tools:ruby",
+			"weight": 25,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 2,
+					"max": 6
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:purple_mushroom",
+			"weight": 5,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:sugar_clump",
+			"weight": 25,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 6,
+					"max": 10
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:golden_potato",
+			"weight": 15,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:berry_pie",
+			"weight": 15,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:recall_potion",
+			"weight": 10
+		}, {
+			"type": "item",
+			"name": "better_tools:ascension_potion",
+			"weight": 10
+		}, {
+			"type": "item",
+			"name": "better_tools:descension_potion",
+			"weight": 6
+		}, {
+			"type": "item",
+			"name": "better_tools:lost_souls_potion",
+			"weight": 6
+		}, {
+			"type": "item",
+			"name": "better_tools:experience_potion",
+			"weight": 4
+		}, {
+			"type": "item",
+			"name": "better_tools:crystallite_charm_base",
+			"weight": 2
+		}, {
+			"type": "item",
+			"name": "better_tools:crystallite_shards",
+			"weight": 1
+		}, {
+			"type": "item",
+			"name": "better_tools:ruby_sword",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}, {
+            	"function": "enchant_randomly",
+            	"treasure": true
+        	}
+			]
+		}, {
+			"type": "item",
+			"name": "better_tools:ruby_pickaxe",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}, {
+            	"function": "enchant_randomly",
+            	"treasure": true
+        	}]
+		}, {
+			"type": "item",
+			"name": "better_tools:sugar_boots",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.6,
+					"max": 0.95
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:rabbit_boots",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.6,
+					"max": 0.95
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:cactus_chestplate",
+			"weight": 4,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.75
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:hearty_chestplate",
+			"weight": 4,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.75
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:gold_carrot_helmet",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.6,
+					"max": 0.95
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:nether_diamond",
+			"weight": 350,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 0,
+					"max": 0
+				}
+			}]
+		}
+		]
+	}],
+  "random_sequence": "better_tools:inject/monster_box"
+}

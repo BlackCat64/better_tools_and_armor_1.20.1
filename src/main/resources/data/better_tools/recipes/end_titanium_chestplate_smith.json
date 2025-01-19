@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "better_tools:ender_titanium_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "better_tools:end_titanium_ingot"
+  },
+  "result": {
+    "item": "better_tools:end_titanium_chestplate"
+  }
+}

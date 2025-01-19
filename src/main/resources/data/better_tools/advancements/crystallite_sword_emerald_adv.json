@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_sword_emerald"
+    },
+    "title": {
+      "translate": "advancements.crystallite_sword_emerald_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_sword_emerald_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_sword_emerald_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:crystallite_upgrades_section"
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Serious Sorcery",
+    "achievementDescription": "Enchant a Magic Staff with both Ensorcellation and Swift Cast",
+    "achievementIcon": {
+      "value": "Items.ENCHANTED_BOOK"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 40,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:SmeltingTouchAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"213\" y=\"129\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

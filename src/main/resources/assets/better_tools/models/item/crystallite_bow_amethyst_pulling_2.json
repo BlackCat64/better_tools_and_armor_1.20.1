@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_amethyst",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_amethyst_pulling_2"
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteBlock"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "CUSTOM:CutCrystalliteBlock"
+      }
+    ],
+    "information": [
+      "§lObtaining Crystallite§r",
+      "",
+      "Find Crystallite Clusters underground by listening out for their sparkle!",
+      "They spawn rarely between y=-48 and y=46.",
+      "They do not spawn above y=0 in oceans.",
+      "Mine Crystallite Blocks with a §lNetherite Pickaxe§r or better.",
+      "Each block drops 1 Crystallite Shards item, which can be used to craft Gems for crafting tools and armor.",
+      "Crystallite Gems are also used to craft Elemental Crystals."
+    ]
+  }
+}

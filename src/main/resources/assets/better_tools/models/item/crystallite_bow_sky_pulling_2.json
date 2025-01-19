@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_sky",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_sky_pulling_2"
+    }
+}

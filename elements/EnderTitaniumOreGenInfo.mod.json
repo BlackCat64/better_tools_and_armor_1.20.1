@@ -1,0 +1,18 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:EndTitaniumOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§5Ender Titanium Ore§r",
+      "",
+      "Generates below y=30, in the End Islands.",
+      "Spawns rarely, in small groups."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:heart_charm",
+    "better_tools:diamond_hard_plate",
+    "better_tools:poison_charm",
+    "better_tools:lucky_charm",
+    "better_tools:reflect_charm",
+    "better_tools:curing_charm"
+  ]
+}

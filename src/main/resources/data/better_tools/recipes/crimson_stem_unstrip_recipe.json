@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "log_unstrip",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_crimson_stem"
+    },
+    {
+      "item": "better_tools:bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:crimson_stem",
+    "count": 1
+  }
+}

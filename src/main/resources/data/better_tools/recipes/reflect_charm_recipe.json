@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "reflect_charm",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:sky_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:reflect_charm",
+    "count": 1
+  }
+}

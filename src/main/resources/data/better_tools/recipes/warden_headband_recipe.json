@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "warden_headband",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:echo_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:warden_headband",
+    "count": 1
+  }
+}

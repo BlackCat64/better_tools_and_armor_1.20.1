@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "better_tools:recall_potion"
+    }
+  ],
+  "results": [
+    {
+      "item": "better_tools:lost_souls_potion"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "BT+A - Stick to Ceiling",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StickToCeilingKeyDown"
+    },
+    "onKeyReleased": {
+      "name": "StickToCeilingKeyUp"
+    }
+  }
+}

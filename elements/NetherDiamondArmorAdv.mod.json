@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Flaming Aura",
+    "achievementDescription": "Set an attacker on fire with a full set of Nether Diamond Armor",
+    "achievementIcon": {
+      "value": "CUSTOM:NetherDiamondArmor.body"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 40,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:NetherDiamondAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"138\" y=\"112\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

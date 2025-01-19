@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "sugar_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "TAG:forge:armors/boots"
+      },
+      {
+        "value": "CUSTOM:SugarBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SugarBoots.boots"
+    },
+    "name": "sugar_boots_recipe",
+    "namespace": "mod"
+  }
+}

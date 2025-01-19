@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_coal_trapdoor",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:dark_polished_coal_block"
+  },
+  "result": "better_tools:dark_polished_coal_trapdoor"
+}

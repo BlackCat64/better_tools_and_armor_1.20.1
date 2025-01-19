@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "diamond_hard_plate",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:diamond_hard_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:diamond_hard_plate",
+    "count": 1
+  }
+}

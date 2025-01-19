@@ -1,0 +1,14 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SugarClump"
+      }
+    ],
+    "information": [
+      "When multiple Sugar Clumps are eaten in a row, the duration of the Speed effect increases accordingly."
+    ]
+  }
+}

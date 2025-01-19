@@ -1,0 +1,41 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamond"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:Sapphire"
+      },
+      {
+        "value": "CUSTOM:Topaz"
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      }
+    ],
+    "information": [
+      "Better Tools and Armor allows these items to be used as Beacon payment items."
+    ]
+  }
+}

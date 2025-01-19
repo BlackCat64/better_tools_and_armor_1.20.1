@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:dark_polished_coal_slab",
+    "better_tools:light_polished_coal_slab",
+    "better_tools:light_polished_iron_slab",
+    "better_tools:dark_polished_iron_slab",
+    "better_tools:dark_polished_lapis_slab",
+    "better_tools:light_polished_lapis_slab",
+    "better_tools:polished_diamond_slab",
+    "better_tools:light_polished_emerald_slab",
+    "better_tools:dark_polished_emerald_slab",
+    "better_tools:polished_redstone_slab",
+    "better_tools:polished_ruby_slab",
+    "better_tools:light_polished_copper_slab",
+    "better_tools:dark_polished_copper_slab",
+    "better_tools:polished_topaz_slab",
+    "better_tools:polished_gold_slab",
+    "better_tools:light_polished_gold_slab",
+    "better_tools:polished_nether_diamond_slab",
+    "better_tools:light_polished_nether_diamond_slab",
+    "better_tools:polished_amethyst_slab",
+    "better_tools:light_polished_amethyst_slab"
+  ]
+}

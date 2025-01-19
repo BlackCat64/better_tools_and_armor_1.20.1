@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "better_tools:crystallite_upgrade_smithing_template"
+  },
+  "base": {
+    "tag": "better_tools:crystallite_daggers"
+  },
+  "addition": {
+    "item": "better_tools:tough_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_dagger_iron"
+  }
+}

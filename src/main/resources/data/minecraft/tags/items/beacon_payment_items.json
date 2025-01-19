@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond",
+    "better_tools:ruby",
+    "better_tools:end_titanium_ingot",
+    "better_tools:sapphire",
+    "better_tools:topaz",
+    "minecraft:lapis_lazuli",
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:diamond",
+    "minecraft:netherite_ingot",
+    "minecraft:emerald",
+    "minecraft:quartz",
+    "better_tools:crystallite_shards",
+    "minecraft:amethyst_shard",
+    "minecraft:copper_ingot",
+    "minecraft:redstone"
+  ]
+}

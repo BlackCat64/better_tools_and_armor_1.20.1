@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "topaz_ore",
+  "category": "misc",
+  "experience": 2,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:topaz_ore"
+  },
+  "result": "better_tools:topaz"
+}

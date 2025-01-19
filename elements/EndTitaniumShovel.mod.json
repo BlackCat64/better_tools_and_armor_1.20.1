@@ -1,0 +1,141 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "end_titanium_shovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Ender Titanium Shovel",
+    "specialInformation": {
+      "fixedValue": [
+        "§5Mines End Stone instantly"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 18,
+    "damageVsEntity": 8.5,
+    "usageCount": 2700,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:SugarBlock"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.GRASS_PATH"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.FARMLAND"
+      },
+      {
+        "value": "Blocks.SNOW_LAYER"
+      },
+      {
+        "value": "Blocks.SNOW"
+      },
+      {
+        "value": "Blocks.CLAY"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.SOUL_SOIL"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#0"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#1"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#2"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#3"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#4"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#5"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#6"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#7"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#8"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#9"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#10"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#11"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#12"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#13"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#14"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#15"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

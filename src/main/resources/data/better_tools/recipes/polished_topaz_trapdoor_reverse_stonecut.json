@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_topaz_trapdoor_reverse",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:polished_topaz_trapdoor"
+  },
+  "result": "better_tools:polished_topaz_block"
+}

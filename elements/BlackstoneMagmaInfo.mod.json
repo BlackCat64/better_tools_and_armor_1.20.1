@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:BlackstoneMagma"
+      }
+    ],
+    "information": [
+      "Generates in the Nether, only in §4Basalt Deltas§r.",
+      "Only spawns near lava, in place of regular Magma Blocks."
+    ]
+  }
+}

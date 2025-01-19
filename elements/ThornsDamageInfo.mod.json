@@ -1,0 +1,35 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CactusBody.body"
+      },
+      {
+        "value": "CUSTOM:IronCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:DiamondCactusBody.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherite.boots"
+      }
+    ],
+    "information": [
+      "§lThorns Damage§r",
+      "",
+      "Some armor pieces deal Thorns damage 100% of the time.",
+      "This only applies to §lmelee attackers."
+    ]
+  }
+}

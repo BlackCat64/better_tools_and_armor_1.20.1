@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:end_titanium_leggings"
+    },
+    "title": {
+      "translate": "advancements.saved_from_void_adv.title"
+    },
+    "description": {
+      "translate": "advancements.saved_from_void_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "saved_from_void_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "better_tools:end_titanium_tools_adv"
+}

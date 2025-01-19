@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "wooden_helmet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bark"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WoodenArmor.helmet"
+    },
+    "name": "wooden_helmet_recipe",
+    "namespace": "mod"
+  }
+}

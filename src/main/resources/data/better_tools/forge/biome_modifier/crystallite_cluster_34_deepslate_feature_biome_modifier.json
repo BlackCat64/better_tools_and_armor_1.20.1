@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "better_tools:crystallite_cluster_34_deepslate_feature",
+  "step": "underground_structures"
+}

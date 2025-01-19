@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nether_diamond_sword",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blackstone_magma"
+    },
+    "b": {
+      "item": "better_tools:nether_diamond"
+    },
+    "c": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:nether_diamond_sword",
+    "count": 1
+  }
+}

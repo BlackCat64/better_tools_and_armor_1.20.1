@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystallite_bow",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "a b",
+    "ab "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystallite_bow",
+    "count": 1
+  }
+}

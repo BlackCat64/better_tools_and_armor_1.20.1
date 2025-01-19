@@ -1,0 +1,122 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "crystallite_helmet_sculk",
+    "enableBody": true,
+    "textureBody": "crystallite_chestplate_sculk",
+    "enableLeggings": true,
+    "textureLeggings": "crystallite_leggings_sculk",
+    "enableBoots": true,
+    "textureBoots": "crystallite_boots_sculk",
+    "onHelmetTick": {
+      "name": "CrystalliteHelmetSculkProcedure"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CrystalliteTab"
+      }
+    ],
+    "armorTextureFile": "crystallite_sculk_",
+    "helmetName": "Crystallite Helmet",
+    "bodyName": "Crystallite Chestplate",
+    "leggingsName": "Crystallite Leggings",
+    "bootsName": "Crystallite Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Deep Dweller - Gain night vision when in the dark",
+        "§3Darkness immunity",
+        "§3Enemy detection range reduced"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Warden Heart - Has a chance to launch sonic booms at attackers",
+        "§3Enemy detection range reduced"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Sneaky - Increases movement speed while crouching",
+        "§3Enemy detection range reduced"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Upgrade: §3Sculk",
+        "§7Abilities:",
+        "§3Deep Dweller - Increased movement speed in the dark",
+        "§3Enemy detection range reduced"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 44,
+    "damageValueHelmet": 5,
+    "damageValueBody": 8,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 4,
+    "enchantability": 20,
+    "toughness": 3.5,
+    "knockbackResistance": 0.125,
+    "equipSound": {
+      "value": "CUSTOM:crystallite_step"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      }
+    ]
+  }
+}

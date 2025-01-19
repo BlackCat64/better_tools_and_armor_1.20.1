@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "better_tools:four_leaf_clover"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:green_dye"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "thorns",
+    "normalDeathMessage": "%1$s got instant karma",
+    "itemDeathMessage": "%1$s got instant karma using %3$s",
+    "playerDeathMessage": "%1$s got instant karma"
+  }
+}

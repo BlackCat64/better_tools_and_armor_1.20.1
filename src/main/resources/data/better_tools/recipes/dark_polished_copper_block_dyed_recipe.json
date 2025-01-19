@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_polished_copper_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:light_polished_copper_block"
+    },
+    "b": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "result": {
+    "item": "better_tools:dark_polished_copper_block",
+    "count": 8
+  }
+}

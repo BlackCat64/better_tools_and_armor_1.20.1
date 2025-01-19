@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ruby",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:ruby_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:ruby",
+    "count": 9
+  }
+}

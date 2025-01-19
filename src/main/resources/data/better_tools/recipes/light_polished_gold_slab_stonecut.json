@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_gold_slab",
+  "count": 2,
+  "ingredient": {
+    "item": "better_tools:light_polished_gold_block"
+  },
+  "result": "better_tools:light_polished_gold_slab"
+}

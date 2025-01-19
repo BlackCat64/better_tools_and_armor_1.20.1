@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_prismarine",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_prismarine_pulling_2"
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SapphireSword"
+      },
+      {
+        "value": "CUSTOM:SapphireAxe"
+      },
+      {
+        "value": "CUSTOM:SapphireDagger"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.body"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
+      },
+      {
+        "value": "CUSTOM:IceStaff"
+      },
+      {
+        "value": "CUSTOM:IcyBracelet"
+      }
+    ],
+    "information": [
+      "§bFrozen Mobs§r",
+      "Frozen mobs cannot move or jump.",
+      "Attack them to shatter the ice, dealing §9+3 Damage§r.",
+      "Frozen Players can jump repeatedly to shorten the effect time."
+    ]
+  }
+}

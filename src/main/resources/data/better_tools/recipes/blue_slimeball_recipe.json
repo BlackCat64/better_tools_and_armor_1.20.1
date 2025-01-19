@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "blue_slimeball",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:blue_slime_block"
+    }
+  ],
+  "result": {
+    "item": "better_tools:blue_slimeball",
+    "count": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "better_tools:item/crystallite_bow_honey"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:pulling": 1
+      },
+      "model": "better_tools:item/crystallite_bow_honey_pulling_0"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1,
+        "minecraft:pull": 0.05
+      },
+      "model": "better_tools:item/crystallite_bow_honey_pulling_1"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1,
+        "minecraft:pull": 0.1
+      },
+      "model": "better_tools:item/crystallite_bow_honey_pulling_2"
+    }
+  ]
+}

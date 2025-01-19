@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "better_tools:textures/screens/blackstone_magma.png",
+    "icon": {
+      "item": "better_tools:gold_carrot_helmet"
+    },
+    "title": {
+      "translate": "advancements.effect_armor_section.title"
+    },
+    "description": {
+      "translate": "advancements.effect_armor_section.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "effect_armor_section_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

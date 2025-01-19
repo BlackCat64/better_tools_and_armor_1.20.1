@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_topaz",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_topaz_pulling_0"
+    }
+}

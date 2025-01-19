@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nature_ring",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:nature_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:nature_ring",
+    "count": 1
+  }
+}

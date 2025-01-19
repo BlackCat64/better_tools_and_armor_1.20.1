@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crystallite_upgrade_template",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "better_tools:crystallite_shards"
+    },
+    "c": {
+      "item": "better_tools:crystallite_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "item": "better_tools:crystallite_upgrade_smithing_template",
+    "count": 2
+  }
+}

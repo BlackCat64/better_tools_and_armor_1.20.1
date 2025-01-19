@@ -1,0 +1,7 @@
+{
+    "parent": "better_tools:item/crystallite_bow_gold",
+    "textures": 
+    {
+        "layer0": "better_tools:item/crystallite_bow_gold_pulling_2"
+    }
+}

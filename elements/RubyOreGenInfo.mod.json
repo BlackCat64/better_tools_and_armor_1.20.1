@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:RubyOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRubyOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§cRuby Ore§r",
+      "",
+      "Generates between y=-32 and y=32",
+      "Most common at y=-32 and y=32",
+      "Spawns in small veins."
+    ]
+  }
+}

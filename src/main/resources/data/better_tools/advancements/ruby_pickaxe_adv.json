@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:ruby_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.ruby_pickaxe_adv.title"
+    },
+    "description": {
+      "translate": "advancements.ruby_pickaxe_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ruby_pickaxe_adv_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:ruby_pickaxe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "better_tools:ruby_gem_adv"
+}

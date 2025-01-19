@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "better_tools:block/blue_mushroom",
+    "particle": "better_tools:block/blue_mushroom"
+  },
+  "render_type": "cutout"
+}

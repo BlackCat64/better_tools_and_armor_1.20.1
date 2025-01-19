@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_nether_diamond_stairs",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:polished_nether_diamond_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:polished_nether_diamond_stairs",
+    "count": 8
+  }
+}

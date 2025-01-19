@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Bark"
+      }
+    ],
+    "information": [
+      "Obtained by stripping any Log with an Axe.",
+      "",
+      "Use on any Stripped Log to turn it back into a regular Log."
+    ]
+  }
+}

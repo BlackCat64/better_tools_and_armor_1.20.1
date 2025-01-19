@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:ruby_ore",
+    "better_tools:random_ore",
+    "better_tools:sapphire_ore",
+    "better_tools:topaz_ore"
+  ]
+}

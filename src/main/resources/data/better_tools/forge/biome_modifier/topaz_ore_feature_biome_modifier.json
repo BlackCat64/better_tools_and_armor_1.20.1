@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_desert",
+  "features": "better_tools:topaz_ore_feature",
+  "step": "underground_ores"
+}

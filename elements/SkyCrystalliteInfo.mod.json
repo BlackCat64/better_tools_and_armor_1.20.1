@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SkyCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordSky"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerSky"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSky.boots"
+      },
+      {
+        "value": "CUSTOM:ReflectCharm"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowSky"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§fSky§r",
+      "",
+      "Theme:",
+      "Air"
+    ]
+  }
+}

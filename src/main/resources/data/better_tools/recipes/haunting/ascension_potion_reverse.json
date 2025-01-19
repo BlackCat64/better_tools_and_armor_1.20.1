@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "better_tools:ascension_potion"
+    }
+  ],
+  "results": [
+    {
+      "item": "better_tools:descension_potion"
+    }
+  ]
+}

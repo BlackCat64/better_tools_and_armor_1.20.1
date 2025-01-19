@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:NatureCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.boots"
+      },
+      {
+        "value": "CUSTOM:NatureRing"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowEmerald"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§aEmerald§r",
+      "",
+      "Theme:",
+      "Nature and Regeneration"
+    ]
+  }
+}

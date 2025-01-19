@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SapphireOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§bSapphire Ore§r",
+      "",
+      "Generates above y=100",
+      "Most common at y=180",
+      "Spawns rarely, in large veins."
+    ]
+  }
+}

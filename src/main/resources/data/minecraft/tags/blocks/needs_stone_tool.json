@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:climbable_wall",
+    "better_tools:deepslate_ruby_ore",
+    "better_tools:purple_mushroom_block",
+    "better_tools:blue_mushroom_block",
+    "better_tools:ruby_block",
+    "better_tools:ruby_ore"
+  ]
+}

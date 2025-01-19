@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteBowNetherDiamond"
+      }
+    ],
+    "information": [
+      "If Tipped Arrows are used:",
+      "Summons a Lingering Potion at the explosion's center."
+    ]
+  }
+}

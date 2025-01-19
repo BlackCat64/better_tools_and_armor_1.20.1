@@ -1,0 +1,29 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ExperiencePotion"
+      },
+      {
+        "value": "CUSTOM:AscensionPotion"
+      },
+      {
+        "value": "CUSTOM:DescensionPotion"
+      },
+      {
+        "value": "CUSTOM:RecallPotion"
+      },
+      {
+        "value": "CUSTOM:LostSoulsPotion"
+      }
+    ],
+    "information": [
+      "§lUtility Potions§r",
+      "",
+      "These give various one-off effects when consumed.",
+      "They spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually."
+    ]
+  }
+}

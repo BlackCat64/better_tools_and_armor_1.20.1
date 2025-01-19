@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherite_sword",
+    "minecraft:netherite_shovel",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_axe",
+    "minecraft:netherite_hoe",
+    "better_tools:netherite_dagger",
+    "better_tools:end_titanium_sword",
+    "better_tools:end_titanium_pickaxe",
+    "better_tools:end_titanium_axe",
+    "better_tools:end_titanium_shovel",
+    "better_tools:end_titanium_hoe",
+    "better_tools:end_titanium_dagger",
+    "#better_tools:crystallite_swords",
+    "#better_tools:crystallite_pickaxes",
+    "#better_tools:crystallite_axes",
+    "#better_tools:crystallite_shovels",
+    "#better_tools:crystallite_hoes",
+    "#better_tools:crystallite_daggers"
+  ]
+}

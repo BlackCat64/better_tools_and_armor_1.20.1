@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_leggings",
+    "better_tools:crystallite_armor_iron_leggings",
+    "better_tools:crystallite_armor_gold_leggings",
+    "better_tools:crystallite_armor_lapis_leggings",
+    "better_tools:crystallite_armor_redstone_leggings",
+    "better_tools:crystallite_armor_diamond_leggings",
+    "better_tools:crystallite_armor_netherite_leggings",
+    "better_tools:crystallite_armor_ruby_leggings",
+    "better_tools:crystallite_armor_sapphire_leggings",
+    "better_tools:crystallite_armor_topaz_leggings",
+    "better_tools:crystallite_armor_nether_diamond_leggings",
+    "better_tools:crystallite_armor_emerald_leggings",
+    "better_tools:crystallite_armor_sculk_leggings",
+    "better_tools:crystallite_armor_sky_leggings",
+    "better_tools:crystallite_armor_amethyst_leggings",
+    "better_tools:crystallite_armor_prismarine_leggings",
+    "better_tools:crystallite_armor_honey_leggings"
+  ]
+}

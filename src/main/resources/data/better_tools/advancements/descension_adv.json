@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:descension_potion"
+    },
+    "title": {
+      "translate": "advancements.descension_adv.title"
+    },
+    "description": {
+      "translate": "advancements.descension_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "descension_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:ascension_adv"
+}

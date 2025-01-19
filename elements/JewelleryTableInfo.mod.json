@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:JewelleryTable"
+      }
+    ],
+    "information": [
+      "This is the workstation for the Jeweller Villager profession.",
+      "Trade with this villager to get Crystallite Charms, or duplicate Charm Bases, without even needing any Crystallite!",
+      "Also sells Crystallite Upgrade Smithing Templates."
+    ]
+  }
+}

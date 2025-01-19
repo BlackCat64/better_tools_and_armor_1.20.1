@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"125\" y=\"102\"><field name=\"trigger\">entity_attacked</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"world_data_logic_getgamerule\"><field name=\"gamerulesboolean\">CUSTOM:DisplayDamageValues</field></block></value><statement name=\"DO0\"><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityPlayer</field><value name=\"compareTo\"><block type=\"source_entity_from_deps\"/></value></block></value><statement name=\"DO0\"><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"entity_iscreative\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></value><statement name=\"DO0\"><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text_join\"><mutation items=\"3\"/><value name=\"ADD0\"><block type=\"custom_dependency_number\"><field name=\"NAME\">amount</field></block></value><value name=\"ADD1\"><block type=\"text\"><field name=\"TEXT\"> damage dealt to </field></block></value><value name=\"ADD2\"><block type=\"entity_name\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></value></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}

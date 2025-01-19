@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cactus_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cactus"
+    },
+    "b": {
+      "tag": "forge:armors/chestplates"
+    }
+  },
+  "result": {
+    "item": "better_tools:cactus_chestplate",
+    "count": 1
+  }
+}

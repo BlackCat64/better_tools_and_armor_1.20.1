@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "better_tools:block/sapphire_ore",
+    "particle": "better_tools:block/sapphire_ore"
+  },
+  "render_type": "solid"
+}

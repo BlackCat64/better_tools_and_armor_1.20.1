@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_cactus_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:cactus"
+    },
+    "c": {
+      "item": "better_tools:iron_cactus_chestplate"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_cactus_chestplate",
+    "count": 1
+  }
+}

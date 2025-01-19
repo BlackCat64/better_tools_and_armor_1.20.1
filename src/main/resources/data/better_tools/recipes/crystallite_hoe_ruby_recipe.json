@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "better_tools:crystallite_upgrade_smithing_template"
+  },
+  "base": {
+    "tag": "better_tools:crystallite_hoes"
+  },
+  "addition": {
+    "item": "better_tools:speedy_crystal"
+  },
+  "result": {
+    "item": "better_tools:crystallite_hoe_ruby"
+  }
+}

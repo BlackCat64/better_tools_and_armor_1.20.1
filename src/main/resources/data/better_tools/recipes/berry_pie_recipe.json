@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "berry_pie",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:sweet_berries"
+    },
+    "b": {
+      "item": "minecraft:wheat"
+    },
+    "c": {
+      "item": "minecraft:egg"
+    }
+  },
+  "result": {
+    "item": "better_tools:berry_pie",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amogus",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather_helmet"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:leather_leggings"
+    },
+    "d": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "item": "better_tools:amogus",
+    "count": 1
+  }
+}

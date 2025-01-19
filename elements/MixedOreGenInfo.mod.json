@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:RandomOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRandomOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§cM§6i§ax§be§9d §aO§6r§ce§r",
+      "",
+      "Generates below y=40",
+      "Becomes more common the deeper you go.",
+      "Spawns in small veins."
+    ]
+  }
+}

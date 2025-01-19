@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "ALL the way Down",
+    "achievementDescription": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
+    "achievementIcon": {
+      "value": "CUSTOM:DescensionPotion"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 100,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:DescensionAdv"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"84\" y=\"76\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

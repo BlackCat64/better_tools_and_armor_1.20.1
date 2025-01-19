@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sugar_boots",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_wart"
+    },
+    "b": {
+      "item": "better_tools:sugar_block"
+    },
+    "c": {
+      "item": "minecraft:blaze_powder"
+    },
+    "d": {
+      "tag": "forge:armors/boots"
+    }
+  },
+  "result": {
+    "item": "better_tools:sugar_boots",
+    "count": 1
+  }
+}

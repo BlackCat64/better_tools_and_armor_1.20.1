@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_copper_slab",
+  "count": 2,
+  "ingredient": {
+    "item": "better_tools:light_polished_copper_block"
+  },
+  "result": "better_tools:light_polished_copper_slab"
+}

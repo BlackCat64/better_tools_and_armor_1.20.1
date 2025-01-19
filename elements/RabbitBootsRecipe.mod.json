@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "rabbit_boots",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "TAG:forge:armors/boots"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RabbitBoots.boots"
+    },
+    "name": "rabbit_boots_recipe",
+    "namespace": "mod"
+  }
+}

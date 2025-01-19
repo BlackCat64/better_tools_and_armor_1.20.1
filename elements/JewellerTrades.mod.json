@@ -1,0 +1,393 @@
+{
+  "_fv": 66,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:Jeweller"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countPrice1": 3,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 16,
+            "xp": 15,
+            "priceMultiplier": 0.02
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Sapphire"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 16,
+            "xp": 15,
+            "priceMultiplier": 0.02
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:CrystalliteCharmBase"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 30,
+            "offer": {
+              "value": "CUSTOM:CrystalliteCharmBase"
+            },
+            "countOffer": 2,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 10,
+            "priceMultiplier": 0.0
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Topaz"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 16,
+            "xp": 15,
+            "priceMultiplier": 0.02
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:PurpleMushroom"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:PoisonCharm"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 3,
+            "xp": 30,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:FourLeafClover"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:LuckyCharm"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 3,
+            "xp": 30,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Blocks.LAPIS_BLOCK"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:MagicRing"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 3,
+            "xp": 30,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Blocks.IRON_BLOCK"
+            },
+            "countPrice1": 7,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 16,
+            "offer": {
+              "value": "CUSTOM:ToughNecklace"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 40,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:TopazBlock"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 16,
+            "offer": {
+              "value": "CUSTOM:ElectricNecklace"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Blocks.GOLD_BLOCK"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 16,
+            "offer": {
+              "value": "CUSTOM:GildedBracelet"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 40,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:SapphireBlock"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:IcyBracelet"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:NetherDiamondBlock"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:FlamingCirclet"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Items.DIAMOND"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:DiamondHardPlate"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 40,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:GuardianSpike"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:GuardianNecklace"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 64,
+            "offer": {
+              "value": "CUSTOM:NatureRing"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Blocks.REDSTONE_BLOCK"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 40,
+            "offer": {
+              "value": "CUSTOM:HeartCharm"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 40,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:RubyBlock"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 40,
+            "offer": {
+              "value": "CUSTOM:SpeedyNecklace"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Items.END_CRYSTAL"
+            },
+            "countPrice1": 4,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 40,
+            "offer": {
+              "value": "CUSTOM:ReflectCharm"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Blocks.AMETHYST_CLUSTER"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 40,
+            "offer": {
+              "value": "CUSTOM:EarthCirclet"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:BlueSlimeBlock"
+            },
+            "countPrice1": 6,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:BouncyBracelet"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 3,
+            "xp": 30,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:CrystaliteGem"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 30,
+            "offer": {
+              "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 10,
+            "priceMultiplier": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

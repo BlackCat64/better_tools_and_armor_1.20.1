@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_hearty_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "c": {
+      "item": "better_tools:iron_hearty_chestplate"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_hearty_chestplate",
+    "count": 1
+  }
+}

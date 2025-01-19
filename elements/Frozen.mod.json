@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Frozen",
+    "icon": "ice_effect",
+    "color": {
+      "value": -5650177,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "FrozenEffectApplied"
+    },
+    "onActiveTick": {
+      "name": "FrozenEffectParticles"
+    },
+    "onExpired": {
+      "name": "FrozenEffectExpires"
+    }
+  }
+}

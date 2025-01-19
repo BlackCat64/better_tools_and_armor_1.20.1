@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fire_crystal",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blackstone_magma"
+    },
+    "b": {
+      "item": "better_tools:nether_diamond"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "d": {
+      "item": "better_tools:nether_diamond_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:fire_crystal",
+    "count": 1
+  }
+}

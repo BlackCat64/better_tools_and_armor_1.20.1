@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "withered_gauntlet",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:spiked_crystal"
+    },
+    "b": {
+      "item": "minecraft:wither_rose"
+    },
+    "c": {
+      "item": "better_tools:crystallite_charm_base"
+    }
+  },
+  "result": {
+    "item": "better_tools:withered_gauntlet",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_tools:small_spruce_treehouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 25,
+    "separation": 10,
+    "salt": 551989711
+  }
+}

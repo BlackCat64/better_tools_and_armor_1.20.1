@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nature_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "dbd"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:leaves"
+    },
+    "b": {
+      "item": "minecraft:emerald_block"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "d": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "item": "better_tools:nature_crystal",
+    "count": 1
+  }
+}

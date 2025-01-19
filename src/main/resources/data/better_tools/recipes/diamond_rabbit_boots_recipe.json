@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_rabbit_boots",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "better_tools:iron_rabbit_boots"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_rabbit_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "better_tools:blocks/polished_redstone_stairs",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "better_tools:polished_redstone_stairs"
+        }
+      ]
+    }
+  ]
+}

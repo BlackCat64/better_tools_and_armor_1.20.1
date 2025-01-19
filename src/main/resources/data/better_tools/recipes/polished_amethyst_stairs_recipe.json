@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_amethyst_stairs",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:polished_amethyst_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:polished_amethyst_stairs",
+    "count": 8
+  }
+}

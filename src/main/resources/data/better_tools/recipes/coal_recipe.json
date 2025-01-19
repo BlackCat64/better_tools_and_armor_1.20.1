@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coal_mixed",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:mixed_essence"
+    }
+  ],
+  "result": {
+    "item": "minecraft:coal",
+    "count": 1
+  }
+}

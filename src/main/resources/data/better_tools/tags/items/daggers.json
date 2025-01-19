@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:wood_dagger",
+    "better_tools:stone_dagger",
+    "better_tools:iron_dagger",
+    "better_tools:gold_dagger",
+    "better_tools:diamond_dagger",
+    "better_tools:netherite_dagger",
+    "better_tools:nether_diamond_dagger",
+    "better_tools:flint_dagger",
+    "better_tools:ruby_dagger",
+    "better_tools:end_titanium_dagger",
+    "better_tools:sapphire_dagger",
+    "better_tools:topaz_dagger",
+    "#better_tools:crystallite_daggers"
+  ]
+}

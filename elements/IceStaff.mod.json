@@ -1,0 +1,61 @@
+{
+  "_fv": 66,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "ice_staff",
+    "customModelName": "Ranged item",
+    "customProperties": {},
+    "states": [],
+    "name": "Ice Staff",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 16,
+    "useDuration": 72000,
+    "toolType": 0.0,
+    "damageCount": 250,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§bFreezes the target",
+        "§bEffect is stronger in a cold biome"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:IceStaffProjectile"
+    },
+    "onRangedItemUsed": {
+      "name": "IceStaffApplyEnchantments"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear"
+  }
+}

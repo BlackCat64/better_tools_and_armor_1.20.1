@@ -1,0 +1,15 @@
+{
+  "entries": [
+    "better_tools:modify_ancient_city_loot",
+    "better_tools:modify_dungeon_loot",
+    "better_tools:modify_mineshaft_loot",
+    "better_tools:charm_base_in_desert_temple",
+    "better_tools:charm_base_in_jungle_temple",
+    "better_tools:charm_base_in_woodland_mansion",
+    "better_tools:charm_base_in_shipwreck",
+    "better_tools:charm_base_in_bastion_treasure",
+    "better_tools:end_city_loot_modifier",
+    "better_tools:modify_quark_monster_box_loot"
+  ],
+  "replace": false
+}

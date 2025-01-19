@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bouncy_bracelet",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blue_slime_block"
+    },
+    "b": {
+      "item": "better_tools:crystallite_charm_base"
+    }
+  },
+  "result": {
+    "item": "better_tools:bouncy_bracelet",
+    "count": 1
+  }
+}

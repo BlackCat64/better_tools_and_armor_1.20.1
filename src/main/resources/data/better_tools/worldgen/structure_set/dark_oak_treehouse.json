@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_tools:dark_oak_treehouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 18,
+    "separation": 7,
+    "salt": 1705962926
+  }
+}

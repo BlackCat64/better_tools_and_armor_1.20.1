@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "heal_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    }
+  },
+  "result": {
+    "item": "better_tools:heal_crystal",
+    "count": 1
+  }
+}

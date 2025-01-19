@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "earth_crystal",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "b": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "c": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "d": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:earth_crystal",
+    "count": 1
+  }
+}

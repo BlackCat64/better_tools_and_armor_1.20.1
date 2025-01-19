@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bark_to_sticks",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stick",
+    "count": 2
+  }
+}

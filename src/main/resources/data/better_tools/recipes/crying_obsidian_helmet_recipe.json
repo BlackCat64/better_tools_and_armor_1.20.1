@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crying_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "cde"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "b": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "c": {
+      "item": "minecraft:blaze_powder"
+    },
+    "d": {
+      "tag": "forge:armors/helmets"
+    },
+    "e": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "result": {
+    "item": "better_tools:crying_obsidian_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "icy_bracelet",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    {
+      "item": "better_tools:ice_crystal"
+    }
+  ],
+  "result": {
+    "item": "better_tools:icy_bracelet",
+    "count": 1
+  }
+}

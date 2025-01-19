@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magma_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blackstone_magma"
+    },
+    "b": {
+      "tag": "forge:armors/chestplates"
+    },
+    "c": {
+      "item": "minecraft:nether_wart"
+    },
+    "d": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "better_tools:magma_chestplate",
+    "count": 1
+  }
+}

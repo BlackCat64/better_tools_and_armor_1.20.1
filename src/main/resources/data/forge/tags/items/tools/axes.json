@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:axes",
+    "better_tools:crystallite_pickaxe_emerald"
+  ]
+}

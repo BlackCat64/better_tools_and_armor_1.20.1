@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sky_crystal",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "better_tools:sapphire_block"
+    },
+    "c": {
+      "item": "better_tools:sapphire"
+    },
+    "d": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "e": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "f": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:sky_crystal",
+    "count": 1
+  }
+}

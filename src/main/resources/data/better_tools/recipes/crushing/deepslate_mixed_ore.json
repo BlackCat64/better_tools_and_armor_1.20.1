@@ -1,0 +1,35 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "better_tools:deepslate_random_ore"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "count": 1,
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "chance": 0.25,
+      "item": "better_tools:mixed_essence"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.5,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.25,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

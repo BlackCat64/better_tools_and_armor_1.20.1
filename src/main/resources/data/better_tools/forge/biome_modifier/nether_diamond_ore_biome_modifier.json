@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "basalt_deltas",
+  "features": "better_tools:nether_diamond_ore",
+  "step": "underground_ores"
+}

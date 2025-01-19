@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "end_barrens",
+    "end_highlands",
+    "end_midlands",
+    "small_end_islands"
+  ],
+  "features": "better_tools:ender_titanium_ore_generation",
+  "step": "underground_ores"
+}

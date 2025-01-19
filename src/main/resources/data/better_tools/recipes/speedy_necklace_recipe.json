@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "speedy_necklace",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "better_tools:crystallite_charm_base"
+    },
+    "c": {
+      "item": "better_tools:speedy_crystal"
+    }
+  },
+  "result": {
+    "item": "better_tools:speedy_necklace",
+    "count": 1
+  }
+}

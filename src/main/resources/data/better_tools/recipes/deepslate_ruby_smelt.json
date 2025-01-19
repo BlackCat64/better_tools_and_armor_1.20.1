@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "deepslate_ruby_ore",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:deepslate_ruby_ore"
+  },
+  "result": "better_tools:ruby"
+}

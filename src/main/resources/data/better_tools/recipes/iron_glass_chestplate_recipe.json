@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "iron_glass_chestplate",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    },
+    "c": {
+      "item": "better_tools:glass_chestplate"
+    }
+  },
+  "result": {
+    "item": "better_tools:iron_glass_armor_chestplate",
+    "count": 1
+  }
+}

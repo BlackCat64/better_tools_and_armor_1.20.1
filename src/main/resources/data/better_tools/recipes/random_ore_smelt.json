@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "random_gem",
+  "category": "misc",
+  "experience": 3,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:random_ore"
+  },
+  "result": "better_tools:mixed_essence"
+}

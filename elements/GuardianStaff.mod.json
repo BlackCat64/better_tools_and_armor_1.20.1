@@ -1,0 +1,64 @@
+{
+  "_fv": 66,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "guardian_staff",
+    "customModelName": "Ranged item",
+    "customProperties": {},
+    "states": [],
+    "name": "Guardian Staff",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 12,
+    "useDuration": 72000,
+    "toolType": 0.0,
+    "damageCount": 250,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§3Creates a water pulse, damaging nearby mobs",
+        "§3More powerful when it is wet"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onStoppedUsing": {
+      "name": "GuardianStaffWaterPulse"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:ElectricStaffProjectile"
+    },
+    "onRangedItemUsed": {
+      "name": "GuardianStaffWaterPulse"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear"
+  }
+}

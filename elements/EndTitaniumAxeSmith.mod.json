@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "end_titanium_axe",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_AXE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EndTitaniumIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EndTitaniumAxe"
+    },
+    "name": "end_titanium_axe_smith",
+    "namespace": "mod"
+  }
+}

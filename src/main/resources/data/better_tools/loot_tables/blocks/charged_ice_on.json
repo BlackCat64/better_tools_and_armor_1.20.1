@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "better_tools:blocks/charged_ice_on",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "better_tools:charged_ice_on"
+        }
+      ]
+    }
+  ]
+}

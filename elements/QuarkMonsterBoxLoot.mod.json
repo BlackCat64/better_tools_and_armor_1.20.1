@@ -1,0 +1,10 @@
+{
+  "_fv": 66,
+  "_type": "loottable",
+  "definition": {
+    "type": "Entity",
+    "pools": [],
+    "name": "inject/monster_box",
+    "namespace": "mod"
+  }
+}

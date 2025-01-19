@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "better_tools:block/polished_ruby_slab"
+    },
+    "type=top": {
+      "model": "better_tools:block/polished_ruby_slab_top"
+    },
+    "type=double": {
+      "model": "better_tools:block/polished_ruby_slab_full"
+    }
+  }
+}

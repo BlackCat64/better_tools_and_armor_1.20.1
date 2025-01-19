@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:TopazOre"
+      }
+    ],
+    "information": [
+      "§lOre Generation§r",
+      "§6Topaz Ore§r",
+      "",
+      "Generates between y=0 and y=75, in §6Desert biomes§r only.",
+      "Most common at y=60",
+      "Spawns frequently, in small groups."
+    ]
+  }
+}

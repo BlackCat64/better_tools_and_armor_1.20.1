@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:crystallite_block"
+    },
+    "title": {
+      "translate": "advancements.crystallite_cave_adv.title"
+    },
+    "description": {
+      "translate": "advancements.crystallite_cave_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystallite_cave_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "better_tools:progression_section"
+}

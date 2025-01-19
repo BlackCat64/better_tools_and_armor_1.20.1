@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "better_tools:block/crystallite_air",
+    "particle": "better_tools:block/crystallite_air"
+  },
+  "render_type": "translucent"
+}

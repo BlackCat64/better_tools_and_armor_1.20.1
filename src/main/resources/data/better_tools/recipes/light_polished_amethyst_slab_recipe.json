@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "light_polished_amethyst_slab",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:light_polished_amethyst_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:light_polished_amethyst_slab",
+    "count": 6
+  }
+}

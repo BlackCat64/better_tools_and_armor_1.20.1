@@ -1,0 +1,10 @@
+{
+  "type": "better_tools:better_tools_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+  ],
+  "lootTable": "better_tools:inject/chests/crystallite_charm_base_treasure"
+}

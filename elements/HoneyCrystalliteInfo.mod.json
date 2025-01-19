@@ -1,0 +1,54 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorHoney.boots"
+      },
+      {
+        "value": "CUSTOM:HiveCrystal"
+      },
+      {
+        "value": "CUSTOM:CuringCharm"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowHoney"
+      }
+    ],
+    "information": [
+      "§lCrystallite Upgrades: ",
+      "§6Honey§r",
+      "",
+      "Theme:",
+      "Combos and Bees"
+    ]
+  }
+}

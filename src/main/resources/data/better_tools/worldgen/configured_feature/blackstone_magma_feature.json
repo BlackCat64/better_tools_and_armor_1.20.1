@@ -1,0 +1,18 @@
+{
+  "type": "better_tools:blackstone_magma_feature",
+  "config": {
+    "target": {
+      "Name": "minecraft:blackstone"
+    },
+    "state": {
+      "Name": "better_tools:blackstone_magma"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      }
+    }
+  }
+}

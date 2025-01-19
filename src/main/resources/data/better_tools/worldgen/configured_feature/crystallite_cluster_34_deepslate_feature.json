@@ -1,0 +1,12 @@
+{
+  "type": "better_tools:crystallite_cluster_34_deepslate_feature",
+  "config": {
+    "structure": "better_tools:crystallite_34_deepslate",
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      -6,
+      -2,
+      -6
+    ]
+  }
+}

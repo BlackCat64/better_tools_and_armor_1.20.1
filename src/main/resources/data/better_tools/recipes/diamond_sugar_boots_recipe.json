@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_sugar_boots",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:sugar_block"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "better_tools:iron_sugar_boots"
+    }
+  },
+  "result": {
+    "item": "better_tools:diamond_sugar_boots",
+    "count": 1
+  }
+}

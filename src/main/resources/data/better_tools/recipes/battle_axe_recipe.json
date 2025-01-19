@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "battle_axe",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cda",
+    "bc "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond_axe"
+    },
+    "b": {
+      "item": "better_tools:nether_diamond"
+    },
+    "c": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "d": {
+      "item": "better_tools:obsidian_stick"
+    }
+  },
+  "result": {
+    "item": "better_tools:battle_axe",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ElectricStaff"
+      }
+    ],
+    "information": [
+      "§6When enchanted with Ensorcellation:§r",
+      "Increases the number of Lightning Strikes.",
+      "Increases the radius where the strikes can hit.",
+      "Number of strikes increases with level, and when in a thunderstorm.",
+      "When the projectile hits a Lightning Rod, a lightning bolt will be summoned."
+    ]
+  }
+}

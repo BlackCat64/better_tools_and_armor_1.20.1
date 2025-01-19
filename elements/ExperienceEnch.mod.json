@@ -1,0 +1,30 @@
+{
+  "_fv": 66,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Experienced",
+    "type": "WEAPON",
+    "rarity": "UNCOMMON",
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "TAG:minecraft:swords"
+      },
+      {
+        "value": "TAG:minecraft:axes"
+      },
+      {
+        "value": "TAG:better_tools:daggers"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

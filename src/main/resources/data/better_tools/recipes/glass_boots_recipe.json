@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_boots",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "better_tools:golden_potato"
+    },
+    "c": {
+      "item": "minecraft:nether_wart"
+    },
+    "d": {
+      "item": "minecraft:glass"
+    },
+    "e": {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  },
+  "result": {
+    "item": "better_tools:glass_boots",
+    "count": 1
+  }
+}

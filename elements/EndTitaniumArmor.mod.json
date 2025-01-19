@@ -1,0 +1,115 @@
+{
+  "_fv": 66,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "end_titanium_helmet",
+    "enableBody": true,
+    "textureBody": "end_titanium_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "end_titanium_leggings",
+    "enableBoots": true,
+    "textureBoots": "end_titanium_boots",
+    "onLeggingsTick": {
+      "name": "EndTitaniumLeggingsProcedure"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      }
+    ],
+    "armorTextureFile": "end_titanium_",
+    "helmetName": "Ender Titanium Helmet",
+    "bodyName": "Ender Titanium Chestplate",
+    "leggingsName": "Ender Titanium Leggings",
+    "bootsName": "Ender Titanium Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Ability:",
+        "§5Makes the wearer immune to Endermen",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Ability:",
+        "§5Can teleport attackers away",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Ability:",
+        "§5Levitation Resistant",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Ability:",
+        "§5Press §b[Left Shift] §5in mid-air for 5s Slow Falling",
+        "§7Full-set bonus:",
+        "§5Saves from void death"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 50,
+    "damageValueHelmet": 4,
+    "damageValueBody": 9,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 4,
+    "enchantability": 18,
+    "toughness": 4.0,
+    "knockbackResistance": 0.15,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:EndTitaniumIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_sword_redstone",
+    "better_tools:crystallite_axe_redstone",
+    "better_tools:crystallite_dagger_redstone"
+  ]
+}

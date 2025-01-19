@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:topaz_sword",
+    "better_tools:topaz_axe",
+    "better_tools:topaz_dagger",
+    "better_tools:crystallite_sword_topaz",
+    "better_tools:crystallite_axe_topaz",
+    "better_tools:crystallite_dagger_topaz"
+  ]
+}
