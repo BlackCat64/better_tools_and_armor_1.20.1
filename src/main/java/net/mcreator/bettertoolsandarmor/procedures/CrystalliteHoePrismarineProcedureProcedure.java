@@ -50,7 +50,9 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 					}
 				});
 			} else {
-				world.setBlock(BlockPos.containing(x, y, z), ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")).defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND) {
+					world.setBlock(BlockPos.containing(x, y, z), ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")).defaultBlockState(), 3);
+				}
 			}
 		}
 	}
