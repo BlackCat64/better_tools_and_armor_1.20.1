@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_coal_wall_reverse",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:light_polished_coal_wall"
+  },
+  "result": "better_tools:light_polished_coal_block"
+}

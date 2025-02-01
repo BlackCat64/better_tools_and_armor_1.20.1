@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_gold_wall_reverse",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:polished_gold_wall"
+  },
+  "result": "better_tools:polished_gold_block"
+}

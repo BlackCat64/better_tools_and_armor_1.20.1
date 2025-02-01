@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_copper_wall_reverse",
+  "count": 1,
+  "ingredient": {
+    "item": "better_tools:dark_polished_copper_wall"
+  },
+  "result": "better_tools:dark_polished_copper_block"
+}
