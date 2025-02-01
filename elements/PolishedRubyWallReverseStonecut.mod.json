@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "stoneCuttingInputStack": {
-      "value": "CUSTOM:PolishedRubyTrapdoor"
+      "value": "CUSTOM:PolishedRubyWall"
     },
     "stoneCuttingReturnStack": {
       "value": "CUSTOM:PolishedRubyBlock"
