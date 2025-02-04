@@ -8,7 +8,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
@@ -279,6 +278,6 @@ public class BetterToolsModBlocks {
 	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2);
 	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2);
 	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2);
-	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES), WoodType.OAK);
+	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES), BetterToolsModWoodTypes.BLACK_METAL_SIGN);
 	// End of user code block custom blocks
 }

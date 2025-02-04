@@ -8,16 +8,20 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.util.thread.SidedThreadGroups;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.client.renderer.Sheets;
 
 import net.mcreator.bettertoolsandarmor.world.features.StructureFeature;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModWoodTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModVillagerProfessions;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModTabs;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModSounds;
@@ -52,7 +56,6 @@ public class BetterToolsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		BetterToolsModSounds.REGISTRY.register(bus);
 		BetterToolsModBlocks.REGISTRY.register(bus);
-
 		BetterToolsModItems.REGISTRY.register(bus);
 		BetterToolsModEntities.REGISTRY.register(bus);
 		BetterToolsModEnchantments.REGISTRY.register(bus);
@@ -61,7 +64,6 @@ public class BetterToolsMod {
 		StructureFeature.REGISTRY.register(bus);
 		BetterToolsModMobEffects.REGISTRY.register(bus);
 		BetterToolsModPotions.REGISTRY.register(bus);
-
 		BetterToolsModParticleTypes.REGISTRY.register(bus);
 		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
 		BetterToolsModMenus.REGISTRY.register(bus);
@@ -70,6 +72,14 @@ public class BetterToolsMod {
 	}
 
 	// Start of user code block mod methods
+	@Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientModEvents {
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+			Sheets.addWoodType(BetterToolsModWoodTypes.BLACK_METAL_SIGN);
+		}
+	}
+
 	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
