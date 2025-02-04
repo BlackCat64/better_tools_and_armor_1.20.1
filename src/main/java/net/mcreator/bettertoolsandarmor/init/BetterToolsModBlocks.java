@@ -1,15 +1,19 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
- */
+*    MCreator note: This file will be REGENERATED on each build.
+*/
 package net.mcreator.bettertoolsandarmor.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.bettertoolsandarmor.block.sign.BlackMetalSignBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazOreBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.SugarBlockBlock;
@@ -271,5 +275,10 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> CLIMBABLE_WALL = REGISTRY.register("climbable_wall", () -> new ClimbableWallBlock());
 	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 	// Start of user code block custom blocks
+	public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2);
+	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2);
+	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2);
+	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2);
+	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new BlackMetalSignBlock(METAL_SIGN_PROPERTIES), WoodType.OAK);
 	// End of user code block custom blocks
 }
