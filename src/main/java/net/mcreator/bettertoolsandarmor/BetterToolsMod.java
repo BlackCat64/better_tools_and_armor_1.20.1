@@ -68,6 +68,7 @@ public class BetterToolsMod {
 		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
 		BetterToolsModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
+		BetterToolsModBlockEntities.REGISTRY.register(bus);
 		// End of user code block mod init
 	}
 
