@@ -7,8 +7,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.core.BlockPos;
 
-public class BlackMetalSignBlock extends StandingSignBlock {
-	public BlackMetalSignBlock(Properties pProperties, WoodType pType) {
+public class MetalSignBlock extends StandingSignBlock {
+	public MetalSignBlock(Properties pProperties, WoodType pType) {
 		super(pProperties, pType);
 	}
 

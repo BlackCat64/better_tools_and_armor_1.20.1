@@ -5,9 +5,9 @@ import net.minecraftforge.common.property.Properties;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.block.WallHangingSignBlock;
 
-public class BlackMetalWallHangingSignBlock extends WallHangingSignBlock {
+public class MetalWallHangingSignBlock extends WallHangingSignBlock {
 
-	public BlackMetalWallHangingSignBlock(Properties pProperties, WoodType pType) {
+	public MetalWallHangingSignBlock(Properties pProperties, WoodType pType) {
 		super(pProperties, pType)
 	}
 

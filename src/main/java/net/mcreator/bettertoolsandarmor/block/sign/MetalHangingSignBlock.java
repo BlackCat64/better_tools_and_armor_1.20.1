@@ -9,8 +9,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BlackMetalHangingSignBlock extends CeilingHangingSignBlock {
-	public BlackMetalHangingSignBlock(Properties pProperties, WoodType Ptype) {
+public class MetalHangingSignBlock extends CeilingHangingSignBlock {
+	public MetalHangingSignBlock(Properties pProperties, WoodType Ptype) {
 		super(pProperties, Ptype);
 	}
 

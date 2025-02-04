@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.bettertoolsandarmor.block.sign.BlackMetalSignBlock;
+import net.mcreator.bettertoolsandarmor.block.sign.MetalSignBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazOreBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.SugarBlockBlock;
@@ -279,6 +279,6 @@ public class BetterToolsModBlocks {
 	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2);
 	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2);
 	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2);
-	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new BlackMetalSignBlock(METAL_SIGN_PROPERTIES), WoodType.OAK);
+	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES), WoodType.OAK);
 	// End of user code block custom blocks
 }

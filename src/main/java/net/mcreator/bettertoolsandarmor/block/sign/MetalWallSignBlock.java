@@ -4,8 +4,8 @@ import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraftforge.common.property.Properties;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
-public class BlackMetalWallSignBlock extends WallSignBlock {
-	public BlackMetalWallSignBlock(Properties pProperties, WoodType pType) {
+public class MetalWallSignBlock extends WallSignBlock {
+	public MetalWallSignBlock(Properties pProperties, WoodType pType) {
 		super(pProperties, pType);
 	}
 
