@@ -77,6 +77,25 @@ public class BetterToolsMod {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
 			Sheets.addWoodType(BetterToolsModWoodTypes.BLACK_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.BLUE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.BROWN_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.CREAM_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.CYAN_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.DARK_ORANGE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.DARK_PINK_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.DARK_RED_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.GRAY_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.GREEN_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.LIGHT_BLUE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.LIGHT_GRAY_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.LIME_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.MAGENTA_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.ORANGE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.PINK_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.PURPLE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.RED_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.WHITE_METAL_SIGN);
+			Sheets.addWoodType(BetterToolsModWoodTypes.YELLOW_METAL_SIGN);
 		}
 	}
 
