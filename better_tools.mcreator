@@ -30227,6 +30227,30 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "TestElement",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "test_element",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/TestElement.java"
+        ]
+      }
+    },
+    {
+      "name": "ModSignBlockEntity",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_sign_block_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/ModSignBlockEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34238,6 +34262,10 @@
           },
           {
             "name": "Magenta",
+            "children": []
+          },
+          {
+            "name": "Signs",
             "children": []
           }
         ]
