@@ -1,7 +1,7 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
- */
+*    MCreator note: This file will be REGENERATED on each build.
+*/
 package net.mcreator.bettertoolsandarmor.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -10,7 +10,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bettertoolsandarmor.item.WoodenArmorItem;
@@ -797,8 +799,12 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> WOODEN_CHESTPLATE = REGISTRY.register("wooden_chestplate", () -> new WoodenArmorItem.Chestplate());
 	public static final RegistryObject<Item> WOODEN_LEGGINGS = REGISTRY.register("wooden_leggings", () -> new WoodenArmorItem.Leggings());
 	public static final RegistryObject<Item> WOODEN_BOOTS = REGISTRY.register("wooden_boots", () -> new WoodenArmorItem.Boots());
-
 	// Start of user code block custom items
+	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
+			() -> new SignItem(new Item.Properties.stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));
+	public static final RegistryObject<Item> BLACK_METAL_HANGING_SIGN = REGISTRY.register("black_metal_hanging_sign",
+			() -> new HangingSignItem(BetterToolsModBlocks.BLACK_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_HANGING_SIGN.get(), new Item.Properties.stacksTo(16)));
+
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
