@@ -5,8 +5,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
-public class ModSignBlockEntity extends SignBlockEntity {
-	public ModSignBlockEntity(BlockPos pPos, BlockState pState) {
+public class MetalSignBlockEntity extends SignBlockEntity {
+	public MetalSignBlockEntity(BlockPos pPos, BlockState pState) {
 		super(, pPos, pState);
 	}
 
