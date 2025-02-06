@@ -34,6 +34,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModFeatures;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
+import net.mcreator.bettertoolsandarmor.block.entity.BetterToolsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
