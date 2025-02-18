@@ -2548,7 +2548,8 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/AmogusItem.java",
           "src/main/resources/assets/better_tools/models/item/amogus.json"
         ]
-      }
+      },
+      "path": "~/Ruby"
     },
     {
       "name": "AmogusRecipe",
@@ -3455,7 +3456,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Ruby"
     },
     {
       "name": "MagmaBodyRecipe",
@@ -34075,10 +34077,6 @@
         "children": []
       },
       {
-        "name": "Mixed Ore",
-        "children": []
-      },
-      {
         "name": "Blue Mushrooms",
         "children": []
       },
@@ -34168,10 +34166,6 @@
         "children": []
       },
       {
-        "name": "Swift Swim",
-        "children": []
-      },
-      {
         "name": "Critical Hit Multiplier",
         "children": []
       },
@@ -34254,10 +34248,6 @@
         ]
       },
       {
-        "name": "Treehouses",
-        "children": []
-      },
-      {
         "name": "Ender Titanium",
         "children": []
       },
@@ -34271,6 +34261,55 @@
       },
       {
         "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "Vanilla Recipes",
+        "children": []
+      },
+      {
+        "name": "Consumables",
+        "children": []
+      },
+      {
+        "name": "Attribute Viewer",
+        "children": []
+      },
+      {
+        "name": "Staffs",
+        "children": [
+          {
+            "name": "Fire",
+            "children": []
+          },
+          {
+            "name": "Ice",
+            "children": []
+          },
+          {
+            "name": "Lightning",
+            "children": []
+          },
+          {
+            "name": "Warden",
+            "children": []
+          },
+          {
+            "name": "Guardian",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mixed Ore",
+        "children": []
+      },
+      {
+        "name": "Swift Swim",
+        "children": []
+      },
+      {
+        "name": "Treehouses",
         "children": []
       },
       {
@@ -34354,47 +34393,6 @@
           },
           {
             "name": "Magenta",
-            "children": []
-          },
-          {
-            "name": "Signs",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Vanilla Recipes",
-        "children": []
-      },
-      {
-        "name": "Consumables",
-        "children": []
-      },
-      {
-        "name": "Attribute Viewer",
-        "children": []
-      },
-      {
-        "name": "Staffs",
-        "children": [
-          {
-            "name": "Fire",
-            "children": []
-          },
-          {
-            "name": "Ice",
-            "children": []
-          },
-          {
-            "name": "Lightning",
-            "children": []
-          },
-          {
-            "name": "Warden",
-            "children": []
-          },
-          {
-            "name": "Guardian",
             "children": []
           }
         ]

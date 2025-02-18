@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:black_metal_wall_sign",
+    "better_tools:blue_metal_wall_sign",
+    "better_tools:brown_metal_wall_sign",
+    "better_tools:cream_metal_wall_sign",
+    "better_tools:cyan_metal_wall_sign",
+    "better_tools:dark_orange_metal_wall_sign",
+    "better_tools:dark_pink_metal_wall_sign",
+    "better_tools:dark_red_metal_wall_sign",
+    "better_tools:gray_metal_wall_sign",
+    "better_tools:green_metal_wall_sign",
+    "better_tools:light_blue_metal_wall_sign",
+    "better_tools:light_gray_metal_wall_sign",
+    "better_tools:lime_metal_wall_sign",
+    "better_tools:magenta_metal_wall_sign",
+    "better_tools:orange_metal_wall_sign",
+    "better_tools:pink_metal_wall_sign",
+    "better_tools:purple_metal_wall_sign",
+    "better_tools:red_metal_wall_sign",
+    "better_tools:white_metal_wall_sign",
+    "better_tools:yellow_metal_wall_sign"
+  ]
+}
