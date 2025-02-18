@@ -30227,6 +30227,32 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "BlackMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
     }
   ],
   "variable_elements": [
