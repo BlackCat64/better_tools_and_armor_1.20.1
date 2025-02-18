@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:signs",
+    "#minecraft:all_hanging_signs",
+    "#better_tools:all_metal_signs"
+  ]
+}
