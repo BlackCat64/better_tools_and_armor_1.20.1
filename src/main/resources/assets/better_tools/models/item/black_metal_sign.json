@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "better_tools:item/one_line_black_metal_sign"
+    "layer0": "better_tools:item/black_metal_sign"
   }
 }
