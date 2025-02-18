@@ -30253,6 +30253,84 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "BlackMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/black_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Black"
     }
   ],
   "variable_elements": [
