@@ -800,9 +800,13 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> WOODEN_LEGGINGS = REGISTRY.register("wooden_leggings", () -> new WoodenArmorItem.Leggings());
 	public static final RegistryObject<Item> WOODEN_BOOTS = REGISTRY.register("wooden_boots", () -> new WoodenArmorItem.Boots());
 	// Start of user code block custom items
-	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new SignItem(new Item.Properties(), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));
+	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
+			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));
 	public static final RegistryObject<Item> BLACK_METAL_HANGING_SIGN = REGISTRY.register("black_metal_hanging_sign",
-			() -> new HangingSignItem(BetterToolsModBlocks.BLACK_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_HANGING_SIGN.get(), new Item.Properties()));
+			() -> new HangingSignItem(BetterToolsModBlocks.BLACK_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+	public static final RegistryObject<Item> GRAY_METAL_SIGN = REGISTRY.register("gray_metal_sign", () -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.GRAY_METAL_SIGN.get(), BetterToolsModBlocks.GRAY_METAL_WALL_SIGN.get()));
+	public static final RegistryObject<Item> GRAY_METAL_HANGING_SIGN = REGISTRY.register("gray_metal_hanging_sign",
+			() -> new HangingSignItem(BetterToolsModBlocks.GRAY_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.GRAY_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {

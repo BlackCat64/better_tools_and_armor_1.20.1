@@ -12,7 +12,9 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 public class BetterToolsModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, BetterToolsMod.MODID);
 	public static final RegistryObject<BlockEntityType<MetalSignBlockEntity>> METAL_SIGN = REGISTRY.register("metal_sign",
-			() -> BlockEntityType.Builder.of(MetalSignBlockEntity::new, BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()).build(null));
+			() -> BlockEntityType.Builder.of(MetalSignBlockEntity::new, BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get(),
+																		BetterToolsModBlocks.GRAY_METAL_SIGN.get(), BetterToolsModBlocks.GRAY_METAL_WALL_SIGN.get()).build(null));
 	public static final RegistryObject<BlockEntityType<MetalHangingSignBlockEntity>> METAL_HANGING_SIGN = REGISTRY.register("metal_hanging_sign",
-			() -> BlockEntityType.Builder.of(MetalHangingSignBlockEntity::new, BetterToolsModBlocks.BLACK_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_HANGING_SIGN.get()).build(null));
+			() -> BlockEntityType.Builder.of(MetalHangingSignBlockEntity::new, BetterToolsModBlocks.BLACK_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_HANGING_SIGN.get(),
+																				BetterToolsModBlocks.GRAY_METAL_HANGING_SIGN.get(), BetterToolsModBlocks.GRAY_METAL_WALL_HANGING_SIGN.get()).build(null));
 }
