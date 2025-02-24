@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "metal_hanging_signs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.OAK_HANGING_SIGN"
+    },
+    "name": "gray_metal_hanging_sign_recipe",
+    "namespace": "mod"
+  }
+}

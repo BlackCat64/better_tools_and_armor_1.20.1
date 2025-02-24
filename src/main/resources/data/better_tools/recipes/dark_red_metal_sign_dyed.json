@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_sign_dyed",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "tag": "better_tools:metal_signs"
+    }
+  ],
+  "result": {
+    "item": "better_tools:black_metal_sign",
+    "count": 1
+  }
+}

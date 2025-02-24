@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_one_line_sign",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_tools:black_metal_sign"
+    }
+  ],
+  "result": {
+    "item": "big_signs:one_line_black_metal_sign",
+    "count": 1
+  }
+}

@@ -13348,7 +13348,7 @@
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_block.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondBlockRecipe",
@@ -13361,7 +13361,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_block_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondSlab",
@@ -13380,7 +13380,7 @@
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_slab.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondSlabRecipe",
@@ -13393,7 +13393,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_slab_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondSlabStonecut",
@@ -13406,7 +13406,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_slab_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondStairs",
@@ -13425,7 +13425,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondStairsRecipe",
@@ -13438,7 +13438,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_stairs_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondStairsStonecut",
@@ -13451,7 +13451,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_stairs_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "LightPolishedNetherDiamondBlock",
@@ -13468,7 +13468,7 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_block.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondBlockDyedRecipe",
@@ -13481,7 +13481,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_block_dyed_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondSlab",
@@ -13500,7 +13500,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_full.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondSlabRecipe",
@@ -13513,7 +13513,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_slab_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondSlabStonecut",
@@ -13526,7 +13526,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_slab_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondStairs",
@@ -13545,7 +13545,7 @@
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_stairs.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondStairsRecipe",
@@ -13558,7 +13558,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_stairs_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedGoldStairsStonecut",
@@ -13584,7 +13584,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_stairs_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "PolishedAmethystBlock",
@@ -14576,7 +14576,7 @@
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_open.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondTrapdoorRecipe",
@@ -14589,7 +14589,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_trapdoor_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondTrapdoorStonecut",
@@ -14602,7 +14602,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_trapdoor_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "LightPolishedNetherDiamondTrapdoor",
@@ -14621,7 +14621,7 @@
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_trapdoor.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondTrapdoorRecipe",
@@ -14634,7 +14634,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_trapdoor_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondTrapdoorStonecut",
@@ -14647,7 +14647,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_trapdoor_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "PolishedAmethystTrapdoor",
@@ -15493,7 +15493,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondWallBlock.java"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondWallRecipe",
@@ -15506,7 +15506,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_wall_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "PolishedNetherDiamondWallStonecut",
@@ -15519,7 +15519,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_wall_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "LightPolishedNetherDiamondWall",
@@ -15539,7 +15539,7 @@
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_inventory.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondWallRecipe",
@@ -15552,7 +15552,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_wall_recipe.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "LightPolishedNetherDiamondWallStonecut",
@@ -15565,7 +15565,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_wall_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "PolishedAmethystWall",
@@ -29865,7 +29865,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_trapdoor_reverse_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "LightPolishedNetherDiamondTrapdoorReverseStonecut",
@@ -29878,7 +29878,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_trapdoor_reverse_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "PolishedAmethystTrapdoorReverseStonecut",
@@ -30189,7 +30189,7 @@
           "src/main/resources/data/better_tools/recipes/polished_nether_diamond_wall_reverse_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Red-Pink"
+      "path": "~/Polished Gem Blocks/Dark Pink"
     },
     {
       "name": "LightPolishedNetherDiamondReverseStonecut",
@@ -30202,7 +30202,7 @@
           "src/main/resources/data/better_tools/recipes/light_polished_nether_diamond_reverse_stonecut.json"
         ]
       },
-      "path": "~/Polished Gem Blocks/Hot-Pink"
+      "path": "~/Polished Gem Blocks/Pink"
     },
     {
       "name": "PolishedAmethystWallReverseStonecut",
@@ -30333,6 +30333,1982 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Black"
+    },
+    {
+      "name": "GrayMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "GrayMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/gray_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Gray"
+    },
+    {
+      "name": "LightGrayMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "LightGrayMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_gray_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Gray"
+    },
+    {
+      "name": "WhiteMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "WhiteMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "BlueMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "BlueMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/blue_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Blue"
+    },
+    {
+      "name": "CyanMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "CyanMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cyan_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cyan"
+    },
+    {
+      "name": "LightBlueMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LightBlueMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/light_blue_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Light Blue"
+    },
+    {
+      "name": "LimeMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "LimeMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/lime_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Lime"
+    },
+    {
+      "name": "GreenMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "GreenMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/green_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Green"
+    },
+    {
+      "name": "RedMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "RedMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/red_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Red"
+    },
+    {
+      "name": "DarkRedMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkRedMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_red_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_red_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Red"
+    },
+    {
+      "name": "DarkOrangeMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "DarkOrangeMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_orange_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_orange_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Orange"
+    },
+    {
+      "name": "BrownMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "BrownMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/brown_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Brown"
+    },
+    {
+      "name": "OrangeMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "OrangeMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/orange_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Orange"
+    },
+    {
+      "name": "YellowMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "YellowMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/yellow_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Yellow"
+    },
+    {
+      "name": "CreamMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "CreamMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cream_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/cream_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Cream"
+    },
+    {
+      "name": "DarkPinkMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "DarkPinkMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dark_pink_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dark_pink_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Dark Pink"
+    },
+    {
+      "name": "PinkMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PinkMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/pink_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Pink"
+    },
+    {
+      "name": "PurpleMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "PurpleMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/purple_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Purple"
+    },
+    {
+      "name": "MagentaMetalSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_hanging_sign_recipe.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalHangingSignDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_hanging_sign_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_hanging_sign_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalHangingSignToOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_hanging_sign_to_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_hanging_sign_to_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "MagentaMetalHangingSignFromOneLine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_metal_hanging_sign_from_one_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/magenta_metal_hanging_sign_from_one_line.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/Magenta"
     }
   ],
   "variable_elements": [
@@ -34456,11 +36432,11 @@
             "children": []
           },
           {
-            "name": "Red-Pink",
+            "name": "Dark Pink",
             "children": []
           },
           {
-            "name": "Hot-Pink",
+            "name": "Pink",
             "children": []
           },
           {

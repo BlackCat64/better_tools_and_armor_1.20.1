@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "metal_sign",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.SIGN"
+    },
+    "name": "brown_metal_sign_recipe",
+    "namespace": "mod"
+  }
+}
