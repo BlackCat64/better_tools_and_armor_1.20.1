@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "better_tools:item/pink_metal_hanging_sign"
+  }
+}

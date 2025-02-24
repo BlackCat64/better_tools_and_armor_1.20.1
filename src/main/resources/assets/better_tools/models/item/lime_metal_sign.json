@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "better_tools:item/lime_metal_sign"
+  }
+}

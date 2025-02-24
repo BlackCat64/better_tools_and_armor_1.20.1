@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "better_tools:item/magenta_metal_sign"
+  }
+}
