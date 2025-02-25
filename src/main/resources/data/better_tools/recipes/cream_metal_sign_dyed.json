@@ -4,10 +4,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:cream_dye"
+      "item": "minecraft:yellow_dye"
     },
     {
       "tag": "better_tools:metal_signs"
+    },
+    {
+      "item": "minecraft:white_dye"
     }
   ],
   "result": {

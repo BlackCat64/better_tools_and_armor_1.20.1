@@ -4,10 +4,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:dark_orange_dye"
+      "item": "minecraft:brown_dye"
     },
     {
       "tag": "better_tools:metal_hanging_signs"
+    },
+    {
+      "item": "minecraft:orange_dye"
     }
   ],
   "result": {
