@@ -4,11 +4,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "big_signs:one_line_black_metal_hanging_sign"
+      "item": "big_signs:one_line_lime_metal_hanging_sign"
     }
   ],
   "result": {
-    "item": "better_tools:black_metal_hanging_sign",
+    "item": "better_tools:lime_metal_hanging_sign",
     "count": 1
   }
 }

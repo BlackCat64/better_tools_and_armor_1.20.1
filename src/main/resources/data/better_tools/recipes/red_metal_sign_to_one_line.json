@@ -4,11 +4,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "better_tools:black_metal_sign"
+      "item": "better_tools:red_metal_sign"
     }
   ],
   "result": {
-    "item": "big_signs:one_line_black_metal_sign",
+    "item": "big_signs:one_line_red_metal_sign",
     "count": 1
   }
 }

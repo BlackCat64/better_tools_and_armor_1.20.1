@@ -4,14 +4,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:black_dye"
+      "item": "minecraft:white_dye"
     },
     {
       "tag": "better_tools:metal_signs"
     }
   ],
   "result": {
-    "item": "better_tools:black_metal_sign",
+    "item": "better_tools:white_metal_sign",
     "count": 1
   }
 }
