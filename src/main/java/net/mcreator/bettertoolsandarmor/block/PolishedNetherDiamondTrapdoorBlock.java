@@ -22,6 +22,6 @@ public class PolishedNetherDiamondTrapdoorBlock extends TrapDoorBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7cRose Pink Metallic Building Block"));
+		list.add(Component.literal("\u00A7cDark Pink Metallic Building Block"));
 	}
 }

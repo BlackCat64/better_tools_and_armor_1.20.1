@@ -37,7 +37,7 @@
     "name": "Metallic Nether Diamond Stairs",
     "specialInformation": {
       "fixedValue": [
-        "§cRose Pink Metallic Building Block"
+        "§cDark Pink Metallic Building Block"
       ]
     },
     "hardness": 2.5,
@@ -61,7 +61,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

@@ -37,7 +37,7 @@
     "name": "Light Metallic Nether Diamond Slab",
     "specialInformation": {
       "fixedValue": [
-        "§dHot Pink Metallic Building Block"
+        "§dPink Metallic Building Block"
       ]
     },
     "hardness": 2.5,
@@ -61,7 +61,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

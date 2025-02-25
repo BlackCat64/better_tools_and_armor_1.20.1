@@ -13341,9 +13341,9 @@
       "registry_name": "polished_nether_diamond_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondBlockBlock.java",
-          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_block.json",
           "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_block.json"
         ]
@@ -13371,13 +13371,13 @@
       "registry_name": "polished_nether_diamond_slab",
       "metadata": {
         "files": [
-          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_slab.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab.json",
-          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_slab.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondSlabBlock.java",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab_top.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab_full.json",
-          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_slab.json"
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_slab.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondSlabBlock.java",
+          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_slab.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab_top.json",
+          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_slab.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_slab.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Dark Pink"
@@ -13416,13 +13416,13 @@
       "registry_name": "polished_nether_diamond_stairs",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondStairsBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_stairs.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs_inner.json",
-          "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_stairs.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs_outer.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondStairsBlock.java",
           "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_stairs.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs.json"
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_stairs_outer.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Dark Pink"
@@ -13461,10 +13461,10 @@
       "registry_name": "light_polished_nether_diamond_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_block.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondBlockBlock.java",
           "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_block.json",
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_block.json"
         ]
       },
@@ -13491,13 +13491,13 @@
       "registry_name": "light_polished_nether_diamond_slab",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondSlabBlock.java",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_top.json",
-          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_slab.json",
-          "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_slab.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab.json",
-          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_slab.json",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_full.json"
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_top.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondSlabBlock.java",
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_slab.json",
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_slab_full.json",
+          "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_slab.json",
+          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_slab.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Pink"
@@ -13538,11 +13538,11 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_stairs.json",
           "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_stairs.json",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs_outer.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondStairsBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs_inner.json",
+          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_stairs.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs.json",
-          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_stairs.json"
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondStairsBlock.java",
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_stairs_outer.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Pink"
@@ -14567,13 +14567,13 @@
       "registry_name": "polished_nether_diamond_trapdoor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_trapdoor.json",
-          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_trapdoor.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_top.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondTrapdoorBlock.java",
           "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_trapdoor.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_open.json"
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_open.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_trapdoor_top.json",
+          "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_trapdoor.json",
+          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_trapdoor.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondTrapdoorBlock.java"
         ]
       },
       "path": "~/Polished Gem Blocks/Dark Pink"
@@ -14612,13 +14612,13 @@
       "registry_name": "light_polished_nether_diamond_trapdoor",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_trapdoor.json",
+          "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_trapdoor.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondTrapdoorBlock.java",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor_top.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_trapdoor.json",
-          "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_trapdoor.json",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor_open.json",
-          "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_trapdoor.json"
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondTrapdoorBlock.java",
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_trapdoor_open.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Pink"
@@ -15483,14 +15483,14 @@
       "registry_name": "polished_nether_diamond_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall_side_tall.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall_post.json",
+          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall_inventory.json",
           "src/main/resources/assets/better_tools/blockstates/polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall_post.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondWallBlock.java",
           "src/main/resources/data/better_tools/loot_tables/blocks/polished_nether_diamond_wall.json",
-          "src/main/resources/assets/better_tools/models/block/polished_nether_diamond_wall_inventory.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/PolishedNetherDiamondWallBlock.java"
+          "src/main/resources/assets/better_tools/models/item/polished_nether_diamond_wall.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Dark Pink"
@@ -15529,14 +15529,14 @@
       "registry_name": "light_polished_nether_diamond_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_wall.json",
           "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_side_tall.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondWallBlock.java",
+          "src/main/resources/assets/better_tools/blockstates/light_polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_nether_diamond_wall.json",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall.json",
           "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_post.json",
-          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_inventory.json"
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall.json",
+          "src/main/resources/assets/better_tools/models/block/light_polished_nether_diamond_wall_inventory.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/block/LightPolishedNetherDiamondWallBlock.java"
         ]
       },
       "path": "~/Polished Gem Blocks/Pink"

@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class LightPolishedNetherDiamondStairsBlock extends StairBlock {
 	public LightPolishedNetherDiamondStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -33,7 +34,7 @@ public class LightPolishedNetherDiamondStairsBlock extends StairBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7dHot Pink Metallic Building Block"));
+		list.add(Component.literal("\u00A7dPink Metallic Building Block"));
 	}
 
 	@Override

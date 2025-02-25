@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -14,12 +15,12 @@ import java.util.List;
 
 public class LightPolishedNetherDiamondWallBlock extends WallBlock {
 	public LightPolishedNetherDiamondWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_PINK).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7dHot Pink Metallic Building Block"));
+		list.add(Component.literal("\u00A7dPink Metallic Building Block"));
 	}
 }
