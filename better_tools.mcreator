@@ -32309,6 +32309,42 @@
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
+    },
+    {
+      "name": "UnlockMetalSignRecipes",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unlock_metal_sign_recipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/advancements/unlock_metal_sign_recipes.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "UnlockMetalSignRecipesProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unlock_metal_sign_recipes_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/UnlockMetalSignRecipesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -35271,6 +35307,7 @@
       "block.better_tools.dark_pink_metal_hanging_sign": "Dark Pink Metal Hanging Sign",
       "item.better_tools.crystallite_armor_amethyst_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_leggings": "Ender Titanium Leggings",
+      "advancements.unlock_metal_sign_recipes.title": "Unlock Metal Sign Recipes",
       "effect.better_tools.frozen": "Frozen",
       "item.better_tools.crystallite_bow_sculk": "Crystallite Bow",
       "item.better_tools.crystallite_shovel_nether_diamond": "Crystallite Shovel",
@@ -35982,6 +36019,7 @@
       "item.better_tools.nether_diamond_leggings": "Nether Diamond Leggings",
       "item.better_tools.end_titanium_dagger": "Ender Titanium Dagger",
       "block.better_tools.blue_mushroom": "Blue Mushroom",
+      "advancements.unlock_metal_sign_recipes.descr": "Unlocks all metal sign recipes",
       "block.better_tools.polished_amethyst_block": "Metallic Amethyst Block",
       "item.better_tools.crystallite_armor_emerald_chestplate": "Crystallite Chestplate",
       "block.better_tools.polished_topaz_slab": "Metallic Topaz Slab",
