@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#better_tools:metal_signs",
-    "#better_tools:metal_hanging_signs"
+    "#better_tools:metal_standing_signs",
+    "#better_tools:metal_wall_signs",
+    "#better_tools:metal_ceiling_hanging_signs",
+    "#better_tools:metal_wall_hanging_signs"
   ]
 }
