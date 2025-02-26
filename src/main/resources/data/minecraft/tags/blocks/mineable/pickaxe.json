@@ -118,6 +118,7 @@
     "better_tools:random_ore",
     "better_tools:ruby_block",
     "better_tools:ruby_ore",
-    "better_tools:nether_diamond_block"
+    "better_tools:nether_diamond_block",
+    "#better_tools:all_metal_signs"
   ]
 }
