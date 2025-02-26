@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 
@@ -277,10 +278,10 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> CLIMBABLE_WALL = REGISTRY.register("climbable_wall", () -> new ClimbableWallBlock());
 	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 	// Start of user code block custom blocks
-	public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2);
-	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2);
-	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2);
-	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2);
+	public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
+	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
+	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
+	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
 	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
 	public static final RegistryObject<Block> BLACK_METAL_WALL_SIGN = REGISTRY.register("black_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
 	public static final RegistryObject<Block> BLACK_METAL_HANGING_SIGN = REGISTRY.register("black_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
