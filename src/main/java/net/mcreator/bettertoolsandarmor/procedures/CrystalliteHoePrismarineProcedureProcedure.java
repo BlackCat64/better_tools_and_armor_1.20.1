@@ -14,6 +14,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
@@ -38,22 +39,58 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		BlockState current = Blocks.AIR.defaultBlockState();
+		boolean aquaculture = false;
+		double sx = 0;
+		double sz = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_PRISMARINE.get()) {
-			if (ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")) == Blocks.AIR) {
-				BetterToolsMod.queueServerWork(2, () -> {
-					{
-						int _value = 7;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			aquaculture = !(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")) == Blocks.AIR);
+			sx = -1;
+			sz = -1;
+			for (int index0 = 0; index0 < 3; index0++) {
+				for (int index1 = 0; index1 < 3; index1++) {
+					if (!(sx == 0 && sz == 0)) {
+						current = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
+						if (!world.getBlockState(BlockPos.containing(x + sx, y + 1, z + sz)).canOcclude()) {
+							if (current.getBlock() == Blocks.FARMLAND || (ForgeRegistries.BLOCKS.getKey(current.getBlock()).toString()).equals("aquaculture:farmland") || current.getBlock() == Blocks.DIRT || current.getBlock() == Blocks.GRASS_BLOCK) {
+								if (aquaculture) {
+									world.setBlock(BlockPos.containing(x + sx, y, z + sz), ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")).defaultBlockState(), 3);
+								} else {
+									world.setBlock(BlockPos.containing(x + sx, y, z + sz), Blocks.FARMLAND.defaultBlockState(), 3);
+									{
+										int _value = 7;
+										BlockPos _pos = BlockPos.containing(x + sx, y, z + sz);
+										BlockState _bs = world.getBlockState(_pos);
+										if (_bs.getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+											world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+									}
+								}
+								if (entity instanceof LivingEntity _entity)
+									_entity.swing(InteractionHand.MAIN_HAND, true);
+							}
+						}
 					}
-				});
-			} else {
-				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND) {
-					world.setBlock(BlockPos.containing(x, y, z), ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")).defaultBlockState(), 3);
+					sx = sx + 1;
 				}
+				sz = sz + 1;
+				sx = -1;
 			}
+			BetterToolsMod.queueServerWork(2, () -> {
+				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND || (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString()).equals("aquaculture:farmland")
+						|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DIRT || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
+					if (!(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")) == Blocks.AIR)) {
+						world.setBlock(BlockPos.containing(x, y, z), ForgeRegistries.BLOCKS.getValue(new ResourceLocation("aquaculture:farmland")).defaultBlockState(), 3);
+					} else {
+						{
+							int _value = 7;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						}
+					}
+				}
+			});
 		}
 	}
 }
