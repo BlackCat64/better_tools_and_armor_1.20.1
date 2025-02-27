@@ -51,7 +51,7 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A73Hydration - All tilled farmland starts with full moisture"));
+		list.add(Component.literal("\u00A73Hydration - Tills fully-moisturised farmland in a 3x3 area"));
 	}
 
 	@Override
