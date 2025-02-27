@@ -4,8 +4,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
-import net.minecraftforge.common.ToolActions;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,10 +25,10 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class CrystalliteHoePrismarineProcedureProcedure {
 	@SubscribeEvent
-	public static void onUseHoe(BlockEvent.BlockToolModificationEvent event) {
-		if (!event.isSimulated() && event.getToolAction() == ToolActions.HOE_TILL && event.getPlayer() != null) {
-			execute(event, event.getContext().getLevel(), event.getContext().getClickedPos().getX(), event.getContext().getClickedPos().getY(), event.getContext().getClickedPos().getZ(), event.getPlayer());
-		}
+	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+		if (event.getHand() != event.getEntity().getUsedItemHand())
+			return;
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
