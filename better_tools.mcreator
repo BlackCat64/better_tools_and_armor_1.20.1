@@ -32355,8 +32355,44 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/item/EnergyVialItem.java",
-          "src/main/resources/assets/better_tools/models/item/energy_vial.json"
+          "src/main/resources/assets/better_tools/models/item/energy_vial_4.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_3.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_2.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_0.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_1.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_5.json"
         ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialEnergyValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_energy_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialEnergyValueProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_active",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialActiveProcedure.java"
+        ],
+        "dependencies": []
       },
       "path": "~/Effect Armor/Energy Vial"
     }
