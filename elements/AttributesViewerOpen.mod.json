@@ -4,7 +4,7 @@
   "definition": {
     "triggerKey": "PERIOD",
     "keyBindingName": "Open Attribute Viewer",
-    "keyBindingCategoryKey": "misc",
+    "keyBindingCategoryKey": "better_tools",
     "onKeyPressed": {
       "name": "AttributesViewerOpenProcedure"
     }

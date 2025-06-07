@@ -4,7 +4,7 @@
   "definition": {
     "triggerKey": "SPACE",
     "keyBindingName": "Double Jump",
-    "keyBindingCategoryKey": "misc",
+    "keyBindingCategoryKey": "better_tools",
     "onKeyPressed": {
       "name": "DoubleJumpKeyPress"
     }

@@ -23,7 +23,7 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class BetterToolsModKeyMappings {
-	public static final KeyMapping DOUBLE_JUMP_KEY = new KeyMapping("key.better_tools.double_jump_key", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
+	public static final KeyMapping DOUBLE_JUMP_KEY = new KeyMapping("key.better_tools.double_jump_key", GLFW.GLFW_KEY_SPACE, "key.categories.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -36,7 +36,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping FLOAT_KEY = new KeyMapping("key.better_tools.float_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.misc") {
+	public static final KeyMapping FLOAT_KEY = new KeyMapping("key.better_tools.float_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -49,7 +49,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ATTRIBUTES_VIEWER_OPEN = new KeyMapping("key.better_tools.attributes_viewer_open", GLFW.GLFW_KEY_PERIOD, "key.categories.misc") {
+	public static final KeyMapping ATTRIBUTES_VIEWER_OPEN = new KeyMapping("key.better_tools.attributes_viewer_open", GLFW.GLFW_KEY_PERIOD, "key.categories.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -62,7 +62,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
+	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
