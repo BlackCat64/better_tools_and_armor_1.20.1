@@ -32379,8 +32379,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -32399,8 +32399,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -32414,6 +32414,65 @@
       "registry_name": "effect_energy_cost",
       "metadata": {
         "files": []
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/energy_vial_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EffectEnergyApplyCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_energy_apply_cost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EffectEnergyApplyCostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
       },
       "path": "~/Effect Armor/Energy Vial"
     }
@@ -32652,6 +32711,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "effect_energy_timer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [

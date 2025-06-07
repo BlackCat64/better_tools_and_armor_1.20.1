@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "energy_vial",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ExperiencePotion"
+      },
+      {
+        "value": "Blocks.LAPIS_BLOCK"
+      },
+      {
+        "value": "CUSTOM:ExperiencePotion"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnergyVial"
+    },
+    "name": "energy_vial_recipe",
+    "namespace": "mod"
+  }
+}

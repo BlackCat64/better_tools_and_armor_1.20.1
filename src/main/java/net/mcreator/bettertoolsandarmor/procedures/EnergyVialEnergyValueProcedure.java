@@ -1,14 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
+import net.minecraft.world.item.ItemStack;
 
 public class EnergyVialEnergyValueProcedure {
-	public static double execute(Entity entity) {
-		if (entity == null)
-			return 0;
-		return ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue();
+	public static double execute(ItemStack itemstack) {
+		return itemstack.getOrCreateTag().getDouble("energy");
 	}
 }

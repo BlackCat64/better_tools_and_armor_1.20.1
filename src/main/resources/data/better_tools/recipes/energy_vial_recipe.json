@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "energy_vial",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:experience_potion"
+    },
+    "b": {
+      "item": "minecraft:lapis_block"
+    },
+    "c": {
+      "item": "minecraft:copper_block"
+    },
+    "d": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "better_tools:energy_vial",
+    "count": 1
+  }
+}
