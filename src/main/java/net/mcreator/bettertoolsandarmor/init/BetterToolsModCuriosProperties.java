@@ -16,8 +16,8 @@ public class BetterToolsModCuriosProperties {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_energy"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute());
-			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_active"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute());
+			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_energy"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(entity));
+			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_active"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity));
 		});
 	}
 }

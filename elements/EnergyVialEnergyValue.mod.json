@@ -2,6 +2,6 @@
   "_fv": 66,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_number\"><value name=\"return\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value></block></next></block></xml>"
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_number\"><value name=\"return\"><block type=\"get_attribute_whole\"><field name=\"attribute\">CUSTOM:EffectEnergyCost</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></next></block></xml>"
   }
 }

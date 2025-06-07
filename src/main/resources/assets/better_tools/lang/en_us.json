@@ -88,6 +88,7 @@
   "key.better_tools.float_key": "Float when wearing Ender Titanium Boots",
   "item.better_tools.crystallite_armor_emerald_boots": "Crystallite Boots",
   "jei.better_tools.jewellery_table_info": "This is the workstation for the Jeweller Villager profession.\nTrade with this villager to get Crystallite Charms, or duplicate Charm Bases, without even needing any Crystallite!\nAlso sells Crystallite Upgrade Smithing Templates.",
+  "attribute.better_tools.effect_energy_cost": "Effect Energy Cost",
   "item.better_tools.nether_diamond_hoe": "Nether Diamond Hoe",
   "block.better_tools.light_polished_gold_block": "Light Polished Gold Block",
   "item.better_tools.ascension_potion": "Potion of Ascension",
