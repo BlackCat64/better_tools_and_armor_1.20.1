@@ -32475,6 +32475,46 @@
         ]
       },
       "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialToggleActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_toggle_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialToggleActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialToggleKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_toggle_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/network/EnergyVialToggleKeyMessage.java"
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
     }
   ],
   "variable_elements": [
@@ -35770,6 +35810,7 @@
       "block.better_tools.light_polished_lapis_slab": "Light Metallic Lapis Lazuli Slab",
       "block.better_tools.polished_ruby_stairs": "Metallic Ruby Stairs",
       "block.better_tools.light_polished_amethyst_slab": "Light Metallic Amethyst Slab",
+      "key.better_tools.energy_vial_toggle_key": "Toggle Energy Vial Active",
       "advancements.shocking_adv.descr": "Shock a mob with an Lightning Staff",
       "advancements.all_iron_effect_armor_adv.title": "Effect Emperor",
       "block.better_tools.polished_nether_diamond_trapdoor": "Metallic Nether Diamond Trapdoor",

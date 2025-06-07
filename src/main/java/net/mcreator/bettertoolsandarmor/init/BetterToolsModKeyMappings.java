@@ -80,6 +80,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_APOSTROPHE, "key.categories.better_tools");
 	private static long STICK_TO_CEILING_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
@@ -88,6 +89,7 @@ public class BetterToolsModKeyMappings {
 		event.register(FLOAT_KEY);
 		event.register(ATTRIBUTES_VIEWER_OPEN);
 		event.register(STICK_TO_CEILING_KEY);
+		event.register(ENERGY_VIAL_TOGGLE_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})

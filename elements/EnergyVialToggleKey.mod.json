@@ -1,0 +1,9 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "APOSTROPHE",
+    "keyBindingName": "Toggle Energy Vial Active",
+    "keyBindingCategoryKey": "better_tools"
+  }
+}
