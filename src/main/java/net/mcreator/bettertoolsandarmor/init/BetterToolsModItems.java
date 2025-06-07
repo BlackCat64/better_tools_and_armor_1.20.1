@@ -113,6 +113,7 @@ import net.mcreator.bettertoolsandarmor.item.FlamingCircletItem;
 import net.mcreator.bettertoolsandarmor.item.FireStaffItem;
 import net.mcreator.bettertoolsandarmor.item.FireCoreItem;
 import net.mcreator.bettertoolsandarmor.item.ExperiencePotionItem;
+import net.mcreator.bettertoolsandarmor.item.EnergyVialItem;
 import net.mcreator.bettertoolsandarmor.item.EnderTitaniumUpgradeSmithingTemplateItem;
 import net.mcreator.bettertoolsandarmor.item.EnderGogglesItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumSwordItem;
@@ -799,6 +800,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> WOODEN_CHESTPLATE = REGISTRY.register("wooden_chestplate", () -> new WoodenArmorItem.Chestplate());
 	public static final RegistryObject<Item> WOODEN_LEGGINGS = REGISTRY.register("wooden_leggings", () -> new WoodenArmorItem.Leggings());
 	public static final RegistryObject<Item> WOODEN_BOOTS = REGISTRY.register("wooden_boots", () -> new WoodenArmorItem.Boots());
+	public static final RegistryObject<Item> ENERGY_VIAL = REGISTRY.register("energy_vial", () -> new EnergyVialItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

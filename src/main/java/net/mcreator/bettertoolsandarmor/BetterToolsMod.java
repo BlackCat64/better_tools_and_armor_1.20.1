@@ -554,8 +554,8 @@ public class BetterToolsMod {
 					tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_STAIRS.get().asItem());
 					tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_WALL.get().asItem());
 					tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_TRAPDOOR.get().asItem());
-					tabData.accept(BetterToolsModBlocks.MAGENTA_METAL_SIGN.get().asItem());
-					tabData.accept(BetterToolsModBlocks.MAGENTA_METAL_HANGING_SIGN.get().asItem());
+					tabData.accept(BetterToolsModBlocks.PURPLE_METAL_SIGN.get().asItem());
+					tabData.accept(BetterToolsModBlocks.PURPLE_METAL_HANGING_SIGN.get().asItem());
 					tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_BLOCK.get().asItem());
 					tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_SLAB.get().asItem());
 					tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_STAIRS.get().asItem());
@@ -629,6 +629,7 @@ public class BetterToolsMod {
 				}).build());
 		public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
 				() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
+					tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
 					tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
 					tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
 					tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());

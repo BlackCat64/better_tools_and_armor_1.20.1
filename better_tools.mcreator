@@ -32345,6 +32345,20 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "EnergyVial",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnergyVialItem.java",
+          "src/main/resources/assets/better_tools/models/item/energy_vial.json"
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
     }
   ],
   "variable_elements": [
@@ -35071,7 +35085,8 @@
       "WingedBoots",
       "GlassArmor",
       "IronGlassArmor",
-      "DiamondGlassArmor"
+      "DiamondGlassArmor",
+      "EnergyVial"
     ],
     "FOOD": [
       "SugarClump",
@@ -35106,6 +35121,7 @@
       "item.better_tools.fire_crystal": "Flame Crystal",
       "item.copper_tools_and_armor.master_builder": "Master Builder",
       "item.better_tools.crystallite_dagger_amethyst": "Crystallite Dagger",
+      "item.better_tools.energy_vial": "Energy Vial",
       "block.better_tools.dark_pink_metal_wall_hanging_sign": "Dark Pink Metal Wall Hanging Sign",
       "item.better_tools.battle_axe": "Battle Axe",
       "block.better_tools.jewellery_table": "Jewellery Table",
@@ -36313,6 +36329,10 @@
           },
           {
             "name": "Magma Chestplate",
+            "children": []
+          },
+          {
+            "name": "Energy Vial",
             "children": []
           }
         ]
