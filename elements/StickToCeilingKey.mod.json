@@ -3,7 +3,7 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "SPACE",
-    "keyBindingName": "Stick to Ceiling using Crystallite-Honey Helmet",
+    "keyBindingName": "Stick to Ceiling",
     "keyBindingCategoryKey": "better_tools",
     "onKeyPressed": {
       "name": "StickToCeilingKeyDown"

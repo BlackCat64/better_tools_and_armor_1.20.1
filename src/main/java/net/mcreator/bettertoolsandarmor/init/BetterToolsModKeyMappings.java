@@ -17,6 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.bettertoolsandarmor.network.StickToCeilingKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.FloatKeyMessage;
+import net.mcreator.bettertoolsandarmor.network.EnergyVialToggleKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.AttributesViewerOpenMessage;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -80,7 +81,19 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_APOSTROPHE, "key.categories.better_tools");
+	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_APOSTROPHE, "key.categories.better_tools") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				BetterToolsMod.PACKET_HANDLER.sendToServer(new EnergyVialToggleKeyMessage(0, 0));
+				EnergyVialToggleKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long STICK_TO_CEILING_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
@@ -101,6 +114,7 @@ public class BetterToolsModKeyMappings {
 				FLOAT_KEY.consumeClick();
 				ATTRIBUTES_VIEWER_OPEN.consumeClick();
 				STICK_TO_CEILING_KEY.consumeClick();
+				ENERGY_VIAL_TOGGLE_KEY.consumeClick();
 			}
 		}
 	}

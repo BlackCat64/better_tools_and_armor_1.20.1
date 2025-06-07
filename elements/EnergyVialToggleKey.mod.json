@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "APOSTROPHE",
     "keyBindingName": "Toggle Energy Vial Active",
-    "keyBindingCategoryKey": "better_tools"
+    "keyBindingCategoryKey": "better_tools",
+    "onKeyPressed": {
+      "name": "EnergyVialToggleActive"
+    }
   }
 }

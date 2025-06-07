@@ -32492,10 +32492,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -36057,7 +36053,7 @@
       "block.better_tools.blue_slime_block": "Blue Slime Block",
       "item.better_tools.iron_dagger": "Iron Dagger",
       "entity.better_tools.purple_mooshroom": "Purple Mooshroom",
-      "key.better_tools.stick_to_ceiling_key": "Stick to Ceiling using Crystallite-Honey Helmet",
+      "key.better_tools.stick_to_ceiling_key": "Stick to Ceiling",
       "block.better_tools.dark_polished_emerald_slab": "Dark Metallic Emerald Slab",
       "advancements.all_crystallite_tools_adv.title": "Complete Crystallite Catalogue",
       "item.better_tools.flint_dagger": "Flint Dagger",

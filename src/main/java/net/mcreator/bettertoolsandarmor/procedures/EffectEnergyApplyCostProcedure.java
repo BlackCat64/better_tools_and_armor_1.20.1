@@ -19,8 +19,8 @@ public class EffectEnergyApplyCostProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if (itemstack.getOrCreateTag().getDouble("energy") >= 0) {
-				itemstack.getOrCreateTag().putDouble("energy", (itemstack.getOrCreateTag().getDouble("energy") - ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()));
+			if (itemstack.getOrCreateTag().getDouble("energy") > 0) {
+				itemstack.getOrCreateTag().putDouble("energy", Math.max(itemstack.getOrCreateTag().getDouble("energy") - ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue(), 0));
 			} else {
 				itemstack.getOrCreateTag().putDouble("energy", 0);
 			}

@@ -6,8 +6,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.bettertoolsandarmor.procedures.EnergyVialToggleActiveProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
@@ -34,8 +37,23 @@ public class EnergyVialToggleKeyMessage {
 	public static void handler(EnergyVialToggleKeyMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
+			pressAction(context.getSender(), message.type, message.pressedms);
 		});
 		context.setPacketHandled(true);
+	}
+
+	public static void pressAction(Player entity, int type, int pressedms) {
+		Level world = entity.level();
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		// security measure to prevent arbitrary chunk generation
+		if (!world.hasChunkAt(entity.blockPosition()))
+			return;
+		if (type == 0) {
+
+			EnergyVialToggleActiveProcedure.execute(world, entity);
+		}
 	}
 
 	@SubscribeEvent

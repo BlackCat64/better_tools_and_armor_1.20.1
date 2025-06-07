@@ -10,13 +10,13 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class EnergyVialToggleActiveProcedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity lv) {
 			CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
 				ItemStack itemstackiterator = item.stack();
-				itemstack.getOrCreateTag().putBoolean("active", (!itemstack.getOrCreateTag().getBoolean("active")));
+				itemstackiterator.getOrCreateTag().putBoolean("active", (!itemstackiterator.getOrCreateTag().getBoolean("active")));
 			});
 		}
 	}
