@@ -32465,10 +32465,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -32512,6 +32508,29 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/network/EnergyVialToggleKeyMessage.java"
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialTopUpEnergy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_top_up_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialTopUpEnergyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
         ]
       },
       "path": "~/Effect Armor/Energy Vial"
@@ -34424,6 +34443,10 @@
       "TAG:better_tools:crystallite_chestplates",
       "TAG:better_tools:crystallite_leggings",
       "TAG:better_tools:crystallite_boots"
+    ],
+    "ITEMS:mod:energy_vial_fuels": [
+      "Items.BLAZE_POWDER",
+      "Blocks.NETHER_WART"
     ],
     "ITEMS:mod:freezing_armor": [
       "CUSTOM:SapphireArmor.helmet",
