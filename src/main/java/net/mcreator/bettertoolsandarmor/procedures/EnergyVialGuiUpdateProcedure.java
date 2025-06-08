@@ -38,13 +38,13 @@ public class EnergyVialGuiUpdateProcedure {
 			}
 			fuel.shrink(1);
 			vial.getOrCreateTag().putDouble("energy", Math.min(energy + energy_gain, 18000));
-			vial.getOrCreateTag().putBoolean("helmet_active", (guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected()));
-			vial.getOrCreateTag().putBoolean("chestplate_active", (guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected()));
-			vial.getOrCreateTag().putBoolean("leggings_active", (guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected()));
-			vial.getOrCreateTag().putBoolean("boots_active", (guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected()));
 		}
 		((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().putDouble("energy",
 				Math.min(vial.getOrCreateTag().getDouble("energy"), 18000));
+		vial.getOrCreateTag().putBoolean("helmet_active", (guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected()));
+		vial.getOrCreateTag().putBoolean("chestplate_active", (guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected()));
+		vial.getOrCreateTag().putBoolean("leggings_active", (guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected()));
+		vial.getOrCreateTag().putBoolean("boots_active", (guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected()));
 		((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().putBoolean("helmet_active",
 				(guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected()));
 		((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().putBoolean("chestplate_active",
