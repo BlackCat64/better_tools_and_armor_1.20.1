@@ -1,13 +1,17 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -33,7 +37,17 @@ public class EnergyVialGuiUpdateProcedure {
 			fuel.shrink(1);
 			vial.getOrCreateTag().putDouble("energy", Math.min(energy + energy_gain, 18000));
 		}
-		((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().putDouble("energy",
-				Math.min(vial.getOrCreateTag().getDouble("energy"), 18000));
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
+			((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().putDouble("energy",
+					Math.min(vial.getOrCreateTag().getDouble("energy"), 18000));
+		} else {
+			{
+				ItemStack _setval = vial;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.energy_vial_to_update = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 	}
 }

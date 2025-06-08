@@ -23,6 +23,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -76,13 +77,9 @@ public class EnergyVialOpenGuiProcedure {
 					((Slot) _slots.get(1)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
-				{
-					ItemStack _setval = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.energy_vial_to_update = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
+				BetterToolsMod.queueServerWork(1, () -> {
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
+				});
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.OFF_HAND, true);
@@ -92,13 +89,9 @@ public class EnergyVialOpenGuiProcedure {
 					((Slot) _slots.get(1)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
-				{
-					ItemStack _setval = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.energy_vial_to_update = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
+				BetterToolsMod.queueServerWork(1, () -> {
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
+				});
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
