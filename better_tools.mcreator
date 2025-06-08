@@ -32596,6 +32596,25 @@
         ]
       },
       "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialGuiUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_gui_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialGuiUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
     }
   ],
   "variable_elements": [
@@ -32838,6 +32857,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "energy_vial_to_update",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [

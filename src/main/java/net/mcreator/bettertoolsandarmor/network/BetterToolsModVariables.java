@@ -113,6 +113,7 @@ public class BetterToolsModVariables {
 				clone.is_in_cold_biome = original.is_in_cold_biome;
 				clone.is_in_sunlight = original.is_in_sunlight;
 				clone.effect_energy_timer = original.effect_energy_timer;
+				clone.energy_vial_to_update = original.energy_vial_to_update;
 			}
 		}
 	}
@@ -187,6 +188,7 @@ public class BetterToolsModVariables {
 		public boolean is_in_cold_biome = false;
 		public boolean is_in_sunlight = false;
 		public double effect_energy_timer = 0;
+		public ItemStack energy_vial_to_update = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -234,6 +236,7 @@ public class BetterToolsModVariables {
 			nbt.putBoolean("is_in_cold_biome", is_in_cold_biome);
 			nbt.putBoolean("is_in_sunlight", is_in_sunlight);
 			nbt.putDouble("effect_energy_timer", effect_energy_timer);
+			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
 			return nbt;
 		}
 
@@ -278,6 +281,7 @@ public class BetterToolsModVariables {
 			is_in_cold_biome = nbt.getBoolean("is_in_cold_biome");
 			is_in_sunlight = nbt.getBoolean("is_in_sunlight");
 			effect_energy_timer = nbt.getDouble("effect_energy_timer");
+			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
 		}
 	}
 
@@ -341,6 +345,7 @@ public class BetterToolsModVariables {
 					variables.is_in_cold_biome = message.data.is_in_cold_biome;
 					variables.is_in_sunlight = message.data.is_in_sunlight;
 					variables.effect_energy_timer = message.data.effect_energy_timer;
+					variables.energy_vial_to_update = message.data.energy_vial_to_update;
 				}
 			});
 			context.setPacketHandled(true);
