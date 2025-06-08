@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.bettertoolsandarmor.procedures.EnergyVialOpenGuiProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.EnergyVialInHandOpenGuiProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EffectEnergyApplyCostProcedure;
 
 public class EnergyVialItem extends Item implements ICurioItem {
@@ -28,7 +28,7 @@ public class EnergyVialItem extends Item implements ICurioItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EnergyVialOpenGuiProcedure.execute(world, x, y, z, entity);
+		EnergyVialInHandOpenGuiProcedure.execute(world, x, y, z, entity);
 		return ar;
 	}
 

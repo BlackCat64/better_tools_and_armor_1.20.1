@@ -170,7 +170,7 @@
     "inventoryStackSize": 64,
     "slotAmount": 1,
     "onRightClickedInAir": {
-      "name": "EnergyVialOpenGui"
+      "name": "EnergyVialInHandOpenGui"
     },
     "curioTick": {
       "name": "EffectEnergyApplyCost"
