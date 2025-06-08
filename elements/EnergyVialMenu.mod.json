@@ -1,0 +1,237 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 192,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 8,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:energy_vial_fuels"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 133,
+          "y": 72
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 187,
+          "y": 72
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 241,
+          "y": 41
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 241,
+          "y": 62
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 241,
+          "y": 83
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 241,
+          "y": 104
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "helmet_active",
+          "text": "",
+          "x": 267,
+          "y": 40
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "chestplate_active",
+          "text": "",
+          "x": 267,
+          "y": 61
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "leggings_active",
+          "text": "",
+          "x": 267,
+          "y": 82
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "boots_active",
+          "text": "",
+          "x": 267,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_arrow.png",
+          "use1Xscale": false,
+          "x": 158,
+          "y": 74
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_arrow.png",
+          "use1Xscale": false,
+          "x": 212,
+          "y": 74
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_insert_fuel_here",
+          "text": {
+            "fixedValue": "Insert fuel here"
+          },
+          "displayCondition": {
+            "name": "EnergyVialShowFuelTooltip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 130,
+          "y": 69
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_activate_helmet_effect",
+          "text": {
+            "fixedValue": "Activate helmet effect"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 38
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_activate_chestplate_effect",
+          "text": {
+            "fixedValue": "Activate chestplate effect"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 59
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_activate_leggings_effect",
+          "text": {
+            "fixedValue": "Activate leggings effect"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_activate_boots_effect",
+          "text": {
+            "fixedValue": "Activate boots effect"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_energy_vial",
+          "text": {
+            "fixedValue": "Energy Vial"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 29
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

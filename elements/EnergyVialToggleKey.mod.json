@@ -3,10 +3,10 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "APOSTROPHE",
-    "keyBindingName": "Toggle Energy Vial Active",
+    "keyBindingName": "Energy Vial Menu",
     "keyBindingCategoryKey": "better_tools",
     "onKeyPressed": {
-      "name": "EnergyVialToggleActive"
+      "name": "EnergyVialOpenGui"
     }
   }
 }

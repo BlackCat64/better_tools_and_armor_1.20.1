@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.bettertoolsandarmor.client.gui.EnergyVialMenuScreen;
 import net.mcreator.bettertoolsandarmor.client.gui.AttributesViewerScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class BetterToolsModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(BetterToolsModMenus.ATTRIBUTES_VIEWER.get(), AttributesViewerScreen::new);
+			MenuScreens.register(BetterToolsModMenus.ENERGY_VIAL_MENU.get(), EnergyVialMenuScreen::new);
 		});
 	}
 }
