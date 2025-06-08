@@ -93,6 +93,9 @@
         "data": {
           "name": "helmet_active",
           "text": "",
+          "isCheckedProcedure": {
+            "name": "HelmetActiveWhenGuiOpened"
+          },
           "x": 267,
           "y": 40
         }
@@ -102,6 +105,9 @@
         "data": {
           "name": "chestplate_active",
           "text": "",
+          "isCheckedProcedure": {
+            "name": "ChestplateActiveWhenGuiOpened"
+          },
           "x": 267,
           "y": 61
         }
@@ -111,6 +117,9 @@
         "data": {
           "name": "leggings_active",
           "text": "",
+          "isCheckedProcedure": {
+            "name": "LeggingsActiveWhenGuiOpened"
+          },
           "x": 267,
           "y": 82
         }
@@ -120,6 +129,9 @@
         "data": {
           "name": "boots_active",
           "text": "",
+          "isCheckedProcedure": {
+            "name": "BootsActiveWhenGuiOpened"
+          },
           "x": 267,
           "y": 103
         }
