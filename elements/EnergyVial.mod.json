@@ -169,6 +169,9 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
+    "onRightClickedInAir": {
+      "name": "EnergyVialOpenGui"
+    },
     "curioTick": {
       "name": "EffectEnergyApplyCost"
     },

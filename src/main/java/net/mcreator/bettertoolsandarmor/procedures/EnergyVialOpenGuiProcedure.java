@@ -31,57 +31,55 @@ public class EnergyVialOpenGuiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
-			if (!(entity instanceof Player _plr1 && _plr1.containerMenu instanceof EnergyVialMenuMenu)) {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("EnergyVialMenu");
-						}
+		if (!(entity instanceof Player _plr0 && _plr0.containerMenu instanceof EnergyVialMenuMenu)) {
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("EnergyVialMenu");
+					}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new EnergyVialMenuMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
-				}
-				if (entity instanceof LivingEntity lv) {
-					CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
-						ItemStack itemstackiterator = item.stack();
-						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator.copy();
-							_setstack.setCount(1);
-							((Slot) _slots.get(1)).set(_setstack);
-							_player.containerMenu.broadcastChanges();
-						}
-					});
-				}
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
-					_setstack.setCount(1);
-					((Slot) _slots.get(2)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
-					_setstack.setCount(1);
-					((Slot) _slots.get(3)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
-					_setstack.setCount(1);
-					((Slot) _slots.get(4)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
-					_setstack.setCount(1);
-					((Slot) _slots.get(5)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
-				}
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new EnergyVialMenuMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
+			if (entity instanceof LivingEntity lv) {
+				CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
+					ItemStack itemstackiterator = item.stack();
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack _setstack = itemstackiterator.copy();
+						_setstack.setCount(1);
+						((Slot) _slots.get(1)).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
+				});
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get(2)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get(3)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get(4)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get(5)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
 			}
 		}
 	}

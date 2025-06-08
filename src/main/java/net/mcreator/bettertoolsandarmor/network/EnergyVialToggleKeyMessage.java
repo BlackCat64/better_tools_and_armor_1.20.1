@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.bettertoolsandarmor.procedures.EnergyVialOpenGuiProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.EnergyVialKeybindOpenGuiProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class EnergyVialToggleKeyMessage {
 			return;
 		if (type == 0) {
 
-			EnergyVialOpenGuiProcedure.execute(world, x, y, z, entity);
+			EnergyVialKeybindOpenGuiProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

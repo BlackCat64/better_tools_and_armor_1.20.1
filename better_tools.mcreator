@@ -32508,6 +32508,61 @@
       "path": "~/Effect Armor/Energy Vial"
     },
     {
+      "name": "EnergyVialShowFuelTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_show_fuel_tooltip",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialShowFuelTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
+      "name": "EnergyVialKeybindOpenGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_keybind_open_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialKeybindOpenGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial"
+    },
+    {
       "name": "EnergyVialOpenGui",
       "type": "procedure",
       "compiles": true,
@@ -32537,26 +32592,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/Effect Armor/Energy Vial"
-    },
-    {
-      "name": "EnergyVialShowFuelTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_vial_show_fuel_tooltip",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialShowFuelTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },

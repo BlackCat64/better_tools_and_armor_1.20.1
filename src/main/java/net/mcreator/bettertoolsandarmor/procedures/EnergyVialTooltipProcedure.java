@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -39,9 +37,7 @@ public class EnergyVialTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
 			tooltip.add(Component.literal(""));
 			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("energy")) + " / 18000")));
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
-				tooltip.add(Component.literal(("\u00A77Cost: \u00A76" + new java.text.DecimalFormat("#").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()))));
-			}
+			tooltip.add(Component.literal(("\u00A77Cost: \u00A76" + new java.text.DecimalFormat("#").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()))));
 		}
 	}
 }
