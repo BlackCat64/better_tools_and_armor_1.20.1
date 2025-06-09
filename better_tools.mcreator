@@ -9251,7 +9251,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/item/WingedBootsItem.java"
         ]
       },
-      "path": "~/Effect Armor"
+      "path": "~/Effect Armor/Winged Boots"
     },
     {
       "name": "WingedBootsProcedure",
@@ -9274,7 +9274,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor"
+      "path": "~/Effect Armor/Winged Boots"
     },
     {
       "name": "EndTitaniumSwordProcedure",
@@ -18066,7 +18066,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor"
+      "path": "~/Effect Armor/Winged Boots"
     },
     {
       "name": "TimeSinceLastHurtIncrement",
@@ -21310,7 +21310,7 @@
           "src/main/resources/data/better_tools/recipes/winged_boots_recipe.json"
         ]
       },
-      "path": "~/Effect Armor"
+      "path": "~/Effect Armor/Winged Boots"
     },
     {
       "name": "GuardianStaffAdv",
@@ -32364,7 +32364,7 @@
           "src/main/resources/assets/better_tools/models/item/energy_vial_5.json"
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EnergyVialEnergyValue",
@@ -32384,7 +32384,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EnergyVialActive",
@@ -32404,7 +32404,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EffectEnergyCost",
@@ -32415,7 +32415,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EnergyVialRecipe",
@@ -32428,7 +32428,7 @@
           "src/main/resources/data/better_tools/recipes/energy_vial_recipe.json"
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EffectEnergyApplyCost",
@@ -32451,7 +32451,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EnergyVialTooltip",
@@ -32478,7 +32478,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "EnergyVialToggleKey",
@@ -32491,7 +32491,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/network/EnergyVialToggleKeyMessage.java"
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialMenu",
@@ -32505,7 +32505,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/client/gui/EnergyVialMenuScreen.java"
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialShowFuelTooltip",
@@ -32525,7 +32525,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialKeybindOpenGui",
@@ -32548,7 +32548,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialOpenGui",
@@ -32571,7 +32571,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialGuiUpdate",
@@ -32594,7 +32594,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialMenuClosed",
@@ -32613,7 +32613,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "EnergyVialInHandOpenGui",
@@ -32636,7 +32636,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "HelmetActiveWhenGuiOpened",
@@ -32660,7 +32660,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "CheckVialActiveState",
@@ -32688,7 +32688,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "ChestplateActiveWhenGuiOpened",
@@ -32712,7 +32712,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "LeggingsActiveWhenGuiOpened",
@@ -32736,7 +32736,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "BootsActiveWhenGuiOpened",
@@ -32760,7 +32760,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "HelmetCheckboxTooltip",
@@ -32780,7 +32780,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "ChestplateCheckboxTooltip",
@@ -32800,7 +32800,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "LeggingsCheckboxTooltip",
@@ -32820,7 +32820,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "BootsCheckboxTooltip",
@@ -32840,26 +32840,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
-    },
-    {
-      "name": "ResetPlayerEffectEnergyCost",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_player_effect_energy_cost",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ResetPlayerEffectEnergyCostProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor/Energy Vial GUI"
     },
     {
       "name": "ApplyHelmetEffect",
@@ -32878,7 +32859,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "ApplyChestplateEffect",
@@ -32897,7 +32878,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "ApplyLeggingsEffect",
@@ -32916,7 +32897,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     },
     {
       "name": "ApplyBootsEffect",
@@ -32935,7 +32916,7 @@
           }
         ]
       },
-      "path": "~/Effect Armor/Energy Vial"
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
@@ -36939,6 +36920,14 @@
           },
           {
             "name": "Energy Vial",
+            "children": []
+          },
+          {
+            "name": "Winged Boots",
+            "children": []
+          },
+          {
+            "name": "Energy Vial GUI",
             "children": []
           }
         ]

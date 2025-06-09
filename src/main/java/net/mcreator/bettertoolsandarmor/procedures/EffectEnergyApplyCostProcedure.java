@@ -20,7 +20,7 @@ public class EffectEnergyApplyCostProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (itemstack.getOrCreateTag().getDouble("energy") > 0) {
+				if (itemstack.getOrCreateTag().getDouble("energy") > 0 && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue() > 0) {
 					itemstack.getOrCreateTag().putDouble("energy", Math.max(itemstack.getOrCreateTag().getDouble("energy") - ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue(), 0));
 					if (itemstack.getOrCreateTag().getBoolean("helmet_active")) {
 						ApplyHelmetEffectProcedure.execute(entity);
