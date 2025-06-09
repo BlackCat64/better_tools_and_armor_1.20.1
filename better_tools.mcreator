@@ -34173,11 +34173,7 @@
       "CUSTOM:DiamondGoldCarrotHat.helmet",
       "CUSTOM:DiamondBlackstoneLegs.legs",
       "CUSTOM:DiamondCryingObsidianHelmet.helmet",
-      "CUSTOM:DiamondMagmaBody.body",
-      "CUSTOM:DiamondGlassArmor.helmet",
-      "CUSTOM:DiamondGlassArmor.body",
-      "CUSTOM:DiamondGlassArmor.legs",
-      "CUSTOM:DiamondGlassArmor.boots"
+      "CUSTOM:DiamondMagmaBody.body"
     ],
     "ITEMS:mod:mines_nether_wood_instantly": [
       "CUSTOM:CrystalliteShovelNetherite",
@@ -34343,11 +34339,7 @@
       "CUSTOM:RabbitBoots.boots",
       "CUSTOM:PhantomBoots.boots",
       "CUSTOM:HeartyBody.body",
-      "CUSTOM:GoldCarrotArmor.helmet",
-      "CUSTOM:GlassArmor.helmet",
-      "CUSTOM:GlassArmor.body",
-      "CUSTOM:GlassArmor.legs",
-      "CUSTOM:GlassArmor.boots"
+      "CUSTOM:GoldCarrotArmor.helmet"
     ],
     "BLOCKS:forge:ore_rates/dense": [
       "CUSTOM:RubyOre",
@@ -34453,10 +34445,6 @@
       "CUSTOM:IronPhantomBoots.boots",
       "CUSTOM:IronHeartyBody.body",
       "CUSTOM:IronGoldCarrotHat.helmet",
-      "CUSTOM:IronGlassArmor.helmet",
-      "CUSTOM:IronGlassArmor.body",
-      "CUSTOM:IronGlassArmor.legs",
-      "CUSTOM:IronGlassArmor.boots",
       "CUSTOM:RubyArmor.legs",
       "CUSTOM:CrystalLegs.legs",
       "CUSTOM:BlackstoneLegs.legs",

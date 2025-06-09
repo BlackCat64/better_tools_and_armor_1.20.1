@@ -5,10 +5,6 @@
     "better_tools:rabbit_boots",
     "better_tools:phantom_boots",
     "better_tools:hearty_chestplate",
-    "better_tools:gold_carrot_helmet",
-    "better_tools:glass_helmet",
-    "better_tools:glass_chestplate",
-    "better_tools:glass_leggings",
-    "better_tools:glass_boots"
+    "better_tools:gold_carrot_helmet"
   ]
 }
