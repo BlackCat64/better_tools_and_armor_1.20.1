@@ -1,18 +1,22 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 public class EffectEnergyApplyCostProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (EnergyVialActiveProcedure.execute(itemstack) > 0) {
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).setBaseValue(CalculateEffectEnergyCostProcedure.execute(entity));
+			{
+				double _setval = CalculateEffectEnergyCostProcedure.execute(entity);
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.effect_energy_cost = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_timer <= 0) {
 				{
 					double _setval = 100;

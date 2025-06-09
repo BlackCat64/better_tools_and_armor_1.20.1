@@ -8,12 +8,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -37,10 +36,9 @@ public class EnergyVialTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
 			tooltip.add(Component.literal(""));
 			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("energy")) + " / 18000")));
-			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c" + new java.text.DecimalFormat("#").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()) + "\u00A76 / 5s")));
-			if (itemstack.getOrCreateTag().getDouble("energy") > 0 && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue() > 0) {
-				tooltip.add(Component.literal(("\u00A77Estimated Time Remaining: \u00A76" + EnergyTimeDisplayProcedure.execute(entity, itemstack))));
-			}
+			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c"
+					+ new java.text.DecimalFormat("#").format((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost) + "\u00A76 / 5s")));
+			tooltip.add(Component.literal(("\u00A77Estimated Time Remaining: \u00A76" + EnergyTimeDisplayProcedure.execute(entity, itemstack))));
 		}
 	}
 }

@@ -36,7 +36,6 @@ public class BetterToolsModAttributes {
 	public static final RegistryObject<Attribute> LIGHTNINGTHORNSCHANCE = ATTRIBUTES.register("lightning_thorns_chance", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".lightning_thorns_chance", 0, 0, 1)).setSyncable(true));
 	public static final RegistryObject<Attribute> ATTACKFREEZECHANCE = ATTRIBUTES.register("attack_freeze_chance", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".attack_freeze_chance", 0, 0, 1)).setSyncable(true));
 	public static final RegistryObject<Attribute> ATTACKFREEZETIME = ATTRIBUTES.register("attack_freeze_time", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".attack_freeze_time", 0, 0, 20000)).setSyncable(true));
-	public static final RegistryObject<Attribute> EFFECTENERGYCOST = ATTRIBUTES.register("effect_energy_cost", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".effect_energy_cost", 0, 0, 100000)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
@@ -98,7 +97,5 @@ public class BetterToolsModAttributes {
 				event.add(e, ATTACKFREEZETIME.get());
 			}
 		});
-		event.add(EntityType.PLAYER, EFFECTENERGYCOST.get());
-		event.add(EntityType.PLAYER, EFFECTENERGYCOST.get());
 	}
 }

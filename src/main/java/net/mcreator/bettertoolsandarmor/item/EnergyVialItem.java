@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.bettertoolsandarmor.procedures.ResetEffectEnergyCostProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.ResetEffectVialTimerProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialInHandOpenGuiProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EffectEnergyApplyCostProcedure;
 
@@ -40,6 +40,6 @@ public class EnergyVialItem extends Item implements ICurioItem {
 
 	@Override
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		ResetEffectEnergyCostProcedure.execute(slotContext.entity());
+		ResetEffectVialTimerProcedure.execute(slotContext.entity());
 	}
 }
