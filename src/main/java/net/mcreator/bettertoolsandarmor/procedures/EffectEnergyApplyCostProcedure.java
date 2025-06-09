@@ -11,7 +11,7 @@ public class EffectEnergyApplyCostProcedure {
 			return;
 		double timer = 0;
 		{
-			double _setval = CalculateEffectEnergyCostProcedure.execute(entity);
+			double _setval = CalculateEffectEnergyCostProcedure.execute(entity, itemstack);
 			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.effect_energy_cost = _setval;
 				capability.syncPlayerVariables(entity);
