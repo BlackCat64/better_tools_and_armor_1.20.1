@@ -52,7 +52,7 @@ public class EnergyVialToggleKeyMessage {
 			return;
 		if (type == 0) {
 
-			EnergyVialKeybindOpenGuiProcedure.execute(world, x, y, z, entity);
+			EnergyVialKeybindOpenGuiProcedure.execute(world, entity);
 		}
 	}
 

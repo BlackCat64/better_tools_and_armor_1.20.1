@@ -9,11 +9,11 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class EnergyVialKeybindOpenGuiProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
-			EnergyVialOpenGuiProcedure.execute(world, x, y, z, entity);
+			EnergyVialOpenGuiProcedure.execute(world, entity);
 		}
 	}
 }

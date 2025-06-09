@@ -28,7 +28,7 @@ public class EnergyVialItem extends Item implements ICurioItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EnergyVialInHandOpenGuiProcedure.execute(world, x, y, z, entity);
+		EnergyVialInHandOpenGuiProcedure.execute(world, entity);
 		return ar;
 	}
 
