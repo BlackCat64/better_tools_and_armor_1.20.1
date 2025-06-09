@@ -1210,8 +1210,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GoldCarrotArmorItem.java",
-          "src/main/resources/assets/better_tools/models/item/gold_carrot_helmet.json"
+          "src/main/resources/assets/better_tools/models/item/gold_carrot_helmet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GoldCarrotArmorItem.java"
         ]
       },
       "path": "~/Effect Armor/Golden Carrot Hat"
@@ -1230,10 +1230,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -2110,8 +2106,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/iron_gold_carrot_helmet.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronGoldCarrotHatItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronGoldCarrotHatItem.java",
+          "src/main/resources/assets/better_tools/models/item/iron_gold_carrot_helmet.json"
         ]
       },
       "path": "~/Effect Armor/Golden Carrot Hat"
@@ -33431,6 +33427,11 @@
     "ITEMS:forge:tools/swords": [
       "TAG:minecraft:swords"
     ],
+    "ITEMS:mod:phantom_boots": [
+      "CUSTOM:PhantomBoots.boots",
+      "CUSTOM:IronPhantomBoots.boots",
+      "CUSTOM:DiamondPhantomBoots.boots"
+    ],
     "BLOCKS:forge:ores_in_ground/stone": [
       "CUSTOM:RubyOre",
       "CUSTOM:RandomOre",
@@ -33540,6 +33541,11 @@
       "CUSTOM:CrystalliteAxeHoney",
       "CUSTOM:CrystalliteDaggerHoney"
     ],
+    "ITEMS:mod:sugar_boots": [
+      "CUSTOM:SugarBoots.boots",
+      "CUSTOM:IronSugarBoots.boots",
+      "CUSTOM:DiamondSugarBoots.boots"
+    ],
     "ITEMS:forge:gems": [
       "CUSTOM:NetherDiamond",
       "CUSTOM:Ruby",
@@ -33554,6 +33560,10 @@
     "ITEMS:forge:tools/shovels": [
       "TAG:minecraft:shovels",
       "CUSTOM:CrystallitePickaxeEmerald"
+    ],
+    "ITEMS:mod:crystal_leggings": [
+      "CUSTOM:CrystalLegs.legs",
+      "CUSTOM:DiamondCrystalLegs.legs"
     ],
     "ITEMS:mod:daggers": [
       "CUSTOM:WoodDagger",
@@ -33988,6 +33998,11 @@
       "CUSTOM:IceCore",
       "CUSTOM:ElectricCore"
     ],
+    "ITEMS:mod:cactus_shirts": [
+      "CUSTOM:CactusBody.body",
+      "CUSTOM:IronCactusBody.body",
+      "CUSTOM:DiamondCactusBody.body"
+    ],
     "ITEMS:mod:diamond_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordDiamond",
       "CUSTOM:CrystallitePickaxeDiamond",
@@ -34167,6 +34182,10 @@
       "CUSTOM:FlamingCirclet",
       "CUSTOM:EarthCirclet"
     ],
+    "ITEMS:mod:gilded_blackstone_leggings": [
+      "CUSTOM:BlackstoneLegs.legs",
+      "CUSTOM:DiamondBlackstoneLegs.legs"
+    ],
     "ITEMS:mod:diamond_tier_effect_armor": [
       "CUSTOM:DiamondSugarBoots.boots",
       "CUSTOM:DiamondRabbitBoots.boots",
@@ -34176,7 +34195,6 @@
       "CUSTOM:DiamondCrystalLegs.legs",
       "CUSTOM:DiamondGoldCarrotHat.helmet",
       "CUSTOM:DiamondBlackstoneLegs.legs",
-      "CUSTOM:DiamondCryingObsidianHelmet.helmet",
       "CUSTOM:DiamondMagmaBody.body"
     ],
     "ITEMS:mod:mines_nether_wood_instantly": [
@@ -34374,6 +34392,11 @@
       "CUSTOM:WitheredGauntlet",
       "CUSTOM:CrystalliteBowNetherite"
     ],
+    "ITEMS:mod:rabbit_boots": [
+      "CUSTOM:RabbitBoots.boots",
+      "CUSTOM:IronRabbitBoots.boots",
+      "CUSTOM:DiamondRabbitBoots.boots"
+    ],
     "ITEMS:forge:tools/knives": [
       "TAG:better_tools:daggers"
     ],
@@ -34452,7 +34475,6 @@
       "CUSTOM:RubyArmor.legs",
       "CUSTOM:CrystalLegs.legs",
       "CUSTOM:BlackstoneLegs.legs",
-      "CUSTOM:CryingObsidianHelmet.helmet",
       "CUSTOM:MagmaBody.body"
     ],
     "ITEMS:mod:base_glass_armor": [
@@ -34522,6 +34544,10 @@
     ],
     "BLOCKS:forge:ores_in_ground/end_stone": [
       "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:mod:ruby_leggings": [
+      "CUSTOM:RubyArmor.legs",
+      "CUSTOM:DiamondRubyLegs.legs"
     ],
     "ITEMS:mod:crystallite_daggers": [
       "CUSTOM:CrystalliteDagger",
@@ -35003,6 +35029,10 @@
       "TAG:mod:iron_tier_effect_armor",
       "TAG:mod:diamond_tier_effect_armor"
     ],
+    "ITEMS:mod:magma_chestplates": [
+      "CUSTOM:MagmaBody.body",
+      "CUSTOM:DiamondMagmaBody.body"
+    ],
     "ITEMS:mod:diamond_glass_armor": [
       "CUSTOM:DiamondGlassArmor.helmet",
       "CUSTOM:DiamondGlassArmor.body",
@@ -35088,6 +35118,16 @@
       "CUSTOM:LightPolishedNetherDiamondTrapdoor",
       "CUSTOM:PolishedAmethystTrapdoor",
       "CUSTOM:LightPolishedAmethystTrapdoor"
+    ],
+    "ITEMS:mod:golden_carrot_hats": [
+      "CUSTOM:GoldCarrotArmor.helmet",
+      "CUSTOM:IronGoldCarrotHat.helmet",
+      "CUSTOM:DiamondGoldCarrotHat.helmet"
+    ],
+    "ITEMS:mod:hearty_shirts": [
+      "CUSTOM:HeartyBody.body",
+      "CUSTOM:IronHeartyBody.body",
+      "CUSTOM:DiamondHeartyBody.body"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_armor": [
       "CUSTOM:KarmaDamage",
@@ -35271,6 +35311,10 @@
       "CUSTOM:TopazBlock",
       "CUSTOM:CrystalliteBlock",
       "CUSTOM:CutCrystalliteBlock"
+    ],
+    "ITEMS:mod:crying_obsidian_helmets": [
+      "CUSTOM:CryingObsidianHelmet.helmet",
+      "CUSTOM:DiamondCryingObsidianHelmet.helmet"
     ],
     "ITEMS:forge:ore_rates/singular": [
       "CUSTOM:RandomOre",
