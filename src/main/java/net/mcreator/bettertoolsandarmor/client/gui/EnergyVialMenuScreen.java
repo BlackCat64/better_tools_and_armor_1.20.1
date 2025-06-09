@@ -10,10 +10,14 @@ import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
+import net.mcreator.bettertoolsandarmor.procedures.LeggingsCheckboxTooltipProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.LeggingsActiveWhenGuiOpenedProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.HelmetCheckboxTooltipProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.HelmetActiveWhenGuiOpenedProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialShowFuelTooltipProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.ChestplateCheckboxTooltipProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.ChestplateActiveWhenGuiOpenedProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.BootsCheckboxTooltipProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.BootsActiveWhenGuiOpenedProcedure;
 
 import java.util.HashMap;
@@ -52,13 +56,13 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 			if (mouseX > leftPos + 4 && mouseX < leftPos + 28 && mouseY > topPos + 45 && mouseY < topPos + 69)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.better_tools.energy_vial_menu.tooltip_insert_fuel_here"), mouseX, mouseY);
 		if (mouseX > leftPos + 139 && mouseX < leftPos + 163 && mouseY > topPos + 14 && mouseY < topPos + 38)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.better_tools.energy_vial_menu.tooltip_activate_helmet_effect"), mouseX, mouseY);
+			guiGraphics.renderTooltip(font, Component.literal(HelmetCheckboxTooltipProcedure.execute(entity)), mouseX, mouseY);
 		if (mouseX > leftPos + 139 && mouseX < leftPos + 163 && mouseY > topPos + 35 && mouseY < topPos + 59)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.better_tools.energy_vial_menu.tooltip_activate_chestplate_effect"), mouseX, mouseY);
+			guiGraphics.renderTooltip(font, Component.literal(ChestplateCheckboxTooltipProcedure.execute(entity)), mouseX, mouseY);
 		if (mouseX > leftPos + 139 && mouseX < leftPos + 163 && mouseY > topPos + 56 && mouseY < topPos + 80)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.better_tools.energy_vial_menu.tooltip_activate_leggings_effect"), mouseX, mouseY);
+			guiGraphics.renderTooltip(font, Component.literal(LeggingsCheckboxTooltipProcedure.execute(entity)), mouseX, mouseY);
 		if (mouseX > leftPos + 139 && mouseX < leftPos + 163 && mouseY > topPos + 77 && mouseY < topPos + 101)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.better_tools.energy_vial_menu.tooltip_activate_boots_effect"), mouseX, mouseY);
+			guiGraphics.renderTooltip(font, Component.literal(BootsCheckboxTooltipProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override

@@ -115,7 +115,8 @@
         "data": {
           "name": "tooltip_activate_helmet_effect",
           "text": {
-            "fixedValue": "Activate helmet effect"
+            "fixedValue": "Activate helmet effect",
+            "name": "HelmetCheckboxTooltip"
           },
           "width": 24,
           "height": 24,
@@ -128,7 +129,8 @@
         "data": {
           "name": "tooltip_activate_chestplate_effect",
           "text": {
-            "fixedValue": "Activate chestplate effect"
+            "fixedValue": "Activate chestplate effect",
+            "name": "ChestplateCheckboxTooltip"
           },
           "width": 24,
           "height": 24,
@@ -141,7 +143,8 @@
         "data": {
           "name": "tooltip_activate_leggings_effect",
           "text": {
-            "fixedValue": "Activate leggings effect"
+            "fixedValue": "Activate leggings effect",
+            "name": "LeggingsCheckboxTooltip"
           },
           "width": 24,
           "height": 24,
@@ -154,7 +157,8 @@
         "data": {
           "name": "tooltip_activate_boots_effect",
           "text": {
-            "fixedValue": "Activate boots effect"
+            "fixedValue": "Activate boots effect",
+            "name": "BootsCheckboxTooltip"
           },
           "width": 24,
           "height": 24,
