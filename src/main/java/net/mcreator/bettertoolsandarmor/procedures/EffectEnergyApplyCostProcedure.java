@@ -11,7 +11,7 @@ public class EffectEnergyApplyCostProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.getOrCreateTag().getBoolean("active")) {
+		if (EnergyVialActiveProcedure.execute(itemstack) > 0) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_timer <= 0) {
 				{
 					double _setval = 100;
@@ -22,6 +22,18 @@ public class EffectEnergyApplyCostProcedure {
 				}
 				if (itemstack.getOrCreateTag().getDouble("energy") > 0) {
 					itemstack.getOrCreateTag().putDouble("energy", Math.max(itemstack.getOrCreateTag().getDouble("energy") - ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue(), 0));
+					if (itemstack.getOrCreateTag().getBoolean("helmet_active")) {
+						ApplyHelmetEffectProcedure.execute(entity);
+					}
+					if (itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
+						ApplyChestplateEffectProcedure.execute(entity);
+					}
+					if (itemstack.getOrCreateTag().getBoolean("leggings_active")) {
+						ApplyLeggingsEffectProcedure.execute(entity);
+					}
+					if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
+						ApplyBootsEffectProcedure.execute(entity);
+					}
 				} else {
 					itemstack.getOrCreateTag().putDouble("energy", 0);
 				}

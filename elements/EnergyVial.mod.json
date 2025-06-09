@@ -175,6 +175,9 @@
     "curioTick": {
       "name": "EffectEnergyApplyCost"
     },
+    "onUnequip": {
+      "name": "ResetPlayerEffectEnergyCost"
+    },
     "isFood": false,
     "friendlyPigs": false,
     "enderMask": false,

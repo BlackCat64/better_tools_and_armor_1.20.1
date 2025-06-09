@@ -37,7 +37,7 @@ public class EnergyVialTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
 			tooltip.add(Component.literal(""));
 			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("energy")) + " / 18000")));
-			tooltip.add(Component.literal(("\u00A77Cost: \u00A76" + new java.text.DecimalFormat("#").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()))));
+			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c" + new java.text.DecimalFormat("#").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.EFFECTENERGYCOST.get()).getValue()) + "\u00A77 / 5s")));
 		}
 	}
 }

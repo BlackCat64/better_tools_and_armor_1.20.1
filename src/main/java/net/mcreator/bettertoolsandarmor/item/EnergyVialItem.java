@@ -12,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
+import net.mcreator.bettertoolsandarmor.procedures.ResetPlayerEffectEnergyCostProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialInHandOpenGuiProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EffectEnergyApplyCostProcedure;
 
@@ -35,5 +36,10 @@ public class EnergyVialItem extends Item implements ICurioItem {
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
 		EffectEnergyApplyCostProcedure.execute(slotContext.entity(), stack);
+	}
+
+	@Override
+	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
+		ResetPlayerEffectEnergyCostProcedure.execute(slotContext.entity());
 	}
 }
