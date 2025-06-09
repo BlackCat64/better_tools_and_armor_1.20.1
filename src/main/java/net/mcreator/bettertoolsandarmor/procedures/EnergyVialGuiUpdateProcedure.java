@@ -3,6 +3,7 @@ package net.mcreator.bettertoolsandarmor.procedures;
 import top.theillusivec4.curios.api.CuriosApi;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -19,7 +20,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class EnergyVialGuiUpdateProcedure {
-	public static void execute(Entity entity, HashMap guistate) {
+	public static void execute(LevelAccessor world, Entity entity, HashMap guistate) {
 		if (entity == null || guistate == null)
 			return;
 		ItemStack fuel = ItemStack.EMPTY;
@@ -27,6 +28,19 @@ public class EnergyVialGuiUpdateProcedure {
 		double energy = 0;
 		double energy_gain = 0;
 		boolean updated = false;
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
+			if (entity instanceof LivingEntity lv) {
+				CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
+					ItemStack itemstackiterator = item.stack();
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack _setstack = itemstackiterator.copy();
+						_setstack.setCount(1);
+						((Slot) _slots.get(1)).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
+				});
+			}
+		}
 		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
 		energy = vial.getOrCreateTag().getDouble("energy");
