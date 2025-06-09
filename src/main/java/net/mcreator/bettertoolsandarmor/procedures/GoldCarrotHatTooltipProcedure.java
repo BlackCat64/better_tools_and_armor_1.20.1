@@ -8,6 +8,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -31,18 +33,16 @@ public class GoldCarrotHatTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.GOLD_CARROT_HELMET.get()) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:golden_carrot_hats")))) {
 			tooltip.add(Component.literal("\u00A77Effect Applied:"));
-			tooltip.add(Component.literal("\u00A79Night Vision (0:15) every 5s"));
-			tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
-		} else if (itemstack.getItem() == BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get()) {
-			tooltip.add(Component.literal("\u00A77Effect Applied:"));
-			tooltip.add(Component.literal("\u00A79Night Vision (0:18) every 8s"));
-			tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
-		} else if (itemstack.getItem() == BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get()) {
-			tooltip.add(Component.literal("\u00A77Effect Applied:"));
-			tooltip.add(Component.literal("\u00A79Night Vision (0:25) every 15s"));
-			tooltip.add(Component.literal("\u00A7cDurability Cost: 2"));
+			tooltip.add(Component.literal("\u00A79 Night Vision"));
+			if (itemstack.getItem() == BetterToolsModItems.GOLD_CARROT_HELMET.get()) {
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c150 \u00A76/ 5s"));
+			} else if (itemstack.getItem() == BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get()) {
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c120 \u00A76/ 5s"));
+			} else if (itemstack.getItem() == BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get()) {
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c90 \u00A76/ 5s"));
+			}
 		}
 	}
 }
