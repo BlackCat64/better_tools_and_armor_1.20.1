@@ -10,9 +10,6 @@
     "textureLeggings": "blackstone_leggings",
     "enableBoots": false,
     "textureBoots": "",
-    "onLeggingsTick": {
-      "name": "BlackstoneLegsProcedure"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:EffectArmorTab"
@@ -63,6 +60,30 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 16,
     "damageValueHelmet": 2,
     "damageValueBody": 5,

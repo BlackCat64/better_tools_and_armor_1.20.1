@@ -90,7 +90,7 @@ public abstract class DiamondRubyLegsItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				RubyLegsProcedureProcedure.execute(entity, itemstack);
+				RubyLegsProcedureProcedure.execute(entity);
 			}
 		}
 	}

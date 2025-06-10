@@ -641,31 +641,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/sugar_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SugarBootsItem.java"
-        ]
-      },
-      "path": "~/Effect Armor/Sugar Boots"
-    },
-    {
-      "name": "SugarBootsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sugar_boots_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SugarBootsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SugarBootsItem.java",
+          "src/main/resources/assets/better_tools/models/item/sugar_boots.json"
         ]
       },
       "path": "~/Effect Armor/Sugar Boots"
@@ -695,8 +672,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/RabbitBootsItem.java",
-          "src/main/resources/assets/better_tools/models/item/rabbit_boots.json"
+          "src/main/resources/assets/better_tools/models/item/rabbit_boots.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/RabbitBootsItem.java"
         ]
       },
       "path": "~/Effect Armor/Rabbit Boots"
@@ -728,10 +705,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -749,31 +722,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/phantom_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/PhantomBootsItem.java"
-        ]
-      },
-      "path": "~/Effect Armor/Phantom Boots"
-    },
-    {
-      "name": "PhantomBootsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phantom_boots_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PhantomBootsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/PhantomBootsItem.java",
+          "src/main/resources/assets/better_tools/models/item/phantom_boots.json"
         ]
       },
       "path": "~/Effect Armor/Phantom Boots"
@@ -853,8 +803,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/HeartyBodyItem.java",
-          "src/main/resources/assets/better_tools/models/item/hearty_chestplate.json"
+          "src/main/resources/assets/better_tools/models/item/hearty_chestplate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HeartyBodyItem.java"
         ]
       },
       "path": "~/Effect Armor/Hearty Shirt"
@@ -873,10 +823,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1135,10 +1081,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1169,8 +1111,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystal_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalLegsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalLegsItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystal_leggings.json"
         ]
       },
       "path": "~/Effect Armor/Crystal Leggings"
@@ -1189,10 +1131,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1273,8 +1211,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/blackstone_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/BlackstoneLegsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/BlackstoneLegsItem.java",
+          "src/main/resources/assets/better_tools/models/item/blackstone_leggings.json"
         ]
       },
       "path": "~/Effect Armor/Gilded Blackstone Leggings"
@@ -1288,29 +1226,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipes/blackstone_legs_recipe.json"
-        ]
-      },
-      "path": "~/Effect Armor/Gilded Blackstone Leggings"
-    },
-    {
-      "name": "BlackstoneLegsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blackstone_legs_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BlackstoneLegsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
         ]
       },
       "path": "~/Effect Armor/Gilded Blackstone Leggings"
@@ -1982,8 +1897,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/iron_rabbit_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronRabbitBootsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronRabbitBootsItem.java",
+          "src/main/resources/assets/better_tools/models/item/iron_rabbit_boots.json"
         ]
       },
       "path": "~/Effect Armor/Rabbit Boots"
@@ -2013,8 +1928,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronPhantomBootsItem.java",
-          "src/main/resources/assets/better_tools/models/item/iron_phantom_boots.json"
+          "src/main/resources/assets/better_tools/models/item/iron_phantom_boots.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronPhantomBootsItem.java"
         ]
       },
       "path": "~/Effect Armor/Phantom Boots"
@@ -2075,8 +1990,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronHeartyBodyItem.java",
-          "src/main/resources/assets/better_tools/models/item/iron_hearty_chestplate.json"
+          "src/main/resources/assets/better_tools/models/item/iron_hearty_chestplate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronHeartyBodyItem.java"
         ]
       },
       "path": "~/Effect Armor/Hearty Shirt"
@@ -2168,8 +2083,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/diamond_rabbit_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondRabbitBootsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondRabbitBootsItem.java",
+          "src/main/resources/assets/better_tools/models/item/diamond_rabbit_boots.json"
         ]
       },
       "path": "~/Effect Armor/Rabbit Boots"
@@ -2199,8 +2114,8 @@
         "eb": true,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/diamond_phantom_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondPhantomBootsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondPhantomBootsItem.java",
+          "src/main/resources/assets/better_tools/models/item/diamond_phantom_boots.json"
         ]
       },
       "path": "~/Effect Armor/Phantom Boots"
@@ -2261,8 +2176,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondHeartyBodyItem.java",
-          "src/main/resources/assets/better_tools/models/item/diamond_hearty_chestplate.json"
+          "src/main/resources/assets/better_tools/models/item/diamond_hearty_chestplate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondHeartyBodyItem.java"
         ]
       },
       "path": "~/Effect Armor/Hearty Shirt"
@@ -2323,8 +2238,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/diamond_crystal_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCrystalLegsItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCrystalLegsItem.java",
+          "src/main/resources/assets/better_tools/models/item/diamond_crystal_leggings.json"
         ]
       },
       "path": "~/Effect Armor/Crystal Leggings"
@@ -3464,29 +3379,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipes/magma_body_recipe.json"
-        ]
-      },
-      "path": "~/Effect Armor/Magma Chestplate"
-    },
-    {
-      "name": "MagmaBodyProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magma_body_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MagmaBodyProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
         ]
       },
       "path": "~/Effect Armor/Magma Chestplate"
