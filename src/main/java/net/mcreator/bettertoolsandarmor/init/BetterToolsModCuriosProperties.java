@@ -19,7 +19,7 @@ public class BetterToolsModCuriosProperties {
 			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_energy"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
 			ItemProperties.register(BetterToolsModItems.ENERGY_VIAL.get(), new ResourceLocation("better_tools:energy_vial_active"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(itemStackToRender));
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity, itemStackToRender));
 		});
 	}
 }

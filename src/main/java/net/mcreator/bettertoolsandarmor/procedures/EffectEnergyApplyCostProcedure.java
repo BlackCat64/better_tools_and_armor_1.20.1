@@ -17,7 +17,7 @@ public class EffectEnergyApplyCostProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (EnergyVialActiveProcedure.execute(itemstack) > 0) {
+		if (EnergyVialActiveProcedure.execute(entity, itemstack) > 0) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_timer <= 0) {
 				{
 					double _setval = 100;
