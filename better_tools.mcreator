@@ -32621,29 +32621,6 @@
       "path": "~/Effect Armor"
     },
     {
-      "name": "EnergyVialApplyEffects",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_vial_apply_effects",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialApplyEffectsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Effect Armor"
-    },
-    {
       "name": "CalculateEffectEnergyCost",
       "type": "procedure",
       "compiles": true,
