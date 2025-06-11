@@ -32122,22 +32122,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -32654,22 +32638,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -32694,25 +32662,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Effect Armor"
-    },
-    {
-      "name": "ResetEffectVialTimer",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_effect_vial_timer",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ResetEffectVialTimerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },
@@ -32764,6 +32713,46 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "IsWearingGlassArmorFullSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_wearing_glass_armor_full_set",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsWearingGlassArmorFullSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Glass Armor"
+    },
+    {
+      "name": "GlassArmorEnergyCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_armor_energy_cost",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GlassArmorEnergyCostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Glass Armor"
     }
   ],
   "variable_elements": [
@@ -33963,8 +33952,7 @@
       "CUSTOM:DiamondCrystalLegs.legs",
       "CUSTOM:DiamondGoldCarrotHat.helmet",
       "CUSTOM:DiamondBlackstoneLegs.legs",
-      "CUSTOM:DiamondMagmaBody.body",
-      "TAG:mod:diamond_glass_armor"
+      "CUSTOM:DiamondMagmaBody.body"
     ],
     "ITEMS:mod:mines_nether_wood_instantly": [
       "CUSTOM:CrystalliteShovelNetherite",
@@ -34130,8 +34118,7 @@
       "CUSTOM:RabbitBoots.boots",
       "CUSTOM:PhantomBoots.boots",
       "CUSTOM:HeartyBody.body",
-      "CUSTOM:GoldCarrotArmor.helmet",
-      "TAG:mod:base_glass_armor"
+      "CUSTOM:GoldCarrotArmor.helmet"
     ],
     "BLOCKS:forge:ore_rates/dense": [
       "CUSTOM:RubyOre",
@@ -34245,8 +34232,7 @@
       "CUSTOM:RubyArmor.legs",
       "CUSTOM:CrystalLegs.legs",
       "CUSTOM:BlackstoneLegs.legs",
-      "CUSTOM:MagmaBody.body",
-      "TAG:mod:iron_glass_armor"
+      "CUSTOM:MagmaBody.body"
     ],
     "ITEMS:mod:base_glass_armor": [
       "CUSTOM:GlassArmor.helmet",
@@ -34338,6 +34324,11 @@
       "CUSTOM:CrystalliteDaggerAmethyst",
       "CUSTOM:CrystalliteDaggerPrismarine",
       "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:mod:standard_effect_armor": [
+      "TAG:mod:base_tier_effect_armor",
+      "TAG:mod:iron_tier_effect_armor",
+      "TAG:mod:diamond_tier_effect_armor"
     ],
     "ITEMS:mod:emerald_upgraded_crystallite_items": [
       "CUSTOM:NatureCrystal",
@@ -34801,9 +34792,8 @@
       "CUSTOM:CrystalliteHoeSky"
     ],
     "ITEMS:mod:effect_armor": [
-      "TAG:mod:base_tier_effect_armor",
-      "TAG:mod:iron_tier_effect_armor",
-      "TAG:mod:diamond_tier_effect_armor"
+      "TAG:mod:glass_armor",
+      "TAG:mod:standard_effect_armor"
     ],
     "ITEMS:mod:magma_chestplates": [
       "CUSTOM:MagmaBody.body",

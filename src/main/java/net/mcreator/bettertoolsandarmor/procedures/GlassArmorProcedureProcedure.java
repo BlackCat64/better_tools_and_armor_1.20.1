@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.common.ForgeMod;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
@@ -46,27 +44,11 @@ public class GlassArmorProcedureProcedure {
 				}
 			}
 		}
-		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(ForgeMod.NAMETAG_DISTANCE.get()) != null) {
-			default_nametag_range = ((LivingEntity) entity).getAttribute(ForgeMod.NAMETAG_DISTANCE.get()).getValue();
-			if (armor_active) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands()
-								.performPrefixedCommand(
-										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
-												_ent.getDisplayName(), _ent.level().getServer(), _ent),
-										("attribute @s forge:nametag_distance modifier add 20c49113-5f43-4f28-99fe-ca7e864f70ed glass_armor_nametag_hide " + ("" + (-1) * default_nametag_range) + " add"));
-					}
-				}
-			} else {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s forge:nametag_distance modifier remove 20c49113-5f43-4f28-99fe-ca7e864f70ed");
-					}
-				}
+		{
+			Entity _ent = entity;
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s forge:nametag_distance modifier remove 20c49113-5f43-4f28-99fe-ca7e864f70ed");
 			}
 		}
 		{

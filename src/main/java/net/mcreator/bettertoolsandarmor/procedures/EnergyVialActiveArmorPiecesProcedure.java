@@ -12,21 +12,25 @@ public class EnergyVialActiveArmorPiecesProcedure {
 		if (entity == null)
 			return 0;
 		double armor_pieces = 0;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:effect_armor")))
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
 				&& itemstack.getOrCreateTag().getBoolean("boots_active")) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:effect_armor")))
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
 				&& itemstack.getOrCreateTag().getBoolean("leggings_active")) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:effect_armor")))
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
 				&& itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:effect_armor")))
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
 				&& itemstack.getOrCreateTag().getBoolean("helmet_active")) {
 			armor_pieces = armor_pieces + 1;
+		}
+		if (IsWearingGlassArmorFullSetProcedure.execute(entity) && itemstack.getOrCreateTag().getBoolean("helmet_active") && itemstack.getOrCreateTag().getBoolean("chestplate_active") && itemstack.getOrCreateTag().getBoolean("leggings_active")
+				&& itemstack.getOrCreateTag().getBoolean("boots_active")) {
+			armor_pieces = 4;
 		}
 		return armor_pieces;
 	}
