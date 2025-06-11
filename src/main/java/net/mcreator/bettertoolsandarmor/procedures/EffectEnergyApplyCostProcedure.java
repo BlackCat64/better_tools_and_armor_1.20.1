@@ -1,5 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -7,7 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
 public class EffectEnergyApplyCostProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double timer = 0;
@@ -54,6 +55,10 @@ public class EffectEnergyApplyCostProcedure {
 					}
 					if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
 						ApplyBootsEffectProcedure.execute(entity);
+					}
+					if (IsWearingGlassArmorFullSetProcedure.execute(entity) && itemstack.getOrCreateTag().getBoolean("helmet_active") && itemstack.getOrCreateTag().getBoolean("chestplate_active")
+							&& itemstack.getOrCreateTag().getBoolean("leggings_active") && itemstack.getOrCreateTag().getBoolean("boots_active")) {
+						GlassArmorProcedureProcedure.execute(world, x, y, z, entity);
 					}
 				}
 			} else {
