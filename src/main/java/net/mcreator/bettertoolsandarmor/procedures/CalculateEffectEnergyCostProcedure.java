@@ -27,13 +27,25 @@ public class CalculateEffectEnergyCostProcedure {
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 					.is(ItemTags.create(new ResourceLocation("better_tools:base_tier_effect_armor")))) {
-				piece_cost = 150;
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:glass_armor")))) {
+					piece_cost = 40;
+				} else {
+					piece_cost = 150;
+				}
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 					.is(ItemTags.create(new ResourceLocation("better_tools:iron_tier_effect_armor")))) {
-				piece_cost = 120;
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:glass_armor")))) {
+					piece_cost = 30;
+				} else {
+					piece_cost = 120;
+				}
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 					.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor")))) {
-				piece_cost = 90;
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:glass_armor")))) {
+					piece_cost = 25;
+				} else {
+					piece_cost = 90;
+				}
 			} else {
 				piece_cost = 0;
 			}

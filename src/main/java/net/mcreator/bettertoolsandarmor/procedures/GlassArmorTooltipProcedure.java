@@ -31,19 +31,16 @@ public class GlassArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:base_glass_armor"))) || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_glass_armor")))
-				|| itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_glass_armor")))) {
-			tooltip.add(Component.literal("\u00A77When full set worn:"));
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:glass_armor")))) {
+			tooltip.add(Component.literal("\u00A77Effects Applied when full set worn:"));
 			tooltip.add(Component.literal("\u00A7920% Detection Range for all nearby mobs"));
+			tooltip.add(Component.literal("\u00A79Invisibility"));
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:base_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A79Invisibility (0:05)"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c160 \u00A76/ 5s"));
 			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A79Invisibility (0:08)"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 1"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c120 \u00A76/ 5s"));
 			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A79Invisibility (0:10)"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 2"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c100 \u00A76/ 5s"));
 			}
 		}
 	}

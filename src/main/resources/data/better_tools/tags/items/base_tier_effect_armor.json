@@ -5,6 +5,7 @@
     "better_tools:rabbit_boots",
     "better_tools:phantom_boots",
     "better_tools:hearty_chestplate",
-    "better_tools:gold_carrot_helmet"
+    "better_tools:gold_carrot_helmet",
+    "#better_tools:base_glass_armor"
   ]
 }
