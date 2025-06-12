@@ -44,7 +44,7 @@ public class HeartyShirtTooltipProcedure {
 				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c120 \u00A76/ 1HP"));
 			} else if (itemstack.getItem() == BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get()) {
 				tooltip.add(Component.literal("\u00A79Up to 8HP"));
-				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c90 \u00A76/ 1HP"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c90 \u00A76/ 2HP"));
 			}
 		}
 	}

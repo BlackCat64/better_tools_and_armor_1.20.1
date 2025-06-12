@@ -10,9 +10,6 @@
     "textureLeggings": "",
     "enableBoots": true,
     "textureBoots": "winged_boots",
-    "onBootsTick": {
-      "name": "WingedBootsProcedure"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:EffectArmorTab"
