@@ -11,7 +11,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
@@ -40,12 +39,10 @@ public class DoubleJumpKeyPressProcedure {
 		}
 		boots = boots_arr[0];
 		vial = vial_arr[0];
-		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((boots + ", " + vial.getOrCreateTag().getDouble("energy"))), false);
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && entity.getDeltaMovement().y() < 0.5 && !entity.isSwimming() && !(entity instanceof LivingEntity _livEnt13 && _livEnt13.isFallFlying())
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isSwimming() && !(entity instanceof LivingEntity _livEnt10 && _livEnt10.isFallFlying())
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps > 0
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped >= 4
-				&& (entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
+				&& (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
 			entity.fallDistance = 0;
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.5, (entity.getDeltaMovement().z())));
 			{
