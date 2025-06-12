@@ -4,24 +4,15 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "aea"
+    "a a",
+    "a a"
   ],
   "key": {
     "a": {
       "item": "better_tools:ruby"
     },
     "b": {
-      "item": "minecraft:nether_wart"
-    },
-    "c": {
       "item": "better_tools:ruby_block"
-    },
-    "d": {
-      "tag": "forge:armors/leggings"
-    },
-    "e": {
-      "item": "minecraft:blaze_powder"
     }
   },
   "result": {

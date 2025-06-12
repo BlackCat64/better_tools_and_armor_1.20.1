@@ -3,22 +3,13 @@
   "group": "magma_body",
   "category": "misc",
   "pattern": [
-    "aba",
-    "aca",
-    "ada"
+    "a a",
+    "aaa",
+    "aaa"
   ],
   "key": {
     "a": {
       "item": "better_tools:blackstone_magma"
-    },
-    "b": {
-      "tag": "forge:armors/chestplates"
-    },
-    "c": {
-      "item": "minecraft:nether_wart"
-    },
-    "d": {
-      "item": "minecraft:blaze_powder"
     }
   },
   "result": {

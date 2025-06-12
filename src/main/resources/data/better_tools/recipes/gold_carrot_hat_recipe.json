@@ -4,21 +4,14 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
-    " cd"
+    "aba"
   ],
   "key": {
     "a": {
       "item": "minecraft:golden_carrot"
     },
     "b": {
-      "tag": "forge:armors/helmets"
-    },
-    "c": {
-      "item": "minecraft:blaze_powder"
-    },
-    "d": {
-      "item": "minecraft:nether_wart"
+      "item": "minecraft:leather"
     }
   },
   "result": {

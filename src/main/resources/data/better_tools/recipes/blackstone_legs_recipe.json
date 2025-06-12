@@ -5,7 +5,7 @@
   "pattern": [
     "aaa",
     "aba",
-    "aca"
+    "aba"
   ],
   "key": {
     "a": {
@@ -13,9 +13,6 @@
     },
     "b": {
       "item": "minecraft:magma_cream"
-    },
-    "c": {
-      "tag": "forge:armors/leggings"
     }
   },
   "result": {

@@ -4,21 +4,15 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "aca",
-    "ada"
+    "aaa",
+    "aaa"
   ],
   "key": {
     "a": {
       "item": "minecraft:glistering_melon_slice"
     },
     "b": {
-      "tag": "forge:armors/chestplates"
-    },
-    "c": {
-      "item": "minecraft:nether_wart"
-    },
-    "d": {
-      "item": "minecraft:blaze_powder"
+      "item": "minecraft:leather"
     }
   },
   "result": {

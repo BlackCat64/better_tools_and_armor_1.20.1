@@ -4,8 +4,7 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
-    "cde"
+    "aba"
   ],
   "key": {
     "a": {
@@ -13,15 +12,6 @@
     },
     "b": {
       "item": "minecraft:totem_of_undying"
-    },
-    "c": {
-      "item": "minecraft:blaze_powder"
-    },
-    "d": {
-      "tag": "forge:armors/helmets"
-    },
-    "e": {
-      "item": "minecraft:nether_wart"
     }
   },
   "result": {

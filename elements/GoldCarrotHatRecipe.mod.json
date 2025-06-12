@@ -24,7 +24,7 @@
         "value": "Items.GOLDEN_CARROT"
       },
       {
-        "value": "TAG:forge:armors/helmets"
+        "value": "Items.LEATHER"
       },
       {
         "value": "Items.GOLDEN_CARROT"
@@ -33,10 +33,10 @@
         "value": ""
       },
       {
-        "value": "Items.BLAZE_POWDER"
+        "value": ""
       },
       {
-        "value": "Items.NETHER_WART"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

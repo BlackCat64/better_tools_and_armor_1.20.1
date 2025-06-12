@@ -30,13 +30,13 @@
         "value": "Blocks.CRYING_OBSIDIAN"
       },
       {
-        "value": "Items.BLAZE_POWDER"
+        "value": ""
       },
       {
-        "value": "TAG:forge:armors/helmets"
+        "value": ""
       },
       {
-        "value": "Items.NETHER_WART"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

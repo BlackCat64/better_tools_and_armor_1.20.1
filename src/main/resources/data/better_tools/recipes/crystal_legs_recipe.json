@@ -5,7 +5,7 @@
   "pattern": [
     "aaa",
     "aba",
-    "aca"
+    "a a"
   ],
   "key": {
     "a": {
@@ -13,9 +13,6 @@
     },
     "b": {
       "item": "minecraft:heart_of_the_sea"
-    },
-    "c": {
-      "tag": "forge:armors/leggings"
     }
   },
   "result": {

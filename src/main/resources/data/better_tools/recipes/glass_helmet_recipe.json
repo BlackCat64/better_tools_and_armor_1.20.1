@@ -4,24 +4,11 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
-    "cde"
+    "a a"
   ],
   "key": {
     "a": {
       "item": "minecraft:glass"
-    },
-    "b": {
-      "item": "minecraft:fermented_spider_eye"
-    },
-    "c": {
-      "item": "minecraft:blaze_powder"
-    },
-    "d": {
-      "item": "better_tools:golden_potato"
-    },
-    "e": {
-      "item": "minecraft:nether_wart"
     }
   },
   "result": {
