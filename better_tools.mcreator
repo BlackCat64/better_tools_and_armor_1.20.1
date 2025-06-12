@@ -32746,6 +32746,29 @@
         ]
       },
       "path": "~/Effect Armor/Glass Armor"
+    },
+    {
+      "name": "HeartyShirtTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hearty_shirt_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartyShirtTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Hearty Shirt"
     }
   ],
   "variable_elements": [
@@ -33056,11 +33079,11 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:mod:smelting_touch_tools": [
-      "CUSTOM:CrystallitePickaxeNetherDiamond"
-    ],
     "ITEMS:forge:ores_in_ground/end_stone": [
       "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:mod:smelting_touch_tools": [
+      "CUSTOM:CrystallitePickaxeNetherDiamond"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
@@ -33134,21 +33157,6 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CrystalliteBowSky"
     ],
-    "ITEMS:mod:amethyst_upgraded_crystallite_items": [
-      "CUSTOM:EarthCrystal",
-      "CUSTOM:CrystalliteSwordAmethyst",
-      "CUSTOM:CrystallitePickaxeAmethyst",
-      "CUSTOM:CrystalliteAxeAmethyst",
-      "CUSTOM:CrystalliteShovelAmethyst",
-      "CUSTOM:CrystalliteHoeAmethyst",
-      "CUSTOM:CrystalliteDaggerAmethyst",
-      "CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "CUSTOM:CrystalliteArmorAmethyst.body",
-      "CUSTOM:CrystalliteArmorAmethyst.legs",
-      "CUSTOM:CrystalliteArmorAmethyst.boots",
-      "CUSTOM:EarthCirclet",
-      "CUSTOM:CrystalliteBowAmethyst"
-    ],
     "BLOCKS:minecraft:trapdoors": [
       "CUSTOM:DarkPolishedCoalTrapdoor",
       "CUSTOM:LightPolishedCoalTrapdoor",
@@ -33171,6 +33179,21 @@
       "CUSTOM:PolishedAmethystTrapdoor",
       "CUSTOM:LightPolishedAmethystTrapdoor"
     ],
+    "ITEMS:mod:amethyst_upgraded_crystallite_items": [
+      "CUSTOM:EarthCrystal",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:EarthCirclet",
+      "CUSTOM:CrystalliteBowAmethyst"
+    ],
     "ITEMS:forge:tools/hoes": [
       "TAG:minecraft:hoes"
     ],
@@ -33181,12 +33204,6 @@
       "CUSTOM:PhantomBoots.boots",
       "CUSTOM:IronPhantomBoots.boots",
       "CUSTOM:DiamondPhantomBoots.boots"
-    ],
-    "BLOCKS:forge:ores_in_ground/stone": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre"
     ],
     "BLOCKS:mod:warped_planks": [
       "Blocks.WARPED_PLANKS",
@@ -33200,6 +33217,12 @@
       "Blocks.WARPED_FENCE",
       "Blocks.WARPED_FENCE_GATE",
       "Blocks.WARPED_SLAB"
+    ],
+    "BLOCKS:forge:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
     ],
     "ITEMS:forge:tools/pickaxes": [
       "TAG:minecraft:pickaxes"
@@ -33940,7 +33963,6 @@
       "CUSTOM:DiamondSugarBoots.boots",
       "CUSTOM:DiamondRabbitBoots.boots",
       "CUSTOM:DiamondPhantomBoots.boots",
-      "CUSTOM:DiamondHeartyBody.body",
       "CUSTOM:DiamondRubyLegs.legs",
       "CUSTOM:DiamondCrystalLegs.legs",
       "CUSTOM:DiamondGoldCarrotHat.helmet",
@@ -34110,7 +34132,6 @@
       "CUSTOM:SugarBoots.boots",
       "CUSTOM:RabbitBoots.boots",
       "CUSTOM:PhantomBoots.boots",
-      "CUSTOM:HeartyBody.body",
       "CUSTOM:GoldCarrotArmor.helmet"
     ],
     "BLOCKS:forge:ore_rates/dense": [
@@ -34220,7 +34241,6 @@
       "CUSTOM:IronSugarBoots.boots",
       "CUSTOM:IronRabbitBoots.boots",
       "CUSTOM:IronPhantomBoots.boots",
-      "CUSTOM:IronHeartyBody.body",
       "CUSTOM:IronGoldCarrotHat.helmet",
       "CUSTOM:RubyArmor.legs",
       "CUSTOM:CrystalLegs.legs",
@@ -35565,12 +35585,12 @@
     "en_us": {
       "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "item.better_tools.curing_charm": "§6Curing Charm",
-      "item.better_tools.flint_hoe": "Flint Hoe",
       "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
+      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.curing_charm": "§6Curing Charm",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
-      "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
       "item.better_tools.poison_charm": "§5Poison Charm",
+      "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
       "item_group.better_tools.crystallite_tab": "BT+A - Crystallite",
       "block.better_tools.polished_ruby_trapdoor": "Metallic Ruby Trapdoor",
       "item.minecraft.splash_potion.effect.double_jump_potion": "Splash Potion of Double Jump",
@@ -35586,15 +35606,15 @@
       "block.better_tools.jewellery_table": "Jewellery Table",
       "block.better_tools.brown_metal_wall_hanging_sign": "Brown Metal Wall Hanging Sign",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
+      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "block.better_tools.light_polished_lapis_trapdoor": "Light Metallic Lapis Lazuli Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "block.better_tools.sugar_block": "Sugar Block",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "block.better_tools.sugar_block": "Sugar Block",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -35607,13 +35627,13 @@
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "advancements.bark_on_log_adv.descr": "Use Bark to un-strip a Stripped Log Block",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
+      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "advancements.descend_to_bottom_of_world.descr": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
       "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
-      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "block.better_tools.white_metal_hanging_sign": "White Metal Hanging Sign",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
@@ -35640,8 +35660,8 @@
       "advancements.all_effect_armor_adv.descr": "Obtain one of every type of base level Effect Armor",
       "advancements.crystallite_cave_adv.title": "Ooh, sparkly!",
       "item.better_tools.speedy_crystal": "Speedy Crystal",
-      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
+      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
       "jei.better_tools.crystallite_charm_base_info": "Used to craft Crystallite Charms.\nCan be found rarely in Dungeon and Mineshaft chests.\nUse Crystallite Shards to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.\nSpawns with a 1% chance in chests in these structures:\n\nDesert Temples, Jungle Temples, Woodland Mansions, Shipwrecks and Bastions.",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
@@ -35666,19 +35686,19 @@
       "advancements.guardian_staff_adv.title": "Soaking Staff!",
       "item.better_tools.diamond_glass_armor_boots": "Glass Boots",
       "item.minecraft.tipped_arrow.effect.potion_of_decay": "Arrow of Decay",
-      "death.attack.override_weapon_damage.player": "%1$s died whilst trying to escape %2$s",
       "jei.better_tools.mixed_ore_gen_info": "§lOre Generation§r\n§cM§6i§ax§be§9d §aO§6r§ce§r\n\nGenerates below y\u003d40\nBecomes more common the deeper you go.\nSpawns in small veins.",
+      "death.attack.override_weapon_damage.player": "%1$s died whilst trying to escape %2$s",
       "block.better_tools.dark_polished_lapis_wall": "Metallic Lapis Lazuli Wall",
       "item_group.better_tools.effect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.dark_polished_lapis_stairs": "Metallic Lapis Lazuli Stairs",
-      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.electric_necklace": "§6Lightning Necklace",
+      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.guardian_crystal": "Guardian Crystal",
       "block.better_tools.sapphire_block": "Sapphire Block",
       "gui.better_tools.attributes_viewer.label_max_health": "Max Health",
       "advancements.glass_armor_adv.title": "Glass Ghost",
-      "death.attack.electric_chain_damage.player": "%1$s was shocked to death whilst trying to escape %2$s",
       "item.better_tools.crystallite_bow_lapis": "Crystallite Bow",
+      "death.attack.electric_chain_damage.player": "%1$s was shocked to death whilst trying to escape %2$s",
       "item.better_tools.crystallite_bow_diamond": "Crystallite Bow",
       "block.better_tools.polished_gold_wall": "Polished Gold Wall",
       "block.better_tools.purple_metal_sign": "Purple Metal Sign",
@@ -35687,8 +35707,8 @@
       "item.better_tools.golden_potato": "Golden Potato",
       "advancements.golden_potato_adv.title": "Gilded Gardening",
       "advancements.karma_adv.descr": "Be attacked while effected with Karma",
-      "item.better_tools.crystallite_armor_iron_helmet": "Crystallite Helmet",
       "block.better_tools.light_polished_gold_wall": "Light Polished Gold Wall",
+      "item.better_tools.crystallite_armor_iron_helmet": "Crystallite Helmet",
       "block.better_tools.light_polished_emerald_block": "Metallic Emerald Block",
       "advancements.life_aura_adv.title": "Full Potential",
       "subtitles.rick_roll": "",
@@ -35696,15 +35716,15 @@
       "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
       "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
-      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "block.better_tools.polished_diamond_stairs": "Metallic Diamond Stairs",
+      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "attribute.better_tools.critical_hit_multiplier": "Critical Hit Multiplier",
       "block.better_tools.polished_redstone_block": "Metallic Redstone Block",
       "item.better_tools.sapphire_boots": "Sapphire Boots",
       "item.better_tools.crystallite_hoe_redstone": "Crystallite Hoe",
       "block.better_tools.dark_polished_coal_wall": "Dark Metallic Coal Wall",
-      "advancements.cactus_crystal_adv.title": "Spiky Swimmer",
       "jei.better_tools.emerald_crystallite_info": "§lCrystallite Upgrades: \n§aEmerald§r\n\nTheme:\nNature and Regeneration",
+      "advancements.cactus_crystal_adv.title": "Spiky Swimmer",
       "advancements.berry_pie_adv.title": "Sweet!",
       "advancements.exp_potion_adv.title": "Experienced Brewing",
       "block.better_tools.red_metal_hanging_sign": "Red Metal Hanging Sign",
@@ -35725,10 +35745,10 @@
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
       "block.better_tools.cyan_metal_wall_sign": "Cyan Metal Wall Sign",
-      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
-      "item.better_tools.obsidian_stick": "Obsidian Stick",
+      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.minecraft.tipped_arrow.effect.potion_of_decay_long": "Arrow of Decay",
+      "item.better_tools.obsidian_stick": "Obsidian Stick",
       "advancements.crystallite_gem_adv.descr": "Craft a Crystallite Gem",
       "item.better_tools.mixed_essence": "Mixed Essence",
       "enchantment.better_tools.swift_cast": "Swift Cast",

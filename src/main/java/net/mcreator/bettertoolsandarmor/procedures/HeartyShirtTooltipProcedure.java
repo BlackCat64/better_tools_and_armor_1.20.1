@@ -12,12 +12,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+
 import javax.annotation.Nullable;
 
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class GlassArmorTooltipProcedure {
+public class HeartyShirtTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -31,16 +33,18 @@ public class GlassArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:glass_armor")))) {
-			tooltip.add(Component.literal("\u00A77Effects Applied when full set worn:"));
-			tooltip.add(Component.literal("\u00A79Invisibility"));
-			tooltip.add(Component.literal("\u00A79Reduced Detection Range for all nearby mobs"));
-			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:base_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A77Full-set Energy Cost: \u00A7c200 \u00A76/ 5s"));
-			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A77Full-set Energy Cost: \u00A7c160 \u00A76/ 5s"));
-			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_glass_armor")))) {
-				tooltip.add(Component.literal("\u00A77Full-set Energy Cost: \u00A7c120 \u00A76/ 5s"));
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))) {
+			tooltip.add(Component.literal("\u00A77Effect Applied:"));
+			tooltip.add(Component.literal("\u00A79Absorption"));
+			if (itemstack.getItem() == BetterToolsModItems.HEARTY_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A79Up to 4HP"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c150 \u00A76/ 1HP"));
+			} else if (itemstack.getItem() == BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A79Up to 4HP"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c120 \u00A76/ 1HP"));
+			} else if (itemstack.getItem() == BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A79Up to 8HP"));
+				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c90 \u00A76/ 1HP"));
 			}
 		}
 	}

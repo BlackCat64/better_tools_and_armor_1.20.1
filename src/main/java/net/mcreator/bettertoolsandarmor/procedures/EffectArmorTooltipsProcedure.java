@@ -49,8 +49,6 @@ public class EffectArmorTooltipsProcedure {
 				tooltip.add(Component.literal(("\u00A79Swift Swim " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor"))) ? "III" : "II"))));
 			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:gilded_blackstone_leggings")))) {
 				tooltip.add(Component.literal("\u00A79Fire Resistance"));
-			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))) {
-				tooltip.add(Component.literal("\u00A79Absorption"));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:base_tier_effect_armor")))) {
 				tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c150 \u00A76/ 5s"));
