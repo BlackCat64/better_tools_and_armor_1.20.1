@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"MCItem\" id=\"vial\">vial</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"java_code\"><field name=\"CODE\">ItemStack[] vial_arr = {ItemStack.EMPTY};</field><comment pinned=\"false\" h=\"72\" w=\"373\">workaround for using local variables within a lambda (curios API for-each loop)</comment><next><block type=\"curio_equipped_foreach\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EnergyVial</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"_placeholder\"><block type=\"itemstack_iterator\"></block></value><statement name=\"foreach\"><block type=\"java_code\"><field name=\"CODE\">vial_arr[0] = itemstackiterator;</field></block></statement><next><block type=\"java_code\"><field name=\"CODE\">vial = vial_arr[0];</field><next><block type=\"return_itemstack\"><value name=\"return\"><block type=\"variables_get_itemstack\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:vial</field></block></value></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

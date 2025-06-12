@@ -24,25 +24,18 @@ public class DoubleJumpKeyPressProcedure {
 			return;
 		boolean boots = false;
 		ItemStack vial = ItemStack.EMPTY;
-		boolean[] boots_arr = {false};
-		ItemStack[] vial_arr = {ItemStack.EMPTY};
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
-			if (entity instanceof LivingEntity lv) {
-				CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
-					ItemStack itemstackiterator = item.stack();
-					if (itemstackiterator.getOrCreateTag().getDouble("energy") >= 50 && itemstackiterator.getOrCreateTag().getBoolean("boots_active")) {
-						boots_arr[0] = true;
-						vial_arr[0] = itemstackiterator;
-					}
-				});
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get() && entity instanceof LivingEntity lv
+				? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent()
+				: false) {
+			vial = GetEquippedVialProcedure.execute(world, entity);
+			if (vial.getOrCreateTag().getDouble("energy") >= 50 && vial.getOrCreateTag().getBoolean("boots_active")) {
+				boots = true;
 			}
 		}
-		boots = boots_arr[0];
-		vial = vial_arr[0];
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt10 && _livEnt10.isFallFlying())
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt8 && _livEnt8.isFallFlying())
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps > 0
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped >= 4
-				&& (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
+				&& (entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
 			entity.fallDistance = 0;
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.5, (entity.getDeltaMovement().z())));
 			{

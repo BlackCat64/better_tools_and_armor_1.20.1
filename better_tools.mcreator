@@ -2343,6 +2343,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -2378,8 +2382,8 @@
         "eb": false,
         "ec": false,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/diamond_crying_obsidian_helmet.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCryingObsidianHelmetItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCryingObsidianHelmetItem.java",
+          "src/main/resources/assets/better_tools/models/item/diamond_crying_obsidian_helmet.json"
         ]
       },
       "path": "~/Effect Armor/Crying Obsidian Helmet"
@@ -32798,6 +32802,30 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "GetEquippedVial",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_equipped_vial",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEquippedVialProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
