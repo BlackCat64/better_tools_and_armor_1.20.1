@@ -39,7 +39,7 @@ public class DoubleJumpKeyPressProcedure {
 		}
 		boots = boots_arr[0];
 		vial = vial_arr[0];
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isSwimming() && !(entity instanceof LivingEntity _livEnt10 && _livEnt10.isFallFlying())
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt10 && _livEnt10.isFallFlying())
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps > 0
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped >= 4
 				&& (entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
