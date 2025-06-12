@@ -39,28 +39,25 @@ public class EffectEnergyApplyCostProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (itemstack.getOrCreateTag().getDouble("energy") > 0 && (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost > 0
-						|| (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-					if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-						itemstack.getOrCreateTag().putDouble("energy",
-								Math.max(itemstack.getOrCreateTag().getDouble("energy") - (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost, 0));
-					}
-					if (itemstack.getOrCreateTag().getBoolean("helmet_active")) {
-						ApplyHelmetEffectProcedure.execute(entity);
-					}
-					if (itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
-						ApplyChestplateEffectProcedure.execute(entity);
-					}
-					if (itemstack.getOrCreateTag().getBoolean("leggings_active")) {
-						ApplyLeggingsEffectProcedure.execute(entity);
-					}
-					if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
-						ApplyBootsEffectProcedure.execute(entity);
-					}
-					if (IsWearingGlassArmorFullSetProcedure.execute(entity) && itemstack.getOrCreateTag().getBoolean("helmet_active") && itemstack.getOrCreateTag().getBoolean("chestplate_active")
-							&& itemstack.getOrCreateTag().getBoolean("leggings_active") && itemstack.getOrCreateTag().getBoolean("boots_active")) {
-						GlassArmorProcedureProcedure.execute(world, x, y, z, entity);
-					}
+				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					itemstack.getOrCreateTag().putDouble("energy",
+							Math.max(itemstack.getOrCreateTag().getDouble("energy") - (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost, 0));
+				}
+				if (itemstack.getOrCreateTag().getBoolean("helmet_active")) {
+					ApplyHelmetEffectProcedure.execute(entity);
+				}
+				if (itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
+					ApplyChestplateEffectProcedure.execute(entity);
+				}
+				if (itemstack.getOrCreateTag().getBoolean("leggings_active")) {
+					ApplyLeggingsEffectProcedure.execute(entity);
+				}
+				if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
+					ApplyBootsEffectProcedure.execute(entity);
+				}
+				if (IsWearingGlassArmorFullSetProcedure.execute(entity) && itemstack.getOrCreateTag().getBoolean("helmet_active") && itemstack.getOrCreateTag().getBoolean("chestplate_active")
+						&& itemstack.getOrCreateTag().getBoolean("leggings_active") && itemstack.getOrCreateTag().getBoolean("boots_active")) {
+					GlassArmorProcedureProcedure.execute(world, x, y, z, entity);
 				}
 			} else {
 				{

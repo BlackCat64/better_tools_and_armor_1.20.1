@@ -32751,6 +32751,57 @@
         ]
       },
       "path": "~/Effect Armor/Hearty Shirt"
+    },
+    {
+      "name": "PlayerEffectEnergyValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_effect_energy_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerEffectEnergyValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EffectArmorWarningTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_armor_warning_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EffectArmorWarningTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
