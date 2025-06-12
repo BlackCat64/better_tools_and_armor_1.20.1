@@ -21,7 +21,7 @@ public class CalculateEffectEnergyCostProcedure {
 			if (i == 0 && !itemstack.getOrCreateTag().getBoolean("boots_active") || i == 1 && !itemstack.getOrCreateTag().getBoolean("leggings_active") || i == 2 && !itemstack.getOrCreateTag().getBoolean("chestplate_active")
 					|| i == 3 && !itemstack.getOrCreateTag().getBoolean("helmet_active")
 					|| !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
-							.is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor"))))) {
+							.is(ItemTags.create(new ResourceLocation("better_tools:effect_armor"))))) {
 				i = i + 1;
 				continue;
 			}
@@ -35,6 +35,10 @@ public class CalculateEffectEnergyCostProcedure {
 					.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor")))) {
 				piece_cost = 90;
 			} else {
+				piece_cost = 0;
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))
+					&& !HeartyShirtActiveProcedure.execute(entity)) {
 				piece_cost = 0;
 			}
 			if (armor_pieces == 2) {

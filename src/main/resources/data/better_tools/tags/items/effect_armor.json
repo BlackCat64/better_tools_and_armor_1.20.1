@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "#better_tools:glass_armor",
-    "#better_tools:standard_effect_armor"
+    "#better_tools:base_tier_effect_armor",
+    "#better_tools:iron_tier_effect_armor",
+    "#better_tools:diamond_tier_effect_armor"
   ]
 }

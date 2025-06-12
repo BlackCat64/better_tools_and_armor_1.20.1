@@ -12,6 +12,7 @@ public class EffectEnergyApplyCostProcedure {
 		if (entity == null)
 			return;
 		double timer = 0;
+		double absorption_limit = 0;
 		if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 4 && IsWearingGlassArmorFullSetProcedure.execute(entity)) {
 			{
 				double _setval = GlassArmorEnergyCostProcedure.execute(entity);

@@ -20,7 +20,8 @@ public class EnergyVialActiveArmorPiecesProcedure {
 				&& itemstack.getOrCreateTag().getBoolean("leggings_active")) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
+		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:standard_effect_armor")))
+				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts"))))
 				&& itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
 			armor_pieces = armor_pieces + 1;
 		}
