@@ -94,7 +94,7 @@
               "name": "CUSTOM:energy",
               "type": "number"
             },
-            "value": 6000.0
+            "value": 12000.0
           }
         ]
       },
@@ -110,7 +110,7 @@
               "name": "CUSTOM:energy",
               "type": "number"
             },
-            "value": 6000.0
+            "value": 12000.0
           },
           {
             "property": {
@@ -135,7 +135,7 @@
               "name": "CUSTOM:energy",
               "type": "number"
             },
-            "value": 12000.0
+            "value": 24000.0
           }
         ]
       },
@@ -151,7 +151,7 @@
               "name": "CUSTOM:energy",
               "type": "number"
             },
-            "value": 12000.0
+            "value": 24000.0
           },
           {
             "property": {

@@ -19,26 +19,26 @@
     },
     {
       "predicate": {
-        "better_tools:netherite_energy_vial_energy": 6000
+        "better_tools:netherite_energy_vial_energy": 24000
       },
       "model": "better_tools:item/netherite_energy_vial_2"
     },
     {
       "predicate": {
-        "better_tools:netherite_energy_vial_energy": 6000,
+        "better_tools:netherite_energy_vial_energy": 24000,
         "better_tools:netherite_energy_vial_active": 1
       },
       "model": "better_tools:item/netherite_energy_vial_3"
     },
     {
       "predicate": {
-        "better_tools:netherite_energy_vial_energy": 12000
+        "better_tools:netherite_energy_vial_energy": 48000
       },
       "model": "better_tools:item/netherite_energy_vial_4"
     },
     {
       "predicate": {
-        "better_tools:netherite_energy_vial_energy": 12000,
+        "better_tools:netherite_energy_vial_energy": 48000,
         "better_tools:netherite_energy_vial_active": 1
       },
       "model": "better_tools:item/netherite_energy_vial_5"
