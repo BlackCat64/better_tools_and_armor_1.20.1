@@ -33024,6 +33024,26 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "PlayerHasEnergyVialEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_has_energy_vial_equipped",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerHasEnergyVialEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [

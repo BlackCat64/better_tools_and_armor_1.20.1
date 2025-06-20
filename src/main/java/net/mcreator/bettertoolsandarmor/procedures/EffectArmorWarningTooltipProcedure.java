@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -10,7 +8,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -38,9 +35,7 @@ public class EffectArmorWarningTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:effect_armor"))) || itemstack.getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
-				int x = 0;
-			} else {
+			if (!PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 				tooltip.add(Component.literal("\u00A7cNo Energy Vial equipped!"));
 			}
 		}
