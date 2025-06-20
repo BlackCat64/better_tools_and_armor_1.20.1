@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:WingedBoots.boots"
+      }
+    ],
+    "information": [
+      "Allows double jumping in mid-air.",
+      "Uses up Effect Energy for each jump, so an Energy Vial must be equipped with sufficient energy."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:EnrichedBlazePowder"
+      },
+      {
+        "value": "CUSTOM:SuperEnrichedBlazePowder"
+      },
+      {
+        "value": "CUSTOM:UltraEnrichedBlazePowder"
+      }
+    ],
+    "information": [
+      "Use this to fuel an Energy Vial with Effect Energy.",
+      "This is essential for using Effect Armor."
+    ]
+  }
+}

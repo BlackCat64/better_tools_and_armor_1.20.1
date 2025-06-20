@@ -13,9 +13,6 @@
         "value": "CUSTOM:PhantomBoots.boots"
       },
       {
-        "value": "CUSTOM:CactusBody.body"
-      },
-      {
         "value": "CUSTOM:HeartyBody.body"
       },
       {
@@ -40,9 +37,6 @@
         "value": "CUSTOM:IronPhantomBoots.boots"
       },
       {
-        "value": "CUSTOM:IronCactusBody.body"
-      },
-      {
         "value": "CUSTOM:IronHeartyBody.body"
       },
       {
@@ -58,9 +52,6 @@
         "value": "CUSTOM:DiamondPhantomBoots.boots"
       },
       {
-        "value": "CUSTOM:DiamondCactusBody.body"
-      },
-      {
         "value": "CUSTOM:DiamondHeartyBody.body"
       },
       {
@@ -74,15 +65,6 @@
       },
       {
         "value": "CUSTOM:DiamondBlackstoneLegs.legs"
-      },
-      {
-        "value": "CUSTOM:CryingObsidianHelmet.helmet"
-      },
-      {
-        "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
-      },
-      {
-        "value": "CUSTOM:WingedBoots.boots"
       },
       {
         "value": "CUSTOM:GlassArmor.helmet"
@@ -131,7 +113,10 @@
       "§lEffect Armor§r",
       "",
       "Applies an effect to the wearer, as long as they don't already have the effect.",
-      "If the durability cost would destroy the armor, the effect stops being applied until the armor is repaired or upgraded."
+      "An Energy Vial must be equipped to supply Effect Energy to the armor.",
+      "",
+      "When there is sufficient energy, the effect is applied every 5 seconds.",
+      "Upgraded Effect Armor pieces have lower energy costs and stronger effects."
     ]
   }
 }
