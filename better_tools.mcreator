@@ -1940,8 +1940,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronCactusBodyItem.java",
-          "src/main/resources/assets/better_tools/models/item/iron_cactus_chestplate.json"
+          "src/main/resources/assets/better_tools/models/item/iron_cactus_chestplate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IronCactusBodyItem.java"
         ]
       },
       "path": "~/Effect Armor/Cactus Shirt"
@@ -2126,8 +2126,8 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/diamond_cactus_chestplate.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCactusBodyItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondCactusBodyItem.java",
+          "src/main/resources/assets/better_tools/models/item/diamond_cactus_chestplate.json"
         ]
       },
       "path": "~/Effect Armor/Cactus Shirt"
@@ -35687,7 +35687,12 @@
       "GoldDagger",
       "DiamondDagger",
       "NetheriteDagger",
-      "BattleAxe"
+      "BattleAxe",
+      "CactusBody",
+      "DiamondCactusBody",
+      "IronCactusBody",
+      "CryingObsidianHelmet",
+      "DiamondCryingObsidianHelmet"
     ],
     "CUSTOM:BlocksTab": [
       "ChargedIceOn",
@@ -35796,11 +35801,6 @@
       "GoldCarrotArmor",
       "IronGoldCarrotHat",
       "DiamondGoldCarrotHat",
-      "CryingObsidianHelmet",
-      "DiamondCryingObsidianHelmet",
-      "CactusBody",
-      "IronCactusBody",
-      "DiamondCactusBody",
       "HeartyBody",
       "IronHeartyBody",
       "DiamondHeartyBody",

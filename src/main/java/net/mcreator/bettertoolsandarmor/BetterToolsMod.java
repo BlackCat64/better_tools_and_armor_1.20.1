@@ -482,6 +482,11 @@ public class BetterToolsMod {
 					tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 					tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
 					tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
+					tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
+					tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
+					tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
+					tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+					tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 				}).build());
 		public static final RegistryObject<CreativeModeTab> BLOCKS_TAB = REGISTRY.register("blocks_tab",
 				() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.blocks_tab")).icon(() -> new ItemStack(BetterToolsModBlocks.DARK_POLISHED_IRON_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -638,11 +643,6 @@ public class BetterToolsMod {
 					tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
 					tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
 					tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());
-					tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
-					tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
-					tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
-					tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
-					tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.HEARTY_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get());
 					tabData.accept(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get());

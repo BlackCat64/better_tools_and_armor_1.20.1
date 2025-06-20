@@ -378,6 +378,11 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
+				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
 			})
 
 					.build());
@@ -492,11 +497,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
 				tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());
-				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
-				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.HEARTY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get());

@@ -12,7 +12,7 @@
     "textureBoots": "",
     "creativeTabs": [
       {
-        "value": "CUSTOM:EffectArmorTab"
+        "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
     "armorTextureFile": "diamond_crying_",

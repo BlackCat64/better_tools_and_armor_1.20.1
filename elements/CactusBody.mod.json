@@ -12,7 +12,7 @@
     "textureBoots": "",
     "creativeTabs": [
       {
-        "value": "CUSTOM:EffectArmorTab"
+        "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
     "armorTextureFile": "cactus_",
@@ -60,6 +60,30 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 8,
     "damageValueHelmet": 1,
     "damageValueBody": 4,
