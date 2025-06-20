@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "ultra_enriched_blaze_powder",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": "CUSTOM:SuperEnrichedBlazePowder"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UltraEnrichedBlazePowder"
+    },
+    "name": "ultra_enriched_blaze_powder_recipe",
+    "namespace": "mod"
+  }
+}

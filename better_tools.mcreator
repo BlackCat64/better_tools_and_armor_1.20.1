@@ -32899,6 +32899,45 @@
         ]
       },
       "path": "~/Effect Armor/Energy Vial GUI"
+    },
+    {
+      "name": "EnrichedBlazePowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_blaze_powder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/enriched_blaze_powder_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "SuperEnrichedBlazePowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_enriched_blaze_powder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/super_enriched_blaze_powder_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "UltraEnrichedBlazePowderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultra_enriched_blaze_powder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/ultra_enriched_blaze_powder_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [

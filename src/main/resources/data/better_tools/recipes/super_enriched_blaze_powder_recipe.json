@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "super_enriched_blaze_powder",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "minecraft:quartz"
+    },
+    "c": {
+      "item": "better_tools:enriched_blaze_powder"
+    }
+  },
+  "result": {
+    "item": "better_tools:super_enriched_blaze_powder",
+    "count": 1
+  }
+}
