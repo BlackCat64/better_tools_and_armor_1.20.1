@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "netherite_energy_vial",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:experience_potion"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "minecraft:glass"
+    },
+    "d": {
+      "item": "better_tools:emerald_energy_vial"
+    }
+  },
+  "result": {
+    "item": "better_tools:netherite_energy_vial",
+    "count": 1
+  }
+}

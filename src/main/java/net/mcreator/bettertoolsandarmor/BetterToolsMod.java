@@ -630,6 +630,8 @@ public class BetterToolsMod {
 		public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
 				() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.CACTUS_CHESTPLATE.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
+					tabData.accept(BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
+					tabData.accept(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
 					tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
 					tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());
 					tabData.accept(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get());

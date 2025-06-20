@@ -63,6 +63,7 @@ import net.mcreator.bettertoolsandarmor.item.RabbitBootsItem;
 import net.mcreator.bettertoolsandarmor.item.PoisonCharmItem;
 import net.mcreator.bettertoolsandarmor.item.PhantomBootsItem;
 import net.mcreator.bettertoolsandarmor.item.ObsidianStickItem;
+import net.mcreator.bettertoolsandarmor.item.NetheriteEnergyVialItem;
 import net.mcreator.bettertoolsandarmor.item.NetheriteDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.NetherDiamondSwordItem;
 import net.mcreator.bettertoolsandarmor.item.NetherDiamondShovelItem;
@@ -128,6 +129,7 @@ import net.mcreator.bettertoolsandarmor.item.EndTitaniumHoeItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumAxeItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumArmorItem;
+import net.mcreator.bettertoolsandarmor.item.EmeraldEnergyVialItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricStaffItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricNecklaceItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricCoreItem;
@@ -807,6 +809,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> ENRICHED_BLAZE_POWDER = REGISTRY.register("enriched_blaze_powder", () -> new EnrichedBlazePowderItem());
 	public static final RegistryObject<Item> SUPER_ENRICHED_BLAZE_POWDER = REGISTRY.register("super_enriched_blaze_powder", () -> new SuperEnrichedBlazePowderItem());
 	public static final RegistryObject<Item> ULTRA_ENRICHED_BLAZE_POWDER = REGISTRY.register("ultra_enriched_blaze_powder", () -> new UltraEnrichedBlazePowderItem());
+	public static final RegistryObject<Item> EMERALD_ENERGY_VIAL = REGISTRY.register("emerald_energy_vial", () -> new EmeraldEnergyVialItem());
+	public static final RegistryObject<Item> NETHERITE_ENERGY_VIAL = REGISTRY.register("netherite_energy_vial", () -> new NetheriteEnergyVialItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

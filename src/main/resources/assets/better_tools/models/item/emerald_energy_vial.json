@@ -1,0 +1,47 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "better_tools:item/emerald_energy_vial_fill_0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 1
+      },
+      "model": "better_tools:item/emerald_energy_vial_0"
+    },
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 1,
+        "better_tools:emerald_energy_vial_active": 1
+      },
+      "model": "better_tools:item/emerald_energy_vial_1"
+    },
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 6000
+      },
+      "model": "better_tools:item/emerald_energy_vial_2"
+    },
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 6000,
+        "better_tools:emerald_energy_vial_active": 1
+      },
+      "model": "better_tools:item/emerald_energy_vial_3"
+    },
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 12000
+      },
+      "model": "better_tools:item/emerald_energy_vial_4"
+    },
+    {
+      "predicate": {
+        "better_tools:emerald_energy_vial_energy": 12000,
+        "better_tools:emerald_energy_vial_active": 1
+      },
+      "model": "better_tools:item/emerald_energy_vial_5"
+    }
+  ]
+}

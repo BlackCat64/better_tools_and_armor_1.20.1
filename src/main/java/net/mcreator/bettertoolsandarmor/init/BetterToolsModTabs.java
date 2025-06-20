@@ -534,6 +534,8 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
 				tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());
 				tabData.accept(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get());
+				tabData.accept(BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
 			})
 
 					.build());

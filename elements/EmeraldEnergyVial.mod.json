@@ -1,0 +1,193 @@
+{
+  "_fv": 66,
+  "_type": "curiosbauble",
+  "definition": {
+    "renderType": 0,
+    "texture": "emerald_energy_vial_fill_0",
+    "customModelName": "Normal",
+    "name": "Emerald Energy Vial",
+    "rarity": "COMMON",
+    "slotType": "BELT",
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "creativeTab": {
+      "value": "CUSTOM:EffectArmorTab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "addSlot": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hasGlow": false,
+    "customProperties": {
+      "energy": {
+        "name": "EnergyVialEnergyValue"
+      },
+      "active": {
+        "name": "EnergyVialActive"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_1_active",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 1.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:active",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 6000.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_2_active",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 6000.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:active",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 12000.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "emerald_energy_vial_fill_3_active",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:energy",
+              "type": "number"
+            },
+            "value": 12000.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:active",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      }
+    ],
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "slotAmount": 1,
+    "onRightClickedInAir": {
+      "name": "EnergyVialInHandOpenGui"
+    },
+    "curioTick": {
+      "name": "EffectEnergyApplyCost"
+    },
+    "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": false,
+    "translateModel": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "hasModel": false,
+    "animation": "none"
+  }
+}
