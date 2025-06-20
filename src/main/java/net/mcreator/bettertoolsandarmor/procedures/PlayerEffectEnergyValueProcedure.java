@@ -13,7 +13,6 @@ public class PlayerEffectEnergyValueProcedure {
 	public static double execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return 0;
-		double energy2 = 0;
 		double[] energy = {0};
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
 			if (entity instanceof LivingEntity lv) {
