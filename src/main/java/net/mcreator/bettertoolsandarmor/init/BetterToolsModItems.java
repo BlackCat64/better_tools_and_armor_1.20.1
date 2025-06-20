@@ -21,6 +21,7 @@ import net.mcreator.bettertoolsandarmor.item.WitheredGauntletItem;
 import net.mcreator.bettertoolsandarmor.item.WingedBootsItem;
 import net.mcreator.bettertoolsandarmor.item.WardenStaffItem;
 import net.mcreator.bettertoolsandarmor.item.WardenHeadbandItem;
+import net.mcreator.bettertoolsandarmor.item.UltraEnrichedBlazePowderItem;
 import net.mcreator.bettertoolsandarmor.item.ToughNecklaceItem;
 import net.mcreator.bettertoolsandarmor.item.ToughCrystalItem;
 import net.mcreator.bettertoolsandarmor.item.TopazSwordItem;
@@ -31,6 +32,7 @@ import net.mcreator.bettertoolsandarmor.item.TopazHoeItem;
 import net.mcreator.bettertoolsandarmor.item.TopazDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.TopazAxeItem;
 import net.mcreator.bettertoolsandarmor.item.TopazArmorItem;
+import net.mcreator.bettertoolsandarmor.item.SuperEnrichedBlazePowderItem;
 import net.mcreator.bettertoolsandarmor.item.SugarClumpItem;
 import net.mcreator.bettertoolsandarmor.item.SugarBootsItem;
 import net.mcreator.bettertoolsandarmor.item.StoneDaggerItem;
@@ -113,6 +115,7 @@ import net.mcreator.bettertoolsandarmor.item.FlamingCircletItem;
 import net.mcreator.bettertoolsandarmor.item.FireStaffItem;
 import net.mcreator.bettertoolsandarmor.item.FireCoreItem;
 import net.mcreator.bettertoolsandarmor.item.ExperiencePotionItem;
+import net.mcreator.bettertoolsandarmor.item.EnrichedBlazePowderItem;
 import net.mcreator.bettertoolsandarmor.item.EnergyVialItem;
 import net.mcreator.bettertoolsandarmor.item.EnderTitaniumUpgradeSmithingTemplateItem;
 import net.mcreator.bettertoolsandarmor.item.EnderGogglesItem;
@@ -801,6 +804,9 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> WOODEN_LEGGINGS = REGISTRY.register("wooden_leggings", () -> new WoodenArmorItem.Leggings());
 	public static final RegistryObject<Item> WOODEN_BOOTS = REGISTRY.register("wooden_boots", () -> new WoodenArmorItem.Boots());
 	public static final RegistryObject<Item> ENERGY_VIAL = REGISTRY.register("energy_vial", () -> new EnergyVialItem());
+	public static final RegistryObject<Item> ENRICHED_BLAZE_POWDER = REGISTRY.register("enriched_blaze_powder", () -> new EnrichedBlazePowderItem());
+	public static final RegistryObject<Item> SUPER_ENRICHED_BLAZE_POWDER = REGISTRY.register("super_enriched_blaze_powder", () -> new SuperEnrichedBlazePowderItem());
+	public static final RegistryObject<Item> ULTRA_ENRICHED_BLAZE_POWDER = REGISTRY.register("ultra_enriched_blaze_powder", () -> new UltraEnrichedBlazePowderItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

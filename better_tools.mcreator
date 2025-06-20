@@ -32830,6 +32830,48 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnrichedBlazePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_blaze_powder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnrichedBlazePowderItem.java",
+          "src/main/resources/assets/better_tools/models/item/enriched_blaze_powder.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "SuperEnrichedBlazePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_enriched_blaze_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/super_enriched_blaze_powder.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SuperEnrichedBlazePowderItem.java"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "UltraEnrichedBlazePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultra_enriched_blaze_powder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/UltraEnrichedBlazePowderItem.java",
+          "src/main/resources/assets/better_tools/models/item/ultra_enriched_blaze_powder.json"
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
@@ -35648,7 +35690,10 @@
       "GlassArmor",
       "IronGlassArmor",
       "DiamondGlassArmor",
-      "EnergyVial"
+      "EnergyVial",
+      "EnrichedBlazePowder",
+      "SuperEnrichedBlazePowder",
+      "UltraEnrichedBlazePowder"
     ],
     "FOOD": [
       "SugarClump",
@@ -35720,6 +35765,7 @@
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "block.better_tools.white_metal_hanging_sign": "White Metal Hanging Sign",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
+      "item.better_tools.enriched_blaze_powder": "Enriched Blaze Powder",
       "block.better_tools.light_polished_iron_block": "Polished Iron Block",
       "item.minecraft.lingering_potion.effect.double_jump_potion_2": "Lingering Potion of Double Jump",
       "item.better_tools.diamond_cactus_chestplate": "Cactus Shirt",
@@ -36068,6 +36114,7 @@
       "advancements.flint_axe_adv.descr": "Craft a Flint Axe",
       "item.better_tools.topaz_helmet": "Topaz Helmet",
       "gui.better_tools.energy_vial_menu.tooltip_activate_boots_effect": "Activate boots effect",
+      "item.better_tools.super_enriched_blaze_powder": "Super Enriched Blaze Powder",
       "block.better_tools.polished_diamond_wall": "Metallic Diamond Wall",
       "advancements.pirate_adv.title": "Yarrgghhh",
       "item.better_tools.ruby_dagger": "Ruby Dagger",
@@ -36378,6 +36425,7 @@
       "advancements.topaz_gem_adv.title": "Down Under the Desert",
       "item.better_tools.experience_potion": "Potion of Experience",
       "item.better_tools.crystallite_axe_sky": "Crystallite Axe",
+      "item.better_tools.ultra_enriched_blaze_powder": "Ultra Enriched Blaze Powder",
       "item.better_tools.crystallite_axe_diamond": "Crystallite Axe",
       "attribute.better_tools.lightning_thorns_chance": "Lightning Thorns Chance",
       "enchantment.better_tools.ensorcellation.desc": "Enhances the effects of Magic Staffs",

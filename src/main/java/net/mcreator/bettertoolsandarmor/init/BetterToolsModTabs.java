@@ -531,6 +531,9 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
 				tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
+				tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());
+				tabData.accept(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get());
 			})
 
 					.build());
