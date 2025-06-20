@@ -33044,6 +33044,25 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "ResetPlayerEffectEnergyCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_player_effect_energy_cost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ResetPlayerEffectEnergyCostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
