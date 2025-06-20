@@ -209,5 +209,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_PRISMARINE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_bow_prismarine_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.BLACKSTONE_MAGMA.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.blackstone_magma_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.BARK.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.bark_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.ENERGY_VIAL.get()), new ItemStack(BetterToolsModItems.EMERALD_ENERGY_VIAL.get()), new ItemStack(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.energy_vials_info"));
 	}
 }

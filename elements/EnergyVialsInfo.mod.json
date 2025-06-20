@@ -1,0 +1,24 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:EnergyVial"
+      },
+      {
+        "value": "CUSTOM:EmeraldEnergyVial"
+      },
+      {
+        "value": "CUSTOM:NetheriteEnergyVial"
+      }
+    ],
+    "information": [
+      "Store Effect Energy in this vial to power your Effect Armor.",
+      "Access the Energy Vial Menu by pressing §3[']§r with the vial equipped, or by right-clicking with the vial in your main hand.",
+      "In this menu, you can fuel the vial with Effect Energy using Enriched Blaze Powder.",
+      "You can also configure which armor pieces this vial should power.",
+      "This allows the effects of Effect Armor to be toggled on/off freely, without needing to take the armor off!"
+    ]
+  }
+}
