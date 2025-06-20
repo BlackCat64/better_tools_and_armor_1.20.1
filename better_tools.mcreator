@@ -33004,6 +33004,26 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "GetEnergyVialCapacity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_energy_vial_capacity",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEnergyVialCapacityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
@@ -34910,6 +34930,11 @@
       "CUSTOM:CrystalliteAxeGold",
       "CUSTOM:CrystalliteShovelGold",
       "CUSTOM:CrystalliteHoeGold"
+    ],
+    "ITEMS:mod:energy_vials": [
+      "CUSTOM:EnergyVial",
+      "CUSTOM:EmeraldEnergyVial",
+      "CUSTOM:NetheriteEnergyVial"
     ],
     "ITEMS:mod:freezing_tools": [
       "CUSTOM:SapphireSword",

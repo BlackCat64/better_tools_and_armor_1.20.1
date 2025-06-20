@@ -11,6 +11,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
@@ -35,16 +37,18 @@ public class EnergyVialTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
+		double energy = 0;
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
+			energy = itemstack.getOrCreateTag().getDouble("energy");
 			tooltip.add(Component.literal(""));
-			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("energy")) + " / 18000")));
+			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(energy) + " / " + new java.text.DecimalFormat("#").format(GetEnergyVialCapacityProcedure.execute(itemstack)))));
 			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c"
 					+ new java.text.DecimalFormat("#").format((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost) + "\u00A76 / 5s")));
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost > 0) {
 				tooltip.add(Component.literal(("\u00A77Estimated Time Remaining: \u00A76" + EnergyTimeDisplayProcedure.execute(entity, itemstack))));
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
-				tooltip.add(Component.literal(("\u00A77Estimated Jumps Remaining: \u00A76" + new java.text.DecimalFormat("#").format(itemstack.getOrCreateTag().getDouble("energy") / 50))));
+				tooltip.add(Component.literal(("\u00A77Estimated Jumps Remaining: \u00A76" + new java.text.DecimalFormat("#").format(energy / 50))));
 			}
 			if (!IsWearingGlassArmorFullSetProcedure.execute(entity)) {
 				if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 2) {
