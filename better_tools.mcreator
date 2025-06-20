@@ -32872,6 +32872,33 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnergyVialFuelTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_fuel_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialFuelTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Effect Armor/Energy Vial GUI"
     }
   ],
   "variable_elements": [
@@ -34884,7 +34911,10 @@
     ],
     "ITEMS:mod:energy_vial_fuels": [
       "Items.BLAZE_POWDER",
-      "Blocks.NETHER_WART"
+      "Blocks.NETHER_WART",
+      "CUSTOM:EnrichedBlazePowder",
+      "CUSTOM:SuperEnrichedBlazePowder",
+      "CUSTOM:UltraEnrichedBlazePowder"
     ],
     "ITEMS:mod:freezing_armor": [
       "CUSTOM:SapphireArmor.helmet",

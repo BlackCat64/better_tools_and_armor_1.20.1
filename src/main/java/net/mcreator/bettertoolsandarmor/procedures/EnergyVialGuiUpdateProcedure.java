@@ -45,7 +45,13 @@ public class EnergyVialGuiUpdateProcedure {
 		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
 		energy = vial.getOrCreateTag().getDouble("energy");
 		if (energy < 18000) {
-			if (fuel.getItem() == Items.BLAZE_POWDER) {
+			if (fuel.getItem() == BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get()) {
+				energy_gain = 20000;
+			} else if (fuel.getItem() == BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get()) {
+				energy_gain = 10000;
+			} else if (fuel.getItem() == BetterToolsModItems.ENRICHED_BLAZE_POWDER.get()) {
+				energy_gain = 5000;
+			} else if (fuel.getItem() == Items.BLAZE_POWDER) {
 				energy_gain = 1000;
 			} else if (fuel.getItem() == Blocks.NETHER_WART.asItem()) {
 				energy_gain = 500;

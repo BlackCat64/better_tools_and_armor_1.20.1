@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:blaze_powder",
-    "minecraft:nether_wart"
+    "minecraft:nether_wart",
+    "better_tools:enriched_blaze_powder",
+    "better_tools:super_enriched_blaze_powder",
+    "better_tools:ultra_enriched_blaze_powder"
   ]
 }
