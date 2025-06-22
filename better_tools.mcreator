@@ -33107,6 +33107,29 @@
         "files": []
       },
       "path": "~/Effect Armor/Crying Obsidian Helmet"
+    },
+    {
+      "name": "FrozenCreeperExplodesBugfix",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_creeper_explodes_bugfix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FrozenCreeperExplodesBugfixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
     }
   ],
   "variable_elements": [
