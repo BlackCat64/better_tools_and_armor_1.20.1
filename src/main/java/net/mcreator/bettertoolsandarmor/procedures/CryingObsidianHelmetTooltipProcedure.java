@@ -34,11 +34,11 @@ public class CryingObsidianHelmetTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get()) {
 			tooltip.add(Component.literal("\u00A79Protects from death"));
 			tooltip.add(Component.literal("\u00A7cDurability Cost: All"));
-			tooltip.add(Component.literal("\u00A7cDurability Requirement: 50%"));
+			tooltip.add(Component.literal(((itemstack.getDamageValue() <= 192 ? "\u00A7a" : "\u00A7c") + "Durability Requirement: 50%")));
 		} else if (itemstack.getItem() == BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get()) {
 			tooltip.add(Component.literal("\u00A79Protects from death"));
 			tooltip.add(Component.literal("\u00A7cDurability Cost: All but 10"));
-			tooltip.add(Component.literal("\u00A7cDurability Requirement: 40%"));
+			tooltip.add(Component.literal(((itemstack.getDamageValue() <= 297 ? "\u00A7a" : "\u00A7c") + "Durability Requirement: 40%")));
 		}
 	}
 }

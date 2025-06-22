@@ -116,7 +116,8 @@
       "An Energy Vial must be equipped to supply Effect Energy to the armor.",
       "",
       "When there is sufficient energy, the effect is applied every 5 seconds.",
-      "Upgraded Effect Armor pieces have lower energy costs and stronger effects."
+      "Upgraded Effect Armor pieces have lower energy costs and stronger effects.",
+      "Wearing multiple pieces of Effect Armor at once gives a discount in energy cost."
     ]
   }
 }

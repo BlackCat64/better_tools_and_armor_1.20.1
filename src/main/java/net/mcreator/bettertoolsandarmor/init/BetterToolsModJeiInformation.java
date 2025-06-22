@@ -213,5 +213,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				List.of(new ItemStack(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get()), new ItemStack(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get()), new ItemStack(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.enriched_blaze_powder_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.WINGED_BOOTS_BOOTS.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.winged_boots_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get()), new ItemStack(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.crying_obsidian_helmet_info"));
 	}
 }

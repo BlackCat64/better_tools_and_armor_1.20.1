@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CryingObsidianHelmet.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
+      }
+    ],
+    "information": [
+      "Acts like a Totem of Undying, but worn on your head.",
+      "The helmet must have enough durability remaining for the effect to work.",
+      "Upgrade it with diamonds to prevent the helmet from breaking when the effect is used."
+    ]
+  }
+}
