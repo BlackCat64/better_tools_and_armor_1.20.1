@@ -33176,6 +33176,17 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "MysticPotionInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -36980,6 +36991,7 @@
       "advancements.unlock_metal_sign_recipes.descr": "Unlocks all metal sign recipes",
       "block.better_tools.polished_amethyst_block": "Metallic Amethyst Block",
       "item.better_tools.crystallite_armor_emerald_chestplate": "Crystallite Chestplate",
+      "jei.better_tools.mystic_potion_info": "Use this potion to brew powerful utility potions.\nApplies a random effect for up to 30s when consumed.\nCareful - the effects may be helpful or harmful!",
       "block.better_tools.polished_topaz_slab": "Metallic Topaz Slab",
       "jei.better_tools.supplementaries_urns_info": "If Supplementaries is installed:\nCan drop from Cave Urns.",
       "jei.better_tools.crystallite_bow_nether_diamond_info": "If Tipped Arrows are used:\nSummons a Lingering Potion at the explosion\u0027s center.",

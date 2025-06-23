@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:MysticPotion"
+      }
+    ],
+    "information": [
+      "Use this potion to brew powerful utility potions.",
+      "Applies a random effect for up to 30s when consumed.",
+      "Careful - the effects may be helpful or harmful!"
+    ]
+  }
+}
