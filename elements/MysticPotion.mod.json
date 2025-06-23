@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:BetterToolsAndArmorMisc"
+      },
+      {
+        "value": "FOOD"
       }
     ],
     "stackSize": 16,
@@ -29,7 +32,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§5Random (00:??)"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -54,6 +59,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "eat"
+    "animation": "drink"
   }
 }

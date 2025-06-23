@@ -33172,10 +33172,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -35605,13 +35601,13 @@
       "DescensionPotion",
       "RecallPotion",
       "LostSoulsPotion",
+      "MysticPotion",
       "DiamondApple",
       "FireStaff",
       "IceStaff",
       "ElectricStaff",
       "WardenStaff",
-      "GuardianStaff",
-      "MysticPotion"
+      "GuardianStaff"
     ],
     "COMBAT": [
       "WoodenArmor",
@@ -36025,7 +36021,8 @@
       "AscensionPotion",
       "DescensionPotion",
       "RecallPotion",
-      "LostSoulsPotion"
+      "LostSoulsPotion",
+      "MysticPotion"
     ]
   },
   "language_map": {

@@ -51,13 +51,13 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
 				tabData.accept(BetterToolsModItems.RECALL_POTION.get());
 				tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
+				tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_APPLE.get());
 				tabData.accept(BetterToolsModItems.FIRE_STAFF.get());
 				tabData.accept(BetterToolsModItems.ICE_STAFF.get());
 				tabData.accept(BetterToolsModItems.ELECTRIC_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
-				tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
 			})
 
 					.build());
@@ -566,6 +566,7 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.DESCENSION_POTION.get());
 			tabData.accept(BetterToolsModItems.RECALL_POTION.get());
 			tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
+			tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
 		}
 	}
 }
