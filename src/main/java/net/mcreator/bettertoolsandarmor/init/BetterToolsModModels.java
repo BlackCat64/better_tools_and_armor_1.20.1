@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.bettertoolsandarmor.client.model.Modellightning_staff_projectile;
 import net.mcreator.bettertoolsandarmor.client.model.Modelice_staff_projectile;
+import net.mcreator.bettertoolsandarmor.client.model.Modelgolden_carrot_hat;
 import net.mcreator.bettertoolsandarmor.client.model.Modelfire_staff_projectile;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -19,6 +20,7 @@ public class BetterToolsModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelfire_staff_projectile.LAYER_LOCATION, Modelfire_staff_projectile::createBodyLayer);
 		event.registerLayerDefinition(Modelice_staff_projectile.LAYER_LOCATION, Modelice_staff_projectile::createBodyLayer);
+		event.registerLayerDefinition(Modelgolden_carrot_hat.LAYER_LOCATION, Modelgolden_carrot_hat::createBodyLayer);
 		event.registerLayerDefinition(Modellightning_staff_projectile.LAYER_LOCATION, Modellightning_staff_projectile::createBodyLayer);
 	}
 }

@@ -4,7 +4,7 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "bcb",
+    "bcd",
     " a "
   ],
   "key": {
@@ -12,10 +12,13 @@
       "item": "minecraft:lapis_lazuli"
     },
     "b": {
-      "item": "minecraft:nether_wart"
+      "item": "minecraft:brown_mushroom"
     },
     "c": {
       "item": "better_tools:super_enriched_blaze_powder"
+    },
+    "d": {
+      "item": "minecraft:sugar"
     }
   },
   "result": {
