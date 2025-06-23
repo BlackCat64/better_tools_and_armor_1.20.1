@@ -42,7 +42,8 @@ public class EnergyVialTooltipProcedure {
 			energy = itemstack.getOrCreateTag().getDouble("energy");
 			tooltip.add(Component.literal(""));
 			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(energy) + " / " + new java.text.DecimalFormat("#").format(GetEnergyVialCapacityProcedure.execute(itemstack)))));
-			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c" + new java.text.DecimalFormat("#").format(CalculateEffectEnergyCostProcedure.execute(entity, itemstack)) + "\u00A76 / 5s")));
+			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c"
+					+ new java.text.DecimalFormat("#").format((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost) + "\u00A76 / 5s")));
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost > 0) {
 				tooltip.add(Component.literal(("\u00A77Estimated Time Remaining: \u00A76" + EnergyTimeDisplayProcedure.execute(entity, itemstack))));
 			}

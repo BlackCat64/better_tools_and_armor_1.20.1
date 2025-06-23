@@ -13,22 +13,12 @@ public class EffectEnergyApplyCostProcedure {
 			return;
 		double timer = 0;
 		double absorption_limit = 0;
-		if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 4 && IsWearingGlassArmorFullSetProcedure.execute(entity)) {
-			{
-				double _setval = GlassArmorEnergyCostProcedure.execute(entity);
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.effect_energy_cost = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else {
-			{
-				double _setval = CalculateEffectEnergyCostProcedure.execute(entity, itemstack);
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.effect_energy_cost = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
+		{
+			double _setval = CalculateEffectEnergyCostProcedure.execute(entity, itemstack);
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.effect_energy_cost = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 		if (EnergyVialActiveProcedure.execute(entity, itemstack) > 0) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_timer <= 0) {

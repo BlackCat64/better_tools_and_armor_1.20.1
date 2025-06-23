@@ -33187,6 +33187,30 @@
         "files": []
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "StandardEffectArmorEnergyCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_effect_armor_energy_cost",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StandardEffectArmorEnergyCostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
