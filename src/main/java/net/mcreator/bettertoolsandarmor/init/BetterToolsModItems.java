@@ -75,6 +75,7 @@ import net.mcreator.bettertoolsandarmor.item.NetherDiamondAxeItem;
 import net.mcreator.bettertoolsandarmor.item.NetherDiamondArmorItem;
 import net.mcreator.bettertoolsandarmor.item.NatureRingItem;
 import net.mcreator.bettertoolsandarmor.item.NatureCrystalItem;
+import net.mcreator.bettertoolsandarmor.item.MysticPotionItem;
 import net.mcreator.bettertoolsandarmor.item.MagmaBodyItem;
 import net.mcreator.bettertoolsandarmor.item.MagicRingItem;
 import net.mcreator.bettertoolsandarmor.item.MagicCrystalItem;
@@ -811,6 +812,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> ULTRA_ENRICHED_BLAZE_POWDER = REGISTRY.register("ultra_enriched_blaze_powder", () -> new UltraEnrichedBlazePowderItem());
 	public static final RegistryObject<Item> EMERALD_ENERGY_VIAL = REGISTRY.register("emerald_energy_vial", () -> new EmeraldEnergyVialItem());
 	public static final RegistryObject<Item> NETHERITE_ENERGY_VIAL = REGISTRY.register("netherite_energy_vial", () -> new NetheriteEnergyVialItem());
+	public static final RegistryObject<Item> MYSTIC_POTION = REGISTRY.register("mystic_potion", () -> new MysticPotionItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

@@ -34,8 +34,9 @@ public class BetterToolsModBrewingRecipes implements IModPlugin {
 		List<ItemStack> ingredientStack = new ArrayList<>();
 		List<ItemStack> inputStack = new ArrayList<>();
 		ingredientStack.add(new ItemStack(Items.EXPERIENCE_BOTTLE));
-		PotionUtils.setPotion(potion, Potions.AWKWARD);
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get())));
+		inputStack.add(new ItemStack(BetterToolsModItems.MYSTIC_POTION.get()));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(BetterToolsModItems.EXPERIENCE_POTION.get())));
+		inputStack.clear();
 		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(BetterToolsModBlocks.FOUR_LEAF_CLOVER.get()));
 		PotionUtils.setPotion(potion, Potions.AWKWARD);
@@ -217,6 +218,10 @@ public class BetterToolsModBrewingRecipes implements IModPlugin {
 		inputStack.add(new ItemStack(BetterToolsModItems.RECALL_POTION.get()));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())));
 		inputStack.clear();
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get()));
+		PotionUtils.setPotion(potion, Potions.WATER);
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(BetterToolsModItems.MYSTIC_POTION.get())));
 		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}

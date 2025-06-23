@@ -33130,6 +33130,56 @@
         ]
       },
       "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "MysticPotion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/mystic_potion.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/MysticPotionItem.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "MysticPotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/MysticPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "MysticPotionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_potion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MysticPotionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
@@ -35560,7 +35610,8 @@
       "IceStaff",
       "ElectricStaff",
       "WardenStaff",
-      "GuardianStaff"
+      "GuardianStaff",
+      "MysticPotion"
     ],
     "COMBAT": [
       "WoodenArmor",
@@ -35984,6 +36035,7 @@
       "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
       "item.better_tools.flint_hoe": "Flint Hoe",
       "item.better_tools.curing_charm": "§6Curing Charm",
+      "item.better_tools.mystic_potion": "Mystic Potion",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
       "item.better_tools.poison_charm": "§5Poison Charm",
       "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",

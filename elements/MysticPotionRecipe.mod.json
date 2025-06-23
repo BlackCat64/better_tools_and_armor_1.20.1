@@ -11,15 +11,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "CUSTOM:MysticPotion"
+      "value": "POTION:WATER"
     },
     "brewingIngredientStack": {
-      "value": "Items.EXPERIENCE_BOTTLE"
+      "value": "CUSTOM:UltraEnrichedBlazePowder"
     },
     "brewingReturnStack": {
-      "value": "CUSTOM:ExperiencePotion"
+      "value": "CUSTOM:MysticPotion"
     },
-    "name": "experience_potion_recipe",
+    "name": "mystic_potion_recipe",
     "namespace": "mod"
   }
 }

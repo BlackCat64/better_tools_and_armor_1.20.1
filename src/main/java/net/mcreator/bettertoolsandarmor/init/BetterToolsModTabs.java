@@ -57,6 +57,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.ELECTRIC_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
+				tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
 			})
 
 					.build());
