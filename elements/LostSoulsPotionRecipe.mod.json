@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:AWKWARD"
+      "value": "CUSTOM:MysticPotion"
     },
     "brewingIngredientStack": {
       "value": "Items.ECHO_SHARD"
