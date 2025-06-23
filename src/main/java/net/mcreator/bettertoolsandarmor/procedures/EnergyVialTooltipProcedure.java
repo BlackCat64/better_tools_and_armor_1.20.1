@@ -56,6 +56,7 @@ public class EnergyVialTooltipProcedure {
 					tooltip.add(Component.literal("\u00A773-piece bonus: \u00A7a1/2 Energy Cost"));
 				}
 			}
+			tooltip.add(Component.literal("\u00A78Press \u00A77[V]\u00A78 while equipped to access menu"));
 		}
 	}
 }

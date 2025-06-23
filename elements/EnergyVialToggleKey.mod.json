@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "APOSTROPHE",
+    "triggerKey": "V",
     "keyBindingName": "Energy Vial Menu",
     "keyBindingCategoryKey": "better_tools",
     "onKeyPressed": {

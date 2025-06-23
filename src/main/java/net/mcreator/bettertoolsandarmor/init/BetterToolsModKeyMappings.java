@@ -81,7 +81,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_APOSTROPHE, "key.categories.better_tools") {
+	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_V, "key.categories.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override

@@ -443,7 +443,7 @@
   "block.better_tools.light_polished_emerald_trapdoor": "Metallic Emerald Trapdoor",
   "gui.better_tools.attributes_viewer.label_00001": "0.00",
   "block.better_tools.light_polished_amethyst_trapdoor": "Light Metallic Amethyst Trapdoor",
-  "jei.better_tools.energy_vials_info": "Store Effect Energy in this vial to power your Effect Armor.\nAccess the Energy Vial Menu by pressing §3[\u0027]§r with the vial equipped, or by right-clicking with the vial in your main hand.\nIn this menu, you can fuel the vial with Effect Energy using Enriched Blaze Powder.\nYou can also configure which armor pieces this vial should power.\nThis allows the effects of Effect Armor to be toggled on/off freely, without needing to take the armor off!",
+  "jei.better_tools.energy_vials_info": "Store Effect Energy in this vial to power your Effect Armor.\nAccess the Energy Vial Menu by pressing §3[V]§r with the vial equipped, or by right-clicking with the vial in your main hand.\nIn this menu, you can fuel the vial with Effect Energy using Enriched Blaze Powder.\nYou can also configure which armor pieces this vial should power.\nThis allows the effects of Effect Armor to be toggled on/off freely, without needing to take the armor off!",
   "item.better_tools.sugar_clump": "Sugar Clump",
   "gui.better_tools.attributes_viewer.label_armor": "Armor",
   "item.better_tools.sugar_boots": "Sugar Boots",
