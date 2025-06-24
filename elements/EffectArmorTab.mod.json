@@ -4,7 +4,7 @@
   "definition": {
     "name": "BT+A - Effect Armor",
     "icon": {
-      "value": "CUSTOM:CactusBody.body"
+      "value": "CUSTOM:GoldCarrotArmor.helmet"
     },
     "showSearch": false
   }
