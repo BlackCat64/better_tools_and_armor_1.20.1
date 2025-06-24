@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "better_tools:emerald_energy_vial"
+    },
+    "title": {
+      "translate": "advancements.emerald_energy_vial_adv.title"
+    },
+    "description": {
+      "translate": "advancements.emerald_energy_vial_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "emerald_energy_vial_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "better_tools:effect_armor_full_set_adv"
+}

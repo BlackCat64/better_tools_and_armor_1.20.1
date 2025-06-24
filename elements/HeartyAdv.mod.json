@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Hearty Fella",
-    "achievementDescription": "Wear a Hearty Shirt",
+    "achievementDescription": "Gain Absorption health from wearing a Hearty Shirt",
     "achievementIcon": {
       "value": "CUSTOM:HeartyBody.body"
     },

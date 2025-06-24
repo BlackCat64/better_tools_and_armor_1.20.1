@@ -5,7 +5,7 @@
     "achievementName": "BT+A - Effect Armor",
     "achievementDescription": "Advancements to do with Effect Armor",
     "achievementIcon": {
-      "value": "CUSTOM:GoldCarrotArmor.helmet"
+      "value": "CUSTOM:MagmaBody.body"
     },
     "background": "blackstone_magma.png",
     "disableDisplay": false,

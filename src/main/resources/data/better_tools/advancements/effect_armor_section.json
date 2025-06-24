@@ -2,7 +2,7 @@
   "display": {
     "background": "better_tools:textures/screens/blackstone_magma.png",
     "icon": {
-      "item": "better_tools:gold_carrot_helmet"
+      "item": "better_tools:magma_chestplate"
     },
     "title": {
       "translate": "advancements.effect_armor_section.title"

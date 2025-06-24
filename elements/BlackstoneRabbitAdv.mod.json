@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Resistant Rabbit",
-    "achievementDescription": "Wear Blackstone Leggings and Rabbit Boots at the same time",
+    "achievementDescription": "Gain effects from wearing both Blackstone Leggings and Rabbit Boots at the same time",
     "achievementIcon": {
       "value": "CUSTOM:BlackstoneLegs.legs"
     },

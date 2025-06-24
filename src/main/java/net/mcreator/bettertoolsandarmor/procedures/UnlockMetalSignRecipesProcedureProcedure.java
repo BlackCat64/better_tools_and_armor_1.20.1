@@ -51,9 +51,7 @@ public class UnlockMetalSignRecipesProcedureProcedure {
 							_player.getAdvancements().award(_adv, criteria);
 					}
 				}
-			}
-			if (!(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel
-					&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:unlock_metal_sign_recipes"))).isDone())) {
+			} else {
 				{
 					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
 					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);

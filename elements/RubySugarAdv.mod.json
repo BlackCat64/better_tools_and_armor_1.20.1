@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "More Speed, More Haste",
-    "achievementDescription": "Wear Ruby Leggings and Sugar Boots at the same time",
+    "achievementDescription": "Gain effects from wearing both Ruby Leggings and Sugar Boots at the same time",
     "achievementIcon": {
       "value": "CUSTOM:SugarBoots.boots"
     },

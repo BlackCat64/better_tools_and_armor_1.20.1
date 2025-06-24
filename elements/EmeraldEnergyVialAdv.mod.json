@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Effect Emperor",
-    "achievementDescription": "Craft every piece of Iron Plated Effect Armor (auto-grants previous)",
+    "achievementName": "Effect Engineer",
+    "achievementDescription": "Power 4 pieces of Effect Armor at once with an Emerald Energy Vial (or better)",
     "achievementIcon": {
-      "value": "CUSTOM:IronCactusBody.body"
+      "value": "CUSTOM:EmeraldEnergyVial"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -15,10 +15,10 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 75,
+    "rewardXP": 20,
     "achievementType": "goal",
     "parent": {
-      "value": "CUSTOM:AllEffectArmorAdv"
+      "value": "CUSTOM:EffectArmorFullSetAdv"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }

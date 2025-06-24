@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Night Phantom",
-    "achievementDescription": "Wear a Golden Carrot Hat and Phantom Boots at the same time",
+    "achievementDescription": "Gain effects from wearing both a Golden Carrot Hat and Phantom Boots at the same time",
     "achievementIcon": {
       "value": "CUSTOM:PhantomBoots.boots"
     },

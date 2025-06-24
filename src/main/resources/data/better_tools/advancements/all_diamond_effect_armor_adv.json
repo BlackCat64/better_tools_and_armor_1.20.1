@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "better_tools:diamond_crying_obsidian_helmet"
+      "item": "better_tools:netherite_energy_vial"
     },
     "title": {
       "translate": "advancements.all_diamond_effect_armor_adv.title"
@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 200
+    "experience": 100
   },
-  "parent": "better_tools:all_iron_effect_armor_adv"
+  "parent": "better_tools:emerald_energy_vial_adv"
 }

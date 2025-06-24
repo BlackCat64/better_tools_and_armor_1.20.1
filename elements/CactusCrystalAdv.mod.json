@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Spiky Swimmer",
-    "achievementDescription": "Wear a Cactus Shirt and Crystal Leggings at the same time",
+    "achievementDescription": "Wear a Cactus Shirt and gain an effect from wearing Crystal Leggings at the same time",
     "achievementIcon": {
       "value": "CUSTOM:CactusBody.body"
     },

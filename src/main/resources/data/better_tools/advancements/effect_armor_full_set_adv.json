@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "better_tools:ruby_leggings"
+      "item": "better_tools:energy_vial"
     },
     "title": {
-      "translate": "advancements.all_effect_armor_adv.title"
+      "translate": "advancements.effect_armor_full_set_adv.title"
     },
     "description": {
-      "translate": "advancements.all_effect_armor_adv.descr"
+      "translate": "advancements.effect_armor_full_set_adv.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "all_effect_armor_adv_0": {
+    "effect_armor_full_set_adv_0": {
       "trigger": "minecraft:impossible"
     }
   },

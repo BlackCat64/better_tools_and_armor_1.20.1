@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Effect Master",
-    "achievementDescription": "Obtain one of every type of base level Effect Armor",
+    "achievementName": "Effect Enthusiast",
+    "achievementDescription": "Gain effects from wearing 4 pieces of Effect Armor at once.",
     "achievementIcon": {
-      "value": "CUSTOM:RubyArmor.legs"
+      "value": "CUSTOM:EnergyVial"
     },
     "background": "Default",
     "disableDisplay": false,
