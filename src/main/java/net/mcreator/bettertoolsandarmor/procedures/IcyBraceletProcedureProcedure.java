@@ -47,6 +47,7 @@ public class IcyBraceletProcedureProcedure {
 			return;
 		double time = 0;
 		double chance = 0;
+		double rand = 0;
 		if (!(damagesource.is(DamageTypes.THORNS) || damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns")))) && immediatesourceentity instanceof LivingEntity) {
 			if (immediatesourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ICY_BRACELET.get(), lv).isPresent() : false) {
 				if (!((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:freezing_tools")))
@@ -63,7 +64,8 @@ public class IcyBraceletProcedureProcedure {
 					if (entity instanceof LivingEntity && ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 						chance = chance + ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 					}
-					if (Math.random() < chance) {
+					rand = Math.random();
+					if (rand < chance) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) time, 0, false, false));
 						if (world instanceof Level _level) {
