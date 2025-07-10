@@ -58,18 +58,6 @@ public class EnergyVialTooltipProcedure {
 				}
 			}
 			tooltip.add(Component.literal("\u00A78Press \u00A77[V]\u00A78 while equipped to access menu"));
-			if (itemstack.getOrCreateTag().getBoolean("helmet_active")) {
-				tooltip.add(Component.literal("Helmet"));
-			}
-			if (itemstack.getOrCreateTag().getBoolean("chestplate_active")) {
-				tooltip.add(Component.literal("Chestplate"));
-			}
-			if (itemstack.getOrCreateTag().getBoolean("leggings_active")) {
-				tooltip.add(Component.literal("Leggings"));
-			}
-			if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
-				tooltip.add(Component.literal("Boots"));
-			}
 		}
 	}
 }
