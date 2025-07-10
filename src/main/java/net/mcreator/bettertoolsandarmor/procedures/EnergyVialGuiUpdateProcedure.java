@@ -34,7 +34,11 @@ public class EnergyVialGuiUpdateProcedure {
 		ItemStack vial = ItemStack.EMPTY;
 		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
-		energy = vial.getOrCreateTag().getDouble("energy");
+		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
+			energy = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().getDouble("energy");
+		} else {
+			energy = vial.getOrCreateTag().getDouble("energy");
+		}
 		max_energy = GetEnergyVialCapacityProcedure.execute(vial);
 		if (energy < max_energy) {
 			if (fuel.getItem() == BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get()) {
