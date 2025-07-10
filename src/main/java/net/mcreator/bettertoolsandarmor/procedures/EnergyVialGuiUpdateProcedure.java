@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -9,15 +10,17 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.gui.components.Checkbox;
 
+import net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSyncMessage;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
 public class EnergyVialGuiUpdateProcedure {
-	public static void execute(Entity entity, HashMap guistate) {
+	public static void execute(LevelAccessor world, Entity entity, HashMap guistate) {
 		if (entity == null || guistate == null)
 			return;
 		double energy = 0;
@@ -48,14 +51,17 @@ public class EnergyVialGuiUpdateProcedure {
 			fuel.shrink(1);
 			vial.getOrCreateTag().putDouble("energy", Math.min(energy + energy_gain, max_energy));
 		}
-		helmet_active = guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected();
-		chestplate_active = guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected();
-		leggings_active = guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected();
-		boots_active = guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected();
-		vial.getOrCreateTag().putBoolean("helmet_active", helmet_active);
-		vial.getOrCreateTag().putBoolean("chestplate_active", chestplate_active);
-		vial.getOrCreateTag().putBoolean("leggings_active", leggings_active);
-		vial.getOrCreateTag().putBoolean("boots_active", boots_active);
+		if (world.isClientSide()) {
+			helmet_active = guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected();
+			chestplate_active = guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected();
+			leggings_active = guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected();
+			boots_active = guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected();
+			vial.getOrCreateTag().putBoolean("helmet_active", helmet_active);
+			vial.getOrCreateTag().putBoolean("chestplate_active", chestplate_active);
+			vial.getOrCreateTag().putBoolean("leggings_active", leggings_active);
+			vial.getOrCreateTag().putBoolean("boots_active", boots_active);
+			BetterToolsMod.PACKET_HANDLER.sendToServer(new EnergyVialGuiSyncMessage(helmet_active, chestplate_active, leggings_active, boots_active)); // Send data to server, to avoid desync issues
+		}
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			{
 				CompoundTag _nbtTag = vial.getTag();

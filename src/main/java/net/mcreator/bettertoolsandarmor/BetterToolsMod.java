@@ -10,6 +10,7 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.util.thread.SidedThreadGroups;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,6 +30,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.Sheets;
 
 import net.mcreator.bettertoolsandarmor.world.features.StructureFeature;
+import net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSyncMessage;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModWoodTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModVillagerProfessions;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModTabs;
@@ -95,10 +97,21 @@ public class BetterToolsMod {
 			// Start of user code block mod init
 		}
 		BetterToolsModBlockEntities.REGISTRY.register(bus2);
+		bus2.addListener(this::commonSetup);
 		// End of user code block mod init
 	}
 
 	// Start of user code block mod methods
+	public static void registerMessages() {
+		addNetworkMessage(EnergyVialGuiSyncMessage.class, EnergyVialGuiSyncMessage::buffer, EnergyVialGuiSyncMessage::decode, EnergyVialGuiSyncMessage::handler);
+	}
+
+	private void commonSetup(final FMLCommonSetupEvent event) {
+		event.enqueueWork(() -> {
+			registerMessages();
+		});
+	}
+
 	@Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientModEvents {
 		@SubscribeEvent
