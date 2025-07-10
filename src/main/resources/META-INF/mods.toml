@@ -28,12 +28,6 @@ description="Adds many new ores and resources which improve the progression and 
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.better_tools]]
-    modId="jei"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.better_tools]]
     modId="curios_api"

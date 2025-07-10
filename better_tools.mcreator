@@ -37502,10 +37502,11 @@
     "serverSideOnly": false,
     "modPicture": "new_mod_logo_curseforge",
     "requiredMods": [
-      "curios",
+      "curios"
+    ],
+    "dependencies": [
       "jei"
     ],
-    "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
       "curios_api",
