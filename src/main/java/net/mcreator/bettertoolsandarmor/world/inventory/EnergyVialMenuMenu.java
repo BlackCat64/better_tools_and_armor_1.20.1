@@ -335,7 +335,7 @@ public class EnergyVialMenuMenu extends AbstractContainerMenu implements Supplie
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			EnergyVialGuiUpdateProcedure.execute(world, entity, guistate);
+			EnergyVialGuiUpdateProcedure.execute(entity, guistate);
 		}
 	}
 }

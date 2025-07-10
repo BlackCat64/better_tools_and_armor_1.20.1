@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -24,7 +22,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
@@ -36,6 +33,7 @@ public class EnergyVialOpenGuiProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		ItemStack vial = ItemStack.EMPTY;
 		if (!(entity instanceof Player _plr0 && _plr0.containerMenu instanceof EnergyVialMenuMenu)) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = new BlockPos(0, -65, 0);
@@ -51,61 +49,19 @@ public class EnergyVialOpenGuiProcedure {
 					}
 				}, _bpos);
 			}
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ENERGY_VIAL.get(), lv).isPresent() : false) {
-				if (entity instanceof LivingEntity lv) {
-					CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.ENERGY_VIAL.get()).forEach(item -> {
-						ItemStack itemstackiterator = item.stack();
-						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator.copy();
-							_setstack.setCount(1);
-							((Slot) _slots.get(1)).set(_setstack);
-							_player.containerMenu.broadcastChanges();
-						}
-						{
-							ItemStack _setval = itemstackiterator;
-							entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.energy_vial_to_update = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-					});
+			if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
+				vial = GetEquippedVialProcedure.execute(world, entity);
+				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+					ItemStack _setstack = vial.copy();
+					_setstack.setCount(1);
+					((Slot) _slots.get(1)).set(_setstack);
+					_player.containerMenu.broadcastChanges();
 				}
-			} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EMERALD_ENERGY_VIAL.get(), lv).isPresent() : false) {
-				if (entity instanceof LivingEntity lv) {
-					CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.EMERALD_ENERGY_VIAL.get()).forEach(item -> {
-						ItemStack itemstackiterator = item.stack();
-						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator.copy();
-							_setstack.setCount(1);
-							((Slot) _slots.get(1)).set(_setstack);
-							_player.containerMenu.broadcastChanges();
-						}
-						{
-							ItemStack _setval = itemstackiterator;
-							entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.energy_vial_to_update = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-					});
-				}
-			} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get(), lv).isPresent() : false) {
-				if (entity instanceof LivingEntity lv) {
-					CuriosApi.getCuriosHelper().findCurios(lv, BetterToolsModItems.NETHERITE_ENERGY_VIAL.get()).forEach(item -> {
-						ItemStack itemstackiterator = item.stack();
-						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator.copy();
-							_setstack.setCount(1);
-							((Slot) _slots.get(1)).set(_setstack);
-							_player.containerMenu.broadcastChanges();
-						}
-						{
-							ItemStack _setval = itemstackiterator;
-							entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.energy_vial_to_update = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
+				{
+					ItemStack _setval = vial;
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.energy_vial_to_update = _setval;
+						capability.syncPlayerVariables(entity);
 					});
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
