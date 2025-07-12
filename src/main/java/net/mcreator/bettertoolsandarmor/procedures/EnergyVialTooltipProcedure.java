@@ -50,6 +50,9 @@ public class EnergyVialTooltipProcedure {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
 				tooltip.add(Component.literal(("\u00A77Estimated Jumps Remaining: \u00A76" + new java.text.DecimalFormat("#").format(energy / 50))));
 			}
+			tooltip.add(Component.literal(
+					("\u00A77Active: " + (itemstack.getOrCreateTag().getBoolean("helmet_active") ? "\u00A7a" : "\u00A7c") + "\uD83E\uDE96 " + (itemstack.getOrCreateTag().getBoolean("chestplate_active") ? "\u00A7a" : "\u00A7c") + "\uD83D\uDC55 "
+							+ (itemstack.getOrCreateTag().getBoolean("leggings_active") ? "\u00A7a" : "\u00A7c") + "\uD83D\uDC56 " + (itemstack.getOrCreateTag().getBoolean("boots_active") ? "\u00A7a" : "\u00A7c") + "\uD83E\uDD7E " + "\u00A7r")));
 			if (!IsWearingGlassArmorFullSetProcedure.execute(entity)) {
 				if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 2) {
 					tooltip.add(Component.literal("\u00A772-piece bonus: \u00A7a2/3 Energy Cost"));
