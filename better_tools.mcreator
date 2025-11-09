@@ -33262,6 +33262,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "GetEntityTextData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_entity_text_data",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEntityTextDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "tagName",
+            "type": "string"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
