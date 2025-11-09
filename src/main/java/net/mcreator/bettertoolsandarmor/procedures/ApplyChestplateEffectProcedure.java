@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -25,20 +26,12 @@ public class ApplyChestplateEffectProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, true, false));
 		} else if (chestplate.is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))) {
 			if (HeartyShirtActiveProcedure.execute(entity)) {
-				{
-					CompoundTag dataIndex = new CompoundTag();
-					entity.saveWithoutId(dataIndex);
-					dataIndex.putDouble("AbsorptionAmount", (new Object() {
-						public double getValue() {
-							CompoundTag dataIndex = new CompoundTag();
-							entity.saveWithoutId(dataIndex);
-							return dataIndex.getDouble("AbsorptionAmount");
-						}
-					}.getValue() + 1));
-					entity.load(dataIndex);
-				}
-				if (!(entity instanceof ServerPlayer _plr6 && _plr6.level() instanceof ServerLevel
-						&& _plr6.getAdvancements().getOrStartProgress(_plr6.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"))).isDone())) {
+				CompoundTag dataIndex = new CompoundTag();
+				entity.saveWithoutId(dataIndex);
+				dataIndex.putDouble("AbsorptionAmount", ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 1));
+				entity.load(dataIndex);
+				if (!(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel
+						&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"))).isDone())) {
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
