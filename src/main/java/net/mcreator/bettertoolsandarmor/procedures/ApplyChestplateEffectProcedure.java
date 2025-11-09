@@ -11,7 +11,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
@@ -26,12 +25,9 @@ public class ApplyChestplateEffectProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, true, false));
 		} else if (chestplate.is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))) {
 			if (HeartyShirtActiveProcedure.execute(entity)) {
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				dataIndex.putDouble("AbsorptionAmount", ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 1));
-				entity.load(dataIndex);
-				if (!(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel
-						&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"))).isDone())) {
+				SetEntityNumberDataProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 1, "AbsorptionAmount");
+				if (!(entity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
+						&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"))).isDone())) {
 					if (entity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

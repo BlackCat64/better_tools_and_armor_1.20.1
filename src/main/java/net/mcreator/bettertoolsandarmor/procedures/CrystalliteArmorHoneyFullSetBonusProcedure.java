@@ -13,7 +13,6 @@ import net.minecraft.world.entity.animal.Bee;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -47,10 +46,7 @@ public class CrystalliteArmorHoneyFullSetBonusProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Bee) {
-						CompoundTag dataIndex = new CompoundTag();
-						entityiterator.saveWithoutId(dataIndex);
-						dataIndex.putDouble("AngerTime", 0);
-						entityiterator.load(dataIndex);
+						SetEntityNumberDataProcedure.execute(entityiterator, 0, "AngerTime");
 					}
 				}
 			}

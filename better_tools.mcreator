@@ -33190,6 +33190,55 @@
         ]
       },
       "path": "~/Effect Armor/Energy Vial GUI"
+    },
+    {
+      "name": "GetEntityNumberData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_entity_number_data",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEntityNumberDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "tagName",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetEntityNumberData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_entity_number_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SetEntityNumberDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "tagName",
+            "type": "string"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

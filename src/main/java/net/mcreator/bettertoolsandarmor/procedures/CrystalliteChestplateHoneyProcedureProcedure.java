@@ -11,7 +11,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -39,10 +38,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_hurt > 200) {
 				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6")) != null)) {
-					CompoundTag dataIndex = new CompoundTag();
-					entity.saveWithoutId(dataIndex);
-					dataIndex.putDouble("AbsorptionAmount", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2));
-					entity.load(dataIndex);
+					SetEntityNumberDataProcedure.execute(entity, (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2, "AbsorptionAmount");
 					if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
 							.hasModifier((new AttributeModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6"), "crystallite_chestplate_honey", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 						((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
@@ -51,10 +47,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 					if ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 3) {
 						if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_honey_absorption_timer <= 0) {
-							CompoundTag dataIndex = new CompoundTag();
-							entity.saveWithoutId(dataIndex);
-							dataIndex.putDouble("AbsorptionAmount", ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 2));
-							entity.load(dataIndex);
+							SetEntityNumberDataProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 2, "AbsorptionAmount");
 							{
 								double _setval = 400;
 								entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -72,10 +65,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 							+ Math.min(entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)));
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				dataIndex.putDouble("AbsorptionAmount", 0);
-				entity.load(dataIndex);
+				SetEntityNumberDataProcedure.execute(entity, 0, "AbsorptionAmount");
 			}
 		}
 		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_honey_absorption_timer > 0) {
