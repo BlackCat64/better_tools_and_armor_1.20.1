@@ -4,7 +4,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -13,12 +12,7 @@ public class FrozenEffectAppliedProcedure {
 		if (entity == null)
 			return;
 		double speed = 0;
-		{
-			CompoundTag dataIndex = new CompoundTag();
-			entity.saveWithoutId(dataIndex);
-			dataIndex.putDouble("Fire", 0);
-			entity.load(dataIndex);
-		}
+		entity.clearFire();
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue();
 			{

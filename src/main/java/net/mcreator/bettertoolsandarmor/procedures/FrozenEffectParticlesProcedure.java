@@ -9,12 +9,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Display;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
 import java.util.Comparator;
 
@@ -24,12 +24,8 @@ public class FrozenEffectParticlesProcedure {
 			return;
 		Entity display = null;
 		if (entity.getRemainingFireTicks() > 0) {
-			{
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				dataIndex.putDouble("Fire", 0);
-				entity.load(dataIndex);
-			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
 		}
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
