@@ -84,9 +84,6 @@ public class BetterToolsModVariables {
 			clone.attack_damage_modifier = original.attack_damage_modifier;
 			clone.knockback_resistance = original.knockback_resistance;
 			clone.knockback_resistance_modifier = original.knockback_resistance_modifier;
-			clone.last_death_x = original.last_death_x;
-			clone.last_death_y = original.last_death_y;
-			clone.last_death_z = original.last_death_z;
 			clone.last_food_eaten = original.last_food_eaten;
 			clone.last_food_was_carbonated = original.last_food_was_carbonated;
 			if (!event.isWasDeath()) {
@@ -178,9 +175,6 @@ public class BetterToolsModVariables {
 		public ItemStack smelting_touch_item_to_smelt = ItemStack.EMPTY;
 		public ItemStack smelting_touch_item_to_drop = ItemStack.EMPTY;
 		public double ender_titanium_boots_cooldown = 0;
-		public double last_death_x = 0;
-		public double last_death_y = 0;
-		public double last_death_z = 0;
 		public double time_since_non_carbonated_food_eaten = 0;
 		public ItemStack last_food_eaten = ItemStack.EMPTY;
 		public boolean last_food_was_carbonated = false;
@@ -227,9 +221,6 @@ public class BetterToolsModVariables {
 			nbt.put("smelting_touch_item_to_smelt", smelting_touch_item_to_smelt.save(new CompoundTag()));
 			nbt.put("smelting_touch_item_to_drop", smelting_touch_item_to_drop.save(new CompoundTag()));
 			nbt.putDouble("ender_titanium_boots_cooldown", ender_titanium_boots_cooldown);
-			nbt.putDouble("last_death_x", last_death_x);
-			nbt.putDouble("last_death_y", last_death_y);
-			nbt.putDouble("last_death_z", last_death_z);
 			nbt.putDouble("time_since_non_carbonated_food_eaten", time_since_non_carbonated_food_eaten);
 			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
 			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
@@ -273,9 +264,6 @@ public class BetterToolsModVariables {
 			smelting_touch_item_to_smelt = ItemStack.of(nbt.getCompound("smelting_touch_item_to_smelt"));
 			smelting_touch_item_to_drop = ItemStack.of(nbt.getCompound("smelting_touch_item_to_drop"));
 			ender_titanium_boots_cooldown = nbt.getDouble("ender_titanium_boots_cooldown");
-			last_death_x = nbt.getDouble("last_death_x");
-			last_death_y = nbt.getDouble("last_death_y");
-			last_death_z = nbt.getDouble("last_death_z");
 			time_since_non_carbonated_food_eaten = nbt.getDouble("time_since_non_carbonated_food_eaten");
 			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
 			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
@@ -338,9 +326,6 @@ public class BetterToolsModVariables {
 					variables.smelting_touch_item_to_smelt = message.data.smelting_touch_item_to_smelt;
 					variables.smelting_touch_item_to_drop = message.data.smelting_touch_item_to_drop;
 					variables.ender_titanium_boots_cooldown = message.data.ender_titanium_boots_cooldown;
-					variables.last_death_x = message.data.last_death_x;
-					variables.last_death_y = message.data.last_death_y;
-					variables.last_death_z = message.data.last_death_z;
 					variables.time_since_non_carbonated_food_eaten = message.data.time_since_non_carbonated_food_eaten;
 					variables.last_food_eaten = message.data.last_food_eaten;
 					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;

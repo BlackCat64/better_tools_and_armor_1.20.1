@@ -5,7 +5,7 @@ import net.minecraftforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -24,7 +24,6 @@ import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -32,15 +31,30 @@ public class LostSoulsPotionProcedureProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		String death_dimension = "";
+		double death_x = 0;
+		double death_y = 0;
+		double death_z = 0;
+		double void_height = 0;
+		double i_y = 0;
+		double world_surface = 0;
 		boolean valid_spawn = false;
+		boolean found = false;
 		valid_spawn = true;
-		if ((new Object() {
-			public String getValue() {
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				return dataIndex.getCompound("LastDeathLocation").getString("dimension");
-			}
-		}.getValue()).isEmpty()) {
+		death_dimension = GetEntityTextDataInListProcedure.execute(entity, "LastDeathLocation", "dimension");
+		CompoundTag dataIndex = new CompoundTag();
+		entity.saveWithoutId(dataIndex);
+		int[] pos = dataIndex.getCompound("LastDeathLocation").getIntArray("pos");
+		death_x = pos[0] + 0.5;
+		death_y = pos[1];
+		death_z = pos[2] + 0.5;
+		if ((death_dimension).equals("minecraft:overworld")) {
+			void_height = -64;
+		} else {
+			void_height = 0;
+		}
+		world_surface = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) death_x, (int) death_z);
+		if ((death_dimension).isEmpty()) {
 			valid_spawn = false;
 			{
 				Entity _ent = entity;
@@ -49,105 +63,7 @@ public class LostSoulsPotionProcedureProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cNo previous death location found\"");
 				}
 			}
-		} else if (("ResourceKey[minecraft:dimension / " + (new Object() {
-			public String getValue() {
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				return dataIndex.getCompound("LastDeathLocation").getString("dimension");
-			}
-		}.getValue()) + "]").equals("" + entity.level().dimension())) {
-			if (world
-					.getBlockState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z))
-					.canOcclude()
-					&& world.getBlockState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y + 1,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z)).canOcclude()) {
-				valid_spawn = false;
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cLast death location is obstructed\"");
-					}
-				}
-			} else {
-				if ((world.getFluidState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x,
-						(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y,
-						(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z)).createLegacyBlock()).getBlock() == Blocks.LAVA
-						|| (world.getFluidState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x,
-								(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y,
-								(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z)).createLegacyBlock()).getBlock() == Blocks.LAVA) {
-					valid_spawn = false;
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cLast death location is in lava\"");
-						}
-					}
-				} else if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y >= 0) {
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z));
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z), _ent.getYRot(), _ent.getXRot());
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null,
-									BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_y),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-				} else {
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x), 1,
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z));
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x), 1,
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z), _ent.getYRot(), _ent.getXRot());
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null,
-									BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x, 1,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x), 1,
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
-										new Vec3(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x), 0,
-												((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z)),
-										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-1 ~ ~-1 ~1 ~ ~1 obsidian destroy");
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
-										new Vec3(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_x), 1,
-												((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_death_z)),
-										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-1 ~ ~-1 ~1 ~1 ~1 air destroy");
-				}
-			}
-		} else {
+		} else if (!("ResourceKey[minecraft:dimension / " + death_dimension + "]").equals("" + entity.level().dimension())) {
 			valid_spawn = false;
 			{
 				Entity _ent = entity;
@@ -156,18 +72,113 @@ public class LostSoulsPotionProcedureProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cLast death location is in a different dimension\"");
 				}
 			}
+		} else if (IsLocationSafeProcedure.execute(world, death_x, death_y - 1, death_z) && death_y > void_height) {
+			{
+				Entity _ent = entity;
+				_ent.teleportTo(death_x, death_y, death_z);
+				if (_ent instanceof ServerPlayer _serverPlayer)
+					_serverPlayer.connection.teleport(death_x, death_y, death_z, _ent.getYRot(), _ent.getXRot());
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+				} else {
+					_level.playLocalSound(death_x, death_y, death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+		} else {
+			i_y = Math.max(death_y, void_height);
+			while (i_y <= world_surface) {
+				if (IsLocationSafeProcedure.execute(world, death_x, i_y, death_z)) {
+					death_y = i_y + 1;
+					found = true;
+					{
+						Entity _ent = entity;
+						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly above\"");
+						}
+					}
+					break;
+				}
+				i_y = i_y + 1;
+			}
+			if (!found) {
+				i_y = death_y;
+				while (i_y >= void_height) {
+					if (IsLocationSafeProcedure.execute(world, death_x, i_y, death_z)) {
+						death_y = i_y + 1;
+						found = true;
+						{
+							Entity _ent = entity;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly below\"");
+							}
+						}
+						break;
+					}
+					i_y = i_y - 1;
+				}
+			}
+			if (death_y <= void_height) {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo(death_x, (void_height + 1), death_z);
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport(death_x, (void_height + 1), death_z, _ent.getYRot(), _ent.getXRot());
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(death_x, void_height + 1, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(death_x, (void_height + 1), death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(death_x, void_height, death_z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"fill ~-1 ~ ~-1 ~1 ~ ~1 cobblestone destroy");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(death_x, (void_height + 1), death_z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"fill ~-1 ~ ~-1 ~1 ~1 ~1 air destroy");
+			} else if (!found) {
+				valid_spawn = false;
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cCould not find a safe location to teleport to\"");
+					}
+				}
+			} else {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo(death_x, death_y, death_z);
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport(death_x, death_y, death_z, _ent.getYRot(), _ent.getXRot());
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(death_x, death_y, death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+			}
 		}
 		if (!valid_spawn) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 				BetterToolsMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-					}
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				});
 			}
