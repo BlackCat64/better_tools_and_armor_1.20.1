@@ -17,7 +17,6 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -33,46 +32,23 @@ public class RecallPotionProcedureProcedure {
 			return;
 		boolean valid_spawn = false;
 		boolean world_spawn = false;
+		String spawn_dimension = "";
 		valid_spawn = true;
-		if ((new Object() {
-			public String getValue() {
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				return dataIndex.getString("SpawnDimension");
-			}
-		}.getValue()).isEmpty()) {
+		spawn_dimension = GetEntityTextDataProcedure.execute(entity, "SpawnDimension");
+		if ((spawn_dimension).isEmpty()) {
 			valid_spawn = false;
 			world_spawn = true;
-		} else if (("ResourceKey[minecraft:dimension / " + (new Object() {
-			public String getValue() {
-				CompoundTag dataIndex = new CompoundTag();
-				entity.saveWithoutId(dataIndex);
-				return dataIndex.getString("SpawnDimension");
-			}
-		}.getValue()) + "]").equals("" + entity.level().dimension())) {
-			if (world
-					.getBlockState(BlockPos.containing(
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
-									: 0))
-					.canOcclude()
-					&& world.getBlockState(BlockPos.containing(
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
-									: 0,
-							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
-									: 0) + 1,
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
-									: 0))
-							.canOcclude()) {
+		} else if (("ResourceKey[minecraft:dimension / " + spawn_dimension + "]").equals("" + entity.level().dimension())) {
+			if (!IsLocationSafeProcedure.execute(world,
+					(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+							: 0,
+					((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+							: 0) - 1,
+					(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+							: 0)) {
 				valid_spawn = false;
 				{
 					Entity _ent = entity;
@@ -104,7 +80,7 @@ public class RecallPotionProcedureProcedure {
 								(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
 										: 0)))
-								.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip24
+								.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip17
 										? (world.getBlockState(BlockPos.containing(
 												(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 														? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
@@ -115,7 +91,7 @@ public class RecallPotionProcedureProcedure {
 												(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 														? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
 														: 0)))
-												.getValue(_getip24)
+												.getValue(_getip17)
 										: -1) > 0) {
 							{
 								int _value = (int) (((world.getBlockState(BlockPos.containing(
@@ -128,7 +104,7 @@ public class RecallPotionProcedureProcedure {
 										(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 												? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
 												: 0)))
-										.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip32
+										.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip25
 												? (world.getBlockState(BlockPos.containing((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 														? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
 														: 0,
@@ -142,7 +118,7 @@ public class RecallPotionProcedureProcedure {
 																		? _player.getRespawnPosition().getZ()
 																		: _player.level().getLevelData().getZSpawn())
 																: 0)))
-														.getValue(_getip32)
+														.getValue(_getip25)
 												: -1)
 										- 1);
 								BlockPos _pos = BlockPos.containing(
@@ -261,8 +237,7 @@ public class RecallPotionProcedureProcedure {
 				}
 			}
 		} else if (world_spawn) {
-			if (world.getBlockState(new BlockPos(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn(), world.getLevelData().getZSpawn())).canOcclude()
-					&& world.getBlockState(BlockPos.containing(world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn() + 1, world.getLevelData().getZSpawn())).canOcclude()) {
+			if (!IsLocationSafeProcedure.execute(world, world.getLevelData().getXSpawn(), world.getLevelData().getYSpawn() - 1, world.getLevelData().getZSpawn())) {
 				world_spawn = false;
 				{
 					Entity _ent = entity;
@@ -291,15 +266,15 @@ public class RecallPotionProcedureProcedure {
 		}
 		if (!(valid_spawn || world_spawn)) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(BetterToolsModItems.RECALL_POTION.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 				BetterToolsMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-					}
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(BetterToolsModItems.RECALL_POTION.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				});
 			}

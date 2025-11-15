@@ -32,14 +32,14 @@ public class LostSoulsPotionProcedureProcedure {
 		if (entity == null)
 			return;
 		String death_dimension = "";
+		boolean valid_spawn = false;
 		double death_x = 0;
 		double death_y = 0;
 		double death_z = 0;
 		double void_height = 0;
 		double i_y = 0;
 		double world_surface = 0;
-		boolean valid_spawn = false;
-		boolean found = false;
+		double safe_y = 0;
 		valid_spawn = true;
 		death_dimension = GetEntityTextDataInListProcedure.execute(entity, "LastDeathLocation", "dimension");
 		CompoundTag dataIndex = new CompoundTag();
@@ -54,6 +54,9 @@ public class LostSoulsPotionProcedureProcedure {
 			void_height = 0;
 		}
 		world_surface = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) death_x, (int) death_z);
+		if ((death_dimension).equals("minecraft:the_nether") && world_surface >= 127) {
+			world_surface = 120;
+		}
 		if ((death_dimension).isEmpty()) {
 			valid_spawn = false;
 			{
@@ -87,39 +90,12 @@ public class LostSoulsPotionProcedureProcedure {
 				}
 			}
 		} else {
-			i_y = Math.max(death_y, void_height);
-			while (i_y <= world_surface) {
-				if (IsLocationSafeProcedure.execute(world, death_x, i_y, death_z)) {
-					death_y = i_y + 1;
-					found = true;
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly above\"");
-						}
-					}
-					break;
-				}
-				i_y = i_y + 1;
+			safe_y = FindNextSafeLocationAboveProcedure.execute(world, death_x, Math.max(death_y, void_height), death_z, world_surface);
+			if (safe_y < void_height) {
+				safe_y = FindNextSafeLocationBelowProcedure.execute(world, death_x, death_y, death_z, void_height);
 			}
-			if (!found) {
-				i_y = death_y;
-				while (i_y >= void_height) {
-					if (IsLocationSafeProcedure.execute(world, death_x, i_y, death_z)) {
-						death_y = i_y + 1;
-						found = true;
-						{
-							Entity _ent = entity;
-							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly below\"");
-							}
-						}
-						break;
-					}
-					i_y = i_y - 1;
-				}
+			if (safe_y >= void_height) {
+				death_y = safe_y + 1;
 			}
 			if (death_y <= void_height) {
 				{
@@ -143,7 +119,7 @@ public class LostSoulsPotionProcedureProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(death_x, (void_height + 1), death_z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"fill ~-1 ~ ~-1 ~1 ~1 ~1 air destroy");
-			} else if (!found) {
+			} else if (safe_y < void_height) {
 				valid_spawn = false;
 				{
 					Entity _ent = entity;

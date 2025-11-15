@@ -33313,6 +33313,78 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "FindNextSafeLocationAbove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_next_safe_location_above",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FindNextSafeLocationAboveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "max_y",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "FindNextSafeLocationBelow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_next_safe_location_below",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FindNextSafeLocationBelowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "min_y",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [
