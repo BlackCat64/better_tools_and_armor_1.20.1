@@ -33385,6 +33385,78 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "FindSafeSpawnLocation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_safe_spawn_location",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FindSafeSpawnLocationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "dimension",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "GetWorldSurfaceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_world_surface_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetWorldSurfaceProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "GetWorldSurface",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_world_surface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/command/GetWorldSurfaceCommand.java"
+        ]
+      },
+      "path": "~/Consumables"
     }
   ],
   "variable_elements": [

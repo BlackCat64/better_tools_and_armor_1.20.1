@@ -5,7 +5,6 @@ import net.minecraftforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -38,7 +37,6 @@ public class LostSoulsPotionProcedureProcedure {
 		double death_z = 0;
 		double void_height = 0;
 		double i_y = 0;
-		double world_surface = 0;
 		double safe_y = 0;
 		valid_spawn = true;
 		death_dimension = GetEntityTextDataInListProcedure.execute(entity, "LastDeathLocation", "dimension");
@@ -52,10 +50,6 @@ public class LostSoulsPotionProcedureProcedure {
 			void_height = -64;
 		} else {
 			void_height = 0;
-		}
-		world_surface = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) death_x, (int) death_z);
-		if ((death_dimension).equals("minecraft:the_nether") && world_surface >= 127) {
-			world_surface = 120;
 		}
 		if ((death_dimension).isEmpty()) {
 			valid_spawn = false;
@@ -75,7 +69,7 @@ public class LostSoulsPotionProcedureProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cLast death location is in a different dimension\"");
 				}
 			}
-		} else if (IsLocationSafeProcedure.execute(world, death_x, death_y - 1, death_z) && death_y > void_height) {
+		} else if (IsLocationSafeProcedure.execute(world, death_x, death_y, death_z) && death_y > void_height) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(death_x, death_y, death_z);
@@ -90,12 +84,18 @@ public class LostSoulsPotionProcedureProcedure {
 				}
 			}
 		} else {
-			safe_y = FindNextSafeLocationAboveProcedure.execute(world, death_x, Math.max(death_y, void_height), death_z, world_surface);
-			if (safe_y < void_height) {
-				safe_y = FindNextSafeLocationBelowProcedure.execute(world, death_x, death_y, death_z, void_height);
+			safe_y = FindSafeSpawnLocationProcedure.execute(world, death_x, death_y, death_z, death_dimension);
+			if (safe_y != death_y) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly above/below\"");
+					}
+				}
 			}
 			if (safe_y >= void_height) {
-				death_y = safe_y + 1;
+				death_y = safe_y;
 			}
 			if (death_y <= void_height) {
 				{
