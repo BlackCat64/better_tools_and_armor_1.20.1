@@ -13,7 +13,6 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
@@ -44,20 +43,8 @@ public class ThunderShotLightningRodProcedure {
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(100 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator.getPersistentData().getBoolean("thunder_shot") && new Object() {
-						public boolean getValue() {
-							CompoundTag dataIndex = new CompoundTag();
-							entityiterator.saveWithoutId(dataIndex);
-							return dataIndex.getBoolean("inGround");
-						}
-					}.getValue()) {
-						if ((new Object() {
-							public String getValue() {
-								CompoundTag dataIndex = new CompoundTag();
-								entityiterator.saveWithoutId(dataIndex);
-								return dataIndex.getCompound("inBlockState").getString("Name");
-							}
-						}.getValue()).equals("minecraft:lightning_rod")) {
+					if (entityiterator.getPersistentData().getBoolean("thunder_shot") && GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
+						if ((GetEntityTextDataInListProcedure.execute(entityiterator, "inBlockState", "Name")).equals("minecraft:lightning_rod")) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
