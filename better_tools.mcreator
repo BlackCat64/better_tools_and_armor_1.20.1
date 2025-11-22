@@ -20864,19 +20864,6 @@
       "path": "~/Double Jump"
     },
     {
-      "name": "WingedBootsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "winged_boots_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/winged_boots_recipe.json"
-        ]
-      },
-      "path": "~/Effect Armor/Winged Boots"
-    },
-    {
       "name": "GuardianStaffAdv",
       "type": "achievement",
       "compiles": true,
@@ -33457,6 +33444,32 @@
         ]
       },
       "path": "~/Consumables"
+    },
+    {
+      "name": "WingedBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/winged_boots_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor/Winged Boots"
+    },
+    {
+      "name": "WingedBootsReverseRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_boots_reverse_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/winged_boots_reverse_recipe.json"
+        ]
+      },
+      "path": "~/Effect Armor/Winged Boots"
     }
   ],
   "variable_elements": [

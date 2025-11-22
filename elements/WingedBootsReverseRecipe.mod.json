@@ -4,25 +4,25 @@
   "definition": {
     "recipeType": "Smithing",
     "recipeRetstackSize": 1,
-    "group": "winged_boots",
+    "group": "winged_boots_reverse",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "CUSTOM:CrystalliteArmorSky.boots"
+      "value": "CUSTOM:WingedBoots.boots"
     },
     "smithingInputAdditionStack": {
-      "value": "Items.FEATHER"
+      "value": "Items.PHANTOM_MEMBRANE"
     },
     "smithingInputTemplateStack": {
       "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
     },
     "smithingReturnStack": {
-      "value": "CUSTOM:WingedBoots.boots"
+      "value": "CUSTOM:CrystalliteArmorSky.boots"
     },
-    "name": "winged_boots_recipe",
+    "name": "winged_boots_reverse_recipe",
     "namespace": "mod"
   }
 }

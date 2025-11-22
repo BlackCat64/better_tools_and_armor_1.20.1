@@ -4,12 +4,12 @@
     "item": "better_tools:crystallite_upgrade_smithing_template"
   },
   "base": {
-    "item": "better_tools:crystallite_armor_sky_boots"
+    "item": "better_tools:winged_boots_boots"
   },
   "addition": {
-    "item": "minecraft:feather"
+    "item": "minecraft:phantom_membrane"
   },
   "result": {
-    "item": "better_tools:winged_boots_boots"
+    "item": "better_tools:crystallite_armor_sky_boots"
   }
 }
