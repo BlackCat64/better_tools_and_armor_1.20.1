@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:glass"
+  },
+  "base": {
+    "tag": "better_tools:crystallite_bows"
+  },
+  "addition": {
+    "item": "minecraft:glass"
+  },
+  "result": {
+    "item": "better_tools:crystallite_bow"
+  }
+}

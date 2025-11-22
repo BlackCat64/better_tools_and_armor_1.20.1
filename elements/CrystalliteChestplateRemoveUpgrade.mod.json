@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "crystallite_chestplate_remove_upgrade",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "TAG:mod:crystallite_chestplates"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Blocks.GLASS"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Blocks.GLASS"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CrystalliteArmor.body"
+    },
+    "name": "crystallite_chestplate_remove_upgrade",
+    "namespace": "mod"
+  }
+}
