@@ -33470,6 +33470,24 @@
         ]
       },
       "path": "~/Effect Armor/Winged Boots"
+    },
+    {
+      "name": "GlobalTimers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "global_timers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GlobalTimersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33514,12 +33532,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "fall_time",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0.0"
     },
     {
       "name": "crystallite_amethyst_absorption_timer",
@@ -33703,6 +33715,12 @@
     },
     {
       "name": "effect_energy_cost",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "time_since_on_ground",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

@@ -36,7 +36,7 @@ public class TrackLastOnGroundPositionProcedure {
 				});
 			}
 			{
-				double _setval = Math.floor(y) + 0.5;
+				double _setval = y;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.last_on_ground_y = _setval;
 					capability.syncPlayerVariables(entity);

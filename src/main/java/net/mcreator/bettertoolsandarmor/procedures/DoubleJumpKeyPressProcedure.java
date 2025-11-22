@@ -34,12 +34,15 @@ public class DoubleJumpKeyPressProcedure {
 				&& !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt8 && _livEnt8.isFallFlying())) {
 			entity.setDeltaMovement(
 					new Vec3((entity.getDeltaMovement().x()), (0.5 + 0.1 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0)), (entity.getDeltaMovement().z())));
-			{
-				double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps - 1;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.extra_jumps = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+			if (!((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_on_ground <= 2
+					&& entity.getY() < (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y)) {
+				{
+					double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps - 1;
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.extra_jumps = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 			{
 				double _setval = 0;

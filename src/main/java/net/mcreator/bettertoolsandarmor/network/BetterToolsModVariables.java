@@ -91,7 +91,6 @@ public class BetterToolsModVariables {
 				clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
 				clone.blocks_broken_with_sculk_crystallite_pickaxe = original.blocks_broken_with_sculk_crystallite_pickaxe;
 				clone.critical_hit = original.critical_hit;
-				clone.fall_time = original.fall_time;
 				clone.crystallite_amethyst_absorption_timer = original.crystallite_amethyst_absorption_timer;
 				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
 				clone.time_since_last_attacked = original.time_since_last_attacked;
@@ -112,6 +111,7 @@ public class BetterToolsModVariables {
 				clone.effect_energy_timer = original.effect_energy_timer;
 				clone.energy_vial_to_update = original.energy_vial_to_update;
 				clone.effect_energy_cost = original.effect_energy_cost;
+				clone.time_since_on_ground = original.time_since_on_ground;
 			}
 		}
 	}
@@ -154,7 +154,6 @@ public class BetterToolsModVariables {
 		public double crystallite_emerald_heal_timer = 0.0;
 		public double blocks_broken_with_sculk_crystallite_pickaxe = 0;
 		public boolean critical_hit = false;
-		public double fall_time = 0.0;
 		public double crystallite_amethyst_absorption_timer = 300.0;
 		public double last_on_ground_x = 0;
 		public double last_on_ground_y = 0;
@@ -185,6 +184,7 @@ public class BetterToolsModVariables {
 		public double effect_energy_timer = 0;
 		public ItemStack energy_vial_to_update = ItemStack.EMPTY;
 		public double effect_energy_cost = 0;
+		public double time_since_on_ground = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -200,7 +200,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("crystallite_emerald_heal_timer", crystallite_emerald_heal_timer);
 			nbt.putDouble("blocks_broken_with_sculk_crystallite_pickaxe", blocks_broken_with_sculk_crystallite_pickaxe);
 			nbt.putBoolean("critical_hit", critical_hit);
-			nbt.putDouble("fall_time", fall_time);
 			nbt.putDouble("crystallite_amethyst_absorption_timer", crystallite_amethyst_absorption_timer);
 			nbt.putDouble("last_on_ground_x", last_on_ground_x);
 			nbt.putDouble("last_on_ground_y", last_on_ground_y);
@@ -231,6 +230,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("effect_energy_timer", effect_energy_timer);
 			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
+			nbt.putDouble("time_since_on_ground", time_since_on_ground);
 			return nbt;
 		}
 
@@ -243,7 +243,6 @@ public class BetterToolsModVariables {
 			crystallite_emerald_heal_timer = nbt.getDouble("crystallite_emerald_heal_timer");
 			blocks_broken_with_sculk_crystallite_pickaxe = nbt.getDouble("blocks_broken_with_sculk_crystallite_pickaxe");
 			critical_hit = nbt.getBoolean("critical_hit");
-			fall_time = nbt.getDouble("fall_time");
 			crystallite_amethyst_absorption_timer = nbt.getDouble("crystallite_amethyst_absorption_timer");
 			last_on_ground_x = nbt.getDouble("last_on_ground_x");
 			last_on_ground_y = nbt.getDouble("last_on_ground_y");
@@ -274,6 +273,7 @@ public class BetterToolsModVariables {
 			effect_energy_timer = nbt.getDouble("effect_energy_timer");
 			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
+			time_since_on_ground = nbt.getDouble("time_since_on_ground");
 		}
 	}
 
@@ -305,7 +305,6 @@ public class BetterToolsModVariables {
 					variables.crystallite_emerald_heal_timer = message.data.crystallite_emerald_heal_timer;
 					variables.blocks_broken_with_sculk_crystallite_pickaxe = message.data.blocks_broken_with_sculk_crystallite_pickaxe;
 					variables.critical_hit = message.data.critical_hit;
-					variables.fall_time = message.data.fall_time;
 					variables.crystallite_amethyst_absorption_timer = message.data.crystallite_amethyst_absorption_timer;
 					variables.last_on_ground_x = message.data.last_on_ground_x;
 					variables.last_on_ground_y = message.data.last_on_ground_y;
@@ -336,6 +335,7 @@ public class BetterToolsModVariables {
 					variables.effect_energy_timer = message.data.effect_energy_timer;
 					variables.energy_vial_to_update = message.data.energy_vial_to_update;
 					variables.effect_energy_cost = message.data.effect_energy_cost;
+					variables.time_since_on_ground = message.data.time_since_on_ground;
 				}
 			});
 			context.setPacketHandled(true);
