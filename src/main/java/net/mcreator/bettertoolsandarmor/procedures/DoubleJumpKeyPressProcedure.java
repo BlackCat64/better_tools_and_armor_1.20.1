@@ -7,6 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
@@ -28,12 +29,11 @@ public class DoubleJumpKeyPressProcedure {
 				boots = true;
 			}
 		}
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt7 && _livEnt7.isFallFlying())
-				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps > 0
-				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped >= 4
-				&& (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)) {
-			entity.fallDistance = 0;
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.5, (entity.getDeltaMovement().z())));
+		if ((entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) || boots)
+				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps > 0 && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)
+				&& !entity.onGround() && !entity.isInWater() && !(entity instanceof LivingEntity _livEnt8 && _livEnt8.isFallFlying())) {
+			entity.setDeltaMovement(
+					new Vec3((entity.getDeltaMovement().x()), (0.5 + 0.1 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0)), (entity.getDeltaMovement().z())));
 			{
 				double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).extra_jumps - 1;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -48,6 +48,7 @@ public class DoubleJumpKeyPressProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			entity.fallDistance = 0;
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:double_jump_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
