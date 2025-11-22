@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -14,7 +15,7 @@ public class MagmaDamageProcedureProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.BLACKSTONE_MAGMA.get()) {
-			if (!entity.isShiftKeyDown()) {
+			if (entity instanceof LivingEntity && !entity.isShiftKeyDown()) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
 			}
 		}
