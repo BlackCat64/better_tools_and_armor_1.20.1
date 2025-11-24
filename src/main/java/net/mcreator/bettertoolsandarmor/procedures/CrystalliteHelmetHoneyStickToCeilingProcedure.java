@@ -45,7 +45,7 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).stick_to_ceiling
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get() && entity.getDeltaMovement().y() >= 0
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get() && !entity.onGround()
 				&& world.getBlockState(BlockPos.containing(x, y + 2, z)).isFaceSturdy(world, BlockPos.containing(x, y + 2, z), Direction.DOWN)) {
 			if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).getModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e")) != null)) {
 				if (world instanceof Level _level) {
