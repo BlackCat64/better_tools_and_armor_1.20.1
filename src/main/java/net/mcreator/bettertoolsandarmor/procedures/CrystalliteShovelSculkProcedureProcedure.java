@@ -1,11 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
@@ -30,18 +28,7 @@ public class CrystalliteShovelSculkProcedureProcedure {
 						for (int index1 = 0; index1 < 3; index1++) {
 							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 								if ((world.getBlockState(BlockPos.containing(x + x_disp, y, z + z_disp))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))) {
-									{
-										BlockPos _pos = BlockPos.containing(x + x_disp, y, z + z_disp);
-										Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, y + 0.5, z + 0.5), null);
-										world.destroyBlock(_pos, false);
-									}
-									{
-										ItemStack _ist = itemstack;
-										if (_ist.hurt(1, RandomSource.create(), null)) {
-											_ist.shrink(1);
-											_ist.setDamageValue(0);
-										}
-									}
+									BreakBlockWithShovelProcedure.execute(world, x + x_disp, y, z + z_disp, entity, itemstack);
 								}
 							}
 							z_disp = z_disp + 1;
@@ -55,18 +42,7 @@ public class CrystalliteShovelSculkProcedureProcedure {
 						for (int index3 = 0; index3 < 3; index3++) {
 							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 								if ((world.getBlockState(BlockPos.containing(x + x_disp, y + y_disp, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))) {
-									{
-										BlockPos _pos = BlockPos.containing(x + x_disp, y + y_disp, z);
-										Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, y + 0.5, z + 0.5), null);
-										world.destroyBlock(_pos, false);
-									}
-									{
-										ItemStack _ist = itemstack;
-										if (_ist.hurt(1, RandomSource.create(), null)) {
-											_ist.shrink(1);
-											_ist.setDamageValue(0);
-										}
-									}
+									BreakBlockWithShovelProcedure.execute(world, x + x_disp, y + y_disp, z, entity, itemstack);
 								}
 							}
 							y_disp = y_disp + 1;
@@ -80,18 +56,7 @@ public class CrystalliteShovelSculkProcedureProcedure {
 						for (int index5 = 0; index5 < 3; index5++) {
 							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 								if ((world.getBlockState(BlockPos.containing(x, y + y_disp, z + z_disp))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))) {
-									{
-										BlockPos _pos = BlockPos.containing(x, y + y_disp, z + z_disp);
-										Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, y + 0.5, z + 0.5), null);
-										world.destroyBlock(_pos, false);
-									}
-									{
-										ItemStack _ist = itemstack;
-										if (_ist.hurt(1, RandomSource.create(), null)) {
-											_ist.shrink(1);
-											_ist.setDamageValue(0);
-										}
-									}
+									BreakBlockWithShovelProcedure.execute(world, x, y + y_disp, z + z_disp, entity, itemstack);
 								}
 							}
 							y_disp = y_disp + 1;
