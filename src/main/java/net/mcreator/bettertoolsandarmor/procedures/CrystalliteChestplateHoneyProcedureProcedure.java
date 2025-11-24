@@ -45,7 +45,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 								.addTransientModifier((new AttributeModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6"), "crystallite_chestplate_honey", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
 				}
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
-					if ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 3) {
+					if ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 3 - 1) {
 						if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_honey_absorption_timer <= 0) {
 							SetEntityNumberDataProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 2, "AbsorptionAmount");
 							{
