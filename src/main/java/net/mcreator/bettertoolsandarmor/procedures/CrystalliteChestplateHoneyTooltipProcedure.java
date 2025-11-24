@@ -37,7 +37,7 @@ public class CrystalliteChestplateHoneyTooltipProcedure {
 				tooltip.add(Component.literal("\u00A77Absorption Limit:"));
 				tooltip.add(Component.literal("\u00A792x Original Max HP"));
 				tooltip.add(Component.literal("\u00A77Regeneration Rate:"));
-				tooltip.add(Component.literal("\u00A792HP every 20s"));
+				tooltip.add(Component.literal("\u00A792HP every 10s"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
