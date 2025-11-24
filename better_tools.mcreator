@@ -17658,8 +17658,8 @@
       "registry_name": "tough_necklace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/ToughNecklaceItem.java",
-          "src/main/resources/assets/better_tools/models/item/tough_necklace.json"
+          "src/main/resources/assets/better_tools/models/item/tough_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ToughNecklaceItem.java"
         ]
       },
       "path": "~/Crystallite/Iron"
@@ -17672,8 +17672,8 @@
       "registry_name": "gilded_bracelet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GildedBraceletItem.java",
-          "src/main/resources/assets/better_tools/models/item/gilded_bracelet.json"
+          "src/main/resources/assets/better_tools/models/item/gilded_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GildedBraceletItem.java"
         ]
       },
       "path": "~/Crystallite/Gold"
@@ -17700,8 +17700,8 @@
       "registry_name": "heart_charm",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/HeartCharmItem.java",
-          "src/main/resources/assets/better_tools/models/item/heart_charm.json"
+          "src/main/resources/assets/better_tools/models/item/heart_charm.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HeartCharmItem.java"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -17728,8 +17728,8 @@
       "registry_name": "withered_gauntlet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/WitheredGauntletItem.java",
-          "src/main/resources/assets/better_tools/models/item/withered_gauntlet.json"
+          "src/main/resources/assets/better_tools/models/item/withered_gauntlet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/WitheredGauntletItem.java"
         ]
       },
       "path": "~/Crystallite/Netherite"
@@ -17742,8 +17742,8 @@
       "registry_name": "speedy_necklace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SpeedyNecklaceItem.java",
-          "src/main/resources/assets/better_tools/models/item/speedy_necklace.json"
+          "src/main/resources/assets/better_tools/models/item/speedy_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SpeedyNecklaceItem.java"
         ]
       },
       "path": "~/Crystallite/Ruby"
@@ -17784,8 +17784,8 @@
       "registry_name": "nature_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/nature_ring.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/NatureRingItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NatureRingItem.java",
+          "src/main/resources/assets/better_tools/models/item/nature_ring.json"
         ]
       },
       "path": "~/Crystallite/Emerald"
@@ -17798,8 +17798,8 @@
       "registry_name": "warden_headband",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/warden_headband.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/WardenHeadbandItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/WardenHeadbandItem.java",
+          "src/main/resources/assets/better_tools/models/item/warden_headband.json"
         ]
       },
       "path": "~/Crystallite/Sculk"
@@ -17812,8 +17812,8 @@
       "registry_name": "ender_goggles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/ender_goggles.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnderGogglesItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnderGogglesItem.java",
+          "src/main/resources/assets/better_tools/models/item/ender_goggles.json"
         ]
       },
       "path": "~/Crystallite/Misc. Charms"
@@ -17826,8 +17826,8 @@
       "registry_name": "bouncy_bracelet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/BouncyBraceletItem.java",
-          "src/main/resources/assets/better_tools/models/item/bouncy_bracelet.json"
+          "src/main/resources/assets/better_tools/models/item/bouncy_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/BouncyBraceletItem.java"
         ]
       },
       "path": "~/Crystallite/Misc. Charms"
@@ -18190,8 +18190,8 @@
       "registry_name": "flaming_circlet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlamingCircletItem.java",
-          "src/main/resources/assets/better_tools/models/item/flaming_circlet.json"
+          "src/main/resources/assets/better_tools/models/item/flaming_circlet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlamingCircletItem.java"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -18742,44 +18742,6 @@
         ]
       },
       "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "CharmCounterIncrement",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_counter_increment",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CharmCounterIncrementProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmCounterDecrement",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_counter_decrement",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CharmCounterDecrementProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite"
     },
     {
       "name": "CharmAdvsProcedure",
@@ -20333,8 +20295,8 @@
       "registry_name": "guardian_necklace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java",
-          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json"
+          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java"
         ]
       },
       "path": "~/Crystallite/Prismarine"

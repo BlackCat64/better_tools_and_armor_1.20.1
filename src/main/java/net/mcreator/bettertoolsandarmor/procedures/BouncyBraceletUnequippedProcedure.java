@@ -10,6 +10,5 @@ public class BouncyBraceletUnequippedProcedure {
 		if (entity == null)
 			return;
 		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).removeModifier(UUID.fromString("78907ff0-98e5-4349-b8a4-d43e27bbdd7e"));
-		CharmCounterDecrementProcedure.execute(entity);
 	}
 }

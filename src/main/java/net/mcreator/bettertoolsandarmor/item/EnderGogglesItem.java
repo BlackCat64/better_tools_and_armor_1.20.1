@@ -12,9 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CharmCounterIncrementProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CharmCounterDecrementProcedure;
-
 import java.util.List;
 
 public class EnderGogglesItem extends Item implements ICurioItem {
@@ -32,15 +29,5 @@ public class EnderGogglesItem extends Item implements ICurioItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
 		list.add(Component.literal("\u00A79Looking at Endermen will not anger them"));
-	}
-
-	@Override
-	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		CharmCounterIncrementProcedure.execute(slotContext.entity());
-	}
-
-	@Override
-	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		CharmCounterDecrementProcedure.execute(slotContext.entity());
 	}
 }

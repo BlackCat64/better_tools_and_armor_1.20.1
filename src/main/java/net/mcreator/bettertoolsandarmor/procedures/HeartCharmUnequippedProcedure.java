@@ -10,6 +10,5 @@ public class HeartCharmUnequippedProcedure {
 		if (entity == null)
 			return;
 		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).removeModifier(UUID.fromString("75687371-5b30-4f12-a36f-c49855cd20f3"));
-		CharmCounterDecrementProcedure.execute(entity);
 	}
 }

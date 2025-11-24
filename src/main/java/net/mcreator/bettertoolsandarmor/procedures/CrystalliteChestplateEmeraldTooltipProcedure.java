@@ -1,5 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -43,7 +45,7 @@ public class CrystalliteChestplateEmeraldTooltipProcedure {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_sunlight) {
 				time = time / 2;
 			}
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).nature_ring_equipped) {
+			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.NATURE_RING.get(), lv).isPresent() : false == true) {
 				time = time / 2;
 			}
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(time) + "s Regeneration Speed")));

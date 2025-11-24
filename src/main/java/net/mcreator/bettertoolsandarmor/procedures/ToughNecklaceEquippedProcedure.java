@@ -14,6 +14,5 @@ public class ToughNecklaceEquippedProcedure {
 				.hasModifier((new AttributeModifier(UUID.fromString("a7a469f5-b02b-41ff-906d-e18993d9030c"), "tough_necklace", 0.15, AttributeModifier.Operation.ADDITION)))))
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE)
 					.addTransientModifier((new AttributeModifier(UUID.fromString("a7a469f5-b02b-41ff-906d-e18993d9030c"), "tough_necklace", 0.15, AttributeModifier.Operation.ADDITION)));
-		CharmCounterIncrementProcedure.execute(entity);
 	}
 }

@@ -14,6 +14,5 @@ public class BouncyBraceletEquippedProcedure {
 				.hasModifier((new AttributeModifier(UUID.fromString("78907ff0-98e5-4349-b8a4-d43e27bbdd7e"), "bouncy_bracelet", 2, AttributeModifier.Operation.ADDITION)))))
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK)
 					.addTransientModifier((new AttributeModifier(UUID.fromString("78907ff0-98e5-4349-b8a4-d43e27bbdd7e"), "bouncy_bracelet", 2, AttributeModifier.Operation.ADDITION)));
-		CharmCounterIncrementProcedure.execute(entity);
 	}
 }

@@ -15,6 +15,5 @@ public class NatureRingUnequippedProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		CharmCounterDecrementProcedure.execute(entity);
 	}
 }

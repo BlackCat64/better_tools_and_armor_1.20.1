@@ -10,6 +10,5 @@ public class ToughNecklaceUnequippedProcedure {
 		if (entity == null)
 			return;
 		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE).removeModifier(UUID.fromString("a7a469f5-b02b-41ff-906d-e18993d9030c"));
-		CharmCounterDecrementProcedure.execute(entity);
 	}
 }

@@ -12,6 +12,5 @@ public class GildedBraceletUnequippedProcedure {
 		if (entity == null)
 			return;
 		((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).removeModifier(UUID.fromString("690220ea-a287-43e1-8ba3-ddc831edb69c"));
-		CharmCounterDecrementProcedure.execute(entity);
 	}
 }

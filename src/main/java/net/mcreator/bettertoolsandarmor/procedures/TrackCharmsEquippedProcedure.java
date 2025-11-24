@@ -7,7 +7,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
@@ -30,18 +33,20 @@ public class TrackCharmsEquippedProcedure {
 		if (entity == null)
 			return;
 		double num = 0;
-		num = CuriosApi.getCuriosInventory(player).map(inv -> {
-			int count = 0;
-			// Iterate over each curio slot
-			for (var handler : inv.getCurios().values()) {
-				for (int i = 0; i < handler.getSlots(); i++) {
-					if (!handler.getStackInSlot(i).isEmpty()) {
-						count++;
+		if (entity instanceof LivingEntity lv) {
+			num = CuriosApi.getCuriosInventory(lv).map(inv -> {
+				int count = 0;
+				for (var handler : inv.getCurios().values()) {
+					var stacks = handler.getStacks();
+					for (int i = 0; i < stacks.getSlots(); i++) {
+						if (!stacks.getStackInSlot(i).isEmpty() && stacks.getStackInSlot(i).is(ItemTags.create(new ResourceLocation("better_tools:crystallite_charms")))) {
+							count++;
+						}
 					}
 				}
-			}
-			return count;
-		}).orElse(0);
+				return count;
+			}).orElse(0);
+		}
 		{
 			double _setval = num;
 			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
