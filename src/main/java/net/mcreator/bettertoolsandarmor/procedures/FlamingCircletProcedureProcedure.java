@@ -62,14 +62,5 @@ public class FlamingCircletProcedureProcedure {
 				});
 			}
 		}
-		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).flaming_circlet_cooldown > 0) {
-			{
-				double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).flaming_circlet_cooldown - 1;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.flaming_circlet_cooldown = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		}
 	}
 }

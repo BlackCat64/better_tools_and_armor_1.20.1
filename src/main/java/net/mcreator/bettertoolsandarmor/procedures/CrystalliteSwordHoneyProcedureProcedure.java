@@ -34,6 +34,13 @@ public class CrystalliteSwordHoneyProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity sourceentity) {
 		if (sourceentity == null)
 			return;
+		{
+			double _setval = 0;
+			sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.time_since_last_attacked = _setval;
+				capability.syncPlayerVariables(sourceentity);
+			});
+		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:combo_weapons")))) {
 			if ((sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_attacked <= 40) {
 				if (((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
@@ -67,13 +74,6 @@ public class CrystalliteSwordHoneyProcedureProcedure {
 					((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
 							.addTransientModifier((new AttributeModifier(UUID.fromString("741d8785-8249-46c6-b9ed-b50155c23d47"), "crystallite_sword_honey_1", 1, AttributeModifier.Operation.ADDITION)));
 			}
-		}
-		{
-			double _setval = 0;
-			sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_attacked = _setval;
-				capability.syncPlayerVariables(sourceentity);
-			});
 		}
 	}
 }

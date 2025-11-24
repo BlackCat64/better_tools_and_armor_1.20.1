@@ -104,7 +104,6 @@ public class BetterToolsModVariables {
 				clone.smelting_touch_item_to_drop = original.smelting_touch_item_to_drop;
 				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
 				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
-				clone.fall_start_y = original.fall_start_y;
 				clone.nature_ring_equipped = original.nature_ring_equipped;
 				clone.is_in_cold_biome = original.is_in_cold_biome;
 				clone.is_in_sunlight = original.is_in_sunlight;
@@ -177,7 +176,6 @@ public class BetterToolsModVariables {
 		public double time_since_non_carbonated_food_eaten = 0;
 		public ItemStack last_food_eaten = ItemStack.EMPTY;
 		public boolean last_food_was_carbonated = false;
-		public double fall_start_y = 0;
 		public boolean nature_ring_equipped = false;
 		public boolean is_in_cold_biome = false;
 		public boolean is_in_sunlight = false;
@@ -223,7 +221,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_since_non_carbonated_food_eaten", time_since_non_carbonated_food_eaten);
 			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
 			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
-			nbt.putDouble("fall_start_y", fall_start_y);
 			nbt.putBoolean("nature_ring_equipped", nature_ring_equipped);
 			nbt.putBoolean("is_in_cold_biome", is_in_cold_biome);
 			nbt.putBoolean("is_in_sunlight", is_in_sunlight);
@@ -266,7 +263,6 @@ public class BetterToolsModVariables {
 			time_since_non_carbonated_food_eaten = nbt.getDouble("time_since_non_carbonated_food_eaten");
 			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
 			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
-			fall_start_y = nbt.getDouble("fall_start_y");
 			nature_ring_equipped = nbt.getBoolean("nature_ring_equipped");
 			is_in_cold_biome = nbt.getBoolean("is_in_cold_biome");
 			is_in_sunlight = nbt.getBoolean("is_in_sunlight");
@@ -328,7 +324,6 @@ public class BetterToolsModVariables {
 					variables.time_since_non_carbonated_food_eaten = message.data.time_since_non_carbonated_food_eaten;
 					variables.last_food_eaten = message.data.last_food_eaten;
 					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;
-					variables.fall_start_y = message.data.fall_start_y;
 					variables.nature_ring_equipped = message.data.nature_ring_equipped;
 					variables.is_in_cold_biome = message.data.is_in_cold_biome;
 					variables.is_in_sunlight = message.data.is_in_sunlight;

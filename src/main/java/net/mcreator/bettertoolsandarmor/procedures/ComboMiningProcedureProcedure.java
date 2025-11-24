@@ -30,6 +30,20 @@ public class ComboMiningProcedureProcedure {
 	private static void execute(@Nullable Event event, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
+		{
+			BlockState _setval = blockstate;
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.last_mined_block = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = 0;
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.time_since_last_mined = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:combo_mining_tools")))) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_mined <= 20) {
 				if (blockstate.getBlock() == ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_mined_block).getBlock()) {
@@ -66,20 +80,6 @@ public class ComboMiningProcedureProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		}
-		{
-			BlockState _setval = blockstate;
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.last_mined_block = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = 0;
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_mined = _setval;
-				capability.syncPlayerVariables(entity);
-			});
 		}
 	}
 }

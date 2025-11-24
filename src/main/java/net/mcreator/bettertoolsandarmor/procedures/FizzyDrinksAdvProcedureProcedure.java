@@ -34,13 +34,6 @@ public class FizzyDrinksAdvProcedureProcedure {
 			return;
 		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_food_was_carbonated
 				&& ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_food_eaten).is(ItemTags.create(new ResourceLocation("better_tools:drinks")))) {
-			{
-				double _setval = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_non_carbonated_food_eaten + 1;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_since_non_carbonated_food_eaten = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_non_carbonated_food_eaten >= 24000) {
 				if (entity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:fizzy_drinks_adv"));
