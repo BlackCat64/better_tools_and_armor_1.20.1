@@ -111,6 +111,7 @@ public class BetterToolsModVariables {
 				clone.energy_vial_to_update = original.energy_vial_to_update;
 				clone.effect_energy_cost = original.effect_energy_cost;
 				clone.time_since_on_ground = original.time_since_on_ground;
+				clone.topaz_pickaxe_dupe_item = original.topaz_pickaxe_dupe_item;
 			}
 		}
 	}
@@ -183,6 +184,7 @@ public class BetterToolsModVariables {
 		public ItemStack energy_vial_to_update = ItemStack.EMPTY;
 		public double effect_energy_cost = 0;
 		public double time_since_on_ground = 0;
+		public ItemStack topaz_pickaxe_dupe_item = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -228,6 +230,7 @@ public class BetterToolsModVariables {
 			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
 			nbt.putDouble("time_since_on_ground", time_since_on_ground);
+			nbt.put("topaz_pickaxe_dupe_item", topaz_pickaxe_dupe_item.save(new CompoundTag()));
 			return nbt;
 		}
 
@@ -270,6 +273,7 @@ public class BetterToolsModVariables {
 			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
 			time_since_on_ground = nbt.getDouble("time_since_on_ground");
+			topaz_pickaxe_dupe_item = ItemStack.of(nbt.getCompound("topaz_pickaxe_dupe_item"));
 		}
 	}
 
@@ -331,6 +335,7 @@ public class BetterToolsModVariables {
 					variables.energy_vial_to_update = message.data.energy_vial_to_update;
 					variables.effect_energy_cost = message.data.effect_energy_cost;
 					variables.time_since_on_ground = message.data.time_since_on_ground;
+					variables.topaz_pickaxe_dupe_item = message.data.topaz_pickaxe_dupe_item;
 				}
 			});
 			context.setPacketHandled(true);

@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class CrystalliteTopazPickaxeTooltipProcedure {
+public class TopazPickaxeTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -32,10 +32,10 @@ public class CrystalliteTopazPickaxeTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get()) {
+		if (itemstack.getItem() == BetterToolsModItems.TOPAZ_PICKAXE.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Tool Effects:"));
-				tooltip.add(Component.literal("\u00A7920% \u00A76chance for double drops from ores"));
+				tooltip.add(Component.literal("\u00A7910% \u00A76chance for double drops from ores"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

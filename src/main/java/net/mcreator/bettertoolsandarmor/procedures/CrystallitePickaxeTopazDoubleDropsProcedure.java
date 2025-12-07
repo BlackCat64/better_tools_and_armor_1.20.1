@@ -20,6 +20,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
@@ -30,7 +31,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
@@ -52,66 +53,65 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 		if (entity == null)
 			return;
 		double dupe_chance = 0;
-		if (entity instanceof Player) {
-			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get()
-						|| ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) {
-					if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0)) {
-						if (blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))) {
-							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get()) {
-								dupe_chance = 0.1;
+		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))
+				|| ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) && blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))
+				&& !(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) && entity instanceof Player
+				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
+				dupe_chance = 0.2;
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))) {
+				dupe_chance = 0.1;
+			}
+			dupe_chance = dupe_chance + 0.05 * ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue();
+			if (Math.random() < dupe_chance) {
+				{
+					ItemStack _setval = (((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf((x + 0.5), (y + 0.8), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY);
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.topaz_pickaxe_dupe_item = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				BetterToolsMod.queueServerWork(2, () -> {
+					if (IsNearestItemEntityNaturallyDroppedProcedure.execute(world, x, y, z)) {
+						if ((((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).topaz_pickaxe_dupe_item).getItem() instanceof BlockItem _bi
+								? _bi.getBlock().defaultBlockState()
+								: Blocks.AIR.defaultBlockState()).getBlock() == Blocks.AIR) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5),
+										((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).topaz_pickaxe_dupe_item));
+								entityToSpawn.setPickUpDelay(5);
+								_level.addFreshEntity(entityToSpawn);
 							}
-							dupe_chance = dupe_chance + 0.05 * ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue();
-							if (Math.random() < dupe_chance) {
-								BetterToolsMod.queueServerWork(2, () -> {
-									if (IsNearestItemEntityNaturallyDroppedProcedure.execute(world, x, y, z)) {
-										if (((((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf((x + 0.5), (y + 0.8), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() instanceof BlockItem _bi
-												? _bi.getBlock().defaultBlockState()
-												: Blocks.AIR.defaultBlockState()).getBlock() == Blocks.AIR) {
-											if (world instanceof ServerLevel _level) {
-												ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5),
-														(((Entity) world.getEntitiesOfClass(ItemEntity.class, AABB.ofSize(new Vec3((x + 0.5), (y + 0.8), (z + 0.5)), 1.25, 1.25, 1.25), e -> true).stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf((x + 0.5), (y + 0.8), (z + 0.5))).findFirst().orElse(null)) instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY));
-												entityToSpawn.setPickUpDelay(5);
-												_level.addFreshEntity(entityToSpawn);
-											}
-											if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get()) {
-												if (world instanceof ServerLevel _level)
-													_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
-											}
-											if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) {
-												if (world instanceof ServerLevel _level)
-													_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
-												if (entity instanceof ServerPlayer _player) {
-													Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:luck_adv"));
-													AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-													if (!_ap.isDone()) {
-														for (String criteria : _ap.getRemainingCriteria())
-															_player.getAdvancements().award(_adv, criteria);
-													}
-												}
-											}
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.33);
-												} else {
-													_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.33, false);
-												}
-											}
-										}
+							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))) {
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
+							}
+							if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) {
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
+								if (entity instanceof ServerPlayer _player) {
+									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:luck_adv"));
+									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+									if (!_ap.isDone()) {
+										for (String criteria : _ap.getRemainingCriteria())
+											_player.getAdvancements().award(_adv, criteria);
 									}
-								});
+								}
+							}
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.33);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.3, (float) 1.33, false);
+								}
 							}
 						}
 					}
-				}
+				});
 			}
 		}
 	}
