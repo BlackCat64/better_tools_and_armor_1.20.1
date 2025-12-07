@@ -50,11 +50,13 @@ public class CrystalliteAxeEmeraldProcedureProcedure {
 						Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, (y + y_distance) - 0.5, z + 0.5), null);
 						world.destroyBlock(_pos, false);
 					}
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-						if (_ist.hurt(1, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
+					if (y_distance > 0) {
+						{
+							ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+							if (_ist.hurt(1, RandomSource.create(), null)) {
+								_ist.shrink(1);
+								_ist.setDamageValue(0);
+							}
 						}
 					}
 				}
