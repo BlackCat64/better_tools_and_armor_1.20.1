@@ -35669,7 +35669,10 @@
       "TAG:better_tools:crystallite_helmets",
       "TAG:better_tools:crystallite_chestplates",
       "TAG:better_tools:crystallite_leggings",
-      "TAG:better_tools:crystallite_boots"
+      "TAG:better_tools:crystallite_boots",
+      "TAG:better_tools:effect_armor",
+      "TAG:better_tools:cactus_shirts",
+      "TAG:better_tools:crying_obsidian_helmets"
     ],
     "ITEMS:mod:energy_vial_fuels": [
       "Items.BLAZE_POWDER",

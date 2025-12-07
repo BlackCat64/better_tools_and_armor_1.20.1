@@ -20,6 +20,9 @@
     "#better_tools:crystallite_helmets",
     "#better_tools:crystallite_chestplates",
     "#better_tools:crystallite_leggings",
-    "#better_tools:crystallite_boots"
+    "#better_tools:crystallite_boots",
+    "#better_tools:effect_armor",
+    "#better_tools:cactus_shirts",
+    "#better_tools:crying_obsidian_helmets"
   ]
 }
