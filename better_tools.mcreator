@@ -33629,10 +33629,6 @@
           {
             "name": "level",
             "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
