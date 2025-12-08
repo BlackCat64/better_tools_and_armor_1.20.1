@@ -44,9 +44,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "CrystallitePickaxeSculkProcedure"
-    }
+    "damageOnCrafting": false
   }
 }
