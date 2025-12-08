@@ -5434,45 +5434,6 @@
       "path": "~/Enchantments"
     },
     {
-      "name": "SmeltingTouchProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smelting_touch_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SmeltingTouchProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Enchantments"
-    },
-    {
       "name": "DoubleJump",
       "type": "potioneffect",
       "compiles": true,
@@ -10191,7 +10152,8 @@
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "logic"
       },
       "path": "~/Crystallite/Topaz"
     },
@@ -10561,7 +10523,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "NetherDiamondBlockReverseRecipe",
@@ -16228,7 +16191,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "CrystalliteBootsEmeraldProcedure",
@@ -16263,7 +16226,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "IsPlayerInTheDark",
@@ -17605,7 +17568,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "ToughNecklace",
@@ -20987,7 +20950,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "EnderTitaniumArmorTooltip",
@@ -24608,37 +24571,6 @@
       "path": "~/Purple Mushrooms"
     },
     {
-      "name": "IsNearestItemEntityNaturallyDropped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_nearest_item_entity_naturally_dropped",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsNearestItemEntityNaturallyDroppedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "CharmAdvBugfix",
       "type": "procedure",
       "compiles": true,
@@ -25161,7 +25093,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "AncientCityLoot",
@@ -25580,7 +25512,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DamageTrackerProcedure.java"
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "CrystalliteBowIron",
@@ -26754,7 +26686,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "TopazArmorSetAttributes",
@@ -27594,7 +27526,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "BlackstoneMagmaReplaceNormalMagma",
@@ -28132,7 +28065,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "SugarClumpInfo",
@@ -28378,7 +28312,8 @@
             "type": "tooltip"
           }
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "EnderTitaniumSwordTooltip",
@@ -33068,7 +33003,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "SetEntityNumberData",
@@ -33094,7 +33030,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "GetEntityLogicData",
@@ -33117,7 +33054,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "GetEntityTextData",
@@ -33140,7 +33078,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "GetEntityTextDataInList",
@@ -33167,7 +33106,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "IsLocationSafe",
@@ -33388,7 +33328,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "CrystalliteSwordRemoveUpgrade",
@@ -33589,7 +33529,7 @@
           }
         ]
       },
-      "path": "~/Tracking Variables"
+      "path": "~/Utility Procedures/Tracking Variables"
     },
     {
       "name": "TopazPickaxeTooltip",
@@ -33672,6 +33612,45 @@
         ]
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "OreBreakEffectsProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_break_effects_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/OreBreakEffectsProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -37969,8 +37948,13 @@
         "children": []
       },
       {
-        "name": "Tracking Variables",
-        "children": []
+        "name": "Utility Procedures",
+        "children": [
+          {
+            "name": "Tracking Variables",
+            "children": []
+          }
+        ]
       }
     ]
   },

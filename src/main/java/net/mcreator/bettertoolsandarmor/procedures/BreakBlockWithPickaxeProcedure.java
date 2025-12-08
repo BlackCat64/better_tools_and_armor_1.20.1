@@ -48,9 +48,13 @@ public class BreakBlockWithPickaxeProcedure {
 		}
 		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			item_to_drop = (new ItemStack(blockstate.getBlock()));
-		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-				&& !(item_to_drop.getItem() == (new ItemStack(blockstate.getBlock())).getItem())) {
+		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			count_to_drop = FortuneGetNumOfDropsProcedure.execute((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE));
+		}
+		if (item_to_drop.getItem() == (new ItemStack(blockstate.getBlock())).getItem()) {
+			count_to_drop = 1;
+		} else if (CrystallitePickaxeTopazDoubleDropsProcedure.execute(world, x, y, z, blockstate, entity)) {
+			count_to_drop = count_to_drop * 2;
 		}
 		item_to_drop.setCount((int) count_to_drop);
 		world.destroyBlock(BlockPos.containing(x, y, z), false);
