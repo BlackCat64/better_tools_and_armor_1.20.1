@@ -49,7 +49,7 @@ public class BreakBlockWithPickaxeProcedure {
 		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			item_to_drop = (new ItemStack(blockstate.getBlock()));
 		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			count_to_drop = FortuneGetNumOfDropsProcedure.execute((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE));
+			count_to_drop = item_to_drop.getCount() * FortuneGetNumOfDropsProcedure.execute((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE));
 		}
 		if (item_to_drop.getItem() == (new ItemStack(blockstate.getBlock())).getItem()) {
 			count_to_drop = 1;
