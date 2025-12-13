@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.AMETHYST_CLUSTER"
+        "value": "Blocks.POINTED_DRIPSTONE"
       },
       {
         "value": "Blocks.AMETHYST_CLUSTER"
       },
       {
-        "value": "Blocks.AMETHYST_CLUSTER"
+        "value": "Blocks.POINTED_DRIPSTONE"
       },
       {
         "value": "Items.AMETHYST_SHARD"

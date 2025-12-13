@@ -89,7 +89,6 @@ public class BetterToolsModVariables {
 			if (!event.isWasDeath()) {
 				clone.time_since_last_hurt = original.time_since_last_hurt;
 				clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
-				clone.blocks_broken_with_sculk_crystallite_pickaxe = original.blocks_broken_with_sculk_crystallite_pickaxe;
 				clone.critical_hit = original.critical_hit;
 				clone.crystallite_amethyst_absorption_timer = original.crystallite_amethyst_absorption_timer;
 				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
@@ -100,8 +99,6 @@ public class BetterToolsModVariables {
 				clone.stick_to_ceiling = original.stick_to_ceiling;
 				clone.crystallite_honey_absorption_timer = original.crystallite_honey_absorption_timer;
 				clone.time_since_last_jumped = original.time_since_last_jumped;
-				clone.smelting_touch_item_to_smelt = original.smelting_touch_item_to_smelt;
-				clone.smelting_touch_item_to_drop = original.smelting_touch_item_to_drop;
 				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
 				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
 				clone.nature_ring_equipped = original.nature_ring_equipped;
@@ -111,7 +108,7 @@ public class BetterToolsModVariables {
 				clone.energy_vial_to_update = original.energy_vial_to_update;
 				clone.effect_energy_cost = original.effect_energy_cost;
 				clone.time_since_on_ground = original.time_since_on_ground;
-				clone.topaz_pickaxe_dupe_item = original.topaz_pickaxe_dupe_item;
+				clone.time_since_shot_bow = original.time_since_shot_bow;
 			}
 		}
 	}
@@ -152,7 +149,6 @@ public class BetterToolsModVariables {
 		public double charms_equipped = 0.0;
 		public double time_since_last_hurt = 0;
 		public double crystallite_emerald_heal_timer = 0.0;
-		public double blocks_broken_with_sculk_crystallite_pickaxe = 0;
 		public boolean critical_hit = false;
 		public double crystallite_amethyst_absorption_timer = 300.0;
 		public double last_on_ground_x = 0;
@@ -171,8 +167,6 @@ public class BetterToolsModVariables {
 		public boolean stick_to_ceiling = false;
 		public double crystallite_honey_absorption_timer = 0;
 		public double time_since_last_jumped = 0;
-		public ItemStack smelting_touch_item_to_smelt = ItemStack.EMPTY;
-		public ItemStack smelting_touch_item_to_drop = ItemStack.EMPTY;
 		public double ender_titanium_boots_cooldown = 0;
 		public double time_since_non_carbonated_food_eaten = 0;
 		public ItemStack last_food_eaten = ItemStack.EMPTY;
@@ -184,7 +178,7 @@ public class BetterToolsModVariables {
 		public ItemStack energy_vial_to_update = ItemStack.EMPTY;
 		public double effect_energy_cost = 0;
 		public double time_since_on_ground = 0;
-		public ItemStack topaz_pickaxe_dupe_item = ItemStack.EMPTY;
+		public double time_since_shot_bow = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -198,7 +192,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("charms_equipped", charms_equipped);
 			nbt.putDouble("time_since_last_hurt", time_since_last_hurt);
 			nbt.putDouble("crystallite_emerald_heal_timer", crystallite_emerald_heal_timer);
-			nbt.putDouble("blocks_broken_with_sculk_crystallite_pickaxe", blocks_broken_with_sculk_crystallite_pickaxe);
 			nbt.putBoolean("critical_hit", critical_hit);
 			nbt.putDouble("crystallite_amethyst_absorption_timer", crystallite_amethyst_absorption_timer);
 			nbt.putDouble("last_on_ground_x", last_on_ground_x);
@@ -217,8 +210,6 @@ public class BetterToolsModVariables {
 			nbt.putBoolean("stick_to_ceiling", stick_to_ceiling);
 			nbt.putDouble("crystallite_honey_absorption_timer", crystallite_honey_absorption_timer);
 			nbt.putDouble("time_since_last_jumped", time_since_last_jumped);
-			nbt.put("smelting_touch_item_to_smelt", smelting_touch_item_to_smelt.save(new CompoundTag()));
-			nbt.put("smelting_touch_item_to_drop", smelting_touch_item_to_drop.save(new CompoundTag()));
 			nbt.putDouble("ender_titanium_boots_cooldown", ender_titanium_boots_cooldown);
 			nbt.putDouble("time_since_non_carbonated_food_eaten", time_since_non_carbonated_food_eaten);
 			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
@@ -230,7 +221,7 @@ public class BetterToolsModVariables {
 			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
 			nbt.putDouble("time_since_on_ground", time_since_on_ground);
-			nbt.put("topaz_pickaxe_dupe_item", topaz_pickaxe_dupe_item.save(new CompoundTag()));
+			nbt.putDouble("time_since_shot_bow", time_since_shot_bow);
 			return nbt;
 		}
 
@@ -241,7 +232,6 @@ public class BetterToolsModVariables {
 			charms_equipped = nbt.getDouble("charms_equipped");
 			time_since_last_hurt = nbt.getDouble("time_since_last_hurt");
 			crystallite_emerald_heal_timer = nbt.getDouble("crystallite_emerald_heal_timer");
-			blocks_broken_with_sculk_crystallite_pickaxe = nbt.getDouble("blocks_broken_with_sculk_crystallite_pickaxe");
 			critical_hit = nbt.getBoolean("critical_hit");
 			crystallite_amethyst_absorption_timer = nbt.getDouble("crystallite_amethyst_absorption_timer");
 			last_on_ground_x = nbt.getDouble("last_on_ground_x");
@@ -260,8 +250,6 @@ public class BetterToolsModVariables {
 			stick_to_ceiling = nbt.getBoolean("stick_to_ceiling");
 			crystallite_honey_absorption_timer = nbt.getDouble("crystallite_honey_absorption_timer");
 			time_since_last_jumped = nbt.getDouble("time_since_last_jumped");
-			smelting_touch_item_to_smelt = ItemStack.of(nbt.getCompound("smelting_touch_item_to_smelt"));
-			smelting_touch_item_to_drop = ItemStack.of(nbt.getCompound("smelting_touch_item_to_drop"));
 			ender_titanium_boots_cooldown = nbt.getDouble("ender_titanium_boots_cooldown");
 			time_since_non_carbonated_food_eaten = nbt.getDouble("time_since_non_carbonated_food_eaten");
 			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
@@ -273,7 +261,7 @@ public class BetterToolsModVariables {
 			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
 			time_since_on_ground = nbt.getDouble("time_since_on_ground");
-			topaz_pickaxe_dupe_item = ItemStack.of(nbt.getCompound("topaz_pickaxe_dupe_item"));
+			time_since_shot_bow = nbt.getDouble("time_since_shot_bow");
 		}
 	}
 
@@ -303,7 +291,6 @@ public class BetterToolsModVariables {
 					variables.charms_equipped = message.data.charms_equipped;
 					variables.time_since_last_hurt = message.data.time_since_last_hurt;
 					variables.crystallite_emerald_heal_timer = message.data.crystallite_emerald_heal_timer;
-					variables.blocks_broken_with_sculk_crystallite_pickaxe = message.data.blocks_broken_with_sculk_crystallite_pickaxe;
 					variables.critical_hit = message.data.critical_hit;
 					variables.crystallite_amethyst_absorption_timer = message.data.crystallite_amethyst_absorption_timer;
 					variables.last_on_ground_x = message.data.last_on_ground_x;
@@ -322,8 +309,6 @@ public class BetterToolsModVariables {
 					variables.stick_to_ceiling = message.data.stick_to_ceiling;
 					variables.crystallite_honey_absorption_timer = message.data.crystallite_honey_absorption_timer;
 					variables.time_since_last_jumped = message.data.time_since_last_jumped;
-					variables.smelting_touch_item_to_smelt = message.data.smelting_touch_item_to_smelt;
-					variables.smelting_touch_item_to_drop = message.data.smelting_touch_item_to_drop;
 					variables.ender_titanium_boots_cooldown = message.data.ender_titanium_boots_cooldown;
 					variables.time_since_non_carbonated_food_eaten = message.data.time_since_non_carbonated_food_eaten;
 					variables.last_food_eaten = message.data.last_food_eaten;
@@ -335,7 +320,7 @@ public class BetterToolsModVariables {
 					variables.energy_vial_to_update = message.data.energy_vial_to_update;
 					variables.effect_energy_cost = message.data.effect_energy_cost;
 					variables.time_since_on_ground = message.data.time_since_on_ground;
-					variables.topaz_pickaxe_dupe_item = message.data.topaz_pickaxe_dupe_item;
+					variables.time_since_shot_bow = message.data.time_since_shot_bow;
 				}
 			});
 			context.setPacketHandled(true);

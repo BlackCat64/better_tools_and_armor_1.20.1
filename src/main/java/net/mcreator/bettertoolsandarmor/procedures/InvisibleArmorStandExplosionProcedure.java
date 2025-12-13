@@ -6,11 +6,14 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 
 import javax.annotation.Nullable;
+
+import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class InvisibleArmorStandExplosionProcedure {
@@ -26,18 +29,38 @@ public class InvisibleArmorStandExplosionProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double power = 0;
-		if (entity instanceof ArmorStand) {
-			if (entity.getPersistentData().getBoolean("crystallite_nether_diamond_upgrade")) {
+		Entity arrow = null;
+		String uuid = "";
+		String potion = "";
+		if (entity instanceof ArmorStand && entity.getPersistentData().getBoolean("crystallite_bow_nether_diamond")) {
+			uuid = entity.getPersistentData().getString("arrow");
+			if (!(uuid).isEmpty()) {
+				if (world instanceof ServerLevel serverLevel) {
+					arrow = serverLevel.getEntity(UUID.fromString(uuid));
+				}
+				if (!(arrow == null)) {
+					{
+						Entity _ent = entity;
+						_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
+					}
+					if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
+						if (!entity.level().isClientSide())
+							entity.discard();
+						if (!arrow.isInWaterRainOrBubble()) {
+							ArrowExplosionProcedure.execute(world, x, y, z, arrow);
+							if (!arrow.level().isClientSide())
+								arrow.discard();
+						}
+					}
+				} else {
+					if (!entity.level().isClientSide())
+						entity.discard();
+				}
+			} else {
 				if (!entity.level().isClientSide())
 					entity.discard();
-				if ((entity.level().dimension()) == Level.NETHER) {
-					if (world instanceof Level _level && !_level.isClientSide())
-						_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
-				} else {
-					if (world instanceof Level _level && !_level.isClientSide())
-						_level.explode(null, x, y, z, (float) 2.5, Level.ExplosionInteraction.TNT);
-				}
 			}
 		}
 	}

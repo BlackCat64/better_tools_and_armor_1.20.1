@@ -55,51 +55,53 @@ public class CrystalliteBowApplyEffectsProcedure {
 						if (!(entityiterator == entity) && entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
 							if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
 								entityiterator.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
-							} else {
-								if (duration <= 71990) {
-									SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 1.5, "damage");
-									if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_iron_upgrade", true);
-										((AbstractArrow) entityiterator).setKnockback(((AbstractArrow) entityiterator).getKnockback() + 2);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:gold_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_gold_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lapis_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_lapis_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:redstone_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_redstone_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items")))) {
-										if (Math.random() < 0.25) {
-											SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 2.5, "damage");
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2);
-												} else {
-													_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2, false);
-												}
+							} else if (duration <= 71990) {
+								SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 1.5, "damage");
+								if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:iron_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_iron_upgrade", true);
+									((AbstractArrow) entityiterator).setKnockback(((AbstractArrow) entityiterator).getKnockback() + 2);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:gold_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_gold_upgrade", true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lapis_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_lapis_upgrade", true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:redstone_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_redstone_upgrade", true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items")))) {
+									if (Math.random() < 0.25) {
+										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 2.5, "damage");
+										if (world instanceof Level _level) {
+											if (!_level.isClientSide()) {
+												_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2);
+											} else {
+												_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2, false);
 											}
 										}
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
-										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 1.5, "damage");
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
-										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") - 2, "damage");
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_sapphire_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_topaz_upgrade", true);
-										entityiterator.getPersistentData().putBoolean("thunder_shot", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_nether_diamond_upgrade", true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 0.5, "damage");
-										SetEntityNumberDataProcedure.execute(entityiterator, 100, "PierceLevel");
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
-										entityiterator.setNoGravity(true);
-									} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
-										entityiterator.getPersistentData().putBoolean("crystallite_prismarine_upgrade", true);
-										if (entityiterator.isInWaterRainOrBubble()) {
-											SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 2.5, "damage");
-										}
 									}
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
+									SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 1.5, "damage");
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
+									SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") - 2, "damage");
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_sapphire_upgrade", true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_topaz_upgrade", true);
+									entityiterator.getPersistentData().putBoolean("thunder_shot", true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_nether_diamond_upgrade", true);
+									CrystalliteBowNetherDiamondFiredProcedure.execute(world, entityiterator);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
+									SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 0.5, "damage");
+									SetEntityNumberDataProcedure.execute(entityiterator, 100, "PierceLevel");
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sky_upgraded_crystallite_items")))) {
+									entityiterator.setNoGravity(true);
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_prismarine_upgrade", true);
+									if (entityiterator.isInWaterRainOrBubble()) {
+										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 2.5, "damage");
+									}
+								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))) {
+									entityiterator.getPersistentData().putBoolean("crystallite_amethyst_upgrade", true);
+									entityiterator.getPersistentData().putDouble("time_since_shot", 0);
 								}
 							}
 						}

@@ -3,21 +3,24 @@
   "group": "earth_crystal",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "bcb",
-    "bdb"
+    "aba",
+    "cdc",
+    "cec"
   ],
   "key": {
     "a": {
-      "item": "minecraft:amethyst_cluster"
+      "item": "minecraft:pointed_dripstone"
     },
     "b": {
-      "item": "minecraft:amethyst_shard"
+      "item": "minecraft:amethyst_cluster"
     },
     "c": {
-      "item": "better_tools:crystallite_gem"
+      "item": "minecraft:amethyst_shard"
     },
     "d": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "e": {
       "item": "minecraft:amethyst_block"
     }
   },

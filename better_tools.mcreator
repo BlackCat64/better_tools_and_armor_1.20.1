@@ -26137,22 +26137,7 @@
           {
             "name": "immediatesourceentity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "CrystalliteBowNetherDiamondImpactExplode",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_bow_nether_diamond_impact_explode",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondImpactExplodeProcedure.java"
-        ],
-        "dependencies": [
+          },
           {
             "name": "x",
             "type": "number"
@@ -33683,6 +33668,134 @@
         "files": []
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "SafeIncrement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_increment",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SafeIncrementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "value",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Tracking Variables"
+    },
+    {
+      "name": "BowShootTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bow_shoot_tracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BowShootTrackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Tracking Variables"
+    },
+    {
+      "name": "SetEntityLogicData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_entity_logic_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SetEntityLogicDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "value",
+            "type": "logic"
+          },
+          {
+            "name": "tagName",
+            "type": "string"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamondFired",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_nether_diamond_fired",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondFiredProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "ArrowExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ArrowExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
     }
   ],
   "variable_elements": [
@@ -33715,12 +33828,6 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
-    },
-    {
-      "name": "blocks_broken_with_sculk_crystallite_pickaxe",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
     },
     {
       "name": "critical_hit",
@@ -33837,18 +33944,6 @@
       "value": "0"
     },
     {
-      "name": "smelting_touch_item_to_smelt",
-      "type": "itemstack",
-      "scope": "player_lifetime",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "smelting_touch_item_to_drop",
-      "type": "itemstack",
-      "scope": "player_lifetime",
-      "value": "ItemStack.EMPTY"
-    },
-    {
       "name": "ender_titanium_boots_cooldown",
       "type": "number",
       "scope": "player_lifetime",
@@ -33915,10 +34010,10 @@
       "value": "0"
     },
     {
-      "name": "topaz_pickaxe_dupe_item",
-      "type": "itemstack",
+      "name": "time_since_shot_bow",
+      "type": "number",
       "scope": "player_lifetime",
-      "value": "ItemStack.EMPTY"
+      "value": "0"
     }
   ],
   "sound_elements": [
