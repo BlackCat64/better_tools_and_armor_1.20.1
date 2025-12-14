@@ -19748,37 +19748,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "CrystalliteHelmetAmethystArrows",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_helmet_amethyst_arrows",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHelmetAmethystArrowsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "duration",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "CrystallitePickaxeSkyAirHaste",
       "type": "procedure",
       "compiles": true,
@@ -34001,6 +33970,60 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "HomingArrowShot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homing_arrow_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HomingArrowShotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "HomingArrowShotByCrossbow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homing_arrow_shot_by_crossbow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HomingArrowShotByCrossbowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },

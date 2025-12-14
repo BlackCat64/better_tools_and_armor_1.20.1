@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
-public class CrystalliteHelmetAmethystArrowsProcedure {
+public class HomingArrowShotProcedure {
 	@SubscribeEvent
 	public static void onUseItemStop(LivingEntityUseItemEvent.Stop event) {
 		if (event != null && event.getEntity() != null) {
@@ -43,12 +43,12 @@ public class CrystalliteHelmetAmethystArrowsProcedure {
 			return;
 		double charge_time = 0;
 		double radius = 0;
-		if ((itemstack.getItem() == Items.BOW || itemstack.getItem() == Items.CROSSBOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows"))))
+		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows"))))
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))
 						|| itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items"))))) {
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
 				charge_time = 71990;
-			} else if (itemstack.getItem() == Items.CROSSBOW) {
+			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
 				charge_time = 80000;
 			} else {
 				charge_time = 71980;
