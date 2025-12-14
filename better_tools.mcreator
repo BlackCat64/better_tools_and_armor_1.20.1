@@ -33817,6 +33817,136 @@
         ]
       },
       "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "GetEntitySpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_entity_speed",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEntitySpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "ArrowHomingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_homing_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ArrowHomingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "GetDistanceBetweenPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_distance_between_points",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetDistanceBetweenPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "HomingArrowParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homing_arrow_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HomingArrowParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Particles"
     }
   ],
   "variable_elements": [
@@ -38101,6 +38231,10 @@
         "children": [
           {
             "name": "Tracking Variables",
+            "children": []
+          },
+          {
+            "name": "Particles",
             "children": []
           }
         ]

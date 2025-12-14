@@ -14,7 +14,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -59,16 +58,15 @@ public class CrystalliteBowAmethystHomingProcedure {
 					entity.getPersistentData().putDouble("time_since_shot", (entity.getPersistentData().getDouble("time_since_shot") + 1));
 					{
 						final Vec3 _center = new Vec3((arrow.getX()), (arrow.getY()), (arrow.getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (!(entityiterator == null || (entityiterator.getStringUUID()).equals(entity.getPersistentData().getString("player"))) && (entityiterator instanceof Mob || entityiterator instanceof Player)
 									&& !entityiterator.isInvisible()) {
-								if (!world.isClientSide() && world.getServer() != null)
-									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entityiterator.getDisplayName().getString() + ": " + entityiterator.getStringUUID())), false);
-								if (!arrow.level().isClientSide())
-									arrow.discard();
+								ArrowHomingProcedureProcedure.execute(world, arrow, entityiterator);
+								HomingArrowParticlesProcedure.execute(world, arrow.getX(), arrow.getY(), arrow.getZ(), entityiterator.getX(), entityiterator.getY(), entityiterator.getZ());
 								if (!entity.level().isClientSide())
 									entity.discard();
+								break;
 							}
 						}
 					}
