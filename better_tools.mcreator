@@ -19741,8 +19741,8 @@
       "registry_name": "ore_location_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/OreLocationParticleParticle.java",
-          "src/main/resources/assets/better_tools/particles/ore_location_particle.json"
+          "src/main/resources/assets/better_tools/particles/ore_location_particle.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/OreLocationParticleParticle.java"
         ]
       },
       "path": "~/Crystallite/Amethyst"
@@ -33947,6 +33947,20 @@
         ]
       },
       "path": "~/Utility Procedures/Particles"
+    },
+    {
+      "name": "ArrowHomingParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_homing_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/ArrowHomingParticleParticle.java",
+          "src/main/resources/assets/better_tools/particles/arrow_homing_particle.json"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [

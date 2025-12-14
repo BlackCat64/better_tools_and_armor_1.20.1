@@ -17,7 +17,7 @@ public class ArrowHomingProcedureProcedure {
 			arrow_speed = GetEntitySpeedProcedure.execute(arrow);
 			distance = GetDistanceBetweenPointsProcedure.execute(arrow.getX(), arrow.getY(), arrow.getZ(), entity.getX(), entity.getY(), entity.getZ());
 			new_vx = ((entity.getX() - arrow.getX()) / distance) * arrow_speed;
-			new_vy = ((entity.getY() - arrow.getY()) / distance) * arrow_speed;
+			new_vy = (((entity.getY() + entity.getBbHeight() / 2) - arrow.getY()) / distance) * arrow_speed;
 			new_vz = ((entity.getZ() - arrow.getZ()) / distance) * arrow_speed;
 			arrow.setDeltaMovement(new Vec3(new_vx, new_vy, new_vz));
 		}

@@ -16,6 +16,7 @@ import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoomParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteThornsParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSplashDamageParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSparkleParticle;
+import net.mcreator.bettertoolsandarmor.client.particle.ArrowHomingParticleParticle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BetterToolsModParticles {
@@ -28,5 +29,6 @@ public class BetterToolsModParticles {
 		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get(), CrystalliteSplashDamageParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM.get(), FreezeBoomParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_THORNS_PARTICLE.get(), CrystalliteThornsParticleParticle::provider);
+		event.registerSpriteSet(BetterToolsModParticleTypes.ARROW_HOMING_PARTICLE.get(), ArrowHomingParticleParticle::provider);
 	}
 }

@@ -13,14 +13,14 @@ public class HomingArrowParticlesProcedure {
 		double dy = 0;
 		double dz = 0;
 		double i = 0;
-		distance = GetDistanceBetweenPointsProcedure.execute(x, y, z, x2, y2, z2);
+		distance = GetDistanceBetweenPointsProcedure.execute(x, y, z, x2, y2, z2) * 2;
 		dx = (x2 - x) / distance;
 		dy = (y2 - y) / distance;
 		dz = (z2 - z) / distance;
 		if (distance > 0) {
 			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ORE_LOCATION_PARTICLE.get()), (x + i * dx), (y + i * dy), (z + i * dz), 3, 0.02, 0.02, 0.02, 0.0025);
+					_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ARROW_HOMING_PARTICLE.get()), (x + i * dx), (y + i * dy), (z + i * dz), 3, 0.02, 0.02, 0.02, 0.0025);
 				i = i + 1;
 			}
 		}

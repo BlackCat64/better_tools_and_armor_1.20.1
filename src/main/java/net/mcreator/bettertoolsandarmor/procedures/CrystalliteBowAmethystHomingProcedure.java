@@ -55,15 +55,14 @@ public class CrystalliteBowAmethystHomingProcedure {
 						if (_ent instanceof ServerPlayer _serverPlayer)
 							_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
 					}
-					entity.getPersistentData().putDouble("time_since_shot", (entity.getPersistentData().getDouble("time_since_shot") + 1));
 					{
 						final Vec3 _center = new Vec3((arrow.getX()), (arrow.getY()), (arrow.getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 						for (Entity entityiterator : _entfound) {
 							if (!(entityiterator == null || (entityiterator.getStringUUID()).equals(entity.getPersistentData().getString("player"))) && (entityiterator instanceof Mob || entityiterator instanceof Player)
 									&& !entityiterator.isInvisible()) {
 								ArrowHomingProcedureProcedure.execute(world, arrow, entityiterator);
-								HomingArrowParticlesProcedure.execute(world, arrow.getX(), arrow.getY(), arrow.getZ(), entityiterator.getX(), entityiterator.getY(), entityiterator.getZ());
+								HomingArrowParticlesProcedure.execute(world, arrow.getX(), arrow.getY(), arrow.getZ(), entityiterator.getX(), entityiterator.getY() + entity.getBbHeight() / 2, entityiterator.getZ());
 								if (!entity.level().isClientSide())
 									entity.discard();
 								break;
