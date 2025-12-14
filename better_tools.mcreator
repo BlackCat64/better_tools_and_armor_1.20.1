@@ -19757,36 +19757,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHelmetAmethystArrowsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "duration",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Amethyst"
     },
@@ -26122,76 +26093,6 @@
         ]
       },
       "path": "~/Crystallite/Honey"
-    },
-    {
-      "name": "CrystalliteBowNetherDiamondExplosion",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_bow_nether_diamond_explosion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondExplosionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "InvisibleArmorStandExplosion",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "invisible_armor_stand_explosion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/InvisibleArmorStandExplosionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
     },
     {
       "name": "ThunderShotArrowShot",
@@ -33796,6 +33697,126 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamondHitsEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_nether_diamond_hits_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondHitsEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamondHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_nether_diamond_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowNetherDiamondHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowAmethystFired",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_amethyst_fired",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowAmethystFiredProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
+            "name": "player",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteBowAmethystHoming",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_amethyst_homing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowAmethystHomingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [

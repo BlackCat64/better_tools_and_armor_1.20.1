@@ -16,7 +16,7 @@ import javax.annotation.Nullable;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber
-public class InvisibleArmorStandExplosionProcedure {
+public class CrystalliteBowNetherDiamondHitsBlockProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());

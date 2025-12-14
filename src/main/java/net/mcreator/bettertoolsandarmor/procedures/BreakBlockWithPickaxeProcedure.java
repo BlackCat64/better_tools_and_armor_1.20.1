@@ -2,6 +2,8 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
@@ -34,8 +36,10 @@ public class BreakBlockWithPickaxeProcedure {
 		count_to_drop = 1;
 		reg_name = ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString();
 		if (!world.isClientSide() && world.getServer() != null) {
+			BlockPos _bpLootTblWorld = BlockPos.containing(x, y, z);
 			for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation(((reg_name.split("\\:")[0] + ":blocks/" + reg_name.split("\\:")[1])).toLowerCase(java.util.Locale.ENGLISH)))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					.getRandomItems(new LootParams.Builder((ServerLevel) world).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(_bpLootTblWorld)).withParameter(LootContextParams.BLOCK_STATE, world.getBlockState(_bpLootTblWorld))
+							.withOptionalParameter(LootContextParams.BLOCK_ENTITY, world.getBlockEntity(_bpLootTblWorld)).create(LootContextParamSets.EMPTY))) {
 				item_to_drop = itemstackiterator;
 			}
 		}

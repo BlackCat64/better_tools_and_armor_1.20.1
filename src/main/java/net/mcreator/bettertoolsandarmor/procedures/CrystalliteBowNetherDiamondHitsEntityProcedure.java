@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class CrystalliteBowNetherDiamondExplosionProcedure {
+public class CrystalliteBowNetherDiamondHitsEntityProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
