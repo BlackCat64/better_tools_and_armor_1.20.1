@@ -26,8 +26,6 @@ public class CrystalliteBowAmethystItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7dEcholocation - Shoots arrows directly at the target"));
-
-
+		list.add(Component.literal("\u00A7dEcholocation - Arrows home in on nearby mobs"));
 	}
 }

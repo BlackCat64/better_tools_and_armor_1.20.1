@@ -9,7 +9,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class CrystalliteBowAmethystFiredProcedure {
-	public static void execute(LevelAccessor world, Entity arrow, Entity player) {
+	public static void execute(LevelAccessor world, Entity arrow, Entity player, double homing_radius) {
 		if (arrow == null || player == null)
 			return;
 		Entity armor_stand = null;
@@ -33,7 +33,7 @@ public class CrystalliteBowAmethystFiredProcedure {
 			armor_stand.getPersistentData().putBoolean("crystallite_bow_amethyst", true);
 			armor_stand.getPersistentData().putString("arrow", (arrow.getStringUUID()));
 			armor_stand.getPersistentData().putString("player", (player.getStringUUID()));
-			armor_stand.getPersistentData().putDouble("time_since_shot", 0);
+			armor_stand.getPersistentData().putDouble("homing_radius", homing_radius);
 			((ServerLevel) world).addFreshEntity(armor_stand);
 		}
 	}

@@ -80,7 +80,7 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dAccuracy - A fully charged bow shoots arrows directly at the target"));
+			list.add(Component.literal("\u00A7dAccuracy - Arrows shot from Bows home in on nearby mobs"));
 		}
 
 		@Override

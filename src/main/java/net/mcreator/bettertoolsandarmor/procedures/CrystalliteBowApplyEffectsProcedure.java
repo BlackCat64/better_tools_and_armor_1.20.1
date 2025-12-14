@@ -99,8 +99,6 @@ public class CrystalliteBowApplyEffectsProcedure {
 									if (entityiterator.isInWaterRainOrBubble()) {
 										SetEntityNumberDataProcedure.execute(entityiterator, GetEntityNumberDataProcedure.execute(entityiterator, "damage") + 2.5, "damage");
 									}
-								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))) {
-									CrystalliteBowAmethystFiredProcedure.execute(world, entityiterator, entity);
 								}
 							}
 						}

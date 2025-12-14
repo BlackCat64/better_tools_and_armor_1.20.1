@@ -27,7 +27,7 @@
       "fixedValue": [
         "§7Upgrade: §dAmethyst",
         "§7Ability:",
-        "§dAccuracy - A fully charged bow shoots arrows directly at the target"
+        "§dAccuracy - Arrows shot from Bows home in on nearby mobs"
       ]
     },
     "bodySpecialInformation": {
@@ -79,6 +79,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },
