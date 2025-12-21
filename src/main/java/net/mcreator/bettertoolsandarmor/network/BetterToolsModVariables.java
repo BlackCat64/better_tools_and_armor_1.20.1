@@ -109,6 +109,7 @@ public class BetterToolsModVariables {
 				clone.effect_energy_cost = original.effect_energy_cost;
 				clone.time_since_on_ground = original.time_since_on_ground;
 				clone.time_since_shot_bow = original.time_since_shot_bow;
+				clone.time_on_fire = original.time_on_fire;
 			}
 		}
 	}
@@ -179,6 +180,7 @@ public class BetterToolsModVariables {
 		public double effect_energy_cost = 0;
 		public double time_since_on_ground = 0;
 		public double time_since_shot_bow = 0;
+		public double time_on_fire = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -222,6 +224,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
 			nbt.putDouble("time_since_on_ground", time_since_on_ground);
 			nbt.putDouble("time_since_shot_bow", time_since_shot_bow);
+			nbt.putDouble("time_on_fire", time_on_fire);
 			return nbt;
 		}
 
@@ -262,6 +265,7 @@ public class BetterToolsModVariables {
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
 			time_since_on_ground = nbt.getDouble("time_since_on_ground");
 			time_since_shot_bow = nbt.getDouble("time_since_shot_bow");
+			time_on_fire = nbt.getDouble("time_on_fire");
 		}
 	}
 
@@ -321,6 +325,7 @@ public class BetterToolsModVariables {
 					variables.effect_energy_cost = message.data.effect_energy_cost;
 					variables.time_since_on_ground = message.data.time_since_on_ground;
 					variables.time_since_shot_bow = message.data.time_since_shot_bow;
+					variables.time_on_fire = message.data.time_on_fire;
 				}
 			});
 			context.setPacketHandled(true);

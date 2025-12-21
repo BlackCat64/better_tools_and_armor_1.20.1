@@ -69,9 +69,9 @@ public class GlobalTimersProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (!entity.onGround()) {
+		if (entity.onGround()) {
 			{
-				double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_on_ground);
+				double _setval = 0;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.time_since_on_ground = _setval;
 					capability.syncPlayerVariables(entity);
@@ -79,9 +79,26 @@ public class GlobalTimersProcedure {
 			}
 		} else {
 			{
-				double _setval = 0;
+				double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_on_ground);
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.time_since_on_ground = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
+		if (entity.isOnFire()) {
+			{
+				double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_on_fire);
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.time_on_fire = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				double _setval = 0;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.time_on_fire = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
