@@ -110,6 +110,7 @@ public class BetterToolsModVariables {
 				clone.time_since_on_ground = original.time_since_on_ground;
 				clone.time_since_shot_bow = original.time_since_shot_bow;
 				clone.time_on_fire = original.time_on_fire;
+				clone.nether_diamond_armor_fire_res_cooldown = original.nether_diamond_armor_fire_res_cooldown;
 			}
 		}
 	}
@@ -181,6 +182,7 @@ public class BetterToolsModVariables {
 		public double time_since_on_ground = 0;
 		public double time_since_shot_bow = 0;
 		public double time_on_fire = 0;
+		public double nether_diamond_armor_fire_res_cooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -225,6 +227,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_since_on_ground", time_since_on_ground);
 			nbt.putDouble("time_since_shot_bow", time_since_shot_bow);
 			nbt.putDouble("time_on_fire", time_on_fire);
+			nbt.putDouble("nether_diamond_armor_fire_res_cooldown", nether_diamond_armor_fire_res_cooldown);
 			return nbt;
 		}
 
@@ -266,6 +269,7 @@ public class BetterToolsModVariables {
 			time_since_on_ground = nbt.getDouble("time_since_on_ground");
 			time_since_shot_bow = nbt.getDouble("time_since_shot_bow");
 			time_on_fire = nbt.getDouble("time_on_fire");
+			nether_diamond_armor_fire_res_cooldown = nbt.getDouble("nether_diamond_armor_fire_res_cooldown");
 		}
 	}
 
@@ -326,6 +330,7 @@ public class BetterToolsModVariables {
 					variables.time_since_on_ground = message.data.time_since_on_ground;
 					variables.time_since_shot_bow = message.data.time_since_shot_bow;
 					variables.time_on_fire = message.data.time_on_fire;
+					variables.nether_diamond_armor_fire_res_cooldown = message.data.nether_diamond_armor_fire_res_cooldown;
 				}
 			});
 			context.setPacketHandled(true);
