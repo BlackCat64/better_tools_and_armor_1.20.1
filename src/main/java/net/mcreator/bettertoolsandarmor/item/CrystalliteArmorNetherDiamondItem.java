@@ -75,7 +75,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -95,7 +95,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -115,7 +115,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -135,7 +135,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 

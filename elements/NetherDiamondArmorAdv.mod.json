@@ -2,8 +2,8 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Flaming Aura",
-    "achievementDescription": "Set an attacker on fire with a full set of Nether Diamond Armor",
+    "achievementName": "This is Fine",
+    "achievementDescription": "Get Fire Resistance from a full set of Nether Diamond Armor.",
     "achievementIcon": {
       "value": "CUSTOM:NetherDiamondArmor.body"
     },

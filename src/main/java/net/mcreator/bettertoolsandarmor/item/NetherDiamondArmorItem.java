@@ -73,8 +73,10 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+			list.add(Component.literal("\u00A74Reduces maximum burn time"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74 Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -91,8 +93,10 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+			list.add(Component.literal("\u00A74Reduces maximum burn time"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74 Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -109,8 +113,10 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+			list.add(Component.literal("\u00A74Reduces maximum burn time"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74 Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -127,8 +133,10 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Has a chance to set attackers on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+			list.add(Component.literal("\u00A74Reduces maximum burn time"));
+			list.add(Component.literal("\u00A77Full-set bonus:"));
+			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74 Effect is stronger in the Nether"));
 		}
 
 		@Override

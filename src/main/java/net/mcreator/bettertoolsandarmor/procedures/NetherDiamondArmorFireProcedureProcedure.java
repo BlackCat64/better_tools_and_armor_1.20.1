@@ -18,8 +18,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
@@ -68,30 +71,37 @@ public class NetherDiamondArmorFireProcedureProcedure {
 				} else if (armor_pieces == 4) {
 					time = 100;
 				}
-				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_on_fire >= (6 - armor_pieces) * 20 || time > 0) {
-					entity.clearFire();
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1, false);
-						}
+			}
+			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_on_fire >= (6 - armor_pieces) * 20 || time > 0) {
+				entity.clearFire();
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1, false);
 					}
-					if (time > 0) {
-						if ((entity.level().dimension()) == Level.NETHER) {
-							time = time * 2;
+				}
+				if (time > 0) {
+					if ((entity.level().dimension()) == Level.NETHER) {
+						time = time * 2;
+					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, (int) time, 0));
+					if (entity instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:nether_diamond_armor_adv"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
 						}
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, (int) time, 0));
 					}
 					{
-						double _setval = 200;
+						double _setval = 1200;
 						entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.nether_diamond_armor_fire_res_cooldown = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					i = 0;
 					for (int index1 = 0; index1 < 4; index1++) {
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 								.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
@@ -103,11 +113,12 @@ public class NetherDiamondArmorFireProcedureProcedure {
 								}
 							}
 							if (entity instanceof Player _player)
-								_player.getCooldowns().addCooldown((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).getItem(), 200);
+								_player.getCooldowns().addCooldown((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).getItem(), 1200);
 						}
 						i = i + 1;
 					}
 				}
+				i = 0;
 			}
 		}
 	}
