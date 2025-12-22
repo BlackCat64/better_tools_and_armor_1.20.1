@@ -67,6 +67,7 @@ public class NetherDiamondArmorTooltipProcedure {
 				time = time * 2;
 			}
 			tooltip.add(Component.literal(("\u00A72" + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));
+			tooltip.add(Component.literal("\u00A77Cooldown: \u00A7c1min"));
 		}
 	}
 }

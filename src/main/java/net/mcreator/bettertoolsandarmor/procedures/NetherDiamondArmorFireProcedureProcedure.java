@@ -102,6 +102,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					i = 0;
 					for (int index1 = 0; index1 < 4; index1++) {
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 								.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
@@ -118,7 +119,6 @@ public class NetherDiamondArmorFireProcedureProcedure {
 						i = i + 1;
 					}
 				}
-				i = 0;
 			}
 		}
 	}
