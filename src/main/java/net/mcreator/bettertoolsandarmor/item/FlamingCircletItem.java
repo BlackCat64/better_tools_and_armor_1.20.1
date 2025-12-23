@@ -21,7 +21,8 @@ public class FlamingCircletItem extends Item implements ICurioItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
-		list.add(Component.literal("\u00A79Extinguishes fire after 3s"));
-		list.add(Component.literal("\u00A7cCooldown: 15s"));
+		list.add(Component.literal("\u00A79Sets attackers on fire for 3s"));
+		list.add(Component.literal("\u00A74Burn time doubles in the Nether"));
+		list.add(Component.literal("\u00A7cCooldown: 10s"));
 	}
 }
