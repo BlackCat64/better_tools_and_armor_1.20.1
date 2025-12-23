@@ -8,7 +8,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
@@ -149,9 +148,5 @@ public class GlobalTimersProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList().broadcastSystemMessage(
-					Component.literal((new java.text.DecimalFormat("#").format((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).flaming_circlet_cooldown))),
-					false);
 	}
 }

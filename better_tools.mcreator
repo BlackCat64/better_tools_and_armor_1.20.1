@@ -34003,6 +34003,49 @@
         ]
       },
       "path": "~/Nether Diamond"
+    },
+    {
+      "name": "OreLocationParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_location_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/OreLocationParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Particles"
     }
   ],
   "variable_elements": [

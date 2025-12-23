@@ -14,14 +14,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 
 public class CrystallitePickaxeAmethystOreLocationProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -32,10 +28,6 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 		double sy = 0;
 		double sz = 0;
 		double radius = 0;
-		double change_x = 0;
-		double change_y = 0;
-		double change_z = 0;
-		double distance = 0;
 		double count = 0;
 		double repeats = 0;
 		if (entity.isShiftKeyDown()) {
@@ -158,18 +150,7 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1, false);
 					}
 				}
-				distance = Math.sqrt(Math.pow(sx, 2) + Math.pow(sy, 2) + Math.pow(sz, 2));
-				change_x = sx / distance;
-				change_y = sy / distance;
-				change_z = sz / distance;
-				if (change_x != 0 || change_y != 0 || change_z != 0) {
-					count = 0;
-					for (int index10 = 0; index10 < (int) Math.floor(distance); index10++) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ORE_LOCATION_PARTICLE.get()), (x + count * change_x), (y + 1 + count * change_y), (z + count * change_z), 3, 0.02, 0.02, 0.02, 0.0025);
-						count = count + 1;
-					}
-				}
+				OreLocationParticlesProcedure.execute(world, x, y, z, x + sx, y + sy, z + sz);
 			} else {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
