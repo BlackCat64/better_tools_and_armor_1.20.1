@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "block",
   "definition": {
-    "texture": "crystallite_air",
+    "texture": "purple_mushroom",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -117,7 +117,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
+    "onNeighbourBlockChanges": {
       "name": "ClimbableWallDeleteProcedure"
     },
     "onTickUpdate": {

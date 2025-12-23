@@ -19791,68 +19791,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "ClimbableWallDeleteProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "climbable_wall_delete_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ClimbableWallDeleteProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
-      "name": "PlaceClimbableWall",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "place_climbable_wall",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlaceClimbableWallProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "GuardianCrystal",
       "type": "item",
       "compiles": true,
@@ -34046,6 +33984,37 @@
         ]
       },
       "path": "~/Utility Procedures/Particles"
+    },
+    {
+      "name": "ClimbableWallDeleteProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbable_wall_delete_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ClimbableWallDeleteProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
     }
   ],
   "variable_elements": [
