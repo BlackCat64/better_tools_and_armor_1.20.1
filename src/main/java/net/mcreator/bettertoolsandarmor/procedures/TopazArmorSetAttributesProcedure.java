@@ -76,7 +76,7 @@ public class TopazArmorSetAttributesProcedure {
 					chance = chance + 0.05;
 				}
 			}
-			if (IsInThunderstormProcedure.execute(world, x, y, z)) {
+			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 				if (crystallite_worn) {
 					chance = chance * 1.5;
 				} else {

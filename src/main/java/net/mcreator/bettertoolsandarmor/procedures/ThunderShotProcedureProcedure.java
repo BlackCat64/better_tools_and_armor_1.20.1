@@ -51,7 +51,7 @@ public class ThunderShotProcedureProcedure {
 			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_topaz_upgrade")) {
 				LightningChance = LightningChance + 0.2;
 			}
-			if (IsInThunderstormProcedure.execute(world, x, y, z)) {
+			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 				LightningChance = LightningChance * 2;
 			}
 			if (LightningChance > 0) {
