@@ -34,6 +34,6 @@ public class FlintAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.FLINT));
 			}
-		}, 1, -3.1f, new Item.Properties());
+		}, 1, -3.2f, new Item.Properties());
 	}
 }

@@ -40,19 +40,16 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:drinks")))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
+				{
+					boolean _setval = true;
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.last_food_was_carbonated = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			} else if (itemstack.getItem().isEdible() && !(itemstack.getItem() == Items.ROTTEN_FLESH || itemstack.getItem() == Items.SPIDER_EYE || itemstack.getItem() == Items.PUFFERFISH || itemstack.getItem() == Items.POISONOUS_POTATO)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
-			}
-			{
-				boolean _setval = true;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.last_food_was_carbonated = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else {
-			if (itemstack.getItem().isEdible()) {
 				{
 					boolean _setval = false;
 					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -60,6 +57,22 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+			} else {
+				{
+					boolean _setval = false;
+					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.last_food_was_carbonated = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		} else if (itemstack.getItem().isEdible()) {
+			{
+				boolean _setval = false;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.last_food_was_carbonated = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

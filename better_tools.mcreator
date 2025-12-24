@@ -34015,6 +34015,52 @@
         ]
       },
       "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "FlintToolsIncreasedCritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_tools_increased_crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsIncreasedCritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flint Tools"
+    },
+    {
+      "name": "FlintToolsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_tools_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Flint Tools"
     }
   ],
   "variable_elements": [
@@ -35704,6 +35750,14 @@
       "CUSTOM:CrystalliteSwordSky",
       "CUSTOM:CrystalliteAxeSky",
       "CUSTOM:CrystalliteDaggerSky"
+    ],
+    "ITEMS:mod:flint_tools": [
+      "CUSTOM:FlintDagger",
+      "CUSTOM:FlintSword",
+      "CUSTOM:FlintPickaxe",
+      "CUSTOM:FlintAxe",
+      "CUSTOM:FlintShovel",
+      "CUSTOM:FlintHoe"
     ],
     "ITEMS:mod:prismarine_upgraded_crystallite_items": [
       "CUSTOM:GuardianCrystal",

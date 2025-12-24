@@ -35,7 +35,7 @@ public class CriticalityWeaponTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() > 1.5) {
+		if (((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() != 1.5) {
 			if (itemstack.is(ItemTags.create(new ResourceLocation("forge:tools"))) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue()) + "x Critical Hit Multiplier")));
 			}

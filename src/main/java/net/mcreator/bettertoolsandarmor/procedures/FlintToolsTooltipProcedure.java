@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class CrystalliteSwordSkyTooltipProcedure {
+public class FlintToolsTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -33,8 +33,8 @@ public class CrystalliteSwordSkyTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_multiplier_weapons"))) && !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
-			tooltip.add(Component.literal("\u00A79+0.5x Critical Hit Multiplier"));
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flint_tools"))) && !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
+			tooltip.add(Component.literal("\u00A79+0.25x Critical Hit Multiplier"));
 		}
 	}
 }

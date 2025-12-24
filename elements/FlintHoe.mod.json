@@ -22,6 +22,9 @@
     "enchantability": 8,
     "damageVsEntity": 2.0,
     "usageCount": 150,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.FLINT"
