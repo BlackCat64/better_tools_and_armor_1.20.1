@@ -126,7 +126,7 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dCave Climber - Allows wall climbing on any solid block"));
+			list.add(Component.literal("\u00A7dCave Climber - Allows wall climbing on any full block"));
 		}
 
 		@Override

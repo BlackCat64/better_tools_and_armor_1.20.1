@@ -18951,25 +18951,6 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "IncreasedCritDamageToolsModifier",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_crit_damage_tools_modifier",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IncreasedCritDamageToolsModifierProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "Criticality",
       "type": "potioneffect",
       "compiles": true,
@@ -34061,6 +34042,25 @@
         ]
       },
       "path": "~/Flint Tools"
+    },
+    {
+      "name": "CrystalliteSwordSkyIncreasedCritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_sky_increased_crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyIncreasedCritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sky"
     }
   ],
   "variable_elements": [

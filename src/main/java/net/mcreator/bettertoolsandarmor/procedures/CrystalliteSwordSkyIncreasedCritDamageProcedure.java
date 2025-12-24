@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber
-public class FlintToolsIncreasedCritDamageProcedure {
+public class CrystalliteSwordSkyIncreasedCritDamageProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
@@ -35,8 +35,8 @@ public class FlintToolsIncreasedCritDamageProcedure {
 		if (entity == null)
 			return;
 		AttributeModifier modifier = null;
-		modifier = new AttributeModifier(UUID.fromString("b142e962-510b-4849-9215-39d451edde4c"), "flint_tools", 0.25, AttributeModifier.Operation.ADDITION);
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:flint_tools")))) {
+		modifier = new AttributeModifier(UUID.fromString("1bdaa54a-b347-4111-85e1-2e2bc6528571"), "increased_crit_damage", 0.5, AttributeModifier.Operation.ADDITION);
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_multiplier_weapons")))) {
 			if (!(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).hasModifier(modifier)))
 				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).addTransientModifier(modifier);
 		} else {
