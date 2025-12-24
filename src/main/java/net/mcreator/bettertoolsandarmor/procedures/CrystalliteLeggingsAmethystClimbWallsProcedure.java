@@ -35,10 +35,13 @@ public class CrystalliteLeggingsAmethystClimbWallsProcedure {
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_LEGGINGS.get()) {
 			if (world.getBlockState(BlockPos.containing(x + (entity.getDirection()).getStepX(), y, z + (entity.getDirection()).getStepZ())).isFaceSturdy(world,
-					BlockPos.containing(x + (entity.getDirection()).getStepX(), y, z + (entity.getDirection()).getStepZ()), ((entity.getDirection()).getOpposite()))
-					&& (world.isEmptyBlock(BlockPos.containing(x, y, z)) || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.CLIMBABLE_WALL.get())) {
-				world.setBlock(BlockPos.containing(x, y, z), BetterToolsModBlocks.CLIMBABLE_WALL.get().defaultBlockState(), 3);
-				world.setBlock(BlockPos.containing(x, y + 1, z), BetterToolsModBlocks.CLIMBABLE_WALL.get().defaultBlockState(), 3);
+					BlockPos.containing(x + (entity.getDirection()).getStepX(), y, z + (entity.getDirection()).getStepZ()), ((entity.getDirection()).getOpposite()))) {
+				if (world.isEmptyBlock(BlockPos.containing(x, y, z)) || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.CLIMBABLE_WALL.get()) {
+					world.setBlock(BlockPos.containing(x, y, z), BetterToolsModBlocks.CLIMBABLE_WALL.get().defaultBlockState(), 3);
+				}
+				if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) || (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == BetterToolsModBlocks.CLIMBABLE_WALL.get()) {
+					world.setBlock(BlockPos.containing(x, y + 1, z), BetterToolsModBlocks.CLIMBABLE_WALL.get().defaultBlockState(), 3);
+				}
 			}
 		}
 	}
