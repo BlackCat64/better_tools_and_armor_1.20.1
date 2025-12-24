@@ -34465,6 +34465,9 @@
       "~CUSTOM:RubyBlock",
       "~CUSTOM:RubyOre"
     ],
+    "BLOCKS:minecraft:climbable": [
+      "CUSTOM:ClimbableWall"
+    ],
     "ITEMS:mod:leeching_weapons": [
       "CUSTOM:CrystalliteSwordRedstone",
       "CUSTOM:CrystalliteAxeRedstone",
@@ -34862,6 +34865,10 @@
       "CUSTOM:CrystalliteArmorAmethyst.legs",
       "CUSTOM:CrystalliteArmorPrismarine.legs",
       "CUSTOM:CrystalliteArmorHoney.legs"
+    ],
+    "BLOCKS:mod:climbable_with_wall_climbing_leggings": [
+      "TAG:minecraft:leaves",
+      "TAG:forge:chests"
     ],
     "ITEMS:mod:crystallite_axes": [
       "CUSTOM:CrystalliteAxe",
@@ -35654,6 +35661,7 @@
     "ITEMS:forge:ores_in_ground/blackstone": [
       "CUSTOM:NetherDiamondOre"
     ],
+    "BIOMES:minecraft:is_overworld": [],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:NetherDiamondArmor.legs",
       "CUSTOM:RubyArmor.legs",
