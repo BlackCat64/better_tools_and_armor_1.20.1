@@ -35,10 +35,9 @@ public class CrystalliteSwordAmethystTooltipProcedure {
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:echolocation_weapons")))) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77When ability used:"));
-				tooltip.add(Component.literal("\u00A7cDurability Cost: 40"));
-				tooltip.add(Component.literal("\u00A7cCooldown: 60s"));
-				tooltip.add(Component.literal("\u00A77Range:"));
-				tooltip.add(Component.literal("\u00A7964 Blocks"));
+				tooltip.add(Component.literal("\u00A7cDurability Cost: 20"));
+				tooltip.add(Component.literal("\u00A7cCooldown: 30s"));
+				tooltip.add(Component.literal("\u00A7964 Block Radius"));
 			} else {
 				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}

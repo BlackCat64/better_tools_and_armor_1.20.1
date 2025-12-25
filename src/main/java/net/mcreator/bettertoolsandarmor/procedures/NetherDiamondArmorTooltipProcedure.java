@@ -52,7 +52,7 @@ public class NetherDiamondArmorTooltipProcedure {
 				i = i + 1;
 			}
 			tooltip.add(Component.literal("\u00A77When on fire:"));
-			tooltip.add(Component.literal(("\u00A72" + new java.text.DecimalFormat("#").format(Math.min(6 - armor_pieces, 5)) + "s Max Burn Time")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(Math.min(6 - armor_pieces, 5)) + "s Max Burn Time")));
 			if (crystallite || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				time = armor_pieces == 4 ? 15 : armor_pieces * 3;
 				if (armor_pieces == 0) {
@@ -66,7 +66,7 @@ public class NetherDiamondArmorTooltipProcedure {
 			if ((entity.level().dimension()) == Level.NETHER) {
 				time = time * 2;
 			}
-			tooltip.add(Component.literal(("\u00A72" + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));
 			tooltip.add(Component.literal("\u00A7cCooldown: 1min"));
 		}
 	}
