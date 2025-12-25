@@ -1,0 +1,29 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteSwordHoney"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeHoney"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerHoney"
+      }
+    ],
+    "information": [
+      "Can safely harvest honey from beehives, without angering nearby bees."
+    ]
+  }
+}
