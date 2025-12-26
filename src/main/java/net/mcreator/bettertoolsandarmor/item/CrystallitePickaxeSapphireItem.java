@@ -8,10 +8,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteSapphireSilkTouchProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -50,12 +48,6 @@ public class CrystallitePickaxeSapphireItem extends PickaxeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7bIcy Coating - Has Silk Touch"));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CrystalliteSapphireSilkTouchProcedure.execute(entity, itemstack);
+		list.add(Component.literal("\u00A7bDelicate - Ore blocks drop themselves"));
 	}
 }

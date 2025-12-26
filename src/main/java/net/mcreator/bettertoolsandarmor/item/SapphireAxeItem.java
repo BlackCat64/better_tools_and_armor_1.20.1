@@ -8,8 +8,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.procedures.SapphireToolsSilkTouchProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -47,6 +49,13 @@ public class SapphireAxeItem extends AxeItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7bHas a chance to freeze the target"));
-		list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
+		list.add(Component.literal("\u00A7bFreezing effect is stronger in a cold biome"));
+		list.add(Component.literal("\u00A7bHas Silk Touch"));
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		SapphireToolsSilkTouchProcedure.execute(entity, itemstack);
 	}
 }

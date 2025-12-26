@@ -12,7 +12,8 @@
     "specialInformation": {
       "fixedValue": [
         "§bHas a chance to freeze the target",
-        "§bEffect is stronger in a cold biome"
+        "§bFreezing effect is stronger in a cold biome",
+        "§bHas Silk Touch"
       ]
     },
     "creativeTabs": [
@@ -37,6 +38,9 @@
     "blockDropsTier": "IRON",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "SapphireToolsSilkTouch"
+    }
   }
 }

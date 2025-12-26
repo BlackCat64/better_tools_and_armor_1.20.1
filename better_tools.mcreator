@@ -8159,29 +8159,6 @@
       "path": "~/Crystallite/Sapphire"
     },
     {
-      "name": "CrystalliteSapphireSilkTouch",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sapphire_silk_touch",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSapphireSilkTouchProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sapphire"
-    },
-    {
       "name": "CrystallitePickaxeSapphireRecipe",
       "type": "recipe",
       "compiles": true,
@@ -34119,6 +34096,29 @@
         "files": []
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "SapphireToolsSilkTouch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_tools_silk_touch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireToolsSilkTouchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
     }
   ],
   "variable_elements": [

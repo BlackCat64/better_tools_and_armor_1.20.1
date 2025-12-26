@@ -12,10 +12,9 @@
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §bSapphire",
-        "§7Abilities:",
+        "§7Ability:",
         "§bFreezing - Can freeze opponents",
-        "§bIcy Coating - Has Silk Touch",
-        "§bFreezing effect is stronger in a cold biome"
+        "§bEffect is stronger in a cold biome"
       ]
     },
     "creativeTabs": [
@@ -49,9 +48,6 @@
     "damageOnCrafting": false,
     "onEntityHitWith": {
       "name": "CrystalliteSwordSapphireProcedure2"
-    },
-    "onItemInInventoryTick": {
-      "name": "CrystalliteSapphireSilkTouch"
     }
   }
 }

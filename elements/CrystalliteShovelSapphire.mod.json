@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §bSapphire",
         "§7Ability:",
-        "§bIcy Coating - Has Silk Touch"
+        "§bFrosty - Destroys plants in a 5x5 area"
       ]
     },
     "creativeTabs": [
@@ -44,9 +44,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "CrystalliteSapphireSilkTouch"
-    }
+    "damageOnCrafting": false
   }
 }
