@@ -216,8 +216,10 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get()), new ItemStack(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.crying_obsidian_helmet_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.MYSTIC_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.mystic_potion_info"));
-		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_EMERALD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_SCULK.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()),
-				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_SCULK.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.multi_block_mining_tools_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_EMERALD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_SCULK.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_SCULK.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_SAPPHIRE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_SAPPHIRE.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.multi_block_mining_tools_info"));
 		registration.addIngredientInfo(
 				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_HONEY.get())),
