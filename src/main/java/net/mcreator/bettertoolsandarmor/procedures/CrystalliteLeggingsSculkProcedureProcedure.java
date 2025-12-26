@@ -36,9 +36,9 @@ public class CrystalliteLeggingsSculkProcedureProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
 			if (entity.isShiftKeyDown()) {
 				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-						.hasModifier((new AttributeModifier(UUID.fromString("ebe598d1-5a7b-4bc9-847b-83d59b282b2f"), "crystallite_sculk_leggings_swift_sneak", 0.03, AttributeModifier.Operation.ADDITION)))))
+						.hasModifier((new AttributeModifier(UUID.fromString("ebe598d1-5a7b-4bc9-847b-83d59b282b2f"), "crystallite_sculk_leggings_swift_sneak", 1.2, AttributeModifier.Operation.MULTIPLY_BASE)))))
 					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("ebe598d1-5a7b-4bc9-847b-83d59b282b2f"), "crystallite_sculk_leggings_swift_sneak", 0.03, AttributeModifier.Operation.ADDITION)));
+							.addTransientModifier((new AttributeModifier(UUID.fromString("ebe598d1-5a7b-4bc9-847b-83d59b282b2f"), "crystallite_sculk_leggings_swift_sneak", 1.2, AttributeModifier.Operation.MULTIPLY_BASE)));
 			} else {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("ebe598d1-5a7b-4bc9-847b-83d59b282b2f"));
 			}

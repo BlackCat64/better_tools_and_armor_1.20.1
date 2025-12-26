@@ -70,8 +70,7 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
 				if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
-					tooltip.add(Component.literal("\u00A77When sneaking:"));
-					tooltip.add(Component.literal("\u00A79+30% Speed"));
+					tooltip.add(Component.literal("\u00A791.2x Sneaking Speed"));
 				}
 				if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
 					tooltip.add(Component.literal("\u00A77When in the dark:"));
