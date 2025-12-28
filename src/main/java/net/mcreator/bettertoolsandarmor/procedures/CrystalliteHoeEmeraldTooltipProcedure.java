@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,12 +32,8 @@ public class CrystalliteHoeEmeraldTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77For growing crops:"));
-				tooltip.add(Component.literal("\u00A7cCooldown: 60s"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77When destroying plants:"));
+			tooltip.add(Component.literal("\u00A72 10% Bone Meal Chance"));
 		}
 	}
 }

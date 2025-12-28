@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §aEmerald",
         "§7Abilities:",
-        "§aNourishing - Right-click to grow surrounding crops",
+        "§aFertilizer - Plants may drop Bone Meal when mined",
         "§aRight-click while crouching to turn dirt into grass"
       ]
     },
@@ -45,9 +45,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedOnBlock": {
-      "name": "CrystalliteHoeEmeraldProcedure"
-    }
+    "damageOnCrafting": false
   }
 }
