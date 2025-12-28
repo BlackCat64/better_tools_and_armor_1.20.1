@@ -13,7 +13,8 @@
       "fixedValue": [
         "§7Upgrade: §6Honey",
         "§7Abilities:",
-        "§6Swarm - Mining the same block many times in a row causes it to break instantly"
+        "§6Swarm - Mining the same block many times in a row causes it to break instantly",
+        "§6Pollinator - Harvesting the same crop many times in a row may drop Bone Meal"
       ]
     },
     "creativeTabs": [

@@ -28,7 +28,7 @@ import net.minecraft.core.BlockPos;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class CrystalliteHoeHoneyHarvestProcedure {
+public class SafeHoneyHarvestProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())

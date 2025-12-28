@@ -62,6 +62,8 @@ public class BreakBlockWithPickaxeProcedure {
 		}
 		item_to_drop.setCount((int) count_to_drop);
 		world.destroyBlock(BlockPos.containing(x, y, z), false);
+		if (world instanceof Level _level)
+			_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), item_to_drop);
 			entityToSpawn.setPickUpDelay(10);

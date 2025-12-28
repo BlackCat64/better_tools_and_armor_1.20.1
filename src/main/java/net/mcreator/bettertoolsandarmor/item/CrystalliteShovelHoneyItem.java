@@ -49,5 +49,6 @@ public class CrystalliteShovelHoneyItem extends ShovelItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 		list.add(Component.literal("\u00A77Ability:"));
+		list.add(Component.literal("\u00A76Pollinator - Harvesting the same crop many times in a row may drop Bone Meal"));
 	}
 }
