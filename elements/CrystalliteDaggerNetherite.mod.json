@@ -11,9 +11,9 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §8Netherite",
-        "§7Ability:",
-        "§8Sharp - Deals increased attack damage"
+        "\u00a77Upgrade: \u00a78Netherite",
+        "\u00a77Ability:",
+        "\u00a78Sharp - Deals increased attack damage"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 11.0,
+    "efficiency": 14.0,
     "attackSpeed": 2.5,
     "enchantability": 20,
     "damageVsEntity": 9.0,

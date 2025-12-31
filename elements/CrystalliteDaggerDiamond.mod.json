@@ -11,10 +11,10 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §bDiamond",
-        "§7Abilities:",
-        "§bPrecision - Deals increased damage to targets on full HP",
-        "§bDiamond Hard - Increased Durability"
+        "\u00a77Upgrade: \u00a7bDiamond",
+        "\u00a77Abilities:",
+        "\u00a7bPrecision - Deals increased damage to targets on full HP",
+        "\u00a7bDiamond Hard - Increased Durability"
       ]
     },
     "creativeTabs": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 11.0,
+    "efficiency": 14.0,
     "attackSpeed": 2.5,
     "enchantability": 20,
     "damageVsEntity": 7.5,

@@ -11,9 +11,9 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §3Prismarine",
-        "§7Ability:",
-        "§3Marine Might - Increased attack damage when wet"
+        "\u00a77Upgrade: \u00a73Prismarine",
+        "\u00a77Ability:",
+        "\u00a73Marine Might - Increased attack damage when wet"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 10.5,

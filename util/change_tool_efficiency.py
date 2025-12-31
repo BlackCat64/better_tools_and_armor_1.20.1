@@ -23,6 +23,8 @@ def main():
         print("No files selected.")
         return
 
+    total = len(file_paths)
+    changed = 0
     for file_path in file_paths:
             with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -38,12 +40,12 @@ def main():
                         json.dump(data, f, indent=2)
 
                     print(f"Updated {file_path}: {old_value} → {new_efficiency}")
+                    changed = changed + 1
             else:
                 print(f"Skipped {file_path}: no 'efficiency' field found")
             
 
-
-    print("Done.")
+    print(f"Done. {changed} / {total} successfully updated.")
 
 if __name__ == "__main__":
     main()

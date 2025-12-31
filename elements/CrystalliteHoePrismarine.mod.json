@@ -11,9 +11,9 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §3Prismarine",
-        "§7Ability:",
-        "§3Hydration - Tills fully-moisturised farmland in a 3x3 area"
+        "\u00a77Upgrade: \u00a73Prismarine",
+        "\u00a77Ability:",
+        "\u00a73Hydration - Tills fully-moisturised farmland in a 3x3 area"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 4.0,
     "enchantability": 20,
     "damageVsEntity": 2.5,

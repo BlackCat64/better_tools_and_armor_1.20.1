@@ -11,9 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §eGold",
-        "§7Ability:",
-        "§eSpin Attack - Deals damage to all close mobs"
+        "\u00a77Upgrade: \u00a7eGold",
+        "\u00a77Ability:",
+        "\u00a7eSpin Attack - Deals damage to all close mobs"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 1.6,
     "enchantability": 20,
     "damageVsEntity": 9.0,

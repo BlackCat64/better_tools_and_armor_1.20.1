@@ -11,10 +11,10 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §bSapphire",
-        "§7Ability:",
-        "§bFreezing - Can freeze opponents",
-        "§bEffect is stronger in a cold biome"
+        "\u00a77Upgrade: \u00a7bSapphire",
+        "\u00a77Ability:",
+        "\u00a7bFreezing - Can freeze opponents",
+        "\u00a7bEffect is stronger in a cold biome"
       ]
     },
     "creativeTabs": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 2.5,
     "enchantability": 20,
     "damageVsEntity": 7.0,

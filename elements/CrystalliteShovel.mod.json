@@ -11,7 +11,7 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §rNone"
+        "\u00a77Upgrade: \u00a7rNone"
       ]
     },
     "creativeTabs": [
@@ -19,7 +19,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 7.5,

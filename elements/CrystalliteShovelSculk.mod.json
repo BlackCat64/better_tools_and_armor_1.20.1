@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §3Sculk",
-        "§7Ability:",
-        "§3Resonance - Excavates in a 3x3 area"
+        "\u00a77Upgrade: \u00a73Sculk",
+        "\u00a77Ability:",
+        "\u00a73Resonance - Excavates in a 3x3 area"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 11.0,
+    "efficiency": 14.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 8.0,

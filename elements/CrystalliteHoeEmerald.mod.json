@@ -11,10 +11,10 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §aEmerald",
-        "§7Abilities:",
-        "§aFertilizer - Plants may drop Bone Meal when mined",
-        "§aRight-click while crouching to turn dirt into grass"
+        "\u00a77Upgrade: \u00a7aEmerald",
+        "\u00a77Abilities:",
+        "\u00a7aFertilizer - Plants may drop Bone Meal when mined",
+        "\u00a7aRight-click while crouching to turn dirt into grass"
       ]
     },
     "creativeTabs": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 4.0,
     "enchantability": 20,
     "damageVsEntity": 2.5,

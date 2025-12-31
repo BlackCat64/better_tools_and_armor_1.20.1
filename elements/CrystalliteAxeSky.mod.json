@@ -11,10 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
-        "§7Abilities:",
-        "§fAir Affinity - Mines at the same speed while airborne",
-        "§fAir Proficiency - Increased critical hit damage"
+        "\u00a77Upgrade: \u00a7fSky",
+        "\u00a77Abilities:",
+        "\u00a7fAir Affinity - Mines at the same speed while airborne",
+        "\u00a7fAir Proficiency - Increased critical hit damage"
       ]
     },
     "creativeTabs": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 10.5,

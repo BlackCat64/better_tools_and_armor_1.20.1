@@ -11,9 +11,9 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §dAmethyst",
-        "§7Ability:",
-        "§dEcholocation - Right-click while crouching to point towards nearby ores/loot"
+        "\u00a77Upgrade: \u00a7dAmethyst",
+        "\u00a77Ability:",
+        "\u00a7dEcholocation - Right-click while crouching to point towards nearby ores/loot"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 4.0,
     "enchantability": 20,
     "damageVsEntity": 2.5,
