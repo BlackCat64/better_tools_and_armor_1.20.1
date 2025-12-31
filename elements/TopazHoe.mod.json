@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Topaz Hoe",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§6Has Fortune"
+      ]
     },
     "creativeTabs": [
       {
@@ -22,6 +24,9 @@
     "enchantability": 16,
     "damageVsEntity": 2.0,
     "usageCount": 600,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Topaz"
@@ -31,6 +36,9 @@
     "blockDropsTier": "IRON",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "TopazToolsFortune"
+    }
   }
 }

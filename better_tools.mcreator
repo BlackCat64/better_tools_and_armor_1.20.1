@@ -34252,6 +34252,29 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "TopazToolsFortune",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_tools_fortune",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazToolsFortuneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
