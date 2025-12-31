@@ -11,7 +11,7 @@
     "name": "Ender Titanium Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "§5Breaks hard blocks quickly"
+        "\u00a75Breaks hard blocks quickly"
       ]
     },
     "creativeTabs": [
@@ -19,7 +19,7 @@
         "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "efficiency": 12.0,
+    "efficiency": 16.0,
     "attackSpeed": 1.2,
     "enchantability": 18,
     "damageVsEntity": 8.0,

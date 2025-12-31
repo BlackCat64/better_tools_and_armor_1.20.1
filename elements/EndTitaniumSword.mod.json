@@ -11,7 +11,7 @@
     "name": "Ender Titanium Sword",
     "specialInformation": {
       "fixedValue": [
-        "§5Increased attack damage in The End"
+        "\u00a75Increased attack damage in The End"
       ]
     },
     "creativeTabs": [
@@ -19,7 +19,7 @@
         "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "efficiency": 12.0,
+    "efficiency": 16.0,
     "attackSpeed": 1.6,
     "enchantability": 18,
     "damageVsEntity": 10.0,

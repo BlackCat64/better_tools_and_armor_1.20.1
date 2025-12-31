@@ -11,7 +11,7 @@
     "name": "Ender Titanium Shovel",
     "specialInformation": {
       "fixedValue": [
-        "§5Mines End Stone instantly"
+        "\u00a75Mines End Stone instantly"
       ]
     },
     "creativeTabs": [
@@ -19,7 +19,7 @@
         "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "efficiency": 12.0,
+    "efficiency": 16.0,
     "attackSpeed": 1.0,
     "enchantability": 18,
     "damageVsEntity": 8.5,

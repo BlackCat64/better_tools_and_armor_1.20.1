@@ -11,7 +11,7 @@
     "name": "Ender Titanium Hoe",
     "specialInformation": {
       "fixedValue": [
-        "§5Mines Purpur instantly"
+        "\u00a75Mines Purpur instantly"
       ]
     },
     "creativeTabs": [
@@ -19,7 +19,7 @@
         "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "efficiency": 12.0,
+    "efficiency": 16.0,
     "attackSpeed": 4.0,
     "enchantability": 18,
     "damageVsEntity": 3.0,
