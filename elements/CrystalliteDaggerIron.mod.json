@@ -11,9 +11,9 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a7fIron",
-        "\u00a77Ability:",
-        "\u00a7fHeavy - Deals increased knockback"
+        "§7Upgrade: §fIron",
+        "§7Ability:",
+        "§fHeavy - Deals increased knockback"
       ]
     },
     "creativeTabs": [

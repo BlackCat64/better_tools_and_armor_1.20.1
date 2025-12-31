@@ -11,11 +11,11 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a76Topaz",
-        "\u00a77Abilities:",
-        "\u00a76Shocking - Attacks can chain electrically onto nearby mobs",
-        "\u00a76Charged - Has Fortune IV",
-        "\u00a76Attack Chaining is stronger in a thunderstorm"
+        "§7Upgrade: §6Topaz",
+        "§7Abilities:",
+        "§6Shocking - Attacks can chain electrically onto nearby mobs",
+        "§6Charged - Has Fortune IV",
+        "§6Attack Chaining is stronger in a thunderstorm"
       ]
     },
     "creativeTabs": [

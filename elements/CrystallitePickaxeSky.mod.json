@@ -11,9 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a7fSky",
-        "\u00a77Ability:",
-        "\u00a7fAir Affinity - Mines at the same speed while airborne"
+        "§7Upgrade: §fSky",
+        "§7Ability:",
+        "§fAir Affinity - Mines at the same speed while airborne"
       ]
     },
     "creativeTabs": [

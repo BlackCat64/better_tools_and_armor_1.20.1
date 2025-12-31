@@ -22,7 +22,7 @@ public class EndTitaniumHoeItem extends HoeItem {
 			}
 
 			public float getSpeed() {
-				return 12f;
+				return 16f;
 			}
 
 			public float getAttackDamageBonus() {

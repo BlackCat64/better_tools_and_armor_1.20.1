@@ -22,7 +22,7 @@ public class CrystalliteShovelRubyItem extends ShovelItem {
 			}
 
 			public float getSpeed() {
-				return 15f;
+				return 20f;
 			}
 
 			public float getAttackDamageBonus() {

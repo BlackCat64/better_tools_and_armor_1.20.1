@@ -25,7 +25,7 @@ public class CrystallitePickaxePrismarineItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 10f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {

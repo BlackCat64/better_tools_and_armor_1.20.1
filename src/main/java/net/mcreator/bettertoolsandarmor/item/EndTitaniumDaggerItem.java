@@ -24,7 +24,7 @@ public class EndTitaniumDaggerItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 13f;
+				return 16f;
 			}
 
 			public float getAttackDamageBonus() {

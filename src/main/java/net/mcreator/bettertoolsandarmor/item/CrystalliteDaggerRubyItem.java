@@ -22,7 +22,7 @@ public class CrystalliteDaggerRubyItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 15f;
+				return 20f;
 			}
 
 			public float getAttackDamageBonus() {

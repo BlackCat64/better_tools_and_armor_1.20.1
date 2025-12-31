@@ -11,9 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a73Sculk",
-        "\u00a77Ability:",
-        "\u00a73Resonance - Mines multiple ores at once"
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
+        "§3Resonance - Mines multiple ores at once"
       ]
     },
     "creativeTabs": [

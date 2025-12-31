@@ -34544,6 +34544,12 @@
     "ITEMS:mod:smelting_touch_tools": [
       "CUSTOM:CrystallitePickaxeNetherDiamond"
     ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
+    ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
@@ -34556,12 +34562,6 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -34698,6 +34698,9 @@
     "ITEMS:forge:tools/pickaxes": [
       "TAG:minecraft:pickaxes"
     ],
+    "BLOCKS:minecraft:climbable": [
+      "CUSTOM:ClimbableWall"
+    ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:ClimbableWall",
       "~CUSTOM:DeepslateRubyOre",
@@ -34705,9 +34708,6 @@
       "~CUSTOM:BlueMushroomBlock",
       "~CUSTOM:RubyBlock",
       "~CUSTOM:RubyOre"
-    ],
-    "BLOCKS:minecraft:climbable": [
-      "CUSTOM:ClimbableWall"
     ],
     "ITEMS:mod:leeching_weapons": [
       "CUSTOM:CrystalliteSwordRedstone",
@@ -35906,7 +35906,6 @@
     "ITEMS:forge:ores_in_ground/blackstone": [
       "CUSTOM:NetherDiamondOre"
     ],
-    "BIOMES:minecraft:is_overworld": [],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:NetherDiamondArmor.legs",
       "CUSTOM:RubyArmor.legs",

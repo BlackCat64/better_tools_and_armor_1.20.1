@@ -11,10 +11,10 @@
     "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a7aEmerald",
-        "\u00a77Abilities:",
-        "\u00a7aFertilizer - Plants may drop Bone Meal when mined",
-        "\u00a7aRight-click while crouching to turn dirt into grass"
+        "§7Upgrade: §aEmerald",
+        "§7Abilities:",
+        "§aFertilizer - Plants may drop Bone Meal when mined",
+        "§aRight-click while crouching to turn dirt into grass"
       ]
     },
     "creativeTabs": [

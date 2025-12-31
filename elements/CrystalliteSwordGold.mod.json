@@ -11,9 +11,9 @@
     "name": "Crystallite Sword",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a7eGold",
-        "\u00a77Ability:",
-        "\u00a7eSpin Attack - Deals damage to all close mobs"
+        "§7Upgrade: §eGold",
+        "§7Ability:",
+        "§eSpin Attack - Deals damage to all close mobs"
       ]
     },
     "creativeTabs": [

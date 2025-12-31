@@ -23,7 +23,7 @@ public class CrystalliteHoeSculkItem extends HoeItem {
 			}
 
 			public float getSpeed() {
-				return 11f;
+				return 14f;
 			}
 
 			public float getAttackDamageBonus() {

@@ -22,7 +22,7 @@ public class EndTitaniumAxeItem extends AxeItem {
 			}
 
 			public float getSpeed() {
-				return 12f;
+				return 16f;
 			}
 
 			public float getAttackDamageBonus() {

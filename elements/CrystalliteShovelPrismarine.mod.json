@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a73Prismarine",
-        "\u00a77Ability:",
-        "\u00a73Aqua Affinity - Mines blocks instantly when wet"
+        "§7Upgrade: §3Prismarine",
+        "§7Ability:",
+        "§3Aqua Affinity - Mines blocks instantly when wet"
       ]
     },
     "creativeTabs": [

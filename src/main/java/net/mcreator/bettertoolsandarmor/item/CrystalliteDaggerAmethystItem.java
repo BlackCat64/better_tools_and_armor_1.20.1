@@ -27,7 +27,7 @@ public class CrystalliteDaggerAmethystItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 10f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {

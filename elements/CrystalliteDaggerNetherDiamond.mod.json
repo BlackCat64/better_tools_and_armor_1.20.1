@@ -11,10 +11,10 @@
     "name": "Crystallite Dagger",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a74Nether Diamond",
-        "\u00a77Ability:",
-        "\u00a74Flaming - Sets enemies on fire",
-        "\u00a74Effect is stronger in the Nether"
+        "§7Upgrade: §4Nether Diamond",
+        "§7Ability:",
+        "§4Flaming - Sets enemies on fire",
+        "§4Effect is stronger in the Nether"
       ]
     },
     "creativeTabs": [

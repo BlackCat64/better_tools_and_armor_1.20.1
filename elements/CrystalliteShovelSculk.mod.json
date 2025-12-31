@@ -11,9 +11,9 @@
     "name": "Crystallite Shovel",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a73Sculk",
-        "\u00a77Ability:",
-        "\u00a73Resonance - Excavates in a 3x3 area"
+        "§7Upgrade: §3Sculk",
+        "§7Ability:",
+        "§3Resonance - Excavates in a 3x3 area"
       ]
     },
     "creativeTabs": [

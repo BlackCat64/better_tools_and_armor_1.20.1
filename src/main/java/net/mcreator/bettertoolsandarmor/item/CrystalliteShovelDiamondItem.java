@@ -23,7 +23,7 @@ public class CrystalliteShovelDiamondItem extends ShovelItem {
 			}
 
 			public float getSpeed() {
-				return 11f;
+				return 14f;
 			}
 
 			public float getAttackDamageBonus() {

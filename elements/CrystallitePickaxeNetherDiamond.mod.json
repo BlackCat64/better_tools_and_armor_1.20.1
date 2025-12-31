@@ -11,9 +11,9 @@
     "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a74Nether Diamond",
-        "\u00a77Ability:",
-        "\u00a74Flaming - Smelts all raw ore drops"
+        "§7Upgrade: §4Nether Diamond",
+        "§7Ability:",
+        "§4Flaming - Smelts all raw ore drops"
       ]
     },
     "creativeTabs": [

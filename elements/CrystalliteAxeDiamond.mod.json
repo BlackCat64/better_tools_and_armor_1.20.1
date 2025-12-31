@@ -11,10 +11,10 @@
     "name": "Crystallite Axe",
     "specialInformation": {
       "fixedValue": [
-        "\u00a77Upgrade: \u00a7bDiamond",
-        "\u00a77Abilities:",
-        "\u00a7bPrecision - Deals increased damage to targets on full HP",
-        "\u00a7bDiamond Hard - Increased Durability"
+        "§7Upgrade: §bDiamond",
+        "§7Abilities:",
+        "§bPrecision - Deals increased damage to targets on full HP",
+        "§bDiamond Hard - Increased Durability"
       ]
     },
     "creativeTabs": [
