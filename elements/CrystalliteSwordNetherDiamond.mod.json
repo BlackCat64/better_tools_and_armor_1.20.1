@@ -45,9 +45,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "CrystalliteNetherDiamondFireAspect"
-    }
+    "damageOnCrafting": false
   }
 }

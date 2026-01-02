@@ -11,8 +11,7 @@
     "name": "Nether Diamond Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§4Has a chance to set the target on fire",
-        "§4Effect is stronger in the Nether"
+        "§4Sets the target on fire"
       ]
     },
     "creativeTabs": [
@@ -37,9 +36,6 @@
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "NetherDiamondSwordProcedure"
-    }
+    "damageOnCrafting": false
   }
 }

@@ -11,7 +11,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -38,17 +37,15 @@ public class NetherDiamondSwordTooltipProcedure {
 			return;
 		double fire_chance = 0;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_tools"))) && !(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FIRE_ASPECT, itemstack) != 0)) {
-			if (!itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
-				fire_chance = 0.25;
-				if ((entity.level().dimension()) == Level.NETHER) {
-					fire_chance = fire_chance * 2;
-				}
-				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					fire_chance = fire_chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
-				}
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(fire_chance * 100) + "% Fire Chance")));
+			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+				fire_chance = 5;
+			} else {
+				fire_chance = 3;
 			}
-			tooltip.add(Component.literal(("\u00A72 " + ((entity.level().dimension()) == Level.NETHER ? "10" : "5") + "s Burn Time")));
+			if ((entity.level().dimension()) == Level.NETHER) {
+				fire_chance = fire_chance * 2;
+			}
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(fire_chance) + "s Burn Time")));
 		}
 	}
 }

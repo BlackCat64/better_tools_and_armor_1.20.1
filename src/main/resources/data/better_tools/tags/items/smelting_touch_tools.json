@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "better_tools:crystallite_pickaxe_nether_diamond"
+    "better_tools:crystallite_pickaxe_nether_diamond",
+    "better_tools:nether_diamond_pickaxe"
   ]
 }
