@@ -8663,45 +8663,6 @@
       "path": "~/Crystallite/Nether Diamond"
     },
     {
-      "name": "CrystalliteNetherDiamondExtinguish",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_nether_diamond_extinguish",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetherDiamondExtinguishProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
       "name": "CrystalliteShovelNetherDiamondRecipe",
       "type": "recipe",
       "compiles": true,
@@ -34220,6 +34181,41 @@
         ]
       },
       "path": "~/Topaz"
+    },
+    {
+      "name": "PlantsDropCharcoalProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plants_drop_charcoal_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlantsDropCharcoalProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
     }
   ],
   "variable_elements": [
@@ -36152,6 +36148,12 @@
       "CUSTOM:EnergyVial",
       "CUSTOM:EmeraldEnergyVial",
       "CUSTOM:NetheriteEnergyVial"
+    ],
+    "ITEMS:mod:plant_charring_tools": [
+      "CUSTOM:NetherDiamondShovel",
+      "CUSTOM:NetherDiamondHoe",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteHoeNetherDiamond"
     ],
     "ITEMS:mod:freezing_tools": [
       "CUSTOM:SapphireSword",

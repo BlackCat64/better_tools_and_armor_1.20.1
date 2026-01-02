@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Nether Diamond Shovel",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§4Plants may drop Charcoal"
+      ]
     },
     "creativeTabs": [
       {
@@ -22,6 +24,9 @@
     "enchantability": 10,
     "damageVsEntity": 5.5,
     "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:NetherDiamond"

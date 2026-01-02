@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Fireproof - Right-click to extinguish yourself"
+        "§4Charring - Plants may drop Charcoal"
       ]
     },
     "creativeTabs": [
@@ -44,9 +44,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "CrystalliteNetherDiamondExtinguish"
-    }
+    "damageOnCrafting": false
   }
 }
