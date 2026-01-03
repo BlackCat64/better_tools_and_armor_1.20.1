@@ -10,9 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -37,14 +34,7 @@ public class CrystalliteSwordSculkProcedureProcedure {
 		if (entity == null)
 			return;
 		double dmg_boost = 0;
-		AttributeModifier damage_modifier = null;
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s minecraft:generic.attack_damage modifier remove 79fa1ac7-aed2-4b15-aa3e-5751c0da1cd0");
-			}
-		}
+		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("79fa1ac7-aed2-4b15-aa3e-5751c0da1cd0"));
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_SCULK.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_SCULK.get()) {
 			dmg_boost = 2.5;
@@ -52,16 +42,12 @@ public class CrystalliteSwordSculkProcedureProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) {
 			dmg_boost = 2;
 		}
-		if (dmg_boost > 0) {
-			if (IsPlayerInTheDarkProcedure.execute(world, x, y, z, entity)) {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"));
-				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-						.hasModifier((new AttributeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"), "crystallite_sword_sculk", dmg_boost, AttributeModifier.Operation.ADDITION)))))
-					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"), "crystallite_sword_sculk", dmg_boost, AttributeModifier.Operation.ADDITION)));
-			} else {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"));
-			}
+		if (dmg_boost > 0 && IsPlayerInTheDarkProcedure.execute(world, x, y, z, entity)) {
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"));
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
+					.hasModifier((new AttributeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"), "crystallite_sword_sculk", dmg_boost, AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"), "crystallite_sword_sculk", dmg_boost, AttributeModifier.Operation.ADDITION)));
 		} else {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("d4815482-c3c2-4871-9e1e-084f42e3c051"));
 		}

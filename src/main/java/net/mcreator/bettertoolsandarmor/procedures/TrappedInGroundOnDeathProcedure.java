@@ -40,24 +40,22 @@ public class TrappedInGroundOnDeathProcedure {
 			return;
 		Entity display = null;
 		if (entity.getPersistentData().getDouble("trapped_ticks") > 0) {
-			display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 3, 3, 3), e -> true).stream().sorted(new Object() {
+			display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null);
-			if (display instanceof Display.BlockDisplay) {
-				if (display.getPersistentData().getBoolean("trapped_in_ground")) {
-					if (!display.level().isClientSide())
-						display.discard();
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.NEUTRAL, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.NEUTRAL, 1, 1, false);
-						}
+			if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("trapped_in_ground")) {
+				if (!display.level().isClientSide())
+					display.discard();
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.NEUTRAL, 1, 1, false);
 					}
-					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(Blocks.MUD.defaultBlockState()));
 				}
+				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(Blocks.MUD.defaultBlockState()));
 			}
 		}
 	}

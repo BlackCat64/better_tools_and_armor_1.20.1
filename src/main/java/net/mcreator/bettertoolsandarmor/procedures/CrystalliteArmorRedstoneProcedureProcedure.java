@@ -52,8 +52,10 @@ public class CrystalliteArmorRedstoneProcedureProcedure {
 		}
 		if (armor_pieces > 0) {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).removeModifier(UUID.fromString("df870d1b-3909-4e49-b0d7-64645e5f6cf3"));
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
-					.addTransientModifier((new AttributeModifier(UUID.fromString("df870d1b-3909-4e49-b0d7-64645e5f6cf3"), "crystallite_redstone_armor", (armor_pieces * 2), AttributeModifier.Operation.ADDITION)));
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
+					.hasModifier((new AttributeModifier(UUID.fromString("df870d1b-3909-4e49-b0d7-64645e5f6cf3"), "crystallite_redstone_armor", (armor_pieces * 2), AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("df870d1b-3909-4e49-b0d7-64645e5f6cf3"), "crystallite_redstone_armor", (armor_pieces * 2), AttributeModifier.Operation.ADDITION)));
 		} else {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).removeModifier(UUID.fromString("df870d1b-3909-4e49-b0d7-64645e5f6cf3"));
 		}

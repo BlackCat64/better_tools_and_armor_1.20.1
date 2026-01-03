@@ -11,6 +11,7 @@
       }
     ],
     "information": [
+      "If the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.",
       "When a mob is stuck in the ground, it cannot move.",
       "It can still attack, however.",
       "If a player jumps, they are instantly freed from the effect."

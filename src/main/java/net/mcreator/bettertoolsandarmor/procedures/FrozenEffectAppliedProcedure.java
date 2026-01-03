@@ -1,11 +1,15 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+
+import java.util.UUID;
 
 public class FrozenEffectAppliedProcedure {
 	public static void execute(double x, double y, double z, Entity entity) {
@@ -13,15 +17,12 @@ public class FrozenEffectAppliedProcedure {
 			return;
 		double speed = 0;
 		entity.clearFire();
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
+		if ((entity instanceof Mob || entity instanceof Player) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue();
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("attribute @s minecraft:generic.movement_speed modifier add 06be9690-876a-468f-9d10-25eb7c432664 frozen_effect -" + speed + " add"));
-				}
-			}
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
+					.hasModifier((new AttributeModifier(UUID.fromString("06be9690-876a-468f-9d10-25eb7c432664"), "frozen_effect", (speed * (-1)), AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("06be9690-876a-468f-9d10-25eb7c432664"), "frozen_effect", (speed * (-1)), AttributeModifier.Operation.ADDITION)));
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {

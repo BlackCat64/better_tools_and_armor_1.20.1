@@ -33,12 +33,13 @@ public class BlueSlimeStickProcedureProcedure {
 		if (entity == null)
 			return;
 		AttributeModifier blue_slime_stick_knockback_modifier = null;
-		blue_slime_stick_knockback_modifier = new AttributeModifier(UUID.fromString("98bfe459-000a-48ed-a476-ce90773f13a1"), "blue_slime_stick", 5, AttributeModifier.Operation.ADDITION);
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.BLUE_SLIME_STICK.get()) {
-			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).hasModifier(blue_slime_stick_knockback_modifier)))
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).addTransientModifier(blue_slime_stick_knockback_modifier);
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK)
+					.hasModifier((new AttributeModifier(UUID.fromString("98bfe459-000a-48ed-a476-ce90773f13a1"), "blue_slime_stick", 5, AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("98bfe459-000a-48ed-a476-ce90773f13a1"), "blue_slime_stick", 5, AttributeModifier.Operation.ADDITION)));
 		} else {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).removeModifier(blue_slime_stick_knockback_modifier);
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_KNOCKBACK).removeModifier(UUID.fromString("98bfe459-000a-48ed-a476-ce90773f13a1"));
 		}
 	}
 }
