@@ -1,47 +1,9 @@
 package net.mcreator.bettertoolsandarmor.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.bettertoolsandarmor.world.inventory.AttributesViewerMenu;
-import net.mcreator.bettertoolsandarmor.procedures.GetThornsDamageProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetThornsDamageModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetSwimSpeedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetSwimSpeedModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetMovementSpeedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetMovementSpeedModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetLuckProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetLuckModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetKnockbackResistanceVarProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetKnockbackResistanceModifierVarProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetGravityProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetGravityModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetCritHitMultiplierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetCritHitMultiplierModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetBlockReachProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetBlockReachModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetAttackKnockbackProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetAttackKnockbackModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetAttackDamageProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetAttackDamageModifierProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetArmorToughnessProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetArmorToughnessModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetArmorPointsProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.GetArmorPointsModifierProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.AttributesViewerGetMaxHealthProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.AttributeViewerGetMaxHealthModifierProcedure;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class AttributesViewerScreen extends AbstractContainerScreen<AttributesViewerMenu> {
+
 	private final static HashMap<String, Object> guistate = AttributesViewerMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -62,8 +24,11 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
+
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -71,6 +36,7 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		guiGraphics.blit(new ResourceLocation("better_tools:textures/screens/gui_horizontal_line.png"), this.leftPos + 3, this.topPos + 28, 0, 0, 110, 4, 110, 4);
@@ -128,6 +94,7 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -234,5 +201,7 @@ public class AttributesViewerScreen extends AbstractContainerScreen<AttributesVi
 	@Override
 	public void init() {
 		super.init();
+
 	}
+
 }

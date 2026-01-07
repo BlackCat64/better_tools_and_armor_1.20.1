@@ -29,7 +29,7 @@ public class LightningStaffApplyEnchantmentsProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity) && entityiterator instanceof ElectricStaffProjectileEntity) {
 						entityiterator.getPersistentData().putDouble("strikes", (itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) + 1));
-						if (IsInThunderstormProcedure.execute(world, x, y, z)) {
+						if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 							entityiterator.getPersistentData().putDouble("strikes", (entityiterator.getPersistentData().getDouble("strikes") * 2));
 						}
 						entityiterator.getPersistentData().putDouble("radius", (2.5 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) * 0.5));

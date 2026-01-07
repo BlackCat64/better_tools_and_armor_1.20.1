@@ -1,6 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,7 +16,7 @@ import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class EffectEnergyApplyCostProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double timer = 0;
@@ -54,13 +53,12 @@ public class EffectEnergyApplyCostProcedure {
 				if (itemstack.getOrCreateTag().getBoolean("boots_active")) {
 					ApplyBootsEffectProcedure.execute(entity);
 				}
-				if (IsWearingGlassArmorFullSetProcedure.execute(entity) && itemstack.getOrCreateTag().getBoolean("helmet_active") && itemstack.getOrCreateTag().getBoolean("chestplate_active")
-						&& itemstack.getOrCreateTag().getBoolean("leggings_active") && itemstack.getOrCreateTag().getBoolean("boots_active")) {
-					GlassArmorProcedureProcedure.execute(world, x, y, z, entity);
-				}
-				if (!(entity instanceof ServerPlayer _plr21 && _plr21.level() instanceof ServerLevel
-						&& _plr21.getAdvancements().getOrStartProgress(_plr21.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:all_diamond_effect_armor_adv"))).isDone())) {
-					if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 4) {
+				if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 4) {
+					if (IsWearingGlassArmorFullSetProcedure.execute(entity)) {
+						GlassArmorProcedureProcedure.execute(entity);
+					}
+					if (!(entity instanceof ServerPlayer _plr13 && _plr13.level() instanceof ServerLevel
+							&& _plr13.getAdvancements().getOrStartProgress(_plr13.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:all_diamond_effect_armor_adv"))).isDone())) {
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:effect_armor_full_set_adv"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

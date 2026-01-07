@@ -12,7 +12,8 @@
     "specialInformation": {
       "fixedValue": [
         "§6Attacks can chain electrically onto nearby mobs",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Chaining effect is stronger in a thunderstorm",
+        "§6Has Fortune"
       ]
     },
     "creativeTabs": [
@@ -37,6 +38,9 @@
     "blockDropsTier": "IRON",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "TopazToolsFortune"
+    }
   }
 }

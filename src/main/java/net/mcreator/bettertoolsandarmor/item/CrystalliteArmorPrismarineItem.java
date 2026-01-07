@@ -1,32 +1,11 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteHelmetPrismarineConduitPowerProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteChestplatePrismarineMiningFatigueRemoveProcedure;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-
-import java.util.List;
-
-import com.google.common.collect.Iterables;
+import java.util.function.Consumer;
+import net.minecraft.client.model.Model;
 
 public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
+
 	public CrystalliteArmorPrismarineItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -72,6 +51,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 	}
 
 	public static class Helmet extends CrystalliteArmorPrismarineItem {
+
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
 		}
@@ -99,6 +79,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 	}
 
 	public static class Chestplate extends CrystalliteArmorPrismarineItem {
+
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
 		}
@@ -126,6 +107,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 	}
 
 	public static class Leggings extends CrystalliteArmorPrismarineItem {
+
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
 		}
@@ -143,9 +125,11 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_2.png";
 		}
+
 	}
 
 	public static class Boots extends CrystalliteArmorPrismarineItem {
+
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
 		}
@@ -163,5 +147,7 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_prismarine__layer_1.png";
 		}
+
 	}
+
 }

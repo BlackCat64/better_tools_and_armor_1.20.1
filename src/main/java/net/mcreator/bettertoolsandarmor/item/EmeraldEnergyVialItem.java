@@ -34,6 +34,6 @@ public class EmeraldEnergyVialItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		EffectEnergyApplyCostProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		EffectEnergyApplyCostProcedure.execute(slotContext.entity(), stack);
 	}
 }

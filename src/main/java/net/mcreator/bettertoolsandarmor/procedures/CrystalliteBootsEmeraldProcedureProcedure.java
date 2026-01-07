@@ -34,15 +34,12 @@ public class CrystalliteBootsEmeraldProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_BOOTS.get()) {
-			if (IsPlayerInSunlightProcedure.execute(world, x, y, z, entity) == true) {
-				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-						.hasModifier((new AttributeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"), "crystallite_emerald_boots", 0.03, AttributeModifier.Operation.ADDITION)))))
-					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"), "crystallite_emerald_boots", 0.03, AttributeModifier.Operation.ADDITION)));
-			} else {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"));
-			}
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_BOOTS.get()
+				&& IsPlayerInSunlightProcedure.execute(world, x, y, z, entity)) {
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
+					.hasModifier((new AttributeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"), "crystallite_emerald_boots", 0.03, AttributeModifier.Operation.ADDITION)))))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"), "crystallite_emerald_boots", 0.03, AttributeModifier.Operation.ADDITION)));
 		} else {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("79d1947e-0360-4f5c-9802-2f69f24dcfe9"));
 		}

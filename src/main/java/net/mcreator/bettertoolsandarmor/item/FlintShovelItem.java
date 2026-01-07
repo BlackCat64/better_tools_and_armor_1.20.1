@@ -1,12 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class FlintShovelItem extends ShovelItem {
 	public FlintShovelItem() {
@@ -34,6 +29,6 @@ public class FlintShovelItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.FLINT));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 }

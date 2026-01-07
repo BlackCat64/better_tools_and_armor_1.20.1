@@ -2,10 +2,10 @@
   "_fv": 66,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Literally Aimbot",
-    "achievementDescription": "Shoot a mob from at least 30 blocks away with perfect accuracy",
+    "achievementName": "Aimbot",
+    "achievementDescription": "Shoot a mob from at least 30 blocks away with a homing arrow",
     "achievementIcon": {
-      "value": "CUSTOM:CrystalliteArmorAmethyst.helmet"
+      "value": "CUSTOM:CrystalliteBowAmethyst"
     },
     "background": "Default",
     "disableDisplay": false,

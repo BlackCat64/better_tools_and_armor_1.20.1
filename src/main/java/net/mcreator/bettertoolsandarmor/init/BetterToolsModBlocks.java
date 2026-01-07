@@ -1,22 +1,15 @@
 
 /*
-*    MCreator note: This file will be REGENERATED on each build.
-*/
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
 package net.mcreator.bettertoolsandarmor.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.bettertoolsandarmor.block.sign.MetalWallSignBlock;
-import net.mcreator.bettertoolsandarmor.block.sign.MetalWallHangingSignBlock;
-import net.mcreator.bettertoolsandarmor.block.sign.MetalSignBlock;
-import net.mcreator.bettertoolsandarmor.block.sign.MetalHangingSignBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazOreBlock;
 import net.mcreator.bettertoolsandarmor.block.TopazBlockBlock;
 import net.mcreator.bettertoolsandarmor.block.SugarBlockBlock;
@@ -278,94 +271,5 @@ public class BetterToolsModBlocks {
 	public static final RegistryObject<Block> CLIMBABLE_WALL = REGISTRY.register("climbable_wall", () -> new ClimbableWallBlock());
 	public static final RegistryObject<Block> JEWELLERY_TABLE = REGISTRY.register("jewellery_table", () -> new JewelleryTableBlock());
 	// Start of user code block custom blocks
-	public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
-	public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
-	public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
-	public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES = BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).explosionResistance(6).destroyTime(2).sound(SoundType.METAL);
-	public static final RegistryObject<Block> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
-	public static final RegistryObject<Block> BLACK_METAL_WALL_SIGN = REGISTRY.register("black_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
-	public static final RegistryObject<Block> BLACK_METAL_HANGING_SIGN = REGISTRY.register("black_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
-	public static final RegistryObject<Block> BLACK_METAL_WALL_HANGING_SIGN = REGISTRY.register("black_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLACK_METAL_SIGN));
-	public static final RegistryObject<Block> GRAY_METAL_SIGN = REGISTRY.register("gray_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> GRAY_METAL_WALL_SIGN = REGISTRY.register("gray_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> GRAY_METAL_HANGING_SIGN = REGISTRY.register("gray_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> GRAY_METAL_WALL_HANGING_SIGN = REGISTRY.register("gray_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> BLUE_METAL_SIGN = REGISTRY.register("blue_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> BLUE_METAL_WALL_SIGN = REGISTRY.register("blue_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> BLUE_METAL_HANGING_SIGN = REGISTRY.register("blue_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> BLUE_METAL_WALL_HANGING_SIGN = REGISTRY.register("blue_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> BROWN_METAL_SIGN = REGISTRY.register("brown_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BROWN_METAL_SIGN));
-	public static final RegistryObject<Block> BROWN_METAL_WALL_SIGN = REGISTRY.register("brown_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.BROWN_METAL_SIGN));
-	public static final RegistryObject<Block> BROWN_METAL_HANGING_SIGN = REGISTRY.register("brown_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BROWN_METAL_SIGN));
-	public static final RegistryObject<Block> BROWN_METAL_WALL_HANGING_SIGN = REGISTRY.register("brown_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.BROWN_METAL_SIGN));
-	public static final RegistryObject<Block> CREAM_METAL_SIGN = REGISTRY.register("cream_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.CREAM_METAL_SIGN));
-	public static final RegistryObject<Block> CREAM_METAL_WALL_SIGN = REGISTRY.register("cream_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.CREAM_METAL_SIGN));
-	public static final RegistryObject<Block> CREAM_METAL_HANGING_SIGN = REGISTRY.register("cream_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.CREAM_METAL_SIGN));
-	public static final RegistryObject<Block> CREAM_METAL_WALL_HANGING_SIGN = REGISTRY.register("cream_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.CREAM_METAL_SIGN));
-	public static final RegistryObject<Block> CYAN_METAL_SIGN = REGISTRY.register("cyan_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.CYAN_METAL_SIGN));
-	public static final RegistryObject<Block> CYAN_METAL_WALL_SIGN = REGISTRY.register("cyan_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.CYAN_METAL_SIGN));
-	public static final RegistryObject<Block> CYAN_METAL_HANGING_SIGN = REGISTRY.register("cyan_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.CYAN_METAL_SIGN));
-	public static final RegistryObject<Block> CYAN_METAL_WALL_HANGING_SIGN = REGISTRY.register("cyan_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.CYAN_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_ORANGE_METAL_SIGN = REGISTRY.register("dark_orange_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_ORANGE_METAL_WALL_SIGN = REGISTRY.register("dark_orange_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_ORANGE_METAL_HANGING_SIGN = REGISTRY.register("dark_orange_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_ORANGE_METAL_WALL_HANGING_SIGN = REGISTRY.register("dark_orange_metal_wall_hanging_sign",
-			() -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_PINK_METAL_SIGN = REGISTRY.register("dark_pink_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_PINK_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_PINK_METAL_WALL_SIGN = REGISTRY.register("dark_pink_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_PINK_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_PINK_METAL_HANGING_SIGN = REGISTRY.register("dark_pink_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_PINK_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_PINK_METAL_WALL_HANGING_SIGN = REGISTRY.register("dark_pink_metal_wall_hanging_sign",
-			() -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_PINK_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_RED_METAL_SIGN = REGISTRY.register("dark_red_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_RED_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_RED_METAL_WALL_SIGN = REGISTRY.register("dark_red_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_RED_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_RED_METAL_HANGING_SIGN = REGISTRY.register("dark_red_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_RED_METAL_SIGN));
-	public static final RegistryObject<Block> DARK_RED_METAL_WALL_HANGING_SIGN = REGISTRY.register("dark_red_metal_wall_hanging_sign",
-			() -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.DARK_RED_METAL_SIGN));
-	public static final RegistryObject<Block> GREEN_METAL_SIGN = REGISTRY.register("green_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.GREEN_METAL_SIGN));
-	public static final RegistryObject<Block> GREEN_METAL_WALL_SIGN = REGISTRY.register("green_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.GREEN_METAL_SIGN));
-	public static final RegistryObject<Block> GREEN_METAL_HANGING_SIGN = REGISTRY.register("green_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.GREEN_METAL_SIGN));
-	public static final RegistryObject<Block> GREEN_METAL_WALL_HANGING_SIGN = REGISTRY.register("green_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.GREEN_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_BLUE_METAL_SIGN = REGISTRY.register("light_blue_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_BLUE_METAL_WALL_SIGN = REGISTRY.register("light_blue_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_BLUE_METAL_HANGING_SIGN = REGISTRY.register("light_blue_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_BLUE_METAL_WALL_HANGING_SIGN = REGISTRY.register("light_blue_metal_wall_hanging_sign",
-			() -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_BLUE_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_GRAY_METAL_SIGN = REGISTRY.register("light_gray_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_GRAY_METAL_WALL_SIGN = REGISTRY.register("light_gray_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_GRAY_METAL_HANGING_SIGN = REGISTRY.register("light_gray_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> LIGHT_GRAY_METAL_WALL_HANGING_SIGN = REGISTRY.register("light_gray_metal_wall_hanging_sign",
-			() -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIGHT_GRAY_METAL_SIGN));
-	public static final RegistryObject<Block> LIME_METAL_SIGN = REGISTRY.register("lime_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIME_METAL_SIGN));
-	public static final RegistryObject<Block> LIME_METAL_WALL_SIGN = REGISTRY.register("lime_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIME_METAL_SIGN));
-	public static final RegistryObject<Block> LIME_METAL_HANGING_SIGN = REGISTRY.register("lime_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIME_METAL_SIGN));
-	public static final RegistryObject<Block> LIME_METAL_WALL_HANGING_SIGN = REGISTRY.register("lime_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.LIME_METAL_SIGN));
-	public static final RegistryObject<Block> MAGENTA_METAL_SIGN = REGISTRY.register("magenta_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.MAGENTA_METAL_SIGN));
-	public static final RegistryObject<Block> MAGENTA_METAL_WALL_SIGN = REGISTRY.register("magenta_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.MAGENTA_METAL_SIGN));
-	public static final RegistryObject<Block> MAGENTA_METAL_HANGING_SIGN = REGISTRY.register("magenta_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.MAGENTA_METAL_SIGN));
-	public static final RegistryObject<Block> MAGENTA_METAL_WALL_HANGING_SIGN = REGISTRY.register("magenta_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.MAGENTA_METAL_SIGN));
-	public static final RegistryObject<Block> ORANGE_METAL_SIGN = REGISTRY.register("orange_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> ORANGE_METAL_WALL_SIGN = REGISTRY.register("orange_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> ORANGE_METAL_HANGING_SIGN = REGISTRY.register("orange_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> ORANGE_METAL_WALL_HANGING_SIGN = REGISTRY.register("orange_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.ORANGE_METAL_SIGN));
-	public static final RegistryObject<Block> PINK_METAL_SIGN = REGISTRY.register("pink_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.PINK_METAL_SIGN));
-	public static final RegistryObject<Block> PINK_METAL_WALL_SIGN = REGISTRY.register("pink_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.PINK_METAL_SIGN));
-	public static final RegistryObject<Block> PINK_METAL_HANGING_SIGN = REGISTRY.register("pink_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.PINK_METAL_SIGN));
-	public static final RegistryObject<Block> PINK_METAL_WALL_HANGING_SIGN = REGISTRY.register("pink_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.PINK_METAL_SIGN));
-	public static final RegistryObject<Block> PURPLE_METAL_SIGN = REGISTRY.register("purple_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.PURPLE_METAL_SIGN));
-	public static final RegistryObject<Block> PURPLE_METAL_WALL_SIGN = REGISTRY.register("purple_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.PURPLE_METAL_SIGN));
-	public static final RegistryObject<Block> PURPLE_METAL_HANGING_SIGN = REGISTRY.register("purple_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.PURPLE_METAL_SIGN));
-	public static final RegistryObject<Block> PURPLE_METAL_WALL_HANGING_SIGN = REGISTRY.register("purple_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.PURPLE_METAL_SIGN));
-	public static final RegistryObject<Block> RED_METAL_SIGN = REGISTRY.register("red_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.RED_METAL_SIGN));
-	public static final RegistryObject<Block> RED_METAL_WALL_SIGN = REGISTRY.register("red_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.RED_METAL_SIGN));
-	public static final RegistryObject<Block> RED_METAL_HANGING_SIGN = REGISTRY.register("red_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.RED_METAL_SIGN));
-	public static final RegistryObject<Block> RED_METAL_WALL_HANGING_SIGN = REGISTRY.register("red_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.RED_METAL_SIGN));
-	public static final RegistryObject<Block> WHITE_METAL_SIGN = REGISTRY.register("white_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.WHITE_METAL_SIGN));
-	public static final RegistryObject<Block> WHITE_METAL_WALL_SIGN = REGISTRY.register("white_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.WHITE_METAL_SIGN));
-	public static final RegistryObject<Block> WHITE_METAL_HANGING_SIGN = REGISTRY.register("white_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.WHITE_METAL_SIGN));
-	public static final RegistryObject<Block> WHITE_METAL_WALL_HANGING_SIGN = REGISTRY.register("white_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.WHITE_METAL_SIGN));
-	public static final RegistryObject<Block> YELLOW_METAL_SIGN = REGISTRY.register("yellow_metal_sign", () -> new MetalSignBlock(METAL_SIGN_PROPERTIES, BetterToolsModWoodTypes.YELLOW_METAL_SIGN));
-	public static final RegistryObject<Block> YELLOW_METAL_WALL_SIGN = REGISTRY.register("yellow_metal_wall_sign", () -> new MetalWallSignBlock(METAL_WALL_SIGN_PROPERTIES, BetterToolsModWoodTypes.YELLOW_METAL_SIGN));
-	public static final RegistryObject<Block> YELLOW_METAL_HANGING_SIGN = REGISTRY.register("yellow_metal_hanging_sign", () -> new MetalHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.YELLOW_METAL_SIGN));
-	public static final RegistryObject<Block> YELLOW_METAL_WALL_HANGING_SIGN = REGISTRY.register("yellow_metal_wall_hanging_sign", () -> new MetalWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, BetterToolsModWoodTypes.YELLOW_METAL_SIGN));
 	// End of user code block custom blocks
 }

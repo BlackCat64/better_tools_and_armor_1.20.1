@@ -13,8 +13,8 @@
       "fixedValue": [
         "§7Upgrade: §6Honey",
         "§7Abilities:",
-        "§6Hive Mind - Harvest Honeycomb from Beehives without angering nearby bees",
-        "§6Swarm - Mining the same block many times in a row causes it to break instantly"
+        "§6Swarm - Mining the same block many times in a row causes it to break instantly",
+        "§6Pollinator - Harvesting the same crop many times in a row may drop Bone Meal"
       ]
     },
     "creativeTabs": [
@@ -22,7 +22,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 4.0,
     "enchantability": 20,
     "damageVsEntity": 2.5,

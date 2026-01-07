@@ -1,28 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.common.util.ForgeSoundType;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.BlockAndTintGetter;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProcedure;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class CutCrystalliteBlockBlock extends Block {
 	public CutCrystalliteBlockBlock() {

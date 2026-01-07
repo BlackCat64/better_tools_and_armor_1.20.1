@@ -46,13 +46,13 @@ public class CrystalliteSwordAmethystEcholocationProcedure {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				{
 					ItemStack _ist = itemstack;
-					if (_ist.hurt(40, RandomSource.create(), null)) {
+					if (_ist.hurt(20, RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
 				}
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 1200);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 600);
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 				if (entity instanceof LivingEntity _entity)

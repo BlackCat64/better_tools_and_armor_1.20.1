@@ -23,7 +23,7 @@ public class CrystalliteAxeRedstoneItem extends AxeItem {
 			}
 
 			public float getSpeed() {
-				return 10f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {

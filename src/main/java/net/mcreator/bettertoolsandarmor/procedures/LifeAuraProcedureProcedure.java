@@ -7,20 +7,20 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import javax.annotation.Nullable;
+
+import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class LifeAuraProcedureProcedure {
@@ -53,39 +53,13 @@ public class LifeAuraProcedureProcedure {
 			} else {
 				damage_boost = Math.floor(3 * ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) - 1;
 			}
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"));
 			if (damage_boost != 0) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s minecraft:generic.attack_damage modifier remove 1ff6b973-a2cc-480b-b406-97ca13967b52");
-					}
-				}
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
-								("attribute @s minecraft:generic.attack_damage modifier add 1ff6b973-a2cc-480b-b406-97ca13967b52 life_aura_ench " + damage_boost + " add"));
-					}
-				}
-			} else {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s minecraft:generic.attack_damage modifier remove 1ff6b973-a2cc-480b-b406-97ca13967b52");
-					}
-				}
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
+						.addTransientModifier((new AttributeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"), "life_aura_ench", damage_boost, AttributeModifier.Operation.ADDITION)));
 			}
 		} else {
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "attribute @s minecraft:generic.attack_damage modifier remove 1ff6b973-a2cc-480b-b406-97ca13967b52");
-				}
-			}
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"));
 		}
 	}
 }

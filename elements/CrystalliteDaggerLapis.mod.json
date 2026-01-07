@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 2.5,
     "enchantability": 30,
     "damageVsEntity": 4.0,

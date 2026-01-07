@@ -1,13 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.world.features;
 
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.OreFeature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.WorldGenLevel;
-
-import net.mcreator.bettertoolsandarmor.procedures.RubyOreGenerationConditionProcedure;
-
 public class RubyOreFeatureFeature extends OreFeature {
 	public RubyOreFeatureFeature() {
 		super(OreConfiguration.CODEC);

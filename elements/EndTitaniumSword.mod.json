@@ -19,7 +19,7 @@
         "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "efficiency": 12.0,
+    "efficiency": 16.0,
     "attackSpeed": 1.6,
     "enchantability": 18,
     "damageVsEntity": 10.0,

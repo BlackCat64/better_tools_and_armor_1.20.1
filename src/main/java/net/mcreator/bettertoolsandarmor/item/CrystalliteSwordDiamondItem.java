@@ -23,7 +23,7 @@ public class CrystalliteSwordDiamondItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 11f;
+				return 14f;
 			}
 
 			public float getAttackDamageBonus() {

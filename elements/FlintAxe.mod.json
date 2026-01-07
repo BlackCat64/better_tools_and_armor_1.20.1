@@ -18,10 +18,13 @@
       }
     ],
     "efficiency": 5.0,
-    "attackSpeed": 0.9,
+    "attackSpeed": 0.8,
     "enchantability": 8,
     "damageVsEntity": 8.0,
     "usageCount": 150,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.FLINT"

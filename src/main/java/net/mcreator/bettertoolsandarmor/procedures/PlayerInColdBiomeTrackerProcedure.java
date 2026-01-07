@@ -29,22 +29,12 @@ public class PlayerInColdBiomeTrackerProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15) {
-			{
-				boolean _setval = true;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.is_in_cold_biome = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-		} else {
-			{
-				boolean _setval = false;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.is_in_cold_biome = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
+		{
+			boolean _setval = world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15;
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.is_in_cold_biome = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }

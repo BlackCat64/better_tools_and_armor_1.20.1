@@ -38,7 +38,7 @@ public class FlintDaggerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.FLINT));
 			}
-		}, 3, -1.2f, new Item.Properties());
+		}, 3, -1.5f, new Item.Properties());
 	}
 
 	@Override

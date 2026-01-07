@@ -35,19 +35,15 @@ public class CrystalliteLeggingsPrismarineLowGravityProcedure {
 		if (entity == null)
 			return;
 		double gravity_reduction = 0;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get()) {
-			if (entity.isInWaterRainOrBubble()) {
-				if (entity.isInWaterOrBubble()) {
-					entity.setNoGravity(true);
-				} else {
-					((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"));
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get() && entity.isInWaterRainOrBubble()) {
+			if (entity.isInWaterOrBubble()) {
+				entity.setNoGravity(true);
+			} else {
+				entity.setNoGravity(false);
+				if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
+						.hasModifier((new AttributeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"), "crystallite_leggings_prismarine", (-0.5), AttributeModifier.Operation.MULTIPLY_BASE)))))
 					((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 							.addTransientModifier((new AttributeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"), "crystallite_leggings_prismarine", (-0.5), AttributeModifier.Operation.MULTIPLY_BASE)));
-					entity.setNoGravity(false);
-				}
-			} else {
-				((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"));
-				entity.setNoGravity(false);
 			}
 		} else {
 			((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"));

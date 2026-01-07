@@ -29,14 +29,12 @@ public class FrozenEffectStopJumpingProcedure {
 		if (entity == null)
 			return;
 		double time = 0;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get())) {
-			if (entity instanceof Player && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 10), 0, true, false));
-			}
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get()) && entity instanceof Player && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 10), 0, true, false));
 		}
 	}
 }

@@ -1,13 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.world.features;
 
-import net.minecraft.world.level.levelgen.feature.configurations.ReplaceSphereConfiguration;
-import net.minecraft.world.level.levelgen.feature.ReplaceBlobsFeature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.WorldGenLevel;
-
-import net.mcreator.bettertoolsandarmor.procedures.NearbyLavaCheckProcedure;
-
 public class BlackstoneMagmaFeatureFeature extends ReplaceBlobsFeature {
 	public BlackstoneMagmaFeatureFeature() {
 		super(ReplaceSphereConfiguration.CODEC);

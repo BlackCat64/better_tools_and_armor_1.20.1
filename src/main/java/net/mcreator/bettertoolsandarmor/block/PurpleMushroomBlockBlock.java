@@ -1,25 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomBlockParticlesProcedure;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class PurpleMushroomBlockBlock extends Block {
 	public PurpleMushroomBlockBlock() {

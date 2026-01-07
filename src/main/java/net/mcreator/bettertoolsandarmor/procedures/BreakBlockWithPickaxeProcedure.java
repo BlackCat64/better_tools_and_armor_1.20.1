@@ -49,10 +49,10 @@ public class BreakBlockWithPickaxeProcedure {
 			item_to_drop = (world instanceof Level _lvlSmeltResult
 					? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(item_to_drop), _lvlSmeltResult).map(recipe -> recipe.getResultItem(_lvlSmeltResult.registryAccess()).copy()).orElse(ItemStack.EMPTY)
 					: ItemStack.EMPTY);
-		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			item_to_drop = (new ItemStack(blockstate.getBlock()));
-		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+		}
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			count_to_drop = item_to_drop.getCount() * FortuneGetNumOfDropsProcedure.execute((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE));
 		}
 		if (item_to_drop.getItem() == (new ItemStack(blockstate.getBlock())).getItem()) {
@@ -62,6 +62,8 @@ public class BreakBlockWithPickaxeProcedure {
 		}
 		item_to_drop.setCount((int) count_to_drop);
 		world.destroyBlock(BlockPos.containing(x, y, z), false);
+		if (world instanceof Level _level)
+			_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), item_to_drop);
 			entityToSpawn.setPickUpDelay(10);

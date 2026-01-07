@@ -1,12 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.world.features;
 
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.WorldGenLevel;
-
-import net.mcreator.bettertoolsandarmor.world.features.configurations.StructureFeatureConfiguration;
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteClusterDeepslateGenerationConditionProcedure;
-
 public class CrystalliteCluster34DeepslateFeatureFeature extends StructureFeature {
 	public CrystalliteCluster34DeepslateFeatureFeature() {
 		super(StructureFeatureConfiguration.CODEC);

@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Fireproof - Right-click to extinguish yourself"
+        "§4Charring - Plants may drop Charcoal"
       ]
     },
     "creativeTabs": [
@@ -21,7 +21,7 @@
         "value": "CUSTOM:CrystalliteTab"
       }
     ],
-    "efficiency": 10.0,
+    "efficiency": 12.0,
     "attackSpeed": 4.0,
     "enchantability": 20,
     "damageVsEntity": 2.5,
@@ -44,9 +44,6 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "CrystalliteNetherDiamondExtinguish"
-    }
+    "damageOnCrafting": false
   }
 }

@@ -1,13 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class SapphirePickaxeItem extends PickaxeItem {
 	public SapphirePickaxeItem() {
@@ -36,5 +30,17 @@ public class SapphirePickaxeItem extends PickaxeItem {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.SAPPHIRE.get()));
 			}
 		}, 1, -3f, new Item.Properties());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.literal("\u00A7bHas Silk Touch"));
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		SapphireToolsSilkTouchProcedure.execute(entity, itemstack);
 	}
 }

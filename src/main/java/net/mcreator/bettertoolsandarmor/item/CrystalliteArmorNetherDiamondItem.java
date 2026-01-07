@@ -1,26 +1,11 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-
-import java.util.List;
+import java.util.function.Consumer;
+import net.minecraft.client.model.Model;
 
 public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
+
 	public CrystalliteArmorNetherDiamondItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -66,6 +51,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 	}
 
 	public static class Helmet extends CrystalliteArmorNetherDiamondItem {
+
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
 		}
@@ -75,7 +61,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -83,9 +69,11 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_nether_diamond__layer_1.png";
 		}
+
 	}
 
 	public static class Chestplate extends CrystalliteArmorNetherDiamondItem {
+
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
 		}
@@ -95,7 +83,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -103,9 +91,11 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_nether_diamond__layer_1.png";
 		}
+
 	}
 
 	public static class Leggings extends CrystalliteArmorNetherDiamondItem {
+
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
 		}
@@ -115,7 +105,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -123,9 +113,11 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_nether_diamond__layer_2.png";
 		}
+
 	}
 
 	public static class Boots extends CrystalliteArmorNetherDiamondItem {
+
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
 		}
@@ -135,7 +127,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Flaming - Can set attackers on fire"));
+			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
 			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
@@ -143,5 +135,7 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_nether_diamond__layer_1.png";
 		}
+
 	}
+
 }

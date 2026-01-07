@@ -24,7 +24,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Flaming - Can set attackers on fire",
+        "§4Fireproof - Gives Fire Resistance when on fire",
         "§4Effect is stronger in the Nether"
       ]
     },
@@ -32,7 +32,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Flaming - Can set attackers on fire",
+        "§4Fireproof - Gives Fire Resistance when on fire",
         "§4Effect is stronger in the Nether"
       ]
     },
@@ -40,7 +40,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Flaming - Can set attackers on fire",
+        "§4Fireproof - Gives Fire Resistance when on fire",
         "§4Effect is stronger in the Nether"
       ]
     },
@@ -48,7 +48,7 @@
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
         "§7Ability:",
-        "§4Flaming - Can set attackers on fire",
+        "§4Fireproof - Gives Fire Resistance when on fire",
         "§4Effect is stronger in the Nether"
       ]
     },
@@ -80,6 +80,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

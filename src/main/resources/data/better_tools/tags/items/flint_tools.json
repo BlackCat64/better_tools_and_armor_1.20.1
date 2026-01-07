@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:flint_dagger",
+    "better_tools:flint_sword",
+    "better_tools:flint_pickaxe",
+    "better_tools:flint_axe",
+    "better_tools:flint_shovel",
+    "better_tools:flint_hoe"
+  ]
+}

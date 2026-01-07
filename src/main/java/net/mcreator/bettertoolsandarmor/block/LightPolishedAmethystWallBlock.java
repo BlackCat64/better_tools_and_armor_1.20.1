@@ -1,16 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.block;
 
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.WallBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class LightPolishedAmethystWallBlock extends WallBlock {
 	public LightPolishedAmethystWallBlock() {

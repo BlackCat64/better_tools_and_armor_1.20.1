@@ -34,6 +34,6 @@ public class FlintPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.FLINT));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 1, -2.8f, new Item.Properties());
 	}
 }

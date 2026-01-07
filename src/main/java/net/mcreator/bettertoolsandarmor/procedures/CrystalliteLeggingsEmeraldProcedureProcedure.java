@@ -32,11 +32,10 @@ public class CrystalliteLeggingsEmeraldProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_LEGGINGS.get()) {
-			if (!(immediatesourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.POISON))) {
-				if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1));
-			}
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_LEGGINGS.get()
+				&& !(immediatesourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.POISON))) {
+			if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1));
 		}
 	}
 }

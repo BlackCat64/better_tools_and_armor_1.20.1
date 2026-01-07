@@ -22,26 +22,34 @@
     "bootsName": "Nether Diamond Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire",
-        "§4Effect is stronger in the Nether"
+        "§4Reduces maximum burn time",
+        "§7Full-set bonus:",
+        "§4 Gives Fire Resistance when on fire",
+        "§4 Effect is stronger in the Nether"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire",
-        "§4Effect is stronger in the Nether"
+        "§4Reduces maximum burn time",
+        "§7Full-set bonus:",
+        "§4 Gives Fire Resistance when on fire",
+        "§4 Effect is stronger in the Nether"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire",
-        "§4Effect is stronger in the Nether"
+        "§4Reduces maximum burn time",
+        "§7Full-set bonus:",
+        "§4 Gives Fire Resistance when on fire",
+        "§4 Effect is stronger in the Nether"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§4Has a chance to set attackers on fire",
-        "§4Effect is stronger in the Nether"
+        "§4Reduces maximum burn time",
+        "§7Full-set bonus:",
+        "§4 Gives Fire Resistance when on fire",
+        "§4 Effect is stronger in the Nether"
       ]
     },
     "helmetModelName": "Default",
@@ -72,6 +80,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

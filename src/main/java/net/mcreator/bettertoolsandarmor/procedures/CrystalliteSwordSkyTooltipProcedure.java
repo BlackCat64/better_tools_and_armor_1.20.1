@@ -34,7 +34,7 @@ public class CrystalliteSwordSkyTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:increased_crit_multiplier_weapons"))) && !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
-			tooltip.add(Component.literal("\u00A79+1x Critical Hit Multiplier"));
+			tooltip.add(Component.literal("\u00A79+0.5x Critical Hit Multiplier"));
 		}
 	}
 }

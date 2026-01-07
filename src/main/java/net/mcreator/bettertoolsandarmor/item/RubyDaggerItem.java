@@ -1,16 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.bettertoolsandarmor.procedures.RubyToolsProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class RubyDaggerItem extends SwordItem {
 	public RubyDaggerItem() {

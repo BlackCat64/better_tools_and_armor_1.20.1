@@ -1,20 +1,7 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.procedures.NetherDiamondSwordProcedureProcedure;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-
-import java.util.List;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class NetherDiamondAxeItem extends AxeItem {
 	public NetherDiamondAxeItem() {
@@ -55,7 +42,6 @@ public class NetherDiamondAxeItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A74Has a chance set the target on fire"));
-		list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
+		list.add(Component.literal("\u00A74Sets the target on fire"));
 	}
 }

@@ -313,8 +313,8 @@
       "registry_name": "diamond_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondDaggerItem.java",
-          "src/main/resources/assets/better_tools/models/item/diamond_dagger.json"
+          "src/main/resources/assets/better_tools/models/item/diamond_dagger.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondDaggerItem.java"
         ]
       },
       "path": "~/Daggers"
@@ -381,8 +381,8 @@
       "registry_name": "flint_dagger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_dagger.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintDaggerItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintDaggerItem.java",
+          "src/main/resources/assets/better_tools/models/item/flint_dagger.json"
         ]
       },
       "path": "~/Flint Tools"
@@ -467,8 +467,8 @@
       "registry_name": "flint_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_pickaxe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintPickaxeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintPickaxeItem.java",
+          "src/main/resources/assets/better_tools/models/item/flint_pickaxe.json"
         ]
       },
       "path": "~/Flint Tools"
@@ -494,8 +494,8 @@
       "registry_name": "flint_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_axe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintAxeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintAxeItem.java",
+          "src/main/resources/assets/better_tools/models/item/flint_axe.json"
         ]
       },
       "path": "~/Flint Tools"
@@ -548,8 +548,8 @@
       "registry_name": "flint_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/flint_hoe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintHoeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlintHoeItem.java",
+          "src/main/resources/assets/better_tools/models/item/flint_hoe.json"
         ]
       },
       "path": "~/Flint Tools"
@@ -873,8 +873,8 @@
       "registry_name": "ruby_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/ruby_pickaxe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/RubyToolsPickaxeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/RubyToolsPickaxeItem.java",
+          "src/main/resources/assets/better_tools/models/item/ruby_pickaxe.json"
         ]
       },
       "path": "~/Ruby"
@@ -1277,8 +1277,8 @@
       "registry_name": "mixed_essence",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/RandomGemItem.java",
-          "src/main/resources/assets/better_tools/models/item/mixed_essence.json"
+          "src/main/resources/assets/better_tools/models/item/mixed_essence.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/RandomGemItem.java"
         ]
       },
       "path": "~/Mixed Ore"
@@ -2452,8 +2452,8 @@
       "registry_name": "end_titanium_scrap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/EndTitaniumScrapItem.java",
-          "src/main/resources/assets/better_tools/models/item/end_titanium_scrap.json"
+          "src/main/resources/assets/better_tools/models/item/end_titanium_scrap.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EndTitaniumScrapItem.java"
         ]
       },
       "path": "~/Ender Titanium"
@@ -3416,8 +3416,8 @@
       "registry_name": "creative_tab_logo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CreativeTabLogoItem.java",
-          "src/main/resources/assets/better_tools/models/item/creative_tab_logo.json"
+          "src/main/resources/assets/better_tools/models/item/creative_tab_logo.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CreativeTabLogoItem.java"
         ]
       }
     },
@@ -3442,8 +3442,8 @@
       "registry_name": "sapphire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/sapphire.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/sapphire.json"
         ]
       },
       "path": "~/Sapphire"
@@ -3814,8 +3814,8 @@
       "registry_name": "sapphire_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java"
         ]
       },
       "path": "~/Sapphire"
@@ -3868,8 +3868,8 @@
       "registry_name": "sapphire_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireHoeItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_hoe.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_hoe.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireHoeItem.java"
         ]
       },
       "path": "~/Sapphire"
@@ -4154,8 +4154,8 @@
       "registry_name": "topaz_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazHoeItem.java",
-          "src/main/resources/assets/better_tools/models/item/topaz_hoe.json"
+          "src/main/resources/assets/better_tools/models/item/topaz_hoe.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazHoeItem.java"
         ]
       },
       "path": "~/Topaz"
@@ -4512,8 +4512,8 @@
       "registry_name": "ice_effect",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/ice_effect.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IceEffectItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IceEffectItem.java",
+          "src/main/resources/assets/better_tools/models/item/ice_effect.json"
         ]
       },
       "path": "~/Staffs/Ice"
@@ -6036,8 +6036,8 @@
       "registry_name": "tough_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/tough_crystal.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/ToughCrystalItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ToughCrystalItem.java",
+          "src/main/resources/assets/better_tools/models/item/tough_crystal.json"
         ]
       },
       "path": "~/Crystallite/Iron"
@@ -6090,8 +6090,8 @@
       "registry_name": "magic_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/MagicCrystalItem.java",
-          "src/main/resources/assets/better_tools/models/item/magic_crystal.json"
+          "src/main/resources/assets/better_tools/models/item/magic_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/MagicCrystalItem.java"
         ]
       },
       "path": "~/Crystallite/Lapis"
@@ -6117,8 +6117,8 @@
       "registry_name": "heal_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/HealCrystalItem.java",
-          "src/main/resources/assets/better_tools/models/item/heal_crystal.json"
+          "src/main/resources/assets/better_tools/models/item/heal_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HealCrystalItem.java"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -6198,8 +6198,8 @@
       "registry_name": "speedy_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SpeedyCrystalItem.java",
-          "src/main/resources/assets/better_tools/models/item/speedy_crystal.json"
+          "src/main/resources/assets/better_tools/models/item/speedy_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SpeedyCrystalItem.java"
         ]
       },
       "path": "~/Crystallite/Ruby"
@@ -6271,8 +6271,8 @@
       "registry_name": "crystallite_pickaxe_iron",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeIronItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_iron.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_iron.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeIronItem.java"
         ]
       },
       "path": "~/Crystallite/Iron"
@@ -6387,8 +6387,8 @@
       "registry_name": "crystallite_hoe_iron",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_iron.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeIronItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeIronItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_iron.json"
         ]
       },
       "path": "~/Crystallite/Iron"
@@ -6888,8 +6888,8 @@
       "registry_name": "crystallite_shovel_lapis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelLapisItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_lapis.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_lapis.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelLapisItem.java"
         ]
       },
       "path": "~/Crystallite/Lapis"
@@ -6915,8 +6915,8 @@
       "registry_name": "crystallite_hoe_lapis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeLapisItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_lapis.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_lapis.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeLapisItem.java"
         ]
       },
       "path": "~/Crystallite/Lapis"
@@ -7273,8 +7273,8 @@
       "registry_name": "crystallite_dagger_redstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_redstone.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerRedstoneItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerRedstoneItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_redstone.json"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -7392,8 +7392,8 @@
       "registry_name": "crystallite_sword_diamond",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_diamond.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_diamond.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordDiamondItem.java"
         ]
       },
       "path": "~/Crystallite/Diamond"
@@ -7473,8 +7473,8 @@
       "registry_name": "crystallite_shovel_diamond",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_diamond.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_diamond.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelDiamondItem.java"
         ]
       },
       "path": "~/Crystallite/Diamond"
@@ -7500,8 +7500,8 @@
       "registry_name": "crystallite_hoe_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_diamond.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeDiamondItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_diamond.json"
         ]
       },
       "path": "~/Crystallite/Diamond"
@@ -7640,8 +7640,8 @@
       "registry_name": "crystallite_sword_netherite",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordNetheriteItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_netherite.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_netherite.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordNetheriteItem.java"
         ]
       },
       "path": "~/Crystallite/Netherite"
@@ -7894,8 +7894,8 @@
       "registry_name": "crystallite_sword_ruby",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_ruby.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordRubyItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordRubyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_ruby.json"
         ]
       },
       "path": "~/Crystallite/Ruby"
@@ -7975,8 +7975,8 @@
       "registry_name": "crystallite_shovel_ruby",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelRubyItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_ruby.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_ruby.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelRubyItem.java"
         ]
       },
       "path": "~/Crystallite/Ruby"
@@ -8129,8 +8129,8 @@
       "registry_name": "crystallite_sword_sapphire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -8158,29 +8158,6 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_sapphire.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeSapphireItem.java"
-        ]
-      },
-      "path": "~/Crystallite/Sapphire"
-    },
-    {
-      "name": "CrystalliteSapphireSilkTouch",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sapphire_silk_touch",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSapphireSilkTouchProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -8287,8 +8264,8 @@
       "registry_name": "crystallite_dagger_sapphire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -8522,8 +8499,8 @@
       "registry_name": "crystallite_dagger_topaz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -8642,41 +8619,6 @@
       "path": "~/Crystallite/Nether Diamond"
     },
     {
-      "name": "CrystalliteNetherDiamondFireAspect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_nether_diamond_fire_aspect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetherDiamondFireAspectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
       "name": "CrystallitePickaxeNetherDiamond",
       "type": "tool",
       "compiles": true,
@@ -8684,8 +8626,8 @@
       "registry_name": "crystallite_pickaxe_nether_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_nether_diamond.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeNetherDiamondItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeNetherDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_nether_diamond.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -8740,45 +8682,6 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_shovel_nether_diamond.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelNetherDiamondItem.java"
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
-    },
-    {
-      "name": "CrystalliteNetherDiamondExtinguish",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_nether_diamond_extinguish",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetherDiamondExtinguishProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -16018,49 +15921,6 @@
       "path": "~/Crystallite/Emerald"
     },
     {
-      "name": "CrystalliteHoeEmeraldProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_hoe_emerald_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHoeEmeraldProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
       "name": "CrystalliteHoeEmeraldDirtToGrass",
       "type": "procedure",
       "compiles": true,
@@ -18694,8 +18554,8 @@
       "registry_name": "crystallite_pickaxe_sky",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeSkyItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_sky.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_sky.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeSkyItem.java"
         ]
       },
       "path": "~/Crystallite/Sky"
@@ -18748,8 +18608,8 @@
       "registry_name": "crystallite_shovel_sky",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_sky.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelSkyItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelSkyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_sky.json"
         ]
       },
       "path": "~/Crystallite/Sky"
@@ -18976,25 +18836,6 @@
         "files": []
       },
       "path": "~/Critical Hit Multiplier"
-    },
-    {
-      "name": "IncreasedCritDamageToolsModifier",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increased_crit_damage_tools_modifier",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IncreasedCritDamageToolsModifierProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
     },
     {
       "name": "Criticality",
@@ -19347,8 +19188,8 @@
       "registry_name": "berry_smoothie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/berry_smoothie.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/BerrySmoothieItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/BerrySmoothieItem.java",
+          "src/main/resources/assets/better_tools/models/item/berry_smoothie.json"
         ]
       },
       "path": "~/Consumables"
@@ -19374,8 +19215,8 @@
       "registry_name": "earth_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/EarthCrystalItem.java",
-          "src/main/resources/assets/better_tools/models/item/earth_crystal.json"
+          "src/main/resources/assets/better_tools/models/item/earth_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EarthCrystalItem.java"
         ]
       },
       "path": "~/Crystallite/Amethyst"
@@ -19455,8 +19296,8 @@
       "registry_name": "crystallite_axe_amethyst",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeAmethystItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_amethyst.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_amethyst.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeAmethystItem.java"
         ]
       },
       "path": "~/Crystallite/Amethyst"
@@ -19482,8 +19323,8 @@
       "registry_name": "crystallite_shovel_amethyst",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_amethyst.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelAmethystItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteShovelAmethystItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_shovel_amethyst.json"
         ]
       },
       "path": "~/Crystallite/Amethyst"
@@ -19509,8 +19350,8 @@
       "registry_name": "crystallite_hoe_amethyst",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_amethyst.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeAmethystItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteHoeAmethystItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_hoe_amethyst.json"
         ]
       },
       "path": "~/Crystallite/Amethyst"
@@ -19849,37 +19690,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "PlaceClimbableWall",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "place_climbable_wall",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlaceClimbableWallProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "GuardianCrystal",
       "type": "item",
       "compiles": true,
@@ -19968,8 +19778,8 @@
       "registry_name": "crystallite_axe_prismarine",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxePrismarineItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_prismarine.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_prismarine.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxePrismarineItem.java"
         ]
       },
       "path": "~/Crystallite/Prismarine"
@@ -20577,8 +20387,8 @@
       "registry_name": "guardian_staff_beam",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/particles/guardian_staff_beam.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/GuardianStaffBeamParticle.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/GuardianStaffBeamParticle.java",
+          "src/main/resources/assets/better_tools/particles/guardian_staff_beam.json"
         ]
       },
       "path": "~/Staffs/Guardian"
@@ -22356,9 +22166,9 @@
       "registry_name": "mangrove_treehouse",
       "metadata": {
         "files": [
+          "src/main/resources/data/better_tools/worldgen/template_pool/mangrove_treehouse.json",
           "src/main/resources/data/better_tools/worldgen/structure/mangrove_treehouse.json",
-          "src/main/resources/data/better_tools/worldgen/structure_set/mangrove_treehouse.json",
-          "src/main/resources/data/better_tools/worldgen/template_pool/mangrove_treehouse.json"
+          "src/main/resources/data/better_tools/worldgen/structure_set/mangrove_treehouse.json"
         ]
       },
       "path": "~/Treehouses"
@@ -23139,8 +22949,8 @@
       "registry_name": "ice_staff_projectile_from_dispenser",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/entity/IceStaffProjectileFromDispenserEntity.java",
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/IceStaffProjectileFromDispenserRenderer.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/IceStaffProjectileFromDispenserRenderer.java",
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/IceStaffProjectileFromDispenserEntity.java"
         ]
       },
       "path": "~/Staffs/Ice"
@@ -23210,8 +23020,8 @@
       "registry_name": "lightning_staff_dispenser_projectile",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/LightningStaffDispenserProjectileRenderer.java",
-          "src/main/java/net/mcreator/bettertoolsandarmor/entity/LightningStaffDispenserProjectileEntity.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/LightningStaffDispenserProjectileEntity.java",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/renderer/LightningStaffDispenserProjectileRenderer.java"
         ]
       },
       "path": "~/Staffs/Lightning"
@@ -23422,8 +23232,8 @@
       "registry_name": "hive_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/HiveCrystalItem.java",
-          "src/main/resources/assets/better_tools/models/item/hive_crystal.json"
+          "src/main/resources/assets/better_tools/models/item/hive_crystal.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HiveCrystalItem.java"
         ]
       },
       "path": "~/Crystallite/Honey"
@@ -23605,25 +23415,6 @@
       "path": "~/Crystallite/Honey"
     },
     {
-      "name": "ComboWeaponsReset",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "combo_weapons_reset",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ComboWeaponsResetProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Honey"
-    },
-    {
       "name": "ComboWeaponsTooltip",
       "type": "procedure",
       "compiles": true,
@@ -23687,49 +23478,6 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Honey"
-    },
-    {
-      "name": "CrystalliteHoeHoneyHarvest",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_hoe_honey_harvest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHoeHoneyHarvestProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -23980,8 +23728,8 @@
       "registry_name": "ascension_potion",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/ascension_potion.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/AscensionPotionItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/AscensionPotionItem.java",
+          "src/main/resources/assets/better_tools/models/item/ascension_potion.json"
         ]
       },
       "path": "~/Consumables"
@@ -24007,8 +23755,8 @@
       "registry_name": "descension_potion",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/descension_potion.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/DescensionPotionItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DescensionPotionItem.java",
+          "src/main/resources/assets/better_tools/models/item/descension_potion.json"
         ]
       },
       "path": "~/Consumables"
@@ -24190,29 +23938,6 @@
         ]
       },
       "path": "~/Crystallite/Netherite"
-    },
-    {
-      "name": "CrystalliteShovelNetherDiamondTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_shovel_nether_diamond_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelNetherDiamondTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Nether Diamond"
     },
     {
       "name": "IronCrystalliteInfo",
@@ -26376,47 +26101,6 @@
         ]
       },
       "path": "~/Staffs/Ice"
-    },
-    {
-      "name": "FireThornsChance",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_thorns_chance",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Nether Diamond"
-    },
-    {
-      "name": "FireThornsTime",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_thorns_time",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Nether Diamond"
-    },
-    {
-      "name": "NetherDiamondArmorSetAttributes",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_armor_set_attributes",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondArmorSetAttributesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Nether Diamond"
     },
     {
       "name": "FreezeThornsChance",
@@ -34028,6 +33712,483 @@
         ]
       },
       "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteHoeSapphirePlantClearance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_sapphire_plant_clearance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHoeSapphirePlantClearanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "SafeHoneyHarvestersInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_honey_harvesters_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "PlantsDropCharcoalProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plants_drop_charcoal_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlantsDropCharcoalProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "SafeHoneyHarvestProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_honey_harvest_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SafeHoneyHarvestProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteSwordSkyIncreasedCritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_sky_increased_crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyIncreasedCritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "ComboTimeoutReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_timeout_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ComboTimeoutResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystallitePickaxeSapphireProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_sapphire_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePickaxeSapphireProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "FlintToolsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_tools_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Flint Tools"
+    },
+    {
+      "name": "OreLocationParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_location_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/OreLocationParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Particles"
+    },
+    {
+      "name": "TopazToolsFortune",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_tools_fortune",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazToolsFortuneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "NetherDiamondToolsPlantsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_tools_plants_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondToolsPlantsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "ElectricChainParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_chain_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ElectricChainParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures/Particles"
+    },
+    {
+      "name": "SapphireToolsSilkTouch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_tools_silk_touch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireToolsSilkTouchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "PlantsDropBoneMealProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plants_drop_bone_meal_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlantsDropBoneMealProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "FlintToolsIncreasedCritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_tools_increased_crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsIncreasedCritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flint Tools"
+    },
+    {
+      "name": "IsPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_plant",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsPlantProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
     }
   ],
   "variable_elements": [
@@ -34246,6 +34407,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "time_on_fire",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "nether_diamond_armor_fire_res_cooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -34302,16 +34475,22 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:mod:smelting_touch_tools": [
-      "CUSTOM:CrystallitePickaxeNetherDiamond"
-    ],
     "ITEMS:forge:ores_in_ground/end_stone": [
       "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:mod:smelting_touch_tools": [
+      "CUSTOM:CrystallitePickaxeNetherDiamond"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
       "CUSTOM:PoisonMushroomDamage"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:curios:charm": [
       "CUSTOM:HeartCharm",
@@ -34320,12 +34499,6 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -34436,12 +34609,6 @@
       "CUSTOM:IronPhantomBoots.boots",
       "CUSTOM:DiamondPhantomBoots.boots"
     ],
-    "BLOCKS:forge:ores_in_ground/stone": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre"
-    ],
     "BLOCKS:mod:warped_planks": [
       "Blocks.WARPED_PLANKS",
       "Blocks.WARPED_STAIRS",
@@ -34454,6 +34621,12 @@
       "Blocks.WARPED_FENCE",
       "Blocks.WARPED_FENCE_GATE",
       "Blocks.WARPED_SLAB"
+    ],
+    "BLOCKS:forge:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
     ],
     "ITEMS:forge:tools/pickaxes": [
       "TAG:minecraft:pickaxes"
@@ -36873,16 +37046,16 @@
     "en_us": {
       "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "item.better_tools.curing_charm": "§6Curing Charm",
-      "item.better_tools.flint_hoe": "Flint Hoe",
       "block.better_tools.light_polished_coal_trapdoor": "Light Metallic Coal Trapdoor",
+      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.curing_charm": "§6Curing Charm",
       "item.better_tools.mystic_potion": "Mystic Potion",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
       "item.better_tools.poison_charm": "§5Poison Charm",
       "block.better_tools.light_polished_coal_block": "Light Metallic Coal Block",
       "item_group.better_tools.crystallite_tab": "BT+A - Crystallite",
-      "item.minecraft.splash_potion.effect.double_jump_potion": "Splash Potion of Double Jump",
       "block.better_tools.polished_ruby_trapdoor": "Metallic Ruby Trapdoor",
+      "item.minecraft.splash_potion.effect.double_jump_potion": "Splash Potion of Double Jump",
       "item.minecraft.tipped_arrow.effect.double_jump_potion_2": "Arrow of Double Jump",
       "block.better_tools.light_polished_copper_stairs": "Polished Copper Stairs",
       "item.better_tools.crystallite_armor_amethyst_chestplate": "Crystallite Chestplate",
@@ -36895,15 +37068,15 @@
       "block.better_tools.jewellery_table": "Jewellery Table",
       "block.better_tools.brown_metal_wall_hanging_sign": "Brown Metal Wall Hanging Sign",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
+      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "block.better_tools.light_polished_lapis_trapdoor": "Light Metallic Lapis Lazuli Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "block.better_tools.sugar_block": "Sugar Block",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "block.better_tools.sugar_block": "Sugar Block",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -36916,13 +37089,13 @@
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "advancements.bark_on_log_adv.descr": "Use Bark to un-strip a Stripped Log Block",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
+      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "advancements.descend_to_bottom_of_world.descr": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
       "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
-      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "block.better_tools.white_metal_hanging_sign": "White Metal Hanging Sign",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
@@ -36949,8 +37122,8 @@
       "item.better_tools.crystallite_sword_lapis": "Crystallite Sword",
       "advancements.crystallite_cave_adv.title": "Ooh, sparkly!",
       "item.better_tools.speedy_crystal": "Speedy Crystal",
-      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
+      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
       "jei.better_tools.crystallite_charm_base_info": "Used to craft Crystallite Charms.\nCan be found rarely in Dungeon and Mineshaft chests.\nUse Crystallite Shards to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.\nSpawns with a 1% chance in chests in these structures:\n\nDesert Temples, Jungle Temples, Woodland Mansions, Shipwrecks and Bastions.",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
@@ -36975,19 +37148,19 @@
       "advancements.guardian_staff_adv.title": "Soaking Staff!",
       "item.better_tools.diamond_glass_armor_boots": "Glass Boots",
       "item.minecraft.tipped_arrow.effect.potion_of_decay": "Arrow of Decay",
-      "death.attack.override_weapon_damage.player": "%1$s died whilst trying to escape %2$s",
       "jei.better_tools.mixed_ore_gen_info": "§lOre Generation§r\n§cM§6i§ax§be§9d §aO§6r§ce§r\n\nGenerates below y\u003d40\nBecomes more common the deeper you go.\nSpawns in small veins.",
+      "death.attack.override_weapon_damage.player": "%1$s died whilst trying to escape %2$s",
       "block.better_tools.dark_polished_lapis_wall": "Metallic Lapis Lazuli Wall",
       "item_group.better_tools.effect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.dark_polished_lapis_stairs": "Metallic Lapis Lazuli Stairs",
-      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.electric_necklace": "§6Lightning Necklace",
+      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.guardian_crystal": "Guardian Crystal",
       "block.better_tools.sapphire_block": "Sapphire Block",
       "gui.better_tools.attributes_viewer.label_max_health": "Max Health",
       "advancements.glass_armor_adv.title": "Glass Ghost",
-      "death.attack.electric_chain_damage.player": "%1$s was shocked to death whilst trying to escape %2$s",
       "item.better_tools.crystallite_bow_lapis": "Crystallite Bow",
+      "death.attack.electric_chain_damage.player": "%1$s was shocked to death whilst trying to escape %2$s",
       "item.better_tools.crystallite_bow_diamond": "Crystallite Bow",
       "block.better_tools.polished_gold_wall": "Polished Gold Wall",
       "block.better_tools.purple_metal_sign": "Purple Metal Sign",
@@ -36996,8 +37169,8 @@
       "item.better_tools.golden_potato": "Golden Potato",
       "advancements.golden_potato_adv.title": "Gilded Gardening",
       "advancements.karma_adv.descr": "Be attacked while effected with Karma",
-      "item.better_tools.crystallite_armor_iron_helmet": "Crystallite Helmet",
       "block.better_tools.light_polished_gold_wall": "Light Polished Gold Wall",
+      "item.better_tools.crystallite_armor_iron_helmet": "Crystallite Helmet",
       "block.better_tools.light_polished_emerald_block": "Metallic Emerald Block",
       "advancements.life_aura_adv.title": "Full Potential",
       "subtitles.rick_roll": "",
@@ -37005,15 +37178,15 @@
       "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
       "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
-      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "block.better_tools.polished_diamond_stairs": "Metallic Diamond Stairs",
+      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "attribute.better_tools.critical_hit_multiplier": "Critical Hit Multiplier",
       "block.better_tools.polished_redstone_block": "Metallic Redstone Block",
       "item.better_tools.sapphire_boots": "Sapphire Boots",
       "item.better_tools.crystallite_hoe_redstone": "Crystallite Hoe",
       "block.better_tools.dark_polished_coal_wall": "Dark Metallic Coal Wall",
-      "advancements.cactus_crystal_adv.title": "Spiky Swimmer",
       "jei.better_tools.emerald_crystallite_info": "§lCrystallite Upgrades: \n§aEmerald§r\n\nTheme:\nNature and Regeneration",
+      "advancements.cactus_crystal_adv.title": "Spiky Swimmer",
       "advancements.berry_pie_adv.title": "Sweet!",
       "advancements.exp_potion_adv.title": "Experienced Brewing",
       "block.better_tools.red_metal_hanging_sign": "Red Metal Hanging Sign",
@@ -37034,10 +37207,10 @@
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
       "block.better_tools.cyan_metal_wall_sign": "Cyan Metal Wall Sign",
-      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.better_tools.crystallite_hoe_sculk": "Crystallite Hoe",
-      "item.better_tools.obsidian_stick": "Obsidian Stick",
+      "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
       "item.minecraft.tipped_arrow.effect.potion_of_decay_long": "Arrow of Decay",
+      "item.better_tools.obsidian_stick": "Obsidian Stick",
       "advancements.crystallite_gem_adv.descr": "Craft a Crystallite Gem",
       "item.better_tools.mixed_essence": "Mixed Essence",
       "enchantment.better_tools.swift_cast": "Swift Cast",
@@ -37655,7 +37828,6 @@
       "item.better_tools.crystallite_upgrade_smithing_template": "Smithing Template",
       "advancements.crystallite_sword_emerald_adv.descr": "Trap a mob in the ground with a critical hit",
       "block.better_tools.four_leaf_clover": "Four Leaf Clover",
-      "attribute.better_tools.fire_thorns_chance": "Fire Thorns Chance",
       "advancements.progression_section.descr": "Advancements to do with progression",
       "death.attack.override_weapon_damage.item": "%1$s was slain by %2$s using %3$s",
       "advancements.blackstone_rabbit_adv.title": "Resistant Rabbit",
@@ -37833,7 +38005,6 @@
       "advancements.ruby_pickaxe_adv.descr": "Craft a fast-mining Ruby Pickaxe",
       "item.better_tools.crystallite_armor_nether_diamond_chestplate": "Crystallite Chestplate",
       "subtitles.master_builders": "",
-      "attribute.better_tools.fire_thorns_time": "Fire Thorns Time",
       "item.better_tools.crystallite_armor_ruby_boots": "Crystallite Boots",
       "death.attack.shockwave_damage.player": "%1$s was killed by a shockwave whilst trying to escape %2$s",
       "itemGroup.tabtools_and_armor_tab": "BT+A - Tools and Armor Sets",
@@ -37963,19 +38134,7 @@
     "name": "~",
     "children": [
       {
-        "name": "Nether Diamond",
-        "children": []
-      },
-      {
-        "name": "Flint Tools",
-        "children": []
-      },
-      {
-        "name": "Ruby",
-        "children": []
-      },
-      {
-        "name": "Blue Mushrooms",
+        "name": "Double Jump",
         "children": []
       },
       {
@@ -37983,54 +38142,22 @@
         "children": []
       },
       {
+        "name": "Topaz",
+        "children": []
+      },
+      {
+        "name": "Nether Diamond",
+        "children": []
+      },
+      {
+        "name": "Ruby",
+        "children": []
+      },
+      {
         "name": "Crystallite",
         "children": [
           {
-            "name": "Iron",
-            "children": []
-          },
-          {
-            "name": "Gold",
-            "children": []
-          },
-          {
-            "name": "Lapis",
-            "children": []
-          },
-          {
-            "name": "Redstone",
-            "children": []
-          },
-          {
-            "name": "Diamond",
-            "children": []
-          },
-          {
-            "name": "Netherite",
-            "children": []
-          },
-          {
-            "name": "Ruby",
-            "children": []
-          },
-          {
-            "name": "Sapphire",
-            "children": []
-          },
-          {
-            "name": "Topaz",
-            "children": []
-          },
-          {
-            "name": "Nether Diamond",
-            "children": []
-          },
-          {
             "name": "Emerald",
-            "children": []
-          },
-          {
-            "name": "Sculk",
             "children": []
           },
           {
@@ -38038,11 +38165,15 @@
             "children": []
           },
           {
-            "name": "Amethyst",
+            "name": "Lapis",
             "children": []
           },
           {
-            "name": "Prismarine",
+            "name": "Ruby",
+            "children": []
+          },
+          {
+            "name": "Sculk",
             "children": []
           },
           {
@@ -38056,30 +38187,94 @@
           {
             "name": "Honey",
             "children": []
+          },
+          {
+            "name": "Sapphire",
+            "children": []
+          },
+          {
+            "name": "Amethyst",
+            "children": []
+          },
+          {
+            "name": "Prismarine",
+            "children": []
+          },
+          {
+            "name": "Gold",
+            "children": []
+          },
+          {
+            "name": "Diamond",
+            "children": []
+          },
+          {
+            "name": "Nether Diamond",
+            "children": []
+          },
+          {
+            "name": "Topaz",
+            "children": []
+          },
+          {
+            "name": "Redstone",
+            "children": []
+          },
+          {
+            "name": "Iron",
+            "children": []
+          },
+          {
+            "name": "Netherite",
+            "children": []
           }
         ]
       },
       {
-        "name": "Double Jump",
+        "name": "Swift Swim",
         "children": []
       },
       {
-        "name": "Critical Hit Multiplier",
+        "name": "Attribute Viewer",
         "children": []
       },
       {
-        "name": "Daggers",
+        "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "Flint Tools",
+        "children": []
+      },
+      {
+        "name": "Consumables",
         "children": []
       },
       {
         "name": "Effect Armor",
         "children": [
           {
-            "name": "Sugar Boots",
+            "name": "Winged Boots",
             "children": []
           },
           {
-            "name": "Rabbit Boots",
+            "name": "Hearty Shirt",
+            "children": []
+          },
+          {
+            "name": "Crying Obsidian Helmet",
+            "children": []
+          },
+          {
+            "name": "Magma Chestplate",
+            "children": []
+          },
+          {
+            "name": "Crystal Leggings",
+            "children": []
+          },
+          {
+            "name": "Ruby Leggings",
             "children": []
           },
           {
@@ -38091,15 +38286,11 @@
             "children": []
           },
           {
-            "name": "Hearty Shirt",
+            "name": "Gilded Blackstone Leggings",
             "children": []
           },
           {
-            "name": "Ruby Leggings",
-            "children": []
-          },
-          {
-            "name": "Crystal Leggings",
+            "name": "Rabbit Boots",
             "children": []
           },
           {
@@ -38107,23 +38298,11 @@
             "children": []
           },
           {
-            "name": "Gilded Blackstone Leggings",
-            "children": []
-          },
-          {
-            "name": "Crying Obsidian Helmet",
-            "children": []
-          },
-          {
             "name": "Glass Armor",
             "children": []
           },
           {
-            "name": "Magma Chestplate",
-            "children": []
-          },
-          {
-            "name": "Winged Boots",
+            "name": "Sugar Boots",
             "children": []
           },
           {
@@ -38136,11 +38315,11 @@
         "name": "Advancements",
         "children": [
           {
-            "name": "Progression",
+            "name": "Consumables",
             "children": []
           },
           {
-            "name": "Consumables",
+            "name": "Progression",
             "children": []
           },
           {
@@ -38154,103 +38333,46 @@
         ]
       },
       {
+        "name": "Critical Hit Multiplier",
+        "children": []
+      },
+      {
         "name": "Ender Titanium",
-        "children": []
-      },
-      {
-        "name": "Sapphire",
-        "children": []
-      },
-      {
-        "name": "Topaz",
-        "children": []
-      },
-      {
-        "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "Vanilla Recipes",
-        "children": []
-      },
-      {
-        "name": "Consumables",
-        "children": []
-      },
-      {
-        "name": "Attribute Viewer",
-        "children": []
-      },
-      {
-        "name": "Staffs",
-        "children": [
-          {
-            "name": "Fire",
-            "children": []
-          },
-          {
-            "name": "Ice",
-            "children": []
-          },
-          {
-            "name": "Lightning",
-            "children": []
-          },
-          {
-            "name": "Warden",
-            "children": []
-          },
-          {
-            "name": "Guardian",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Mixed Ore",
-        "children": []
-      },
-      {
-        "name": "Swift Swim",
-        "children": []
-      },
-      {
-        "name": "Treehouses",
         "children": []
       },
       {
         "name": "Polished Gem Blocks",
         "children": [
           {
-            "name": "Black",
+            "name": "Brown",
             "children": []
           },
           {
-            "name": "Gray",
+            "name": "Cream",
             "children": []
           },
           {
-            "name": "Light Gray",
-            "children": []
-          },
-          {
-            "name": "White",
-            "children": []
-          },
-          {
-            "name": "Blue",
-            "children": []
-          },
-          {
-            "name": "Cyan",
-            "children": []
-          },
-          {
-            "name": "Light Blue",
+            "name": "Pink",
             "children": []
           },
           {
             "name": "Lime",
+            "children": []
+          },
+          {
+            "name": "Dark Red",
+            "children": []
+          },
+          {
+            "name": "Magenta",
+            "children": []
+          },
+          {
+            "name": "Dark Pink",
+            "children": []
+          },
+          {
+            "name": "Light Gray",
             "children": []
           },
           {
@@ -38262,19 +38384,11 @@
             "children": []
           },
           {
-            "name": "Dark Red",
-            "children": []
-          },
-          {
             "name": "Dark Orange",
             "children": []
           },
           {
-            "name": "Brown",
-            "children": []
-          },
-          {
-            "name": "Orange",
+            "name": "White",
             "children": []
           },
           {
@@ -38282,15 +38396,7 @@
             "children": []
           },
           {
-            "name": "Cream",
-            "children": []
-          },
-          {
-            "name": "Dark Pink",
-            "children": []
-          },
-          {
-            "name": "Pink",
+            "name": "Blue",
             "children": []
           },
           {
@@ -38298,14 +38404,51 @@
             "children": []
           },
           {
-            "name": "Magenta",
+            "name": "Cyan",
+            "children": []
+          },
+          {
+            "name": "Black",
+            "children": []
+          },
+          {
+            "name": "Gray",
+            "children": []
+          },
+          {
+            "name": "Light Blue",
+            "children": []
+          },
+          {
+            "name": "Orange",
             "children": []
           }
         ]
       },
       {
-        "name": "Wood Armor",
-        "children": []
+        "name": "Staffs",
+        "children": [
+          {
+            "name": "Lightning",
+            "children": []
+          },
+          {
+            "name": "Guardian",
+            "children": []
+          },
+          {
+            "name": "Ice",
+            "children": []
+          },
+          {
+            "name": "Warden",
+            "children": []
+          },
+          {
+            "name": "Fire",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Utility Procedures",
@@ -38319,6 +38462,34 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Daggers",
+        "children": []
+      },
+      {
+        "name": "Treehouses",
+        "children": []
+      },
+      {
+        "name": "Blue Mushrooms",
+        "children": []
+      },
+      {
+        "name": "Vanilla Recipes",
+        "children": []
+      },
+      {
+        "name": "Sapphire",
+        "children": []
+      },
+      {
+        "name": "Mixed Ore",
+        "children": []
+      },
+      {
+        "name": "Wood Armor",
+        "children": []
       }
     ]
   },
@@ -38347,5 +38518,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400229712
 }

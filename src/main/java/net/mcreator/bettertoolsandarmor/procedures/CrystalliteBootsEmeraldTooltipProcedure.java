@@ -12,7 +12,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -45,12 +44,8 @@ public class CrystalliteBootsEmeraldTooltipProcedure {
 					tooltip.add(Component.literal("\u00A79+30% Speed"));
 				}
 			} else {
-				if (Screen.hasShiftDown()) {
-					tooltip.add(Component.literal("\u00A77When in sunlight:"));
-					tooltip.add(Component.literal("\u00A79+30% Speed"));
-				} else {
-					tooltip.add(Component.literal("\u00A78Press Shift for details"));
-				}
+				tooltip.add(Component.literal("\u00A77When in sunlight:"));
+				tooltip.add(Component.literal("\u00A79+30% Speed"));
 			}
 		}
 	}
