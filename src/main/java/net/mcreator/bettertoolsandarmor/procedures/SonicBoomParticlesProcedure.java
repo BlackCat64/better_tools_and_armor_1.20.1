@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
 public class SonicBoomParticlesProcedure {
@@ -16,7 +17,8 @@ public class SonicBoomParticlesProcedure {
 		dz = (z2 - z) / distance;
 		if (distance > 0) {
 			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
-				world.addParticle(ParticleTypes.SONIC_BOOM, (x + i * dx), (y + i * dy), (z + i * dz), 0, 0, 0);
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.SONIC_BOOM, (x + i * dx), (y + i * dy), (z + i * dz), 1, 0, 0, 0, 0);
 				i = i + 1;
 			}
 		}

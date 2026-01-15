@@ -47,8 +47,8 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 		double change_y = 0;
 		double change_z = 0;
 		double chance = 0;
-		if (!BetterToolsModVariables.being_damaged_flag && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()
-				&& !(sourceentity instanceof Player)) {
+		if (!world.isClientSide() && !BetterToolsModVariables.being_damaged_flag
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get() && !(sourceentity instanceof Player)) {
 			chance = 0.2;
 			if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 				chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
@@ -56,7 +56,7 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 			if (Math.random() < chance) {
 				distance = GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), sourceentity.getX(), sourceentity.getY(), sourceentity.getZ());
 				if (distance >= 4 && distance <= 40) {
-					SonicBoomParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), sourceentity.getX(), sourceentity.getY(), sourceentity.getZ());
+					SonicBoomParticlesProcedure.execute(world, entity.getX(), entity.getY() + 0.5, entity.getZ(), sourceentity.getX(), sourceentity.getY() + sourceentity.getBbHeight() / 2, sourceentity.getZ());
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.warden.sonic_boom")), SoundSource.PLAYERS, (float) 0.3, (float) 1.5);
