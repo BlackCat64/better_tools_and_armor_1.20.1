@@ -1,0 +1,24 @@
+package net.mcreator.bettertoolsandarmor.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.particles.ParticleTypes;
+
+public class SonicBoomParticlesProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, double x2, double y2, double z2) {
+		double distance = 0;
+		double dx = 0;
+		double dy = 0;
+		double dz = 0;
+		double i = 0;
+		distance = GetDistanceBetweenPointsProcedure.execute(x, y, z, x2, y2, z2);
+		dx = (x2 - x) / distance;
+		dy = (y2 - y) / distance;
+		dz = (z2 - z) / distance;
+		if (distance > 0) {
+			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
+				world.addParticle(ParticleTypes.SONIC_BOOM, (x + i * dx), (y + i * dy), (z + i * dz), 0, 0, 0);
+				i = i + 1;
+			}
+		}
+	}
+}
