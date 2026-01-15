@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
@@ -54,7 +55,8 @@ public class WardenStaffSonicBoomProcedure {
 			if (world.getBlockState(BlockPos.containing(look_x, look_y, look_z)).canOcclude()) {
 				has_passed_through_wall = true;
 			}
-			world.addParticle(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 0, 0, 0);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 1, 0, 0, 0, 0);
 			{
 				final Vec3 _center = new Vec3(look_x, look_y, look_z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
