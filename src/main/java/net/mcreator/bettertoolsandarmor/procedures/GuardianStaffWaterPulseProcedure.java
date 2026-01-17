@@ -38,6 +38,9 @@ public class GuardianStaffWaterPulseProcedure {
 		double kills = 0;
 		double damage = 0;
 		double range = 0;
+		double vx = 0;
+		double vy = 0;
+		double vz = 0;
 		range = 4 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		damage = 6 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		if (entity.isInWaterRainOrBubble()) {
@@ -70,8 +73,13 @@ public class GuardianStaffWaterPulseProcedure {
 				}
 			}
 		}
-		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), x, y, z, (int) Math.pow(range, 3), (range / 2), (range / 2), (range / 2), 0.03);
+		for (int index0 = 0; index0 < (int) (4 * Math.pow(range, 3)); index0++) {
+			vx = Math.random();
+			vy = Math.random();
+			vz = Math.random();
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.GUARDIAN_STAFF_BEAM.get()), (x + vx * 0.5), (y + vy * 0.5), (z + vz * 0.5), 1, vx, vy, vz, (0.03 * range));
+		}
 		if (kills >= 10) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:guardian_staff_multikill_adv"));
