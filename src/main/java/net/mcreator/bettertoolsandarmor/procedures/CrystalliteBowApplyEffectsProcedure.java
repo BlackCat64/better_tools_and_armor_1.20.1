@@ -62,6 +62,7 @@ public class CrystalliteBowApplyEffectsProcedure {
 									((AbstractArrow) entityiterator).setKnockback(((AbstractArrow) entityiterator).getKnockback() + 2);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:gold_upgraded_crystallite_items")))) {
 									entityiterator.getPersistentData().putBoolean("crystallite_gold_upgrade", true);
+									CrystalliteBowGoldFiredProcedure.execute(world, entityiterator);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lapis_upgraded_crystallite_items")))) {
 									entityiterator.getPersistentData().putBoolean("crystallite_lapis_upgrade", true);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:redstone_upgraded_crystallite_items")))) {

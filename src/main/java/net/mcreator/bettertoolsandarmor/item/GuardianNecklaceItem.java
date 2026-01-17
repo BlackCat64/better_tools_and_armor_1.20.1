@@ -21,7 +21,7 @@ public class GuardianNecklaceItem extends Item implements ICurioItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
-		list.add(Component.literal("\u00A79Deals continuous damage to nearby hostile mobs"));
+		list.add(Component.literal("\u00A79Automatically damages nearby hostile mobs"));
 		list.add(Component.literal("\u00A73More powerful when it is wet"));
 	}
 }

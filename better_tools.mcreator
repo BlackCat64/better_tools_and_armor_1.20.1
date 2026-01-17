@@ -19865,8 +19865,8 @@
       "registry_name": "guardian_necklace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java",
-          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json"
+          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java"
         ]
       },
       "path": "~/Crystallite/Prismarine"
@@ -25585,53 +25585,6 @@
         ]
       },
       "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteBowGoldSplashDmg",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_bow_gold_splash_dmg",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowGoldSplashDmgProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Gold"
     },
     {
       "name": "DisplayDamageValues",
@@ -34232,6 +34185,52 @@
         ]
       },
       "path": "~/Utility Procedures/Particles"
+    },
+    {
+      "name": "CrystalliteBowGoldFired",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_gold_fired",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowGoldFiredProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteBowGoldHitsEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_gold_hits_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowGoldHitsEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Gold"
     }
   ],
   "variable_elements": [
