@@ -12,12 +12,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
@@ -30,17 +27,10 @@ public class IceStaffProjectileMissesProcedure {
 		if (entity == null || immediatesourceentity == null)
 			return;
 		if (entity instanceof LivingEntity && immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.FREEZE_BOOM.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
-						(int) Math.floor(immediatesourceentity.getPersistentData().getDouble("radius") * 5), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
-						(immediatesourceentity.getPersistentData().getDouble("radius") / 2), 0);
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
-						(int) Math.floor(immediatesourceentity.getPersistentData().getDouble("radius") * 3), (immediatesourceentity.getPersistentData().getDouble("radius") / 2), (immediatesourceentity.getPersistentData().getDouble("radius") / 2),
-						(immediatesourceentity.getPersistentData().getDouble("radius") / 2), 0.1);
+			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), immediatesourceentity.getPersistentData().getDouble("radius"));
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((immediatesourceentity.getPersistentData().getDouble("radius") * 2) / 2d), e -> true).stream()
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((immediatesourceentity.getPersistentData().getDouble("radius")) / 2d), e -> true).stream()
 						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == immediatesourceentity)) {

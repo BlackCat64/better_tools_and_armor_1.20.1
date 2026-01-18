@@ -34309,6 +34309,111 @@
         ]
       },
       "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "FreezeBoom2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_boom_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoom2Particle.java",
+          "src/main/resources/assets/better_tools/particles/freeze_boom_2.json"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FreezeBoom3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_boom_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/particles/freeze_boom_3.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoom3Particle.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FreezeBoom4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_boom_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/particles/freeze_boom_4.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoom4Particle.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FreezeBoom5",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_boom_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/particles/freeze_boom_5.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoom5Particle.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FreezeBoom6",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_boom_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoom6Particle.java",
+          "src/main/resources/assets/better_tools/particles/freeze_boom_6.json"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "SpawnFreezeBoomParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_freeze_boom_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SpawnFreezeBoomParticleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "size",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Staffs/Ice"
     }
   ],
   "variable_elements": [

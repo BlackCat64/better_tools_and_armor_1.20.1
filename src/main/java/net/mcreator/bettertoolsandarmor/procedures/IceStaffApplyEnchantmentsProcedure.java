@@ -31,9 +31,9 @@ public class IceStaffApplyEnchantmentsProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity) && entityiterator instanceof IceStaffProjectileEntity) {
 						if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get(), itemstack) != 0) {
-							entityiterator.getPersistentData().putDouble("radius", (0.5 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get())));
+							entityiterator.getPersistentData().putDouble("radius", (itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) + 1));
 							if (world.getBiome(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value().getBaseTemperature() * 100f <= 0.15) {
-								entityiterator.getPersistentData().putDouble("radius", (entityiterator.getPersistentData().getDouble("radius") * 2));
+								entityiterator.getPersistentData().putDouble("radius", (entityiterator.getPersistentData().getDouble("radius") + 2));
 							}
 						} else {
 							entityiterator.getPersistentData().putDouble("radius", (-1));

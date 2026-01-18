@@ -2,13 +2,13 @@
   "_fv": 66,
   "_type": "particle",
   "definition": {
-    "texture": "freeze_boom.png",
+    "texture": "freeze_boom",
     "animate": true,
     "frameDuration": 1,
-    "width": 1.0,
-    "height": 1.0,
+    "width": 5.0,
+    "height": 5.0,
     "scale": {
-      "fixedValue": 6.0
+      "fixedValue": 20.0
     },
     "speedFactor": 0.0,
     "gravity": 0.0,
