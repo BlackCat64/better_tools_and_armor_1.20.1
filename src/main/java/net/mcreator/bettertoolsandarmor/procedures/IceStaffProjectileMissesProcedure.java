@@ -36,6 +36,15 @@ public class IceStaffProjectileMissesProcedure {
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
 		}
 		if (entity instanceof LivingEntity && radius > 0) {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")),
+							SoundSource.PLAYERS, 3, 1);
+				} else {
+					_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")), SoundSource.PLAYERS, 3,
+							1, false);
+				}
+			}
 			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), radius);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));

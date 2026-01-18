@@ -38,6 +38,15 @@ public class IceStaffProcedure2Procedure {
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
 		}
 		if (radius > 0) {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")),
+							SoundSource.PLAYERS, 3, 1);
+				} else {
+					_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")), SoundSource.PLAYERS, 3,
+							1, false);
+				}
+			}
 			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), radius);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
@@ -67,7 +76,7 @@ public class IceStaffProcedure2Procedure {
 				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 			}
 		}
-		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt25 && _livEnt25.isBaby()) {
+		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt29 && _livEnt29.isBaby()) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

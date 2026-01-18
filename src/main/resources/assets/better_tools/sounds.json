@@ -110,5 +110,14 @@
         "stream": false
       }
     ]
+  },
+  "wind_burst": {
+    "subtitle": "subtitles.wind_burst",
+    "sounds": [
+      {
+        "name": "better_tools:wind_burst1",
+        "stream": false
+      }
+    ]
   }
 }
