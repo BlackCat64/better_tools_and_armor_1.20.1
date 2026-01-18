@@ -32,12 +32,12 @@ public class CrystalliteSwordGoldSplashDamageProcedure {
 			sword_damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0
 					? ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue() + 0.5 + 0.5 * itemstack.getEnchantmentLevel(Enchantments.SHARPNESS)
 					: ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue();
-			multiplier = Math.min(0.6 + 0.1 * itemstack.getEnchantmentLevel(Enchantments.SWEEPING_EDGE), 100);
+			multiplier = Math.min(0.6 + 0.1 * itemstack.getEnchantmentLevel(Enchantments.SWEEPING_EDGE), 1);
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get()), x, (y + 0.75), z, 32, 0.5, 0.05, 0.5, 0.005);
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get()), x, (y + 0.75), z, 1, 0, 0, 0, 0);
 			{
 				final Vec3 _center = new Vec3(x, (y + 1), z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity)) {
 						if (Math.abs(entity.getY() - entityiterator.getY()) <= 0.5) {

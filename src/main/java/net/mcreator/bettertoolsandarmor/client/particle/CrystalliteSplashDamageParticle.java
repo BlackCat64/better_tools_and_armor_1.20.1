@@ -37,9 +37,9 @@ public class CrystalliteSplashDamageParticle extends TextureSheetParticle {
 	protected CrystalliteSplashDamageParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.15f, 0.15f);
-		this.quadSize *= 0.8f;
-		this.lifetime = (int) Math.max(1, 10 + (this.random.nextInt(8) - 4));
+		this.setSize(5f, 5f);
+		this.quadSize *= 15f;
+		this.lifetime = 11;
 		this.gravity = 0f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;
@@ -47,7 +47,7 @@ public class CrystalliteSplashDamageParticle extends TextureSheetParticle {
 		this.zd = vz * 1;
 		this.angularVelocity = -0.1f;
 		this.angularAcceleration = 0.025f;
-		this.pickSprite(spriteSet);
+		this.setSpriteFromAge(spriteSet);
 	}
 
 	@Override
@@ -61,5 +61,8 @@ public class CrystalliteSplashDamageParticle extends TextureSheetParticle {
 		this.oRoll = this.roll;
 		this.roll += this.angularVelocity;
 		this.angularVelocity += this.angularAcceleration;
+		if (!this.removed) {
+			this.setSprite(this.spriteSet.get((this.age / 1) % 12 + 1, 12));
+		}
 	}
 }

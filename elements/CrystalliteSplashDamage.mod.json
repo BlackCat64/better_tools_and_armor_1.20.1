@@ -2,22 +2,22 @@
   "_fv": 66,
   "_type": "particle",
   "definition": {
-    "texture": "crystallite_splash_damage_particle.png",
-    "animate": false,
+    "texture": "spin_attack",
+    "animate": true,
     "frameDuration": 1,
-    "width": 0.15,
-    "height": 0.15,
+    "width": 5.0,
+    "height": 5.0,
     "scale": {
-      "fixedValue": 0.8
+      "fixedValue": 15.0
     },
     "speedFactor": 1.0,
     "gravity": 0.0,
-    "maxAge": 10,
-    "maxAgeDiff": 4,
+    "maxAge": 11,
+    "maxAgeDiff": 0,
     "angularVelocity": -0.1,
     "angularAcceleration": 0.025,
     "canCollide": false,
-    "alwaysShow": false,
+    "alwaysShow": true,
     "renderType": "TRANSLUCENT"
   }
 }
