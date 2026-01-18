@@ -52,7 +52,7 @@ public class CrystalliteBowApplyEffectsProcedure {
 							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator == entity) && entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
+						if (entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
 							if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
 								entityiterator.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
 							} else if (duration <= 71990) {
@@ -62,7 +62,7 @@ public class CrystalliteBowApplyEffectsProcedure {
 									((AbstractArrow) entityiterator).setKnockback(((AbstractArrow) entityiterator).getKnockback() + 2);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:gold_upgraded_crystallite_items")))) {
 									entityiterator.getPersistentData().putBoolean("crystallite_gold_upgrade", true);
-									CrystalliteBowGoldFiredProcedure.execute(world, entityiterator);
+									CrystalliteBowGoldFiredProcedure.execute(world, entityiterator, entity);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lapis_upgraded_crystallite_items")))) {
 									entityiterator.getPersistentData().putBoolean("crystallite_lapis_upgrade", true);
 								} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:redstone_upgraded_crystallite_items")))) {

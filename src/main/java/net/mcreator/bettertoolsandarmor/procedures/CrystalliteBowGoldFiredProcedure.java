@@ -9,8 +9,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class CrystalliteBowGoldFiredProcedure {
-	public static void execute(LevelAccessor world, Entity arrow) {
-		if (arrow == null)
+	public static void execute(LevelAccessor world, Entity arrow, Entity player) {
+		if (arrow == null || player == null)
 			return;
 		Entity armor_stand = null;
 		if (false) {
@@ -32,6 +32,7 @@ public class CrystalliteBowGoldFiredProcedure {
 			SetEntityNumberDataProcedure.execute(armor_stand, 4144959, "DisabledSlots");
 			armor_stand.getPersistentData().putBoolean("crystallite_bow_gold", true);
 			armor_stand.getPersistentData().putString("arrow", (arrow.getStringUUID()));
+			armor_stand.getPersistentData().putString("player", (player.getStringUUID()));
 			((ServerLevel) world).addFreshEntity(armor_stand);
 		}
 	}
