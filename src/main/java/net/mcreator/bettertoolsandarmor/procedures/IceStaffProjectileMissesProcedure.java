@@ -26,17 +26,24 @@ public class IceStaffProjectileMissesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if (entity instanceof LivingEntity && immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
-			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), immediatesourceentity.getPersistentData().getDouble("radius"));
+		double freeze_time = 0;
+		double radius = 0;
+		if (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f <= 0.15) {
+			freeze_time = 300;
+			radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+		} else {
+			freeze_time = 200;
+			radius = immediatesourceentity.getPersistentData().getDouble("radius");
+		}
+		if (entity instanceof LivingEntity && radius > 0) {
+			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), radius);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((immediatesourceentity.getPersistentData().getDouble("radius")) / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(radius / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == immediatesourceentity)) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
-									(int) (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f < 0.15 ? 300 : 200), 0, false, false));
+							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) freeze_time, 0, false, false));
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")),
@@ -51,8 +58,8 @@ public class IceStaffProjectileMissesProcedure {
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(), (int) (immediatesourceentity.getPersistentData().getDouble("radius")
-							* (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get()))));
+					_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(),
+							(int) (radius * (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get()))));
 			}
 		} else {
 			if (world instanceof Level _level) {

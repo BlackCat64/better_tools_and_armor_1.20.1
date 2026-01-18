@@ -29,13 +29,19 @@ public class IceStaffProcedure2Procedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double freeze_time = 0;
-		freeze_time = world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f <= 0.15 ? 300 : 200;
-		if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
-			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), immediatesourceentity.getPersistentData().getDouble("radius"));
+		double radius = 0;
+		if (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f <= 0.15) {
+			freeze_time = 300;
+			radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+		} else {
+			freeze_time = 200;
+			radius = immediatesourceentity.getPersistentData().getDouble("radius");
+		}
+		if (radius > 0) {
+			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), radius);
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((immediatesourceentity.getPersistentData().getDouble("radius")) / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(radius / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(immediatesourceentity == entityiterator)) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -61,7 +67,7 @@ public class IceStaffProcedure2Procedure {
 				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 			}
 		}
-		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt26 && _livEnt26.isBaby()) {
+		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt25 && _livEnt25.isBaby()) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:frozen_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

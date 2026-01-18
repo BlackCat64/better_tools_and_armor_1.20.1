@@ -25981,20 +25981,6 @@
       "path": "~/Staffs/Ice"
     },
     {
-      "name": "FreezeBoom",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freeze_boom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/FreezeBoomParticle.java",
-          "src/main/resources/assets/better_tools/particles/freeze_boom.json"
-        ]
-      },
-      "path": "~/Staffs/Ice"
-    },
-    {
       "name": "FreezeThornsChance",
       "type": "attribute",
       "compiles": true,
