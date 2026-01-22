@@ -262,13 +262,13 @@
           },
           {
             "price1": {
-              "value": "Items.EMERALD"
+              "value": "Blocks.EMERALD_BLOCK"
             },
-            "countPrice1": 64,
+            "countPrice1": 9,
             "price2": {
               "value": "Items.EMERALD"
             },
-            "countPrice2": 64,
+            "countPrice2": 60,
             "offer": {
               "value": "CUSTOM:NatureRing"
             },
@@ -385,6 +385,42 @@
             "maxTrades": 5,
             "xp": 10,
             "priceMultiplier": 0.0
+          },
+          {
+            "price1": {
+              "value": "Items.ENDER_EYE"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:EnderGoggles"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.NETHERITE_INGOT"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 40,
+            "offer": {
+              "value": "CUSTOM:WitheredGauntlet"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 2,
+            "xp": 50,
+            "priceMultiplier": 0.05
           }
         ]
       }
