@@ -10810,52 +10810,6 @@
       "path": "~/Crystallite/Ruby"
     },
     {
-      "name": "CrystalliteTopazSwordTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_topaz_sword_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteTopazSwordTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "CrystalliteTopazPickaxeTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_topaz_pickaxe_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteTopazPickaxeTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Topaz"
-    },
-    {
       "name": "IceStaffProcedure2",
       "type": "procedure",
       "compiles": true,

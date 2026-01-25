@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,12 +32,8 @@ public class CrystalliteSwordSculkTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_SCULK.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_SCULK.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77When in the dark:"));
-				tooltip.add(Component.literal("\u00A79+2.5 Attack Damage"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77When in the dark:"));
+			tooltip.add(Component.literal("\u00A79+2.5 Attack Damage"));
 		}
 	}
 }

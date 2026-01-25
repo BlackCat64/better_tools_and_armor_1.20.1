@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,13 +32,9 @@ public class CrystalliteShovelLapisTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_SHOVEL_LAPIS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_HOE_LAPIS.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Tool Effects:"));
-				tooltip.add(Component.literal("\u00A7910% Chance for XP drops"));
-				tooltip.add(Component.literal("\u00A79XP amount increases with Fortune"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77Tool Effects:"));
+			tooltip.add(Component.literal("\u00A72 10% XP Drop Chance"));
+			tooltip.add(Component.literal("\u00A79XP amount increases with Fortune"));
 		}
 	}
 }

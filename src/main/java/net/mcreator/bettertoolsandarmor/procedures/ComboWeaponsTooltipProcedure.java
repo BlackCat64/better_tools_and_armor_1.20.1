@@ -33,13 +33,13 @@ public class ComboWeaponsTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:combo_weapons")))) {
+			tooltip.add(Component.literal("\u00A77Damage Increase:"));
+			tooltip.add(Component.literal("\u00A79+1 Damage per hit"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Damage Increase:"));
-				tooltip.add(Component.literal("\u00A79+1 Damage per hit"));
 				tooltip.add(Component.literal("\u00A77Limit:"));
 				tooltip.add(Component.literal("\u00A79+3 Attack Damage"));
 			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+				tooltip.add(Component.literal("\u00A78Press Shift for more details"));
 			}
 		}
 	}

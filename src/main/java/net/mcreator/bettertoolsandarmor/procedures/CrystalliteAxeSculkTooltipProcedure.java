@@ -33,13 +33,13 @@ public class CrystalliteAxeSculkTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) {
+			tooltip.add(Component.literal("\u00A77When in the dark:"));
+			tooltip.add(Component.literal("\u00A79+2 Attack Damage"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A77Mining Limit:"));
 				tooltip.add(Component.literal("\u00A79Up to 16 blocks vertically"));
-				tooltip.add(Component.literal("\u00A77When in the dark:"));
-				tooltip.add(Component.literal("\u00A79+2 Attack Damage"));
 			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+				tooltip.add(Component.literal("\u00A78Press Shift for more details"));
 			}
 		}
 	}

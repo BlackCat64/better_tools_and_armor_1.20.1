@@ -8,10 +8,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -32,18 +31,11 @@ public class TopazSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.TOPAZ_SWORD.get() || itemstack.getItem() == BetterToolsModItems.TOPAZ_DAGGER.get() || itemstack.getItem() == BetterToolsModItems.TOPAZ_AXE.get()) {
-			tooltip.add(Component.literal("\u00A72 25% Chain Chance"));
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lightning_tools")))) {
+			tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "50" : "25") + "% Chain Chance")));
 			tooltip.add(Component.literal("\u00A72 3 Block Radius"));
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Chain Attack Damage:"));
-				tooltip.add(Component.literal("\u00A7950% of Weapon Damage"));
-				tooltip.add(Component.literal("\u00A77When in a thunderstorm:"));
-				tooltip.add(Component.literal("\u00A79+12.5% Chain Chance"));
-				tooltip.add(Component.literal("\u00A79+3 Block Radius"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77Chain Attack Damage:"));
+			tooltip.add(Component.literal("\u00A7950% of Weapon Damage"));
 		}
 	}
 }

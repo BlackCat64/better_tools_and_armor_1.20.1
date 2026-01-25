@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import javax.annotation.Nullable;
 
@@ -33,13 +32,9 @@ public class CrystalliteRedstoneSwordTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:leeching_weapons")))) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Weapon Effects:"));
-				tooltip.add(Component.literal("\u00A791 HP healed on every kill"));
-				tooltip.add(Component.literal("\u00A792 HP healed when below 25% HP"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77Weapon Effects:"));
+			tooltip.add(Component.literal("\u00A791 HP healed on every kill"));
+			tooltip.add(Component.literal("\u00A792 HP healed when below 25% HP"));
 		}
 	}
 }

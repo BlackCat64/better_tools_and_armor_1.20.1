@@ -8,10 +8,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -32,13 +31,9 @@ public class TopazPickaxeTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.TOPAZ_PICKAXE.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Tool Effects:"));
-				tooltip.add(Component.literal("\u00A7910% \u00A76chance for double drops from ores"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))) {
+			tooltip.add(Component.literal("\u00A77When used to mine ores:"));
+			tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_pickaxes"))) ? "20" : "10") + "% Double Drops Chance")));
 		}
 	}
 }
