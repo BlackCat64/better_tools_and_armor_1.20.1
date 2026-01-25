@@ -12,7 +12,6 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
@@ -40,23 +39,19 @@ public class FireStaffTooltipProcedure {
 		double cooldown = 0;
 		double time = 0;
 		if (itemstack.getItem() == BetterToolsModItems.FIRE_STAFF.get()) {
-			if (Screen.hasShiftDown()) {
-				time = 10;
-				explosion_power = 0.5 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
-				if ((entity.level().dimension()) == Level.NETHER) {
-					time = 2 * time;
-					explosion_power = 2 * explosion_power;
-				}
-				cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
-				tooltip.add(Component.literal("\u00A77Staff Effects:"));
-				tooltip.add(Component.literal(("\u00A72 " + ("" + time).replace(".0", "") + "s Burn Time")));
-				if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get(), itemstack) != 0) {
-					tooltip.add(Component.literal(("\u00A72 " + ("" + explosion_power).replace(".0", "") + " Explosion Power")));
-				}
-				tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
+			time = 10;
+			explosion_power = 0.5 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
+			if ((entity.level().dimension()) == Level.NETHER) {
+				time = 2 * time;
+				explosion_power = 2 * explosion_power;
 			}
+			cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
+			tooltip.add(Component.literal("\u00A77Staff Effects:"));
+			tooltip.add(Component.literal(("\u00A72 " + ("" + time).replace(".0", "") + "s Burn Time")));
+			if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get(), itemstack) != 0) {
+				tooltip.add(Component.literal(("\u00A72 " + ("" + explosion_power).replace(".0", "") + " Explosion Power")));
+			}
+			tooltip.add(Component.literal(("\u00A7c " + ("" + cooldown).replace(".0", "") + "s Cooldown on hit")));
 		}
 	}
 }
