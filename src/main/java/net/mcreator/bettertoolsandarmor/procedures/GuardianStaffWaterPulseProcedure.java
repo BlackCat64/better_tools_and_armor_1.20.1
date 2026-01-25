@@ -73,7 +73,7 @@ public class GuardianStaffWaterPulseProcedure {
 				}
 			}
 		}
-		for (int index0 = 0; index0 < (int) (4 * Math.pow(range, 3)); index0++) {
+		for (int index0 = 0; index0 < (int) (4 * Math.pow(range, 2)); index0++) {
 			vx = Math.random();
 			vy = Math.random();
 			vz = Math.random();
