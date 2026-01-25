@@ -26,7 +26,7 @@ public class CrystalliteBowSkyItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7fFloaty - Arrows fly perfectly straight"));
+		list.add(Component.literal("\u00A7fFloaty - Arrows have zero gravity"));
 
 
 	}

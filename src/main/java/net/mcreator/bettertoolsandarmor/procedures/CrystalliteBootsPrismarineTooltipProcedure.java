@@ -13,7 +13,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -57,16 +56,12 @@ public class CrystalliteBootsPrismarineTooltipProcedure {
 				}
 			}
 			if (!water) {
-				if (Screen.hasShiftDown()) {
-					if (!rain) {
-						tooltip.add(Component.literal("\u00A77When in rain:"));
-						tooltip.add(Component.literal("\u00A79+30% Speed"));
-					}
-					tooltip.add(Component.literal("\u00A77When in water:"));
-					tooltip.add(Component.literal("\u00A79+50% Swim Speed"));
-				} else {
-					tooltip.add(Component.literal("\u00A78Press Shift for details"));
+				if (!rain) {
+					tooltip.add(Component.literal("\u00A77When in rain:"));
+					tooltip.add(Component.literal("\u00A79+30% Speed"));
 				}
+				tooltip.add(Component.literal("\u00A77When in water:"));
+				tooltip.add(Component.literal("\u00A79+50% Swim Speed"));
 			} else {
 				if (!rain) {
 					tooltip.add(Component.literal("\u00A77When in rain:"));

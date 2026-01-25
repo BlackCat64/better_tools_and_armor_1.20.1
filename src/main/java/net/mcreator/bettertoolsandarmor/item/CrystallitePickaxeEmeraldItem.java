@@ -103,6 +103,6 @@ public class CrystallitePickaxeEmeraldItem extends TieredItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7aAdaptive - acts as an axe and shovel too"));
+		list.add(Component.literal("\u00A7aAdaptive - Mines all blocks efficiently, but has limited enchantability"));
 	}
 }

@@ -15271,8 +15271,8 @@
       "registry_name": "crystallite_pickaxe_emerald",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeEmeraldItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_emerald.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_emerald.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeEmeraldItem.java"
         ]
       },
       "path": "~/Crystallite/Emerald"
@@ -33459,6 +33459,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowAmethystTooltipProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
