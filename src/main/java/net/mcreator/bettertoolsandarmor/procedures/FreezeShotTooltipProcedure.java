@@ -59,7 +59,6 @@ public class FreezeShotTooltipProcedure {
 				FreezeShotChance = FreezeShotChance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(Math.min(100, FreezeShotChance * 100)) + "% Freeze Chance")));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(freeze_time / 20) + "s Freeze Time")));
-				tooltip.add(Component.literal("\u00A7bEffect is more likely in a cold biome"));
 			}
 		}
 	}

@@ -52,7 +52,6 @@ public class CrystalliteAxeTopazItem extends AxeItem {
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A76Shocking - Attacks can chain electrically onto nearby mobs"));
 		list.add(Component.literal("\u00A76Charged - Has Fortune IV"));
-		list.add(Component.literal("\u00A76Attack Chaining is stronger in a thunderstorm"));
 	}
 
 	@Override

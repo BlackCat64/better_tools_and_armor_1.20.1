@@ -22,26 +22,22 @@
     "bootsName": "Sapphire Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bCan freeze attackers"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bCan freeze attackers"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bCan freeze attackers"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bCan freeze attackers"
       ]
     },
     "helmetModelName": "Default",
@@ -72,6 +68,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

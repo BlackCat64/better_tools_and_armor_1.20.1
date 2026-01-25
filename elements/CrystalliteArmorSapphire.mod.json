@@ -24,32 +24,28 @@
       "fixedValue": [
         "§7Upgrade: §bSapphire",
         "§7Ability:",
-        "§bFreezing - Can freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bFreezing - Can freeze attackers"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §bSapphire",
         "§7Ability:",
-        "§bFreezing - Can freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bFreezing - Can freeze attackers"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §bSapphire",
         "§7Ability:",
-        "§bFreezing - Can freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bFreezing - Can freeze attackers"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §bSapphire",
         "§7Ability:",
-        "§bFreezing - Can freeze attackers",
-        "§bEffect is stronger in a cold biome"
+        "§bFreezing - Can freeze attackers"
       ]
     },
     "helmetModelName": "Default",
@@ -80,6 +76,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

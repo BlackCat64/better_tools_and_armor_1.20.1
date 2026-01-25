@@ -1,0 +1,74 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:FireStaff"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:FlamingCirclet"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondSword"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondAxe"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondDagger"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.body"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.legs"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondShovel"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondHoe"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeNetherDiamond"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowNetherDiamond"
+      }
+    ],
+    "information": [
+      "Effect improves when used in the Nether"
+    ]
+  }
+}

@@ -49,6 +49,5 @@ public class CrystalliteSwordNetherDiamondItem extends SwordItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A74Flaming - Sets enemies on fire"));
-		list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 	}
 }

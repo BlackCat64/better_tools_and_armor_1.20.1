@@ -11,8 +11,7 @@
     "name": "Sapphire Dagger",
     "specialInformation": {
       "fixedValue": [
-        "§bHas a chance to freeze the target",
-        "§bEffect is stronger in a cold biome"
+        "§bHas a chance to freeze the target"
       ]
     },
     "creativeTabs": [

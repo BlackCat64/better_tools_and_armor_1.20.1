@@ -1,0 +1,59 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ElectricStaff"
+      },
+      {
+        "value": "CUSTOM:TopazSword"
+      },
+      {
+        "value": "CUSTOM:TopazAxe"
+      },
+      {
+        "value": "CUSTOM:TopazDagger"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.body"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.legs"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowTopaz"
+      }
+    ],
+    "information": [
+      "Effect improves when used in a thunderstorm"
+    ]
+  }
+}

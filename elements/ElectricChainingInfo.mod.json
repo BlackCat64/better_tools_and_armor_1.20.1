@@ -25,8 +25,7 @@
     "information": [
       "§6Electric Chaining§r",
       "An Electric Chain damages any mobs it touches.",
-      "Any mob hit by an Electric Chain has a chance to continue the chain.",
-      "The chance and radius increase during a thunderstorm."
+      "Any mob hit by an Electric Chain has a chance to continue the chain."
     ]
   }
 }

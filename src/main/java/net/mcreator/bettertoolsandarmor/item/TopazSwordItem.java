@@ -47,6 +47,5 @@ public class TopazSwordItem extends SwordItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76Attacks can chain electrically onto nearby mobs"));
-		list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 	}
 }

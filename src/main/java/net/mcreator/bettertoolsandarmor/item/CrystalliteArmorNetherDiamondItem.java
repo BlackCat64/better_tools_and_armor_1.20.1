@@ -76,7 +76,6 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -96,7 +95,6 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -116,7 +114,6 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override
@@ -136,7 +133,6 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
-			list.add(Component.literal("\u00A74Effect is stronger in the Nether"));
 		}
 
 		@Override

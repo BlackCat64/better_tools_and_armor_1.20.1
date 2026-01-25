@@ -51,7 +51,6 @@ public class ThunderShotTooltipProcedure {
 			if (chance > 0) {
 				chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(Math.min(100, chance * 100)) + "% Lightning Chance")));
-				tooltip.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
 			}
 		}
 	}

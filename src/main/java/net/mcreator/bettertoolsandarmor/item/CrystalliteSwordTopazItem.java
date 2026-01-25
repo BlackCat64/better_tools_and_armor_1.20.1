@@ -49,6 +49,5 @@ public class CrystalliteSwordTopazItem extends SwordItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
 		list.add(Component.literal("\u00A77Ability:"));
 		list.add(Component.literal("\u00A76Shocking - Attacks can chain electrically onto nearby mobs"));
-		list.add(Component.literal("\u00A76Effect is stronger in a thunderstorm"));
 	}
 }

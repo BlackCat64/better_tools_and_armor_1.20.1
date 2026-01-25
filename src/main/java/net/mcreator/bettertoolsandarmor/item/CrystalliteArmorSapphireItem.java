@@ -76,7 +76,6 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
-			list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
 		}
 
 		@Override
@@ -96,7 +95,6 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
-			list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
 		}
 
 		@Override
@@ -116,7 +114,6 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
-			list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
 		}
 
 		@Override
@@ -136,7 +133,6 @@ public abstract class CrystalliteArmorSapphireItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A7bFreezing - Can freeze attackers"));
-			list.add(Component.literal("\u00A7bEffect is stronger in a cold biome"));
 		}
 
 		@Override

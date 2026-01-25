@@ -49,7 +49,6 @@ public class SapphireAxeItem extends AxeItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7bHas a chance to freeze the target"));
-		list.add(Component.literal("\u00A7bFreezing effect is stronger in a cold biome"));
 		list.add(Component.literal("\u00A7bHas Silk Touch"));
 	}
 

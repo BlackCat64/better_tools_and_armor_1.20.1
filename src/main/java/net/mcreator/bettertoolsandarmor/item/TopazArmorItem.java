@@ -73,8 +73,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
-			list.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
+			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
 		}
 
 		@Override
@@ -91,8 +90,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
-			list.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
+			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
 		}
 
 		@Override
@@ -109,8 +107,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
-			list.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
+			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
 		}
 
 		@Override
@@ -127,8 +124,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Has a chance to summon lightning on attackers"));
-			list.add(Component.literal("\u00A76Effect is more likely in a thunderstorm"));
+			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
 		}
 
 		@Override

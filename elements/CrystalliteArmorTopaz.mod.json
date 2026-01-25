@@ -24,32 +24,28 @@
       "fixedValue": [
         "§7Upgrade: §6Topaz",
         "§7Ability:",
-        "§6Shocking - Can summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Shocking - Can summon lightning on attackers"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §6Topaz",
         "§7Ability:",
-        "§6Shocking - Can summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Shocking - Can summon lightning on attackers"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §6Topaz",
         "§7Ability:",
-        "§6Shocking - Can summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Shocking - Can summon lightning on attackers"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §6Topaz",
         "§7Ability:",
-        "§6Shocking - Can summon lightning on attackers",
-        "§6Effect is stronger in a thunderstorm"
+        "§6Shocking - Can summon lightning on attackers"
       ]
     },
     "helmetModelName": "Default",
@@ -80,6 +76,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

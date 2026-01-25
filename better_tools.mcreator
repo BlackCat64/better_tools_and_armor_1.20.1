@@ -579,11 +579,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/nether_diamond_helmet.json",
           "src/main/resources/assets/better_tools/models/item/nether_diamond_boots.json",
           "src/main/resources/assets/better_tools/models/item/nether_diamond_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/nether_diamond_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondArmorItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetherDiamondArmorItem.java",
+          "src/main/resources/assets/better_tools/models/item/nether_diamond_helmet.json"
         ]
       },
       "path": "~/Nether Diamond"
@@ -3744,8 +3744,8 @@
       "registry_name": "sapphire_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireSwordItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_sword.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_sword.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireSwordItem.java"
         ]
       },
       "path": "~/Sapphire"
@@ -3798,8 +3798,8 @@
       "registry_name": "sapphire_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireAxeItem.java",
+          "src/main/resources/assets/better_tools/models/item/sapphire_axe.json"
         ]
       },
       "path": "~/Sapphire"
@@ -3879,8 +3879,8 @@
       "registry_name": "sapphire_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireDaggerItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_dagger.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_dagger.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireDaggerItem.java"
         ]
       },
       "path": "~/Sapphire"
@@ -3910,11 +3910,11 @@
         "eb": true,
         "ec": true,
         "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireArmorItem.java",
           "src/main/resources/assets/better_tools/models/item/sapphire_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/sapphire_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/sapphire_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/SapphireArmorItem.java",
-          "src/main/resources/assets/better_tools/models/item/sapphire_boots.json"
+          "src/main/resources/assets/better_tools/models/item/sapphire_boots.json",
+          "src/main/resources/assets/better_tools/models/item/sapphire_leggings.json"
         ]
       },
       "path": "~/Sapphire"
@@ -3979,8 +3979,8 @@
       "registry_name": "topaz_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazSwordItem.java",
-          "src/main/resources/assets/better_tools/models/item/topaz_sword.json"
+          "src/main/resources/assets/better_tools/models/item/topaz_sword.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazSwordItem.java"
         ]
       },
       "path": "~/Topaz"
@@ -4165,8 +4165,8 @@
       "registry_name": "topaz_dagger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/topaz_dagger.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazDaggerItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazDaggerItem.java",
+          "src/main/resources/assets/better_tools/models/item/topaz_dagger.json"
         ]
       },
       "path": "~/Topaz"
@@ -4197,10 +4197,10 @@
         "ec": true,
         "files": [
           "src/main/resources/assets/better_tools/models/item/topaz_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/topaz_boots.json",
           "src/main/resources/assets/better_tools/models/item/topaz_leggings.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazArmorItem.java",
-          "src/main/resources/assets/better_tools/models/item/topaz_chestplate.json"
+          "src/main/resources/assets/better_tools/models/item/topaz_chestplate.json",
+          "src/main/resources/assets/better_tools/models/item/topaz_boots.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/TopazArmorItem.java"
         ]
       },
       "path": "~/Topaz"
@@ -8089,8 +8089,8 @@
       "registry_name": "crystallite_sword_sapphire",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_sapphire.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordSapphireItem.java"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -8224,8 +8224,8 @@
       "registry_name": "crystallite_dagger_sapphire",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_sapphire.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerSapphireItem.java"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -8242,10 +8242,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_chestplate.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_leggings.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorSapphireItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_helmet.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_leggings.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_chestplate.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_sapphire_boots.json"
         ]
       },
@@ -8324,8 +8324,8 @@
       "registry_name": "crystallite_sword_topaz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_topaz.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordTopazItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordTopazItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_topaz.json"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -8459,8 +8459,8 @@
       "registry_name": "crystallite_dagger_topaz",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_topaz.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerTopazItem.java"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -8490,11 +8490,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_leggings.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_helmet.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_boots.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_chestplate.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorTopazItem.java"
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_leggings.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_boots.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorTopazItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_topaz_helmet.json"
         ]
       },
       "path": "~/Crystallite/Topaz"
@@ -8559,8 +8559,8 @@
       "registry_name": "crystallite_sword_nether_diamond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_nether_diamond.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordNetherDiamondItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordNetherDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_nether_diamond.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -8727,9 +8727,9 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_leggings.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_chestplate.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_helmet.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_boots.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorNetherDiamondItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteArmorNetherDiamondItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_armor_nether_diamond_helmet.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -17446,8 +17446,8 @@
       "registry_name": "icy_bracelet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/IcyBraceletItem.java",
-          "src/main/resources/assets/better_tools/models/item/icy_bracelet.json"
+          "src/main/resources/assets/better_tools/models/item/icy_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IcyBraceletItem.java"
         ]
       },
       "path": "~/Crystallite/Sapphire"
@@ -34400,6 +34400,39 @@
         ]
       },
       "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "FireEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "IceEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "LightningEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
@@ -37481,6 +37514,7 @@
       "advancements.exp_potion_adv.title": "Experienced Brewing",
       "block.better_tools.red_metal_hanging_sign": "Red Metal Hanging Sign",
       "block.better_tools.polished_nether_diamond_wall": "Metallic Nether Diamond Wall",
+      "jei.better_tools.ice_effects_info": "Effect improves when used in a cold biome",
       "item.better_tools.end_titanium_scrap": "Ender Titanium Scrap",
       "item.minecraft.tipped_arrow.effect.criticality_potion_long": "Arrow of Criticality",
       "block.better_tools.lime_metal_wall_sign": "Lime Metal Wall Sign",
@@ -37806,6 +37840,7 @@
       "advancements.shockwave_adv.title": "Making an Impact",
       "item.better_tools.iron_cactus_chestplate": "Cactus Shirt",
       "advancements.far_block_reach_adv.title": "ARMS",
+      "jei.better_tools.fire_effects_info": "Effect improves when used in the Nether",
       "death.attack.poison_mushroom_damage.item": "%1$s was poisoned by a mushroom whilst fighting %2$s using %3$s",
       "item.better_tools.crystallite_sword_sculk": "Crystallite Sword",
       "block.better_tools.dark_pink_metal_sign": "Dark Pink Metal Sign",
@@ -38039,7 +38074,7 @@
       "jei.better_tools.gold_crystallite_info": "§lCrystallite Upgrades: \n§eGold§r\n\nTheme:\nReach Distance",
       "gui.better_tools.attributes_viewer.label_attack_damage": "Attack Dmg.",
       "gui.better_tools.attributes_viewer.label_multiplier": "Multiplier",
-      "jei.better_tools.electric_chaining_info": "§6Electric Chaining§r\nAn Electric Chain damages any mobs it touches.\nAny mob hit by an Electric Chain has a chance to continue the chain.\nThe chance and radius increase during a thunderstorm.",
+      "jei.better_tools.electric_chaining_info": "§6Electric Chaining§r\nAn Electric Chain damages any mobs it touches.\nAny mob hit by an Electric Chain has a chance to continue the chain.",
       "item.better_tools.flint_shovel": "Flint Shovel",
       "block.better_tools.end_titanium_ore": "Ender Titanium Ore",
       "item.better_tools.crystallite_sword_emerald": "Crystallite Sword",
@@ -38416,6 +38451,7 @@
       "advancements.diamond_apple_adv.descr": "Eat a Diamond Apple",
       "subtitles.wind_burst": "Wind burst",
       "advancements.shoot_through_walls_adv.title": "Literal Wall Hacks",
+      "jei.better_tools.lightning_effects_info": "Effect improves when used in a thunderstorm",
       "item.better_tools.blackstone_leggings": "Gilded Blackstone Leggings",
       "advancements.max_knockback_resistance_adv.title": "Immovable Object",
       "block.better_tools.green_metal_hanging_sign": "Green Metal Hanging Sign",
