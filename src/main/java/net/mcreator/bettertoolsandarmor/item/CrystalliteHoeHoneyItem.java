@@ -50,6 +50,6 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A76Swarm - Mining the same block many times in a row causes it to break instantly"));
-		list.add(Component.literal("\u00A76Pollinator - Harvesting the same crop many times in a row may drop Bone Meal"));
+		list.add(Component.literal("\u00A76Pollinator - Breaking the same plant many times in a row may drop Bone Meal"));
 	}
 }

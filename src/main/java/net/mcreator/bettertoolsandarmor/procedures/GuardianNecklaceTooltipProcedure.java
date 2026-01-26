@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -42,13 +41,9 @@ public class GuardianNecklaceTooltipProcedure {
 				damage = damage * 2;
 				radius = radius * 2;
 			}
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Every 3s:"));
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(damage) + " Water Pulse Damage")));
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(radius) + " Block Radius")));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77Every 3s:"));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(damage) + " Water Pulse Damage")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(radius) + " Block Radius")));
 		}
 	}
 }

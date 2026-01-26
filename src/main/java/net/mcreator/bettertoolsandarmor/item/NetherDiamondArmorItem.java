@@ -75,7 +75,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Reduces maximum burn time"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
 		}
 
 		@Override
@@ -94,7 +94,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Reduces maximum burn time"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
 		}
 
 		@Override
@@ -113,7 +113,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Reduces maximum burn time"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
 		}
 
 		@Override
@@ -132,7 +132,7 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A74Reduces maximum burn time"));
 			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74 Gives Fire Resistance when on fire"));
+			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
 		}
 
 		@Override
