@@ -30,7 +30,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7When worn:"
+        "§7When worn:",
+        "§9Regenerates HP over time"
       ]
     },
     "hasGlow": false,

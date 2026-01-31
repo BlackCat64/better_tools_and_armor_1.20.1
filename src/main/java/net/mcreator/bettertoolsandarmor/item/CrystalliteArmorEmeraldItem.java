@@ -95,7 +95,7 @@ public abstract class CrystalliteArmorEmeraldItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7aRecovery - Regenerate HP naturally when not in combat"));
+			list.add(Component.literal("\u00A7aGrowth - Regenerates HP over time"));
 		}
 
 		@Override

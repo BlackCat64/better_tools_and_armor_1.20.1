@@ -11,12 +11,13 @@
       }
     ],
     "information": [
-      "Starts healing after 10s without taking any damage.",
+      "Base healing rate: §91HP every 8s§r",
       "",
       "Healing is §ltwice as fast§r when:",
       "- Under 50% HP",
       "- In Sunlight",
-      "- Both items are worn"
+      "- Both items are worn",
+      "(These x2 multipliers can stack for up to §91s Healing Speed§r)"
     ]
   }
 }

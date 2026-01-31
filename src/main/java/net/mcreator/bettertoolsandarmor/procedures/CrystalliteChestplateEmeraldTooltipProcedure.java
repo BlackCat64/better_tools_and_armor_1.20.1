@@ -37,7 +37,7 @@ public class CrystalliteChestplateEmeraldTooltipProcedure {
 			return;
 		double time = 0;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()) {
-			time = 16;
+			time = 8;
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
 				time = time / 2;
 			}
