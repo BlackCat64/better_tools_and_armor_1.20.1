@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRuby.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+10% Movement Speed§r",
+      "(for a total of §9+50%§r)"
+    ]
+  }
+}

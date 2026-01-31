@@ -40,6 +40,9 @@ public class NetherDiamondArmorTooltipProcedure {
 		double time = 0;
 		boolean crystallite = false;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
+			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+				crystallite = true;
+			}
 			for (int index0 = 0; index0 < 4; index0++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
 						.is(ItemTags.create(new ResourceLocation("better_tools:flaming_armor")))) {
@@ -53,21 +56,27 @@ public class NetherDiamondArmorTooltipProcedure {
 			}
 			tooltip.add(Component.literal("\u00A77When on fire:"));
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(Math.min(6 - armor_pieces, 5)) + "s Max Burn Time")));
-			if (crystallite || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if (crystallite) {
 				time = armor_pieces == 4 ? 15 : armor_pieces * 3;
 				if (armor_pieces == 0) {
-					tooltip.add(Component.literal("\u00A77For each armor piece worn:"));
 					time = 3;
 				}
 			} else {
-				tooltip.add(Component.literal("\u00A77When full set worn:"));
+				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
 				time = 5;
 			}
 			if ((entity.level().dimension()) == Level.NETHER) {
 				time = time * 2;
 			}
-			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));
-			tooltip.add(Component.literal("\u00A7cCooldown: 1min"));
+			if (crystallite && !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
+					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
+				tooltip.add(Component.literal("\u00A79+3s Fire Resistance"));
+			} else {
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));
+			}
+			tooltip.add(Component.literal("\u00A7cFire Resistance Cooldown: 1min"));
 		}
 	}
 }

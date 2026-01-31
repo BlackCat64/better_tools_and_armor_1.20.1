@@ -249,5 +249,65 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_LEGGINGS.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.lightning_effects_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_honey_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_netherite_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_IRON_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_iron_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_gold_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_lapis_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_redstone_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_ruby_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_LEGGINGS.get()),
+				new ItemStack(BetterToolsModItems.SAPPHIRE_BOOTS.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.sapphire_armor_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_sapphire_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.TOPAZ_HELMET.get()), new ItemStack(BetterToolsModItems.TOPAZ_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.TOPAZ_LEGGINGS.get()), new ItemStack(BetterToolsModItems.TOPAZ_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.topaz_armor_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_topaz_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_nether_diamond_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.NETHER_DIAMOND_HELMET.get()), new ItemStack(BetterToolsModItems.NETHER_DIAMOND_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.NETHER_DIAMOND_LEGGINGS.get()),
+				new ItemStack(BetterToolsModItems.NETHER_DIAMOND_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_CHESTPLATE.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_BOOTS.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.nether_diamond_armor_info"));
+		registration
+				.addIngredientInfo(
+						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get())),
+						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_sculk_info"));
 	}
 }

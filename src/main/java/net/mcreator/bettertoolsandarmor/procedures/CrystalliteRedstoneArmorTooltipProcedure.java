@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -35,12 +34,6 @@ public class CrystalliteRedstoneArmorTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get()
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get()) {
 			tooltip.add(Component.literal("\u00A79+2 Max Health"));
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal("\u00A79+2 Max Health"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
 		}
 	}
 }

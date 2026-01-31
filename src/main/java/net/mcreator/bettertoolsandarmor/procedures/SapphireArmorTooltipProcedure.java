@@ -14,7 +14,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -60,12 +59,6 @@ public class SapphireArmorTooltipProcedure {
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) ? default_time_chance_str : new java.text.DecimalFormat("##").format(seconds))
 					+ "s Freeze Time")));
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "10" : "5") + "% Freeze Chance")));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
 		}
 	}
 }

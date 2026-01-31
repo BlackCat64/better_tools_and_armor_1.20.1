@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9-10% Detection Range§r",
+      "(for a total of §9-50%§r)"
+    ]
+  }
+}

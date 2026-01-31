@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SapphireArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.body"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SapphireArmor.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+5% Freeze Chance§r",
+      "(for a total of §925%§r)"
+    ]
+  }
+}

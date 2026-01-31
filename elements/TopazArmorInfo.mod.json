@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:TopazArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.body"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.legs"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+5% Lightning Chance§r",
+      "(for a total of §925%§r)"
+    ]
+  }
+}

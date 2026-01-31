@@ -77,8 +77,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Sticky - Can stick to ceilings by holding \u00A7b[SPACE]"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Calms all nearby bees"));
 		}
 
 		@Override
@@ -98,8 +96,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates up to double your original Max HP"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Calms all nearby bees"));
 		}
 
 		@Override
@@ -119,8 +115,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Sticky - Slows melee attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Calms all nearby bees"));
 		}
 
 		@Override
@@ -140,8 +134,6 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A76Combo Jump - Jump repeatedly for increased jump height"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A76Calms all nearby bees"));
 		}
 
 		@Override

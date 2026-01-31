@@ -77,8 +77,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A78Damages all mobs in a radius"));
 		}
 
 		@Override
@@ -98,8 +96,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A78Damages all mobs in a radius"));
 		}
 
 		@Override
@@ -119,8 +115,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A78Damages all mobs in a radius"));
 		}
 
 		@Override
@@ -140,8 +134,6 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
 			list.add(Component.literal("\u00A77Ability:"));
 			list.add(Component.literal("\u00A78Spiky - Deal damage to melee attackers"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A78Damages all mobs in a radius"));
 		}
 
 		@Override

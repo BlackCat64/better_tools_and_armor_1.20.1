@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+2 Max Health§r",
+      "(for a total of §9+10§r)"
+    ]
+  }
+}

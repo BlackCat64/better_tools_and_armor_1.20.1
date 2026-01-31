@@ -53,7 +53,8 @@
       }
     ],
     "information": [
-      "Effect improves when used in a thunderstorm"
+      "Effect improves when used in a thunderstorm",
+      "(Must be in a location which can see the sky)"
     ]
   }
 }

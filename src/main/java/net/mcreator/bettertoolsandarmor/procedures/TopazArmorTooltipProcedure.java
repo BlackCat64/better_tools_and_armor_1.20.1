@@ -13,7 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
@@ -43,12 +42,6 @@ public class TopazArmorTooltipProcedure {
 			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).getValue() * 100;
 			default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "10" : "5";
 			tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
 		}
 	}
 }

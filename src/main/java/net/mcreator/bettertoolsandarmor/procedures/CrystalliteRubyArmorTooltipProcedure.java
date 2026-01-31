@@ -12,7 +12,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -45,12 +44,6 @@ public class CrystalliteRubyArmorTooltipProcedure {
 						Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * 1000) + "% Movement Speed")));
 			} else {
 				tooltip.add(Component.literal("\u00A79+10% Speed"));
-			}
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal("\u00A79+10% Speed"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
 		}
 	}

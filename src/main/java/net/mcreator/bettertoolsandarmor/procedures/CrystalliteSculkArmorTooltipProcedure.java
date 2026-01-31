@@ -12,7 +12,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -72,12 +71,6 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(range) + "% Detection Range")));
 			} else {
 				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
-			}
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
 		}
 	}

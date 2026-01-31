@@ -1,0 +1,24 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorIron.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "Inflicts melee attackers with §9Slowness II§r for 3s"
+    ]
+  }
+}

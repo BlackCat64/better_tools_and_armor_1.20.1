@@ -14,7 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -65,12 +64,6 @@ public class CrystalliteLapisArmorTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("###").format(percent) + "% XP Levels kept on death")));
 			} else {
 				tooltip.add(Component.literal("\u00A79+20% XP Levels kept on death"));
-			}
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77Full-set bonus:"));
-				tooltip.add(Component.literal("\u00A79All XP Levels kept on death"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
 			}
 		}
 	}

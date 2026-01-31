@@ -24,36 +24,28 @@
       "fixedValue": [
         "§7Upgrade: §8Netherite",
         "§7Ability:",
-        "§8Spiky - Deal damage to melee attackers",
-        "§7Full-set bonus:",
-        "§8Damages all mobs in a radius"
+        "§8Spiky - Deal damage to melee attackers"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §8Netherite",
         "§7Ability:",
-        "§8Spiky - Deal damage to melee attackers",
-        "§7Full-set bonus:",
-        "§8Damages all mobs in a radius"
+        "§8Spiky - Deal damage to melee attackers"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §8Netherite",
         "§7Ability:",
-        "§8Spiky - Deal damage to melee attackers",
-        "§7Full-set bonus:",
-        "§8Damages all mobs in a radius"
+        "§8Spiky - Deal damage to melee attackers"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §8Netherite",
         "§7Ability:",
-        "§8Spiky - Deal damage to melee attackers",
-        "§7Full-set bonus:",
-        "§8Damages all mobs in a radius"
+        "§8Spiky - Deal damage to melee attackers"
       ]
     },
     "helmetModelName": "Default",
@@ -84,6 +76,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

@@ -1,0 +1,35 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:NetherDiamondArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.body"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.legs"
+      },
+      {
+        "value": "CUSTOM:NetherDiamondArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
+      }
+    ],
+    "information": [
+      "Max Burn Time decreases when more armor pieces are worn."
+    ]
+  }
+}

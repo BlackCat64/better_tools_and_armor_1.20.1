@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorGold.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+1 Block Reach§r",
+      "(for a total of §9+5§r)"
+    ]
+  }
+}
