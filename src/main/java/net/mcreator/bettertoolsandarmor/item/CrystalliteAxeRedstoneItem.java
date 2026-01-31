@@ -49,7 +49,7 @@ public class CrystalliteAxeRedstoneItem extends AxeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A7cLeech - Kills heal you a little"));
+		list.add(Component.literal("\u00A7c\u00A7cLeech - Heals you when striking a target"));
 		list.add(Component.literal("\u00A7cWrench - Right-click while crouching to rotate blocks"));
 	}
 }

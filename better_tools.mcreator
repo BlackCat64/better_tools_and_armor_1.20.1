@@ -7058,6 +7058,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -7152,8 +7156,8 @@
       "registry_name": "crystallite_axe_redstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_redstone.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeRedstoneItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeRedstoneItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_redstone.json"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -7233,8 +7237,8 @@
       "registry_name": "crystallite_dagger_redstone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerRedstoneItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_redstone.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_redstone.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerRedstoneItem.java"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -34722,6 +34726,12 @@
     },
     {
       "name": "nether_diamond_armor_fire_res_cooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "crystallite_redstone_sword_heal_cooldown",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

@@ -49,6 +49,6 @@ public class CrystalliteSwordRedstoneItem extends SwordItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cLeech - Kills heal you a little"));
+		list.add(Component.literal("\u00A7cLeech - Heals you when striking a target"));
 	}
 }

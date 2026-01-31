@@ -148,5 +148,12 @@ public class GlobalTimersProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_redstone_sword_heal_cooldown - 1, 0);
+			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.crystallite_redstone_sword_heal_cooldown = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

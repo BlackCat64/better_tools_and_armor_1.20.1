@@ -13,7 +13,7 @@
       "fixedValue": [
         "§7Upgrade: §cRedstone",
         "§7Abilities:",
-        "§cLeech - Kills heal you a little",
+        "§c§cLeech - Heals you when striking a target",
         "§cWrench - Right-click while crouching to rotate blocks"
       ]
     },
