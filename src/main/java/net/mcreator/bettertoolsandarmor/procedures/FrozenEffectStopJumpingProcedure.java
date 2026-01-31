@@ -33,8 +33,10 @@ public class FrozenEffectStopJumpingProcedure {
 			time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 10), 0, true, false));
+			if (time > 20) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 20), 0, true, false));
+			}
 		}
 	}
 }

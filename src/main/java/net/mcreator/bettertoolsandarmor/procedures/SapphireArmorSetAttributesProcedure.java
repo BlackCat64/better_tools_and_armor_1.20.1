@@ -13,7 +13,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -39,55 +38,47 @@ public class SapphireArmorSetAttributesProcedure {
 		double armor_pieces = 0;
 		double time = 0;
 		double chance = 0;
+		boolean crystallite = false;
 		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()) != null) {
-			time = 100;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
-				time = 200;
+				chance = chance + 0.08;
+				crystallite = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
-				time = 200;
+				chance = chance + 0.08;
+				crystallite = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
-				time = 200;
+				chance = chance + 0.08;
+				crystallite = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
-				time = 200;
+				chance = chance + 0.08;
+				crystallite = true;
 			}
+			time = crystallite ? 200 : 100;
 			if (armor_pieces == 4) {
-				if (time == 200) {
-					chance = chance + 0.1;
-				} else {
-					chance = chance + 0.05;
-				}
+				chance = chance + (crystallite ? 0.08 : 0.04);
 			}
-			if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f < 0.15) {
-				if (time == 200) {
-					chance = chance * 1.5;
-					time = time * 1.5;
-				} else {
-					chance = chance * 2;
-					time = time * 2;
-				}
+			if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
+				chance = chance * (crystallite ? 1.5 : 2);
+				time = time * (crystallite ? 1.5 : 2);
 			}
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "", 0, AttributeModifier.Operation.ADDITION)));
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSTIME.get()).removeModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "", 0, AttributeModifier.Operation.ADDITION)));
@@ -96,7 +87,7 @@ public class SapphireArmorSetAttributesProcedure {
 					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				}
 				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ICY_BRACELET.get(), lv).isPresent() : false) {
-					if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f < 0.15) {
+					if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
 						chance = chance + 0.1;
 					} else {
 						chance = chance + 0.05;

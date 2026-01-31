@@ -14,7 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -42,14 +41,13 @@ public class CrystalliteChestplateEmeraldTooltipProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
 				time = time / 2;
 			}
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_sunlight) {
+			if (IsPlayerInSunlightProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
 				time = time / 2;
 			}
 			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.NATURE_RING.get(), lv).isPresent() : false == true) {
 				time = time / 2;
 			}
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(time) + "s Regeneration Speed")));
-			tooltip.add(Component.literal("\u00A7aEffect is stronger in sunlight"));
 		}
 	}
 }

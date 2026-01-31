@@ -26,7 +26,7 @@ public class CrystalliteBowSapphireItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7bFreezing - Arrows may freeze the target for a while"));
+		list.add(Component.literal("\u00A7bFreezing - Arrows may freeze the target"));
 
 
 	}

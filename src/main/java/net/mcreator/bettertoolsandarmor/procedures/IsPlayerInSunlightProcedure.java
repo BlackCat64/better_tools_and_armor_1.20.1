@@ -9,15 +9,6 @@ public class IsPlayerInSunlightProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return false;
-		if ((entity.level().dimension()) == Level.OVERWORLD) {
-			if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-				if (!(world.getLevelData().isRaining() || world.getLevelData().isThundering())) {
-					if (world.dayTime() % 24000 >= 0 && world.dayTime() % 24000 <= 12000) {
-						return true;
-					}
-				}
-			}
-		}
-		return false;
+		return (entity.level().dimension()) == Level.OVERWORLD && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && !world.getLevelData().isRaining() && world.dayTime() % 24000 >= 0 && world.dayTime() % 24000 <= 12000;
 	}
 }

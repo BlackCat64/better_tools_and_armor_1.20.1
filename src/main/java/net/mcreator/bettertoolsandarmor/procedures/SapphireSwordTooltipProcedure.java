@@ -14,7 +14,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
@@ -36,19 +35,27 @@ public class SapphireSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
+		double chance = 0;
+		double time = 0;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:freezing_tools")))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue() * 100) + "% Freeze Chance")));
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue() / 20) + "s Freeze Time")));
+				chance = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).getValue() * 100;
+				time = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).getValue() / 20;
 			} else {
-				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_cold_biome) {
-					tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "40" : "20") + "% Freeze Chance")));
-					tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "15" : "10") + "s Freeze Time")));
+				if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
+					chance = 20;
+					time = 10;
 				} else {
-					tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "20" : "10") + "% Freeze Chance")));
-					tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "10" : "5") + "s Freeze Time")));
+					chance = 10;
+					time = 5;
+				}
+				if (IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ())) {
+					chance = chance * 2;
+					time = time * (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
 				}
 			}
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(chance) + "% Freeze Chance")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(time) + "s Freeze Time")));
 		}
 	}
 }

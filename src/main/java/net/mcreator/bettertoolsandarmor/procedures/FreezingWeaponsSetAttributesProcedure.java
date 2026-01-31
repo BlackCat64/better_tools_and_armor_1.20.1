@@ -14,7 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -52,14 +51,9 @@ public class FreezingWeaponsSetAttributesProcedure {
 			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ICY_BRACELET.get(), lv).isPresent() : false) {
 				chance = chance + 0.1;
 			}
-			if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
-					chance = chance * 2;
-					time = time * 1.5;
-				} else {
-					chance = chance * 2;
-					time = time * 2;
-				}
+			if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
+				chance = chance * 2;
+				time = time * ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
 			}
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("f84aa605-971d-4d66-b38b-c669ec0138b7"), "", 0, AttributeModifier.Operation.ADDITION)));
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).removeModifier((new AttributeModifier(UUID.fromString("4fb08f53-c1cb-4b83-8d3f-585863b99f2b"), "", 0, AttributeModifier.Operation.ADDITION)));

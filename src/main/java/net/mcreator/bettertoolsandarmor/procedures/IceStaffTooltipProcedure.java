@@ -12,7 +12,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
@@ -41,12 +40,9 @@ public class IceStaffTooltipProcedure {
 			radius = 1 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 			cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get());
 			tooltip.add(Component.literal("\u00A77Staff Effects:"));
-			tooltip.add(Component
-					.literal(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_cold_biome ? "\u00A72 15s Freeze Time" : "\u00A72 10s Freeze Time")));
+			tooltip.add(Component.literal((IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ()) ? "\u00A72 15s Freeze Time" : "\u00A72 10s Freeze Time")));
 			if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get(), itemstack) != 0) {
-				tooltip.add(Component.literal(("\u00A72 "
-						+ new java.text.DecimalFormat("##.#").format(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_cold_biome ? radius + 2 : radius) / 2)
-						+ " Block Radius")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format((IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ()) ? radius + 2 : radius) / 2) + " Block Radius")));
 			}
 			tooltip.add(Component.literal(("\u00A7c " + (new java.text.DecimalFormat("##.#").format(cooldown)).replace(".0", "") + "s Cooldown on hit")));
 		}

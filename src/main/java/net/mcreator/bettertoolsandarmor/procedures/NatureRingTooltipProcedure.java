@@ -13,7 +13,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -41,14 +40,13 @@ public class NatureRingTooltipProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
 				time = time / 2;
 			}
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_sunlight) {
+			if (IsPlayerInSunlightProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
 				time = time / 2;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()) {
 				time = time / 2;
 			}
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(time) + "s Regeneration Speed")));
-			tooltip.add(Component.literal("\u00A7aEffect is stronger in sunlight"));
 		}
 	}
 }

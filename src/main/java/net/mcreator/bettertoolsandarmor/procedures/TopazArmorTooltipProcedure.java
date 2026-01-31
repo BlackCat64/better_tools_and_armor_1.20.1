@@ -36,12 +36,13 @@ public class TopazArmorTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		double percent = 0;
-		double seconds = 0;
-		String default_time_chance_str = "";
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:lightning_armor")))) {
 			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).getValue() * 100;
-			default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "10" : "5";
-			tooltip.add(Component.literal(("\u00A79+" + default_time_chance_str + "% Lightning Chance")));
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(percent) + "% Lightning Chance")));
+			} else {
+				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items"))) ? "8" : "4") + "% Lightning Chance")));
+			}
 		}
 	}
 }

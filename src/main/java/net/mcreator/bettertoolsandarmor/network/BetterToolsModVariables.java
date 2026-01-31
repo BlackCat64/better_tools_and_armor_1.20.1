@@ -102,8 +102,6 @@ public class BetterToolsModVariables {
 				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
 				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
 				clone.nature_ring_equipped = original.nature_ring_equipped;
-				clone.is_in_cold_biome = original.is_in_cold_biome;
-				clone.is_in_sunlight = original.is_in_sunlight;
 				clone.effect_energy_timer = original.effect_energy_timer;
 				clone.energy_vial_to_update = original.energy_vial_to_update;
 				clone.effect_energy_cost = original.effect_energy_cost;
@@ -174,8 +172,6 @@ public class BetterToolsModVariables {
 		public ItemStack last_food_eaten = ItemStack.EMPTY;
 		public boolean last_food_was_carbonated = false;
 		public boolean nature_ring_equipped = false;
-		public boolean is_in_cold_biome = false;
-		public boolean is_in_sunlight = false;
 		public double effect_energy_timer = 0;
 		public ItemStack energy_vial_to_update = ItemStack.EMPTY;
 		public double effect_energy_cost = 0;
@@ -219,8 +215,6 @@ public class BetterToolsModVariables {
 			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
 			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
 			nbt.putBoolean("nature_ring_equipped", nature_ring_equipped);
-			nbt.putBoolean("is_in_cold_biome", is_in_cold_biome);
-			nbt.putBoolean("is_in_sunlight", is_in_sunlight);
 			nbt.putDouble("effect_energy_timer", effect_energy_timer);
 			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
@@ -261,8 +255,6 @@ public class BetterToolsModVariables {
 			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
 			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
 			nature_ring_equipped = nbt.getBoolean("nature_ring_equipped");
-			is_in_cold_biome = nbt.getBoolean("is_in_cold_biome");
-			is_in_sunlight = nbt.getBoolean("is_in_sunlight");
 			effect_energy_timer = nbt.getDouble("effect_energy_timer");
 			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
@@ -322,8 +314,6 @@ public class BetterToolsModVariables {
 					variables.last_food_eaten = message.data.last_food_eaten;
 					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;
 					variables.nature_ring_equipped = message.data.nature_ring_equipped;
-					variables.is_in_cold_biome = message.data.is_in_cold_biome;
-					variables.is_in_sunlight = message.data.is_in_sunlight;
 					variables.effect_energy_timer = message.data.effect_energy_timer;
 					variables.energy_vial_to_update = message.data.energy_vial_to_update;
 					variables.effect_energy_cost = message.data.effect_energy_cost;

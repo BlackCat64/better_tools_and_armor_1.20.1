@@ -39,49 +39,41 @@ public class TopazArmorSetAttributesProcedure {
 		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()) != null) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.TOPAZ_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
+				chance = chance + 0.08;
 				crystallite_worn = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.TOPAZ_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_LEGGINGS.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
+				chance = chance + 0.08;
 				crystallite_worn = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.TOPAZ_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_CHESTPLATE.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
+				chance = chance + 0.08;
 				crystallite_worn = true;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.TOPAZ_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.05;
+				chance = chance + 0.04;
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.1;
+				chance = chance + 0.08;
 				crystallite_worn = true;
 			}
 			if (armor_pieces == 4) {
-				if (crystallite_worn) {
-					chance = chance + 0.1;
-				} else {
-					chance = chance + 0.05;
-				}
+				chance = chance + (crystallite_worn ? 0.08 : 0.04);
 			}
 			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
-				if (crystallite_worn) {
-					chance = chance * 1.5;
-				} else {
-					chance = chance * 2;
-				}
+				chance = chance * (crystallite_worn ? 1.5 : 2);
 			}
 			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {

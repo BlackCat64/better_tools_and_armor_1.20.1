@@ -9,13 +9,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
@@ -39,26 +37,25 @@ public class SapphireArmorTooltipProcedure {
 			return;
 		double percent = 0;
 		double seconds = 0;
-		String default_time_chance_str = "";
 		if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:freezing_armor")))) {
-			percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()).getValue() * 100;
-			seconds = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSTIME.get()).getValue() / 20;
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_cold_biome) {
-				default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "15" : "10";
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+				percent = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()).getValue() * 100;
+				seconds = ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSTIME.get()).getValue() / 20;
 			} else {
-				default_time_chance_str = itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? "10" : "5";
+				if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
+					percent = 8;
+					seconds = 10;
+				} else {
+					percent = 4;
+					seconds = 5;
+				}
+				if (IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ())) {
+					percent = percent * (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
+					seconds = seconds * (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
+				}
 			}
-			tooltip.add(Component.literal((!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())
-							? "\u00A79+" + default_time_chance_str + "% Freeze Chance"
-							: "\u00A72 " + new java.text.DecimalFormat("##").format(percent) + "% Freeze Chance")));
-			tooltip.add(Component.literal(("\u00A72 " + (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) ? default_time_chance_str : new java.text.DecimalFormat("##").format(seconds))
-					+ "s Freeze Time")));
+			tooltip.add(Component.literal(((!IsPlayerWearingItemProcedure.execute(entity, itemstack) ? "\u00A79+" : "\u00A72 ") + "" + new java.text.DecimalFormat("##.#").format(percent) + "% Freeze Chance")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(seconds) + "s Freeze Time")));
 		}
 	}
 }

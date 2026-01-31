@@ -13,7 +13,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -36,13 +35,9 @@ public class CrystalliteBootsEmeraldTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_BOOTS.get()) {
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_sunlight) {
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-					tooltip.add(
-							Component.literal(("\u00A72 " + new java.text.DecimalFormat("###").format(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * 1000) + "% Movement Speed")));
-				} else {
-					tooltip.add(Component.literal("\u00A79+30% Speed"));
-				}
+			if (IsPlayerInSunlightProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("###").format(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * 1000) + "% Movement Speed")));
 			} else {
 				tooltip.add(Component.literal("\u00A77When in sunlight:"));
 				tooltip.add(Component.literal("\u00A79+30% Speed"));

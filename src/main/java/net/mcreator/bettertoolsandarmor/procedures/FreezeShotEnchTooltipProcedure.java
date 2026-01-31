@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -17,7 +15,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
@@ -26,7 +23,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class FreezeShotTooltipProcedure {
+public class FreezeShotEnchTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
@@ -45,14 +42,11 @@ public class FreezeShotTooltipProcedure {
 		if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.FREEZE_SHOT.get(), itemstack) != 0 || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
 			FreezeShotChance = itemstack.getEnchantmentLevel(BetterToolsModEnchantments.FREEZE_SHOT.get()) * 0.1;
 			freeze_time = itemstack.getEnchantmentLevel(BetterToolsModEnchantments.FREEZE_SHOT.get()) * 66;
-			if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ICY_BRACELET.get(), lv).isPresent() : false) {
-				FreezeShotChance = FreezeShotChance + 0.1;
-			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
 				FreezeShotChance = FreezeShotChance + 0.2;
 				freeze_time = freeze_time == 0 ? 70 : freeze_time * 1.5;
 			}
-			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).is_in_cold_biome) {
+			if (IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ())) {
 				FreezeShotChance = FreezeShotChance * 2;
 			}
 			if (FreezeShotChance > 0) {
