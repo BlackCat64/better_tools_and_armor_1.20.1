@@ -47,7 +47,8 @@ public class CrystalliteDaggerNetherDiamondItem extends SwordItem {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-		list.add(Component.literal("\u00A77Ability:"));
+		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A74Flaming - Sets enemies on fire"));
+		list.add(Component.literal("\u00A74Hellforged - Increased attack damage in the Nether"));
 	}
 }

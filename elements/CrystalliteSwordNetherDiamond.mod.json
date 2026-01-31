@@ -12,8 +12,9 @@
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §4Nether Diamond",
-        "§7Ability:",
-        "§4Flaming - Sets enemies on fire"
+        "§7Abilities:",
+        "§4Flaming - Sets enemies on fire",
+        "§4Hellforged - Increased attack damage in the Nether"
       ]
     },
     "creativeTabs": [
