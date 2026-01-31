@@ -247,7 +247,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModItems.TOPAZ_HELMET.get()), new ItemStack(BetterToolsModItems.TOPAZ_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.TOPAZ_LEGGINGS.get()), new ItemStack(BetterToolsModItems.TOPAZ_BOOTS.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_TOPAZ.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_LEGGINGS.get()),
-						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get())),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_TOPAZ_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()), new ItemStack(BetterToolsModItems.ELECTRIC_NECKLACE.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.lightning_effects_info"));
 		registration
 				.addIngredientInfo(
@@ -309,5 +309,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()),
 								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get())),
 						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_sculk_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.TOPAZ_PICKAXE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.topaz_pickaxe_info"));
 	}
 }

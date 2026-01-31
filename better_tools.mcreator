@@ -34499,6 +34499,17 @@
         "files": []
       },
       "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "TopazPickaxeInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_pickaxe_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
@@ -38448,6 +38459,7 @@
       "item.better_tools.crystallite_pickaxe_gold": "Crystallite Pickaxe",
       "item.better_tools.magic_crystal": "Magic Crystal",
       "block.better_tools.brown_metal_wall_sign": "Brown Metal Wall Sign",
+      "jei.better_tools.topaz_pickaxe_info": "May duplicate drops from ores, as long as the ore block itself is not dropped.\nStacks with Fortune.",
       "item.better_tools.end_titanium_pickaxe": "Ender Titanium Pickaxe",
       "death.attack.water_pulse_damage": "%1$s was blasted with a water pulse by %2$s",
       "item.better_tools.ice_crystal": "Frozen Crystal",

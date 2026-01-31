@@ -760,7 +760,7 @@
   "effect.better_tools.criticality": "Criticality",
   "item.better_tools.crystallite_sword_iron": "Crystallite Sword",
   "jei.better_tools.topaz_armor_info": "§lFull-set bonus:§r\n§9+5% Lightning Chance§r\n(for a total of §925%§r)",
-  "jei.better_tools.crystallite_armor_sculk_info": "§lFull-set bonus:§r\n§9+5% Lightning Chance§r\n(for a total of §925%§r)",
+  "jei.better_tools.crystallite_armor_sculk_info": "§lFull-set bonus:§r\n§9-10% Detection Range§r\n(for a total of §9-50%§r)",
   "item.better_tools.crystallite_pickaxe_amethyst": "Crystallite Pickaxe",
   "advancements.overkill_adv.descr": "Deal over 30 damage in a single melee hit",
   "block.better_tools.gray_metal_sign": "Gray Metal Sign",

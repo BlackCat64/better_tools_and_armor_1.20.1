@@ -1,0 +1,18 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:TopazPickaxe"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeTopaz"
+      }
+    ],
+    "information": [
+      "May duplicate drops from ores, as long as the ore block itself is not dropped.",
+      "Stacks with Fortune."
+    ]
+  }
+}
