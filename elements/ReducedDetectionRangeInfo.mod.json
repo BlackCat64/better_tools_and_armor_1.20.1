@@ -1,0 +1,59 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:GlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:GlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorSculk.boots"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:IronGlassArmor.boots"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.body"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DiamondGlassArmor.boots"
+      }
+    ],
+    "information": [
+      "Reduced Detection Range effect only works in singleplayer worlds."
+    ]
+  }
+}

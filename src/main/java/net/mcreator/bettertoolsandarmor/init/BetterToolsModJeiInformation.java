@@ -311,5 +311,12 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_sculk_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.TOPAZ_PICKAXE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_TOPAZ.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.topaz_pickaxe_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.GLASS_HELMET.get()), new ItemStack(BetterToolsModItems.GLASS_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.GLASS_LEGGINGS.get()), new ItemStack(BetterToolsModItems.GLASS_BOOTS.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_HELMET.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_BOOTS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_HELMET.get()),
+						new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.reduced_detection_range_info"));
 	}
 }
