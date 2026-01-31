@@ -11,21 +11,10 @@ public class IsPlayerInTheDarkProcedure {
 			return false;
 		double time = 0;
 		time = world.dayTime() % 24000;
-		if (time % 2 == 0) {
-			if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
-				return true;
-			} else if (time >= 13000 || !((entity.level().dimension()) == Level.OVERWORLD)) {
-				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-					return true;
-				} else {
-					if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
-						return true;
-					} else {
-						return false;
-					}
-				}
-			}
-			return false;
+		if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
+			return true;
+		} else if (time >= 13000 || !((entity.level().dimension()) == Level.OVERWORLD)) {
+			return world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) || world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4;
 		}
 		return false;
 	}

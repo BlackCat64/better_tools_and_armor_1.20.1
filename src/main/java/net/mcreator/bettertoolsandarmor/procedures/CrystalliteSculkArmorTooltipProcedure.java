@@ -44,15 +44,8 @@ public class CrystalliteSculkArmorTooltipProcedure {
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
 				tooltip.add(Component.literal("\u00A791.3x Sneaking Speed"));
 			}
-			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
-				tooltip.add(Component.literal("\u00A77When in the dark:"));
-				tooltip.add(Component.literal("\u00A79+30% Speed"));
-			}
 			range = 100;
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()) {
 					range = range - 10;
 				}
@@ -71,6 +64,15 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(range) + "% Detection Range")));
 			} else {
 				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
+			}
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+				if (IsPlayerWearingItemProcedure.execute(entity, itemstack) && IsPlayerInTheDarkProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
+					tooltip.add(
+							Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * 1000) + "% Movement Speed")));
+				} else {
+					tooltip.add(Component.literal("\u00A77When in the dark:"));
+					tooltip.add(Component.literal("\u00A79+30% Speed"));
+				}
 			}
 		}
 	}
