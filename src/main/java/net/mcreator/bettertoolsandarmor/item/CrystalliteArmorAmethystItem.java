@@ -11,19 +11,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteChestplateAmethystProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
-
-import com.google.common.collect.Iterables;
 
 public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 	public CrystalliteArmorAmethystItem(ArmorItem.Type type, Item.Properties properties) {
@@ -99,20 +95,12 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dCrystallized - Gain Absorption health when underground and not in combat"));
+			list.add(Component.literal("\u00A7dCrystallized - Gives Resistance when at full health"));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "better_tools:textures/models/armor/crystallite_amethyst__layer_1.png";
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CrystalliteChestplateAmethystProcedureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
-			}
 		}
 	}
 

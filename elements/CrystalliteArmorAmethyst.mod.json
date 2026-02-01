@@ -10,9 +10,6 @@
     "textureLeggings": "crystallite_leggings_amethyst",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_amethyst",
-    "onBodyTick": {
-      "name": "CrystalliteChestplateAmethystProcedure"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:CrystalliteTab"
@@ -34,7 +31,7 @@
       "fixedValue": [
         "§7Upgrade: §dAmethyst",
         "§7Ability:",
-        "§dCrystallized - Gain Absorption health when underground and not in combat"
+        "§dCrystallized - Gives Resistance when at full health"
       ]
     },
     "leggingsSpecialInformation": {

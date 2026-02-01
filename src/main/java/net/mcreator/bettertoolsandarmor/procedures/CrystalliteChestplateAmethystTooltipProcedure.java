@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -33,13 +32,8 @@ public class CrystalliteChestplateAmethystTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get()) {
-			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A77When underground: "));
-				tooltip.add(Component.literal("\u00A79+1 Absorption Health every 15s"));
-				tooltip.add(Component.literal("\u00A77Limit: \u00A794 Absorption Health"));
-			} else {
-				tooltip.add(Component.literal("\u00A78Press Shift for details"));
-			}
+			tooltip.add(Component.literal("\u00A77When at full HP:"));
+			tooltip.add(Component.literal("\u00A79-20% Damage Received"));
 		}
 	}
 }
