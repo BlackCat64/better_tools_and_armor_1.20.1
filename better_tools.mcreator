@@ -19985,25 +19985,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "EarthCircletOreLightRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "earth_circlet_ore_light_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EarthCircletOreLightRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Amethyst"
-    },
-    {
       "name": "CrystallitePickaxePrismarineProcedure",
       "type": "procedure",
       "compiles": true,
