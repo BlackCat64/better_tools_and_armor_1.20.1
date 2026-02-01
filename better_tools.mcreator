@@ -26313,20 +26313,6 @@
       "path": "~/Effect Armor/Cactus Shirt"
     },
     {
-      "name": "CrystalliteThornsParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_thorns_particle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/CrystalliteThornsParticleParticle.java",
-          "src/main/resources/assets/better_tools/particles/crystallite_thorns_particle.json"
-        ]
-      },
-      "path": "~/Crystallite/Netherite"
-    },
-    {
       "name": "NatureRingTooltip",
       "type": "procedure",
       "compiles": true,
@@ -34510,6 +34496,20 @@
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteSpinThorns",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_spin_thorns",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/particles/crystallite_spin_thorns.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/CrystalliteSpinThornsParticle.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
     }
   ],
   "variable_elements": [
@@ -34548,12 +34548,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "crystallite_amethyst_absorption_timer",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "300.0"
     },
     {
       "name": "being_damaged_flag",

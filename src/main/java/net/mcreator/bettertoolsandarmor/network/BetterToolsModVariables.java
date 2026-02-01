@@ -90,7 +90,6 @@ public class BetterToolsModVariables {
 				clone.time_since_last_hurt = original.time_since_last_hurt;
 				clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
 				clone.critical_hit = original.critical_hit;
-				clone.crystallite_amethyst_absorption_timer = original.crystallite_amethyst_absorption_timer;
 				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
 				clone.time_since_last_attacked = original.time_since_last_attacked;
 				clone.time_since_last_mined = original.time_since_last_mined;
@@ -151,7 +150,6 @@ public class BetterToolsModVariables {
 		public double time_since_last_hurt = 0;
 		public double crystallite_emerald_heal_timer = 0.0;
 		public boolean critical_hit = false;
-		public double crystallite_amethyst_absorption_timer = 300.0;
 		public double last_on_ground_x = 0;
 		public double last_on_ground_y = 0;
 		public double last_on_ground_z = 0;
@@ -195,7 +193,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_since_last_hurt", time_since_last_hurt);
 			nbt.putDouble("crystallite_emerald_heal_timer", crystallite_emerald_heal_timer);
 			nbt.putBoolean("critical_hit", critical_hit);
-			nbt.putDouble("crystallite_amethyst_absorption_timer", crystallite_amethyst_absorption_timer);
 			nbt.putDouble("last_on_ground_x", last_on_ground_x);
 			nbt.putDouble("last_on_ground_y", last_on_ground_y);
 			nbt.putDouble("last_on_ground_z", last_on_ground_z);
@@ -236,7 +233,6 @@ public class BetterToolsModVariables {
 			time_since_last_hurt = nbt.getDouble("time_since_last_hurt");
 			crystallite_emerald_heal_timer = nbt.getDouble("crystallite_emerald_heal_timer");
 			critical_hit = nbt.getBoolean("critical_hit");
-			crystallite_amethyst_absorption_timer = nbt.getDouble("crystallite_amethyst_absorption_timer");
 			last_on_ground_x = nbt.getDouble("last_on_ground_x");
 			last_on_ground_y = nbt.getDouble("last_on_ground_y");
 			last_on_ground_z = nbt.getDouble("last_on_ground_z");
@@ -296,7 +292,6 @@ public class BetterToolsModVariables {
 					variables.time_since_last_hurt = message.data.time_since_last_hurt;
 					variables.crystallite_emerald_heal_timer = message.data.crystallite_emerald_heal_timer;
 					variables.critical_hit = message.data.critical_hit;
-					variables.crystallite_amethyst_absorption_timer = message.data.crystallite_amethyst_absorption_timer;
 					variables.last_on_ground_x = message.data.last_on_ground_x;
 					variables.last_on_ground_y = message.data.last_on_ground_y;
 					variables.last_on_ground_z = message.data.last_on_ground_z;
