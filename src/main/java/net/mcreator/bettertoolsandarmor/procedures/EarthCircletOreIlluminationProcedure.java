@@ -7,16 +7,19 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -37,13 +40,22 @@ public class EarthCircletOreIlluminationProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		boolean ore_has_air = false;
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		double x_offset = 0;
-		double y_offset = 0;
-		double z_offset = 0;
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false && world.dayTime() % 5 == 0) {
+		double block_x = 0;
+		double block_y = 0;
+		double block_z = 0;
+		if ((entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false == true)
+				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_ore_highlight_cooldown == 0) {
+			{
+				double _setval = Mth.nextInt(RandomSource.create(), 160, 200);
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.crystallite_amethyst_ore_highlight_cooldown = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			sx = -16;
 			for (int index0 = 0; index0 < 32; index0++) {
 				sy = -16;
@@ -51,47 +63,17 @@ public class EarthCircletOreIlluminationProcedure {
 					sz = -16;
 					for (int index2 = 0; index2 < 32; index2++) {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
-							x_offset = -1;
-							for (int index3 = 0; index3 < 2; index3++) {
-								if (world.isEmptyBlock(BlockPos.containing(x + sx + x_offset, y + sy, z + sz))) {
-									world.setBlock(BlockPos.containing(x + sx + x_offset, y + sy, z + sz), Blocks.LIGHT.defaultBlockState(), 3);
-									{
-										int _value = 3;
-										BlockPos _pos = BlockPos.containing(x + sx + x_offset, y + sy, z + sz);
-										BlockState _bs = world.getBlockState(_pos);
-										if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-											world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+							block_x = Math.floor(x) + sx + 0.5;
+							block_y = Math.floor(y) + sy + 0.5;
+							block_z = Math.floor(z) + sz + 0.5;
+							for (Direction directioniterator : Direction.values()) {
+								if (world.isEmptyBlock(BlockPos.containing(block_x + directioniterator.getStepX(), block_y + directioniterator.getStepY(), block_z + directioniterator.getStepZ()))) {
+									for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 0, 3); index3++) {
+										world.addParticle((SimpleParticleType) (BetterToolsModParticleTypes.ORE_LOCATION_PARTICLE.get()), (block_x + (directioniterator.getStepX() == 0 ? Math.random() - 0.5 : directioniterator.getStepX() * 0.6)),
+												(block_y + (directioniterator.getStepY() == 0 ? Math.random() - 0.5 : directioniterator.getStepY() * 0.6)),
+												(block_z + (directioniterator.getStepZ() == 0 ? Math.random() - 0.5 : directioniterator.getStepZ() * 0.6)), 0, 0, 0);
 									}
 								}
-								x_offset = 1;
-							}
-							y_offset = -1;
-							for (int index4 = 0; index4 < 2; index4++) {
-								if (world.isEmptyBlock(BlockPos.containing(x + sx, y + sy + y_offset, z + sz))) {
-									world.setBlock(BlockPos.containing(x + sx, y + sy + y_offset, z + sz), Blocks.LIGHT.defaultBlockState(), 3);
-									{
-										int _value = 3;
-										BlockPos _pos = BlockPos.containing(x + sx, y + sy + y_offset, z + sz);
-										BlockState _bs = world.getBlockState(_pos);
-										if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-											world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-									}
-								}
-								y_offset = 1;
-							}
-							z_offset = -1;
-							for (int index5 = 0; index5 < 2; index5++) {
-								if (world.isEmptyBlock(BlockPos.containing(x + sx, y + sy, z + sz + z_offset))) {
-									world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz + z_offset), Blocks.LIGHT.defaultBlockState(), 3);
-									{
-										int _value = 3;
-										BlockPos _pos = BlockPos.containing(x + sx, y + sy, z + sz + z_offset);
-										BlockState _bs = world.getBlockState(_pos);
-										if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-											world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-									}
-								}
-								z_offset = 1;
 							}
 						}
 						sz = sz + 1;

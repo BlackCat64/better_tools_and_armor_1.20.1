@@ -28,7 +28,7 @@
         "§7Upgrade: §3Sculk",
         "§7Abilities:",
         "§3Deep Dweller - Gain night vision when in the dark",
-        "§3Darkness immunity",
+        "§3Immunity to Darkness effect",
         "§3Enemy detection range reduced"
       ]
     },
@@ -84,6 +84,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

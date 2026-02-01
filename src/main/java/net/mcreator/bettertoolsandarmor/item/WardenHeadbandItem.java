@@ -22,6 +22,6 @@ public class WardenHeadbandItem extends Item implements ICurioItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
 		list.add(Component.literal("\u00A79Gain night vision when in the dark"));
-		list.add(Component.literal("\u00A73Darkness immunity"));
+		list.add(Component.literal("\u00A79Immunity to Darkness effect"));
 	}
 }

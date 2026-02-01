@@ -109,6 +109,7 @@ public class BetterToolsModVariables {
 				clone.time_on_fire = original.time_on_fire;
 				clone.nether_diamond_armor_fire_res_cooldown = original.nether_diamond_armor_fire_res_cooldown;
 				clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
+				clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
 			}
 		}
 	}
@@ -179,6 +180,7 @@ public class BetterToolsModVariables {
 		public double time_on_fire = 0;
 		public double nether_diamond_armor_fire_res_cooldown = 0;
 		public double crystallite_redstone_sword_heal_cooldown = 0;
+		public double crystallite_amethyst_ore_highlight_cooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -222,6 +224,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_on_fire", time_on_fire);
 			nbt.putDouble("nether_diamond_armor_fire_res_cooldown", nether_diamond_armor_fire_res_cooldown);
 			nbt.putDouble("crystallite_redstone_sword_heal_cooldown", crystallite_redstone_sword_heal_cooldown);
+			nbt.putDouble("crystallite_amethyst_ore_highlight_cooldown", crystallite_amethyst_ore_highlight_cooldown);
 			return nbt;
 		}
 
@@ -262,6 +265,7 @@ public class BetterToolsModVariables {
 			time_on_fire = nbt.getDouble("time_on_fire");
 			nether_diamond_armor_fire_res_cooldown = nbt.getDouble("nether_diamond_armor_fire_res_cooldown");
 			crystallite_redstone_sword_heal_cooldown = nbt.getDouble("crystallite_redstone_sword_heal_cooldown");
+			crystallite_amethyst_ore_highlight_cooldown = nbt.getDouble("crystallite_amethyst_ore_highlight_cooldown");
 		}
 	}
 
@@ -321,6 +325,7 @@ public class BetterToolsModVariables {
 					variables.time_on_fire = message.data.time_on_fire;
 					variables.nether_diamond_armor_fire_res_cooldown = message.data.nether_diamond_armor_fire_res_cooldown;
 					variables.crystallite_redstone_sword_heal_cooldown = message.data.crystallite_redstone_sword_heal_cooldown;
+					variables.crystallite_amethyst_ore_highlight_cooldown = message.data.crystallite_amethyst_ore_highlight_cooldown;
 				}
 			});
 			context.setPacketHandled(true);

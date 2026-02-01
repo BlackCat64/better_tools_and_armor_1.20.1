@@ -39,7 +39,7 @@
       "fixedValue": [
         "§7Upgrade: §fSky",
         "§7Ability:",
-        "§fFloaty - Low Gravity"
+        "§fFloaty - Gain Low Gravity"
       ]
     },
     "bootsSpecialInformation": {
@@ -77,6 +77,18 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

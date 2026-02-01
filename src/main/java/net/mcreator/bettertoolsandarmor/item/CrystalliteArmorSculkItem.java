@@ -81,7 +81,7 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
 			list.add(Component.literal("\u00A77Abilities:"));
 			list.add(Component.literal("\u00A73Deep Dweller - Gain night vision when in the dark"));
-			list.add(Component.literal("\u00A73Darkness immunity"));
+			list.add(Component.literal("\u00A73Immunity to Darkness effect"));
 			list.add(Component.literal("\u00A73Enemy detection range reduced"));
 		}
 
