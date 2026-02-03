@@ -3144,6 +3144,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -22052,11 +22056,15 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
           {
-            "name": "immediatesourceentity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -22157,6 +22165,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -22203,6 +22215,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ThornsDamageProcedure2Procedure.java"
         ],
         "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -22282,6 +22298,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -22320,6 +22340,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordLapisMagicProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -27024,6 +27048,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordDiamondProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -34528,12 +34556,6 @@
       "name": "critical_hit",
       "type": "logic",
       "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
-      "name": "being_damaged_flag",
-      "type": "logic",
-      "scope": "global",
       "value": "false"
     },
     {
