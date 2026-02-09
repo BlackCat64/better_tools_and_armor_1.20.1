@@ -84,7 +84,7 @@ public class ReflectCharmProcedureProcedure {
 								entityToSpawn.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 2, 1);
+						}.getArrow(projectileLevel, entity, 6, 1);
 						_entityToSpawn.setPos(x, (y + 2), z);
 						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) (projectile_speed / 2), 0);
 						projectileLevel.addFreshEntity(_entityToSpawn);
