@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.bettertoolsandarmor.client.particle.WindBurstParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.OreLocationParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.IceParticleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.GuardianStaffBeamParticle;
@@ -38,5 +39,6 @@ public class BetterToolsModParticles {
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM_5.get(), FreezeBoom5Particle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM_6.get(), FreezeBoom6Particle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_SPIN_THORNS.get(), CrystalliteSpinThornsParticle::provider);
+		event.registerSpriteSet(BetterToolsModParticleTypes.WIND_BURST.get(), WindBurstParticle::provider);
 	}
 }
