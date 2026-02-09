@@ -14,10 +14,8 @@ public class MagmaDamageProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.BLACKSTONE_MAGMA.get()) {
-			if (entity instanceof LivingEntity && !entity.isShiftKeyDown()) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
-			}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.BLACKSTONE_MAGMA.get() && entity instanceof LivingEntity && !entity.isShiftKeyDown() && !entity.fireImmune()) {
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
 		}
 	}
 }

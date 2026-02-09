@@ -54,7 +54,7 @@ public class GuardianStaffWaterPulseProcedure {
 				if (entityiterator instanceof LivingEntity) {
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(
-								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
+								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), null, entity),
 								(float) damage);
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 10, 0.4, 1, 0.4, 0.025);

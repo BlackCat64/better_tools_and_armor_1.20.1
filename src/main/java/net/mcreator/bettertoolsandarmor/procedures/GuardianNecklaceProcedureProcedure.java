@@ -61,7 +61,7 @@ public class GuardianNecklaceProcedureProcedure {
 							|| entityiterator == (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
 						if (entity.getPersistentData().getDouble("guardian_necklace_damage_timer") == 0) {
 							entityiterator.hurt(
-									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), entity),
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), null, entity),
 									(float) (entityiterator instanceof Drowned || entityiterator instanceof LivingEntity _livEnt9 && _livEnt9.getMobType() == MobType.WATER ? damage * 2 : damage));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 8, 0.3, 1, 0.3, 0.05);

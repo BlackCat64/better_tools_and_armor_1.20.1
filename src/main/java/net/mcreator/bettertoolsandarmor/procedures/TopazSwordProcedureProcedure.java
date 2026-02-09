@@ -81,7 +81,7 @@ public class TopazSwordProcedureProcedure {
 							success = true;
 							ElectricChainParticlesProcedure.execute(world, entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), closest.getX(), closest.getY() + closest.getBbHeight() / 2, closest.getZ());
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:electric_chain_damage"))),
-									sourceentity), (float) (amount / 2));
+									null, immediatesourceentity), (float) (amount / 2));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0.25, 1, 0.25, 0.01);
 							if (chain_count >= 2) {

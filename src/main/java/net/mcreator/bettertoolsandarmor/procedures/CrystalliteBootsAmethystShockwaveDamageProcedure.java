@@ -81,7 +81,7 @@ public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 						if (!(entityiterator == entity) && entityiterator instanceof LivingEntity && Math.abs(entityiterator.getY() - entity.getY()) < 1) {
 							horz_distance = Math.sqrt(Math.pow(entityiterator.getX() - entity.getX(), 2) + Math.pow(entityiterator.getZ() - entity.getZ(), 2));
 							entityiterator.hurt(
-									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:shockwave_damage"))), entity),
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:shockwave_damage"))), null, entity),
 									(float) (damage / Math.max(1, horz_distance * 0.5)));
 						}
 					}

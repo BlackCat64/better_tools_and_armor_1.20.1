@@ -36,9 +36,6 @@
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "NetherDiamondSwordProcedure"
-    }
+    "damageOnCrafting": false
   }
 }

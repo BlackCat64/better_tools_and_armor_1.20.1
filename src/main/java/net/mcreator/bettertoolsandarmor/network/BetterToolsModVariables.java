@@ -36,8 +36,6 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BetterToolsModVariables {
-	public static boolean being_damaged_flag = false;
-
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		BetterToolsMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);

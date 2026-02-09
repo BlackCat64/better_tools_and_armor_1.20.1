@@ -42,7 +42,7 @@ public class CrystalliteSwordSkyCritTrackerProcedure {
 					event.setResult(Event.Result.DENY);
 				}
 			}
-			BetterToolsMod.queueServerWork(10, () -> {
+			BetterToolsMod.queueServerWork(1, () -> {
 				{
 					boolean _setval = false;
 					sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
