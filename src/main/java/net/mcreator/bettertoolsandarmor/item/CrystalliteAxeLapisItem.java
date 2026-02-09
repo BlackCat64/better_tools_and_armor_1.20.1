@@ -27,7 +27,7 @@ public class CrystalliteAxeLapisItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 8.5f;
 			}
 
 			public int getLevel() {

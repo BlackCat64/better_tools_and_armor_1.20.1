@@ -6736,8 +6736,8 @@
       "registry_name": "crystallite_sword_lapis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordLapisItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_sword_lapis.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_sword_lapis.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordLapisItem.java"
         ]
       },
       "path": "~/Crystallite/Lapis"
@@ -6829,8 +6829,8 @@
       "registry_name": "crystallite_axe_lapis",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_axe_lapis.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeLapisItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeLapisItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_lapis.json"
         ]
       },
       "path": "~/Crystallite/Lapis"
@@ -6910,8 +6910,8 @@
       "registry_name": "crystallite_dagger_lapis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerLapisItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_lapis.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_dagger_lapis.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteDaggerLapisItem.java"
         ]
       },
       "path": "~/Crystallite/Lapis"
