@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Display XP Drop Values",
+    "description": "Used for debugging - Displays the amount of XP dropped by mobs who are killed by players with OP permissions",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}
