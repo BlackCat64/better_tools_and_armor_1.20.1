@@ -196,6 +196,8 @@ import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeSculkItem;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeSapphireItem;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeRubyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeRedstoneUpgrade2Item;
+import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeRedstoneUpgrade1Item;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeRedstoneItem;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxePrismarineItem;
 import net.mcreator.bettertoolsandarmor.item.CrystallitePickaxeNetheriteItem;
@@ -265,6 +267,8 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSculkItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeSapphireItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeRubyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeRedstoneUpgrade2Item;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeRedstoneUpgrade1Item;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeRedstoneItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxePrismarineItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteAxeNetheriteItem;
@@ -813,6 +817,10 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> EMERALD_ENERGY_VIAL = REGISTRY.register("emerald_energy_vial", () -> new EmeraldEnergyVialItem());
 	public static final RegistryObject<Item> NETHERITE_ENERGY_VIAL = REGISTRY.register("netherite_energy_vial", () -> new NetheriteEnergyVialItem());
 	public static final RegistryObject<Item> MYSTIC_POTION = REGISTRY.register("mystic_potion", () -> new MysticPotionItem());
+	public static final RegistryObject<Item> CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_1 = REGISTRY.register("crystallite_pickaxe_redstone_upgrade_1", () -> new CrystallitePickaxeRedstoneUpgrade1Item());
+	public static final RegistryObject<Item> CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_pickaxe_redstone_upgrade_2", () -> new CrystallitePickaxeRedstoneUpgrade2Item());
+	public static final RegistryObject<Item> CRYSTALLITE_AXE_REDSTONE_UPGRADE_1 = REGISTRY.register("crystallite_axe_redstone_upgrade_1", () -> new CrystalliteAxeRedstoneUpgrade1Item());
+	public static final RegistryObject<Item> CRYSTALLITE_AXE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_axe_redstone_upgrade_2", () -> new CrystalliteAxeRedstoneUpgrade2Item());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

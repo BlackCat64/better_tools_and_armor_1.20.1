@@ -7094,47 +7094,8 @@
       "registry_name": "crystallite_pickaxe_redstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_redstone.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeRedstoneItem.java"
-        ]
-      },
-      "path": "~/Crystallite/Redstone"
-    },
-    {
-      "name": "CrystalliteRedstoneWrench",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_redstone_wrench",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteRedstoneWrenchProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeRedstoneItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_redstone.json"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -34647,6 +34608,108 @@
         "files": []
       },
       "path": "~/Utility Procedures"
+    },
+    {
+      "name": "CrystallitePickaxeRedstoneUpgrade1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_redstone_upgrade_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_redstone_upgrade_1.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeRedstoneUpgrade1Item.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystallitePickaxeRedstoneUpgrade2",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_redstone_upgrade_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_pickaxe_redstone_upgrade_2.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystallitePickaxeRedstoneUpgrade2Item.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ProgressiveToolsProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ProgressiveToolsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteAxeRedstoneUpgrade1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_redstone_upgrade_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeRedstoneUpgrade1Item.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_redstone_upgrade_1.json"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteAxeRedstoneUpgrade2",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_redstone_upgrade_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_axe_redstone_upgrade_2.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteAxeRedstoneUpgrade2Item.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
     }
   ],
   "variable_elements": [
@@ -35104,7 +35167,9 @@
     "ITEMS:mod:leeching_weapons": [
       "CUSTOM:CrystalliteSwordRedstone",
       "CUSTOM:CrystalliteAxeRedstone",
-      "CUSTOM:CrystalliteDaggerRedstone"
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "BLOCKS:minecraft:stairs": [
       "CUSTOM:DarkPolishedCoalStairs",
@@ -35582,12 +35647,6 @@
       "CUSTOM:ObsidianStick",
       "CUSTOM:BlueSlimeStick"
     ],
-    "ITEMS:mod:block_rotating_tools": [
-      "CUSTOM:CrystallitePickaxeRedstone",
-      "CUSTOM:CrystalliteAxeRedstone",
-      "CUSTOM:CrystalliteShovelRedstone",
-      "CUSTOM:CrystalliteHoeRedstone"
-    ],
     "ITEMS:mod:crystallite_leggings": [
       "CUSTOM:CrystalliteArmor.legs",
       "CUSTOM:CrystalliteArmorIron.legs",
@@ -35628,7 +35687,9 @@
       "CUSTOM:CrystalliteAxeSky",
       "CUSTOM:CrystalliteAxeAmethyst",
       "CUSTOM:CrystalliteAxePrismarine",
-      "CUSTOM:CrystalliteAxeHoney"
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "ITEMS:forge:armors/chestplates": [
       "CUSTOM:NetherDiamondArmor.body",
@@ -35710,6 +35771,8 @@
       "CUSTOM:DeepslateRandomOre"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
+      "~CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
       "~CUSTOM:CrystallitePickaxeHoney",
       "~CUSTOM:CrystallitePickaxePrismarine",
       "~CUSTOM:CrystallitePickaxeAmethyst",
@@ -35877,7 +35940,11 @@
       "CUSTOM:CrystalliteArmorRedstone.boots",
       "CUSTOM:HealCrystal",
       "CUSTOM:HeartCharm",
-      "CUSTOM:CrystalliteBowRedstone"
+      "CUSTOM:CrystalliteBowRedstone",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "ITEMS:mod:crystallite_pickaxes": [
       "CUSTOM:CrystallitePickaxe",
@@ -35896,7 +35963,9 @@
       "CUSTOM:CrystallitePickaxeSky",
       "CUSTOM:CrystallitePickaxeAmethyst",
       "CUSTOM:CrystallitePickaxePrismarine",
-      "CUSTOM:CrystallitePickaxeHoney"
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:CrystalliteShovelHoney",
@@ -36051,7 +36120,11 @@
       "CUSTOM:CrystalliteAxeHoney",
       "CUSTOM:CrystalliteShovelHoney",
       "CUSTOM:CrystalliteHoeHoney",
-      "CUSTOM:CrystalliteDaggerHoney"
+      "CUSTOM:CrystalliteDaggerHoney",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "ITEMS:forge:armors/helmets": [
       "CUSTOM:NetherDiamondArmor.helmet",
@@ -36244,6 +36317,8 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:CrystalliteAxeRedstoneUpgrade2",
+      "~CUSTOM:CrystalliteAxeRedstoneUpgrade1",
       "~CUSTOM:CrystalliteAxeHoney",
       "~CUSTOM:CrystalliteAxePrismarine",
       "~CUSTOM:CrystalliteAxeAmethyst",
@@ -36401,6 +36476,14 @@
     ],
     "ITEMS:forge:ores_in_ground/blackstone": [
       "CUSTOM:NetherDiamondOre"
+    ],
+    "ITEMS:mod:progressive_tools": [
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:NetherDiamondArmor.legs",
@@ -37750,6 +37833,7 @@
       "advancements.ruby_tools_adv.title": "Ruby Ruler",
       "gui.better_tools.attributes_viewer.label_swim_speed": "Swim Speed",
       "advancements.sapphire_gem_adv.title": "Mining at Heights",
+      "item.better_tools.crystallite_pickaxe_redstone_upgrade_1": "Crystallite Pickaxe",
       "item.better_tools.earth_crystal": "Earth Crystal",
       "block.better_tools.lime_metal_sign": "Lime Metal Sign",
       "advancements.end_titanium_adv.descr": "Mine an Ender Titanium Ore",
@@ -37757,6 +37841,7 @@
       "jei.better_tools.nether_diamond_ore_gen_info": "§lOre Generation§r\n§4Nether Diamond Ore§r\n\nGenerates at any y-level, in §4Basalt Deltas§r only.\nOnly generates inside of §8Blackstone§r clumps.\nSpawns in medium-sized veins.",
       "gui.better_tools.attributes_viewer.label_attribute": "Attribute",
       "item.better_tools.crystallite_armor_sapphire_boots": "Crystallite Boots",
+      "item.better_tools.crystallite_pickaxe_redstone_upgrade_2": "Crystallite Pickaxe",
       "item.minecraft.lingering_potion.effect.criticality_potion": "Lingering Potion of Criticality",
       "item.better_tools.crystallite_sword_lapis": "Crystallite Sword",
       "advancements.crystallite_cave_adv.title": "Ooh, sparkly!",
@@ -38079,6 +38164,8 @@
       "block.better_tools.blackstone_magma": "Blackstone Magma Block",
       "item.better_tools.crystallite_sword_diamond": "Crystallite Sword",
       "jei.better_tools.ender_titanium_ore_gen_info": "§lOre Generation§r\n§5Ender Titanium Ore§r\n\nGenerates below y\u003d30, in the End Islands.\nSpawns rarely, in small groups.",
+      "item.better_tools.crystallite_axe_redstone_upgrade_1": "Crystallite Axe",
+      "item.better_tools.crystallite_axe_redstone_upgrade_2": "Crystallite Axe",
       "itemGroup.tabbetter_tools_and_armor_misc": "Better Tools And Armor - Misc.",
       "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
       "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",

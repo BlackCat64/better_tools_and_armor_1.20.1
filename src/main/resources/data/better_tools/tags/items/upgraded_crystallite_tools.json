@@ -96,6 +96,10 @@
     "better_tools:crystallite_axe_honey",
     "better_tools:crystallite_shovel_honey",
     "better_tools:crystallite_hoe_honey",
-    "better_tools:crystallite_dagger_honey"
+    "better_tools:crystallite_dagger_honey",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_1",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_2",
+    "better_tools:crystallite_axe_redstone_upgrade_1",
+    "better_tools:crystallite_axe_redstone_upgrade_2"
   ]
 }

@@ -14,15 +14,11 @@
         "§7Upgrade: §cRedstone",
         "§7Abilities:",
         "§cLeech - Heals you when striking a target",
-        "§cCalibrated [0/2] - Mining speed increases with number of blocks mined"
+        "§cCalibrated [Max] - Greatly increased mining speed"
       ]
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
-    ],
-    "efficiency": 12.0,
+    "creativeTabs": [],
+    "efficiency": 36.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 10.5,

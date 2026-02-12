@@ -49,6 +49,6 @@ public class CrystallitePickaxeRedstoneItem extends PickaxeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cWrench - Right-click while crouching to rotate blocks"));
+		list.add(Component.literal("\u00A7cCalibrated [0/2] - Mining speed increases with number of blocks mined"));
 	}
 }

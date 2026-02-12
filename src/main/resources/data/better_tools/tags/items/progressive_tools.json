@@ -1,9 +1,10 @@
 {
   "replace": false,
   "values": [
-    "better_tools:crystallite_sword_redstone",
+    "better_tools:crystallite_pickaxe_redstone",
     "better_tools:crystallite_axe_redstone",
-    "better_tools:crystallite_dagger_redstone",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_1",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_2",
     "better_tools:crystallite_axe_redstone_upgrade_1",
     "better_tools:crystallite_axe_redstone_upgrade_2"
   ]

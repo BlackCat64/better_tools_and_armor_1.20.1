@@ -15,15 +15,15 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
 
-public class CrystalliteAxeRedstoneItem extends AxeItem {
-	public CrystalliteAxeRedstoneItem() {
+public class CrystalliteAxeRedstoneUpgrade2Item extends AxeItem {
+	public CrystalliteAxeRedstoneUpgrade2Item() {
 		super(new Tier() {
 			public int getUses() {
 				return 1800;
 			}
 
 			public float getSpeed() {
-				return 12f;
+				return 36f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -50,6 +50,6 @@ public class CrystalliteAxeRedstoneItem extends AxeItem {
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7cLeech - Heals you when striking a target"));
-		list.add(Component.literal("\u00A7cCalibrated [0/2] - Mining speed increases with number of blocks mined"));
+		list.add(Component.literal("\u00A7cCalibrated [Max] - Greatly increased mining speed"));
 	}
 }

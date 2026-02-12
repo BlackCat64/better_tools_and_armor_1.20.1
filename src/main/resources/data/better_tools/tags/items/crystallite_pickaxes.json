@@ -17,6 +17,8 @@
     "better_tools:crystallite_pickaxe_sky",
     "better_tools:crystallite_pickaxe_amethyst",
     "better_tools:crystallite_pickaxe_prismarine",
-    "better_tools:crystallite_pickaxe_honey"
+    "better_tools:crystallite_pickaxe_honey",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_1",
+    "better_tools:crystallite_pickaxe_redstone_upgrade_2"
   ]
 }

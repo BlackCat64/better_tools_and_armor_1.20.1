@@ -2,30 +2,25 @@
   "_fv": 66,
   "_type": "tool",
   "definition": {
-    "toolType": "Axe",
+    "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "crystallite_axe_redstone",
+    "texture": "crystallite_pickaxe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Crystallite Axe",
+    "name": "Crystallite Pickaxe",
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §cRedstone",
-        "§7Abilities:",
-        "§cLeech - Heals you when striking a target",
-        "§cCalibrated [0/2] - Mining speed increases with number of blocks mined"
+        "§7Ability:",
+        "§cCalibrated [Max] - Greatly increased mining speed"
       ]
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
-    ],
-    "efficiency": 12.0,
-    "attackSpeed": 1.0,
+    "creativeTabs": [],
+    "efficiency": 24.0,
+    "attackSpeed": 1.2,
     "enchantability": 20,
-    "damageVsEntity": 10.5,
+    "damageVsEntity": 7.0,
     "usageCount": 1800,
     "glowCondition": {
       "fixedValue": false
