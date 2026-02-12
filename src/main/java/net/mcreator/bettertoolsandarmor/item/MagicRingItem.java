@@ -22,6 +22,6 @@ public class MagicRingItem extends Item implements ICurioItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77When worn:"));
 		list.add(Component.literal("\u00A79+20% XP Levels kept upon death"));
-		list.add(Component.literal("\u00A79+10% XP drops from mobs"));
+		list.add(Component.literal("\u00A79+20% XP drops from mobs"));
 	}
 }

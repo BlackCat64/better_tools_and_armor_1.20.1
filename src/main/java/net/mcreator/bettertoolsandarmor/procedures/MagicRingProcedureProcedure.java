@@ -13,8 +13,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
 
@@ -34,9 +36,15 @@ public class MagicRingProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity sourceentity, double droppedexperience) {
 		if (sourceentity == null)
 			return;
+		double amount = 0;
 		if (sourceentity instanceof Player && sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.MAGIC_RING.get(), lv).isPresent() : false) {
+			amount = Math.round(0.2 * droppedexperience);
 			if (world instanceof ServerLevel _level)
-				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) (0.1 * droppedexperience)));
+				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) amount));
+			if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("+" + new java.text.DecimalFormat("##.##").format(amount) + " XP from Magic Ring")), false);
+			}
 		}
 	}
 }

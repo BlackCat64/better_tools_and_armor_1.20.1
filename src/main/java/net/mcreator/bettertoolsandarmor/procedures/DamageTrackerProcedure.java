@@ -11,6 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
@@ -38,6 +39,15 @@ public class DamageTrackerProcedure {
 						.broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("##.##").format(amount) + " damage dealt to " + entity.getDisplayName().getString() + " ("
 								+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) + "/"
 								+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) + ")")), false);
+		}
+		if (entity instanceof Player) {
+			{
+				double _setval = 0;
+				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.time_since_last_hurt = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

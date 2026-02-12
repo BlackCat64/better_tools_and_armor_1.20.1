@@ -5,7 +5,7 @@
     "type": "Logic",
     "displayName": "Display Damage Values",
     "description": "Used for debugging - Displays the damage taken in chat, when any mob is attacked by a player with OP permissions",
-    "category": "MISC",
+    "category": "PLAYER",
     "defaultValueLogic": false,
     "defaultValueNumber": 0
   }
