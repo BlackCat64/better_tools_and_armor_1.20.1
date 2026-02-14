@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "better_tools:crystallite_shovel_redstone_upgrade_2",
+    "better_tools:crystallite_shovel_redstone_upgrade_1",
     "better_tools:crystallite_shovel_honey",
     "better_tools:crystallite_shovel_prismarine",
     "better_tools:crystallite_shovel_amethyst",

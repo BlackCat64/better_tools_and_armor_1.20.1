@@ -5,29 +5,29 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
 
-public class CrystallitePickaxeRedstoneUpgrade1Item extends PickaxeItem {
-	public CrystallitePickaxeRedstoneUpgrade1Item() {
+public class CrystalliteHoeRedstoneUpgrade2Item extends HoeItem {
+	public CrystalliteHoeRedstoneUpgrade2Item() {
 		super(new Tier() {
 			public int getUses() {
 				return 1800;
 			}
 
 			public float getSpeed() {
-				return 18f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {
@@ -41,7 +41,7 @@ public class CrystallitePickaxeRedstoneUpgrade1Item extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.REDSTONE));
 			}
-		}, 1, -2.8f, new Item.Properties().fireResistant());
+		}, 0, 0f, new Item.Properties().fireResistant());
 	}
 
 	@Override
@@ -49,7 +49,6 @@ public class CrystallitePickaxeRedstoneUpgrade1Item extends PickaxeItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cCalibrated [1/2] - Increased mining speed"));
-		list.add(Component.literal("\u00A7cSpeed increases further when more blocks are mined"));
+		list.add(Component.literal("\u00A7cCalibrated [Max] - Greatly increased chance for plants to drop Bone Meal"));
 	}
 }

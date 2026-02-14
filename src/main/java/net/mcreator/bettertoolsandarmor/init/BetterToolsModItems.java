@@ -178,6 +178,8 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelSculkItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelSapphireItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelRubyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelRedstoneUpgrade2Item;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelRedstoneUpgrade1Item;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelRedstoneItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelPrismarineItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteShovelNetheriteItem;
@@ -215,6 +217,8 @@ import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeSkyItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeSculkItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeSapphireItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeRubyItem;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeRedstoneUpgrade2Item;
+import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeRedstoneUpgrade1Item;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeRedstoneItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoePrismarineItem;
 import net.mcreator.bettertoolsandarmor.item.CrystalliteHoeNetheriteItem;
@@ -821,6 +825,10 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_pickaxe_redstone_upgrade_2", () -> new CrystallitePickaxeRedstoneUpgrade2Item());
 	public static final RegistryObject<Item> CRYSTALLITE_AXE_REDSTONE_UPGRADE_1 = REGISTRY.register("crystallite_axe_redstone_upgrade_1", () -> new CrystalliteAxeRedstoneUpgrade1Item());
 	public static final RegistryObject<Item> CRYSTALLITE_AXE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_axe_redstone_upgrade_2", () -> new CrystalliteAxeRedstoneUpgrade2Item());
+	public static final RegistryObject<Item> CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_1 = REGISTRY.register("crystallite_shovel_redstone_upgrade_1", () -> new CrystalliteShovelRedstoneUpgrade1Item());
+	public static final RegistryObject<Item> CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_shovel_redstone_upgrade_2", () -> new CrystalliteShovelRedstoneUpgrade2Item());
+	public static final RegistryObject<Item> CRYSTALLITE_HOE_REDSTONE_UPGRADE_1 = REGISTRY.register("crystallite_hoe_redstone_upgrade_1", () -> new CrystalliteHoeRedstoneUpgrade1Item());
+	public static final RegistryObject<Item> CRYSTALLITE_HOE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_hoe_redstone_upgrade_2", () -> new CrystalliteHoeRedstoneUpgrade2Item());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

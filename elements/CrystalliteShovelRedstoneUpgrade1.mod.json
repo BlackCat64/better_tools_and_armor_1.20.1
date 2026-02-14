@@ -13,15 +13,11 @@
       "fixedValue": [
         "§7Upgrade: §cRedstone",
         "§7Ability:",
-        "§cCalibrated [0/2] - Small chance for plants to drop Bone Meal",
-        "§cChance increases when more blocks are mined"
+        "§cCalibrated [1/2] - Increased chance for plants to drop Bone Meal when broken",
+        "§cChance increases further when more blocks are mined"
       ]
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
-    ],
+    "creativeTabs": [],
     "efficiency": 12.0,
     "attackSpeed": 1.0,
     "enchantability": 20,

@@ -49,6 +49,7 @@ public class CrystalliteShovelRedstoneItem extends ShovelItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cWrench - Right-click while crouching to rotate blocks"));
+		list.add(Component.literal("\u00A7cCalibrated [0/2] - Small chance for plants to drop Bone Meal"));
+		list.add(Component.literal("\u00A7cChance increases when more blocks are mined"));
 	}
 }

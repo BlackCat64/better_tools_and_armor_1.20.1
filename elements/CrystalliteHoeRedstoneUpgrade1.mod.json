@@ -2,30 +2,26 @@
   "_fv": 66,
   "_type": "tool",
   "definition": {
-    "toolType": "Spade",
+    "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "crystallite_shovel_redstone",
+    "texture": "crystallite_hoe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Crystallite Shovel",
+    "name": "Crystallite Hoe",
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §cRedstone",
         "§7Ability:",
-        "§cCalibrated [0/2] - Small chance for plants to drop Bone Meal",
-        "§cChance increases when more blocks are mined"
+        "§cCalibrated [1/2] - Increased chance for plants to drop Bone Meal when broken",
+        "§cChance increases further when the tool is used more"
       ]
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
-    ],
+    "creativeTabs": [],
     "efficiency": 12.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 4.0,
     "enchantability": 20,
-    "damageVsEntity": 7.5,
+    "damageVsEntity": 2.5,
     "usageCount": 1800,
     "glowCondition": {
       "fixedValue": false

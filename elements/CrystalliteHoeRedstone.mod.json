@@ -13,7 +13,8 @@
       "fixedValue": [
         "§7Upgrade: §cRedstone",
         "§7Ability:",
-        "§cWrench - Right-click while crouching to rotate blocks"
+        "§cCalibrated [0/2] - Small chance for plants to drop Bone Meal",
+        "§cChance increases when the tool is used more"
       ]
     },
     "creativeTabs": [

@@ -1,0 +1,49 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstoneUpgrade2"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
+      }
+    ],
+    "information": [
+      "These tools have improved abilities after they have been used for a while.",
+      "For all tools, breaking any correct block for that tool counts as a use.",
+      "For hoes, tilling farmland also counts as a use."
+    ]
+  }
+}

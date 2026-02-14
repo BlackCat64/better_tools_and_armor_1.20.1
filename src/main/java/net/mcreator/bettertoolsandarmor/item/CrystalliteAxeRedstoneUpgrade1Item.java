@@ -51,6 +51,6 @@ public class CrystalliteAxeRedstoneUpgrade1Item extends AxeItem {
 		list.add(Component.literal("\u00A77Abilities:"));
 		list.add(Component.literal("\u00A7cLeech - Heals you when striking a target"));
 		list.add(Component.literal("\u00A7cCalibrated [1/2] - Increased mining speed"));
-		list.add(Component.literal("\u00A7cCan be increased further when more blocks are mined"));
+		list.add(Component.literal("\u00A7cSpeed increases further when more blocks are mined"));
 	}
 }

@@ -318,5 +318,11 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.IRON_GLASS_ARMOR_BOOTS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_HELMET.get()),
 						new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get()), new ItemStack(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.reduced_detection_range_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_1.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_2.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE_UPGRADE_2.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_2.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_2.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.better_tools.progressive_tools_info"));
 	}
 }

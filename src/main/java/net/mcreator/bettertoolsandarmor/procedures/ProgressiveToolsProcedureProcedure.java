@@ -41,14 +41,24 @@ public class ProgressiveToolsProcedureProcedure {
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:pickaxes")))
 						&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe")))
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))
-								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/axe"))))) {
+								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/axe")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:shovels")))
+								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes")))
+								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/hoe"))))) {
 			reg_name = ((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).replace("_upgrade_2", "")).replace("_upgrade_1", "");
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
-				threshold_1 = 500;
-				threshold_2 = 2000;
-			} else {
-				threshold_1 = 1600;
-				threshold_2 = 6400;
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:pickaxes")))) {
+				threshold_1 = 5000;
+				threshold_2 = 20000;
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
+				threshold_1 = 1000;
+				threshold_2 = 4000;
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:shovels")))) {
+				threshold_1 = 10000;
+				threshold_2 = 30000;
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes")))) {
+				threshold_1 = 1000;
+				threshold_2 = 3000;
 			}
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("blocks_mined",
 					((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("blocks_mined") + 1));
