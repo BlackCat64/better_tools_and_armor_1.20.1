@@ -10,6 +10,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
 
@@ -35,6 +38,10 @@ public class CrystalliteBowLapisXPDropsProcedure {
 			if (distance >= 5) {
 				if (world instanceof ServerLevel _level)
 					_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + 1), (z + Math.random()), (int) Math.floor(distance)));
+				if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES)) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("#").format(Math.floor(distance)) + " XP dropped by " + entity.getDisplayName().getString())), false);
+				}
 			}
 		}
 	}

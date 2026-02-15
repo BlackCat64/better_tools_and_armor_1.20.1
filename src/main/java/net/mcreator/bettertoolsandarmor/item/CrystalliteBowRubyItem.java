@@ -46,11 +46,6 @@ public class CrystalliteBowRubyItem extends BowItem {
 			ItemStack itemstack = player.getProjectile(item);
 			int i = this.getUseDuration(item) - duration;
 			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(item, world, player, i, !itemstack.isEmpty() || flag);
-			// Debug chat output
-			//			if (!world.isClientSide() && world.getServer() != null) {
-			//				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("i = " + i)), false);
-			//				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("int = " + duration)), false);
-			//			}
 			if (i < 0)
 				return;
 			if (!itemstack.isEmpty() || flag) {
@@ -73,6 +68,8 @@ public class CrystalliteBowRubyItem extends BowItem {
 						if (j > 0) {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
+						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() - 0.5); // Nerf damage to account for quick charge time
+						
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, item);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);

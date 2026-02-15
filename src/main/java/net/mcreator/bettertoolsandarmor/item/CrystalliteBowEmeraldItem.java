@@ -89,6 +89,7 @@ public class CrystalliteBowEmeraldItem extends BowItem {
 						if (j > 0) {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
+						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 1.5); // +1.5 Damage Boost for all Crystallite Bows
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, item);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);
@@ -109,7 +110,7 @@ public class CrystalliteBowEmeraldItem extends BowItem {
 					if (!player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 						itemstack.shrink(1);
 						if (itemstack.isEmpty()) {
-							player.getInventory().removeItem(itemstack);
+							player.getInventory().removeItem(itemstack); // Still remove item if it is a Spectral or Tipped arrow
 						}
 					}
 					player.awardStat(Stats.ITEM_USED.get(this));

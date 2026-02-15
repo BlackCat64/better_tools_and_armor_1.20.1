@@ -82,6 +82,8 @@ public class CrystalliteBowHoneyItem extends BowItem {
 						if (creative || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 							abstractarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 						}
+
+						abstractarrow.getPersistentData().putBoolean("crystallite_honey_upgrade", true);
 						world.addFreshEntity(abstractarrow);
 					}
 					world.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);

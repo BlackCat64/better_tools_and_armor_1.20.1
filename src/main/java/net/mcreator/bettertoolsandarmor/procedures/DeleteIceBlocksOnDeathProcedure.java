@@ -7,7 +7,10 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
 import javax.annotation.Nullable;
 
@@ -27,7 +30,7 @@ public class DeleteIceBlocksOnDeathProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Mob || entity instanceof Player) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get()) && (entity instanceof Mob || entity instanceof Player)) {
 			DeleteEntityIceBlockDisplayProcedure.execute(entity);
 		}
 	}
