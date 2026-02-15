@@ -30,7 +30,9 @@ public class IceStaffProjectileMissesProcedure {
 		double radius = 0;
 		if (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f <= 0.15) {
 			freeze_time = 300;
-			radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+			if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
+				radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+			}
 		} else {
 			freeze_time = 200;
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
