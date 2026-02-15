@@ -1,68 +1,68 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Display;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
-import javax.annotation.Nullable;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
-import java.util.UUID;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
 public class TrappedInGroundStopMovementProcedure {
-	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
-		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
-	}
-
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
-	}
-
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		Entity display = null;
-		if (entity.getPersistentData().getDouble("trapped_ticks") > 1) {
-			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-			entity.setDeltaMovement(new Vec3(0, (-2), 0));
-			entity.getPersistentData().putDouble("trapped_ticks", (entity.getPersistentData().getDouble("trapped_ticks") - 1));
-		} else if (entity.getPersistentData().getDouble("trapped_ticks") == 1) {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("585176c4-a1ed-4d0e-995c-f5ca0cb3843c"));
-			entity.getPersistentData().putDouble("trapped_ticks", 0);
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.BLOCKS, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.rooted_dirt.break")), SoundSource.BLOCKS, 1, 1, false);
+		if (entity.onGround()) {
+			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+				entity.setDeltaMovement(new Vec3(0, (-2), 0));
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.ASH, x, ((y + entity.getBbHeight()) / 2), z, 1, 0.33, 0.5, 0.33, 0.015);
+				display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null);
+				if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("trapped_in_ground")) {
+					{
+						Entity _ent = display;
+						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("tp @s " + display.getPersistentData().getString("trapped_entity")));
+						}
+					}
+					{
+						Entity _ent = display;
+						_ent.setYRot(0);
+						_ent.setXRot(0);
+						_ent.setYBodyRot(_ent.getYRot());
+						_ent.setYHeadRot(_ent.getYRot());
+						_ent.yRotO = _ent.getYRot();
+						_ent.xRotO = _ent.getXRot();
+						if (_ent instanceof LivingEntity _entity) {
+							_entity.yBodyRotO = _entity.getYRot();
+							_entity.yHeadRotO = _entity.getYRot();
+						}
+					}
 				}
 			}
-			world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(Blocks.MUD.defaultBlockState()));
-			display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null);
-			if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("trapped_in_ground")) {
-				if (!display.level().isClientSide())
-					display.discard();
+			if (GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"), entity.getPersistentData().getDouble("frozen_at_y"),
+					entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
+				DeleteEntityIceBlockDisplayProcedure.execute(entity);
 			}
+		} else {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(BetterToolsModMobEffects.PITFALL.get());
 		}
 	}
 }

@@ -26,19 +26,18 @@ public class FrozenEffectParticlesProcedure {
 		if (entity.getRemainingFireTicks() > 0) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
-		}
-		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			entity.setTicksFrozen(135);
-			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-			display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null);
-			if (display instanceof Display.BlockDisplay) {
-				if (display.getPersistentData().getBoolean("freeze_effect")) {
+		} else {
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
+			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				entity.setTicksFrozen(135);
+				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+				display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null);
+				if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("freeze_effect")) {
 					{
 						Entity _ent = display;
 						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -61,15 +60,9 @@ public class FrozenEffectParticlesProcedure {
 					}
 				}
 			}
-			if (Math.abs(entity.getX() - entity.getPersistentData().getDouble("frozen_at_x")) > 2 || Math.abs(entity.getY() - entity.getPersistentData().getDouble("frozen_at_y")) > 2
-					|| Math.abs(entity.getZ() - entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("kill @e[type=minecraft:block_display,nbt={ForgeData:{freeze_effect:1b, frozen_entity:\"" + "" + entity.getStringUUID() + "\"}}]"));
-					}
-				}
+			if (GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"), entity.getPersistentData().getDouble("frozen_at_y"),
+					entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
+				DeleteEntityIceBlockDisplayProcedure.execute(entity);
 			}
 		}
 	}

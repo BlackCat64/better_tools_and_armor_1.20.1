@@ -5,6 +5,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
@@ -25,6 +27,8 @@ public class DeleteIceBlocksOnDeathProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		DeleteEntityIceBlockDisplayProcedure.execute(entity);
+		if (entity instanceof Mob || entity instanceof Player) {
+			DeleteEntityIceBlockDisplayProcedure.execute(entity);
+		}
 	}
 }

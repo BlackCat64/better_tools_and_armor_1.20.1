@@ -18130,7 +18130,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/potion/FrozenMobEffect.java"
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "FrozenEffectApplied",
@@ -18161,7 +18161,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "FrozenEffectExpires",
@@ -18184,7 +18184,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "FrozenEffectStopJumping",
@@ -18203,7 +18203,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "FrozenEffectParticles",
@@ -18238,7 +18238,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "IceParticle",
@@ -18252,7 +18252,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/IceParticleParticle.java"
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "FreezeShatterAdv",
@@ -22012,7 +22012,7 @@
           "src/main/resources/data/better_tools/damage_type/freeze_shatter_damage.json"
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "KarmaEffectProcedure",
@@ -22172,7 +22172,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "ThornsDamageProcedure2",
@@ -26895,18 +26895,6 @@
             "type": "logic"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -26947,7 +26935,7 @@
           }
         ]
       },
-      "path": "~/Crystallite/Emerald"
+      "path": "~/Pitfall Effect"
     },
     {
       "name": "TrappedInGroundOnDeath",
@@ -26982,7 +26970,7 @@
           }
         ]
       },
-      "path": "~/Crystallite/Emerald"
+      "path": "~/Pitfall Effect"
     },
     {
       "name": "TrappedInGroundJump",
@@ -27001,7 +26989,7 @@
           }
         ]
       },
-      "path": "~/Crystallite/Emerald"
+      "path": "~/Pitfall Effect"
     },
     {
       "name": "CrystalliteSwordDiamondProcedure",
@@ -27597,7 +27585,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "Bark",
@@ -28054,7 +28042,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "DeleteIceBlocksOnDeath",
@@ -28073,7 +28061,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "BarkInfo",
@@ -28494,7 +28482,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "DarkPolishedCoalWallReverseStonecut",
@@ -31988,7 +31976,7 @@
           }
         ]
       },
-      "path": "~/Staffs/Ice"
+      "path": "~/Frozen Effect"
     },
     {
       "name": "MysticPotion",
@@ -34816,6 +34804,123 @@
         "files": []
       },
       "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "Pitfall",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitfall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/potion/PitfallMobEffect.java"
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "PitfallEffectApplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitfall_effect_applied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PitfallEffectAppliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "DeleteEntityPitfallBlockDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_entity_pitfall_block_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteEntityPitfallBlockDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "PitfallEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitfall_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PitfallEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "TrappedCreeperExplodes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trapped_creeper_explodes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TrappedCreeperExplodesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pitfall Effect"
     }
   ],
   "variable_elements": [
@@ -38509,7 +38614,7 @@
       "item.better_tools.crystallite_axe_sapphire": "Crystallite Axe",
       "item.better_tools.glass_chestplate": "Glass Chestplate",
       "death.attack.karma_curse_damage.player": "%1$s got instant karma",
-      "jei.better_tools.stuck_in_mud_info": "If the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.\nWhen a mob is stuck in the ground, it cannot move.\nIt can still attack, however.\nIf a player jumps, they are instantly freed from the effect.",
+      "jei.better_tools.stuck_in_mud_info": "§lPitfall Effect§r\nIf the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.\nWhen a mob is stuck in the ground, it cannot move.\nIt can still attack, however.\nIf a player jumps, they are instantly freed from the effect.",
       "jei.better_tools.netherite_crystallite_info": "§lCrystallite Upgrades: \n§8Netherite§r\n\nTheme:\nDamage and The Nether\nAll stats increase slightly too!",
       "advancements.sugar_clump_adv.descr": "Eat a sugar clump",
       "item.better_tools.crystallite_sword_ruby": "Crystallite Sword",
@@ -38745,6 +38850,7 @@
       "jei.better_tools.deepslate_mixed_ore_info": "Chance - Item\n28%   -   §8Coal§r\n25%   -   §cRedstone§r\n15%   -   §9Lapis Lazuli§r\n15%   -   §6Gold§r\n10%   -   §2Emerald§r\n7%     -   §3Diamond§r",
       "block.better_tools.polished_redstone_wall": "Metallic Redstone Wall",
       "block.better_tools.nether_diamond_ore": "Nether Diamond Ore",
+      "effect.better_tools.pitfall": "Pitfall",
       "advancements.crystallite_cave_adv.descr": "Mine a Crystallite Block with a Netherite Pickaxe, or better",
       "item.better_tools.diamond_hearty_chestplate": "Hearty Shirt",
       "advancements.consumables_section.descr": "Advancements to do with food, potions or enchantments",
@@ -39370,6 +39476,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Pitfall Effect",
+        "children": []
+      },
+      {
+        "name": "Frozen Effect",
+        "children": []
       }
     ]
   },
