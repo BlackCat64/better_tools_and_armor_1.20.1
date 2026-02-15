@@ -324,5 +324,15 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_2.get()),
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_2.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.progressive_tools_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_1.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_REDSTONE_UPGRADE_2.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_pickaxe_redstone_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_REDSTONE_UPGRADE_2.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_axe_redstone_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_1.get()),
+				new ItemStack(BetterToolsModItems.CRYSTALLITE_SHOVEL_REDSTONE_UPGRADE_2.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_shovel_redstone_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_1.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_REDSTONE_UPGRADE_2.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_hoe_redstone_info"));
 	}
 }

@@ -34921,6 +34921,50 @@
         ]
       },
       "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "CrystallitePickaxeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteAxeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteShovelRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteHoeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
     }
   ],
   "variable_elements": [
@@ -38163,6 +38207,7 @@
       "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
       "advancements.enchanted_staff_adv.descr": "Enchant a Magic Staff with both Ensorcellation and Swift Cast",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
+      "jei.better_tools.crystallite_shovel_redstone_info": "After 10,000 blocks have been mined:\n§910% Bone Meal Chance§r\n\nAfter 30,000 blocks have been mined:\n§920% Bone Meal Chance§r",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
       "block.better_tools.cyan_metal_wall_sign": "Cyan Metal Wall Sign",
       "item.better_tools.crystallite_armor_gold_leggings": "Crystallite Leggings",
@@ -38384,6 +38429,7 @@
       "itemGroup.tabeffect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.yellow_metal_hanging_sign": "Yellow Metal Hanging Sign",
       "block.better_tools.polished_nether_diamond_slab": "Metallic Nether Diamond Slab",
+      "jei.better_tools.crystallite_pickaxe_redstone_info": "After 5000 blocks have been mined:\n§91.5x Mining Speed§r\n\nAfter 20,000 blocks have been mined:\n§92x Mining Speed§r",
       "subtitles.crystallite_break": "Crystallite broken",
       "block.better_tools.brown_metal_hanging_sign": "Brown Metal Hanging Sign",
       "advancements.freeze_shatter_adv.descr": "Shatter a frozen mob with an attack",
@@ -38399,6 +38445,7 @@
       "jei.better_tools.ender_titanium_ore_gen_info": "§lOre Generation§r\n§5Ender Titanium Ore§r\n\nGenerates below y\u003d30, in the End Islands.\nSpawns rarely, in small groups.",
       "item.better_tools.crystallite_axe_redstone_upgrade_1": "Crystallite Axe",
       "item.better_tools.crystallite_axe_redstone_upgrade_2": "Crystallite Axe",
+      "jei.better_tools.crystallite_axe_redstone_info": "After 1000 blocks have been mined:\n§92x Mining Speed§r\n\nAfter 4000 blocks have been mined:\n§93x Mining Speed§r",
       "itemGroup.tabbetter_tools_and_armor_misc": "Better Tools And Armor - Misc.",
       "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
       "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",
@@ -38596,6 +38643,7 @@
       "item.better_tools.crystallite_hoe_netherite": "Crystallite Hoe",
       "item.better_tools.flint_sword": "Flint Sword",
       "item.better_tools.crystallite_dagger_sky": "Crystallite Dagger",
+      "jei.better_tools.crystallite_hoe_redstone_info": "After 1000 uses:\n§110% Bone Meal Chance§r\n\nAfter 3000 uses:\n§120% Bone Meal Chance§r",
       "effect.better_tools.swift_swim.description": "Increases Swim Speed by 50% per level",
       "effect.better_tools.karma_potion": "Karma",
       "item.better_tools.crystallite_pickaxe_sapphire": "Crystallite Pickaxe",

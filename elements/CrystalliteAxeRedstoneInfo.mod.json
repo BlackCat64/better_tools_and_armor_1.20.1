@@ -1,0 +1,24 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+      }
+    ],
+    "information": [
+      "After 1000 blocks have been mined:",
+      "§92x Mining Speed§r",
+      "",
+      "After 4000 blocks have been mined:",
+      "§93x Mining Speed§r"
+    ]
+  }
+}

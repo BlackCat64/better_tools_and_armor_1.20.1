@@ -1,0 +1,24 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstone"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstoneUpgrade1"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelRedstoneUpgrade2"
+      }
+    ],
+    "information": [
+      "After 10,000 blocks have been mined:",
+      "§910% Bone Meal Chance§r",
+      "",
+      "After 30,000 blocks have been mined:",
+      "§920% Bone Meal Chance§r"
+    ]
+  }
+}
