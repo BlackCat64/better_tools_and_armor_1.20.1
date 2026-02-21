@@ -37,6 +37,7 @@ public class BowArrowDamageTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		double base_damage = 0;
+		double damage = 0;
 		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows")))) && !itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
 			tooltip.add(Component.literal(" "));
 			tooltip.add(Component.literal("\u00A77When shot:"));
@@ -53,16 +54,15 @@ public class BowArrowDamageTooltipProcedure {
 					base_damage = 3.5;
 				}
 			}
-			tooltip.add(Component.literal(
-					("\u00A72 " + ("" + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage)).replace(".0", "")
-							+ " Arrow Damage")));
-			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items"))) || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
-				tooltip.add(Component.literal((itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items"))) ? "\u00A7725% chance for:" : "\u00A77When it is wet:")));
-				tooltip.add(Component.literal(("\u00A72 "
-						+ ("" + ((EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage) + 2.5)).replace(".0", "")
-						+ " Arrow Damage")));
-			}
-			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage;
+			tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage)).replace(".0", "") + " Arrow Damage")));
+			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:diamond_upgraded_crystallite_items")))) {
+				tooltip.add(Component.literal("\u00A7725% chance for:"));
+				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage + 2.5)).replace(".0", "") + " Arrow Damage")));
+			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:prismarine_upgraded_crystallite_items")))) {
+				tooltip.add(Component.literal("\u00A77When it is wet:"));
+				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage + 1)).replace(".0", "") + " Arrow Damage")));
+			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal((((entity.level().dimension()) == Level.NETHER ? "\u00A72 4" : "\u00A72 2.5") + " Explosion Power")));
 			}
 		}

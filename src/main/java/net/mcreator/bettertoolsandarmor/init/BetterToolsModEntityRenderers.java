@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.bettertoolsandarmor.client.renderer.PurpleMooshroomRenderer;
 import net.mcreator.bettertoolsandarmor.client.renderer.LightningStaffDispenserProjectileRenderer;
 import net.mcreator.bettertoolsandarmor.client.renderer.IceStaffProjectileRenderer;
@@ -28,5 +30,6 @@ public class BetterToolsModEntityRenderers {
 		event.registerEntityRenderer(BetterToolsModEntities.FIRE_STAFF_DISPENSER_PROJECTILE.get(), FireStaffDispenserProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE_FROM_DISPENSER.get(), IceStaffProjectileFromDispenserRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.LIGHTNING_STAFF_DISPENSER_PROJECTILE.get(), LightningStaffDispenserProjectileRenderer::new);
+		event.registerEntityRenderer(BetterToolsModEntities.CRYSTALLITE_PRISMARINE_ARROW.get(), ThrownItemRenderer::new);
 	}
 }

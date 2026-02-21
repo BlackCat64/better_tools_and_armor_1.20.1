@@ -23,6 +23,7 @@ import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffDispenserProjectileEntity;
 import net.mcreator.bettertoolsandarmor.entity.ElectricStaffProjectileEntity;
+import net.mcreator.bettertoolsandarmor.entity.CrystallitePrismarineArrowEntity;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -48,6 +49,9 @@ public class BetterToolsModEntities {
 	public static final RegistryObject<EntityType<LightningStaffDispenserProjectileEntity>> LIGHTNING_STAFF_DISPENSER_PROJECTILE = register("lightning_staff_dispenser_projectile",
 			EntityType.Builder.<LightningStaffDispenserProjectileEntity>of(LightningStaffDispenserProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(LightningStaffDispenserProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CrystallitePrismarineArrowEntity>> CRYSTALLITE_PRISMARINE_ARROW = register("crystallite_prismarine_arrow",
+			EntityType.Builder.<CrystallitePrismarineArrowEntity>of(CrystallitePrismarineArrowEntity::new, MobCategory.MISC).setCustomClientFactory(CrystallitePrismarineArrowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

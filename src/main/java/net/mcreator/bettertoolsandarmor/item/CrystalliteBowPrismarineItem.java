@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ArrowItem;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,6 +19,9 @@ import net.minecraft.stats.Stats;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
+import net.mcreator.bettertoolsandarmor.entity.CrystallitePrismarineArrowEntity;
 
 import java.util.List;
 
@@ -57,8 +61,15 @@ public class CrystalliteBowPrismarineItem extends BowItem {
 					boolean flag1 = player.getAbilities().instabuild || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem) itemstack.getItem()).isInfinite(itemstack, p_40667_, player));
 					if (!p_40668_.isClientSide) {
 						ArrowItem arrowitem = (ArrowItem) (itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
-						AbstractArrow abstractarrow = arrowitem.createArrow(p_40668_, itemstack, player);
+						AbstractArrow abstractarrow;
+						// For spectral arrows, do not use custom arrow type
+						if (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW)) {
+							abstractarrow = arrowitem.createArrow(p_40668_, itemstack, player);
+						} else {
+							abstractarrow = new CrystallitePrismarineArrowEntity(p_40668_, player);
+						}
 						abstractarrow = customArrow(abstractarrow);
+						
 						abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, f * 3.0F, 1.0F);
 						if (f == 1.0F) {
 							abstractarrow.setCritArrow(true);
@@ -68,9 +79,6 @@ public class CrystalliteBowPrismarineItem extends BowItem {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
 						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 1.5); // +1.5 Damage Boost for all Crystallite Bows
-						if (p_40669_.isInWaterRainOrBubble()) {
-							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 2.5); // an extra 2.5 if the shooter is in water
-						}
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);
