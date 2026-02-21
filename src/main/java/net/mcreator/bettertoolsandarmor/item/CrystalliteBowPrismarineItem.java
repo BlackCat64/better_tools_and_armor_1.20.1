@@ -40,7 +40,8 @@ public class CrystalliteBowPrismarineItem extends BowItem {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
 		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A73Marine Might - Arrows deal very high damage when wet"));
+		list.add(Component.literal("\u00A73Streamlined - Arrows are not slowed by water"));
+		list.add(Component.literal("\u00A73Arrows deal extra damage when wet"));
 	}
 
 	@Override
