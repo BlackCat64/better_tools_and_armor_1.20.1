@@ -8,7 +8,9 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -47,10 +49,11 @@ public class EarthCircletOreIlluminationProcedure {
 		double block_x = 0;
 		double block_y = 0;
 		double block_z = 0;
-		if ((entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false == true)
+		if (((entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false == true)
+				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get())
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_ore_highlight_cooldown == 0) {
 			{
-				double _setval = Mth.nextInt(RandomSource.create(), 160, 200);
+				double _setval = Mth.nextInt(RandomSource.create(), 40, 60);
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.crystallite_amethyst_ore_highlight_cooldown = _setval;
 					capability.syncPlayerVariables(entity);
@@ -68,8 +71,8 @@ public class EarthCircletOreIlluminationProcedure {
 							block_z = Math.floor(z) + sz + 0.5;
 							for (Direction directioniterator : Direction.values()) {
 								if (world.isEmptyBlock(BlockPos.containing(block_x + directioniterator.getStepX(), block_y + directioniterator.getStepY(), block_z + directioniterator.getStepZ()))) {
-									for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 0, 3); index3++) {
-										world.addParticle((SimpleParticleType) (BetterToolsModParticleTypes.ORE_LOCATION_PARTICLE.get()), (block_x + (directioniterator.getStepX() == 0 ? Math.random() - 0.5 : directioniterator.getStepX() * 0.6)),
+									for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 1, 3); index3++) {
+										world.addParticle((SimpleParticleType) (BetterToolsModParticleTypes.ORE_VISION_PARTICLE.get()), (block_x + (directioniterator.getStepX() == 0 ? Math.random() - 0.5 : directioniterator.getStepX() * 0.6)),
 												(block_y + (directioniterator.getStepY() == 0 ? Math.random() - 0.5 : directioniterator.getStepY() * 0.6)),
 												(block_z + (directioniterator.getStepZ() == 0 ? Math.random() - 0.5 : directioniterator.getStepZ() * 0.6)), 0, 0, 0);
 									}

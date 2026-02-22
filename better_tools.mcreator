@@ -34947,6 +34947,20 @@
         ]
       },
       "path": "~/Ore Vision Effect"
+    },
+    {
+      "name": "OreVisionParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_vision_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/particles/ore_vision_particle.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/client/particle/OreVisionParticleParticle.java"
+        ]
+      },
+      "path": "~/Ore Vision Effect"
     }
   ],
   "variable_elements": [
