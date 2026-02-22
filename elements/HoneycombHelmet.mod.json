@@ -3,28 +3,27 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "gold_carrot_helmet",
+    "textureHelmet": "honeycomb_helmet",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "onHelmetTick": {
-      "name": "GoldCarrotHatProcedure"
-    },
     "creativeTabs": [
       {
-        "value": "CUSTOM:EffectArmorTab"
+        "value": "CUSTOM:ToolsAndArmorTab"
       }
     ],
-    "armorTextureFile": "gold_carrot_",
-    "helmetName": "Golden Carrot Hat",
-    "bodyName": "Gold Carrot Armor Body",
-    "leggingsName": "Gold Carrot Armor Leggings",
-    "bootsName": "Gold Carrot Armor Boots",
+    "armorTextureFile": "honeycomb_",
+    "helmetName": "Honeycomb Helmet",
+    "bodyName": "Honeycomb Helmet Chestplate",
+    "leggingsName": "Honeycomb Helmet Leggings",
+    "bootsName": "Honeycomb Helmet Boots",
     "helmetSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§6Can stick to ceilings by holding §b[SPACE]"
+      ]
     },
     "bodySpecialInformation": {
       "fixedValue": []
@@ -96,11 +95,11 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_leather"
+      "value": "block.honey_block.place"
     },
     "repairItems": [
       {
-        "value": "Items.GOLDEN_CARROT"
+        "value": "Items.HONEYCOMB"
       }
     ]
   }

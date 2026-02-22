@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "honeycomb_helmet",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:honey_block"
+    },
+    "b": {
+      "item": "minecraft:slime_block"
+    },
+    "c": {
+      "item": "minecraft:honeycomb_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:honeycomb_helmet",
+    "count": 1
+  }
+}

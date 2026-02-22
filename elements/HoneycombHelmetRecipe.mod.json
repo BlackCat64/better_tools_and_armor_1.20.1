@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "honeycomb_helmet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.SLIME_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HoneycombHelmet.helmet"
+    },
+    "name": "honeycomb_helmet_recipe",
+    "namespace": "mod"
+  }
+}

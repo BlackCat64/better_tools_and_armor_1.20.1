@@ -14,6 +14,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -22,7 +23,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -45,7 +45,7 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).stick_to_ceiling
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get() && !entity.onGround()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sticky_helmets"))) && !entity.onGround()
 				&& world.getBlockState(BlockPos.containing(x, y + 2, z)).isFaceSturdy(world, BlockPos.containing(x, y + 2, z), Direction.DOWN)) {
 			if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).getModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e")) != null)) {
 				if (world instanceof Level _level) {
@@ -60,9 +60,9 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 					.hasModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 				((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
 						.addTransientModifier((new AttributeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"), "stick_to_ceiling", (-1.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
-			if (world.dayTime() % 5 == 0) {
+			if (Math.random() < 0.2) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 2), z, 1, 0.5, 0.5, 0.5, 0.025);
+					_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 1.9), z, 1, 0.5, 0.5, 0.5, 0.025);
 			}
 		} else {
 			((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("df433bbf-6612-471a-8caf-44e463ed594e"));

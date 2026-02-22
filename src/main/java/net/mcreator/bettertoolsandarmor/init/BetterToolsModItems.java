@@ -93,6 +93,7 @@ import net.mcreator.bettertoolsandarmor.item.IcyBraceletItem;
 import net.mcreator.bettertoolsandarmor.item.IceStaffItem;
 import net.mcreator.bettertoolsandarmor.item.IceEffectItem;
 import net.mcreator.bettertoolsandarmor.item.IceCoreItem;
+import net.mcreator.bettertoolsandarmor.item.HoneycombHelmetItem;
 import net.mcreator.bettertoolsandarmor.item.HiveCrystalItem;
 import net.mcreator.bettertoolsandarmor.item.HeartyBodyItem;
 import net.mcreator.bettertoolsandarmor.item.HeartCharmItem;
@@ -833,6 +834,7 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> CRYSTALLITE_HOE_REDSTONE_UPGRADE_2 = REGISTRY.register("crystallite_hoe_redstone_upgrade_2", () -> new CrystalliteHoeRedstoneUpgrade2Item());
 	public static final RegistryObject<Item> AMETHYST_HELMET = REGISTRY.register("amethyst_helmet", () -> new AmethystHelmetItem.Helmet());
 	public static final RegistryObject<Item> DRIPSTONE_BOOTS = REGISTRY.register("dripstone_boots", () -> new DripstoneBootsItem.Boots());
+	public static final RegistryObject<Item> HONEYCOMB_HELMET = REGISTRY.register("honeycomb_helmet", () -> new HoneycombHelmetItem.Helmet());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));
