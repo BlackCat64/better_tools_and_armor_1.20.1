@@ -181,7 +181,6 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 								new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_TOPAZ.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_TOPAZ.get())),
 						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.electric_chaining_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_EMERALD.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.infinite_arrows_info"));
-		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_chestplate_amethyst_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_HONEY.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_sword_honey_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_PICKAXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_HONEY.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_HOE_HONEY.get())),

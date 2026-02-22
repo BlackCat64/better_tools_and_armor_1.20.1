@@ -96,7 +96,7 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fGusty - Knocks back melee attackers"));
+			list.add(Component.literal("\u00A7fGusty - Knocks back nearby mobs when attacked"));
 		}
 
 		@Override

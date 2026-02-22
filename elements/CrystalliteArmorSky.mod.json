@@ -32,7 +32,7 @@
       "fixedValue": [
         "§7Upgrade: §fSky",
         "§7Ability:",
-        "§fGusty - Knocks back melee attackers"
+        "§fGusty - Knocks back nearby mobs when attacked"
       ]
     },
     "leggingsSpecialInformation": {
