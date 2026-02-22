@@ -224,6 +224,26 @@ public class BetterToolsModBrewingRecipes implements IModPlugin {
 		PotionUtils.setPotion(potion, Potions.WATER);
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(BetterToolsModItems.MYSTIC_POTION.get())));
 		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.AMETHYST_SHARD));
+		PotionUtils.setPotion(potion, Potions.NIGHT_VISION);
+		PotionUtils.setPotion(potion2, BetterToolsModPotions.ORE_VISION_POTION.get());
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.REDSTONE));
+		PotionUtils.setPotion(potion, BetterToolsModPotions.ORE_VISION_POTION.get());
+		PotionUtils.setPotion(potion2, BetterToolsModPotions.ORE_VISION_POTION_LONG.get());
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.AMETHYST_SHARD));
+		PotionUtils.setPotion(potion, Potions.LONG_NIGHT_VISION);
+		PotionUtils.setPotion(potion2, BetterToolsModPotions.ORE_VISION_POTION_LONG.get());
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(Items.GLOWSTONE_DUST));
+		PotionUtils.setPotion(potion, BetterToolsModPotions.ORE_VISION_POTION_LONG.get());
+		PotionUtils.setPotion(potion2, BetterToolsModPotions.ORE_VISION_POTION.get());
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
+		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
 }

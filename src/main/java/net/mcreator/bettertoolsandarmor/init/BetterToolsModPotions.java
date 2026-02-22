@@ -32,4 +32,6 @@ public class BetterToolsModPotions {
 	public static final RegistryObject<Potion> POTION_OF_DECAY = REGISTRY.register("potion_of_decay", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 800, 0, false, true)));
 	public static final RegistryObject<Potion> POTION_OF_DECAY_2 = REGISTRY.register("potion_of_decay_2", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 480, 1, false, true)));
 	public static final RegistryObject<Potion> POTION_OF_DECAY_LONG = REGISTRY.register("potion_of_decay_long", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 1800, 0, false, true)));
+	public static final RegistryObject<Potion> ORE_VISION_POTION = REGISTRY.register("ore_vision_potion", () -> new Potion(new MobEffectInstance(BetterToolsModMobEffects.ORE_VISION.get(), 3600, 0, false, true)));
+	public static final RegistryObject<Potion> ORE_VISION_POTION_LONG = REGISTRY.register("ore_vision_potion_long", () -> new Potion(new MobEffectInstance(BetterToolsModMobEffects.ORE_VISION.get(), 9600, 0, false, true)));
 }

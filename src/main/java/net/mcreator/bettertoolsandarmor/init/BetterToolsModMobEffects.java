@@ -12,6 +12,7 @@ import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.bettertoolsandarmor.potion.SwiftSwimMobEffect;
 import net.mcreator.bettertoolsandarmor.potion.PitfallMobEffect;
+import net.mcreator.bettertoolsandarmor.potion.OreVisionMobEffect;
 import net.mcreator.bettertoolsandarmor.potion.KarmaPotionMobEffect;
 import net.mcreator.bettertoolsandarmor.potion.FrozenMobEffect;
 import net.mcreator.bettertoolsandarmor.potion.DoubleJumpMobEffect;
@@ -26,4 +27,5 @@ public class BetterToolsModMobEffects {
 	public static final RegistryObject<MobEffect> FROZEN = REGISTRY.register("frozen", () -> new FrozenMobEffect());
 	public static final RegistryObject<MobEffect> CRITICALITY = REGISTRY.register("criticality", () -> new CriticalityMobEffect());
 	public static final RegistryObject<MobEffect> PITFALL = REGISTRY.register("pitfall", () -> new PitfallMobEffect());
+	public static final RegistryObject<MobEffect> ORE_VISION = REGISTRY.register("ore_vision", () -> new OreVisionMobEffect());
 }
