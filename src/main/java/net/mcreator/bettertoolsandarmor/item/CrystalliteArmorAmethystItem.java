@@ -133,7 +133,7 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
 			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dShockwave - Damage nearby mobs when landing from a fall"));
+			list.add(Component.literal("\u00A7dShockwave - Creates a powerful shockwave when landing from a fall"));
 		}
 
 		@Override

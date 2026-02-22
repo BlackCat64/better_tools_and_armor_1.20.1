@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dripstone_boots",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dripstone_block"
+    },
+    "b": {
+      "item": "minecraft:iron_boots"
+    },
+    "c": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "d": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "better_tools:dripstone_boots",
+    "count": 1
+  }
+}

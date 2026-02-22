@@ -35048,6 +35048,31 @@
         ]
       },
       "path": "~/Ore Vision Effect"
+    },
+    {
+      "name": "DripstoneBoots",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dripstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/dripstone_boots.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DripstoneBootsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DripstoneBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dripstone_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/dripstone_boots_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -35337,12 +35362,6 @@
       "CUSTOM:CrystallitePickaxeNetherDiamond",
       "CUSTOM:NetherDiamondPickaxe"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
-    ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
@@ -35355,6 +35374,12 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -36268,6 +36293,10 @@
       "CUSTOM:CrystalliteSwordLapis",
       "CUSTOM:CrystalliteAxeLapis",
       "CUSTOM:CrystalliteDaggerLapis"
+    ],
+    "ITEMS:mod:shockwave_boots": [
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:DripstoneBoots.boots"
     ],
     "ITEMS:mod:redstone_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordRedstone",
@@ -37968,7 +37997,8 @@
       "IronCactusBody",
       "CryingObsidianHelmet",
       "DiamondCryingObsidianHelmet",
-      "AmethystHelmet"
+      "AmethystHelmet",
+      "DripstoneBoots"
     ],
     "CUSTOM:BlocksTab": [
       "ChargedIceOn",
@@ -38838,6 +38868,7 @@
       "advancements.all_diamond_effect_armor_adv.descr": "Power 4 pieces of Diamond Encrusted Effect Armor at once with a Netherite Energy Vial",
       "advancements.crystallite_sword_emerald_adv.title": "Stuck in the Mud",
       "item.better_tools.crystallite_armor_nether_diamond_boots": "Crystallite Boots",
+      "item.better_tools.dripstone_boots": "Dripstone Boots",
       "item.better_tools.crystallite_dagger_prismarine": "Crystallite Dagger",
       "advancements.fire_staff_pokemon_adv.descr": "Shoot a fire resistant mob with a Fire Staff",
       "item.better_tools.flaming_circlet": "§4Flaming Circlet",

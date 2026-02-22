@@ -385,6 +385,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
 				tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
+				tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
 			})
 
 					.build());
