@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "amethyst_helmet",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Blocks.AMETHYST_CLUSTER"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AmethystHelmet.helmet"
+    },
+    "name": "amethyst_helmet_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amethyst_helmet",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "c c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "c": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "item": "better_tools:amethyst_helmet",
+    "count": 1
+  }
+}
