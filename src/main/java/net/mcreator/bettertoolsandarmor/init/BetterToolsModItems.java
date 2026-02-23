@@ -83,6 +83,8 @@ import net.mcreator.bettertoolsandarmor.item.MagicRingItem;
 import net.mcreator.bettertoolsandarmor.item.MagicCrystalItem;
 import net.mcreator.bettertoolsandarmor.item.LuckyCharmItem;
 import net.mcreator.bettertoolsandarmor.item.LostSoulsPotionItem;
+import net.mcreator.bettertoolsandarmor.item.LapisSwordItem;
+import net.mcreator.bettertoolsandarmor.item.LapisDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.IronSugarBootsItem;
 import net.mcreator.bettertoolsandarmor.item.IronRabbitBootsItem;
 import net.mcreator.bettertoolsandarmor.item.IronPhantomBootsItem;
@@ -839,6 +841,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> HONEYCOMB_HELMET = REGISTRY.register("honeycomb_helmet", () -> new HoneycombHelmetItem.Helmet());
 	public static final RegistryObject<Item> REDSTONE_SWORD = REGISTRY.register("redstone_sword", () -> new RedstoneSwordItem());
 	public static final RegistryObject<Item> REDSTONE_DAGGER = REGISTRY.register("redstone_dagger", () -> new RedstoneDaggerItem());
+	public static final RegistryObject<Item> LAPIS_SWORD = REGISTRY.register("lapis_sword", () -> new LapisSwordItem());
+	public static final RegistryObject<Item> LAPIS_DAGGER = REGISTRY.register("lapis_dagger", () -> new LapisDaggerItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));
