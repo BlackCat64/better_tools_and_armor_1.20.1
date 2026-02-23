@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "better_tools:crystallite_sword_emerald",
-    "better_tools:crystallite_dagger_emerald"
+    "better_tools:crystallite_dagger_emerald",
+    "better_tools:emerald_sword",
+    "better_tools:emerald_dagger"
   ]
 }

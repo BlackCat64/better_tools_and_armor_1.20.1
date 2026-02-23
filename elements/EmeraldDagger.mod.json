@@ -1,0 +1,44 @@
+{
+  "_fv": 66,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "emerald_dagger",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Emerald Dagger",
+    "specialInformation": {
+      "fixedValue": [
+        "§aCritical hits trap the target in the ground"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmorTab"
+      },
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 2.5,
+    "enchantability": 10,
+    "damageVsEntity": 6.0,
+    "usageCount": 240,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

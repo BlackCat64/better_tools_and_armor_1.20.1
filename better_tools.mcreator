@@ -35212,6 +35212,60 @@
         ]
       },
       "path": "~/Misc. Tools and Armor"
+    },
+    {
+      "name": "EmeraldSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EmeraldSwordItem.java",
+          "src/main/resources/assets/better_tools/models/item/emerald_sword.json"
+        ]
+      },
+      "path": "~/Misc. Tools and Armor"
+    },
+    {
+      "name": "EmeraldSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/emerald_sword_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Tools and Armor"
+    },
+    {
+      "name": "EmeraldDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EmeraldDaggerItem.java",
+          "src/main/resources/assets/better_tools/models/item/emerald_dagger.json"
+        ]
+      },
+      "path": "~/Misc. Tools and Armor"
+    },
+    {
+      "name": "EmeraldDaggerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_dagger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/emerald_dagger_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Tools and Armor"
     }
   ],
   "variable_elements": [
@@ -36429,7 +36483,9 @@
     ],
     "ITEMS:mod:pitfall_weapons": [
       "CUSTOM:CrystalliteSwordEmerald",
-      "CUSTOM:CrystalliteDaggerEmerald"
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:EmeraldSword",
+      "CUSTOM:EmeraldDagger"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:SugarBlock"
@@ -37521,6 +37577,8 @@
       "Blocks.NETHER_WART"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:EmeraldDagger",
+      "~CUSTOM:EmeraldSword",
       "~CUSTOM:LapisDagger",
       "~CUSTOM:LapisSword",
       "~CUSTOM:RedstoneDagger",
@@ -37897,7 +37955,9 @@
       "RedstoneSword",
       "RedstoneDagger",
       "LapisSword",
-      "LapisDagger"
+      "LapisDagger",
+      "EmeraldSword",
+      "EmeraldDagger"
     ],
     "CUSTOM:CrystalliteTab": [
       "JewelleryTable",
@@ -38158,7 +38218,9 @@
       "RedstoneSword",
       "RedstoneDagger",
       "LapisSword",
-      "LapisDagger"
+      "LapisDagger",
+      "EmeraldSword",
+      "EmeraldDagger"
     ],
     "CUSTOM:BlocksTab": [
       "ChargedIceOn",
@@ -39072,6 +39134,7 @@
       "death.attack.karma_damage.item": "%1$s got instant karma from %2$s using %3$s",
       "item.better_tools.ruby_sword": "Ruby Sword",
       "jei.better_tools.combo_mining_info": "Mining Combo will be lost after 2s of not mining the same block.",
+      "item.better_tools.emerald_sword": "Emerald Sword",
       "enchantment.better_tools.desperation.desc": "Deal a lot more damage the less HP you currently have, but has no effect at high HP",
       "block.better_tools.cream_metal_wall_sign": "Cream Metal Wall Sign",
       "item.better_tools.topaz_sword": "Topaz Sword",
@@ -39137,6 +39200,7 @@
       "item.better_tools.diamond_glass_armor_helmet": "Glass Helmet",
       "item.minecraft.lingering_potion.effect.criticality_potion_long": "Lingering Potion of Criticality",
       "advancements.double_jump_adv.title": "Prepare for trouble, make it double!",
+      "item.better_tools.emerald_dagger": "Emerald Dagger",
       "item.better_tools.amethyst_helmet": "Amethyst Helmet",
       "jei.better_tools.iron_crystallite_info": "§lCrystallite Upgrades:\n§fIron§r\n\nTheme:\nKnockback and Magnetism",
       "gui.better_tools.energy_vial_menu.leggings_active": "",

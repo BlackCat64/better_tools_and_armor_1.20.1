@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "better_tools:emerald_dagger",
+    "better_tools:emerald_sword",
     "better_tools:lapis_dagger",
     "better_tools:lapis_sword",
     "better_tools:redstone_dagger",

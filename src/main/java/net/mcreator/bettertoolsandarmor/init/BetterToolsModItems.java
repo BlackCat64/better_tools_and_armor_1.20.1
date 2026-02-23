@@ -135,7 +135,9 @@ import net.mcreator.bettertoolsandarmor.item.EndTitaniumHoeItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumAxeItem;
 import net.mcreator.bettertoolsandarmor.item.EndTitaniumArmorItem;
+import net.mcreator.bettertoolsandarmor.item.EmeraldSwordItem;
 import net.mcreator.bettertoolsandarmor.item.EmeraldEnergyVialItem;
+import net.mcreator.bettertoolsandarmor.item.EmeraldDaggerItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricStaffItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricNecklaceItem;
 import net.mcreator.bettertoolsandarmor.item.ElectricCoreItem;
@@ -843,6 +845,8 @@ public class BetterToolsModItems {
 	public static final RegistryObject<Item> REDSTONE_DAGGER = REGISTRY.register("redstone_dagger", () -> new RedstoneDaggerItem());
 	public static final RegistryObject<Item> LAPIS_SWORD = REGISTRY.register("lapis_sword", () -> new LapisSwordItem());
 	public static final RegistryObject<Item> LAPIS_DAGGER = REGISTRY.register("lapis_dagger", () -> new LapisDaggerItem());
+	public static final RegistryObject<Item> EMERALD_SWORD = REGISTRY.register("emerald_sword", () -> new EmeraldSwordItem());
+	public static final RegistryObject<Item> EMERALD_DAGGER = REGISTRY.register("emerald_dagger", () -> new EmeraldDaggerItem());
 	// Start of user code block custom items
 	public static final RegistryObject<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
 			() -> new SignItem(new Item.Properties().stacksTo(16), BetterToolsModBlocks.BLACK_METAL_SIGN.get(), BetterToolsModBlocks.BLACK_METAL_WALL_SIGN.get()));

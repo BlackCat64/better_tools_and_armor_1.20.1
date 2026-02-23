@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
-    "group": "nature_crystal",
+    "group": "emerald_dagger",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:minecraft:leaves"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "Blocks.DOUBLE_PLANT#0"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "TAG:minecraft:logs"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
+        "value": ""
       },
       {
         "value": "Blocks.MUD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:NatureCrystal"
+      "value": "CUSTOM:EmeraldDagger"
     },
-    "name": "nature_crystal_recipe",
+    "name": "emerald_dagger_recipe",
     "namespace": "mod"
   }
 }

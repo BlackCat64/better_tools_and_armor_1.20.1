@@ -391,6 +391,8 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.LAPIS_SWORD.get());
 				tabData.accept(BetterToolsModItems.LAPIS_DAGGER.get());
+				tabData.accept(BetterToolsModItems.EMERALD_SWORD.get());
+				tabData.accept(BetterToolsModItems.EMERALD_DAGGER.get());
 			})
 
 					.build());
@@ -565,6 +567,8 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
 			tabData.accept(BetterToolsModItems.LAPIS_SWORD.get());
 			tabData.accept(BetterToolsModItems.LAPIS_DAGGER.get());
+			tabData.accept(BetterToolsModItems.EMERALD_SWORD.get());
+			tabData.accept(BetterToolsModItems.EMERALD_DAGGER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());

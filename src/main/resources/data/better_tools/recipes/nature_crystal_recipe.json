@@ -3,9 +3,9 @@
   "group": "nature_crystal",
   "category": "misc",
   "pattern": [
-    "aba",
-    "bcb",
-    "dbd"
+    "abc",
+    "bdb",
+    "ebf"
   ],
   "key": {
     "a": {
@@ -15,10 +15,16 @@
       "item": "minecraft:emerald_block"
     },
     "c": {
-      "item": "better_tools:crystallite_gem"
+      "item": "minecraft:sunflower"
     },
     "d": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "e": {
       "tag": "minecraft:logs"
+    },
+    "f": {
+      "item": "minecraft:mud"
     }
   },
   "result": {
