@@ -387,6 +387,8 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
 				tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
 				tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
+				tabData.accept(BetterToolsModItems.REDSTONE_SWORD.get());
+				tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
 			})
 
 					.build());
@@ -557,6 +559,8 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.GOLD_DAGGER.get());
 			tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 			tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
+			tabData.accept(BetterToolsModItems.REDSTONE_SWORD.get());
+			tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "better_tools:redstone_dagger",
+    "better_tools:redstone_sword",
     "better_tools:crystallite_dagger_honey",
     "better_tools:crystallite_sword_honey",
     "better_tools:crystallite_dagger_prismarine",
