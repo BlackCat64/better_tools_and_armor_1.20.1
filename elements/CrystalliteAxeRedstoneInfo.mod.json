@@ -15,10 +15,10 @@
     ],
     "information": [
       "After 1000 blocks have been mined:",
-      "§92x Mining Speed§r",
+      "§92x Base Mining Speed§r",
       "",
       "After 4000 blocks have been mined:",
-      "§93x Mining Speed§r"
+      "§93x Base Mining Speed§r"
     ]
   }
 }

@@ -15,6 +15,7 @@ import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.stats.Stats;
 import net.minecraft.sounds.SoundSource;
@@ -73,7 +74,6 @@ public class CrystalliteBowDiamondItem extends BowItem {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
 						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 1.5); // +1.5 Boost for all Crystallite Bows
-
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);
@@ -87,10 +87,13 @@ public class CrystalliteBowDiamondItem extends BowItem {
 						if (flag1 || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
 							abstractarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 						}
-						if (Math.random() < 0.25) {
+						double chance = 0.25;
+						chance = chance + 0.05 * player.getAttribute(Attributes.LUCK).getValue();
+						if (Math.random() < chance) {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 2.5);
 							if (!p_40668_.isClientSide()) {
-								p_40668_.playSound(null, BlockPos.containing(p_40669_.getX(), p_40669_.getY(), p_40669_.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2);
+								p_40668_.playSound(null, BlockPos.containing(p_40669_.getX(), p_40669_.getY(), p_40669_.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5,
+										(float) 1.2);
 							} else {
 								p_40668_.playLocalSound(p_40669_.getX(), p_40669_.getY(), p_40669_.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2, false);
 							}
