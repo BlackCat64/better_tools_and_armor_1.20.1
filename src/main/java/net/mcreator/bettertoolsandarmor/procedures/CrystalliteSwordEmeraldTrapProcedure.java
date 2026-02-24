@@ -48,7 +48,8 @@ public class CrystalliteSwordEmeraldTrapProcedure {
 				}
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.PITFALL.get(), 100, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.PITFALL.get(),
+						(int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:emerald_upgraded_crystallite_items"))) ? 100 : 60), 0, false, false));
 			if (sourceentity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:crystallite_sword_emerald_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

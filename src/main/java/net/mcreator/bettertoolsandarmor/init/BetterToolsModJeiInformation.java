@@ -167,8 +167,8 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.DEEPSLATE_RANDOM_ORE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.deepslate_mixed_ore_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.NATURE_RING.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.nature_ring_info"));
-		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_EMERALD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_EMERALD.get())), VanillaTypes.ITEM_STACK,
-				Component.translatable("jei.better_tools.stuck_in_mud_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_EMERALD.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_EMERALD.get()), new ItemStack(BetterToolsModItems.EMERALD_SWORD.get()),
+				new ItemStack(BetterToolsModItems.EMERALD_DAGGER.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.stuck_in_mud_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.SAPPHIRE_SWORD.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_AXE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_DAGGER.get()),
 				new ItemStack(BetterToolsModItems.SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_LEGGINGS.get()),
 				new ItemStack(BetterToolsModItems.SAPPHIRE_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SWORD_SAPPHIRE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_AXE_SAPPHIRE.get()),
