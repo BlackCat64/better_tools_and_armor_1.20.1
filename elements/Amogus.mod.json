@@ -9,11 +9,7 @@
     "states": [],
     "name": "Amogus",
     "rarity": "RARE",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:BetterToolsAndArmorMisc"
-      }
-    ],
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -33,12 +29,18 @@
         "§kSus§rSus§kSus"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:ElectricStaffProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,

@@ -45,7 +45,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:BlocksTab"
+        "value": "CUSTOM:BetterToolsAndArmorMisc"
       }
     ],
     "destroyTool": "pickaxe",
@@ -60,7 +60,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "PACKED_ICE"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,

@@ -2,6 +2,7 @@
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class ChargedIceOnBlock extends Block {
 	public ChargedIceOnBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.GLASS).strength(0.5f).requiresCorrectToolForDrops().friction(0.25f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.GLASS).strength(0.5f).requiresCorrectToolForDrops().friction(0.25f));
 	}
 
 	@Override

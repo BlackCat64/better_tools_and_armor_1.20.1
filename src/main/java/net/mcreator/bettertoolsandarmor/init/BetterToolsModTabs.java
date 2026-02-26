@@ -23,6 +23,7 @@ public class BetterToolsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BetterToolsMod.MODID);
 	public static final RegistryObject<CreativeModeTab> BETTER_TOOLS_AND_ARMOR_MISC = REGISTRY.register("better_tools_and_armor_misc",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.better_tools_and_armor_misc")).icon(() -> new ItemStack(BetterToolsModItems.CREATIVE_TAB_LOGO.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(BetterToolsModBlocks.CHARGED_ICE_ON.get().asItem());
 				tabData.accept(BetterToolsModBlocks.SUGAR_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModBlocks.RANDOM_ORE.get().asItem());
 				tabData.accept(BetterToolsModBlocks.DEEPSLATE_RANDOM_ORE.get().asItem());
@@ -40,7 +41,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.BLUE_SLIMEBALL.get());
 				tabData.accept(BetterToolsModBlocks.BLUE_SLIME_BLOCK.get().asItem());
 				tabData.accept(BetterToolsModItems.BLUE_SLIME_STICK.get());
-				tabData.accept(BetterToolsModItems.AMOGUS.get());
 				tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 				tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
 				tabData.accept(BetterToolsModItems.BERRY_PIE.get());
@@ -372,6 +372,12 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.WOODEN_BOOTS.get());
+				tabData.accept(BetterToolsModItems.REDSTONE_SWORD.get());
+				tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
+				tabData.accept(BetterToolsModItems.LAPIS_SWORD.get());
+				tabData.accept(BetterToolsModItems.LAPIS_DAGGER.get());
+				tabData.accept(BetterToolsModItems.EMERALD_SWORD.get());
+				tabData.accept(BetterToolsModItems.EMERALD_DAGGER.get());
 				tabData.accept(BetterToolsModItems.WOOD_DAGGER.get());
 				tabData.accept(BetterToolsModItems.STONE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.IRON_DAGGER.get());
@@ -379,131 +385,25 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_DAGGER.get());
 				tabData.accept(BetterToolsModItems.NETHERITE_DAGGER.get());
 				tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
-				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
-				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
+				tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
 				tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
-				tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
+				tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
-				tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
-				tabData.accept(BetterToolsModItems.REDSTONE_SWORD.get());
-				tabData.accept(BetterToolsModItems.REDSTONE_DAGGER.get());
-				tabData.accept(BetterToolsModItems.LAPIS_SWORD.get());
-				tabData.accept(BetterToolsModItems.LAPIS_DAGGER.get());
-				tabData.accept(BetterToolsModItems.EMERALD_SWORD.get());
-				tabData.accept(BetterToolsModItems.EMERALD_DAGGER.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> BLOCKS_TAB = REGISTRY.register("blocks_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.blocks_tab")).icon(() -> new ItemStack(BetterToolsModBlocks.DARK_POLISHED_IRON_BLOCK.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(BetterToolsModBlocks.CHARGED_ICE_ON.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_IRON_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_IRON_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_IRON_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_IRON_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_IRON_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_IRON_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_IRON_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_IRON_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_IRON_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_IRON_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COAL_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COAL_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COAL_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COAL_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COAL_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COAL_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COAL_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COAL_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COAL_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COAL_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_RUBY_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_RUBY_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_RUBY_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_RUBY_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_RUBY_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_REDSTONE_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_REDSTONE_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_REDSTONE_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_REDSTONE_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_REDSTONE_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_AMETHYST_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_LAPIS_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_LAPIS_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_LAPIS_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_LAPIS_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_LAPIS_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_LAPIS_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_DIAMOND_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_DIAMOND_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_DIAMOND_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_DIAMOND_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_DIAMOND_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_EMERALD_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_EMERALD_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_EMERALD_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_EMERALD_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_EMERALD_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_EMERALD_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_EMERALD_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_EMERALD_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_EMERALD_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_EMERALD_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COPPER_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COPPER_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COPPER_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COPPER_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.DARK_POLISHED_COPPER_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COPPER_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COPPER_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COPPER_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COPPER_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_COPPER_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_TOPAZ_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_TOPAZ_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_TOPAZ_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_TOPAZ_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_TOPAZ_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_GOLD_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_GOLD_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_GOLD_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_GOLD_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.POLISHED_GOLD_TRAPDOOR.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_BLOCK.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_SLAB.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_STAIRS.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_WALL.get().asItem());
-				tabData.accept(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_TRAPDOOR.get().asItem());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
+				tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());
+				tabData.accept(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get());
 				tabData.accept(BetterToolsModItems.GOLD_CARROT_HELMET.get());
 				tabData.accept(BetterToolsModItems.IRON_GOLD_CARROT_HELMET.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GOLD_CARROT_HELMET.get());
@@ -540,12 +440,6 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
-				tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
-				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
-				tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());
-				tabData.accept(BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get());
-				tabData.accept(BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
-				tabData.accept(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
 			})
 
 					.build());
@@ -553,6 +447,9 @@ public class BetterToolsModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(BetterToolsModItems.FLINT_SWORD.get());
+			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
+			tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
 			tabData.accept(BetterToolsModItems.WOODEN_HELMET.get());
 			tabData.accept(BetterToolsModItems.WOODEN_CHESTPLATE.get());
 			tabData.accept(BetterToolsModItems.WOODEN_LEGGINGS.get());
@@ -569,6 +466,20 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.LAPIS_DAGGER.get());
 			tabData.accept(BetterToolsModItems.EMERALD_SWORD.get());
 			tabData.accept(BetterToolsModItems.EMERALD_DAGGER.get());
+			tabData.accept(BetterToolsModItems.BATTLE_AXE.get());
+			tabData.accept(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get());
+			tabData.accept(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get());
+			tabData.accept(BetterToolsModItems.CACTUS_CHESTPLATE.get());
+			tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
+			tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
+			tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
+			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
+			tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
+			tabData.accept(BetterToolsModItems.FLINT_HOE.get());
+			tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
+			tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());

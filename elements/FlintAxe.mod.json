@@ -15,6 +15,12 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:ToolsAndArmorTab"
+      },
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "COMBAT"
       }
     ],
     "efficiency": 5.0,

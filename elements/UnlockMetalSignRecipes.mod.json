@@ -173,7 +173,8 @@
       "MagentaMetalSignToOneLine",
       "MagentaMetalSignFromOneLine",
       "MagentaMetalHangingSignToOneLine",
-      "MagentaMetalHangingSignFromOneLine"
+      "MagentaMetalHangingSignFromOneLine",
+      "AmogusRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,
