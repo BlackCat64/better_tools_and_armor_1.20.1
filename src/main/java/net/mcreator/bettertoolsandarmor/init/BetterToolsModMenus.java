@@ -12,11 +12,9 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
-import net.mcreator.bettertoolsandarmor.world.inventory.AttributesViewerMenu;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 public class BetterToolsModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, BetterToolsMod.MODID);
-	public static final RegistryObject<MenuType<AttributesViewerMenu>> ATTRIBUTES_VIEWER = REGISTRY.register("attributes_viewer", () -> IForgeMenuType.create(AttributesViewerMenu::new));
 	public static final RegistryObject<MenuType<EnergyVialMenuMenu>> ENERGY_VIAL_MENU = REGISTRY.register("energy_vial_menu", () -> IForgeMenuType.create(EnergyVialMenuMenu::new));
 }

@@ -19,7 +19,6 @@ import net.mcreator.bettertoolsandarmor.network.StickToCeilingKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.FloatKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.EnergyVialToggleKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
-import net.mcreator.bettertoolsandarmor.network.AttributesViewerOpenMessage;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -46,19 +45,6 @@ public class BetterToolsModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				BetterToolsMod.PACKET_HANDLER.sendToServer(new FloatKeyMessage(0, 0));
 				FloatKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping ATTRIBUTES_VIEWER_OPEN = new KeyMapping("key.better_tools.attributes_viewer_open", GLFW.GLFW_KEY_PERIOD, "key.categories.better_tools") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				BetterToolsMod.PACKET_HANDLER.sendToServer(new AttributesViewerOpenMessage(0, 0));
-				AttributesViewerOpenMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -100,7 +86,6 @@ public class BetterToolsModKeyMappings {
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP_KEY);
 		event.register(FLOAT_KEY);
-		event.register(ATTRIBUTES_VIEWER_OPEN);
 		event.register(STICK_TO_CEILING_KEY);
 		event.register(ENERGY_VIAL_TOGGLE_KEY);
 	}
@@ -112,7 +97,6 @@ public class BetterToolsModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				DOUBLE_JUMP_KEY.consumeClick();
 				FLOAT_KEY.consumeClick();
-				ATTRIBUTES_VIEWER_OPEN.consumeClick();
 				STICK_TO_CEILING_KEY.consumeClick();
 				ENERGY_VIAL_TOGGLE_KEY.consumeClick();
 			}

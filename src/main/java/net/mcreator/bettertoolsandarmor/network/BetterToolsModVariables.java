@@ -78,10 +78,6 @@ public class BetterToolsModVariables {
 			clone.last_on_ground_y = original.last_on_ground_y;
 			clone.last_on_ground_z = original.last_on_ground_z;
 			clone.save_from_void_cooldown = original.save_from_void_cooldown;
-			clone.attack_damage = original.attack_damage;
-			clone.attack_damage_modifier = original.attack_damage_modifier;
-			clone.knockback_resistance = original.knockback_resistance;
-			clone.knockback_resistance_modifier = original.knockback_resistance_modifier;
 			clone.last_food_eaten = original.last_food_eaten;
 			clone.last_food_was_carbonated = original.last_food_was_carbonated;
 			if (!event.isWasDeath()) {
@@ -153,10 +149,6 @@ public class BetterToolsModVariables {
 		public double last_on_ground_y = 0;
 		public double last_on_ground_z = 0;
 		public double save_from_void_cooldown = 0.0;
-		public String attack_damage = "\"\"";
-		public String attack_damage_modifier = "\"\"";
-		public String knockback_resistance = "\"\"";
-		public String knockback_resistance_modifier = "\"\"";
 		public double flaming_circlet_cooldown = 0;
 		public double time_since_last_attacked = 0;
 		public double time_since_last_mined = 0;
@@ -197,10 +189,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("last_on_ground_y", last_on_ground_y);
 			nbt.putDouble("last_on_ground_z", last_on_ground_z);
 			nbt.putDouble("save_from_void_cooldown", save_from_void_cooldown);
-			nbt.putString("attack_damage", attack_damage);
-			nbt.putString("attack_damage_modifier", attack_damage_modifier);
-			nbt.putString("knockback_resistance", knockback_resistance);
-			nbt.putString("knockback_resistance_modifier", knockback_resistance_modifier);
 			nbt.putDouble("flaming_circlet_cooldown", flaming_circlet_cooldown);
 			nbt.putDouble("time_since_last_attacked", time_since_last_attacked);
 			nbt.putDouble("time_since_last_mined", time_since_last_mined);
@@ -238,10 +226,6 @@ public class BetterToolsModVariables {
 			last_on_ground_y = nbt.getDouble("last_on_ground_y");
 			last_on_ground_z = nbt.getDouble("last_on_ground_z");
 			save_from_void_cooldown = nbt.getDouble("save_from_void_cooldown");
-			attack_damage = nbt.getString("attack_damage");
-			attack_damage_modifier = nbt.getString("attack_damage_modifier");
-			knockback_resistance = nbt.getString("knockback_resistance");
-			knockback_resistance_modifier = nbt.getString("knockback_resistance_modifier");
 			flaming_circlet_cooldown = nbt.getDouble("flaming_circlet_cooldown");
 			time_since_last_attacked = nbt.getDouble("time_since_last_attacked");
 			time_since_last_mined = nbt.getDouble("time_since_last_mined");
@@ -298,10 +282,6 @@ public class BetterToolsModVariables {
 					variables.last_on_ground_y = message.data.last_on_ground_y;
 					variables.last_on_ground_z = message.data.last_on_ground_z;
 					variables.save_from_void_cooldown = message.data.save_from_void_cooldown;
-					variables.attack_damage = message.data.attack_damage;
-					variables.attack_damage_modifier = message.data.attack_damage_modifier;
-					variables.knockback_resistance = message.data.knockback_resistance;
-					variables.knockback_resistance_modifier = message.data.knockback_resistance_modifier;
 					variables.flaming_circlet_cooldown = message.data.flaming_circlet_cooldown;
 					variables.time_since_last_attacked = message.data.time_since_last_attacked;
 					variables.time_since_last_mined = message.data.time_since_last_mined;
