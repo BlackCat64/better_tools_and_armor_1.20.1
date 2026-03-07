@@ -22,7 +22,7 @@ public class CrystalliteHoeLapisItem extends HoeItem {
 	public CrystalliteHoeLapisItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

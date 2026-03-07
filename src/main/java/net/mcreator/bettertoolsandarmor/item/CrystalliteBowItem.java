@@ -23,7 +23,7 @@ import java.util.List;
 
 public class CrystalliteBowItem extends BowItem {
 	public CrystalliteBowItem() {
-		super(new Item.Properties().durability(1800).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(2400).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

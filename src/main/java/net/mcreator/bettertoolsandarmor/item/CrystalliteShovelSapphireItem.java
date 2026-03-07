@@ -18,7 +18,7 @@ public class CrystalliteShovelSapphireItem extends ShovelItem {
 	public CrystalliteShovelSapphireItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

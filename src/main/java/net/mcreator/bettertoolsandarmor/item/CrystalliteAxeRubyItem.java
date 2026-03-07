@@ -18,7 +18,7 @@ public class CrystalliteAxeRubyItem extends AxeItem {
 	public CrystalliteAxeRubyItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

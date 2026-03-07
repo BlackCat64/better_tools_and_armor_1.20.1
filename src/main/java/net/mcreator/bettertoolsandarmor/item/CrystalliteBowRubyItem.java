@@ -23,7 +23,7 @@ import java.util.List;
 // bow can now be fully charged in 60% of the original time
 public class CrystalliteBowRubyItem extends BowItem {
 	public CrystalliteBowRubyItem() {
-		super(new Item.Properties().durability(1800).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(2400).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

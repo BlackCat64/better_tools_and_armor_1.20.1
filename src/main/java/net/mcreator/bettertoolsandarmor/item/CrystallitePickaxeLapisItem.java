@@ -19,7 +19,7 @@ public class CrystallitePickaxeLapisItem extends PickaxeItem {
 	public CrystallitePickaxeLapisItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

@@ -19,7 +19,7 @@ public class CrystalliteShovelRedstoneUpgrade2Item extends ShovelItem {
 	public CrystalliteShovelRedstoneUpgrade2Item() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

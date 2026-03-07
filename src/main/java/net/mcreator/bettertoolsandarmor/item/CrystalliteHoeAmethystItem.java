@@ -23,7 +23,7 @@ public class CrystalliteHoeAmethystItem extends HoeItem {
 	public CrystalliteHoeAmethystItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

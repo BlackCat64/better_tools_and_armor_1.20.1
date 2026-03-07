@@ -23,7 +23,7 @@ public class CrystalliteShovelSculkItem extends ShovelItem {
 	public CrystalliteShovelSculkItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2250;
+				return 3000;
 			}
 
 			public float getSpeed() {

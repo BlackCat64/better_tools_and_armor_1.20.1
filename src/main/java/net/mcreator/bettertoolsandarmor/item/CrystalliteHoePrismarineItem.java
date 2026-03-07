@@ -21,7 +21,7 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 	public CrystalliteHoePrismarineItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

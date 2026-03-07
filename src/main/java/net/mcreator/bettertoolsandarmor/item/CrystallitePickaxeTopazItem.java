@@ -18,7 +18,7 @@ public class CrystallitePickaxeTopazItem extends PickaxeItem {
 	public CrystallitePickaxeTopazItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

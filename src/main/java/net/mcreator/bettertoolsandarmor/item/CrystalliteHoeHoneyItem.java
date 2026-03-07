@@ -19,7 +19,7 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 	public CrystalliteHoeHoneyItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

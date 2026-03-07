@@ -19,7 +19,7 @@ public class CrystalliteAxeSculkItem extends AxeItem {
 	public CrystalliteAxeSculkItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2250;
+				return 3000;
 			}
 
 			public float getSpeed() {

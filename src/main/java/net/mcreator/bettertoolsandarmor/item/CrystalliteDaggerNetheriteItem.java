@@ -19,7 +19,7 @@ public class CrystalliteDaggerNetheriteItem extends SwordItem {
 	public CrystalliteDaggerNetheriteItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1687;
+				return 2250;
 			}
 
 			public float getSpeed() {

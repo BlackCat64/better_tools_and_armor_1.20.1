@@ -18,7 +18,7 @@ public class CrystalliteDaggerRubyItem extends SwordItem {
 	public CrystalliteDaggerRubyItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1350;
+				return 1800;
 			}
 
 			public float getSpeed() {

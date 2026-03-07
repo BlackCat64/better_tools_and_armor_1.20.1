@@ -23,7 +23,7 @@ import java.util.List;
 
 public class CrystalliteBowNetheriteItem extends BowItem {
 	public CrystalliteBowNetheriteItem() {
-		super(new Item.Properties().durability(2250).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(3000).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

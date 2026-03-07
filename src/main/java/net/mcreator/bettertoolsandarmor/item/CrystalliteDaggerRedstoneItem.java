@@ -19,7 +19,7 @@ public class CrystalliteDaggerRedstoneItem extends SwordItem {
 	public CrystalliteDaggerRedstoneItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1350;
+				return 1800;
 			}
 
 			public float getSpeed() {

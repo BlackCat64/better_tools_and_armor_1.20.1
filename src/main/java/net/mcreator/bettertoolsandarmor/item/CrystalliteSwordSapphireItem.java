@@ -20,7 +20,7 @@ public class CrystalliteSwordSapphireItem extends SwordItem {
 	public CrystalliteSwordSapphireItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1800;
+				return 2400;
 			}
 
 			public float getSpeed() {

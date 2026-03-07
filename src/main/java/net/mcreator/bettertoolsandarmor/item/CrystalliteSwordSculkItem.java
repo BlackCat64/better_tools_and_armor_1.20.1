@@ -19,7 +19,7 @@ public class CrystalliteSwordSculkItem extends SwordItem {
 	public CrystalliteSwordSculkItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2250;
+				return 3000;
 			}
 
 			public float getSpeed() {
