@@ -15,6 +15,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -44,7 +45,9 @@ public class CrystalliteSculkArmorReducedDetectionRangeProcedure {
 		double range_multiplier = 0;
 		double range_reduction = 0;
 		double default_range = 0;
-		if (world.dayTime() % 20 == 0) {
+		if (BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer == 0) {
+			BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer = 20;
+			BetterToolsModVariables.MapVariables.get(world).syncData(world);
 			armor_pieces = 0;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;

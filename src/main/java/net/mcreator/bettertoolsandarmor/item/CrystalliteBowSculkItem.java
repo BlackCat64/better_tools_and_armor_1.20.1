@@ -67,7 +67,7 @@ public class CrystalliteBowSculkItem extends BowItem {
 						if (j > 0) {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
-						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 2); // +2 (extra 0.5) for Sculk as it is a rare material
+						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 1.5); // +1.5 (extra 0.5) for Sculk as it is a rare material
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);

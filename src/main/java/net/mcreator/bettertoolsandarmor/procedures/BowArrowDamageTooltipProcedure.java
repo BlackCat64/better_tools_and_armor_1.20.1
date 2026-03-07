@@ -45,13 +45,13 @@ public class BowArrowDamageTooltipProcedure {
 				base_damage = 2;
 			} else {
 				if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:netherite_upgraded_crystallite_items")))) {
-					base_damage = 5;
+					base_damage = 4.5;
 				} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
 					base_damage = 1.5;
 				} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:sculk_upgraded_crystallite_items")))) {
-					base_damage = 4;
-				} else {
 					base_damage = 3.5;
+				} else {
+					base_damage = 3;
 				}
 			}
 			damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack) != 0 ? base_damage + 0.5 + itemstack.getEnchantmentLevel(Enchantments.POWER_ARROWS) * 0.5 : base_damage;

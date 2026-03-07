@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "RemoveCrystalliteClusterAir"
+    },
     "onNeighbourBlockChanges": {
       "name": "RemoveCrystalliteClusterAir"
     },
@@ -124,6 +127,9 @@
       "name": "CrystalliteClusterParticlesProcedure"
     },
     "onDestroyedByExplosion": {
+      "name": "RemoveCrystalliteClusterAir"
+    },
+    "onStartToDestroy": {
       "name": "RemoveCrystalliteClusterAir"
     },
     "onEntityCollides": {

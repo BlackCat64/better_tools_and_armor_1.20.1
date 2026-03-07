@@ -67,7 +67,7 @@ public class CrystalliteBowNetheriteItem extends BowItem {
 						if (j > 0) {
 							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
 						}
-						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 3);
+						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 2.5);
 						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
 						if (k > 0) {
 							abstractarrow.setKnockback(k);
