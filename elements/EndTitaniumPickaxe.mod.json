@@ -23,7 +23,10 @@
     "attackSpeed": 1.2,
     "enchantability": 18,
     "damageVsEntity": 8.0,
-    "usageCount": 2700,
+    "usageCount": 3200,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:EndTitaniumIngot"

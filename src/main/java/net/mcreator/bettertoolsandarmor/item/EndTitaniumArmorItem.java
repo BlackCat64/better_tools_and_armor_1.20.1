@@ -29,7 +29,7 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 50;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 60;
 			}
 
 			@Override

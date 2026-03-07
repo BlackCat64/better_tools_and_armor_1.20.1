@@ -20,7 +20,7 @@ public class EndTitaniumDaggerItem extends SwordItem {
 	public EndTitaniumDaggerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2025;
+				return 2400;
 			}
 
 			public float getSpeed() {

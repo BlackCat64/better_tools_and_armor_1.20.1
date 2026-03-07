@@ -18,7 +18,7 @@ public class EndTitaniumAxeItem extends AxeItem {
 	public EndTitaniumAxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2700;
+				return 3200;
 			}
 
 			public float getSpeed() {

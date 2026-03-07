@@ -18,7 +18,7 @@ public class EndTitaniumShovelItem extends ShovelItem {
 	public EndTitaniumShovelItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2700;
+				return 3200;
 			}
 
 			public float getSpeed() {
