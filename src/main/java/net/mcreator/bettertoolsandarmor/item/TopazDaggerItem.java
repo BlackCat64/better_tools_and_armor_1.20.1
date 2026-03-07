@@ -18,7 +18,7 @@ public class TopazDaggerItem extends SwordItem {
 	public TopazDaggerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 600;
+				return 450;
 			}
 
 			public float getSpeed() {

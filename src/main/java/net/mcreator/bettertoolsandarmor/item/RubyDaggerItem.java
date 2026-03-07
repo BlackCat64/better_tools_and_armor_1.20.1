@@ -16,7 +16,7 @@ public class RubyDaggerItem extends SwordItem {
 	public RubyDaggerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 300;
+				return 225;
 			}
 
 			public float getSpeed() {
