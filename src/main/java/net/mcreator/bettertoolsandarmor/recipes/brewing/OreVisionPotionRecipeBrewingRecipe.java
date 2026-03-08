@@ -26,7 +26,7 @@ public class OreVisionPotionRecipeBrewingRecipe implements IBrewingRecipe {
 	@Override
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && PotionUtils.getPotion(input) == Potions.NIGHT_VISION;
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && PotionUtils.getPotion(input) == Potions.AWKWARD;
 	}
 
 	@Override

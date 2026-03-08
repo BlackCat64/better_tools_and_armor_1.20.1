@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:NIGHT_VISION"
+      "value": "POTION:AWKWARD"
     },
     "brewingIngredientStack": {
       "value": "Items.AMETHYST_SHARD"

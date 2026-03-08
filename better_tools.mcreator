@@ -34222,19 +34222,6 @@
       "path": "~/Ore Vision Effect"
     },
     {
-      "name": "OreVisionPotionLongRecipeFromNightVision",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_vision_potion_long_recipe_from_night_vision",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/recipes/brewing/OreVisionPotionLongRecipeFromNightVisionBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Ore Vision Effect"
-    },
-    {
       "name": "OreVisionPotionLongReverseRecipe",
       "type": "recipe",
       "compiles": true,
