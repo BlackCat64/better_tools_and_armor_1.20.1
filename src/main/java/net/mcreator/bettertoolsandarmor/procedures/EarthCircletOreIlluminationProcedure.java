@@ -50,6 +50,7 @@ public class EarthCircletOreIlluminationProcedure {
 		double block_x = 0;
 		double block_y = 0;
 		double block_z = 0;
+		double radius = 0;
 		if (((entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false == true)
 				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
 				|| entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(BetterToolsModMobEffects.ORE_VISION.get()))
@@ -61,12 +62,13 @@ public class EarthCircletOreIlluminationProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			sx = -16;
-			for (int index0 = 0; index0 < 32; index0++) {
-				sy = -16;
-				for (int index1 = 0; index1 < 32; index1++) {
-					sz = -16;
-					for (int index2 = 0; index2 < 32; index2++) {
+			radius = 32;
+			sx = radius * (-1);
+			for (int index0 = 0; index0 < (int) (radius * 2); index0++) {
+				sy = radius * (-1);
+				for (int index1 = 0; index1 < (int) (radius * 2); index1++) {
+					sz = radius * (-1);
+					for (int index2 = 0; index2 < (int) (radius * 2); index2++) {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
 							block_x = Math.floor(x) + sx + 0.5;
 							block_y = Math.floor(y) + sy + 0.5;

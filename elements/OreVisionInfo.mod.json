@@ -1,0 +1,18 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:AmethystHelmet.helmet"
+      },
+      {
+        "value": "CUSTOM:EarthCirclet"
+      }
+    ],
+    "information": [
+      "§lOre Vision Effect§r",
+      "Displays particles on all ores within a 32 block radius"
+    ]
+  }
+}

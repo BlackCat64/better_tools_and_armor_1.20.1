@@ -369,5 +369,6 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 						new ItemStack(BetterToolsModBlocks.POLISHED_GOLD_WALL.get()), new ItemStack(BetterToolsModBlocks.LIGHT_POLISHED_GOLD_WALL.get()), new ItemStack(BetterToolsModBlocks.POLISHED_NETHER_DIAMOND_WALL.get()),
 						new ItemStack(BetterToolsModBlocks.LIGHT_POLISHED_NETHER_DIAMOND_WALL.get()), new ItemStack(BetterToolsModBlocks.POLISHED_AMETHYST_WALL.get()), new ItemStack(BetterToolsModBlocks.LIGHT_POLISHED_AMETHYST_WALL.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.metal_blocks_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.AMETHYST_HELMET.get()), new ItemStack(BetterToolsModItems.EARTH_CIRCLET.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.ore_vision_info"));
 	}
 }

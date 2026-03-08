@@ -157,6 +157,7 @@
   "advancements.night_phantom_adv.descr": "Gain effects from wearing both a Golden Carrot Hat and Phantom Boots at the same time",
   "death.attack.magic_weapon_damage.player": "%1$s was killed whilst trying to escape %2$s",
   "item.better_tools.crystallite_bow_prismarine": "Crystallite Bow",
+  "jei.better_tools.ore_vision_info": "§lOre Vision Effect§r\nDisplays particles on all ores within a 16 block radius",
   "advancements.all_diamond_effect_armor_adv.title": "Effect Emperor",
   "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
   "advancements.enchanted_staff_adv.descr": "Enchant a Magic Staff with both Ensorcellation and Swift Cast",
