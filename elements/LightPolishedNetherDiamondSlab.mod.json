@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Light Metallic Nether Diamond Slab",
+    "name": "Pink Metal Slab",
     "specialInformation": {
-      "fixedValue": [
-        "§dPink Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

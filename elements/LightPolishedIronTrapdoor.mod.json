@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Polished Iron Trapdoor",
+    "name": "White Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§fWhite Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

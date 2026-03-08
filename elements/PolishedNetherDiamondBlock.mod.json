@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Metallic Nether Diamond Block",
+    "name": "Dark Pink Metal Block",
     "specialInformation": {
-      "fixedValue": [
-        "§cDark Pink Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

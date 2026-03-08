@@ -1,0 +1,20 @@
+Polished Iron	White Metal
+Dark Polished Iron	Light Gray Metal
+Light Metallic Coal	Gray Metal
+Dark Metallic Coal	Black Metal
+Metallic Ruby	Dark Red Metal
+Metallic Redstone	Red Metal
+Metallic Nether Diamond	Dark Pink Metal
+Light Metallic Nether Diamond	Pink Metal
+Light Metallic Amethyst	Magenta Metal
+Metallic Amethyst	Purple Metal
+Metallic Lapis Lazuli	Blue Metal
+Light Metallic Lapis Lazuli	Cyan Metal
+Metallic Diamond	Light Blue Metal
+Metallic Emerald	Lime Metal
+Dark Metallic Emerald	Green Metal
+Dark Polished Copper	Brown Metal
+Polished Copper	Dark Orange Metal
+Metallic Topaz	Orange Metal
+Polished Gold	Yellow Metal
+Light Polished Gold	Cream Metal

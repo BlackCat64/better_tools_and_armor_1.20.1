@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Dark Polished Iron Wall",
+    "name": "Light Gray Metal Wall",
     "specialInformation": {
-      "fixedValue": [
-        "§7Light Gray Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
@@ -57,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

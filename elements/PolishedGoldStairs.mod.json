@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Polished Gold Stairs",
+    "name": "Yellow Metal Stairs",
     "specialInformation": {
-      "fixedValue": [
-        "§eYellow Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
@@ -57,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

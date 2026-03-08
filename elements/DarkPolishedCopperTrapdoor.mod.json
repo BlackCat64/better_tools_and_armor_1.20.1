@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Dark Polished Copper Trapdoor",
+    "name": "Brown Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§6Brown Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

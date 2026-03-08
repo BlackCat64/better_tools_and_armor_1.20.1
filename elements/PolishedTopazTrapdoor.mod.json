@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Metallic Topaz Trapdoor",
+    "name": "Orange Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§6Orange Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

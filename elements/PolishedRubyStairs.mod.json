@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Metallic Ruby Stairs",
+    "name": "Dark Red Metal Stairs",
     "specialInformation": {
-      "fixedValue": [
-        "§cDark Red Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
@@ -57,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

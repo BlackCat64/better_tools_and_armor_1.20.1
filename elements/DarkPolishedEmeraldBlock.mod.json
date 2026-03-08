@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Dark Metallic Emerald Block",
+    "name": "Green Metal Block",
     "specialInformation": {
-      "fixedValue": [
-        "§2Dark Green Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
@@ -56,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

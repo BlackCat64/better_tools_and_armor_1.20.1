@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Light Metallic Nether Diamond Trapdoor",
+    "name": "Pink Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§dPink Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

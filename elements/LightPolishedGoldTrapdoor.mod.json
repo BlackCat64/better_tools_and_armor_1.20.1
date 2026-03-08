@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Light Polished Gold Trapdoor",
+    "name": "Cream Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§eCream Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

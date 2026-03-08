@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Dark Metallic Emerald Stairs",
+    "name": "Green Metal Stairs",
     "specialInformation": {
-      "fixedValue": [
-        "§2Dark Green Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
@@ -57,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,

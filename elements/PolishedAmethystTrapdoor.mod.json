@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Metallic Amethyst Trapdoor",
+    "name": "Purple Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§5Purple Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,

@@ -34,11 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Dark Metallic Emerald Trapdoor",
+    "name": "Green Metal Trapdoor",
     "specialInformation": {
-      "fixedValue": [
-        "§2Dark Green Metallic Building Block"
-      ]
+      "fixedValue": []
     },
     "hardness": 2.5,
     "resistance": 6.0,
