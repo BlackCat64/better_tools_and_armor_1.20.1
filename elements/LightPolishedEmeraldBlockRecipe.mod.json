@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 32,
+    "recipeRetstackSize": 8,
     "group": "light_polished_emerald_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Blocks.EMERALD_BLOCK"
+        "value": "Items.DYE#10"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       }
     ],
     "recipeReturnStack": {

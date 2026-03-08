@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
         "value": "Items.DYE#8"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
+        "value": "TAG:better_tools:metal_blocks"
       }
     ],
     "recipeReturnStack": {

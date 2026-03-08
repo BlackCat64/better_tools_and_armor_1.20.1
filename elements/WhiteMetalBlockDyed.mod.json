@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 8,
-    "group": "light_polished_amethyst_block",
+    "group": "white_metal_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -24,7 +24,7 @@
         "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.DYE#13"
+        "value": "Items.DYE#19"
       },
       {
         "value": "TAG:better_tools:metal_blocks"
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LightPolishedAmethystBlock"
+      "value": "CUSTOM:LightPolishedIronBlock"
     },
-    "name": "light_polished_amethyst_block_recipe",
+    "name": "white_metal_block_dyed",
     "namespace": "mod"
   }
 }

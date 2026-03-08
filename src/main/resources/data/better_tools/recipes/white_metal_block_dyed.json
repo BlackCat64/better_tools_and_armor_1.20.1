@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "light_polished_amethyst_block",
+  "group": "white_metal_block",
   "category": "misc",
   "pattern": [
     "aaa",
@@ -9,14 +9,14 @@
   ],
   "key": {
     "a": {
-      "item": "better_tools:polished_amethyst_block"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:magenta_dye"
+      "item": "minecraft:white_dye"
     }
   },
   "result": {
-    "item": "better_tools:light_polished_amethyst_block",
+    "item": "better_tools:light_polished_iron_block",
     "count": 8
   }
 }

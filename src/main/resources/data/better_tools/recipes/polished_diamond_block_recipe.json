@@ -9,14 +9,14 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:light_blue_dye"
     }
   },
   "result": {
     "item": "better_tools:polished_diamond_block",
-    "count": 48
+    "count": 8
   }
 }

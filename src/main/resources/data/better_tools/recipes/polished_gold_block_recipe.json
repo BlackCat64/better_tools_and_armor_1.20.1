@@ -1,9 +1,22 @@
 {
-  "type": "minecraft:stonecutting",
+  "type": "minecraft:crafting_shaped",
   "group": "polished_gold_block",
-  "count": 32,
-  "ingredient": {
-    "item": "minecraft:gold_block"
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "better_tools:metal_blocks"
+    },
+    "b": {
+      "item": "minecraft:yellow_dye"
+    }
   },
-  "result": "better_tools:polished_gold_block"
+  "result": {
+    "item": "better_tools:polished_gold_block",
+    "count": 8
+  }
 }

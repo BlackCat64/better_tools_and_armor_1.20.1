@@ -2,18 +2,44 @@
   "_fv": 66,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Stone cutting",
-    "recipeRetstackSize": 12,
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
     "group": "light_polished_copper_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "Blocks.WAXED_COPPER_BLOCK"
-    },
-    "stoneCuttingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#17"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:LightPolishedCopperBlock"
     },
     "name": "light_polished_copper_block_recipe",

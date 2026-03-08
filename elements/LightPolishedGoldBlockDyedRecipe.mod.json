@@ -12,19 +12,19 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:PolishedGoldBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedGoldBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedGoldBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedGoldBlock"
-      },
-      {
         "value": "Items.DYE#19"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
       },
       {
         "value": "CUSTOM:PolishedGoldBlock"

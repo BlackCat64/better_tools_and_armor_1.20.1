@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 12,
+    "recipeRetstackSize": 8,
     "group": "polished_amethyst_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "Items.DYE#5"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       }
     ],
     "recipeReturnStack": {

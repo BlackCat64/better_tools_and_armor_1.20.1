@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 32,
+    "recipeRetstackSize": 8,
     "group": "polished_ruby_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.DYE#16"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "CUSTOM:RubyBlock"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:PolishedRedstoneBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:PolishedRedstoneBlock"
       }
     ],
     "recipeReturnStack": {

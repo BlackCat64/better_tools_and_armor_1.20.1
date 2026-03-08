@@ -2,18 +2,44 @@
   "_fv": 66,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Stone cutting",
-    "recipeRetstackSize": 32,
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
     "group": "polished_gold_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "Blocks.GOLD_BLOCK"
-    },
-    "stoneCuttingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "Items.DYE#11"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      },
+      {
+        "value": "TAG:better_tools:metal_blocks"
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:PolishedGoldBlock"
     },
     "name": "polished_gold_block_recipe",

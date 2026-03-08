@@ -11035,19 +11035,6 @@
       "path": "~/Polished Gem Blocks/Gray"
     },
     {
-      "name": "LightPolishedCoalBlockRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_polished_coal_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/light_polished_coal_block_recipe.json"
-        ]
-      },
-      "path": "~/Polished Gem Blocks/Gray"
-    },
-    {
       "name": "LightPolishedCoalBlockDyedRecipe",
       "type": "recipe",
       "compiles": true,
@@ -11523,19 +11510,6 @@
           "src/main/resources/data/better_tools/loot_tables/blocks/light_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/models/item/light_polished_lapis_block.json",
           "src/main/resources/assets/better_tools/blockstates/light_polished_lapis_block.json"
-        ]
-      },
-      "path": "~/Polished Gem Blocks/Cyan"
-    },
-    {
-      "name": "LightPolishedLapisBlockRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_polished_lapis_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/light_polished_lapis_block_recipe.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Cyan"
@@ -13229,19 +13203,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipes/light_polished_amethyst_block_recipe.json"
-        ]
-      },
-      "path": "~/Polished Gem Blocks/Magenta"
-    },
-    {
-      "name": "LightPolishedAmethystBlockDyedRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_polished_amethyst_block_dyed_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipes/light_polished_amethyst_block_dyed_recipe.json"
         ]
       },
       "path": "~/Polished Gem Blocks/Magenta"
@@ -34513,6 +34474,30 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/CustomCreativeTabItems.java"
         ]
       }
+    },
+    {
+      "name": "WhiteMetalBlockDyed",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_metal_block_dyed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/white_metal_block_dyed.json"
+        ]
+      },
+      "path": "~/Polished Gem Blocks/White"
+    },
+    {
+      "name": "MetalBlocksInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_blocks_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Polished Gem Blocks"
     }
   ],
   "variable_elements": [
@@ -35227,9 +35212,11 @@
       "CUSTOM:PolishedRedstoneTrapdoor",
       "CUSTOM:PolishedRubyTrapdoor",
       "CUSTOM:LightPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
       "CUSTOM:PolishedTopazTrapdoor",
       "CUSTOM:PolishedGoldTrapdoor",
       "CUSTOM:LightPolishedGoldTrapdoor",
+      "CUSTOM:PolishedNetherDiamondTrapdoor",
       "CUSTOM:LightPolishedNetherDiamondTrapdoor",
       "CUSTOM:PolishedAmethystTrapdoor",
       "CUSTOM:LightPolishedAmethystTrapdoor",
@@ -35244,6 +35231,7 @@
       "CUSTOM:DarkPolishedEmeraldWall",
       "CUSTOM:PolishedRedstoneWall",
       "CUSTOM:PolishedRubyWall",
+      "CUSTOM:LightPolishedCopperWall",
       "CUSTOM:DarkPolishedCopperWall",
       "CUSTOM:PolishedTopazWall",
       "CUSTOM:PolishedGoldWall",
@@ -36243,6 +36231,28 @@
       "CUSTOM:MagmaBody.body",
       "CUSTOM:DiamondMagmaBody.body"
     ],
+    "ITEMS:mod:metal_blocks": [
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:LightPolishedCoalBlock",
+      "CUSTOM:LightPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:LightPolishedLapisBlock",
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:DarkPolishedEmeraldBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRubyBlock",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:DarkPolishedCopperBlock",
+      "CUSTOM:PolishedTopazBlock",
+      "CUSTOM:PolishedGoldBlock",
+      "CUSTOM:LightPolishedGoldBlock",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:LightPolishedAmethystBlock"
+    ],
     "ITEMS:mod:emerald_upgraded_crystallite_items": [
       "CUSTOM:NatureCrystal",
       "CUSTOM:CrystalliteSwordEmerald",
@@ -36986,6 +36996,108 @@
       "CUSTOM:CrystalliteArmorHoney.body",
       "CUSTOM:CrystalliteArmorHoney.legs",
       "CUSTOM:CrystalliteArmorHoney.boots"
+    ],
+    "ITEMS:mod:metallic_building_blocks": [
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalSlab",
+      "CUSTOM:DarkPolishedCoalStairs",
+      "CUSTOM:LightPolishedCoalBlock",
+      "CUSTOM:LightPolishedCoalSlab",
+      "CUSTOM:LightPolishedCoalStairs",
+      "CUSTOM:LightPolishedIronBlock",
+      "CUSTOM:LightPolishedIronSlab",
+      "CUSTOM:LightPolishedIronStairs",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronSlab",
+      "CUSTOM:DarkPolishedIronStairs",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisSlab",
+      "CUSTOM:DarkPolishedLapisStairs",
+      "CUSTOM:LightPolishedLapisBlock",
+      "CUSTOM:LightPolishedLapisSlab",
+      "CUSTOM:LightPolishedLapisStairs",
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondSlab",
+      "CUSTOM:PolishedDiamondStairs",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldSlab",
+      "CUSTOM:LightPolishedEmeraldStairs",
+      "CUSTOM:DarkPolishedEmeraldBlock",
+      "CUSTOM:DarkPolishedEmeraldSlab",
+      "CUSTOM:DarkPolishedEmeraldStairs",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneSlab",
+      "CUSTOM:PolishedRedstoneStairs",
+      "CUSTOM:PolishedRubyBlock",
+      "CUSTOM:PolishedRubySlab",
+      "CUSTOM:PolishedRubyStairs",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperSlab",
+      "CUSTOM:LightPolishedCopperStairs",
+      "CUSTOM:DarkPolishedCopperBlock",
+      "CUSTOM:DarkPolishedCopperSlab",
+      "CUSTOM:DarkPolishedCopperStairs",
+      "CUSTOM:PolishedTopazBlock",
+      "CUSTOM:PolishedTopazSlab",
+      "CUSTOM:PolishedTopazStairs",
+      "CUSTOM:PolishedGoldBlock",
+      "CUSTOM:PolishedGoldSlab",
+      "CUSTOM:PolishedGoldStairs",
+      "CUSTOM:LightPolishedGoldBlock",
+      "CUSTOM:LightPolishedGoldSlab",
+      "CUSTOM:LightPolishedGoldStairs",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "CUSTOM:PolishedNetherDiamondSlab",
+      "CUSTOM:PolishedNetherDiamondStairs",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondSlab",
+      "CUSTOM:LightPolishedNetherDiamondStairs",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystSlab",
+      "CUSTOM:PolishedAmethystStairs",
+      "CUSTOM:LightPolishedAmethystBlock",
+      "CUSTOM:LightPolishedAmethystSlab",
+      "CUSTOM:LightPolishedAmethystStairs",
+      "CUSTOM:DarkPolishedCoalTrapdoor",
+      "CUSTOM:LightPolishedCoalTrapdoor",
+      "CUSTOM:DarkPolishedIronTrapdoor",
+      "CUSTOM:LightPolishedIronTrapdoor",
+      "CUSTOM:DarkPolishedLapisTrapdoor",
+      "CUSTOM:LightPolishedLapisTrapdoor",
+      "CUSTOM:PolishedDiamondTrapdoor",
+      "CUSTOM:LightPolishedEmeraldTrapdoor",
+      "CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "CUSTOM:PolishedRedstoneTrapdoor",
+      "CUSTOM:PolishedRubyTrapdoor",
+      "CUSTOM:LightPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
+      "CUSTOM:PolishedTopazTrapdoor",
+      "CUSTOM:PolishedGoldTrapdoor",
+      "CUSTOM:LightPolishedGoldTrapdoor",
+      "CUSTOM:PolishedNetherDiamondTrapdoor",
+      "CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "CUSTOM:PolishedAmethystTrapdoor",
+      "CUSTOM:LightPolishedAmethystTrapdoor",
+      "CUSTOM:DarkPolishedCoalWall",
+      "CUSTOM:LightPolishedCoalWall",
+      "CUSTOM:DarkPolishedIronWall",
+      "CUSTOM:LightPolishedIronWall",
+      "CUSTOM:DarkPolishedLapisWall",
+      "CUSTOM:LightPolishedLapisWall",
+      "CUSTOM:PolishedDiamondWall",
+      "CUSTOM:LightPolishedEmeraldWall",
+      "CUSTOM:DarkPolishedEmeraldWall",
+      "CUSTOM:PolishedRedstoneWall",
+      "CUSTOM:PolishedRubyWall",
+      "CUSTOM:LightPolishedCopperWall",
+      "CUSTOM:DarkPolishedCopperWall",
+      "CUSTOM:PolishedTopazWall",
+      "CUSTOM:PolishedGoldWall",
+      "CUSTOM:LightPolishedGoldWall",
+      "CUSTOM:PolishedNetherDiamondWall",
+      "CUSTOM:LightPolishedNetherDiamondWall",
+      "CUSTOM:PolishedAmethystWall",
+      "CUSTOM:LightPolishedAmethystWall"
     ],
     "ITEMS:mod:honey_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordHoney",
@@ -37924,6 +38036,7 @@
       "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
       "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",
       "item.better_tools.crystallite_dagger": "Crystallite Dagger",
+      "jei.better_tools.metal_blocks_info": "To use Metal Blocks, first use a Stonecutter to make White Metal Blocks, then dye them into your desired colour.",
       "enchantment.better_tools.thunder_shot": "Thunder Shot",
       "block.better_tools.orange_metal_sign": "Orange Metal Sign",
       "death.attack.armor_thorns": "%1$s was pricked to death while trying to hurt %2$s",

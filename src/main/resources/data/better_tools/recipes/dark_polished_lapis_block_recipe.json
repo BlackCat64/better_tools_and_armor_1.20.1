@@ -3,20 +3,20 @@
   "group": "dark_polished_lapis_block",
   "category": "misc",
   "pattern": [
-    " a ",
+    "aaa",
     "aba",
-    " a "
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:lapis_block"
+      "item": "minecraft:blue_dye"
     }
   },
   "result": {
     "item": "better_tools:dark_polished_lapis_block",
-    "count": 24
+    "count": 8
   }
 }

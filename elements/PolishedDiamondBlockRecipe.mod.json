@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 48,
+    "recipeRetstackSize": 8,
     "group": "polished_diamond_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "Items.DYE#12"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       }
     ],
     "recipeReturnStack": {

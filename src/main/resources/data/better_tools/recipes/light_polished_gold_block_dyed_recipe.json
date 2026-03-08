@@ -3,16 +3,16 @@
   "group": "light_polished_gold_block",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
+    "abb",
+    "bbb",
+    "bbb"
   ],
   "key": {
     "a": {
-      "item": "better_tools:polished_gold_block"
+      "item": "minecraft:white_dye"
     },
     "b": {
-      "item": "minecraft:white_dye"
+      "item": "better_tools:polished_gold_block"
     }
   },
   "result": {

@@ -3,20 +3,20 @@
   "group": "light_polished_emerald_block",
   "category": "misc",
   "pattern": [
-    "aa ",
+    "aaa",
     "aba",
-    " aa"
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:emerald_block"
+      "item": "minecraft:lime_dye"
     }
   },
   "result": {
     "item": "better_tools:light_polished_emerald_block",
-    "count": 32
+    "count": 8
   }
 }

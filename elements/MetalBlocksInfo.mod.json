@@ -1,0 +1,311 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:DarkPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedRubySlab"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperBlock"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperSlab"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondStairs"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystSlab"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystStairs"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystBlock"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystSlab"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystStairs"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondTrapdoor"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystTrapdoor"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystTrapdoor"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCoalWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCoalWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedIronWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedIronWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedLapisWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedLapisWall"
+      },
+      {
+        "value": "CUSTOM:PolishedDiamondWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedEmeraldWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedEmeraldWall"
+      },
+      {
+        "value": "CUSTOM:PolishedRedstoneWall"
+      },
+      {
+        "value": "CUSTOM:PolishedRubyWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedCopperWall"
+      },
+      {
+        "value": "CUSTOM:DarkPolishedCopperWall"
+      },
+      {
+        "value": "CUSTOM:PolishedTopazWall"
+      },
+      {
+        "value": "CUSTOM:PolishedGoldWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedGoldWall"
+      },
+      {
+        "value": "CUSTOM:PolishedNetherDiamondWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedNetherDiamondWall"
+      },
+      {
+        "value": "CUSTOM:PolishedAmethystWall"
+      },
+      {
+        "value": "CUSTOM:LightPolishedAmethystWall"
+      }
+    ],
+    "information": [
+      "To use Metal Blocks, first use a Stonecutter to make White Metal Blocks, then dye them into your desired colour."
+    ]
+  }
+}

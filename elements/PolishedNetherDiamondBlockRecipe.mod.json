@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 48,
+    "recipeRetstackSize": 8,
     "group": "polished_nether_diamond_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Items.DYE#1"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "CUSTOM:NetherDiamond"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
       }
     ],
     "recipeReturnStack": {

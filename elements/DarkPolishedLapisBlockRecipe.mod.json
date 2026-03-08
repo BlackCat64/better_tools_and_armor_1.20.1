@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 24,
+    "recipeRetstackSize": 8,
     "group": "dark_polished_lapis_block",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Blocks.LAPIS_BLOCK"
+        "value": "Items.DYE#18"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "TAG:better_tools:metal_blocks"
       },
       {
-        "value": ""
+        "value": "TAG:better_tools:metal_blocks"
       }
     ],
     "recipeReturnStack": {

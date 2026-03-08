@@ -3,23 +3,20 @@
   "group": "light_polished_amethyst_block",
   "category": "misc",
   "pattern": [
-    "abc",
-    "b b",
-    "cba"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:magenta_dye"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:amethyst_block"
-    },
-    "c": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:magenta_dye"
     }
   },
   "result": {
     "item": "better_tools:light_polished_amethyst_block",
-    "count": 12
+    "count": 8
   }
 }

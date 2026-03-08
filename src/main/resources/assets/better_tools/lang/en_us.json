@@ -403,6 +403,7 @@
   "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
   "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",
   "item.better_tools.crystallite_dagger": "Crystallite Dagger",
+  "jei.better_tools.metal_blocks_info": "To use Metal Blocks, first use a Stonecutter to make White Metal Blocks, then dye them into your desired colour.",
   "enchantment.better_tools.thunder_shot": "Thunder Shot",
   "block.better_tools.orange_metal_sign": "Orange Metal Sign",
   "death.attack.armor_thorns": "%1$s was pricked to death while trying to hurt %2$s",

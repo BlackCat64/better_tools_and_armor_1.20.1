@@ -3,20 +3,20 @@
   "group": "polished_topaz_block",
   "category": "misc",
   "pattern": [
-    " aa",
+    "aaa",
     "aba",
-    "aa "
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "better_tools:topaz_block"
+      "item": "minecraft:orange_dye"
     }
   },
   "result": {
     "item": "better_tools:polished_topaz_block",
-    "count": 32
+    "count": 8
   }
 }

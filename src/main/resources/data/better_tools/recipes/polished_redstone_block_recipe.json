@@ -3,20 +3,20 @@
   "group": "polished_redstone_block",
   "category": "misc",
   "pattern": [
-    " a ",
+    "aaa",
     "aba",
-    " a "
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "tag": "better_tools:metal_blocks"
     },
     "b": {
-      "item": "minecraft:redstone_block"
+      "item": "minecraft:red_dye"
     }
   },
   "result": {
     "item": "better_tools:polished_redstone_block",
-    "count": 24
+    "count": 8
   }
 }
