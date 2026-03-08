@@ -62,7 +62,7 @@ public class EarthCircletOreIlluminationProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			radius = 32;
+			radius = 24;
 			sx = radius * (-1);
 			for (int index0 = 0; index0 < (int) (radius * 2); index0++) {
 				sy = radius * (-1);
