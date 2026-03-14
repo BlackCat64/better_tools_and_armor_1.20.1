@@ -31,8 +31,8 @@ public class XpPickupTrackerProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES) && sourceentity.hasPermissions(2) && sourceentity instanceof Player) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("##.##").format(droppedexperience) + " XP dropped by " + entity.getDisplayName().getString())), false);
+			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(droppedexperience) + " XP dropped by " + entity.getDisplayName().getString())), false);
 		}
 	}
 }

@@ -34,11 +34,10 @@ public class DamageTrackerProcedure {
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_DAMAGE_VALUES) && sourceentity.hasPermissions(2) && sourceentity instanceof Player
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList()
-						.broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("##.##").format(amount) + " damage dealt to " + entity.getDisplayName().getString() + " ("
-								+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) + "/"
-								+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) + ")")), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(amount) + " damage dealt to " + entity.getDisplayName().getString() + " ("
+						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) + "/"
+						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) + ")")), false);
 		}
 		if (entity instanceof Player) {
 			{

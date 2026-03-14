@@ -36,6 +36,9 @@
     "minecraft:golden_helmet",
     "minecraft:diamond_helmet",
     "minecraft:netherite_helmet",
-    "better_tools:crystallite_armor_honey_helmet"
+    "better_tools:crystallite_armor_honey_helmet",
+    "better_tools:wooden_helmet",
+    "better_tools:amethyst_helmet",
+    "better_tools:honeycomb_helmet"
   ]
 }

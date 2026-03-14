@@ -24,6 +24,13 @@
     "#better_tools:effect_armor",
     "#better_tools:cactus_shirts",
     "#better_tools:crying_obsidian_helmets",
-    "better_tools:winged_boots_boots"
+    "better_tools:winged_boots_boots",
+    "better_tools:wooden_helmet",
+    "better_tools:wooden_chestplate",
+    "better_tools:wooden_leggings",
+    "better_tools:wooden_boots",
+    "better_tools:amethyst_helmet",
+    "better_tools:dripstone_boots",
+    "better_tools:honeycomb_helmet"
   ]
 }

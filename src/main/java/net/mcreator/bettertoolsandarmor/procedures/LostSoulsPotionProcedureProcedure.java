@@ -53,22 +53,12 @@ public class LostSoulsPotionProcedureProcedure {
 		}
 		if ((death_dimension).isEmpty()) {
 			valid_spawn = false;
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cNo previous death location found\"");
-				}
-			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("\u00A7cNo previous death location found"), true);
 		} else if (!("ResourceKey[minecraft:dimension / " + death_dimension + "]").equals("" + entity.level().dimension())) {
 			valid_spawn = false;
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cLast death location is in a different dimension\"");
-				}
-			}
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("\u00A7cLast death location is in a different dimension"), true);
 		} else if (IsLocationSafeProcedure.execute(world, death_x, death_y, death_z) && death_y > void_height) {
 			{
 				Entity _ent = entity;
@@ -86,13 +76,8 @@ public class LostSoulsPotionProcedureProcedure {
 		} else {
 			safe_y = FindSafeSpawnLocationProcedure.execute(world, death_x, death_y, death_z, death_dimension);
 			if (safe_y != death_y) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cYour death location was not safe, so you have been placed directly above/below\"");
-					}
-				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7cYour death location was not safe, so you have been placed directly above/below"), true);
 			}
 			if (safe_y >= void_height) {
 				death_y = safe_y;
@@ -121,13 +106,8 @@ public class LostSoulsPotionProcedureProcedure {
 							"fill ~-1 ~ ~-1 ~1 ~1 ~1 air destroy");
 			} else if (safe_y < void_height) {
 				valid_spawn = false;
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "title @s actionbar \"\u00A7cCould not find a safe location to teleport to\"");
-					}
-				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7cCould not find a safe location to teleport to"), true);
 			} else {
 				{
 					Entity _ent = entity;

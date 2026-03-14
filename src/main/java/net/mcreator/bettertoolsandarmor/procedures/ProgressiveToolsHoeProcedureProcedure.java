@@ -16,12 +16,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import javax.annotation.Nullable;
 
@@ -64,22 +62,12 @@ public class ProgressiveToolsHoeProcedureProcedure {
 				hoe.getOrCreateTag().putDouble("blocks_mined", (hoe.getOrCreateTag().getDouble("blocks_mined") + 1));
 				if (!(ForgeRegistries.ITEMS.getKey(hoe.getItem()).toString()).endsWith("_upgrade_2") && hoe.getOrCreateTag().getDouble("blocks_mined") >= threshold_2) {
 					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_2")).toLowerCase(java.util.Locale.ENGLISH))));
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("title @s actionbar \"\u00A7c" + "" + hoe.getDisplayName().getString() + " upgraded to Max Level\""));
-						}
-					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("\u00A7c" + hoe.getDisplayName().getString() + " upgraded to Max Level")), true);
 				} else if (!(ForgeRegistries.ITEMS.getKey(hoe.getItem()).toString()).contains("_upgrade_") && hoe.getOrCreateTag().getDouble("blocks_mined") >= threshold_1) {
 					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_1")).toLowerCase(java.util.Locale.ENGLISH))));
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("title @s actionbar \"\u00A7c" + "" + hoe.getDisplayName().getString() + " upgraded to Level 1\""));
-						}
-					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("\u00A7c" + hoe.getDisplayName().getString() + " upgraded to Level 1")), true);
 				}
 				if (new_pickaxe.is(ItemTags.create(new ResourceLocation("better_tools:progressive_tools")))) {
 					{

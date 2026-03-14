@@ -40,6 +40,8 @@
     "minecraft:golden_boots",
     "minecraft:diamond_boots",
     "minecraft:netherite_boots",
-    "better_tools:crystallite_armor_honey_boots"
+    "better_tools:crystallite_armor_honey_boots",
+    "better_tools:wooden_boots",
+    "better_tools:dripstone_boots"
   ]
 }
