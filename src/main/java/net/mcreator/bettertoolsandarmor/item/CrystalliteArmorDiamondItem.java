@@ -26,7 +26,7 @@ public abstract class CrystalliteArmorDiamondItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 70;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 80;
 			}
 
 			@Override

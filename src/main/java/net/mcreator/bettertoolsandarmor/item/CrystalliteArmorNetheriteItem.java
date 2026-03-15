@@ -26,7 +26,7 @@ public abstract class CrystalliteArmorNetheriteItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 44;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 50;
 			}
 
 			@Override

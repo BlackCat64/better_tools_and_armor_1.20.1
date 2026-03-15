@@ -108,7 +108,7 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 44,
+    "maxDamage": 50,
     "damageValueHelmet": 5,
     "damageValueBody": 8,
     "damageValueLeggings": 7,
