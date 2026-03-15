@@ -41,9 +41,9 @@ public class MagicRingProcedureProcedure {
 			amount = Math.round(0.2 * droppedexperience);
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) amount));
-			if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("+" + new java.text.DecimalFormat("##.##").format(amount) + " XP from Magic Ring")), false);
+			if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES) && sourceentity.hasPermissions(2)) {
+				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("+" + new java.text.DecimalFormat("##.##").format(amount) + " XP from Magic Ring")), false);
 			}
 		}
 	}

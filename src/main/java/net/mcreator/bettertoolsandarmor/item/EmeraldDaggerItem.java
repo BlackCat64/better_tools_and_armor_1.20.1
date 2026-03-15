@@ -33,7 +33,7 @@ public class EmeraldDaggerItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 10;
+				return 6;
 			}
 
 			public Ingredient getRepairIngredient() {

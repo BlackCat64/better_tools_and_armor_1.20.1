@@ -38,9 +38,9 @@ public class CrystalliteBowLapisXPDropsProcedure {
 			if (distance >= 5) {
 				if (world instanceof ServerLevel _level)
 					_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + 1), (z + Math.random()), (int) Math.floor(distance)));
-				if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES)) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("#").format(Math.floor(distance)) + " XP dropped by " + entity.getDisplayName().getString())), false);
+				if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_XP_DROP_VALUES) && sourceentity.hasPermissions(2)) {
+					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("#").format(Math.floor(distance)) + " XP dropped by " + entity.getDisplayName().getString())), false);
 				}
 			}
 		}
