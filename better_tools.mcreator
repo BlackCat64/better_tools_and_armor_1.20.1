@@ -23447,18 +23447,6 @@
       }
     },
     {
-      "name": "ModifyAncientCityLoot",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modify_ancient_city_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/modify_ancient_city_loot.json"
-        ]
-      }
-    },
-    {
       "name": "DungeonTreasureLoot",
       "type": "loottable",
       "compiles": true,
@@ -23467,18 +23455,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/chests/dungeon.json"
-        ]
-      }
-    },
-    {
-      "name": "ModifyDungeonLoot",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modify_dungeon_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/modify_dungeon_loot.json"
         ]
       }
     },
@@ -23495,18 +23471,6 @@
       }
     },
     {
-      "name": "ModifyMineshaftLoot",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modify_mineshaft_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/modify_mineshaft_loot.json"
-        ]
-      }
-    },
-    {
       "name": "CharmBaseTreasure",
       "type": "loottable",
       "compiles": true,
@@ -23515,71 +23479,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/chests/crystallite_charm_base_treasure.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmBaseInDesertTemple",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_base_in_desert_temple",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_desert_temple.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmBaseInJungleTemple",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_base_in_jungle_temple",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_jungle_temple.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmBaseInWoodlandMansion",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_base_in_woodland_mansion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_woodland_mansion.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmBaseInShipwreck",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_base_in_shipwreck",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_shipwreck.json"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CharmBaseInBastionTreasure",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_base_in_bastion_treasure",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_bastion_treasure.json"
         ]
       },
       "path": "~/Crystallite"
@@ -23693,19 +23592,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/chests/end_city.json"
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
-      "name": "EndCityLootModifier",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_city_loot_modifier",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/end_city_loot_modifier.json"
         ]
       },
       "path": "~/Ender Titanium"
@@ -25925,18 +25811,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/loot_tables/inject/monster_box.json"
-        ]
-      }
-    },
-    {
-      "name": "ModifyQuarkMonsterBoxLoot",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modify_quark_monster_box_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/modify_quark_monster_box_loot.json"
         ]
       }
     },
@@ -33702,23 +33576,12 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:forge:ores_in_ground/end_stone": [
-      "CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:mod:smelting_touch_tools": [
       "CUSTOM:CrystallitePickaxeNetherDiamond",
       "CUSTOM:NetherDiamondPickaxe"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
-    ],
-    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
-      "CUSTOM:KarmaCurseDamage",
-      "CUSTOM:KarmaDamage",
-      "CUSTOM:PoisonMushroomDamage"
+    "ITEMS:forge:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
     ],
     "ITEMS:curios:charm": [
       "CUSTOM:HeartCharm",
@@ -33727,6 +33590,17 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
+      "CUSTOM:KarmaCurseDamage",
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:PoisonMushroomDamage"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -33769,14 +33643,14 @@
       "Blocks.SCULK_VEIN",
       "Blocks.SCULK_SHRIEKER"
     ],
-    "ITEMS:mod:plant_clearance_tools": [
-      "CUSTOM:CrystalliteShovelSapphire",
-      "CUSTOM:CrystalliteHoeSapphire"
-    ],
     "ITEMS:mod:combo_mining_tools": [
       "CUSTOM:CrystallitePickaxeHoney",
       "CUSTOM:CrystalliteAxeHoney",
       "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:mod:plant_clearance_tools": [
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteHoeSapphire"
     ],
     "ITEMS:mod:sky_upgraded_crystallite_items": [
       "CUSTOM:SkyCrystal",
@@ -36578,11 +36452,11 @@
   },
   "language_map": {
     "en_us": {
-      "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "item.better_tools.curing_charm": "§6Curing Charm",
-      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.ruby": "Ruby",
       "block.better_tools.light_polished_coal_trapdoor": "Gray Metal Trapdoor",
+      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.curing_charm": "§6Curing Charm",
       "item.better_tools.mystic_potion": "Mystic Potion",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
       "item.better_tools.poison_charm": "§5Poison Charm",
@@ -36602,15 +36476,15 @@
       "block.better_tools.jewellery_table": "Jewellery Table",
       "block.better_tools.brown_metal_wall_hanging_sign": "Brown Metal Wall Hanging Sign",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
+      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "block.better_tools.light_polished_lapis_trapdoor": "Cyan Metal Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "block.better_tools.sugar_block": "Sugar Block",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "block.better_tools.sugar_block": "Sugar Block",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -36621,11 +36495,11 @@
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "advancements.bark_on_log_adv.descr": "Use Bark to un-strip a Stripped Log Block",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
+      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "advancements.descend_to_bottom_of_world.descr": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
-      "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
+      "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "block.better_tools.white_metal_hanging_sign": "White Metal Hanging Sign",
@@ -36651,8 +36525,8 @@
       "item.better_tools.crystallite_sword_lapis": "Crystallite Sword",
       "advancements.crystallite_cave_adv.title": "Ooh, sparkly!",
       "item.better_tools.speedy_crystal": "Speedy Crystal",
-      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
+      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
       "block.better_tools.purple_mushroom_block": "Purple Mushroom Block",
@@ -36680,8 +36554,8 @@
       "block.better_tools.dark_polished_lapis_wall": "Blue Metal Wall",
       "item_group.better_tools.effect_armor_tab": "BT+A - Effect Armor",
       "block.better_tools.dark_polished_lapis_stairs": "Blue Metal Stairs",
-      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.electric_necklace": "§6Lightning Necklace",
+      "item.better_tools.ruby_axe": "Ruby Axe",
       "item.better_tools.guardian_crystal": "Guardian Crystal",
       "block.better_tools.sapphire_block": "Sapphire Block",
       "advancements.glass_armor_adv.title": "Glass Ghost",
@@ -36701,11 +36575,11 @@
       "advancements.life_aura_adv.title": "Full Potential",
       "subtitles.rick_roll": "",
       "block.better_tools.polished_gold_stairs": "Yellow Metal Stairs",
-      "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
+      "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
-      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "block.better_tools.polished_diamond_stairs": "Light Blue Metal Stairs",
+      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "attribute.better_tools.critical_hit_multiplier": "Critical Hit Multiplier",
       "block.better_tools.polished_redstone_block": "Red Metal Block",
       "item.better_tools.sapphire_boots": "Sapphire Boots",
@@ -36798,8 +36672,8 @@
       "effect.better_tools.frozen": "Frozen",
       "item.better_tools.crystallite_bow_sculk": "Crystallite Bow",
       "item.better_tools.crystallite_shovel_nether_diamond": "Crystallite Shovel",
-      "advancements.ruby_gem_adv.descr": "Obtain a Ruby",
       "advancements.life_aura_adv.descr": "Wear a Chestplate enchanted with Life Aura while at full HP",
+      "advancements.ruby_gem_adv.descr": "Obtain a Ruby",
       "item.minecraft.splash_potion.effect.double_jump_potion_2": "Splash Potion of Double Jump",
       "item.better_tools.warden_staff": "Warden Staff",
       "item.better_tools.crystallite_gem": "Crystallite Gem",
