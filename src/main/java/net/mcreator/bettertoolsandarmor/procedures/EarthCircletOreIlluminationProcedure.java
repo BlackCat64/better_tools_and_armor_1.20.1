@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -51,9 +49,8 @@ public class EarthCircletOreIlluminationProcedure {
 		double block_y = 0;
 		double block_z = 0;
 		double radius = 0;
-		if (((entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.EARTH_CIRCLET.get(), lv).isPresent() : false == true)
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
-				|| entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(BetterToolsModMobEffects.ORE_VISION.get()))
+		if ((true || (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
+				|| entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.ORE_VISION.get()))
 				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_ore_highlight_cooldown == 0) {
 			{
 				double _setval = Mth.nextInt(RandomSource.create(), 40, 60);

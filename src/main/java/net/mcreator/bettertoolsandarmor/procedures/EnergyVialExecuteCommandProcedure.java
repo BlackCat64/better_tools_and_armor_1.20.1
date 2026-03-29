@@ -1,6 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,15 +16,15 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.arguments.BoolArgumentType;
 
 public class EnergyVialExecuteCommandProcedure {
-	public static void execute(LevelAccessor world, CommandContext<CommandSourceStack> arguments, Entity entity) {
+	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
 		ItemStack vial = ItemStack.EMPTY;
 		if (!(entity == null)) {
 			if ((StringArgumentType.getString(arguments, "armor")).equals("helmet") || (StringArgumentType.getString(arguments, "armor")).equals("chestplate") || (StringArgumentType.getString(arguments, "armor")).equals("leggings")
 					|| (StringArgumentType.getString(arguments, "armor")).equals("boots")) {
-				if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-					vial = GetEquippedVialProcedure.execute(world, entity);
+				if (PlayerHasEnergyVialEquippedProcedure.execute()) {
+					vial = GetEquippedVialProcedure.execute();
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
 					vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 				}

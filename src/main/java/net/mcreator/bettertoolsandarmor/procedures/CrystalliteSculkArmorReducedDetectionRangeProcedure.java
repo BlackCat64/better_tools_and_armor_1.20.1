@@ -64,8 +64,8 @@ public class CrystalliteSculkArmorReducedDetectionRangeProcedure {
 			if (armor_pieces == 4) {
 				armor_pieces = armor_pieces + 1;
 			}
-			if (IsWearingGlassArmorFullSetProcedure.execute(entity) && PlayerHasEnergyVialEquippedProcedure.execute(entity) && EnergyVialActiveArmorPiecesProcedure.execute(entity, GetEquippedVialProcedure.execute(world, entity)) == 4
-					&& EnergyVialActiveProcedure.execute(entity, GetEquippedVialProcedure.execute(world, entity)) == 1) {
+			if (IsWearingGlassArmorFullSetProcedure.execute(entity) && PlayerHasEnergyVialEquippedProcedure.execute() && EnergyVialActiveArmorPiecesProcedure.execute(entity, GetEquippedVialProcedure.execute()) == 4
+					&& EnergyVialActiveProcedure.execute(entity, GetEquippedVialProcedure.execute()) == 1) {
 				range_multiplier = 0;
 				armor_pieces = 4;
 			} else {

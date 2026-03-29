@@ -98,22 +98,22 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		super.init();
 		helmet_active = new Checkbox(this.leftPos + 141, this.topPos + 16, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.helmet_active"),
 
-				HelmetActiveWhenGuiOpenedProcedure.execute(world, entity));
+				HelmetActiveWhenGuiOpenedProcedure.execute(entity));
 		guistate.put("checkbox:helmet_active", helmet_active);
 		this.addRenderableWidget(helmet_active);
 		chestplate_active = new Checkbox(this.leftPos + 141, this.topPos + 37, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.chestplate_active"),
 
-				ChestplateActiveWhenGuiOpenedProcedure.execute(world, entity));
+				ChestplateActiveWhenGuiOpenedProcedure.execute(entity));
 		guistate.put("checkbox:chestplate_active", chestplate_active);
 		this.addRenderableWidget(chestplate_active);
 		leggings_active = new Checkbox(this.leftPos + 141, this.topPos + 58, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.leggings_active"),
 
-				LeggingsActiveWhenGuiOpenedProcedure.execute(world, entity));
+				LeggingsActiveWhenGuiOpenedProcedure.execute(entity));
 		guistate.put("checkbox:leggings_active", leggings_active);
 		this.addRenderableWidget(leggings_active);
 		boots_active = new Checkbox(this.leftPos + 141, this.topPos + 79, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.boots_active"),
 
-				BootsActiveWhenGuiOpenedProcedure.execute(world, entity));
+				BootsActiveWhenGuiOpenedProcedure.execute(entity));
 		guistate.put("checkbox:boots_active", boots_active);
 		this.addRenderableWidget(boots_active);
 	}

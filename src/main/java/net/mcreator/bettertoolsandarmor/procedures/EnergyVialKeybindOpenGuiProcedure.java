@@ -7,7 +7,7 @@ public class EnergyVialKeybindOpenGuiProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
+		if (PlayerHasEnergyVialEquippedProcedure.execute()) {
 			EnergyVialOpenGuiProcedure.execute(world, entity);
 		}
 	}

@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -30,8 +28,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -51,8 +47,8 @@ public class ReflectCharmProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double projectile_speed = 0;
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.REFLECT_CHARM.get(), lv).isPresent() : false && sourceentity instanceof LivingEntity) {
-			if (sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.REFLECT_CHARM.get(), lv).isPresent() : false) {
+		if (true && sourceentity instanceof LivingEntity) {
+			if (true) {
 				projectile_speed = 0;
 			} else {
 				if ((immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0) > 0) {

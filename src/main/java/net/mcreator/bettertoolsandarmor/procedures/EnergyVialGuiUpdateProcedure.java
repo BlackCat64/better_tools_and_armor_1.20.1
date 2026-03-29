@@ -34,7 +34,7 @@ public class EnergyVialGuiUpdateProcedure {
 		ItemStack vial = ItemStack.EMPTY;
 		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
-		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
+		if (PlayerHasEnergyVialEquippedProcedure.execute()) {
 			energy = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().getDouble("energy");
 		} else {
 			energy = vial.getOrCreateTag().getDouble("energy");
@@ -66,7 +66,7 @@ public class EnergyVialGuiUpdateProcedure {
 			vial.getOrCreateTag().putBoolean("boots_active", boots_active);
 			BetterToolsMod.PACKET_HANDLER.sendToServer(new EnergyVialGuiSyncMessage(helmet_active, chestplate_active, leggings_active, boots_active)); // Send data to server, to avoid desync issues
 		}
-		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
+		if (PlayerHasEnergyVialEquippedProcedure.execute()) {
 			{
 				CompoundTag _nbtTag = vial.getTag();
 				if (_nbtTag != null)

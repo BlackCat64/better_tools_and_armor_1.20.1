@@ -35,7 +35,7 @@ public class EnergyVialCommandCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					EnergyVialExecuteCommandProcedure.execute(world, arguments, entity);
+					EnergyVialExecuteCommandProcedure.execute(arguments, entity);
 					return 0;
 				}))));
 	}

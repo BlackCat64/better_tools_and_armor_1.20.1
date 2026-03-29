@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -9,13 +7,11 @@ import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
@@ -37,7 +33,7 @@ public class MagicRingProcedureProcedure {
 		if (sourceentity == null)
 			return;
 		double amount = 0;
-		if (sourceentity instanceof Player && sourceentity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.MAGIC_RING.get(), lv).isPresent() : false) {
+		if (sourceentity instanceof Player && true) {
 			amount = Math.round(0.2 * droppedexperience);
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) amount));

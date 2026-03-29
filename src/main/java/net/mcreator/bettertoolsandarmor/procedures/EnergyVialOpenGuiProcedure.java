@@ -49,8 +49,8 @@ public class EnergyVialOpenGuiProcedure {
 					}
 				}, _bpos);
 			}
-			if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-				vial = GetEquippedVialProcedure.execute(world, entity);
+			if (PlayerHasEnergyVialEquippedProcedure.execute()) {
+				vial = GetEquippedVialProcedure.execute();
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = vial.copy();
 					_setstack.setCount(1);

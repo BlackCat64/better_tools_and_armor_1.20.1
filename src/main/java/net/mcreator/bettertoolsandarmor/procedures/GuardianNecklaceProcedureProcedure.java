@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -22,8 +20,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -46,7 +42,7 @@ public class GuardianNecklaceProcedureProcedure {
 			return;
 		double damage = 0;
 		double radius = 0;
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.GUARDIAN_NECKLACE.get(), lv).isPresent() : false) {
+		if (true) {
 			damage = 1;
 			radius = 6;
 			if (entity.isInWaterRainOrBubble()) {
@@ -62,7 +58,7 @@ public class GuardianNecklaceProcedureProcedure {
 						if (entity.getPersistentData().getDouble("guardian_necklace_damage_timer") == 0) {
 							entityiterator.hurt(
 									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:water_pulse_damage"))), null, entity),
-									(float) (entityiterator instanceof Drowned || entityiterator instanceof LivingEntity _livEnt9 && _livEnt9.getMobType() == MobType.WATER ? damage * 2 : damage));
+									(float) (entityiterator instanceof Drowned || entityiterator instanceof LivingEntity _livEnt8 && _livEnt8.getMobType() == MobType.WATER ? damage * 2 : damage));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.NAUTILUS, (entityiterator.getX()), (entityiterator.getY() + 1), (entityiterator.getZ()), 8, 0.3, 1, 0.3, 0.05);
 						}
