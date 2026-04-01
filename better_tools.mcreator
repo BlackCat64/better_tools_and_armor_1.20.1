@@ -28435,7 +28435,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerHasEnergyVialEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Effect Armor"
     },

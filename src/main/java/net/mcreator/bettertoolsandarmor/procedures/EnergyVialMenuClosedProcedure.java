@@ -12,7 +12,7 @@ public class EnergyVialMenuClosedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!PlayerHasEnergyVialEquippedProcedure.execute()) {
+		if (!PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).copy();
 				_setstack.setCount(1);

@@ -9,7 +9,7 @@ public class CheckVialActiveStateProcedure {
 		if (entity == null || armor == null)
 			return false;
 		ItemStack vial = ItemStack.EMPTY;
-		if (PlayerHasEnergyVialEquippedProcedure.execute()) {
+		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			vial = GetEquippedVialProcedure.execute();
 		} else {
 			vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);

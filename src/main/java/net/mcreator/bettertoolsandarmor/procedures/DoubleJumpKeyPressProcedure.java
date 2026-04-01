@@ -22,7 +22,7 @@ public class DoubleJumpKeyPressProcedure {
 			return;
 		boolean boots = false;
 		ItemStack vial = ItemStack.EMPTY;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get() && PlayerHasEnergyVialEquippedProcedure.execute()) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get() && PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			vial = GetEquippedVialProcedure.execute();
 			if (vial.getOrCreateTag().getDouble("energy") >= 50 && vial.getOrCreateTag().getBoolean("boots_active")) {
 				boots = true;
