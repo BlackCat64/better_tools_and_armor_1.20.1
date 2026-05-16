@@ -23168,28 +23168,6 @@
       "path": "~/Topaz"
     },
     {
-      "name": "AttackFreezeChance",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "attack_freeze_chance",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Sapphire"
-    },
-    {
-      "name": "AttackFreezeTime",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "attack_freeze_time",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Sapphire"
-    },
-    {
       "name": "FreezingWeaponsSetAttributes",
       "type": "procedure",
       "compiles": true,
@@ -34414,7 +34392,6 @@
       "advancements.crystallite_tool_upgrade_adv.descr": "Upgrade a Crystallite tool for a useful effect",
       "item.better_tools.crystallite_armor_lapis_leggings": "Crystallite Leggings",
       "advancements.crystallite_armor_upgrade_adv.title": "Crystal Armorer",
-      "attribute.better_tools.attack_freeze_time": "Attack Freeze Time",
       "item.better_tools.crystallite_shovel_redstone": "Crystallite Shovel",
       "advancements.nether_diamond_adv.title": "Diamonds! (Fire Edition)",
       "block.better_tools.light_polished_lapis_wall": "Cyan Metal Wall",
@@ -34633,7 +34610,6 @@
       "death.attack.karma_damage.player": "%1$s got instant karma whilst trying to escape %2$s",
       "block.better_tools.polished_diamond_block": "Light Blue Metal Block",
       "item.copper_tools_and_armor.shrunk_music": "Toys on a Tear",
-      "attribute.better_tools.attack_freeze_chance": "Attack Freeze Chance",
       "item.better_tools.crystallite_axe_sapphire": "Crystallite Axe",
       "item.better_tools.glass_chestplate": "Glass Chestplate",
       "death.attack.karma_curse_damage.player": "%1$s got instant karma",

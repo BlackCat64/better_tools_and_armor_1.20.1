@@ -13,8 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
-
 import javax.annotation.Nullable;
 
 import java.util.UUID;
@@ -35,7 +33,7 @@ public class FreezingWeaponsSetAttributesProcedure {
 			return;
 		double chance = 0;
 		double time = 0;
-		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()) != null) {
+		if (false) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:freezing_tools")))) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items")))) {
 					chance = 0.2;
@@ -52,15 +50,15 @@ public class FreezingWeaponsSetAttributesProcedure {
 				chance = chance * 2;
 				time = time * ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
 			}
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("f84aa605-971d-4d66-b38b-c669ec0138b7"), "", 0, AttributeModifier.Operation.ADDITION)));
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get()).removeModifier((new AttributeModifier(UUID.fromString("4fb08f53-c1cb-4b83-8d3f-585863b99f2b"), "", 0, AttributeModifier.Operation.ADDITION)));
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("f84aa605-971d-4d66-b38b-c669ec0138b7"), "", 0, AttributeModifier.Operation.ADDITION)));
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("4fb08f53-c1cb-4b83-8d3f-585863b99f2b"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {
 				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				}
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZECHANCE.get())
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("f84aa605-971d-4d66-b38b-c669ec0138b7"), "freezing_weapons", chance, AttributeModifier.Operation.ADDITION)));
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.ATTACKFREEZETIME.get())
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("4fb08f53-c1cb-4b83-8d3f-585863b99f2b"), "freezing_weapons", time, AttributeModifier.Operation.ADDITION)));
 			}
 		}
