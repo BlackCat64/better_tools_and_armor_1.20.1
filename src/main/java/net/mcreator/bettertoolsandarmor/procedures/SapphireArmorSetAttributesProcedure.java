@@ -13,7 +13,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -37,7 +36,7 @@ public class SapphireArmorSetAttributesProcedure {
 		double time = 0;
 		double chance = 0;
 		boolean crystallite = false;
-		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()) != null) {
+		if (false) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.04;
@@ -78,8 +77,8 @@ public class SapphireArmorSetAttributesProcedure {
 				chance = chance * (crystallite ? 1.5 : 2);
 				time = time * (crystallite ? 1.5 : 2);
 			}
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "", 0, AttributeModifier.Operation.ADDITION)));
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSTIME.get()).removeModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "", 0, AttributeModifier.Operation.ADDITION)));
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "", 0, AttributeModifier.Operation.ADDITION)));
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {
 				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
@@ -87,9 +86,9 @@ public class SapphireArmorSetAttributesProcedure {
 				if (true) {
 					chance = chance + 0.1;
 				}
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get())
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "sapphire_armor", chance, AttributeModifier.Operation.ADDITION)));
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSTIME.get())
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "sapphire_armor", time, AttributeModifier.Operation.ADDITION)));
 			}
 		}
