@@ -12,7 +12,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -52,9 +51,9 @@ public class CrystalliteArmorNetheriteThornsProcedure {
 		if (armor_pieces == 4) {
 			damage = damage + 1;
 		}
-		((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()).removeModifier((new AttributeModifier(UUID.fromString("708dd714-19b0-4dd0-9509-30124a4a1845"), "", 0, AttributeModifier.Operation.ADDITION)));
+		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("708dd714-19b0-4dd0-9509-30124a4a1845"), "", 0, AttributeModifier.Operation.ADDITION)));
 		if (damage > 0) {
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get())
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 					.addTransientModifier((new AttributeModifier(UUID.fromString("708dd714-19b0-4dd0-9509-30124a4a1845"), "crystallite_armor_netherite", damage, AttributeModifier.Operation.ADDITION)));
 		}
 	}

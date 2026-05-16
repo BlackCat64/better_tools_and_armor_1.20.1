@@ -19326,17 +19326,6 @@
       "path": "~/Utility Procedures/Tracking Variables"
     },
     {
-      "name": "ThornsDamage",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thorns_damage",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Effect Armor/Cactus Shirt"
-    },
-    {
       "name": "CrystalliteCharmBaseDupeRecipe",
       "type": "recipe",
       "compiles": true,
@@ -34641,7 +34630,6 @@
       "block.better_tools.polished_nether_diamond_trapdoor": "Dark Pink Metal Trapdoor",
       "item.better_tools.crystallite_shovel_sapphire": "Crystallite Shovel",
       "advancements.natural_regen_adv.title": "Natural Medicine",
-      "attribute.better_tools.thorns_damage": "Thorns Damage",
       "item.better_tools.end_titanium_boots": "Ender Titanium Boots",
       "advancements.experienced_adv.title": "Experienced Enchanting",
       "item.better_tools.iron_glass_armor_leggings": "Glass Leggings",

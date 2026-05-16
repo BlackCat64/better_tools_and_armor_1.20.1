@@ -12,7 +12,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -40,9 +39,9 @@ public class CactusBodyProcedureProcedure {
 		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get()) {
 			damage = 5;
 		}
-		((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get()).removeModifier((new AttributeModifier(UUID.fromString("3df812dc-1eeb-49e3-b8ec-b63191b56a4d"), "", 0, AttributeModifier.Operation.ADDITION)));
+		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("3df812dc-1eeb-49e3-b8ec-b63191b56a4d"), "", 0, AttributeModifier.Operation.ADDITION)));
 		if (damage > 0) {
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.THORNSDAMAGE.get())
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 					.addTransientModifier((new AttributeModifier(UUID.fromString("3df812dc-1eeb-49e3-b8ec-b63191b56a4d"), "cactus_shirt", damage, AttributeModifier.Operation.ADDITION)));
 		}
 	}
