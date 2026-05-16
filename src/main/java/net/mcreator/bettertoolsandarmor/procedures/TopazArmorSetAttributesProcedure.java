@@ -13,7 +13,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -36,7 +35,7 @@ public class TopazArmorSetAttributesProcedure {
 		double armor_pieces = 0;
 		double chance = 0;
 		boolean crystallite_worn = false;
-		if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()) != null) {
+		if (false) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.TOPAZ_BOOTS.get()) {
 				armor_pieces = armor_pieces + 1;
 				chance = chance + 0.04;
@@ -75,12 +74,12 @@ public class TopazArmorSetAttributesProcedure {
 			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 				chance = chance * (crystallite_worn ? 1.5 : 2);
 			}
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get()).removeModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "", 0, AttributeModifier.Operation.ADDITION)));
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {
 				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				}
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.LIGHTNINGTHORNSCHANCE.get())
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "topaz_armor", chance, AttributeModifier.Operation.ADDITION)));
 			}
 		}
