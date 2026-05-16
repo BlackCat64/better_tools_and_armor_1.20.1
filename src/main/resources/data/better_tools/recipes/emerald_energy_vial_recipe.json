@@ -18,11 +18,11 @@
       "item": "minecraft:glass"
     },
     "d": {
-      "item": "better_tools:energy_vial"
+      "item": "better_tools:deleted_mod_element"
     }
   },
   "result": {
-    "item": "better_tools:emerald_energy_vial",
+    "item": "better_tools:deleted_mod_element",
     "count": 1
   }
 }

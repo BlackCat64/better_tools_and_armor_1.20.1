@@ -31285,12 +31285,6 @@
       "CUSTOM:CrystallitePickaxeNetherDiamond",
       "CUSTOM:NetherDiamondPickaxe"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
-    ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
@@ -31303,6 +31297,12 @@
       "CUSTOM:ReflectCharm",
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -35524,16 +35524,12 @@
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,
     "modPicture": "new_mod_logo_curseforge",
-    "requiredMods": [
-      "curios"
-    ],
+    "requiredMods": [],
     "dependencies": [
       "jei"
     ],
     "dependants": [],
-    "mcreatorDependencies": [
-      "curios_api"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
