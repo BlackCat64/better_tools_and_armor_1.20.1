@@ -1,16 +1,12 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraft.world.item.ItemStack;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-
 public class GetEnergyVialCapacityProcedure {
-	public static double execute(ItemStack itemstack) {
-		if (itemstack.getItem() == BetterToolsModItems.ENERGY_VIAL.get()) {
+	public static double execute() {
+		if (false) {
 			return 18000;
-		} else if (itemstack.getItem() == BetterToolsModItems.EMERALD_ENERGY_VIAL.get()) {
+		} else if (false) {
 			return 36000;
-		} else if (itemstack.getItem() == BetterToolsModItems.NETHERITE_ENERGY_VIAL.get()) {
+		} else if (true) {
 			return 72000;
 		}
 		return 0;

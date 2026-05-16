@@ -45,7 +45,7 @@ public class FlamingCircletProcedureProcedure {
 					});
 				}
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.FLAMING_CIRCLET.get(), 200);
+					_player.getCooldowns().addCooldown(BetterToolsModItems.NETHER_DIAMOND.get(), 200);
 				if ((entity.level().dimension()) == Level.NETHER) {
 					sourceentity.setSecondsOnFire(6);
 				} else {

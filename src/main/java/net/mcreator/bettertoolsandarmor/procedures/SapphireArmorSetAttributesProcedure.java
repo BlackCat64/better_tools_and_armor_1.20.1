@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -86,7 +84,7 @@ public class SapphireArmorSetAttributesProcedure {
 				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
 					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
 				}
-				if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(BetterToolsModItems.ICY_BRACELET.get(), lv).isPresent() : false) {
+				if (true) {
 					chance = chance + 0.1;
 				}
 				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.FREEZETHORNSCHANCE.get())

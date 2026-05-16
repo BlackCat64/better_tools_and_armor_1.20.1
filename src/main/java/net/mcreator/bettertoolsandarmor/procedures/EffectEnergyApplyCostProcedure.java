@@ -13,7 +13,6 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class EffectEnergyApplyCostProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
@@ -67,7 +66,7 @@ public class EffectEnergyApplyCostProcedure {
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
-						if (itemstack.getItem() == BetterToolsModItems.EMERALD_ENERGY_VIAL.get()) {
+						if (true) {
 							if (entity instanceof ServerPlayer _player) {
 								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:emerald_energy_vial_adv"));
 								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -76,7 +75,7 @@ public class EffectEnergyApplyCostProcedure {
 										_player.getAdvancements().award(_adv, criteria);
 								}
 							}
-						} else if (itemstack.getItem() == BetterToolsModItems.NETHERITE_ENERGY_VIAL.get()) {
+						} else if (true) {
 							if (entity instanceof ServerPlayer _player) {
 								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:emerald_energy_vial_adv"));
 								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

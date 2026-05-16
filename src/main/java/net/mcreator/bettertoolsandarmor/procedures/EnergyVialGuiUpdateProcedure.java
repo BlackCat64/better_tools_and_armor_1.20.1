@@ -39,7 +39,7 @@ public class EnergyVialGuiUpdateProcedure {
 		} else {
 			energy = vial.getOrCreateTag().getDouble("energy");
 		}
-		max_energy = GetEnergyVialCapacityProcedure.execute(vial);
+		max_energy = GetEnergyVialCapacityProcedure.execute();
 		if (energy < max_energy) {
 			if (fuel.getItem() == BetterToolsModItems.ULTRA_ENRICHED_BLAZE_POWDER.get()) {
 				energy_gain = 20000;
