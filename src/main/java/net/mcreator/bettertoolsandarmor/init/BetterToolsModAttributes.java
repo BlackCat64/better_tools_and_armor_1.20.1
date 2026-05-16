@@ -27,7 +27,6 @@ import java.util.List;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BetterToolsModAttributes {
 	public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, BetterToolsMod.MODID);
-	public static final RegistryObject<Attribute> CRITICALHITMULTIPLIER = ATTRIBUTES.register("critical_hit_multiplier", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".critical_hit_multiplier", 1.5, 1, 10)).setSyncable(true));
 	public static final RegistryObject<Attribute> THORNSDAMAGE = ATTRIBUTES.register("thorns_damage", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".thorns_damage", 0, 0, 20)).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZETHORNSCHANCE = ATTRIBUTES.register("freeze_thorns_chance", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".freeze_thorns_chance", 0, 0, 1)).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZETHORNSTIME = ATTRIBUTES.register("freeze_thorns_time", () -> (new RangedAttribute("attribute." + BetterToolsMod.MODID + ".freeze_thorns_time", 0, 0, 20000)).setSyncable(true));
@@ -45,8 +44,6 @@ public class BetterToolsModAttributes {
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
 		List<EntityType<? extends LivingEntity>> entityTypes = event.getTypes();
-		event.add(EntityType.PLAYER, CRITICALHITMULTIPLIER.get());
-		event.add(EntityType.PLAYER, CRITICALHITMULTIPLIER.get());
 		entityTypes.forEach((e) -> {
 			Class<? extends Entity> baseClass = e.getBaseClass();
 			if (baseClass.isAssignableFrom(Mob.class) || baseClass.isAssignableFrom(Monster.class)) {

@@ -12,8 +12,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
-
 import javax.annotation.Nullable;
 
 import java.util.UUID;
@@ -37,10 +35,10 @@ public class FlintToolsIncreasedCritDamageProcedure {
 		AttributeModifier modifier = null;
 		modifier = new AttributeModifier(UUID.fromString("b142e962-510b-4849-9215-39d451edde4c"), "flint_tools", 0.25, AttributeModifier.Operation.ADDITION);
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:flint_tools")))) {
-			if (!(((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).hasModifier(modifier)))
-				((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).addTransientModifier(modifier);
+			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).hasModifier(modifier)))
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).addTransientModifier(modifier);
 		} else {
-			((LivingEntity) entity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).removeModifier(modifier);
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier(modifier);
 		}
 	}
 }

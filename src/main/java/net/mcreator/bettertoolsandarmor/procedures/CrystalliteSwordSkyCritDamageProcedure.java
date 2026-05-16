@@ -21,7 +21,6 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -44,14 +43,14 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 		double distance = 0;
 		if ((immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit
 				&& !damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:damage_overrides")))) {
-			if (immediatesourceentity instanceof Player && ((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() != 1.5) {
+			if (immediatesourceentity instanceof Player && 1 != 1.5) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:override_weapon_damage"))),
-						immediatesourceentity, immediatesourceentity), (float) (amount * ((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue()));
+						immediatesourceentity, immediatesourceentity), (float) (amount * 1));
 				if (!(immediatesourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					{
 						ItemStack _ist = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -61,7 +60,7 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 						}
 					}
 				}
-				if (((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue() >= 2.5) {
+				if (1 >= 2.5) {
 					if (immediatesourceentity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:high_crit_multiplier_adv"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -71,7 +70,7 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 						}
 					}
 				}
-				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), amount * ((LivingEntity) immediatesourceentity).getAttribute(BetterToolsModAttributes.CRITICALHITMULTIPLIER.get()).getValue());
+				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), amount * 1);
 			}
 		}
 	}
