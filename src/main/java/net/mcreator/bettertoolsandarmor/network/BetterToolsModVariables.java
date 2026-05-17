@@ -1,19 +1,15 @@
 package net.mcreator.bettertoolsandarmor.network;
 
-import net.minecraftforge.network.PacketDistributor;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.util.FakePlayer;
-import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
-import net.minecraftforge.common.capabilities.ICapabilitySerializable;
-import net.minecraftforge.common.capabilities.CapabilityToken;
-import net.minecraftforge.common.capabilities.CapabilityManager;
-import net.minecraftforge.common.capabilities.Capability;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.attachment.AttachmentType;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,61 +18,59 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.nbt.Tag;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.Direction;
-import net.minecraft.client.Minecraft;
+import net.minecraft.core.HolderLookup;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class BetterToolsModVariables {
+	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, BetterToolsMod.MODID);
+	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
+
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		BetterToolsMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
-		BetterToolsMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+		BetterToolsMod.addNetworkMessage(SavedDataSyncMessage.TYPE, SavedDataSyncMessage.STREAM_CODEC, SavedDataSyncMessage::handleData);
+		BetterToolsMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@SubscribeEvent
-	public static void init(RegisterCapabilitiesEvent event) {
-		event.register(PlayerVariables.class);
-	}
-
-	@Mod.EventBusSubscriber
+	@EventBusSubscriber
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void clonePlayer(PlayerEvent.Clone event) {
-			event.getOriginal().revive();
-			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+			PlayerVariables clone = new PlayerVariables();
 			clone.respawn_xp = original.respawn_xp;
 			clone.extra_jumps = original.extra_jumps;
 			clone.charms_equipped = original.charms_equipped;
@@ -111,26 +105,27 @@ public class BetterToolsModVariables {
 				clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
 				clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
 			}
+			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
 
 		@SubscribeEvent
 		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
+			if (event.getEntity() instanceof ServerPlayer player) {
 				SavedData mapdata = MapVariables.get(event.getEntity().level());
 				SavedData worlddata = WorldVariables.get(event.getEntity().level());
 				if (mapdata != null)
-					BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(0, mapdata));
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
 				if (worlddata != null)
-					BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
+			if (event.getEntity() instanceof ServerPlayer player) {
 				SavedData worlddata = WorldVariables.get(event.getEntity().level());
 				if (worlddata != null)
-					BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 	}
@@ -138,31 +133,31 @@ public class BetterToolsModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "better_tools_worldvars";
 
-		public static WorldVariables load(CompoundTag tag) {
+		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
-			data.read(tag);
+			data.read(tag, lookupProvider);
 			return data;
 		}
 
-		public void read(CompoundTag nbt) {
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 		}
 
 		@Override
-		public CompoundTag save(CompoundTag nbt) {
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			return nbt;
 		}
 
 		public void syncData(LevelAccessor world) {
 			this.setDirty();
-			if (world instanceof Level level && !level.isClientSide())
-				BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
+			if (world instanceof ServerLevel level)
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
 		}
 
 		static WorldVariables clientSide = new WorldVariables();
 
 		public static WorldVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
+				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
 			} else {
 				return clientSide;
 			}
@@ -174,19 +169,19 @@ public class BetterToolsModVariables {
 		public double crystallite_shimmer_timer = 0;
 		public double stealth_armor_timer = 0;
 
-		public static MapVariables load(CompoundTag tag) {
+		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
-			data.read(tag);
+			data.read(tag, lookupProvider);
 			return data;
 		}
 
-		public void read(CompoundTag nbt) {
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			crystallite_shimmer_timer = nbt.getDouble("crystallite_shimmer_timer");
 			stealth_armor_timer = nbt.getDouble("stealth_armor_timer");
 		}
 
 		@Override
-		public CompoundTag save(CompoundTag nbt) {
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("crystallite_shimmer_timer", crystallite_shimmer_timer);
 			nbt.putDouble("stealth_armor_timer", stealth_armor_timer);
 			return nbt;
@@ -195,92 +190,61 @@ public class BetterToolsModVariables {
 		public void syncData(LevelAccessor world) {
 			this.setDirty();
 			if (world instanceof Level && !world.isClientSide())
-				BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
 		}
 
 		static MapVariables clientSide = new MapVariables();
 
 		public static MapVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
 			} else {
 				return clientSide;
 			}
 		}
 	}
 
-	public static class SavedDataSyncMessage {
-		private final int type;
-		private SavedData data;
-
-		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
-			this.type = buffer.readInt();
+	public record SavedDataSyncMessage(int dataType, SavedData data) implements CustomPacketPayload {
+		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "saved_data_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
+			buffer.writeInt(message.dataType);
+			if (message.data != null)
+				buffer.writeNbt(message.data.save(new CompoundTag(), buffer.registryAccess()));
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			int dataType = buffer.readInt();
 			CompoundTag nbt = buffer.readNbt();
+			SavedData data = null;
 			if (nbt != null) {
-				this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
-				if (this.data instanceof MapVariables mapVariables)
-					mapVariables.read(nbt);
-				else if (this.data instanceof WorldVariables worldVariables)
-					worldVariables.read(nbt);
+				data = dataType == 0 ? new MapVariables() : new WorldVariables();
+				if (data instanceof MapVariables mapVariables)
+					mapVariables.read(nbt, buffer.registryAccess());
+				else if (data instanceof WorldVariables worldVariables)
+					worldVariables.read(nbt, buffer.registryAccess());
+			}
+			return new SavedDataSyncMessage(dataType, data);
+		});
+
+		@Override
+		public Type<SavedDataSyncMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final SavedDataSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.enqueueWork(() -> {
+					if (message.dataType == 0)
+						MapVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+					else
+						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
 			}
 		}
-
-		public SavedDataSyncMessage(int type, SavedData data) {
-			this.type = type;
-			this.data = data;
-		}
-
-		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.type);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag()));
-		}
-
-		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer() && message.data != null) {
-					if (message.type == 0)
-						MapVariables.clientSide = (MapVariables) message.data;
-					else
-						WorldVariables.clientSide = (WorldVariables) message.data;
-				}
-			});
-			context.setPacketHandled(true);
-		}
 	}
 
-	public static final Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = CapabilityManager.get(new CapabilityToken<PlayerVariables>() {
-	});
-
-	@Mod.EventBusSubscriber
-	private static class PlayerVariablesProvider implements ICapabilitySerializable<Tag> {
-		@SubscribeEvent
-		public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
-			if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
-				event.addCapability(new ResourceLocation("better_tools", "player_variables"), new PlayerVariablesProvider());
-		}
-
-		private final PlayerVariables playerVariables = new PlayerVariables();
-		private final LazyOptional<PlayerVariables> instance = LazyOptional.of(() -> playerVariables);
-
-		@Override
-		public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
-			return cap == PLAYER_VARIABLES_CAPABILITY ? instance.cast() : LazyOptional.empty();
-		}
-
-		@Override
-		public Tag serializeNBT() {
-			return playerVariables.writeNBT();
-		}
-
-		@Override
-		public void deserializeNBT(Tag nbt) {
-			playerVariables.readNBT(nbt);
-		}
-	}
-
-	public static class PlayerVariables {
+	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public double respawn_xp = 0.0;
 		public double extra_jumps = 0.0;
 		public double charms_equipped = 0.0;
@@ -314,12 +278,8 @@ public class BetterToolsModVariables {
 		public double crystallite_redstone_sword_heal_cooldown = 0;
 		public double crystallite_amethyst_ore_highlight_cooldown = 0;
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				BetterToolsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
-		}
-
-		public Tag writeNBT() {
+		@Override
+		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("respawn_xp", respawn_xp);
 			nbt.putDouble("extra_jumps", extra_jumps);
@@ -341,11 +301,11 @@ public class BetterToolsModVariables {
 			nbt.putDouble("time_since_last_jumped", time_since_last_jumped);
 			nbt.putDouble("ender_titanium_boots_cooldown", ender_titanium_boots_cooldown);
 			nbt.putDouble("time_since_non_carbonated_food_eaten", time_since_non_carbonated_food_eaten);
-			nbt.put("last_food_eaten", last_food_eaten.save(new CompoundTag()));
+			nbt.put("last_food_eaten", last_food_eaten.saveOptional(lookupProvider));
 			nbt.putBoolean("last_food_was_carbonated", last_food_was_carbonated);
 			nbt.putBoolean("nature_ring_equipped", nature_ring_equipped);
 			nbt.putDouble("effect_energy_timer", effect_energy_timer);
-			nbt.put("energy_vial_to_update", energy_vial_to_update.save(new CompoundTag()));
+			nbt.put("energy_vial_to_update", energy_vial_to_update.saveOptional(lookupProvider));
 			nbt.putDouble("effect_energy_cost", effect_energy_cost);
 			nbt.putDouble("time_since_on_ground", time_since_on_ground);
 			nbt.putDouble("time_since_shot_bow", time_since_shot_bow);
@@ -356,8 +316,8 @@ public class BetterToolsModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag tag) {
-			CompoundTag nbt = (CompoundTag) tag;
+		@Override
+		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			respawn_xp = nbt.getDouble("respawn_xp");
 			extra_jumps = nbt.getDouble("extra_jumps");
 			charms_equipped = nbt.getDouble("charms_equipped");
@@ -371,18 +331,18 @@ public class BetterToolsModVariables {
 			flaming_circlet_cooldown = nbt.getDouble("flaming_circlet_cooldown");
 			time_since_last_attacked = nbt.getDouble("time_since_last_attacked");
 			time_since_last_mined = nbt.getDouble("time_since_last_mined");
-			last_mined_block = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("last_mined_block"));
+			last_mined_block = NbtUtils.readBlockState(lookupProvider.lookupOrThrow(BuiltInRegistries.BLOCK.key()), nbt.getCompound("last_mined_block"));
 			block_mining_combo = nbt.getDouble("block_mining_combo");
 			stick_to_ceiling = nbt.getBoolean("stick_to_ceiling");
 			crystallite_honey_absorption_timer = nbt.getDouble("crystallite_honey_absorption_timer");
 			time_since_last_jumped = nbt.getDouble("time_since_last_jumped");
 			ender_titanium_boots_cooldown = nbt.getDouble("ender_titanium_boots_cooldown");
 			time_since_non_carbonated_food_eaten = nbt.getDouble("time_since_non_carbonated_food_eaten");
-			last_food_eaten = ItemStack.of(nbt.getCompound("last_food_eaten"));
+			last_food_eaten = ItemStack.parseOptional(lookupProvider, nbt.getCompound("last_food_eaten"));
 			last_food_was_carbonated = nbt.getBoolean("last_food_was_carbonated");
 			nature_ring_equipped = nbt.getBoolean("nature_ring_equipped");
 			effect_energy_timer = nbt.getDouble("effect_energy_timer");
-			energy_vial_to_update = ItemStack.of(nbt.getCompound("energy_vial_to_update"));
+			energy_vial_to_update = ItemStack.parseOptional(lookupProvider, nbt.getCompound("energy_vial_to_update"));
 			effect_energy_cost = nbt.getDouble("effect_energy_cost");
 			time_since_on_ground = nbt.getDouble("time_since_on_ground");
 			time_since_shot_bow = nbt.getDouble("time_since_shot_bow");
@@ -391,64 +351,34 @@ public class BetterToolsModVariables {
 			crystallite_redstone_sword_heal_cooldown = nbt.getDouble("crystallite_redstone_sword_heal_cooldown");
 			crystallite_amethyst_ore_highlight_cooldown = nbt.getDouble("crystallite_amethyst_ore_highlight_cooldown");
 		}
+
+		public void syncPlayerVariables(Entity entity) {
+			if (entity instanceof ServerPlayer serverPlayer)
+				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		}
 	}
 
-	public static class PlayerVariablesSyncMessage {
-		private final PlayerVariables data;
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
+		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "player_variables_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
+				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
+					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+					return message;
+				});
 
-		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
-			this.data = new PlayerVariables();
-			this.data.readNBT(buffer.readNbt());
+		@Override
+		public Type<PlayerVariablesSyncMessage> type() {
+			return TYPE;
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
-			this.data = data;
-		}
-
-		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeNbt((CompoundTag) message.data.writeNBT());
-		}
-
-		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.respawn_xp = message.data.respawn_xp;
-					variables.extra_jumps = message.data.extra_jumps;
-					variables.charms_equipped = message.data.charms_equipped;
-					variables.time_since_last_hurt = message.data.time_since_last_hurt;
-					variables.crystallite_emerald_heal_timer = message.data.crystallite_emerald_heal_timer;
-					variables.critical_hit = message.data.critical_hit;
-					variables.last_on_ground_x = message.data.last_on_ground_x;
-					variables.last_on_ground_y = message.data.last_on_ground_y;
-					variables.last_on_ground_z = message.data.last_on_ground_z;
-					variables.save_from_void_cooldown = message.data.save_from_void_cooldown;
-					variables.flaming_circlet_cooldown = message.data.flaming_circlet_cooldown;
-					variables.time_since_last_attacked = message.data.time_since_last_attacked;
-					variables.time_since_last_mined = message.data.time_since_last_mined;
-					variables.last_mined_block = message.data.last_mined_block;
-					variables.block_mining_combo = message.data.block_mining_combo;
-					variables.stick_to_ceiling = message.data.stick_to_ceiling;
-					variables.crystallite_honey_absorption_timer = message.data.crystallite_honey_absorption_timer;
-					variables.time_since_last_jumped = message.data.time_since_last_jumped;
-					variables.ender_titanium_boots_cooldown = message.data.ender_titanium_boots_cooldown;
-					variables.time_since_non_carbonated_food_eaten = message.data.time_since_non_carbonated_food_eaten;
-					variables.last_food_eaten = message.data.last_food_eaten;
-					variables.last_food_was_carbonated = message.data.last_food_was_carbonated;
-					variables.nature_ring_equipped = message.data.nature_ring_equipped;
-					variables.effect_energy_timer = message.data.effect_energy_timer;
-					variables.energy_vial_to_update = message.data.energy_vial_to_update;
-					variables.effect_energy_cost = message.data.effect_energy_cost;
-					variables.time_since_on_ground = message.data.time_since_on_ground;
-					variables.time_since_shot_bow = message.data.time_since_shot_bow;
-					variables.time_on_fire = message.data.time_on_fire;
-					variables.nether_diamond_armor_fire_res_cooldown = message.data.nether_diamond_armor_fire_res_cooldown;
-					variables.crystallite_redstone_sword_heal_cooldown = message.data.crystallite_redstone_sword_heal_cooldown;
-					variables.crystallite_amethyst_ore_highlight_cooldown = message.data.crystallite_amethyst_ore_highlight_cooldown;
-				}
-			});
-			context.setPacketHandled(true);
+		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
 		}
 	}
 }

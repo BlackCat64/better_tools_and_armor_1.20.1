@@ -1,7 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
@@ -13,8 +15,8 @@ public class EnergyTimeDisplayProcedure {
 		double cost_5s = 0;
 		double energy = 0;
 		double seconds = 0;
-		energy = itemstack.getOrCreateTag().getDouble("energy");
-		cost_5s = (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).effect_energy_cost;
+		energy = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
+		cost_5s = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_cost;
 		if (energy > 0 && cost_5s > 0) {
 			time_secs = Math.floor((energy / cost_5s) * 5);
 			seconds = time_secs % 60;

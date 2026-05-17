@@ -1,7 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -17,11 +16,12 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -68,9 +68,9 @@ public class LostSoulsPotionProcedureProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+					_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
 				} else {
-					_level.playLocalSound(death_x, death_y, death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+					_level.playLocalSound(death_x, death_y, death_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
 		} else {
@@ -91,9 +91,9 @@ public class LostSoulsPotionProcedureProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(death_x, void_height + 1, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, BlockPos.containing(death_x, void_height + 1, death_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
 					} else {
-						_level.playLocalSound(death_x, (void_height + 1), death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+						_level.playLocalSound(death_x, (void_height + 1), death_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
@@ -117,9 +117,9 @@ public class LostSoulsPotionProcedureProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, BlockPos.containing(death_x, death_y, death_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
 					} else {
-						_level.playLocalSound(death_x, death_y, death_z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+						_level.playLocalSound(death_x, death_y, death_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 			}
@@ -140,11 +140,13 @@ public class LostSoulsPotionProcedureProcedure {
 			}
 		} else {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:lost_souls_potion_adv"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:lost_souls_potion_adv"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}

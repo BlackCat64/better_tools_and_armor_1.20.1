@@ -1,10 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -19,29 +19,29 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class EnderTitaniumArmorSaveFromVoid2Procedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingHurtEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getSource(), event.getEntity());
 		}
 	}
@@ -58,33 +58,28 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
-				if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).save_from_void_cooldown == 0) {
-					if (event != null && event.isCancelable()) {
-						event.setCanceled(true);
-					} else if (event != null && event.hasResult()) {
-						event.setResult(Event.Result.DENY);
+				if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).save_from_void_cooldown == 0) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
 					}
 					entity.fallDistance = 0;
-					if (!world.getBlockState(BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y - 1,
-							(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z)).canOcclude()) {
+					if (!world.getBlockState(BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1,
+							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z)).canOcclude()) {
 						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands()
-									.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL,
-											new Vec3(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-													((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y - 1),
-													((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z)),
-											Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-1 ~ ~-1 ~1 ~ ~1 end_stone destroy");
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL,
+											new Vec3(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1),
+													entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z),
+											Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"fill ~-1 ~ ~-1 ~1 ~ ~1 end_stone destroy");
 					}
 					{
 						Entity _ent = entity;
-						_ent.teleportTo(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z));
+						_ent.teleportTo(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+								entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z);
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z), _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, _ent.getYRot(), _ent.getXRot());
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_HELMET.get(), 12000);
@@ -95,82 +90,59 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_BOOTS.get(), 12000);
 					{
-						double _setval = 12000;
-						entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.save_from_void_cooldown = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+						BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+						_vars.save_from_void_cooldown = 12000;
+						_vars.syncPlayerVariables(entity);
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.DRAGON_BREATH, ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y + 0.25),
-								((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z), 8, 3, 0.1, 1, 0.1);
+						_level.sendParticles(ParticleTypes.DRAGON_BREATH, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y + 0.25),
+								entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, 8, 3, 0.1, 1, 0.1);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null,
-									BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
+							_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
 						} else {
-							_level.playLocalSound(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+							_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 						}
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null,
-									BlockPos.containing((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y,
-											(entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+							_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
 						} else {
-							_level.playLocalSound(((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_x),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_y),
-									((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).last_on_ground_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+							_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth(2);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1, false, false));
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY);
-						if (_ist.hurt(130, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).hurtAndBreak(130, _level, null, _stkprov -> {
+						});
 					}
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY);
-						if (_ist.hurt(150, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).hurtAndBreak(150, _level, null, _stkprov -> {
+						});
 					}
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY);
-						if (_ist.hurt(160, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).hurtAndBreak(160, _level, null, _stkprov -> {
+						});
 					}
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY);
-						if (_ist.hurt(110, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).hurtAndBreak(110, _level, null, _stkprov -> {
+						});
 					}
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:saved_from_void_adv"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:saved_from_void_adv"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}

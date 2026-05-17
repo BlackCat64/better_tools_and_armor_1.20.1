@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -14,13 +14,11 @@ import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class GlobalTimersProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -31,136 +29,100 @@ public class GlobalTimersProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_hurt);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_hurt = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_last_hurt = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_hurt);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_attacked);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_attacked = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_last_attacked = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_attacked);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_mined);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_mined = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_last_mined = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_mined);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_jumped);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_last_jumped = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_last_jumped = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_non_carbonated_food_eaten);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_non_carbonated_food_eaten = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_non_carbonated_food_eaten = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_non_carbonated_food_eaten);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_shot_bow);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.time_since_shot_bow = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.time_since_shot_bow = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_shot_bow);
+			_vars.syncPlayerVariables(entity);
 		}
 		if (entity.onGround()) {
 			{
-				double _setval = 0;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_since_on_ground = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_since_on_ground = 0;
+				_vars.syncPlayerVariables(entity);
 			}
 		} else {
 			{
-				double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_on_ground);
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_since_on_ground = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_since_on_ground = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_on_ground);
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 		if (entity.isOnFire() && !(entity.isInLava() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FIRE || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.SOUL_FIRE)) {
 			{
-				double _setval = SafeIncrementProcedure.execute((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_on_fire);
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_on_fire = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_on_fire = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_on_fire);
+				_vars.syncPlayerVariables(entity);
 			}
 		} else {
 			{
-				double _setval = 0;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_on_fire = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_on_fire = 0;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).save_from_void_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.save_from_void_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.save_from_void_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).save_from_void_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).ender_titanium_boots_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.ender_titanium_boots_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.ender_titanium_boots_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).ender_titanium_boots_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).flaming_circlet_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.flaming_circlet_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.flaming_circlet_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).flaming_circlet_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_emerald_heal_timer - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.crystallite_emerald_heal_timer = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.crystallite_emerald_heal_timer = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_emerald_heal_timer - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_honey_absorption_timer - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.crystallite_honey_absorption_timer = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.crystallite_honey_absorption_timer = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_honey_absorption_timer - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).nether_diamond_armor_fire_res_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.nether_diamond_armor_fire_res_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.nether_diamond_armor_fire_res_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).nether_diamond_armor_fire_res_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_redstone_sword_heal_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.crystallite_redstone_sword_heal_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.crystallite_redstone_sword_heal_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_redstone_sword_heal_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = Math.max((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_ore_highlight_cooldown - 1, 0);
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.crystallite_amethyst_ore_highlight_cooldown = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.crystallite_amethyst_ore_highlight_cooldown = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_amethyst_ore_highlight_cooldown - 1, 0);
+			_vars.syncPlayerVariables(entity);
 		}
 		BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer = Math.max(BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer - 1, 0);
 		BetterToolsModVariables.MapVariables.get(world).syncData(world);

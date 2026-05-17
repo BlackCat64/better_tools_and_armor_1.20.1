@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mushroom_fields",
+  "features": "better_tools:giant_blue_mushroom_feature",
+  "step": "surface_structures"
+}

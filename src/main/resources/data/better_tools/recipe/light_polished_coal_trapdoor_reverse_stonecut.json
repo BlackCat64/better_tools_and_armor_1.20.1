@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_coal_trapdoor_reverse",
+  "ingredient": {
+    "item": "better_tools:light_polished_coal_trapdoor"
+  },
+  "result": {
+    "id": "better_tools:light_polished_coal_block",
+    "count": 1
+  }
+}

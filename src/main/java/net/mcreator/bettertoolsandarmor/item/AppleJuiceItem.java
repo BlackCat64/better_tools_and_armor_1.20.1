@@ -13,7 +13,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class AppleJuiceItem extends Item {
 	public AppleJuiceItem() {
-		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).build()));
 	}
 
 	@Override
@@ -22,7 +22,7 @@ public class AppleJuiceItem extends Item {
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem() {
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
 		return true;
 	}
 

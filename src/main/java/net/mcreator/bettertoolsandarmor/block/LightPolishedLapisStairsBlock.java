@@ -13,17 +13,12 @@ import net.minecraft.core.BlockPos;
 
 public class LightPolishedLapisStairsBlock extends StairBlock {
 	public LightPolishedLapisStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WARPED_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.WARPED_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override
 	public float getExplosionResistance() {
 		return 6f;
-	}
-
-	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
 	}
 
 	@Override

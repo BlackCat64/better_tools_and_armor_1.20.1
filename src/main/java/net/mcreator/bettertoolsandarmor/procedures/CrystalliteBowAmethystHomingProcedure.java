@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -16,7 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import javax.annotation.Nullable;
 
@@ -24,10 +24,10 @@ import java.util.UUID;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteBowAmethystHomingProcedure {
 	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+	public static void onEntityTick(EntityTickEvent.Pre event) {
 		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
@@ -74,11 +74,13 @@ public class CrystalliteBowAmethystHomingProcedure {
 									entity.discard();
 								if (GetDistanceBetweenPointsProcedure.execute(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), player.getX(), player.getY(), player.getZ()) >= 30) {
 									if (player instanceof ServerPlayer _player) {
-										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:aimbot_adv"));
-										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-										if (!_ap.isDone()) {
-											for (String criteria : _ap.getRemainingCriteria())
-												_player.getAdvancements().award(_adv, criteria);
+										AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:aimbot_adv"));
+										if (_adv != null) {
+											AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+											if (!_ap.isDone()) {
+												for (String criteria : _ap.getRemainingCriteria())
+													_player.getAdvancements().award(_adv, criteria);
+											}
 										}
 									}
 								}

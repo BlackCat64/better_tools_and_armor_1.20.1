@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
@@ -21,7 +21,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystallitePickaxeLapisXPProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -36,7 +36,7 @@ public class CrystallitePickaxeLapisXPProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_LAPIS.get()) {
-			if (blockstate.is(BlockTags.create(new ResourceLocation("forge:ores"))) && !(blockstate.getBlock() == BetterToolsModBlocks.END_TITANIUM_ORE.get() || blockstate.getBlock() == Blocks.ANCIENT_DEBRIS)) {
+			if (blockstate.is(BlockTags.create(ResourceLocation.parse("forge:ores"))) && !(blockstate.getBlock() == BetterToolsModBlocks.END_TITANIUM_ORE.get() || blockstate.getBlock() == Blocks.ANCIENT_DEBRIS)) {
 				if (world instanceof ServerLevel _level)
 					_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 5));
 			}

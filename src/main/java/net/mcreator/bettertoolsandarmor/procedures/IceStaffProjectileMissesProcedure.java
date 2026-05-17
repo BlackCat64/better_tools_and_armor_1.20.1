@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
@@ -13,11 +11,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import java.util.List;
 import java.util.Comparator;
@@ -40,11 +40,11 @@ public class IceStaffProjectileMissesProcedure {
 		if (entity instanceof LivingEntity && radius > 0) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")),
+					_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:wind_burst")),
 							SoundSource.PLAYERS, 3, 1);
 				} else {
-					_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:wind_burst")), SoundSource.PLAYERS, 3,
-							1, false);
+					_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:wind_burst")), SoundSource.PLAYERS, 3, 1,
+							false);
 				}
 			}
 			SpawnFreezeBoomParticleProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), radius);
@@ -54,13 +54,13 @@ public class IceStaffProjectileMissesProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == immediatesourceentity)) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) freeze_time, 0, false, false));
+							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, false));
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")),
+								_level.playSound(null, BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")),
 										SoundSource.NEUTRAL, 2, 1);
 							} else {
-								_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")),
+								_level.playLocalSound((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")),
 										SoundSource.NEUTRAL, 2, 1, false);
 							}
 						}
@@ -69,15 +69,15 @@ public class IceStaffProjectileMissesProcedure {
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(),
-							(int) (radius * (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get()))));
+					_player.getCooldowns().addCooldown(BetterToolsModItems.ICE_STAFF.get(), (int) (radius * (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+							.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast")))))));
 			}
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.break")), SoundSource.NEUTRAL, 1, (float) 1.2, false);
 				}
 			}
 		}

@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
@@ -13,9 +11,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
@@ -28,9 +27,9 @@ public class CrystalliteSwordAmethystEcholocationProcedure {
 		if (entity.isShiftKeyDown()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1, false);
 				}
 			}
 			{
@@ -44,12 +43,9 @@ public class CrystalliteSwordAmethystEcholocationProcedure {
 				}
 			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				{
-					ItemStack _ist = itemstack;
-					if (_ist.hurt(20, RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					}
+				if (world instanceof ServerLevel _level) {
+					itemstack.hurtAndBreak(20, _level, null, _stkprov -> {
+					});
 				}
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 600);

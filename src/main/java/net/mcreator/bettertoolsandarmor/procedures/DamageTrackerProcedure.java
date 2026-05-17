@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
@@ -16,12 +16,12 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DamageTrackerProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingHurtEvent event) {
-		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity(), event.getAmount());
+	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+		if (event.getEntity() != null) {
+			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity(), event.getOriginalDamage());
 		}
 	}
 
@@ -41,11 +41,9 @@ public class DamageTrackerProcedure {
 		}
 		if (entity instanceof Player) {
 			{
-				double _setval = 0;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.time_since_last_hurt = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_since_last_hurt = 0;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

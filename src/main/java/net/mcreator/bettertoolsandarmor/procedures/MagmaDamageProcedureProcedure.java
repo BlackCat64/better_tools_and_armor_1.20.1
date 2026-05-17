@@ -5,7 +5,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
@@ -15,7 +14,7 @@ public class MagmaDamageProcedureProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BetterToolsModBlocks.BLACKSTONE_MAGMA.get() && entity instanceof LivingEntity && !entity.isShiftKeyDown() && !entity.fireImmune()) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.HOT_FLOOR)), 2);
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.HOT_FLOOR)), 2);
 		}
 	}
 }

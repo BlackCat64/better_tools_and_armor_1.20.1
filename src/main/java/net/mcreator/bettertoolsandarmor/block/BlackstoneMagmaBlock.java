@@ -3,7 +3,7 @@ package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,8 +30,8 @@ public class BlackstoneMagmaBlock extends Block {
 	}
 
 	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.DAMAGE_FIRE;
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.DAMAGE_FIRE;
 	}
 
 	@Override

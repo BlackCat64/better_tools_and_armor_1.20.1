@@ -1,5 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -9,6 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.HoverEvent;
 import net.minecraft.network.chat.ComponentUtils;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.commands.CommandSourceStack;
 
 import com.mojang.brigadier.context.CommandContext;
@@ -25,14 +27,18 @@ public class EnergyVialExecuteCommandProcedure {
 					|| (StringArgumentType.getString(arguments, "armor")).equals("boots")) {
 				if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 					vial = GetEquippedVialProcedure.execute().copy();
-				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
 					vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 				}
 				if (vial.getItem() == ItemStack.EMPTY.getItem()) {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7cFound no Energy Vial to update"), false);
 				} else {
-					vial.getOrCreateTag().putBoolean((StringArgumentType.getString(arguments, "armor") + "_active"), (BoolArgumentType.getBool(arguments, "active")));
+					{
+						final String _tagName = (StringArgumentType.getString(arguments, "armor") + "_active");
+						final boolean _tagValue = (BoolArgumentType.getBool(arguments, "active"));
+						CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
 					ItemStack[] vial_arr = new ItemStack[]{ItemStack.EMPTY};
 					vial_arr[0] = vial;
 					Component hoverableVial = ComponentUtils.wrapInSquareBrackets(vial_arr[0].getHoverName()).withStyle(style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM, new HoverEvent.ItemStackInfo(vial_arr[0]))));

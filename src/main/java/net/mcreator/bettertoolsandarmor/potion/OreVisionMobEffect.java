@@ -8,9 +8,4 @@ public class OreVisionMobEffect extends MobEffect {
 	public OreVisionMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -3170061);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

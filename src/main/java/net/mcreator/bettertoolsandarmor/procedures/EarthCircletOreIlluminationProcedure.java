@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -25,13 +25,11 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class EarthCircletOreIlluminationProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -50,14 +48,11 @@ public class EarthCircletOreIlluminationProcedure {
 		double block_z = 0;
 		double radius = 0;
 		if ((true || (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
-				|| entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.ORE_VISION.get()))
-				&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).crystallite_amethyst_ore_highlight_cooldown == 0) {
+				|| entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.ORE_VISION)) && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_amethyst_ore_highlight_cooldown == 0) {
 			{
-				double _setval = Mth.nextInt(RandomSource.create(), 40, 60);
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.crystallite_amethyst_ore_highlight_cooldown = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.crystallite_amethyst_ore_highlight_cooldown = Mth.nextInt(RandomSource.create(), 40, 60);
+				_vars.syncPlayerVariables(entity);
 			}
 			radius = 24;
 			sx = radius * (-1);
@@ -66,7 +61,7 @@ public class EarthCircletOreIlluminationProcedure {
 				for (int index1 = 0; index1 < (int) (radius * 2); index1++) {
 					sz = radius * (-1);
 					for (int index2 = 0; index2 < (int) (radius * 2); index2++) {
-						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
+						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("forge:ores")))) {
 							block_x = Math.floor(x) + sx + 0.5;
 							block_y = Math.floor(y) + sy + 0.5;
 							block_z = Math.floor(z) + sz + 0.5;

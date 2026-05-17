@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:sapphire_sword",
+    "better_tools:sapphire_axe",
+    "better_tools:sapphire_dagger",
+    "better_tools:crystallite_sword_sapphire",
+    "better_tools:crystallite_axe_sapphire",
+    "better_tools:crystallite_dagger_sapphire"
+  ]
+}

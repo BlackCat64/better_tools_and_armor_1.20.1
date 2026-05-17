@@ -62,7 +62,7 @@ public class TrappedInGroundStopMovementProcedure {
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(BetterToolsModMobEffects.PITFALL.get());
+				_entity.removeEffect(BetterToolsModMobEffects.PITFALL);
 		}
 	}
 }

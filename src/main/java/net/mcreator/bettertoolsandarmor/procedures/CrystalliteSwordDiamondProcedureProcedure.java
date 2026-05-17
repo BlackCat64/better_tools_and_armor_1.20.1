@@ -1,9 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -11,9 +12,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
@@ -23,11 +24,11 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteSwordDiamondProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getSource(), event.getEntity(), event.getSource().getDirectEntity(), event.getAmount());
 		}
 	}
@@ -41,23 +42,20 @@ public class CrystalliteSwordDiamondProcedureProcedure {
 			return;
 		double damage = 0;
 		double boost = 0;
-		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:precision_weapons")))
-				&& !damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:damage_overrides")))
+		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:precision_weapons")))
+				&& !damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:damage_overrides")))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
 			damage = amount;
-			boost = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:crystallite_axes"))) ? 2 : 2.5;
-			if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
-					&& (immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
-				if ((entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
-						? _livingEntity8.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+			boost = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_axes"))) ? 2 : 2.5;
+			if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER) && immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
+				if ((entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+						? _livingEntity8.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
 						: 0) != 1.5) {
-					damage = (damage + boost) * (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
-							? _livingEntity9.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+					damage = (damage + boost) * (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+							? _livingEntity9.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
 							: 0);
 				} else {
 					damage = damage + 1.5 * boost;
@@ -65,18 +63,14 @@ public class CrystalliteSwordDiamondProcedureProcedure {
 			} else {
 				damage = damage + boost;
 			}
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:override_weapon_damage"))), immediatesourceentity,
-					immediatesourceentity), (float) damage);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:override_weapon_damage"))), immediatesourceentity, immediatesourceentity), (float) damage);
 			if (!(immediatesourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				{
-					ItemStack _ist = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(1, RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					}
+				if (world instanceof ServerLevel _level) {
+					(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+					});
 				}
 			}
-			if ((immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
+			if (immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
 				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), damage);
 			}
 		}

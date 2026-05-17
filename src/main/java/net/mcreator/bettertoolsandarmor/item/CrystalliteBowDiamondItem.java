@@ -1,8 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;

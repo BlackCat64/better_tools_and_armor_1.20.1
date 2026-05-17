@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.CriticalHitEvent;
+import net.neoforged.neoforge.event.entity.player.CriticalHitEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -12,7 +12,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class WitheredGauntletProcedureProcedure {
 	@SubscribeEvent
 	public static void onPlayerCriticalHit(CriticalHitEvent event) {

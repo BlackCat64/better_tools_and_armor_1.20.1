@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_coal_wall_reverse",
+  "ingredient": {
+    "item": "better_tools:dark_polished_coal_wall"
+  },
+  "result": {
+    "id": "better_tools:dark_polished_coal_block",
+    "count": 1
+  }
+}

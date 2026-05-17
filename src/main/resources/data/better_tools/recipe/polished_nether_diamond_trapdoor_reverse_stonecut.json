@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_nether_diamond_trapdoor_reverse",
+  "ingredient": {
+    "item": "better_tools:polished_nether_diamond_trapdoor"
+  },
+  "result": {
+    "id": "better_tools:polished_nether_diamond_block",
+    "count": 1
+  }
+}

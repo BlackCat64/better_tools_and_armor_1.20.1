@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
@@ -14,11 +14,11 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DeleteIceBlocksOnDeathProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity());
 		}
 	}
@@ -30,7 +30,7 @@ public class DeleteIceBlocksOnDeathProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get()) && (entity instanceof Mob || entity instanceof Player)) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN) && (entity instanceof Mob || entity instanceof Player)) {
 			DeleteEntityIceBlockDisplayProcedure.execute(entity);
 		}
 	}

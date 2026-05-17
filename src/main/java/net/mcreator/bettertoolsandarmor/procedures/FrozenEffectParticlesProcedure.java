@@ -25,7 +25,7 @@ public class FrozenEffectParticlesProcedure {
 		Entity display = null;
 		if (entity.getRemainingFireTicks() > 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
 		} else {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);

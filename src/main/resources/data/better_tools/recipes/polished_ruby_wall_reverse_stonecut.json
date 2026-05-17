@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "group": "polished_ruby_wall_reverse",
-  "count": 1,
-  "ingredient": {
-    "item": "better_tools:polished_ruby_wall"
-  },
-  "result": "better_tools:polished_ruby_block"
-}

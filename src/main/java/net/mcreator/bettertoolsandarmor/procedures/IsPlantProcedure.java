@@ -7,6 +7,6 @@ import net.minecraft.core.BlockPos;
 
 public class IsPlantProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("better_tools:plants"))) || false || false || false || false || false || false || false;
+		return (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("better_tools:plants"))) || false || false || false || false || false || false || false;
 	}
 }

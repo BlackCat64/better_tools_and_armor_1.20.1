@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hearty_body",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "better_tools:hearty_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "id": "better_tools:glass_helmet",
+    "count": 1
+  }
+}

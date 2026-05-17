@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.CriticalHitEvent;
+import net.neoforged.neoforge.event.entity.player.CriticalHitEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,7 +15,7 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteSwordSkyCritTrackerProcedure {
 	@SubscribeEvent
 	public static void onPlayerCriticalHit(CriticalHitEvent event) {
@@ -31,26 +31,21 @@ public class CrystalliteSwordSkyCritTrackerProcedure {
 			return;
 		if (isvanillacritical) {
 			{
-				boolean _setval = true;
-				sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.critical_hit = _setval;
-					capability.syncPlayerVariables(sourceentity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.critical_hit = true;
+				_vars.syncPlayerVariables(sourceentity);
 			}
-			if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
-					? _livingEntity0.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+			if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+					? _livingEntity0.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
 					: 0) != 1.5) {
-				if (event != null && event.hasResult()) {
-					event.setResult(Event.Result.DENY);
-				}
+				if (event instanceof CriticalHitEvent _event)
+					_event.setCriticalHit(false);
 			}
 			BetterToolsMod.queueServerWork(1, () -> {
 				{
-					boolean _setval = false;
-					sourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.critical_hit = _setval;
-						capability.syncPlayerVariables(sourceentity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.critical_hit = false;
+					_vars.syncPlayerVariables(sourceentity);
 				}
 			});
 		}

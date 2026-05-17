@@ -1,7 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -13,9 +12,10 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
@@ -34,11 +34,13 @@ public class AscensionPotionProcedureProcedure {
 			if (y_iterator <= 320) {
 				if (entity.getY() <= -60 && y_iterator >= 320) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ascend_to_top_of_world"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:ascend_to_top_of_world"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
@@ -50,17 +52,19 @@ public class AscensionPotionProcedureProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y_iterator, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y_iterator, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y_iterator, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+						_level.playLocalSound(x, y_iterator, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 				if (entity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:ascension_adv"));
-					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-					if (!_ap.isDone()) {
-						for (String criteria : _ap.getRemainingCriteria())
-							_player.getAdvancements().award(_adv, criteria);
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:ascension_adv"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
 					}
 				}
 			} else {

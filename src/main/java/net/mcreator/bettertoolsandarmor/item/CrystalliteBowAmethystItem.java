@@ -45,7 +45,7 @@ public class CrystalliteBowAmethystItem extends BowItem {
 			boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, p_40667_) > 0;
 			ItemStack itemstack = player.getProjectile(p_40667_);
 			int i = this.getUseDuration(p_40667_) - p_40670_;
-			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(p_40667_, p_40668_, player, i, !itemstack.isEmpty() || flag);
+			i = ForgeEventFactory.onArrowLoose(p_40667_, p_40668_, player, i, !itemstack.isEmpty() || flag);
 			if (i < 0)
 				return;
 			if (!itemstack.isEmpty() || flag) {

@@ -1,6 +1,9 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
@@ -20,7 +23,7 @@ import java.util.List;
 
 public class DescensionPotionItem extends Item {
 	public DescensionPotionItem() {
-		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override
@@ -29,7 +32,7 @@ public class DescensionPotionItem extends Item {
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem() {
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
 		return true;
 	}
 
@@ -39,18 +42,19 @@ public class DescensionPotionItem extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 24;
 	}
 
 	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+	public float getDestroySpeed(ItemStack itemstack, BlockState state) {
 		return 0f;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.better_tools.descension_potion.description_0"));
 		list.add(Component.translatable("item.better_tools.descension_potion.description_1"));
 	}

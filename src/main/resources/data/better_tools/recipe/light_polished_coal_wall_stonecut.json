@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_coal_wall",
+  "ingredient": {
+    "item": "better_tools:light_polished_coal_block"
+  },
+  "result": {
+    "id": "better_tools:light_polished_coal_wall",
+    "count": 1
+  }
+}

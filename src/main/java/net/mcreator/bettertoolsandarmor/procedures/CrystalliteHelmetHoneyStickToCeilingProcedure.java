@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -16,6 +15,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -24,13 +24,11 @@ import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -40,15 +38,15 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).stick_to_ceiling
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:sticky_helmets"))) && !entity.onGround()
+		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).stick_to_ceiling
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sticky_helmets"))) && !entity.onGround()
 				&& world.getBlockState(BlockPos.containing(x, y + 2, z)).isFaceSturdy(world, BlockPos.containing(x, y + 2, z), Direction.DOWN)) {
 			if (false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y + 2, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1);
+						_level.playSound(null, BlockPos.containing(x, y + 2, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1);
 					} else {
-						_level.playLocalSound(x, (y + 2), z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1, false);
+						_level.playLocalSound(x, (y + 2), z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1, false);
 					}
 				}
 			}

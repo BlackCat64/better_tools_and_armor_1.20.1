@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_boots",
+    "better_tools:crystallite_armor_iron_boots",
+    "better_tools:crystallite_armor_gold_boots",
+    "better_tools:crystallite_armor_lapis_boots",
+    "better_tools:crystallite_armor_redstone_boots",
+    "better_tools:crystallite_armor_diamond_boots",
+    "better_tools:crystallite_armor_netherite_boots",
+    "better_tools:crystallite_armor_ruby_boots",
+    "better_tools:crystallite_armor_sapphire_boots",
+    "better_tools:crystallite_armor_topaz_boots",
+    "better_tools:crystallite_armor_nether_diamond_boots",
+    "better_tools:crystallite_armor_emerald_boots",
+    "better_tools:crystallite_armor_sculk_boots",
+    "better_tools:crystallite_armor_sky_boots",
+    "better_tools:crystallite_armor_amethyst_boots",
+    "better_tools:crystallite_armor_prismarine_boots",
+    "better_tools:crystallite_armor_honey_boots"
+  ]
+}

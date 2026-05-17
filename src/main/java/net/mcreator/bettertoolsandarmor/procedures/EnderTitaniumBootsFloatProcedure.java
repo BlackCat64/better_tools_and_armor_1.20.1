@@ -8,7 +8,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -22,25 +22,19 @@ public class EnderTitaniumBootsFloatProcedure {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
 					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getMaxDamage()
 							- (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getDamageValue() > 10) {
-						if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MobEffects.SLOW_FALLING))
-								&& (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).ender_titanium_boots_cooldown == 0) {
+						if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MobEffects.SLOW_FALLING)) && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).ender_titanium_boots_cooldown == 0) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0, false, false));
-							{
-								ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY);
-								if (_ist.hurt(10, RandomSource.create(), null)) {
-									_ist.shrink(1);
-									_ist.setDamageValue(0);
-								}
+							if (world instanceof ServerLevel _level) {
+								(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).hurtAndBreak(10, _level, null, _stkprov -> {
+								});
 							}
 							if (entity instanceof Player _player)
 								_player.getCooldowns().addCooldown((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem(), 400);
 							{
-								double _setval = 400;
-								entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.ender_titanium_boots_cooldown = _setval;
-									capability.syncPlayerVariables(entity);
-								});
+								BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+								_vars.ender_titanium_boots_cooldown = 400;
+								_vars.syncPlayerVariables(entity);
 							}
 						}
 					}

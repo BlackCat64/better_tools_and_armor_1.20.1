@@ -16,6 +16,6 @@ public class PurpleMooshroomRenderer extends MobRenderer<PurpleMooshroomEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(PurpleMooshroomEntity entity) {
-		return new ResourceLocation("better_tools:textures/entities/purple_mooshroom.png");
+		return ResourceLocation.parse("better_tools:textures/entities/purple_mooshroom.png");
 	}
 }

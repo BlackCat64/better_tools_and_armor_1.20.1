@@ -1,9 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
@@ -21,7 +22,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystallitePickaxeSapphireProcedureProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -35,11 +36,9 @@ public class CrystallitePickaxeSapphireProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
-		if (blockstate.is(BlockTags.create(new ResourceLocation("forge:ores"))) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_SAPPHIRE.get()) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("forge:ores"))) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_PICKAXE_SAPPHIRE.get()) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level) {

@@ -3,8 +3,7 @@ package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.common.util.ForgeSoundType;
+import net.neoforged.neoforge.common.util.DeferredSoundType;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -20,6 +19,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -29,9 +29,9 @@ import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProc
 public class CrystalliteBlockBlock extends Block {
 	public CrystalliteBlockBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.ICE)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_break")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_step")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_place")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_shimmer")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_break"))))
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_step")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_place")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_shimmer")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break"))))
 				.strength(20f, 600f).lightLevel(s -> 8).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 	}
 

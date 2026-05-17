@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_redstone_trapdoor_reverse",
+  "ingredient": {
+    "item": "better_tools:polished_redstone_trapdoor"
+  },
+  "result": {
+    "id": "better_tools:polished_redstone_block",
+    "count": 1
+  }
+}

@@ -22,7 +22,7 @@ import net.mcreator.bettertoolsandarmor.procedures.BlueMushroomGrowProcedureProc
 
 public class BlueMushroomBlock extends FlowerBlock implements BonemealableBlock {
 	public BlueMushroomBlock() {
-		super(() -> MobEffects.SATURATION, 0, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class BlueMushroomBlock extends FlowerBlock implements BonemealableBlock 
 	}
 
 	@Override
-	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
+	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate) {
 		return true;
 	}
 

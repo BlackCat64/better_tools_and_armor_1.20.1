@@ -14,7 +14,7 @@ public class PurpleMushroomProcedureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof PurpleMooshroomEntity)) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:poison_mushroom_damage")))), 1);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:poison_mushroom_damage")))), 1);
 		}
 	}
 }

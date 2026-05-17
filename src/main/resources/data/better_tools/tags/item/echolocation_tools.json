@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_pickaxe_amethyst",
+    "better_tools:crystallite_axe_amethyst",
+    "better_tools:crystallite_shovel_amethyst",
+    "better_tools:crystallite_hoe_amethyst"
+  ]
+}

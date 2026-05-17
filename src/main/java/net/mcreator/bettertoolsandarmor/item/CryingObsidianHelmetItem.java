@@ -1,7 +1,10 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -9,64 +12,42 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
+import java.util.List;
+import java.util.EnumMap;
+
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class CryingObsidianHelmetItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 2);
+				map.put(ArmorItem.Type.LEGGINGS, 5);
+				map.put(ArmorItem.Type.CHESTPLATE, 7);
+				map.put(ArmorItem.Type.HELMET, 2);
+				map.put(ArmorItem.Type.BODY, 7);
+			}), 8, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.respawn_anchor.charge")), () -> Ingredient.of(new ItemStack(Blocks.CRYING_OBSIDIAN)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:crying_"))), 0f, 0.1f);
+			registerHelper.register(ResourceLocation.parse("better_tools:crying_obsidian"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
 	public CryingObsidianHelmetItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 35;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{2, 5, 7, 2}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 8;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.respawn_anchor.charge"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Blocks.CRYING_OBSIDIAN));
-			}
-
-			@Override
-			public String getName() {
-				return "crying_obsidian";
-			}
-
-			@Override
-			public float getToughness() {
-				return 0f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.1f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends CryingObsidianHelmetItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/crying__layer_1.png";
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35)));
 		}
 	}
 }

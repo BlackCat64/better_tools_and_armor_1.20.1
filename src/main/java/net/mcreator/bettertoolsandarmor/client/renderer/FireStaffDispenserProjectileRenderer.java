@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class FireStaffDispenserProjectileRenderer extends EntityRenderer<FireStaffDispenserProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("better_tools:textures/entities/flame_effect.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("better_tools:textures/entities/flame_effect.png");
 	private final Modelfire_staff_projectile model;
 
 	public FireStaffDispenserProjectileRenderer(EntityRendererProvider.Context context) {
@@ -30,7 +30,7 @@ public class FireStaffDispenserProjectileRenderer extends EntityRenderer<FireSta
 		poseStack.pushPose();
 		poseStack.mulPose(Axis.YP.rotationDegrees(Mth.lerp(partialTicks, entityIn.yRotO, entityIn.getYRot()) - 90));
 		poseStack.mulPose(Axis.ZP.rotationDegrees(90 + Mth.lerp(partialTicks, entityIn.xRotO, entityIn.getXRot())));
-		model.renderToBuffer(poseStack, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
+		model.renderToBuffer(poseStack, vb, packedLightIn, OverlayTexture.NO_OVERLAY);
 		poseStack.popPose();
 		super.render(entityIn, entityYaw, partialTicks, poseStack, bufferIn, packedLightIn);
 	}

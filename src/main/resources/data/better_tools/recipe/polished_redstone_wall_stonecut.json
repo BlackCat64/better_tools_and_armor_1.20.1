@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_redstone_wall",
+  "ingredient": {
+    "item": "better_tools:polished_redstone_block"
+  },
+  "result": {
+    "id": "better_tools:polished_redstone_wall",
+    "count": 1
+  }
+}

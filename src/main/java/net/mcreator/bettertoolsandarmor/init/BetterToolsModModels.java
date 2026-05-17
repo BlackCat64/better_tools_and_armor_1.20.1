@@ -4,17 +4,17 @@
  */
 package net.mcreator.bettertoolsandarmor.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.bettertoolsandarmor.client.model.Modellightning_staff_projectile;
 import net.mcreator.bettertoolsandarmor.client.model.Modelice_staff_projectile;
 import net.mcreator.bettertoolsandarmor.client.model.Modelgolden_carrot_hat;
 import net.mcreator.bettertoolsandarmor.client.model.Modelfire_staff_projectile;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class BetterToolsModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

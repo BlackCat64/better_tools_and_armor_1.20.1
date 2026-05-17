@@ -5,11 +5,12 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -30,13 +31,15 @@ public class FireStaffApplyEnchantmentsProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity) && entityiterator instanceof FireStaffProjectileEntity) {
-						if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get(), itemstack) != 0) {
-							entityiterator.getPersistentData().putDouble("explosion_power", (0.5 + 0.5 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get())));
+						if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation")))) != 0) {
+							entityiterator.getPersistentData().putDouble("explosion_power", (0.5
+									+ 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))))));
 							if ((entityiterator.level().dimension()) == Level.NETHER) {
 								entityiterator.getPersistentData().putDouble("explosion_power", (entityiterator.getPersistentData().getDouble("explosion_power") * 2));
 							}
 						}
-						entityiterator.getPersistentData().putDouble("cooldown_ticks_on_hit", (200 - 30 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get())));
+						entityiterator.getPersistentData().putDouble("cooldown_ticks_on_hit",
+								(200 - 30 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast"))))));
 					}
 				}
 			}

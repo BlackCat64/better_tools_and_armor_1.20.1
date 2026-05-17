@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -20,18 +20,18 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class TopazSwordProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity(),
 					event.getAmount());
 		}
@@ -50,9 +50,9 @@ public class TopazSwordProcedureProcedure {
 		double chance = 0;
 		double range = 0;
 		double chain_count = 0;
-		if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:electric_chain_damage")))
-				&& (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:lightning_tools")))) {
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:upgraded_crystallite_tools")))) {
+		if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:electric_chain_damage")))
+				&& (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:lightning_tools")))) {
+			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				chance = 0.5;
 			} else {
 				chance = 0.25;
@@ -80,17 +80,18 @@ public class TopazSwordProcedureProcedure {
 						if (entityiterator.getPersistentData().getBoolean("can_electric_chain") && entityiterator instanceof LivingEntity && !(entityiterator == sourceentity || entityiterator == closest)) {
 							success = true;
 							ElectricChainParticlesProcedure.execute(world, entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), closest.getX(), closest.getY() + closest.getBbHeight() / 2, closest.getZ());
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:electric_chain_damage"))),
-									null, immediatesourceentity), (float) (amount / 2));
+							entityiterator.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:electric_chain_damage"))), null, immediatesourceentity), (float) (amount / 2));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0.25, 1, 0.25, 0.01);
 							if (chain_count >= 2) {
 								if (sourceentity instanceof ServerPlayer _player) {
-									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:topaz_sword_adv"));
-									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-									if (!_ap.isDone()) {
-										for (String criteria : _ap.getRemainingCriteria())
-											_player.getAdvancements().award(_adv, criteria);
+									AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:topaz_sword_adv"));
+									if (_adv != null) {
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
 									}
 								}
 							}

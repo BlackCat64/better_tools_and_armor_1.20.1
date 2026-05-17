@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -18,7 +18,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteShovelPrismarineProcedureProcedure {
 	@SubscribeEvent
 	public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
@@ -34,7 +34,7 @@ public class CrystalliteShovelPrismarineProcedureProcedure {
 			return;
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_SHOVEL_PRISMARINE.get() && entity.isInWaterRainOrBubble()) {
-				if (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))) {
+				if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
 					BreakBlockWithShovelProcedure.execute(world, x, y, z, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 				}
 			}

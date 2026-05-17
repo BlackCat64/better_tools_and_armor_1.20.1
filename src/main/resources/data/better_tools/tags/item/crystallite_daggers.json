@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_dagger",
+    "better_tools:crystallite_dagger_iron",
+    "better_tools:crystallite_dagger_gold",
+    "better_tools:crystallite_dagger_lapis",
+    "better_tools:crystallite_dagger_redstone",
+    "better_tools:crystallite_dagger_diamond",
+    "better_tools:crystallite_dagger_netherite",
+    "better_tools:crystallite_dagger_ruby",
+    "better_tools:crystallite_dagger_sapphire",
+    "better_tools:crystallite_dagger_topaz",
+    "better_tools:crystallite_dagger_nether_diamond",
+    "better_tools:crystallite_dagger_emerald",
+    "better_tools:crystallite_dagger_sculk",
+    "better_tools:crystallite_dagger_sky",
+    "better_tools:crystallite_dagger_amethyst",
+    "better_tools:crystallite_dagger_prismarine",
+    "better_tools:crystallite_dagger_honey"
+  ]
+}

@@ -1,9 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Block;
@@ -13,9 +14,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -24,7 +25,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteShovelEmeraldProcedureProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -51,7 +52,7 @@ public class CrystalliteShovelEmeraldProcedureProcedure {
 					return false;
 				}
 			}.checkGamemode(entity))) {
-				if (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:sand"))) || blockstate.is(BlockTags.create(new ResourceLocation("forge:gravel")))) {
+				if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:sand"))) || blockstate.is(BlockTags.create(ResourceLocation.parse("forge:gravel")))) {
 					y_distance = 0;
 					for (int index0 = 0; index0 < 16; index0++) {
 						y_distance = y_distance + 1;
@@ -65,17 +66,12 @@ public class CrystalliteShovelEmeraldProcedureProcedure {
 							Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + 0.5, (y + y_distance) - 0.5, z + 0.5), null);
 							world.destroyBlock(_pos, false);
 						}
-						if (event != null && event.isCancelable()) {
-							event.setCanceled(true);
-						} else if (event != null && event.hasResult()) {
-							event.setResult(Event.Result.DENY);
+						if (event instanceof ICancellableEvent _cancellable) {
+							_cancellable.setCanceled(true);
 						}
-						{
-							ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-							if (_ist.hurt(1, RandomSource.create(), null)) {
-								_ist.shrink(1);
-								_ist.setDamageValue(0);
-							}
+						if (world instanceof ServerLevel _level) {
+							(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+							});
 						}
 					}
 				}

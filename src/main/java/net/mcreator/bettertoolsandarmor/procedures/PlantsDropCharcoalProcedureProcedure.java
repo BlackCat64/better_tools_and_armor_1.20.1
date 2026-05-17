@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -19,7 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class PlantsDropCharcoalProcedureProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -34,9 +34,9 @@ public class PlantsDropCharcoalProcedureProcedure {
 		if (entity == null)
 			return;
 		double chance = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:plant_charring_tools"))) && IsPlantProcedure.execute(world, x, y, z)
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:plant_charring_tools"))) && IsPlantProcedure.execute(world, x, y, z)
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				chance = 0.1;
 			} else {
 				chance = 0.05;

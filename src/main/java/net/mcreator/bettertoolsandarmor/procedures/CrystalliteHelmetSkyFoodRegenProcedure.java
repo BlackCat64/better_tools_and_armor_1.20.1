@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -14,17 +14,18 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteHelmetSkyFoodRegenProcedure {
 	@SubscribeEvent
 	public static void onUseItemFinish(LivingEntityUseItemEvent.Finish event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity(), event.getItem());
 		}
 	}
@@ -37,42 +38,34 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_HELMET.get()) {
-			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:drinks")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:drinks")))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
 				{
-					boolean _setval = true;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.last_food_was_carbonated = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.last_food_was_carbonated = true;
+					_vars.syncPlayerVariables(entity);
 				}
-			} else if (itemstack.getItem().isEdible() && !(itemstack.getItem() == Items.ROTTEN_FLESH || itemstack.getItem() == Items.SPIDER_EYE || itemstack.getItem() == Items.PUFFERFISH || itemstack.getItem() == Items.POISONOUS_POTATO)) {
+			} else if (itemstack.has(DataComponents.FOOD) && !(itemstack.getItem() == Items.ROTTEN_FLESH || itemstack.getItem() == Items.SPIDER_EYE || itemstack.getItem() == Items.PUFFERFISH || itemstack.getItem() == Items.POISONOUS_POTATO)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
 				{
-					boolean _setval = false;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.last_food_was_carbonated = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.last_food_was_carbonated = false;
+					_vars.syncPlayerVariables(entity);
 				}
 			} else {
 				{
-					boolean _setval = false;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.last_food_was_carbonated = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.last_food_was_carbonated = false;
+					_vars.syncPlayerVariables(entity);
 				}
 			}
-		} else if (itemstack.getItem().isEdible()) {
+		} else if (itemstack.has(DataComponents.FOOD)) {
 			{
-				boolean _setval = false;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.last_food_was_carbonated = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.last_food_was_carbonated = false;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

@@ -3,9 +3,7 @@ package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.common.PlantType;
-
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,7 +29,7 @@ import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomGrowProcedurePr
 
 public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBlock {
 	public PurpleMushroomBlock() {
-		super(() -> MobEffects.SATURATION, 0,
+		super(MobEffects.SATURATION, 0,
 				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 4).noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
@@ -41,8 +39,8 @@ public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBloc
 	}
 
 	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.DAMAGE_OTHER;
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.DAMAGE_OTHER;
 	}
 
 	@Override
@@ -63,18 +61,13 @@ public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBloc
 	}
 
 	@Override
-	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
-		return PlantType.CAVE;
-	}
-
-	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
 		PurpleMushroomProcedureProcedure.execute(world, entity);
 	}
 
 	@Override
-	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
+	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate) {
 		return true;
 	}
 

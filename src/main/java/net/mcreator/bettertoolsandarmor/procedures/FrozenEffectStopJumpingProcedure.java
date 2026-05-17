@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,7 +14,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class FrozenEffectStopJumpingProcedure {
 	@SubscribeEvent
 	public static void onEntityJump(LivingEvent.LivingJumpEvent event) {
@@ -29,13 +29,13 @@ public class FrozenEffectStopJumpingProcedure {
 		if (entity == null)
 			return;
 		double time = 0;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN.get()) && entity instanceof Player && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN.get()).getDuration() : 0;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN) && entity instanceof Player && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.FROZEN) ? _livEnt.getEffect(BetterToolsModMobEffects.FROZEN).getDuration() : 0;
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(BetterToolsModMobEffects.FROZEN.get());
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
 			if (time > 20) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), (int) (time - 20), 0, true, false));
+					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) (time - 20), 0, true, false));
 			}
 		}
 	}

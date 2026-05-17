@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,17 +19,16 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-import java.util.Map;
-
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class BarkOnStrippedWoodProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -47,8 +45,8 @@ public class BarkOnStrippedWoodProcedureProcedure {
 		if (entity == null)
 			return false;
 		BlockState original_log = Blocks.AIR.defaultBlockState();
-		if (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:logs"))) && (ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains(":stripped_")) {
-			original_log = ForgeRegistries.BLOCKS.getValue(new ResourceLocation((((ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).replace("stripped_", ""))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && (BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).contains(":stripped_")) {
+			original_log = BuiltInRegistries.BLOCK.get(ResourceLocation.parse((((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).replace("stripped_", ""))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
 			if (original_log.getBlock() == Blocks.AIR) {
 				return false;
 			}
@@ -72,11 +70,11 @@ public class BarkOnStrippedWoodProcedureProcedure {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = original_log;
 				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
+				for (Property<?> _propertyOld : _bso.getProperties()) {
+					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+					if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
 						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
 						} catch (Exception e) {
 						}
 				}
@@ -84,17 +82,19 @@ public class BarkOnStrippedWoodProcedureProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.BLOCKS, 1, (float) 0.75);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, (float) 0.75);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.BLOCKS, 1, (float) 0.75, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, (float) 0.75, false);
 				}
 			}
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:bark_on_log_adv"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:bark_on_log_adv"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}

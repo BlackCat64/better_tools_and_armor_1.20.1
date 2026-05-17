@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.better_tools.life_aura"
+  },
+  "supported_items": "#forge:armors/chestplates",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "chest"
+  ],
+  "exclusive_set": "better_tools:desperation"
+}

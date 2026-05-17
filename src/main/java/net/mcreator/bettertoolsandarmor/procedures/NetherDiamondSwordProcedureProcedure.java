@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -14,11 +14,11 @@ import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class NetherDiamondSwordProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity(), event.getSource().getDirectEntity());
 		}
 	}
@@ -31,8 +31,8 @@ public class NetherDiamondSwordProcedureProcedure {
 		if (entity == null || immediatesourceentity == null)
 			return;
 		double fire_chance = 0;
-		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:flaming_tools")))) {
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_tools")))) {
+			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				fire_chance = 5;
 			} else {
 				fire_chance = 3;
@@ -40,7 +40,7 @@ public class NetherDiamondSwordProcedureProcedure {
 			if ((entity.level().dimension()) == Level.NETHER) {
 				fire_chance = fire_chance * 2;
 			}
-			entity.setSecondsOnFire((int) fire_chance);
+			entity.igniteForSeconds((int) fire_chance);
 		}
 	}
 }

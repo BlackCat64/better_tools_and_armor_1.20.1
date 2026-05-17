@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.better_tools.swift_cast"
+  },
+  "supported_items": "#better_tools:staffs",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

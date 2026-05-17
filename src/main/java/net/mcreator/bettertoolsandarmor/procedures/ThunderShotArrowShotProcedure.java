@@ -1,20 +1,21 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
@@ -22,11 +23,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ThunderShotArrowShotProcedure {
 	@SubscribeEvent
 	public static void onUseItemStop(LivingEntityUseItemEvent.Stop event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getItem());
 		}
 	}
@@ -38,7 +39,7 @@ public class ThunderShotArrowShotProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.THUNDER_SHOT.get(), itemstack) != 0) {
+		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0) {
 			BetterToolsMod.queueServerWork(1, () -> {
 				{
 					final Vec3 _center = new Vec3(

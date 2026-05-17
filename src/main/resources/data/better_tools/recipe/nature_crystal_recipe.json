@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nature_crystal",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "ebf"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:leaves"
+    },
+    "b": {
+      "item": "minecraft:emerald_block"
+    },
+    "c": {
+      "item": "minecraft:sunflower"
+    },
+    "d": {
+      "item": "better_tools:crystallite_gem"
+    },
+    "e": {
+      "tag": "minecraft:logs"
+    },
+    "f": {
+      "item": "minecraft:mud"
+    }
+  },
+  "result": {
+    "id": "better_tools:nature_crystal",
+    "count": 1
+  }
+}

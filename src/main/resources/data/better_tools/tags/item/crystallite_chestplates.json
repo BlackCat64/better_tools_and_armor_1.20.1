@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_chestplate",
+    "better_tools:crystallite_armor_iron_chestplate",
+    "better_tools:crystallite_armor_gold_chestplate",
+    "better_tools:crystallite_armor_lapis_chestplate",
+    "better_tools:crystallite_armor_redstone_chestplate",
+    "better_tools:crystallite_armor_diamond_chestplate",
+    "better_tools:crystallite_armor_netherite_chestplate",
+    "better_tools:crystallite_armor_ruby_chestplate",
+    "better_tools:crystallite_armor_sapphire_chestplate",
+    "better_tools:crystallite_armor_topaz_chestplate",
+    "better_tools:crystallite_armor_nether_diamond_chestplate",
+    "better_tools:crystallite_armor_emerald_chestplate",
+    "better_tools:crystallite_armor_sculk_chestplate",
+    "better_tools:crystallite_armor_sky_chestplate",
+    "better_tools:crystallite_armor_amethyst_chestplate",
+    "better_tools:crystallite_armor_prismarine_chestplate",
+    "better_tools:crystallite_armor_honey_chestplate"
+  ]
+}

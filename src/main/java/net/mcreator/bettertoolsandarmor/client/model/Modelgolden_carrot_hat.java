@@ -21,7 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelgolden_carrot_hat<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("better_tools", "modelgolden_carrot_hat"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("better_tools", "modelgolden_carrot_hat"), "main");
 	public final ModelPart armorHead;
 
 	public Modelgolden_carrot_hat(ModelPart root) {
@@ -44,7 +44,7 @@ public class Modelgolden_carrot_hat<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		armorHead.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
+		armorHead.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 	}
 }

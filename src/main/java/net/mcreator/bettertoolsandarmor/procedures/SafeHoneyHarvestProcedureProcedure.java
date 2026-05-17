@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,18 +15,18 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class SafeHoneyHarvestProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -43,8 +42,8 @@ public class SafeHoneyHarvestProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, Entity entity) {
 		if (direction == null || entity == null)
 			return;
-		if (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:beehives"))) && (blockstate.getBlock().getStateDefinition().getProperty("honey_level") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 5
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:safe_honey_harvesters")))) {
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:beehives"))) && (blockstate.getBlock().getStateDefinition().getProperty("honey_level") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 5
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))) {
 			{
 				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -61,17 +60,14 @@ public class SafeHoneyHarvestProcedureProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beehive.shear")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.beehive.shear")), SoundSource.BLOCKS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beehive.shear")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.beehive.shear")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
-			{
-				ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);

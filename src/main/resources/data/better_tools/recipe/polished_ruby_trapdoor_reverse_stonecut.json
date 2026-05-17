@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "polished_ruby_trapdoor_reverse",
+  "ingredient": {
+    "item": "better_tools:polished_ruby_trapdoor"
+  },
+  "result": {
+    "id": "better_tools:polished_ruby_block",
+    "count": 1
+  }
+}

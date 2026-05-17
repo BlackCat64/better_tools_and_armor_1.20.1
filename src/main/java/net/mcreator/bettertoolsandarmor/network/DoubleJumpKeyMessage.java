@@ -1,45 +1,45 @@
 
 package net.mcreator.bettertoolsandarmor.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 
 import net.mcreator.bettertoolsandarmor.procedures.DoubleJumpKeyPressProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-import java.util.function.Supplier;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DoubleJumpKeyMessage {
-	int type, pressedms;
-
-	public DoubleJumpKeyMessage(int type, int pressedms) {
-		this.type = type;
-		this.pressedms = pressedms;
-	}
-
-	public DoubleJumpKeyMessage(FriendlyByteBuf buffer) {
-		this.type = buffer.readInt();
-		this.pressedms = buffer.readInt();
-	}
-
-	public static void buffer(DoubleJumpKeyMessage message, FriendlyByteBuf buffer) {
-		buffer.writeInt(message.type);
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+public record DoubleJumpKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
+	public static final Type<DoubleJumpKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "key_double_jump_key"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, DoubleJumpKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DoubleJumpKeyMessage message) -> {
+		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
+	}, (RegistryFriendlyByteBuf buffer) -> new DoubleJumpKeyMessage(buffer.readInt(), buffer.readInt()));
+
+	@Override
+	public Type<DoubleJumpKeyMessage> type() {
+		return TYPE;
 	}
 
-	public static void handler(DoubleJumpKeyMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			pressAction(context.getSender(), message.type, message.pressedms);
-		});
-		context.setPacketHandled(true);
+	public static void handleData(final DoubleJumpKeyMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> {
+				pressAction(context.player(), message.eventType, message.pressedms);
+			}).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
 	}
 
 	public static void pressAction(Player entity, int type, int pressedms) {
@@ -58,6 +58,6 @@ public class DoubleJumpKeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		BetterToolsMod.addNetworkMessage(DoubleJumpKeyMessage.class, DoubleJumpKeyMessage::buffer, DoubleJumpKeyMessage::new, DoubleJumpKeyMessage::handler);
+		BetterToolsMod.addNetworkMessage(DoubleJumpKeyMessage.TYPE, DoubleJumpKeyMessage.STREAM_CODEC, DoubleJumpKeyMessage::handleData);
 	}
 }

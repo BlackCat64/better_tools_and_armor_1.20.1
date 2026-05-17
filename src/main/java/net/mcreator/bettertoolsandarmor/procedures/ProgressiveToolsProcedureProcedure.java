@@ -1,12 +1,12 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -16,11 +16,12 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ProgressiveToolsProcedureProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -38,48 +39,47 @@ public class ProgressiveToolsProcedureProcedure {
 		String reg_name = "";
 		double threshold_1 = 0;
 		double threshold_2 = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:progressive_tools")))
-				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:pickaxes")))
-						&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe")))
-						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))
-								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/axe")))
-						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:shovels")))
-								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/shovel")))
-						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes")))
-								&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:mineable/hoe"))))) {
-			reg_name = ((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).replace("_upgrade_2", "")).replace("_upgrade_1", "");
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:pickaxes")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:progressive_tools")))
+				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes")))
+						&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/pickaxe")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))
+								&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/axe")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:shovels")))
+								&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes")))
+								&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/hoe"))))) {
+			reg_name = ((BuiltInRegistries.ITEM.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).replace("_upgrade_2", "")).replace("_upgrade_1", "");
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes")))) {
 				threshold_1 = 5000;
 				threshold_2 = 20000;
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
 				threshold_1 = 1000;
 				threshold_2 = 4000;
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:shovels")))) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:shovels")))) {
 				threshold_1 = 10000;
 				threshold_2 = 30000;
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes")))) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes")))) {
 				threshold_1 = 1000;
 				threshold_2 = 3000;
 			}
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("blocks_mined",
-					((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("blocks_mined") + 1));
-			if (!((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).endsWith("_upgrade_2"))
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("blocks_mined") >= threshold_2) {
-				new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_2")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
+			{
+				final String _tagName = "blocks_mined";
+				final double _tagValue = ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("blocks_mined") + 1);
+				CustomData.update(DataComponents.CUSTOM_DATA, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (!((BuiltInRegistries.ITEM.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).endsWith("_upgrade_2"))
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("blocks_mined") >= threshold_2) {
+				new_pickaxe = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((reg_name + "_upgrade_2")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(("\u00A7c" + ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()) + " upgraded to Max Level")), true);
-			} else if (!((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("_upgrade_"))
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("blocks_mined") >= threshold_1) {
-				new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_1")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
+			} else if (!((BuiltInRegistries.ITEM.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("_upgrade_"))
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("blocks_mined") >= threshold_1) {
+				new_pickaxe = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((reg_name + "_upgrade_1")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(("\u00A7c" + ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()) + " upgraded to Level 1")), true);
 			}
-			if (new_pickaxe.is(ItemTags.create(new ResourceLocation("better_tools:progressive_tools")))) {
-				{
-					CompoundTag _nbtTag = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getTag();
-					if (_nbtTag != null)
-						new_pickaxe.setTag(_nbtTag.copy());
-				}
+			if (new_pickaxe.is(ItemTags.create(ResourceLocation.parse("better_tools:progressive_tools")))) {
+				new_pickaxe.applyComponents((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getComponents());
 				if (entity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new_pickaxe.copy();
 					_setstack.setCount(1);

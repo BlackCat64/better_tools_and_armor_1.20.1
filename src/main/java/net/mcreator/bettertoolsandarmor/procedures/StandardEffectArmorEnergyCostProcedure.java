@@ -1,11 +1,13 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.component.DataComponents;
 
 public class StandardEffectArmorEnergyCostProcedure {
 	public static double execute(Entity entity, ItemStack itemstack) {
@@ -18,27 +20,68 @@ public class StandardEffectArmorEnergyCostProcedure {
 		armor_pieces = EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack);
 		i = 0;
 		for (int index0 = 0; index0 < 4; index0++) {
-			if (i == 0 && !itemstack.getOrCreateTag().getBoolean("boots_active") || i == 1 && !itemstack.getOrCreateTag().getBoolean("leggings_active") || i == 2 && !itemstack.getOrCreateTag().getBoolean("chestplate_active")
-					|| i == 3 && !itemstack.getOrCreateTag().getBoolean("helmet_active")
-					|| !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
-							.is(ItemTags.create(new ResourceLocation("better_tools:effect_armor"))))) {
+			if (i == 0 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("boots_active")
+					|| i == 1 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("leggings_active")
+					|| i == 2 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("chestplate_active")
+					|| i == 3 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("helmet_active") || !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+						public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+							for (EquipmentSlot _slot : EquipmentSlot.values()) {
+								if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+									return _slot;
+								}
+							}
+							throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+						}
+					}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:effect_armor"))))) {
 				i = i + 1;
 				continue;
 			}
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
-					.is(ItemTags.create(new ResourceLocation("better_tools:base_tier_effect_armor")))) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+				public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+					for (EquipmentSlot _slot : EquipmentSlot.values()) {
+						if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+							return _slot;
+						}
+					}
+					throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+				}
+			}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:base_tier_effect_armor")))) {
 				piece_cost = 150;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
-					.is(ItemTags.create(new ResourceLocation("better_tools:iron_tier_effect_armor")))) {
+			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+				public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+					for (EquipmentSlot _slot : EquipmentSlot.values()) {
+						if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+							return _slot;
+						}
+					}
+					throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+				}
+			}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:iron_tier_effect_armor")))) {
 				piece_cost = 120;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY)
-					.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor")))) {
+			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+				public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+					for (EquipmentSlot _slot : EquipmentSlot.values()) {
+						if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+							return _slot;
+						}
+					}
+					throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+				}
+			}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:diamond_tier_effect_armor")))) {
 				piece_cost = 90;
 			} else {
 				piece_cost = 0;
 			}
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) i)) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))
-					&& !HeartyShirtActiveProcedure.execute(entity)) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+				public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+					for (EquipmentSlot _slot : EquipmentSlot.values()) {
+						if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+							return _slot;
+						}
+					}
+					throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+				}
+			}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hearty_shirts"))) && !HeartyShirtActiveProcedure.execute(entity)) {
 				piece_cost = 0;
 			}
 			if (armor_pieces == 2) {

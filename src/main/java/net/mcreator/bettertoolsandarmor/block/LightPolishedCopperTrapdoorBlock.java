@@ -10,6 +10,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class LightPolishedCopperTrapdoorBlock extends TrapDoorBlock {
 	public LightPolishedCopperTrapdoorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops(), BlockSetType.STONE);
+		super(BlockSetType.STONE, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 }

@@ -11,6 +11,6 @@ public class PurpleMooshroomHitProcedureProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:karma_damage"))), entity, entity), 2);
+		immediatesourceentity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:karma_damage"))), entity, entity), 2);
 	}
 }

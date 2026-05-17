@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:ensorcellation",
+    "better_tools:swift_cast",
+    "better_tools:smelting_touch",
+    "better_tools:desperation",
+    "better_tools:life_aura",
+    "better_tools:freeze_shot",
+    "better_tools:thunder_shot",
+    "better_tools:karma_curse",
+    "better_tools:experience_ench"
+  ]
+}

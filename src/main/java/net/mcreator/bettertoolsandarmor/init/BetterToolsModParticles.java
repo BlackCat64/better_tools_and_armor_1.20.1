@@ -4,10 +4,10 @@
  */
 package net.mcreator.bettertoolsandarmor.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.bettertoolsandarmor.client.particle.WindBurstParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.OreVisionParticleParticle;
@@ -24,7 +24,7 @@ import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSpinThornsPar
 import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSparkleParticle;
 import net.mcreator.bettertoolsandarmor.client.particle.ArrowHomingParticleParticle;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BetterToolsModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {

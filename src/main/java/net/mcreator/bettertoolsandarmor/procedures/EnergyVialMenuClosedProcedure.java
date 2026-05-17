@@ -1,6 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -14,7 +14,7 @@ public class EnergyVialMenuClosedProcedure {
 			return;
 		if (!PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).copy();
+				ItemStack _setstack = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_to_update.copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

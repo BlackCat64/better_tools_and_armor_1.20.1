@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "light_polished_lapis_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "better_tools:metal_blocks"
+    },
+    "b": {
+      "item": "minecraft:cyan_dye"
+    }
+  },
+  "result": {
+    "id": "better_tools:light_polished_lapis_block",
+    "count": 8
+  }
+}

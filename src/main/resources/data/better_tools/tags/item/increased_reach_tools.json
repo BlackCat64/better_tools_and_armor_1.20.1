@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_pickaxe_gold",
+    "better_tools:crystallite_axe_gold",
+    "better_tools:crystallite_shovel_gold",
+    "better_tools:crystallite_hoe_gold"
+  ]
+}

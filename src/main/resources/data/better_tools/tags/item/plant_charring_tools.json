@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond_shovel",
+    "better_tools:nether_diamond_hoe",
+    "better_tools:crystallite_shovel_nether_diamond",
+    "better_tools:crystallite_hoe_nether_diamond"
+  ]
+}

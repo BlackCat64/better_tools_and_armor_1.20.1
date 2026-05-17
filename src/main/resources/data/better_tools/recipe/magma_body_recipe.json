@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magma_body",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "better_tools:blackstone_magma"
+    }
+  },
+  "result": {
+    "id": "better_tools:magma_chestplate",
+    "count": 1
+  }
+}

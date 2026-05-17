@@ -1,9 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingFallEvent;
+import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,11 +15,11 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteBootsSkyProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityFall(LivingFallEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity(), event.getDistance());
 		}
 	}
@@ -39,10 +40,8 @@ public class CrystalliteBootsSkyProcedureProcedure {
 		}
 		if (safe_distance > 0) {
 			if (distance < safe_distance) {
-				if (event != null && event.isCancelable()) {
-					event.setCanceled(true);
-				} else if (event != null && event.hasResult()) {
-					event.setResult(Event.Result.DENY);
+				if (event instanceof ICancellableEvent _cancellable) {
+					_cancellable.setCanceled(true);
 				}
 			}
 		}

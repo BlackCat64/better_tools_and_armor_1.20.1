@@ -10,6 +10,6 @@ public class CheckForNetheriteTierToolProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:netherite_tier_tools")));
+		return (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:netherite_tier_tools")));
 	}
 }

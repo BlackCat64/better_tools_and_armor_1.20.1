@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_diamond_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "better_tools:metal_blocks"
+    },
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "result": {
+    "id": "better_tools:polished_diamond_block",
+    "count": 8
+  }
+}

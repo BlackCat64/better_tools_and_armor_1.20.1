@@ -45,11 +45,11 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		this.imageHeight = 192;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("better_tools:textures/screens/energy_vial_menu.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("better_tools:textures/screens/energy_vial_menu.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (EnergyVialShowFuelTooltipProcedure.execute(entity))
@@ -72,9 +72,9 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 32, this.topPos + 50, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 32, this.topPos + 50, 0, 0, 22, 15, 22, 15);
 
-		guiGraphics.blit(new ResourceLocation("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 86, this.topPos + 50, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 86, this.topPos + 50, 0, 0, 22, 15, 22, 15);
 
 		RenderSystem.disableBlend();
 	}
@@ -96,24 +96,16 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 	@Override
 	public void init() {
 		super.init();
-		helmet_active = new Checkbox(this.leftPos + 141, this.topPos + 16, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.helmet_active"),
-
-				HelmetActiveWhenGuiOpenedProcedure.execute(entity));
+		helmet_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.helmet_active"), this.font).pos(this.leftPos + 141, this.topPos + 16).selected(HelmetActiveWhenGuiOpenedProcedure.execute(entity)).build();
 		guistate.put("checkbox:helmet_active", helmet_active);
 		this.addRenderableWidget(helmet_active);
-		chestplate_active = new Checkbox(this.leftPos + 141, this.topPos + 37, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.chestplate_active"),
-
-				ChestplateActiveWhenGuiOpenedProcedure.execute(entity));
+		chestplate_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.chestplate_active"), this.font).pos(this.leftPos + 141, this.topPos + 37).selected(ChestplateActiveWhenGuiOpenedProcedure.execute(entity)).build();
 		guistate.put("checkbox:chestplate_active", chestplate_active);
 		this.addRenderableWidget(chestplate_active);
-		leggings_active = new Checkbox(this.leftPos + 141, this.topPos + 58, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.leggings_active"),
-
-				LeggingsActiveWhenGuiOpenedProcedure.execute(entity));
+		leggings_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.leggings_active"), this.font).pos(this.leftPos + 141, this.topPos + 58).selected(LeggingsActiveWhenGuiOpenedProcedure.execute(entity)).build();
 		guistate.put("checkbox:leggings_active", leggings_active);
 		this.addRenderableWidget(leggings_active);
-		boots_active = new Checkbox(this.leftPos + 141, this.topPos + 79, 20, 20, Component.translatable("gui.better_tools.energy_vial_menu.boots_active"),
-
-				BootsActiveWhenGuiOpenedProcedure.execute(entity));
+		boots_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.boots_active"), this.font).pos(this.leftPos + 141, this.topPos + 79).selected(BootsActiveWhenGuiOpenedProcedure.execute(entity)).build();
 		guistate.put("checkbox:boots_active", boots_active);
 		this.addRenderableWidget(boots_active);
 	}

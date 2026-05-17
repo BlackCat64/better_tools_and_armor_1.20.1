@@ -3,7 +3,6 @@ package net.mcreator.bettertoolsandarmor.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,6 +12,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 public class RubyOreXpProcedureProcedure {
@@ -29,7 +29,7 @@ public class RubyOreXpProcedureProcedure {
 				return false;
 			}
 		}.checkGamemode(entity))) {
-			if (!(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0)) {
+			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)) {
 				if (world instanceof ServerLevel _level)
 					_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, Mth.nextInt(RandomSource.create(), 6, 10)));
 			}

@@ -9,11 +9,9 @@ public class NatureRingUnequippedProcedure {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = false;
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.nature_ring_equipped = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.nature_ring_equipped = false;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

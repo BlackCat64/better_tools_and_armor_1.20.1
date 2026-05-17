@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_gold_stairs",
+  "ingredient": {
+    "item": "better_tools:light_polished_gold_block"
+  },
+  "result": {
+    "id": "better_tools:light_polished_gold_stairs",
+    "count": 1
+  }
+}

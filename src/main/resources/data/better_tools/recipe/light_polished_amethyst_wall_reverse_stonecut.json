@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "light_polished_amethyst_wall_reverse",
+  "ingredient": {
+    "item": "better_tools:light_polished_amethyst_wall"
+  },
+  "result": {
+    "id": "better_tools:light_polished_amethyst_block",
+    "count": 1
+  }
+}

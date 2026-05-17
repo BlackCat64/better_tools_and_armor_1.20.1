@@ -17,7 +17,7 @@ public class PurpleMushroomGrowProcedureProcedure {
 		double sz = 0;
 		if (Math.random() < 0.25) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("better_tools", "grown_purple_mushroom"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("better_tools", "grown_purple_mushroom"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y, z - 2), BlockPos.containing(x - 2, y, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 							_serverworld.random, 3);

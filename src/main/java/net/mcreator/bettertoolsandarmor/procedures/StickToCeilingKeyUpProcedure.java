@@ -9,11 +9,9 @@ public class StickToCeilingKeyUpProcedure {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = false;
-			entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.stick_to_ceiling = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.stick_to_ceiling = false;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

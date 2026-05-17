@@ -12,7 +12,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 public class ApplyChestplateEffectProcedure {
 	public static void execute(Entity entity) {
@@ -20,20 +20,21 @@ public class ApplyChestplateEffectProcedure {
 			return;
 		ItemStack chestplate = ItemStack.EMPTY;
 		chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
-		if (chestplate.is(ItemTags.create(new ResourceLocation("better_tools:magma_chestplates")))) {
+		if (chestplate.is(ItemTags.create(ResourceLocation.parse("better_tools:magma_chestplates")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, true, false));
-		} else if (chestplate.is(ItemTags.create(new ResourceLocation("better_tools:hearty_shirts")))) {
+		} else if (chestplate.is(ItemTags.create(ResourceLocation.parse("better_tools:hearty_shirts")))) {
 			if (HeartyShirtActiveProcedure.execute(entity)) {
 				SetEntityNumberDataProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 1, "AbsorptionAmount");
-				if (!(entity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
-						&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"))).isDone())) {
+				if (!(entity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel && _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().get(ResourceLocation.parse("better_tools:hearty_adv"))).isDone())) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:hearty_adv"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:hearty_adv"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}

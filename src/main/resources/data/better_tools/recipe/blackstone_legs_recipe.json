@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blackstone_legs",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gilded_blackstone"
+    },
+    "b": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "id": "better_tools:blackstone_leggings",
+    "count": 1
+  }
+}

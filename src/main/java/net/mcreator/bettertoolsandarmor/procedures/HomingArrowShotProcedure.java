@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -25,11 +25,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class HomingArrowShotProcedure {
 	@SubscribeEvent
 	public static void onUseItemStop(LivingEntityUseItemEvent.Stop event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getItem(), event.getDuration());
 		}
 	}
@@ -43,12 +43,12 @@ public class HomingArrowShotProcedure {
 			return;
 		double charge_time = 0;
 		double radius = 0;
-		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows"))))
-				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))
-						|| itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items"))))) {
-			if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:ruby_upgraded_crystallite_items")))) {
+		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_bows"))))
+				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))
+						|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items"))))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ruby_upgraded_crystallite_items")))) {
 				charge_time = 71990;
-			} else if (itemstack.is(ItemTags.create(new ResourceLocation("better_tools:honey_upgraded_crystallite_items")))) {
+			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:honey_upgraded_crystallite_items")))) {
 				charge_time = 80000;
 			} else {
 				charge_time = 71980;
@@ -64,8 +64,8 @@ public class HomingArrowShotProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (!(entityiterator == entity) && entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
 								CrystalliteBowAmethystFiredProcedure.execute(world, entityiterator, entity,
-										(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items")))
-												&& itemstack.is(ItemTags.create(new ResourceLocation("better_tools:amethyst_upgraded_crystallite_items"))) ? 3 : 1.5);
+										(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))
+												&& itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items"))) ? 3 : 1.5);
 							}
 						}
 					}

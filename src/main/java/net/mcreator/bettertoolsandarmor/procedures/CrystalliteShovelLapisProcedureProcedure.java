@@ -7,6 +7,7 @@ import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.Registries;
 
 public class CrystalliteShovelLapisProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
@@ -17,7 +18,8 @@ public class CrystalliteShovelLapisProcedureProcedure {
 		}
 		if (Math.random() < chance) {
 			if (world instanceof ServerLevel _level)
-				_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()), Mth.nextInt(RandomSource.create(), 1, (int) (itemstack.getEnchantmentLevel(Enchantments.BLOCK_FORTUNE) + 1))));
+				_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()),
+						Mth.nextInt(RandomSource.create(), 1, (int) (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1))));
 		}
 	}
 }

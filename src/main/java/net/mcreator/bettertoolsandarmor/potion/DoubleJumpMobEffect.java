@@ -8,9 +8,4 @@ public class DoubleJumpMobEffect extends MobEffect {
 	public DoubleJumpMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -3355444);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

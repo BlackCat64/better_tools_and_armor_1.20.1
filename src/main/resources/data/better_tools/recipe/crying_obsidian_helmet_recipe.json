@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crying_helmet",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "b": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "result": {
+    "id": "better_tools:crying_obsidian_helmet",
+    "count": 1
+  }
+}

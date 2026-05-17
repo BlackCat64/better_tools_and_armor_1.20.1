@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:experience_potion",
+    "better_tools:ascension_potion",
+    "better_tools:descension_potion",
+    "better_tools:recall_potion",
+    "better_tools:lost_souls_potion"
+  ]
+}

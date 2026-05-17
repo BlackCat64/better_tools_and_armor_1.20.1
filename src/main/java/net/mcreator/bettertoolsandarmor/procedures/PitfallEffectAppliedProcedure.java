@@ -38,7 +38,7 @@ public class PitfallEffectAppliedProcedure {
 			} else {
 				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-2), (entity.getDeltaMovement().z())));
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(BetterToolsModMobEffects.PITFALL.get());
+					_entity.removeEffect(BetterToolsModMobEffects.PITFALL);
 			}
 		}
 	}

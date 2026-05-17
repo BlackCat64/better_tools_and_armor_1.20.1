@@ -1,39 +1,50 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
 
 public class DiamondDaggerItem extends SwordItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 1171;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 8f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 10;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(Items.DIAMOND));
+		}
+	};
+
 	public DiamondDaggerItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 1171;
-			}
-
-			public float getSpeed() {
-				return 8f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 1f;
-			}
-
-			public int getLevel() {
-				return 3;
-			}
-
-			public int getEnchantmentValue() {
-				return 10;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.DIAMOND));
-			}
-		}, 3, -1.5f, new Item.Properties());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4f, -1.5f)));
 	}
 }

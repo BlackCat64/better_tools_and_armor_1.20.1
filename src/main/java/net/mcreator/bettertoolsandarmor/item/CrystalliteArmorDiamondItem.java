@@ -1,9 +1,13 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Items;
@@ -11,134 +15,100 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
+import java.util.EnumMap;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class CrystalliteArmorDiamondItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 5);
+				map.put(ArmorItem.Type.LEGGINGS, 8);
+				map.put(ArmorItem.Type.CHESTPLATE, 9);
+				map.put(ArmorItem.Type.HELMET, 6);
+				map.put(ArmorItem.Type.BODY, 9);
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_step")),
+					() -> Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:crystallite_diamond_"))), 4.5f, 0.125f);
+			registerHelper.register(ResourceLocation.parse("better_tools:crystallite_armor_diamond"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
 	public CrystalliteArmorDiamondItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 80;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{5, 8, 9, 6}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 20;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("better_tools:crystallite_step"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.DIAMOND));
-			}
-
-			@Override
-			public String getName() {
-				return "crystallite_armor_diamond";
-			}
-
-			@Override
-			public float getToughness() {
-				return 4.5f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.125f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends CrystalliteArmorDiamondItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(80)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_helmet.description_0"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_helmet.description_1"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_helmet.description_2"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/crystallite_diamond__layer_1.png";
 		}
 	}
 
 	public static class Chestplate extends CrystalliteArmorDiamondItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(80)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_chestplate.description_0"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_chestplate.description_1"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_chestplate.description_2"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/crystallite_diamond__layer_1.png";
 		}
 	}
 
 	public static class Leggings extends CrystalliteArmorDiamondItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(80)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_leggings.description_0"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_leggings.description_1"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_leggings.description_2"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/crystallite_diamond__layer_2.png";
 		}
 	}
 
 	public static class Boots extends CrystalliteArmorDiamondItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(80)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_boots.description_0"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_boots.description_1"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_diamond_boots.description_2"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/crystallite_diamond__layer_1.png";
 		}
 	}
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "white_metal_block",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "better_tools:metal_blocks"
+    },
+    "b": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "id": "better_tools:light_polished_iron_block",
+    "count": 8
+  }
+}

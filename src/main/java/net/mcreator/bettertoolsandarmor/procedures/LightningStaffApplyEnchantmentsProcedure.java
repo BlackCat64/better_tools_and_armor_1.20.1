@@ -6,8 +6,10 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.entity.ElectricStaffProjectileEntity;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -28,12 +30,15 @@ public class LightningStaffApplyEnchantmentsProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity) && entityiterator instanceof ElectricStaffProjectileEntity) {
-						entityiterator.getPersistentData().putDouble("strikes", (itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) + 1));
+						entityiterator.getPersistentData().putDouble("strikes",
+								(itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation")))) + 1));
 						if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 							entityiterator.getPersistentData().putDouble("strikes", (entityiterator.getPersistentData().getDouble("strikes") * 2));
 						}
-						entityiterator.getPersistentData().putDouble("radius", (2.5 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get()) * 0.5));
-						entityiterator.getPersistentData().putDouble("cooldown_ticks_on_hit", (200 - 30 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.SWIFT_CAST.get())));
+						entityiterator.getPersistentData().putDouble("radius",
+								(2.5 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation")))) * 0.5));
+						entityiterator.getPersistentData().putDouble("cooldown_ticks_on_hit",
+								(200 - 30 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast"))))));
 					}
 				}
 			}

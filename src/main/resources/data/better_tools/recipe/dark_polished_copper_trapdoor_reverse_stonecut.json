@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_copper_trapdoor_reverse",
+  "ingredient": {
+    "item": "better_tools:dark_polished_copper_trapdoor"
+  },
+  "result": {
+    "id": "better_tools:dark_polished_copper_block",
+    "count": 1
+  }
+}

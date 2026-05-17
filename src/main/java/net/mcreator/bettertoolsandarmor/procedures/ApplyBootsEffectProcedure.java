@@ -15,13 +15,13 @@ public class ApplyBootsEffectProcedure {
 			return;
 		ItemStack boots = ItemStack.EMPTY;
 		boots = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
-		if (boots.is(ItemTags.create(new ResourceLocation("better_tools:sugar_boots")))) {
+		if (boots.is(ItemTags.create(ResourceLocation.parse("better_tools:sugar_boots")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, (int) (boots.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor"))) ? 2 : 1), true, false));
-		} else if (boots.is(ItemTags.create(new ResourceLocation("better_tools:rabbit_boots")))) {
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, (int) (boots.is(ItemTags.create(ResourceLocation.parse("better_tools:diamond_tier_effect_armor"))) ? 2 : 1), true, false));
+		} else if (boots.is(ItemTags.create(ResourceLocation.parse("better_tools:rabbit_boots")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 200, (int) (boots.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor"))) ? 2 : 1), true, false));
-		} else if (boots.is(ItemTags.create(new ResourceLocation("better_tools:phantom_boots")))) {
+				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 200, (int) (boots.is(ItemTags.create(ResourceLocation.parse("better_tools:diamond_tier_effect_armor"))) ? 2 : 1), true, false));
+		} else if (boots.is(ItemTags.create(ResourceLocation.parse("better_tools:phantom_boots")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 0, true, false));
 		}

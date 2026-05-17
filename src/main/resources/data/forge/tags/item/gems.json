@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:nether_diamond",
+    "better_tools:ruby",
+    "better_tools:mixed_essence",
+    "better_tools:sapphire",
+    "better_tools:topaz",
+    "better_tools:crystallite_gem"
+  ]
+}

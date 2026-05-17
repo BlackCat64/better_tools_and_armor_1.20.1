@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
@@ -16,13 +16,11 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DoubleJumpProcedureProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -33,21 +31,17 @@ public class DoubleJumpProcedureProcedure {
 		if (entity == null)
 			return;
 		if (entity.onGround() || entity.isInWater()) {
-			if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get())) {
+			if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP)) {
 				{
-					double _setval = (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()) ? _livEnt.getEffect(BetterToolsModMobEffects.DOUBLE_JUMP.get()).getAmplifier() : 0) + 1;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.extra_jumps = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.extra_jumps = (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(BetterToolsModMobEffects.DOUBLE_JUMP) ? _livEnt.getEffect(BetterToolsModMobEffects.DOUBLE_JUMP).getAmplifier() : 0) + 1;
+					_vars.syncPlayerVariables(entity);
 				}
 			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
 				{
-					double _setval = 1;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.extra_jumps = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.extra_jumps = 1;
+					_vars.syncPlayerVariables(entity);
 				}
 			}
 		}

@@ -1,12 +1,10 @@
 
 package net.mcreator.bettertoolsandarmor.potion;
 
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import net.mcreator.bettertoolsandarmor.procedures.CriticalHitEffectExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.CriticalHitEffectAppliedProcedure;
 
 public class CriticalityMobEffect extends MobEffect {
@@ -15,19 +13,7 @@ public class CriticalityMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		super.addAttributeModifiers(entity, attributeMap, amplifier);
+	public void onEffectStarted(LivingEntity entity, int amplifier) {
 		CriticalHitEffectAppliedProcedure.execute();
-	}
-
-	@Override
-	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		CriticalHitEffectExpiresProcedure.execute();
-	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
 	}
 }

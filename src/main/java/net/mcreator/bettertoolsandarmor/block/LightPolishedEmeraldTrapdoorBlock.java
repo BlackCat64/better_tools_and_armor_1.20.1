@@ -10,6 +10,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class LightPolishedEmeraldTrapdoorBlock extends TrapDoorBlock {
 	public LightPolishedEmeraldTrapdoorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops(), BlockSetType.STONE);
+		super(BlockSetType.STONE, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.EMERALD).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "sapphire_ore",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "better_tools:sapphire_ore"
+  },
+  "result": {
+    "id": "better_tools:sapphire"
+  }
+}

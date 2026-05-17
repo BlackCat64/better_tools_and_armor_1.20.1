@@ -1,7 +1,10 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraft.world.level.Level;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
@@ -9,6 +12,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -16,37 +21,46 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import java.util.List;
 
 public class CrystalliteSwordSkyItem extends SwordItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 2400;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 12f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 20;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(Items.PHANTOM_MEMBRANE));
+		}
+	};
+
 	public CrystalliteSwordSkyItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 2400;
-			}
-
-			public float getSpeed() {
-				return 12f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 5f;
-			}
-
-			public int getLevel() {
-				return 4;
-			}
-
-			public int getEnchantmentValue() {
-				return 20;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(Items.PHANTOM_MEMBRANE));
-			}
-		}, 3, -2.4f, new Item.Properties().fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 8f, -2.4f)).fireResistant());
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_0"));
 		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_2"));

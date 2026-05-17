@@ -4,11 +4,11 @@
  */
 package net.mcreator.bettertoolsandarmor.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -18,10 +18,10 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class BetterToolsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BetterToolsMod.MODID);
-	public static final RegistryObject<CreativeModeTab> BETTER_TOOLS_AND_ARMOR_MISC = REGISTRY.register("better_tools_and_armor_misc",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BETTER_TOOLS_AND_ARMOR_MISC = REGISTRY.register("better_tools_and_armor_misc",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.better_tools_and_armor_misc")).icon(() -> new ItemStack(BetterToolsModItems.CREATIVE_TAB_LOGO.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.CHARGED_ICE_ON.get().asItem());
 				tabData.accept(BetterToolsModBlocks.SUGAR_BLOCK.get().asItem());
@@ -59,7 +59,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
 			}).build());
-	public static final RegistryObject<CreativeModeTab> CRYSTALLITE_TAB = REGISTRY.register("crystallite_tab",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CRYSTALLITE_TAB = REGISTRY.register("crystallite_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.crystallite_tab")).icon(() -> new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_SHARDS.get());
@@ -272,7 +272,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
 			}).withTabsBefore(BETTER_TOOLS_AND_ARMOR_MISC.getId()).build());
-	public static final RegistryObject<CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModItems.NETHER_DIAMOND.get());
 				tabData.accept(BetterToolsModBlocks.NETHER_DIAMOND_ORE.get().asItem());
@@ -370,7 +370,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
 			}).withTabsBefore(CRYSTALLITE_TAB.getId()).build());
-	public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
 				tabData.accept(BetterToolsModItems.SUPER_ENRICHED_BLAZE_POWDER.get());

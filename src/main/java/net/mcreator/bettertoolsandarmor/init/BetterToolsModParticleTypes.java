@@ -4,29 +4,29 @@
  */
 package net.mcreator.bettertoolsandarmor.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleType;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 public class BetterToolsModParticleTypes {
-	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, BetterToolsMod.MODID);
-	public static final RegistryObject<SimpleParticleType> CRYSTALLITE_SPARKLE = REGISTRY.register("crystallite_sparkle", () -> new SimpleParticleType(false));
-	public static final RegistryObject<SimpleParticleType> ICE_PARTICLE = REGISTRY.register("ice_particle", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> ORE_LOCATION_PARTICLE = REGISTRY.register("ore_location_particle", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> GUARDIAN_STAFF_BEAM = REGISTRY.register("guardian_staff_beam", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> CRYSTALLITE_SPLASH_DAMAGE = REGISTRY.register("crystallite_splash_damage", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> ARROW_HOMING_PARTICLE = REGISTRY.register("arrow_homing_particle", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM_2 = REGISTRY.register("freeze_boom_2", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM_3 = REGISTRY.register("freeze_boom_3", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM_4 = REGISTRY.register("freeze_boom_4", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM_5 = REGISTRY.register("freeze_boom_5", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> FREEZE_BOOM_6 = REGISTRY.register("freeze_boom_6", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> CRYSTALLITE_SPIN_THORNS = REGISTRY.register("crystallite_spin_thorns", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> WIND_BURST = REGISTRY.register("wind_burst", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> ORE_VISION_PARTICLE = REGISTRY.register("ore_vision_particle", () -> new SimpleParticleType(true));
+	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, BetterToolsMod.MODID);
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CRYSTALLITE_SPARKLE = REGISTRY.register("crystallite_sparkle", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ICE_PARTICLE = REGISTRY.register("ice_particle", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ORE_LOCATION_PARTICLE = REGISTRY.register("ore_location_particle", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> GUARDIAN_STAFF_BEAM = REGISTRY.register("guardian_staff_beam", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CRYSTALLITE_SPLASH_DAMAGE = REGISTRY.register("crystallite_splash_damage", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ARROW_HOMING_PARTICLE = REGISTRY.register("arrow_homing_particle", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_2 = REGISTRY.register("freeze_boom_2", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_3 = REGISTRY.register("freeze_boom_3", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_4 = REGISTRY.register("freeze_boom_4", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_5 = REGISTRY.register("freeze_boom_5", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_6 = REGISTRY.register("freeze_boom_6", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CRYSTALLITE_SPIN_THORNS = REGISTRY.register("crystallite_spin_thorns", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> WIND_BURST = REGISTRY.register("wind_burst", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ORE_VISION_PARTICLE = REGISTRY.register("ore_vision_particle", () -> new SimpleParticleType(true));
 }

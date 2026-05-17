@@ -19,7 +19,6 @@ public class HeartyShirtActiveProcedure {
 		} else {
 			absorption_limit = 4;
 		}
-		return (entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_hurt > 200
-				&& (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < absorption_limit;
+		return entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_hurt > 200 && (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < absorption_limit;
 	}
 }

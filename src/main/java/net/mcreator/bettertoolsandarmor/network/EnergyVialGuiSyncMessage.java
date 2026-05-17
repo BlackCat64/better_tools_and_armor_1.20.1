@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.network;
 
-import net.minecraftforge.network.NetworkEvent;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.server.level.ServerPlayer;
@@ -43,7 +41,6 @@ public class EnergyVialGuiSyncMessage {
 			// only continue if the player is currently in the Energy Vial GUI
 			if (!(player.containerMenu instanceof EnergyVialMenuMenu))
 				return;
-
 			// Extract vial from slot 1 of currently open GUI (the energy vial GUI)
 			ItemStack vial = (player.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt) ? ((Slot) ((Map<?, ?>) _slt).get(1)).getItem() : ItemStack.EMPTY;
 			CompoundTag tag = vial.getOrCreateTag();
@@ -51,7 +48,6 @@ public class EnergyVialGuiSyncMessage {
 			tag.putBoolean("chestplate_active", message.chestplateActive);
 			tag.putBoolean("leggings_active", message.leggingsActive);
 			tag.putBoolean("boots_active", message.bootsActive);
-
 			// Update server-side player variable if needed
 			if (PlayerHasEnergyVialEquippedProcedure.execute(player)) {
 				CompoundTag _nbtTag = tag;

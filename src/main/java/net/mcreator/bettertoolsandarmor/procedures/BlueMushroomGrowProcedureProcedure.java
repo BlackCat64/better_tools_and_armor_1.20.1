@@ -16,7 +16,7 @@ public class BlueMushroomGrowProcedureProcedure {
 			random_direction = Math.random();
 			if (random_direction < 0.25) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("better_tools", "grown_blue_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("better_tools", "grown_blue_mushroom"));
 					if (template != null) {
 						template.placeInWorld(_serverworld, BlockPos.containing(x - 5, y, z - 2), BlockPos.containing(x - 5, y, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
@@ -24,7 +24,7 @@ public class BlueMushroomGrowProcedureProcedure {
 				}
 			} else if (random_direction < 0.5) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("better_tools", "grown_blue_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("better_tools", "grown_blue_mushroom"));
 					if (template != null) {
 						template.placeInWorld(_serverworld, BlockPos.containing(x + 2, y, z - 5), BlockPos.containing(x + 2, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
@@ -32,7 +32,7 @@ public class BlueMushroomGrowProcedureProcedure {
 				}
 			} else if (random_direction < 0.75) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("better_tools", "grown_blue_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("better_tools", "grown_blue_mushroom"));
 					if (template != null) {
 						template.placeInWorld(_serverworld, BlockPos.containing(x + 5, y, z + 2), BlockPos.containing(x + 5, y, z + 2), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
@@ -40,7 +40,7 @@ public class BlueMushroomGrowProcedureProcedure {
 				}
 			} else {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("better_tools", "grown_blue_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("better_tools", "grown_blue_mushroom"));
 					if (template != null) {
 						template.placeInWorld(_serverworld, BlockPos.containing(x - 2, y, z + 5), BlockPos.containing(x - 2, y, z + 5),
 								new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_copper_stairs",
+  "ingredient": {
+    "item": "better_tools:dark_polished_copper_block"
+  },
+  "result": {
+    "id": "better_tools:dark_polished_copper_stairs",
+    "count": 1
+  }
+}

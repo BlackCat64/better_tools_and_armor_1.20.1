@@ -14,8 +14,8 @@ public class PurpleMushroomBlockParticlesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!(world instanceof Level _level0 && _level0.hasNeighborSignal(BlockPos.containing(x, y, z)))) {
 			if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) || !world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude() || (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() instanceof SimpleWaterloggedBlock
-					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.MOSS_CARPET || (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:wool_carpets")))
-					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:doors")))) {
+					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.MOSS_CARPET || (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:wool_carpets")))
+					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:doors")))) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.DRAGON_BREATH, (x + 0.5), (y + 1.25), (z + 0.5), 1, 0.6, 0.1, 0.6, 0.0001);
 			}

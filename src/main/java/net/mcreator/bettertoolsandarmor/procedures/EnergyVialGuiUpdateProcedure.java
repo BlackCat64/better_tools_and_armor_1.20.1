@@ -2,12 +2,13 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.client.gui.components.Checkbox;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
@@ -34,9 +35,9 @@ public class EnergyVialGuiUpdateProcedure {
 		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
 		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).copy();
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-			energy = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().getDouble("energy");
+			energy = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_to_update.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
 		} else {
-			energy = vial.getOrCreateTag().getDouble("energy");
+			energy = vial.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
 		}
 		max_energy = GetEnergyVialCapacityProcedure.execute();
 		if (energy < max_energy) {
@@ -52,32 +53,46 @@ public class EnergyVialGuiUpdateProcedure {
 				energy_gain = 500;
 			}
 			fuel.shrink(1);
-			vial.getOrCreateTag().putDouble("energy", Math.min(energy + energy_gain, max_energy));
+			{
+				final String _tagName = "energy";
+				final double _tagValue = Math.min(energy + energy_gain, max_energy);
+				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putDouble(_tagName, _tagValue));
+			}
 		}
 		if (world.isClientSide()) {
 			helmet_active = guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected();
 			chestplate_active = guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected();
 			leggings_active = guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected();
 			boots_active = guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected();
-			vial.getOrCreateTag().putBoolean("helmet_active", helmet_active);
-			vial.getOrCreateTag().putBoolean("chestplate_active", chestplate_active);
-			vial.getOrCreateTag().putBoolean("leggings_active", leggings_active);
-			vial.getOrCreateTag().putBoolean("boots_active", boots_active);
+			{
+				final String _tagName = "helmet_active";
+				final boolean _tagValue = helmet_active;
+				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "chestplate_active";
+				final boolean _tagValue = chestplate_active;
+				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "leggings_active";
+				final boolean _tagValue = leggings_active;
+				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "boots_active";
+				final boolean _tagValue = boots_active;
+				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
 			BetterToolsMod.PACKET_HANDLER.sendToServer(new net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSyncMessage(helmet_active, chestplate_active, leggings_active, boots_active)); // Send data to server, to avoid desync issues
 		}
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-			{
-				CompoundTag _nbtTag = vial.getTag();
-				if (_nbtTag != null)
-					((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).setTag(_nbtTag.copy());
-			}
+			entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_to_update.applyComponents(vial.getComponents());
 		} else {
 			{
-				ItemStack _setval = vial;
-				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.energy_vial_to_update = _setval.copy();
-					capability.syncPlayerVariables(entity);
-				});
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.energy_vial_to_update = vial.copy();
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

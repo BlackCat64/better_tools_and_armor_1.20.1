@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -15,20 +14,21 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class FreezingWeaponsProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingHurtEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
@@ -42,30 +42,31 @@ public class FreezingWeaponsProcedureProcedure {
 			return;
 		double time = 0;
 		double chance = 0;
-		if (sourceentity instanceof LivingEntity && Math.random() < (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE.get())
-				? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE.get()).getValue()
+		if (sourceentity instanceof LivingEntity && Math.random() < (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)
+				? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).getValue()
 				: 0)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
-						(int) (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME.get())
-								? _livingEntity2.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME.get()).getValue()
+				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN,
+						(int) (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME)
+								? _livingEntity2.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).getValue()
 								: 0),
 						0, false, false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 				}
 			}
-			if (!(sourceentity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
-					&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
+			if (!(sourceentity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel && _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().get(ResourceLocation.parse("better_tools:sapphire_adv"))).isDone())) {
 				if (sourceentity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"));
-					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-					if (!_ap.isDone()) {
-						for (String criteria : _ap.getRemainingCriteria())
-							_player.getAdvancements().award(_adv, criteria);
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:sapphire_adv"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
 					}
 				}
 			}

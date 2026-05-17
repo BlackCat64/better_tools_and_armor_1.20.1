@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_emerald_slab",
+  "ingredient": {
+    "item": "better_tools:dark_polished_emerald_block"
+  },
+  "result": {
+    "id": "better_tools:dark_polished_emerald_slab",
+    "count": 2
+  }
+}

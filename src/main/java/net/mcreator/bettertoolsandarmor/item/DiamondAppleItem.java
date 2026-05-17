@@ -1,8 +1,8 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -16,11 +16,11 @@ import net.mcreator.bettertoolsandarmor.procedures.DiamondAppleEatenProcedure;
 
 public class DiamondAppleItem extends Item {
 	public DiamondAppleItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1.2f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(1.2f).alwaysEdible().build()));
 	}
 
 	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+	public float getDestroySpeed(ItemStack itemstack, BlockState state) {
 		return 0f;
 	}
 

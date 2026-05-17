@@ -3,7 +3,7 @@ package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,8 +32,8 @@ public class PurpleMushroomBlockBlock extends Block {
 	}
 
 	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.DAMAGE_OTHER;
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.DAMAGE_OTHER;
 	}
 
 	@Override
@@ -45,10 +45,7 @@ public class PurpleMushroomBlockBlock extends Block {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		PurpleMushroomBlockParticlesProcedure.execute(world, x, y, z);
+		PurpleMushroomBlockParticlesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 10);
 	}
 

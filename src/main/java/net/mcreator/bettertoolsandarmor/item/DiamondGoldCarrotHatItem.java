@@ -1,7 +1,12 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -12,77 +17,55 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
 import net.mcreator.bettertoolsandarmor.procedures.GoldCarrotHatProcedureProcedure;
 
 import java.util.List;
+import java.util.EnumMap;
 
 import com.google.common.collect.Iterables;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class DiamondGoldCarrotHatItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 3);
+				map.put(ArmorItem.Type.LEGGINGS, 5);
+				map.put(ArmorItem.Type.CHESTPLATE, 7);
+				map.put(ArmorItem.Type.HELMET, 3);
+				map.put(ArmorItem.Type.BODY, 7);
+			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(Items.GOLDEN_CARROT), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:diamond_gold_carrot_"))), 1f, 0f);
+			registerHelper.register(ResourceLocation.parse("better_tools:diamond_gold_carrot"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
 	public DiamondGoldCarrotHatItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 25;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{3, 5, 7, 3}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 10;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_diamond"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.GOLDEN_CARROT), new ItemStack(Items.DIAMOND));
-			}
-
-			@Override
-			public String getName() {
-				return "diamond_gold_carrot";
-			}
-
-			@Override
-			public float getToughness() {
-				return 1f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends DiamondGoldCarrotHatItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25)));
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.diamond_gold_carrot_helmet.description_0"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "better_tools:textures/models/armor/diamond_gold_carrot__layer_1.png";
 		}
 
 		@Override

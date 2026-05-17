@@ -1,0 +1,27 @@
+{
+  "description": {
+    "translate": "enchantment.better_tools.freeze_shot"
+  },
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": [
+    "better_tools:thunder_shot",
+    "flame"
+  ]
+}

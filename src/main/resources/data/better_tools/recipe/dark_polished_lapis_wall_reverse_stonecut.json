@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "dark_polished_lapis_wall_reverse",
+  "ingredient": {
+    "item": "better_tools:dark_polished_lapis_wall"
+  },
+  "result": {
+    "id": "better_tools:dark_polished_lapis_block",
+    "count": 1
+  }
+}

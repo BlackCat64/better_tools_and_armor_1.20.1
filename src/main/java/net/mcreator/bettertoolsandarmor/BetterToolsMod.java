@@ -3,26 +3,28 @@ package net.mcreator.bettertoolsandarmor;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.network.simple.SimpleChannel;
-import net.minecraftforge.network.NetworkRegistry;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.util.thread.SidedThreadGroups;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.neoforged.neoforge.network.handling.IPayloadHandler;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Tuple;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.client.renderer.Sheets;
 
 import net.mcreator.bettertoolsandarmor.world.features.StructureFeature;
-import net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSyncMessage;
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModWoodTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModVillagerProfessions;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModTabs;
@@ -34,54 +36,51 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModFeatures;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 import net.mcreator.bettertoolsandarmor.block.entity.BetterToolsModBlockEntities;
 
-import java.util.function.Supplier;
-import java.util.function.Function;
-import java.util.function.BiConsumer;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
-import java.util.AbstractMap;
 
 @Mod("better_tools")
 public class BetterToolsMod {
 	public static final Logger LOGGER = LogManager.getLogger(BetterToolsMod.class);
 	public static final String MODID = "better_tools";
 
-	public BetterToolsMod() {
+	public BetterToolsMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
-		MinecraftForge.EVENT_BUS.register(this);
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		BetterToolsModSounds.REGISTRY.register(bus);
-		BetterToolsModBlocks.REGISTRY.register(bus);
-		BetterToolsModItems.REGISTRY.register(bus);
-		BetterToolsModEntities.REGISTRY.register(bus);
-		BetterToolsModEnchantments.REGISTRY.register(bus);
-		BetterToolsModTabs.REGISTRY.register(bus);
-		BetterToolsModFeatures.REGISTRY.register(bus);
-		StructureFeature.REGISTRY.register(bus);
-		BetterToolsModMobEffects.REGISTRY.register(bus);
-		BetterToolsModPotions.REGISTRY.register(bus);
-		BetterToolsModParticleTypes.REGISTRY.register(bus);
-		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
-		BetterToolsModMenus.REGISTRY.register(bus);
-		BetterToolsModAttributes.REGISTRY.register(bus);
+		NeoForge.EVENT_BUS.register(this);
+		modEventBus.addListener(this::registerNetworking);
+		BetterToolsModSounds.REGISTRY.register(modEventBus);
+		BetterToolsModBlocks.REGISTRY.register(modEventBus);
+		BetterToolsModItems.REGISTRY.register(modEventBus);
+		BetterToolsModEntities.REGISTRY.register(modEventBus);
+		BetterToolsModTabs.REGISTRY.register(modEventBus);
+		BetterToolsModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		BetterToolsModFeatures.REGISTRY.register(modEventBus);
+		StructureFeature.REGISTRY.register(modEventBus);
+		BetterToolsModPotions.REGISTRY.register(modEventBus);
+		BetterToolsModMobEffects.REGISTRY.register(modEventBus);
+		BetterToolsModMenus.REGISTRY.register(modEventBus);
+		BetterToolsModParticleTypes.REGISTRY.register(modEventBus);
+		BetterToolsModVillagerProfessions.PROFESSIONS.register(modEventBus);
+		BetterToolsModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
-		CustomCreativeTabItems.REGISTRY.register(bus);
-		BetterToolsModBlockEntities.REGISTRY.register(bus);
-		bus.addListener(this::commonSetup);
+		CustomCreativeTabItems.REGISTRY.register(modEventBus);
+		BetterToolsModBlockEntities.REGISTRY.register(modEventBus);
+		modEventBus.addListener(this::commonSetup);
 		// End of user code block mod init
 	}
 
 	// Start of user code block mod methods
 	public static void registerMessages() {
-		addNetworkMessage(EnergyVialGuiSyncMessage.class, EnergyVialGuiSyncMessage::buffer, EnergyVialGuiSyncMessage::decode, EnergyVialGuiSyncMessage::handler);
+		//		addNetworkMessage(EnergyVialGuiSyncMessage.class, EnergyVialGuiSyncMessage::buffer, EnergyVialGuiSyncMessage::decode, EnergyVialGuiSyncMessage::handler);
 	}
 
 	private void commonSetup(final FMLCommonSetupEvent event) {
@@ -90,7 +89,7 @@ public class BetterToolsMod {
 		});
 	}
 
-	@Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientModEvents {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
@@ -120,33 +119,41 @@ public class BetterToolsMod {
 	}
 
 	// End of user code block mod methods
-	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
-	private static int messageID = 0;
+	private static boolean networkingRegistered = false;
+	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
 
-	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
-		messageID++;
+	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
 	}
 
-	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
+	public static <T extends CustomPacketPayload> void addNetworkMessage(CustomPacketPayload.Type<T> id, StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+		if (networkingRegistered)
+			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
+		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
+	}
+
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	private void registerNetworking(final RegisterPayloadHandlersEvent event) {
+		final PayloadRegistrar registrar = event.registrar(MODID);
+		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler()));
+		networkingRegistered = true;
+	}
+
+	private static final Collection<Tuple<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
 	public static void queueServerWork(int tick, Runnable action) {
 		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
-			workQueue.add(new AbstractMap.SimpleEntry<>(action, tick));
+			workQueue.add(new Tuple<>(action, tick));
 	}
 
 	@SubscribeEvent
-	public void tick(TickEvent.ServerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			List<AbstractMap.SimpleEntry<Runnable, Integer>> actions = new ArrayList<>();
-			workQueue.forEach(work -> {
-				work.setValue(work.getValue() - 1);
-				if (work.getValue() == 0)
-					actions.add(work);
-			});
-			actions.forEach(e -> e.getKey().run());
-			workQueue.removeAll(actions);
-		}
+	public void tick(ServerTickEvent.Post event) {
+		List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
+		workQueue.forEach(work -> {
+			work.setB(work.getB() - 1);
+			if (work.getB() == 0)
+				actions.add(work);
+		});
+		actions.forEach(e -> e.getA().run());
+		workQueue.removeAll(actions);
 	}
 }

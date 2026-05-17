@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_pickaxe_sky",
+    "better_tools:crystallite_axe_sky",
+    "better_tools:crystallite_shovel_sky",
+    "better_tools:crystallite_hoe_sky"
+  ]
+}

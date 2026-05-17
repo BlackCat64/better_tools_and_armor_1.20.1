@@ -1,10 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
-import net.minecraftforge.common.ToolActions;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.common.ItemAbilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
@@ -17,16 +17,17 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteHoeLapisProcedureProcedure {
 	@SubscribeEvent
 	public static void onUseHoe(BlockEvent.BlockToolModificationEvent event) {
-		if (!event.isSimulated() && event.getToolAction() == ToolActions.HOE_TILL && event.getPlayer() != null) {
+		if (!event.isSimulated() && event.getItemAbility() == ItemAbilities.HOE_TILL && event.getPlayer() != null) {
 			execute(event, event.getContext().getLevel(), event.getContext().getClickedPos().getX(), event.getContext().getClickedPos().getY(), event.getContext().getClickedPos().getZ(),
 					event.getContext().getLevel().getBlockState(event.getContext().getClickedPos()), event.getPlayer());
 		}
@@ -48,8 +49,8 @@ public class CrystalliteHoeLapisProcedureProcedure {
 				}
 				if (Math.random() < chance) {
 					if (world instanceof ServerLevel _level)
-						_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()),
-								Mth.nextInt(RandomSource.create(), 1, (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE) + 1))));
+						_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()), Mth.nextInt(RandomSource.create(), 1,
+								(int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1))));
 				}
 			}
 		}

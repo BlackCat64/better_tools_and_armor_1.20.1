@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -37,10 +35,15 @@ public class EnergyVialOpenGuiProcedure {
 		if (!(entity instanceof Player _plr0 && _plr0.containerMenu instanceof EnergyVialMenuMenu)) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = new BlockPos(0, -65, 0);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				_ent.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
 						return Component.literal("EnergyVialMenu");
+					}
+
+					@Override
+					public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+						return false;
 					}
 
 					@Override
@@ -58,13 +61,11 @@ public class EnergyVialOpenGuiProcedure {
 					_player.containerMenu.broadcastChanges();
 				}
 				{
-					ItemStack _setval = vial;
-					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.energy_vial_to_update = _setval.copy();
-						capability.syncPlayerVariables(entity);
-					});
+					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+					_vars.energy_vial_to_update = vial.copy();
+					_vars.syncPlayerVariables(entity);
 				}
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {

@@ -1,20 +1,6 @@
-/**
- * The code of this mod element is always locked.
- *
- * You can register new events in this class too.
- *
- * If you want to make a plain independent class, create it using
- * Project Browser -> New... and make sure to make the class
- * outside net.mcreator.bettertoolsandarmor as this package is managed by MCreator.
- *
- * If you change workspace package, modid or prefix, you will need
- * to manually adapt this file to these changes or remake it.
- *
- * This class will be added in the mod root package.
-*/
 package net.mcreator.bettertoolsandarmor;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.resources.ResourceLocation;
@@ -22,7 +8,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class ModItemProperties {
 	public static void addCustomItemProperties() {
 		makeBow(BetterToolsModItems.CRYSTALLITE_BOW.get());

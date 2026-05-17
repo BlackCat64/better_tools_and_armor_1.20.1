@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:honey_bottle",
+    "better_tools:apple_juice",
+    "better_tools:berry_smoothie",
+    "minecraft:beetroot_soup",
+    "minecraft:mushroom_stew",
+    "minecraft:suspicious_stew",
+    "minecraft:rabbit_stew",
+    "minecraft:potion",
+    "#better_tools:utility_potions"
+  ]
+}

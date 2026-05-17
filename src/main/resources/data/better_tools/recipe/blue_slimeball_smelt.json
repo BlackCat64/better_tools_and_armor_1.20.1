@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "group": "blue_slimeball",
+  "category": "misc",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "better_tools:blue_mushroom"
+  },
+  "result": {
+    "id": "better_tools:blue_slimeball"
+  }
+}

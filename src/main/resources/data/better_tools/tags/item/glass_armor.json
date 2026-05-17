@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#better_tools:base_glass_armor",
+    "#better_tools:iron_glass_armor",
+    "#better_tools:diamond_glass_armor"
+  ]
+}

@@ -1,9 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -28,11 +28,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ThornsDamageProcedure2Procedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getDirectEntity());
 		}
 	}
@@ -44,9 +44,9 @@ public class ThornsDamageProcedure2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if (immediatesourceentity instanceof LivingEntity && (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
-				? _livingEntity1.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
-				: 0) > 0 && !entity.isInvulnerable()) {
+		if (immediatesourceentity instanceof LivingEntity
+				&& (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE) ? _livingEntity1.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue() : 0) > 0
+				&& !entity.isInvulnerable()) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get()
@@ -56,10 +56,9 @@ public class ThornsDamageProcedure2Procedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity) && entityiterator instanceof LivingEntity) {
-							entityiterator.hurt(
-									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity, entity),
-									(float) (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
-											? _livingEntity13.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
+							entityiterator.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:armor_thorns"))), entity, entity),
+									(float) (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE)
+											? _livingEntity13.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue()
 											: 0));
 						}
 					}
@@ -67,9 +66,9 @@ public class ThornsDamageProcedure2Procedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_SPIN_THORNS.get()), x, (y + 1), z, 1, 0, 0, 0, 0);
 			}
-			immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity, entity),
-					(float) (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
-							? _livingEntity18.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
+			immediatesourceentity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:armor_thorns"))), entity, entity),
+					(float) (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE)
+							? _livingEntity18.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue()
 							: 0));
 		}
 	}

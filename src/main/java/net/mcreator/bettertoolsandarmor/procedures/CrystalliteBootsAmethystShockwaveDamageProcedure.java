@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingFallEvent;
+import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -21,6 +20,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
@@ -29,11 +29,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 	@SubscribeEvent
 	public static void onEntityFall(LivingFallEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getDistance());
 		}
 	}
@@ -49,7 +49,7 @@ public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 		double radius = 0;
 		double blocks_distance = 0;
 		double horz_distance = 0;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:shockwave_boots")))) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:shockwave_boots")))) {
 			blocks_distance = Math.round(distance);
 			radius = 0.25 * (blocks_distance - 3) + 1;
 			if (blocks_distance <= 2) {
@@ -68,9 +68,9 @@ public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.fall")), SoundSource.PLAYERS, 5, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.fall")), SoundSource.PLAYERS, 5, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.fall")), SoundSource.PLAYERS, 5, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.fall")), SoundSource.PLAYERS, 5, 1, false);
 					}
 				}
 				{
@@ -79,8 +79,7 @@ public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity) && entityiterator instanceof LivingEntity && Math.abs(entityiterator.getY() - entity.getY()) < 1) {
 							horz_distance = Math.sqrt(Math.pow(entityiterator.getX() - entity.getX(), 2) + Math.pow(entityiterator.getZ() - entity.getZ(), 2));
-							entityiterator.hurt(
-									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:shockwave_damage"))), null, entity),
+							entityiterator.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:shockwave_damage"))), null, entity),
 									(float) (damage / Math.max(1, horz_distance * 0.5)));
 						}
 					}

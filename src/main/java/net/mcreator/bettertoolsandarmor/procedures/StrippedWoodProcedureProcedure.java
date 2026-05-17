@@ -1,10 +1,9 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -17,13 +16,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class StrippedWoodProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -40,14 +40,14 @@ public class StrippedWoodProcedureProcedure {
 		if (direction == null || entity == null)
 			return;
 		ItemStack tool = ItemStack.EMPTY;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
 			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		}
-		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(new ResourceLocation("minecraft:pickaxes"))) || tool.is(ItemTags.create(new ResourceLocation("minecraft:shovels"))))
-				&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:logs"))) && !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains(":stripped_")
+		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes"))) || tool.is(ItemTags.create(ResourceLocation.parse("minecraft:shovels"))))
+				&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !(BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).contains(":stripped_")
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5 + direction.getStepX()), (y + 0.5 + direction.getStepY()), (z + 0.5 + direction.getStepZ()), new ItemStack(BetterToolsModItems.BARK.get()));

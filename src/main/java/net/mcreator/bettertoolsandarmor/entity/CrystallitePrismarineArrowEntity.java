@@ -1,9 +1,8 @@
 
 package net.mcreator.bettertoolsandarmor.entity;
 
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
