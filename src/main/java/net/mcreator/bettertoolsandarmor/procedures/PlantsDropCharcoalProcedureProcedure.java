@@ -45,8 +45,8 @@ public class PlantsDropCharcoalProcedureProcedure {
 				chance = chance * 2;
 			}
 			if (chance > 0) {
-				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					chance = chance + 0.05 * ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue();
+				if (false) {
+					chance = chance + 0.05 * 1;
 				}
 				if (Math.random() < chance) {
 					if (world instanceof ServerLevel _level) {

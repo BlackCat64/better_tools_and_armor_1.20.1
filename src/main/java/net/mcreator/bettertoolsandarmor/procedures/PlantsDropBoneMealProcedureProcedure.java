@@ -57,8 +57,8 @@ public class PlantsDropBoneMealProcedureProcedure {
 				}
 			}
 			if (chance > 0) {
-				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				if (false) {
+					chance = chance + 1 * 0.05;
 				}
 				if (Math.random() < chance) {
 					if (world instanceof ServerLevel _level) {

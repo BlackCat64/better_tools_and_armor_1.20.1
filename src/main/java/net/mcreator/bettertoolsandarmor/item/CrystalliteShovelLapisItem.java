@@ -51,7 +51,7 @@ public class CrystalliteShovelLapisItem extends ShovelItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		CrystalliteShovelLapisProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity, itemstack);
+		CrystalliteShovelLapisProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), itemstack);
 		return retval;
 	}
 

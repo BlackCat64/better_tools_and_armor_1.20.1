@@ -36,7 +36,7 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))) {
 				dupe_chance = 0.1;
 			}
-			dupe_chance = dupe_chance + 0.05 * ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue();
+			dupe_chance = dupe_chance + 0.05 * 0;
 			if (Math.random() < dupe_chance) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))) {
 					if (world instanceof ServerLevel _level)
