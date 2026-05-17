@@ -20,6 +20,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -41,9 +42,15 @@ public class FreezingWeaponsProcedureProcedure {
 			return;
 		double time = 0;
 		double chance = 0;
-		if (sourceentity instanceof LivingEntity && false && Math.random() < 0) {
+		if (sourceentity instanceof LivingEntity && Math.random() < (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE.get())
+				? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE.get()).getValue()
+				: 0)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(), 0, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN.get(),
+						(int) (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME.get())
+								? _livingEntity2.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME.get()).getValue()
+								: 0),
+						0, false, false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1);
@@ -51,8 +58,8 @@ public class FreezingWeaponsProcedureProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 				}
 			}
-			if (!(sourceentity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel
-					&& _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
+			if (!(sourceentity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
+					&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
 				if (sourceentity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

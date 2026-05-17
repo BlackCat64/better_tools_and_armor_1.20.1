@@ -26,6 +26,8 @@ public class BetterToolsModAttributes {
 	public static final RegistryObject<Attribute> THORNS_DAMAGE = REGISTRY.register("thorns_damage", () -> new RangedAttribute("attribute.better_tools.thorns_damage", 0, 0, 20).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZE_THORNS_CHANCE = REGISTRY.register("freeze_thorns_chance", () -> new RangedAttribute("attribute.better_tools.freeze_thorns_chance", 0, 0, 1).setSyncable(true));
 	public static final RegistryObject<Attribute> FREEZE_THORNS_TIME = REGISTRY.register("freeze_thorns_time", () -> new RangedAttribute("attribute.better_tools.freeze_thorns_time", 0, 0, 20000).setSyncable(true));
+	public static final RegistryObject<Attribute> ATTACK_FREEZE_CHANCE = REGISTRY.register("attack_freeze_chance", () -> new RangedAttribute("attribute.better_tools.attack_freeze_chance", 0, 0, 1).setSyncable(true));
+	public static final RegistryObject<Attribute> ATTACK_FREEZE_TIME = REGISTRY.register("attack_freeze_time", () -> new RangedAttribute("attribute.better_tools.attack_freeze_time", 0, 0, 20000).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
@@ -33,6 +35,8 @@ public class BetterToolsModAttributes {
 		event.getTypes().forEach(entity -> event.add(entity, THORNS_DAMAGE.get()));
 		event.getTypes().forEach(entity -> event.add(entity, FREEZE_THORNS_CHANCE.get()));
 		event.getTypes().forEach(entity -> event.add(entity, FREEZE_THORNS_TIME.get()));
+		event.getTypes().forEach(entity -> event.add(entity, ATTACK_FREEZE_CHANCE.get()));
+		event.getTypes().forEach(entity -> event.add(entity, ATTACK_FREEZE_TIME.get()));
 	}
 
 	@Mod.EventBusSubscriber
@@ -45,6 +49,8 @@ public class BetterToolsModAttributes {
 			newPlayer.getAttribute(THORNS_DAMAGE.get()).setBaseValue(oldPlayer.getAttribute(THORNS_DAMAGE.get()).getBaseValue());
 			newPlayer.getAttribute(FREEZE_THORNS_CHANCE.get()).setBaseValue(oldPlayer.getAttribute(FREEZE_THORNS_CHANCE.get()).getBaseValue());
 			newPlayer.getAttribute(FREEZE_THORNS_TIME.get()).setBaseValue(oldPlayer.getAttribute(FREEZE_THORNS_TIME.get()).getBaseValue());
+			newPlayer.getAttribute(ATTACK_FREEZE_CHANCE.get()).setBaseValue(oldPlayer.getAttribute(ATTACK_FREEZE_CHANCE.get()).getBaseValue());
+			newPlayer.getAttribute(ATTACK_FREEZE_TIME.get()).setBaseValue(oldPlayer.getAttribute(ATTACK_FREEZE_TIME.get()).getBaseValue());
 		}
 	}
 }

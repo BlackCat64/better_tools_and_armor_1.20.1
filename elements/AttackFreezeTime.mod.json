@@ -1,0 +1,13 @@
+{
+  "_fv": 69,
+  "_type": "attribute",
+  "definition": {
+    "name": "Attack Freeze Time",
+    "minValue": 0.0,
+    "maxValue": 20000.0,
+    "defaultValue": 0.0,
+    "addToAllEntities": true,
+    "addToPlayers": false,
+    "entities": []
+  }
+}
