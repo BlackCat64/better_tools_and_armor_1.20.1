@@ -47,9 +47,9 @@ public class CrystalliteAxeRedstoneItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
-		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A7cLeech - Heals you when striking a target"));
-		list.add(Component.literal("\u00A7cCalibrated [0/2] - Mining speed increases with number of blocks mined"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_redstone.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_redstone.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_redstone.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_redstone.description_3"));
 	}
 }

@@ -73,9 +73,9 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Reduces maximum burn time"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_helmet.description_2"));
 		}
 
 		@Override
@@ -92,9 +92,9 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Reduces maximum burn time"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_chestplate.description_2"));
 		}
 
 		@Override
@@ -111,9 +111,9 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Reduces maximum burn time"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_leggings.description_2"));
 		}
 
 		@Override
@@ -130,9 +130,9 @@ public abstract class NetherDiamondArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A74Reduces maximum burn time"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A74Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.nether_diamond_boots.description_2"));
 		}
 
 		@Override

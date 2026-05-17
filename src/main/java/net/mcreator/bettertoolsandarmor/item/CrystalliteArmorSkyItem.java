@@ -74,10 +74,10 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fCarbonated - Eating gives a Regeneration effect"));
-			list.add(Component.literal("Drinking gives a level II effect"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_helmet.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_helmet.description_3"));
 		}
 
 		@Override
@@ -94,9 +94,9 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fGusty - Knocks back nearby mobs when attacked"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_chestplate.description_2"));
 		}
 
 		@Override
@@ -113,9 +113,9 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fFloaty - Gain Low Gravity"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_leggings.description_2"));
 		}
 
 		@Override
@@ -132,9 +132,9 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fAir Affinity - Fall damage starts at a higher height"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sky_boots.description_2"));
 		}
 
 		@Override

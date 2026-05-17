@@ -79,9 +79,9 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A73Amphibian - Gain Conduit Power when wet"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_helmet.description_2"));
 		}
 
 		@Override
@@ -106,9 +106,9 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A73Ocean Dweller - Mining Fatigue immunity"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_chestplate.description_2"));
 		}
 
 		@Override
@@ -133,10 +133,10 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Buoyancy - Gain Low Gravity in rain"));
-			list.add(Component.literal("\u00A73Gain Zero Gravity in water"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_leggings.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_leggings.description_3"));
 		}
 
 		@Override
@@ -153,10 +153,10 @@ public abstract class CrystalliteArmorPrismarineItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Rapid - Increased movement speed in rain"));
-			list.add(Component.literal("\u00A73Increased swim speed"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_boots.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_prismarine_boots.description_3"));
 		}
 
 		@Override

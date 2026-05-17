@@ -74,9 +74,9 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_helmet.description_2"));
 		}
 
 		@Override
@@ -93,9 +93,9 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_chestplate.description_2"));
 		}
 
 		@Override
@@ -112,9 +112,9 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_leggings.description_2"));
 		}
 
 		@Override
@@ -131,9 +131,9 @@ public abstract class CrystalliteArmorLapisItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A79Lapis Lazuli"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A79Magic - Keep XP on death"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_lapis_boots.description_2"));
 		}
 
 		@Override

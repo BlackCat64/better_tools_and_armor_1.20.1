@@ -77,7 +77,7 @@ public abstract class DiamondGoldCarrotHatItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A7bDiamond Encrusted"));
+			list.add(Component.translatable("item.better_tools.diamond_gold_carrot_helmet.description_0"));
 		}
 
 		@Override

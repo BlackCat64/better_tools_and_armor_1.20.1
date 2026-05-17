@@ -73,7 +73,7 @@ public abstract class CrystalliteArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+			list.add(Component.translatable("item.better_tools.crystallite_helmet.description_0"));
 		}
 
 		@Override
@@ -90,7 +90,7 @@ public abstract class CrystalliteArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+			list.add(Component.translatable("item.better_tools.crystallite_chestplate.description_0"));
 		}
 
 		@Override
@@ -107,7 +107,7 @@ public abstract class CrystalliteArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+			list.add(Component.translatable("item.better_tools.crystallite_leggings.description_0"));
 		}
 
 		@Override
@@ -124,7 +124,7 @@ public abstract class CrystalliteArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+			list.add(Component.translatable("item.better_tools.crystallite_boots.description_0"));
 		}
 
 		@Override

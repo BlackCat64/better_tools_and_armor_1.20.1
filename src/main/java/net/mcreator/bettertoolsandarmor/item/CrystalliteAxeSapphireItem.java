@@ -55,8 +55,8 @@ public class CrystalliteAxeSapphireItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7bSapphire"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7bFreezing - Can freeze opponents"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_sapphire.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_sapphire.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_axe_sapphire.description_2"));
 	}
 }

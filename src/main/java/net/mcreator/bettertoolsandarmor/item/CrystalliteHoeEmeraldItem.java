@@ -47,9 +47,9 @@ public class CrystalliteHoeEmeraldItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
-		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A7aFertilizer - Plants may drop Bone Meal when mined"));
-		list.add(Component.literal("\u00A7aRight-click while crouching to turn dirt into grass"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_emerald.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_emerald.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_emerald.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_emerald.description_3"));
 	}
 }

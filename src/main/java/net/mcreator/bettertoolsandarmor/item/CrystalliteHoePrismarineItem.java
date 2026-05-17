@@ -49,9 +49,9 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A73Hydration - Tills fully-moisturised farmland in a 3x3 area"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_2"));
 	}
 
 	@Override

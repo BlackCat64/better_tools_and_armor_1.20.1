@@ -101,8 +101,8 @@ public class CrystallitePickaxeEmeraldItem extends TieredItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7aEmerald"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7aAdaptive - Mines all blocks efficiently, but has limited enchantability"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_emerald.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_emerald.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_emerald.description_2"));
 	}
 }

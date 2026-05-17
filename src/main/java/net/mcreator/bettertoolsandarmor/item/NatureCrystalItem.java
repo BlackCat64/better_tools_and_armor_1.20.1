@@ -18,6 +18,6 @@ public class NatureCrystalItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Element: \u00A7aEmerald"));
+		list.add(Component.translatable("item.better_tools.nature_crystal.description_0"));
 	}
 }

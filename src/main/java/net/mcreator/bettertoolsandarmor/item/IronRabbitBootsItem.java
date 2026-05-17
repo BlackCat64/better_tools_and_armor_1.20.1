@@ -77,7 +77,7 @@ public abstract class IronRabbitBootsItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Iron Plated"));
+			list.add(Component.translatable("item.better_tools.iron_rabbit_boots.description_0"));
 		}
 
 		@Override

@@ -16,7 +16,7 @@ public class ApplyLeggingsEffectProcedure {
 		if (entity == null)
 			return;
 		ItemStack leggings = ItemStack.EMPTY;
-		leggings = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY);
+		leggings = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
 		if (leggings.is(ItemTags.create(new ResourceLocation("better_tools:ruby_leggings")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 200, (int) (leggings.is(ItemTags.create(new ResourceLocation("better_tools:diamond_tier_effect_armor"))) ? 1 : 0), true, false));

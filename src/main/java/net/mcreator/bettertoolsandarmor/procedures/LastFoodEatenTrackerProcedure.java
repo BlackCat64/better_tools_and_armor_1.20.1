@@ -32,7 +32,7 @@ public class LastFoodEatenTrackerProcedure {
 			{
 				ItemStack _setval = itemstack;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.last_food_eaten = _setval;
+					capability.last_food_eaten = _setval.copy();
 					capability.syncPlayerVariables(entity);
 				});
 			}

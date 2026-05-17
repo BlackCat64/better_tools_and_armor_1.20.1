@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"128\" y=\"109\"><field name=\"trigger\">player_ticks</field></block><block type=\"text\" x=\"643\" y=\"135\"><field name=\"TEXT\">b142e962-510b-4849-9215-39d451edde4c</field></block><block type=\"text\" x=\"660\" y=\"172\"><field name=\"TEXT\">flint_tools</field></block><block type=\"math_number\" x=\"670\" y=\"215\"><field name=\"NUM\">0.25</field></block><block type=\"controls_if\" x=\"486\" y=\"275\"><mutation else=\"1\"/><value name=\"IF0\"><block type=\"compare_mcitems_oredictionary\"><value name=\"a\"><block type=\"entity_iteminhand\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"b\"><block type=\"text\"><field name=\"TEXT\">better_tools:flint_tools</field></block></value></block></value></block></xml>"

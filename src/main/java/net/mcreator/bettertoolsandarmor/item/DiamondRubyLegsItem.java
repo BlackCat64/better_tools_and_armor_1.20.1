@@ -78,7 +78,7 @@ public abstract class DiamondRubyLegsItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A7bDiamond Encrusted"));
+			list.add(Component.translatable("item.better_tools.diamond_ruby_leggings.description_0"));
 		}
 
 		@Override

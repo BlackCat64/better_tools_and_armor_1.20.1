@@ -46,8 +46,8 @@ public class CrystalliteShovelNetherDiamondItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A74Charring - Plants may drop Charcoal"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_nether_diamond.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_nether_diamond.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_nether_diamond.description_2"));
 	}
 }

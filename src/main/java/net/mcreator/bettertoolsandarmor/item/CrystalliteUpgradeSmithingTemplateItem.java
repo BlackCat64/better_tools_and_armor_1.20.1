@@ -18,11 +18,11 @@ public class CrystalliteUpgradeSmithingTemplateItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Crystallite Upgrade"));
-		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A77Applies to:"));
-		list.add(Component.literal("\u00A79Crystallite Equipment"));
-		list.add(Component.literal("\u00A77Ingredients:"));
-		list.add(Component.literal("\u00A79Elemental Crystals"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_3"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_4"));
+		list.add(Component.translatable("item.better_tools.crystallite_upgrade_smithing_template.description_5"));
 	}
 }

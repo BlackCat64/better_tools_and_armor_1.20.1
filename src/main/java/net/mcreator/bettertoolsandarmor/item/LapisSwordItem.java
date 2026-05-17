@@ -45,6 +45,6 @@ public class LapisSwordItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A79Deals damage through armor"));
+		list.add(Component.translatable("item.better_tools.lapis_sword.description_0"));
 	}
 }

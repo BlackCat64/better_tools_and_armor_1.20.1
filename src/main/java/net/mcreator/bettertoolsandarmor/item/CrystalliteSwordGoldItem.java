@@ -49,9 +49,9 @@ public class CrystalliteSwordGoldItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7eGold"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7eSpin Attack - Deals damage to all close mobs"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_gold.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_gold.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_gold.description_2"));
 	}
 
 	@Override

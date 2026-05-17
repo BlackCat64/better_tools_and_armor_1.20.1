@@ -47,8 +47,8 @@ public class CrystalliteShovelPrismarineItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A73Aqua Affinity - Mines blocks instantly when wet"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_prismarine.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_prismarine.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_prismarine.description_2"));
 	}
 }

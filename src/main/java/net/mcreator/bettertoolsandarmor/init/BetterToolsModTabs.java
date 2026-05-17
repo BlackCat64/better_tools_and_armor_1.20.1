@@ -58,9 +58,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.ELECTRIC_STAFF.get());
 				tabData.accept(BetterToolsModItems.WARDEN_STAFF.get());
 				tabData.accept(BetterToolsModItems.GUARDIAN_STAFF.get());
-			})
-
-					.build());
+			}).build());
 	public static final RegistryObject<CreativeModeTab> CRYSTALLITE_TAB = REGISTRY.register("crystallite_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.crystallite_tab")).icon(() -> new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModBlocks.JEWELLERY_TABLE.get().asItem());
@@ -273,9 +271,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
-			})
-
-					.build());
+			}).withTabsBefore(BETTER_TOOLS_AND_ARMOR_MISC.getId()).build());
 	public static final RegistryObject<CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModItems.NETHER_DIAMOND.get());
@@ -373,9 +369,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
-			})
-
-					.build());
+			}).withTabsBefore(CRYSTALLITE_TAB.getId()).build());
 	public static final RegistryObject<CreativeModeTab> EFFECT_ARMOR_TAB = REGISTRY.register("effect_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.effect_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.GOLD_CARROT_HELMET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BetterToolsModItems.ENRICHED_BLAZE_POWDER.get());
@@ -417,14 +411,18 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
-			})
-
-					.build());
+			}).withTabsBefore(TOOLS_AND_ARMOR_TAB.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
+			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
+			tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
+			tabData.accept(BetterToolsModItems.FLINT_HOE.get());
+			tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
+			tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(BetterToolsModItems.FLINT_SWORD.get());
 			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
 			tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
@@ -451,18 +449,7 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
 			tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 			tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-
-			tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
-			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
-			tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
-			tabData.accept(BetterToolsModItems.FLINT_HOE.get());
-			tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
-			tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-
 			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
 			tabData.accept(BetterToolsModItems.BERRY_PIE.get());
@@ -475,7 +462,6 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.RECALL_POTION.get());
 			tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
 			tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
-
 		}
 	}
 }

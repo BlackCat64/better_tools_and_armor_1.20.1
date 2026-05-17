@@ -48,9 +48,9 @@ public class CrystalliteHoeTopazItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Charged - Has Fortune IV"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_topaz.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_topaz.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_topaz.description_2"));
 	}
 
 	@Override

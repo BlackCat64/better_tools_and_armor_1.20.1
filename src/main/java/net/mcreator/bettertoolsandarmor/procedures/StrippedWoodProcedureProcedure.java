@@ -41,10 +41,10 @@ public class StrippedWoodProcedureProcedure {
 			return;
 		ItemStack tool = ItemStack.EMPTY;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
-			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
-			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		}
 		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(new ResourceLocation("minecraft:pickaxes"))) || tool.is(ItemTags.create(new ResourceLocation("minecraft:shovels"))))
 				&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:logs"))) && !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains(":stripped_")

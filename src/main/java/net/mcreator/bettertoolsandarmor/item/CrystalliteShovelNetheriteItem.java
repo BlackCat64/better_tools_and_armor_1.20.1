@@ -58,9 +58,9 @@ public class CrystalliteShovelNetheriteItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A78Netherite"));
-		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A78Nether Infused - Right-click to remove any Wither effects"));
-		list.add(Component.literal("\u00A78Mines all Crimson and Warped blocks instantly"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_netherite.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_netherite.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_netherite.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_netherite.description_3"));
 	}
 }

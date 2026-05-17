@@ -40,7 +40,7 @@ public class BreakBlockWithPickaxeProcedure {
 			for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation(((reg_name.split("\\:")[0] + ":blocks/" + reg_name.split("\\:")[1])).toLowerCase(java.util.Locale.ENGLISH)))
 					.getRandomItems(new LootParams.Builder((ServerLevel) world).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(_bpLootTblWorld)).withParameter(LootContextParams.BLOCK_STATE, world.getBlockState(_bpLootTblWorld))
 							.withOptionalParameter(LootContextParams.BLOCK_ENTITY, world.getBlockEntity(_bpLootTblWorld)).create(LootContextParamSets.EMPTY))) {
-				item_to_drop = itemstackiterator;
+				item_to_drop = itemstackiterator.copy();
 			}
 		}
 		if (world instanceof Level _level4 && _level4.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(item_to_drop), _level4).isPresent()
@@ -48,9 +48,9 @@ public class BreakBlockWithPickaxeProcedure {
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:smelting_touch_tools"))))) {
 			item_to_drop = (world instanceof Level _lvlSmeltResult
 					? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(item_to_drop), _lvlSmeltResult).map(recipe -> recipe.getResultItem(_lvlSmeltResult.registryAccess()).copy()).orElse(ItemStack.EMPTY)
-					: ItemStack.EMPTY);
+					: ItemStack.EMPTY).copy();
 		} else if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			item_to_drop = (new ItemStack(blockstate.getBlock()));
+			item_to_drop = (new ItemStack(blockstate.getBlock())).copy();
 		}
 		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			count_to_drop = item_to_drop.getCount() * FortuneGetNumOfDropsProcedure.execute((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE));

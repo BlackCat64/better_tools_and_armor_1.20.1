@@ -14,7 +14,7 @@ public class ApplyHelmetEffectProcedure {
 		if (entity == null)
 			return;
 		ItemStack helmet = ItemStack.EMPTY;
-		helmet = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY);
+		helmet = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
 		if (helmet.is(ItemTags.create(new ResourceLocation("better_tools:golden_carrot_hats")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false));

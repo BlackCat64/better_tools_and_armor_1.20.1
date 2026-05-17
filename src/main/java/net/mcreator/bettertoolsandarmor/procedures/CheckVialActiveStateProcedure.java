@@ -10,9 +10,9 @@ public class CheckVialActiveStateProcedure {
 			return false;
 		ItemStack vial = ItemStack.EMPTY;
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-			vial = GetEquippedVialProcedure.execute();
+			vial = GetEquippedVialProcedure.execute().copy();
 		} else {
-			vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+			vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		}
 		return vial.getOrCreateTag().getBoolean((armor + "_active"));
 	}

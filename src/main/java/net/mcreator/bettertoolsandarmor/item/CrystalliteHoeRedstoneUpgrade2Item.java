@@ -47,8 +47,8 @@ public class CrystalliteHoeRedstoneUpgrade2Item extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cCalibrated [Max] - Greatly increased chance for plants to drop Bone Meal"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_redstone_upgrade_2.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_redstone_upgrade_2.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_redstone_upgrade_2.description_2"));
 	}
 }

@@ -73,7 +73,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
+			list.add(Component.translatable("item.better_tools.topaz_helmet.description_0"));
 		}
 
 		@Override
@@ -90,7 +90,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
+			list.add(Component.translatable("item.better_tools.topaz_chestplate.description_0"));
 		}
 
 		@Override
@@ -107,7 +107,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
+			list.add(Component.translatable("item.better_tools.topaz_leggings.description_0"));
 		}
 
 		@Override
@@ -124,7 +124,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A76Can summon lightning on attackers"));
+			list.add(Component.translatable("item.better_tools.topaz_boots.description_0"));
 		}
 
 		@Override

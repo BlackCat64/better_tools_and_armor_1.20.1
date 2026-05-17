@@ -47,8 +47,8 @@ public class CrystalliteShovelSkyItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7fAir Affinity - Mines at the same speed while airborne"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_sky.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_sky.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_sky.description_2"));
 	}
 }

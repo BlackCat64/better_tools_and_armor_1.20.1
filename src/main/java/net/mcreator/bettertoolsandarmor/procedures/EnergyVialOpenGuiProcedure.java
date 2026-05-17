@@ -50,7 +50,7 @@ public class EnergyVialOpenGuiProcedure {
 				}, _bpos);
 			}
 			if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-				vial = GetEquippedVialProcedure.execute();
+				vial = GetEquippedVialProcedure.execute().copy();
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = vial.copy();
 					_setstack.setCount(1);
@@ -60,7 +60,7 @@ public class EnergyVialOpenGuiProcedure {
 				{
 					ItemStack _setval = vial;
 					entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.energy_vial_to_update = _setval;
+						capability.energy_vial_to_update = _setval.copy();
 						capability.syncPlayerVariables(entity);
 					});
 				}

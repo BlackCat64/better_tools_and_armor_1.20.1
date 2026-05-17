@@ -77,10 +77,10 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A75Makes the wearer immune to Endermen"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A75Saves from void death"));
+			list.add(Component.translatable("item.better_tools.end_titanium_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.end_titanium_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.end_titanium_helmet.description_2"));
+			list.add(Component.translatable("item.better_tools.end_titanium_helmet.description_3"));
 		}
 
 		@Override
@@ -97,10 +97,10 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A75Can teleport attackers away"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A75Saves from void death"));
+			list.add(Component.translatable("item.better_tools.end_titanium_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.end_titanium_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.end_titanium_chestplate.description_2"));
+			list.add(Component.translatable("item.better_tools.end_titanium_chestplate.description_3"));
 		}
 
 		@Override
@@ -117,10 +117,10 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A75Levitation Resistant"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A75Saves from void death"));
+			list.add(Component.translatable("item.better_tools.end_titanium_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.end_titanium_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.end_titanium_leggings.description_2"));
+			list.add(Component.translatable("item.better_tools.end_titanium_leggings.description_3"));
 		}
 
 		@Override
@@ -145,10 +145,10 @@ public abstract class EndTitaniumArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A75Press \u00A7b[Left Shift] \u00A75in mid-air for 5s Slow Falling"));
-			list.add(Component.literal("\u00A77Full-set bonus:"));
-			list.add(Component.literal("\u00A75Saves from void death"));
+			list.add(Component.translatable("item.better_tools.end_titanium_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.end_titanium_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.end_titanium_boots.description_2"));
+			list.add(Component.translatable("item.better_tools.end_titanium_boots.description_3"));
 		}
 
 		@Override

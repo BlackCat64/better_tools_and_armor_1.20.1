@@ -11,7 +11,7 @@ import net.mcreator.bettertoolsandarmor.entity.PurpleMooshroomEntity;
 
 public class PurpleMooshroomRenderer extends MobRenderer<PurpleMooshroomEntity, CowModel<PurpleMooshroomEntity>> {
 	public PurpleMooshroomRenderer(EntityRendererProvider.Context context) {
-		super(context, new CowModel(context.bakeLayer(ModelLayers.COW)), 0.5f);
+		super(context, new CowModel<PurpleMooshroomEntity>(context.bakeLayer(ModelLayers.COW)), 0.5f);
 	}
 
 	@Override

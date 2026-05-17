@@ -47,9 +47,9 @@ public class CrystalliteHoeHoneyItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A76Swarm - Mining the same block many times in a row causes it to break instantly"));
-		list.add(Component.literal("\u00A76Pollinator - Breaking the same plant many times in a row may drop Bone Meal"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_honey.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_honey.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_honey.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_hoe_honey.description_3"));
 	}
 }

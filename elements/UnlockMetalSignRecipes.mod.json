@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "achievement",
   "definition": {
     "achievementName": "Unlock Metal Sign Recipes",
@@ -176,7 +176,6 @@
       "MagentaMetalHangingSignFromOneLine",
       "AmogusRecipe"
     ],
-    "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {

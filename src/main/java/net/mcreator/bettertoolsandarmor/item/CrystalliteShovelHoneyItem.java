@@ -47,8 +47,8 @@ public class CrystalliteShovelHoneyItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Pollinator - Breaking the same plant many times in a row may drop Bone Meal"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_honey.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_honey.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_honey.description_2"));
 	}
 }

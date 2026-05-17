@@ -74,9 +74,9 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dAccuracy - Arrows shot from Bows home in on nearby mobs"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_helmet.description_2"));
 		}
 
 		@Override
@@ -93,9 +93,9 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dCrystallized - Gives Resistance when at full health"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_chestplate.description_2"));
 		}
 
 		@Override
@@ -112,9 +112,9 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dCave Climber - Allows wall climbing on any full block"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_leggings.description_2"));
 		}
 
 		@Override
@@ -131,9 +131,9 @@ public abstract class CrystalliteArmorAmethystItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7dShockwave - Creates a powerful shockwave when landing from a fall"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_amethyst_boots.description_2"));
 		}
 
 		@Override

@@ -48,7 +48,7 @@ public class EndTitaniumSwordItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A75Increased attack damage in The End"));
+		list.add(Component.translatable("item.better_tools.end_titanium_sword.description_0"));
 	}
 
 	@Override

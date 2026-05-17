@@ -51,8 +51,8 @@ public class DescensionPotionItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A79Descend through the floor"));
-		list.add(Component.literal("\u00A7cUse with caution!"));
+		list.add(Component.translatable("item.better_tools.descension_potion.description_0"));
+		list.add(Component.translatable("item.better_tools.descension_potion.description_1"));
 	}
 
 	@Override

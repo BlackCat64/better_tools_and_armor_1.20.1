@@ -49,10 +49,10 @@ public class ProgressiveToolsHoeProcedureProcedure {
 		if (blockstate.is(BlockTags.create(new ResourceLocation("better_tools:hoe_allowed_blocks"))) && world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:progressive_tools")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes")))) {
-				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:progressive_tools")))
 					&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:hoes"))))) {
-				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 				off_hand = true;
 			}
 			if (!(hoe.getItem() == ItemStack.EMPTY.getItem())) {
@@ -61,11 +61,11 @@ public class ProgressiveToolsHoeProcedureProcedure {
 				threshold_2 = 3000;
 				hoe.getOrCreateTag().putDouble("blocks_mined", (hoe.getOrCreateTag().getDouble("blocks_mined") + 1));
 				if (!(ForgeRegistries.ITEMS.getKey(hoe.getItem()).toString()).endsWith("_upgrade_2") && hoe.getOrCreateTag().getDouble("blocks_mined") >= threshold_2) {
-					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_2")).toLowerCase(java.util.Locale.ENGLISH))));
+					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_2")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u00A7c" + hoe.getDisplayName().getString() + " upgraded to Max Level")), true);
 				} else if (!(ForgeRegistries.ITEMS.getKey(hoe.getItem()).toString()).contains("_upgrade_") && hoe.getOrCreateTag().getDouble("blocks_mined") >= threshold_1) {
-					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_1")).toLowerCase(java.util.Locale.ENGLISH))));
+					new_pickaxe = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((reg_name + "_upgrade_1")).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u00A7c" + hoe.getDisplayName().getString() + " upgraded to Level 1")), true);
 				}

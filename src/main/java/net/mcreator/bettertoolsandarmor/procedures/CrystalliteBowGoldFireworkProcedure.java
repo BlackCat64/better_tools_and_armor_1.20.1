@@ -20,7 +20,7 @@ public class CrystalliteBowGoldFireworkProcedure {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((x + "" + y + z + sourceentity)), false);
 		}
-		firework_item = new ItemStack(Items.FIREWORK_ROCKET);
+		firework_item = new ItemStack(Items.FIREWORK_ROCKET).copy();
 		CompoundTag explosion = new CompoundTag();
 		explosion.putByte("Type", (byte) 0);
 		explosion.put("Colors", new IntArrayTag(new int[]{16645946, 13426154}));

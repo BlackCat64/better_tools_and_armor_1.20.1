@@ -46,6 +46,6 @@ public class EndTitaniumHoeItem extends HoeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A75Mines Purpur instantly"));
+		list.add(Component.translatable("item.better_tools.end_titanium_hoe.description_0"));
 	}
 }

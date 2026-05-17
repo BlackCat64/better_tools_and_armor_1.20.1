@@ -47,8 +47,8 @@ public class CrystalliteDaggerHoneyItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Swarm - Consecutive hits deal more damage"));
+		list.add(Component.translatable("item.better_tools.crystallite_dagger_honey.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_dagger_honey.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_dagger_honey.description_2"));
 	}
 }

@@ -47,8 +47,8 @@ public class CrystalliteSwordSkyItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7fSky"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7fAir Proficiency - Increased critical hit damage"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_sword_sky.description_2"));
 	}
 }

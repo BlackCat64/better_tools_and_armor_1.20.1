@@ -40,7 +40,7 @@ public class MysticPotionItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A75Random Effect (00:??)"));
+		list.add(Component.translatable("item.better_tools.mystic_potion.description_0"));
 	}
 
 	@Override

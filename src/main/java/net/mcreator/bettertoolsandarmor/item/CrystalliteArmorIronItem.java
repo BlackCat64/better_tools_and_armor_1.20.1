@@ -74,9 +74,9 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_helmet.description_2"));
 		}
 
 		@Override
@@ -93,9 +93,9 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_chestplate.description_2"));
 		}
 
 		@Override
@@ -112,9 +112,9 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_leggings.description_2"));
 		}
 
 		@Override
@@ -131,9 +131,9 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A7fIron"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A7fTough - Increased knockback resistance"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_iron_boots.description_2"));
 		}
 
 		@Override

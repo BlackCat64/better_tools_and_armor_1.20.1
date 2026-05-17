@@ -46,6 +46,6 @@ public class CrystalliteShovelItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel.description_0"));
 	}
 }

@@ -37,10 +37,10 @@ public class GuardianStaffWaterPulseProcedure {
 			return;
 		double kills = 0;
 		double damage = 0;
-		double range = 0;
 		double vx = 0;
 		double vy = 0;
 		double vz = 0;
+		double range = 0;
 		range = 4 + 2 * itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		damage = 6 + itemstack.getEnchantmentLevel(BetterToolsModEnchantments.ENSORCELLATION.get());
 		if (entity.isInWaterRainOrBubble()) {

@@ -46,6 +46,6 @@ public class NetherDiamondDaggerItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A74Sets the target on fire"));
+		list.add(Component.translatable("item.better_tools.nether_diamond_dagger.description_0"));
 	}
 }

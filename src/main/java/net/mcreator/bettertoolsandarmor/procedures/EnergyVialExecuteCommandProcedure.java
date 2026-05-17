@@ -24,9 +24,9 @@ public class EnergyVialExecuteCommandProcedure {
 			if ((StringArgumentType.getString(arguments, "armor")).equals("helmet") || (StringArgumentType.getString(arguments, "armor")).equals("chestplate") || (StringArgumentType.getString(arguments, "armor")).equals("leggings")
 					|| (StringArgumentType.getString(arguments, "armor")).equals("boots")) {
 				if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-					vial = GetEquippedVialProcedure.execute();
+					vial = GetEquippedVialProcedure.execute().copy();
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:energy_vials")))) {
-					vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 				}
 				if (vial.getItem() == ItemStack.EMPTY.getItem()) {
 					if (entity instanceof Player _player && !_player.level().isClientSide())

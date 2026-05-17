@@ -48,7 +48,7 @@ public class TopazShovelItem extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A76Has Fortune"));
+		list.add(Component.translatable("item.better_tools.topaz_shovel.description_0"));
 	}
 
 	@Override

@@ -47,9 +47,9 @@ public class CrystalliteShovelRedstoneUpgrade1Item extends ShovelItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cCalibrated [1/2] - Increased chance for plants to drop Bone Meal when broken"));
-		list.add(Component.literal("\u00A7cChance increases further when more blocks are mined"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone_upgrade_1.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone_upgrade_1.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone_upgrade_1.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone_upgrade_1.description_3"));
 	}
 }

@@ -46,6 +46,6 @@ public class TopazSwordItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A76Attacks can chain electrically onto nearby mobs"));
+		list.add(Component.translatable("item.better_tools.topaz_sword.description_0"));
 	}
 }

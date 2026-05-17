@@ -19,7 +19,7 @@ public class ApplyChestplateEffectProcedure {
 		if (entity == null)
 			return;
 		ItemStack chestplate = ItemStack.EMPTY;
-		chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY);
+		chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
 		if (chestplate.is(ItemTags.create(new ResourceLocation("better_tools:magma_chestplates")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, true, false));

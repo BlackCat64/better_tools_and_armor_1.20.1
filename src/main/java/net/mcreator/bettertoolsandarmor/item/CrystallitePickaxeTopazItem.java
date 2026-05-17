@@ -46,8 +46,8 @@ public class CrystallitePickaxeTopazItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A76Topaz"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A76Charged - Ores have a chance to drop double"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_topaz.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_topaz.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_topaz.description_2"));
 	}
 }

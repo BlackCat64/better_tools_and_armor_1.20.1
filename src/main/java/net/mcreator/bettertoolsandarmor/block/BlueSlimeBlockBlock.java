@@ -28,7 +28,7 @@ public class BlueSlimeBlockBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7bIncreases jump height"));
+		list.add(Component.translatable("block.better_tools.blue_slime_block.description_0"));
 	}
 
 	@Override

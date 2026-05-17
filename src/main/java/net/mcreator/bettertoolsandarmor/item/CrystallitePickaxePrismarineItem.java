@@ -49,10 +49,10 @@ public class CrystallitePickaxePrismarineItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A73Prismarine"));
-		list.add(Component.literal("\u00A77Abilities:"));
-		list.add(Component.literal("\u00A73Aqua Affinity - Mines faster when wet"));
-		list.add(Component.literal("\u00A73Removes underwater mining penalty"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_prismarine.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_prismarine.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_prismarine.description_2"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_prismarine.description_3"));
 	}
 
 	@Override

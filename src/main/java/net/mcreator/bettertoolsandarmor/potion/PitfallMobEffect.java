@@ -17,6 +17,7 @@ public class PitfallMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		super.addAttributeModifiers(entity, attributeMap, amplifier);
 		PitfallEffectAppliedProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 

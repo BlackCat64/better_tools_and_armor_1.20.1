@@ -33,8 +33,8 @@ public class SugarClumpItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A79Speed (0:05)"));
-		list.add(Component.literal("\u00A79Effect time stacks"));
+		list.add(Component.translatable("item.better_tools.sugar_clump.description_0"));
+		list.add(Component.translatable("item.better_tools.sugar_clump.description_1"));
 	}
 
 	@Override

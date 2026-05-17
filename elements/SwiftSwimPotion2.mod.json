@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Rapidity",
@@ -12,6 +12,7 @@
           "value": "CUSTOM:SwiftSwim"
         },
         "duration": 1800,
+        "infinite": false,
         "amplifier": 1,
         "ambient": false,
         "showParticles": true

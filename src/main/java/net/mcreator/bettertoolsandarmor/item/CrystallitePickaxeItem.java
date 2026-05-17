@@ -46,6 +46,6 @@ public class CrystallitePickaxeItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe.description_0"));
 	}
 }

@@ -58,8 +58,8 @@ public class CrystallitePickaxeAmethystItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7dAmethyst"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7dEcholocation - Right-click while crouching to point towards nearby ores/loot"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_amethyst.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_amethyst.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_amethyst.description_2"));
 	}
 }

@@ -74,9 +74,9 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A76Sticky - Can stick to ceilings by holding \u00A7b[SPACE]"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_helmet.description_2"));
 		}
 
 		@Override
@@ -93,9 +93,9 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A76Hive Heart - Lose half your Max Health, but gain Absorption Health which slowly regenerates up to double your original Max HP"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_chestplate.description_2"));
 		}
 
 		@Override
@@ -112,9 +112,9 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A76Sticky - Slows melee attackers"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_leggings.description_2"));
 		}
 
 		@Override
@@ -131,9 +131,9 @@ public abstract class CrystalliteArmorHoneyItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A76Honey"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A76Combo Jump - Jump repeatedly for increased jump height"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_honey_boots.description_2"));
 		}
 
 		@Override

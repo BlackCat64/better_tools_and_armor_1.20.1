@@ -46,6 +46,6 @@ public class EndTitaniumPickaxeItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A75Breaks hard blocks quickly"));
+		list.add(Component.translatable("item.better_tools.end_titanium_pickaxe.description_0"));
 	}
 }

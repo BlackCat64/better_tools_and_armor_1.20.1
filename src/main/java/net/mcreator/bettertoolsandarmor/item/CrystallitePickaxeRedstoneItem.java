@@ -47,8 +47,8 @@ public class CrystallitePickaxeRedstoneItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7cRedstone"));
-		list.add(Component.literal("\u00A77Ability:"));
-		list.add(Component.literal("\u00A7cCalibrated [0/2] - Mining speed increases with number of blocks mined"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone.description_2"));
 	}
 }

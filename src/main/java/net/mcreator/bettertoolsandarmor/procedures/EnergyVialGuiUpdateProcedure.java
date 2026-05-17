@@ -31,8 +31,8 @@ public class EnergyVialGuiUpdateProcedure {
 		boolean boots_active = false;
 		ItemStack fuel = ItemStack.EMPTY;
 		ItemStack vial = ItemStack.EMPTY;
-		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
-		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
+		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
+		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).copy();
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			energy = ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).energy_vial_to_update).getOrCreateTag().getDouble("energy");
 		} else {
@@ -75,7 +75,7 @@ public class EnergyVialGuiUpdateProcedure {
 			{
 				ItemStack _setval = vial;
 				entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.energy_vial_to_update = _setval;
+					capability.energy_vial_to_update = _setval.copy();
 					capability.syncPlayerVariables(entity);
 				});
 			}

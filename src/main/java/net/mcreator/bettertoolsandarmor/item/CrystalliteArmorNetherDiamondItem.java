@@ -73,9 +73,9 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_helmet.description_2"));
 		}
 
 		@Override
@@ -92,9 +92,9 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_chestplate.description_2"));
 		}
 
 		@Override
@@ -111,9 +111,9 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_leggings.description_2"));
 		}
 
 		@Override
@@ -130,9 +130,9 @@ public abstract class CrystalliteArmorNetherDiamondItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A74Nether Diamond"));
-			list.add(Component.literal("\u00A77Ability:"));
-			list.add(Component.literal("\u00A74Fireproof - Gives Fire Resistance when on fire"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_nether_diamond_boots.description_2"));
 		}
 
 		@Override

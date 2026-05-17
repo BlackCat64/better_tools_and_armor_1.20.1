@@ -78,11 +78,11 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Deep Dweller - Gain night vision when in the dark"));
-			list.add(Component.literal("\u00A73Immunity to Darkness effect"));
-			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_3"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_4"));
 		}
 
 		@Override
@@ -107,10 +107,10 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Warden Heart - Has a chance to launch sonic booms at attackers"));
-			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_chestplate.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_chestplate.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_chestplate.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_chestplate.description_3"));
 		}
 
 		@Override
@@ -127,10 +127,10 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Sneaky - Increases movement speed while crouching"));
-			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_leggings.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_leggings.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_leggings.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_leggings.description_3"));
 		}
 
 		@Override
@@ -147,10 +147,10 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, level, list, flag);
-			list.add(Component.literal("\u00A77Upgrade: \u00A73Sculk"));
-			list.add(Component.literal("\u00A77Abilities:"));
-			list.add(Component.literal("\u00A73Deep Dweller - Increased movement speed in the dark"));
-			list.add(Component.literal("\u00A73Enemy detection range reduced"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_boots.description_0"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_boots.description_1"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_boots.description_2"));
+			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_boots.description_3"));
 		}
 
 		@Override

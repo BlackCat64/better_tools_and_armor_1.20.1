@@ -46,6 +46,6 @@ public class NetherDiamondPickaxeItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A74Smelts all raw ore drops"));
+		list.add(Component.translatable("item.better_tools.nether_diamond_pickaxe.description_0"));
 	}
 }
