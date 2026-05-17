@@ -1,0 +1,13 @@
+{
+  "_fv": 69,
+  "_type": "attribute",
+  "definition": {
+    "name": "Thorns Damage",
+    "minValue": 0.0,
+    "maxValue": 20.0,
+    "defaultValue": 0.0,
+    "addToAllEntities": true,
+    "addToPlayers": false,
+    "entities": []
+  }
+}

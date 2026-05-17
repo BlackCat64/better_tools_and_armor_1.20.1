@@ -21,6 +21,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -43,7 +44,9 @@ public class ThornsDamageProcedure2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if (false && immediatesourceentity instanceof LivingEntity && 1 > 0 && !entity.isInvulnerable()) {
+		if (immediatesourceentity instanceof LivingEntity && (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
+				? _livingEntity1.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
+				: 0) > 0 && !entity.isInvulnerable()) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_HELMET.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_CHESTPLATE.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_NETHERITE_LEGGINGS.get()
@@ -54,7 +57,10 @@ public class ThornsDamageProcedure2Procedure {
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == entity) && entityiterator instanceof LivingEntity) {
 							entityiterator.hurt(
-									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity, entity), 1);
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity, entity),
+									(float) (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
+											? _livingEntity13.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
+											: 0));
 						}
 					}
 				}
@@ -62,7 +68,9 @@ public class ThornsDamageProcedure2Procedure {
 					_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_SPIN_THORNS.get()), x, (y + 1), z, 1, 0, 0, 0, 0);
 			}
 			immediatesourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:armor_thorns"))), entity, entity),
-					1);
+					(float) (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get())
+							? _livingEntity18.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE.get()).getValue()
+							: 0));
 		}
 	}
 }
