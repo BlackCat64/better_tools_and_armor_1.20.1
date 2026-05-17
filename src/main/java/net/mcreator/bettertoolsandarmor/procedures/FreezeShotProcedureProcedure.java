@@ -40,7 +40,6 @@ public class FreezeShotProcedureProcedure {
 			return;
 		double FreezeShotChance = 0;
 		double freeze_time = 0;
-		FreezeShotChance = 0;
 		if (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.FREEZE_SHOT.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
 				|| immediatesourceentity.getPersistentData().getBoolean("crystallite_sapphire_upgrade")) {
 			FreezeShotChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(BetterToolsModEnchantments.FREEZE_SHOT.get()) * 0.1;
@@ -56,8 +55,8 @@ public class FreezeShotProcedureProcedure {
 				FreezeShotChance = FreezeShotChance * 2;
 			}
 			if (FreezeShotChance > 0) {
-				if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					FreezeShotChance = FreezeShotChance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				if (false) {
+					FreezeShotChance = FreezeShotChance + 1 * 0.05;
 				}
 				if (Math.random() < FreezeShotChance) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

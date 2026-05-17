@@ -10,7 +10,6 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -34,9 +33,7 @@ public class CrystalliteSwordGoldSplashDamageProcedure {
 		double sword_damage = 0;
 		double multiplier = 0;
 		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
-			sword_damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0
-					? ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue() + 0.5 + 0.5 * itemstack.getEnchantmentLevel(Enchantments.SHARPNESS)
-					: ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue();
+			sword_damage = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0 ? 1 + 0.5 + 0.5 * itemstack.getEnchantmentLevel(Enchantments.SHARPNESS) : 1;
 			multiplier = Math.min(0.6 + 0.1 * itemstack.getEnchantmentLevel(Enchantments.SWEEPING_EDGE), 1);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.CRYSTALLITE_SPLASH_DAMAGE.get()), x, (y + 0.75), z, 1, 0, 0, 0, 0);

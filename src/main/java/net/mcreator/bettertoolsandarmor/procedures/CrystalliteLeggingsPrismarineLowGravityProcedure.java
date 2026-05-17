@@ -4,10 +4,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -15,8 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class CrystalliteLeggingsPrismarineLowGravityProcedure {
@@ -40,13 +36,8 @@ public class CrystalliteLeggingsPrismarineLowGravityProcedure {
 				entity.setNoGravity(true);
 			} else {
 				entity.setNoGravity(false);
-				if (!(((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
-						.hasModifier((new AttributeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"), "crystallite_leggings_prismarine", (-0.5), AttributeModifier.Operation.MULTIPLY_BASE)))))
-					((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get())
-							.addTransientModifier((new AttributeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"), "crystallite_leggings_prismarine", (-0.5), AttributeModifier.Operation.MULTIPLY_BASE)));
 			}
 		} else {
-			((LivingEntity) entity).getAttribute(ForgeMod.ENTITY_GRAVITY.get()).removeModifier(UUID.fromString("6bf8ad9f-fc46-47b8-beee-6db7140caf6e"));
 			entity.setNoGravity(false);
 		}
 	}

@@ -7,7 +7,6 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -15,8 +14,6 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class SapphireArmorSetAttributesProcedure {
@@ -77,19 +74,13 @@ public class SapphireArmorSetAttributesProcedure {
 				chance = chance * (crystallite ? 1.5 : 2);
 				time = time * (crystallite ? 1.5 : 2);
 			}
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "", 0, AttributeModifier.Operation.ADDITION)));
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {
-				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				if (false) {
+					chance = chance + 1 * 0.05;
 				}
 				if (true) {
 					chance = chance + 0.1;
 				}
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("82308c34-6d1f-4840-8210-7f51700096a0"), "sapphire_armor", chance, AttributeModifier.Operation.ADDITION)));
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("9c6f8f03-e0c3-4602-850b-aa4f0bb7e509"), "sapphire_armor", time, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 	}

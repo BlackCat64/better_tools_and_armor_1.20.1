@@ -2931,12 +2931,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BlueSlimeStickProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Blue Mushrooms"
     },
@@ -6206,12 +6201,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteIronKnockbackProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Iron"
     },
@@ -6479,12 +6469,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteGoldReachProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Gold"
     },
@@ -8830,12 +8815,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumSwordProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Ender Titanium"
     },
@@ -15557,28 +15537,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsEmeraldProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Emerald"
     },
@@ -15632,22 +15591,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -16010,12 +15953,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSculkProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Sculk"
     },
@@ -16515,12 +16453,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SwiftSwimProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Swift Swim"
     },
@@ -16534,12 +16467,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ToughNecklaceEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Iron"
     },
@@ -16553,12 +16481,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ToughNecklaceUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Iron"
     },
@@ -16572,12 +16495,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GildedBraceletEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Gold"
     },
@@ -16591,12 +16509,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GildedBraceletUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Gold"
     },
@@ -16649,12 +16562,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartCharmEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Redstone"
     },
@@ -16668,12 +16576,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartCharmUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Redstone"
     },
@@ -16687,12 +16590,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DiamondHardPlateEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Diamond"
     },
@@ -16706,12 +16604,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DiamondHardPlateUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Diamond"
     },
@@ -16748,12 +16641,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SpeedyNecklaceEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Ruby"
     },
@@ -16767,12 +16655,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SpeedyNecklaceUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Ruby"
     },
@@ -16856,12 +16739,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BouncyBraceletEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16875,12 +16753,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BouncyBraceletUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16894,12 +16767,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LuckyCharmEquippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16913,12 +16781,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LuckyCharmUnequippedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -17709,12 +17572,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectAppliedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Critical Hit Multiplier"
     },
@@ -17728,12 +17586,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectExpiresProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Critical Hit Multiplier"
     },
@@ -17872,12 +17725,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SwiftSwimExpiresProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Swift Swim"
     },
@@ -17891,12 +17739,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSkyProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Sky"
     },
@@ -19014,12 +18857,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsPrismarineSpeedBoostProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Prismarine"
     },
@@ -19172,28 +19010,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsSculkSpeedBoostProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Sculk"
     },
@@ -29409,12 +29226,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsIncreasedCritDamageProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Flint Tools"
     },
@@ -29428,12 +29240,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyIncreasedCritDamageProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Crystallite/Sky"
     },
@@ -31193,17 +31000,18 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:forge:ores_in_ground/end_stone": [
-      "CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:mod:smelting_touch_tools": [
       "CUSTOM:CrystallitePickaxeNetherDiamond",
       "CUSTOM:NetherDiamondPickaxe"
     ],
-    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
-      "CUSTOM:KarmaCurseDamage",
-      "CUSTOM:KarmaDamage",
-      "CUSTOM:PoisonMushroomDamage"
+    "ITEMS:forge:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:curios:charm": [
       "CUSTOM:HeartCharm",
@@ -31213,11 +31021,10 @@
       "CUSTOM:CuringCharm",
       "CUSTOM:DiamondHardPlate"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
+    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
+      "CUSTOM:KarmaCurseDamage",
+      "CUSTOM:KarmaDamage",
+      "CUSTOM:PoisonMushroomDamage"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -31260,14 +31067,14 @@
       "Blocks.SCULK_VEIN",
       "Blocks.SCULK_SHRIEKER"
     ],
-    "ITEMS:mod:plant_clearance_tools": [
-      "CUSTOM:CrystalliteShovelSapphire",
-      "CUSTOM:CrystalliteHoeSapphire"
-    ],
     "ITEMS:mod:combo_mining_tools": [
       "CUSTOM:CrystallitePickaxeHoney",
       "CUSTOM:CrystalliteAxeHoney",
       "CUSTOM:CrystalliteHoeHoney"
+    ],
+    "ITEMS:mod:plant_clearance_tools": [
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteHoeSapphire"
     ],
     "ITEMS:mod:sky_upgraded_crystallite_items": [
       "CUSTOM:SkyCrystal",
@@ -34046,10 +33853,10 @@
   },
   "language_map": {
     "en_us": {
-      "item.better_tools.ruby": "Ruby",
       "block.better_tools.crystallite_block": "Crystallite Block",
-      "item.better_tools.flint_hoe": "Flint Hoe",
+      "item.better_tools.ruby": "Ruby",
       "block.better_tools.light_polished_coal_trapdoor": "Gray Metal Trapdoor",
+      "item.better_tools.flint_hoe": "Flint Hoe",
       "item.better_tools.mystic_potion": "Mystic Potion",
       "advancements.crystallite_tool_upgrade_adv.title": "Crystal Tool Smith",
       "block.better_tools.light_polished_coal_block": "Gray Metal Block",
@@ -34067,15 +33874,15 @@
       "block.better_tools.jewellery_table": "Jewellery Table",
       "block.better_tools.brown_metal_wall_hanging_sign": "Brown Metal Wall Hanging Sign",
       "item.minecraft.lingering_potion.effect.potion_of_decay": "Lingering Potion of Decay",
-      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "item.better_tools.crystallite_shovel": "Crystallite Shovel",
+      "item.better_tools.crystallite_dagger_gold": "Crystallite Dagger",
       "block.better_tools.light_polished_lapis_trapdoor": "Cyan Metal Trapdoor",
       "item.better_tools.crystallite_armor_redstone_helmet": "Crystallite Helmet",
       "item.better_tools.end_titanium_axe": "Ender Titanium Axe",
       "item.better_tools.crystallite_axe_honey": "Crystallite Axe",
-      "block.better_tools.sugar_block": "Sugar Block",
-      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
       "enchantment.better_tools.life_aura.desc": "Deal more damage the more HP you currently have, but deal less damage at low HP",
+      "item.better_tools.nether_diamond_chestplate": "Nether Diamond Chestplate",
+      "block.better_tools.sugar_block": "Sugar Block",
       "advancements.flaming_adv.title": "Hot Staff!",
       "item.better_tools.crystallite_armor_iron_chestplate": "Crystallite Chestplate",
       "item.better_tools.gold_dagger": "Golden Dagger",
@@ -34086,11 +33893,11 @@
       "entity.better_tools.projectile_lightning_staff_dispenser_projectile": "Dispenser using Lightning Staff",
       "advancements.bark_on_log_adv.descr": "Use Bark to un-strip a Stripped Log Block",
       "item.better_tools.crystallite_armor_sapphire_helmet": "Crystallite Helmet",
-      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "item.better_tools.crystallite_armor_iron_boots": "Crystallite Boots",
+      "advancements.high_crit_multiplier_adv.descr": "Deal at least 2.5x your weapon\u0027s regular damage with a critical hit",
       "advancements.descend_to_bottom_of_world.descr": "Use a Descension Potion to teleport from the top of the Overworld to the bottom",
-      "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.fire_staff": "Fire Staff",
+      "item.better_tools.crystallite_sword": "Crystallite Sword",
       "item.better_tools.crystallite_axe_topaz": "Crystallite Axe",
       "block.better_tools.white_metal_hanging_sign": "White Metal Hanging Sign",
       "item.better_tools.crystallite_pickaxe": "Crystallite Pickaxe",
@@ -34115,8 +33922,8 @@
       "item.better_tools.crystallite_sword_lapis": "Crystallite Sword",
       "advancements.crystallite_cave_adv.title": "Ooh, sparkly!",
       "item.better_tools.speedy_crystal": "Speedy Crystal",
-      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_dagger_nether_diamond": "Crystallite Dagger",
+      "advancements.desperation_adv.descr": "Wear a Chestplate enchanted with Desperation while at or below 20% HP",
       "item.better_tools.crystallite_armor_netherite_leggings": "Crystallite Leggings",
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
       "block.better_tools.purple_mushroom_block": "Purple Mushroom Block",
@@ -34164,11 +33971,11 @@
       "advancements.life_aura_adv.title": "Full Potential",
       "subtitles.rick_roll": "",
       "block.better_tools.polished_gold_stairs": "Yellow Metal Stairs",
-      "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "item.better_tools.crystallite_pickaxe_lapis": "Crystallite Pickaxe",
+      "advancements.recall_potion_adv.descr": "Use a Recall Potion",
       "death.attack.freeze_shatter_damage.item": "%1$s was shattered to pieces by %2$s using %3$s",
-      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "block.better_tools.polished_diamond_stairs": "Light Blue Metal Stairs",
+      "death.attack.poison_mushroom_damage": "%1$s was poisoned by a mushroom",
       "block.better_tools.polished_redstone_block": "Red Metal Block",
       "item.better_tools.sapphire_boots": "Sapphire Boots",
       "item.better_tools.crystallite_hoe_redstone": "Crystallite Hoe",
@@ -34259,8 +34066,8 @@
       "effect.better_tools.frozen": "Frozen",
       "item.better_tools.crystallite_bow_sculk": "Crystallite Bow",
       "item.better_tools.crystallite_shovel_nether_diamond": "Crystallite Shovel",
-      "advancements.ruby_gem_adv.descr": "Obtain a Ruby",
       "advancements.life_aura_adv.descr": "Wear a Chestplate enchanted with Life Aura while at full HP",
+      "advancements.ruby_gem_adv.descr": "Obtain a Ruby",
       "item.minecraft.splash_potion.effect.double_jump_potion_2": "Splash Potion of Double Jump",
       "item.better_tools.warden_staff": "Warden Staff",
       "item.better_tools.crystallite_gem": "Crystallite Gem",
@@ -34290,25 +34097,25 @@
       "item.better_tools.crystallite_sword_honey": "Crystallite Sword",
       "item.better_tools.crystallite_armor_prismarine_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_armor_lapis_boots": "Crystallite Boots",
-      "advancements.deal_dmg_through_armor_adv.title": "Mold Breaker",
       "block.better_tools.polished_diamond_trapdoor": "Light Blue Metal Trapdoor",
+      "advancements.deal_dmg_through_armor_adv.title": "Mold Breaker",
       "item.better_tools.crystallite_pickaxe_sculk": "Crystallite Pickaxe",
-      "item.better_tools.diamond_dagger": "Diamond Dagger",
       "enchantment.better_tools.experience_ench.desc": "Kills drop more XP",
+      "item.better_tools.diamond_dagger": "Diamond Dagger",
       "block.better_tools.ruby_ore": "Ruby Ore",
       "item.better_tools.crying_obsidian_helmet": "Crying Obsidian Helmet",
       "item.better_tools.crystallite_sword_amethyst": "Crystallite Sword",
       "item.better_tools.crystallite_dagger_redstone": "Crystallite Dagger",
       "block.better_tools.sapphire_ore": "Sapphire Ore",
       "gui.better_tools.attributes_viewer.label_009": "00",
-      "gui.better_tools.attributes_viewer.label_008": "00",
       "advancements.desperation_adv.title": "Adrenaline Rush",
+      "gui.better_tools.attributes_viewer.label_008": "00",
       "gui.better_tools.attributes_viewer.label_007": "00",
       "gui.better_tools.attributes_viewer.label_006": "00",
-      "gui.better_tools.attributes_viewer.label_005": "00",
       "advancements.high_armor_points_adv.title": "\u0027Tis but a scratch!",
-      "gui.better_tools.attributes_viewer.label_004": "00",
+      "gui.better_tools.attributes_viewer.label_005": "00",
       "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
+      "gui.better_tools.attributes_viewer.label_004": "00",
       "gui.better_tools.attributes_viewer.label_003": "00",
       "gui.better_tools.attributes_viewer.label_002": "00",
       "gui.better_tools.attributes_viewer.label_001": "00",

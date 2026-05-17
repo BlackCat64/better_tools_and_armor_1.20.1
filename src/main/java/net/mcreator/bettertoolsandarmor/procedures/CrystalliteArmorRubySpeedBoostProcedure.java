@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -14,8 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class CrystalliteArmorRubySpeedBoostProcedure {
@@ -49,13 +46,6 @@ public class CrystalliteArmorRubySpeedBoostProcedure {
 		}
 		if (armor_pieces == 4) {
 			armor_pieces = armor_pieces + 1;
-		}
-		if (armor_pieces > 0) {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("99df5f27-49d3-42be-a6da-eed7eff1786d"));
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
-					.addTransientModifier((new AttributeModifier(UUID.fromString("99df5f27-49d3-42be-a6da-eed7eff1786d"), "crystallite_ruby_armor", (armor_pieces * 0.01), AttributeModifier.Operation.ADDITION)));
-		} else {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("99df5f27-49d3-42be-a6da-eed7eff1786d"));
 		}
 	}
 }

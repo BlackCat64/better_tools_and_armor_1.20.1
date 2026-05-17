@@ -58,7 +58,7 @@ public class TrappedInGroundStopMovementProcedure {
 			}
 			if (GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"), entity.getPersistentData().getDouble("frozen_at_y"),
 					entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
-				DeleteEntityIceBlockDisplayProcedure.execute(entity);
+				DeleteEntityPitfallBlockDisplayProcedure.execute(entity);
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)

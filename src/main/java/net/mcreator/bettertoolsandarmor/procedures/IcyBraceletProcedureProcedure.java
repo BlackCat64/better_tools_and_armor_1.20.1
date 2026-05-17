@@ -58,8 +58,8 @@ public class IcyBraceletProcedureProcedure {
 						time = 200;
 						chance = 0.2;
 					}
-					if (entity instanceof LivingEntity && ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-						chance = chance + ((LivingEntity) immediatesourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+					if (true) {
+						chance = chance + 0 * 0.05;
 					}
 					rand = Math.random();
 					if (rand < chance) {

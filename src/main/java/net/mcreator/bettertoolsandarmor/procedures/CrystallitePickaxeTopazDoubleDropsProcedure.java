@@ -27,8 +27,8 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 		if (entity == null)
 			return false;
 		double dupe_chance = 0;
-		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes")))
-				|| ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) && blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))
+		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_pickaxes"))) || 0 > 0)
+				&& blockstate.is(BlockTags.create(new ResourceLocation("forge:ores")))
 				&& !(EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) && entity instanceof Player
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:topaz_upgraded_crystallite_items")))) {
@@ -42,7 +42,7 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
 				}
-				if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() > 0) {
+				if (0 > 0) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
 					if (entity instanceof ServerPlayer _player) {

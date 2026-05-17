@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -14,8 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class CrystalliteArmorNetheriteThornsProcedure {
@@ -50,11 +47,6 @@ public class CrystalliteArmorNetheriteThornsProcedure {
 		}
 		if (armor_pieces == 4) {
 			damage = damage + 1;
-		}
-		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("708dd714-19b0-4dd0-9509-30124a4a1845"), "", 0, AttributeModifier.Operation.ADDITION)));
-		if (damage > 0) {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
-					.addTransientModifier((new AttributeModifier(UUID.fromString("708dd714-19b0-4dd0-9509-30124a4a1845"), "crystallite_armor_netherite", damage, AttributeModifier.Operation.ADDITION)));
 		}
 	}
 }

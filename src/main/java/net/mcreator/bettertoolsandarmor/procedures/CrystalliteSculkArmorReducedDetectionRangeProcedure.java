@@ -9,7 +9,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,7 +19,6 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
-import java.util.UUID;
 import java.util.List;
 import java.util.Comparator;
 
@@ -75,18 +73,13 @@ public class CrystalliteSculkArmorReducedDetectionRangeProcedure {
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(127 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof Mob && entity instanceof LivingEntity && ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE) != null) {
-						((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE).removeModifier(UUID.fromString("3cf26020-f66d-4f4f-b808-3c90d2ee141b"));
-						((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE).removeModifier(UUID.fromString("6d8ffbd5-c43d-49b0-9218-3a51497ed045"));
+					if (entityiterator instanceof Mob && false) {
 						if (armor_pieces > 0 && world.players().size() <= 1) {
 							if (range_multiplier > 0) {
-								range_reduction = range_multiplier * ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE).getValue()
-										- ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE).getValue();
+								range_reduction = range_multiplier * 0 - 0;
 							} else {
-								range_reduction = 4 - ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE).getValue();
+								range_reduction = 4 - 0;
 							}
-							((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE)
-									.addTransientModifier((new AttributeModifier(UUID.fromString("6d8ffbd5-c43d-49b0-9218-3a51497ed045"), "crystallite_sculk_armor_detection_range_reduction", range_reduction, AttributeModifier.Operation.ADDITION)));
 						}
 					}
 				}

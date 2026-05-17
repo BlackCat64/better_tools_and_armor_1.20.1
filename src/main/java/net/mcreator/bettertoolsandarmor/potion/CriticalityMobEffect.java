@@ -16,13 +16,13 @@ public class CriticalityMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		CriticalHitEffectAppliedProcedure.execute(entity);
+		CriticalHitEffectAppliedProcedure.execute();
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		CriticalHitEffectExpiresProcedure.execute(entity);
+		CriticalHitEffectExpiresProcedure.execute();
 	}
 
 	@Override

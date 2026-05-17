@@ -2,7 +2,6 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -13,8 +12,6 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
-import java.util.UUID;
-
 public class PitfallEffectAppliedProcedure {
 	public static void execute(double x, double y, double z, Entity entity) {
 		if (entity == null)
@@ -24,10 +21,6 @@ public class PitfallEffectAppliedProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.LEVITATION);
 			if (entity.onGround()) {
-				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).hasModifier((new AttributeModifier(UUID.fromString("585176c4-a1ed-4d0e-995c-f5ca0cb3843c"), "trapped_in_ground",
-						(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * (-1)), AttributeModifier.Operation.ADDITION)))))
-					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).addTransientModifier((new AttributeModifier(UUID.fromString("585176c4-a1ed-4d0e-995c-f5ca0cb3843c"), "trapped_in_ground",
-							(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getValue() * (-1)), AttributeModifier.Operation.ADDITION)));
 				entity.clearFire();
 				{
 					Entity _ent = entity;

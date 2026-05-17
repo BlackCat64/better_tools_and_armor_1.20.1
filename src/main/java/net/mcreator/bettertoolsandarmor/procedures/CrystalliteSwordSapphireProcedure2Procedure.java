@@ -32,8 +32,8 @@ public class CrystalliteSwordSapphireProcedure2Procedure {
 			time = time * 1.5;
 			chance = chance * 2;
 		}
-		if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-			chance = chance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+		if (true) {
+			chance = chance + 1 * 0.05;
 		}
 		if (Math.random() < chance) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -45,8 +45,8 @@ public class CrystalliteSwordSapphireProcedure2Procedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.return")), SoundSource.NEUTRAL, 3, 1, false);
 				}
 			}
-			if (!(sourceentity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel
-					&& _plr5.getAdvancements().getOrStartProgress(_plr5.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
+			if (!(sourceentity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel
+					&& _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"))).isDone())) {
 				if (sourceentity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:sapphire_adv"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

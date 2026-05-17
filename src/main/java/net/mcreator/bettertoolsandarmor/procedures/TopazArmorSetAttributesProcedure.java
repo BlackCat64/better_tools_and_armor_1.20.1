@@ -7,7 +7,6 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -15,8 +14,6 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class TopazArmorSetAttributesProcedure {
@@ -74,13 +71,10 @@ public class TopazArmorSetAttributesProcedure {
 			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 				chance = chance * (crystallite_worn ? 1.5 : 2);
 			}
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "", 0, AttributeModifier.Operation.ADDITION)));
 			if (chance > 0) {
-				if (entity instanceof LivingEntity && ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-					chance = chance + ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+				if (false) {
+					chance = chance + 1 * 0.05;
 				}
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("d4a038c6-ffd6-4204-9729-a3487cbd49b2"), "topaz_armor", chance, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 	}

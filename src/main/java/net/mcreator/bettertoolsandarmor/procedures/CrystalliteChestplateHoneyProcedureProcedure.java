@@ -7,7 +7,6 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -16,8 +15,6 @@ import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class CrystalliteChestplateHoneyProcedureProcedure {
@@ -37,12 +34,8 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()) {
 			if ((entity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).time_since_last_hurt > 200) {
-				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6")) != null)) {
+				if (false) {
 					SetEntityNumberDataProcedure.execute(entity, (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2, "AbsorptionAmount");
-					if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
-							.hasModifier((new AttributeModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6"), "crystallite_chestplate_honey", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
-						((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH)
-								.addTransientModifier((new AttributeModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6"), "crystallite_chestplate_honey", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
 				}
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 					if ((entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 3 - 1) {
@@ -59,14 +52,11 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 					}
 				}
 			}
-		} else {
-			if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6")) != null) {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).removeModifier(UUID.fromString("6368cc90-6174-4148-9846-438a1fe698f6"));
-				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-							+ Math.min(entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)));
-				SetEntityNumberDataProcedure.execute(entity, 0, "AbsorptionAmount");
-			}
+		} else if (true) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth(
+						(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + Math.min(entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)));
+			SetEntityNumberDataProcedure.execute(entity, 0, "AbsorptionAmount");
 		}
 	}
 }

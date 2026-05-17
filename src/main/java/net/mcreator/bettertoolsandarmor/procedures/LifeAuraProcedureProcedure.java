@@ -7,7 +7,6 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -19,8 +18,6 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import javax.annotation.Nullable;
-
-import java.util.UUID;
 
 @Mod.EventBusSubscriber
 public class LifeAuraProcedureProcedure {
@@ -53,13 +50,6 @@ public class LifeAuraProcedureProcedure {
 			} else {
 				damage_boost = Math.floor(3 * ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) - 1;
 			}
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"));
-			if (damage_boost != 0) {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"), "life_aura_ench", damage_boost, AttributeModifier.Operation.ADDITION)));
-			}
-		} else {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("1ff6b973-a2cc-480b-b406-97ca13967b52"));
 		}
 	}
 }

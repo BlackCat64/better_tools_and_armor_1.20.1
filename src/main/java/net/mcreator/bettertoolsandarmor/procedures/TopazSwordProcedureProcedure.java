@@ -62,8 +62,8 @@ public class TopazSwordProcedureProcedure {
 				chance = chance * 1.5;
 				range = range * 2;
 			}
-			if (entity instanceof LivingEntity && ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK) != null) {
-				chance = chance + ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.LUCK).getValue() * 0.05;
+			if (false) {
+				chance = chance + 1 * 0.05;
 			}
 			closest = entity;
 			if (Math.random() < chance) {

@@ -4,10 +4,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -32,7 +30,7 @@ public class AttributeAdvancementProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.KNOCKBACK_RESISTANCE).getValue() >= 1) {
+		if (0 >= 1) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:max_knockback_resistance_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -42,7 +40,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (((LivingEntity) entity).getAttribute(ForgeMod.BLOCK_REACH.get()).getValue() >= 8) {
+		if (0 >= 8) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:far_block_reach_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -52,7 +50,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).getValue() >= 30) {
+		if (0 >= 30) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:high_armor_points_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -62,7 +60,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue() >= 30) {
+		if (0 >= 30) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("better_tools:high_max_hp_adv"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
