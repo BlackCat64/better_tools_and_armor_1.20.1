@@ -22,6 +22,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -50,9 +51,14 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 				event.setResult(Event.Result.DENY);
 			}
 			damage = amount;
-			if (true && (immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
-				if (1 != 1.5) {
-					damage = damage * 1;
+			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+					&& (immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
+				if ((immediatesourceentity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+						? _livingEntity4.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+						: 0) != 1.5) {
+					damage = damage * (immediatesourceentity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+							? _livingEntity5.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+							: 0);
 				}
 				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), amount);
 			}

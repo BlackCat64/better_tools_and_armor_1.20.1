@@ -19,6 +19,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -50,9 +51,14 @@ public class CrystalliteSwordDiamondProcedureProcedure {
 			}
 			damage = amount;
 			boost = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:crystallite_axes"))) ? 2 : 2.5;
-			if (true && (immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
-				if (1 != 1.5) {
-					damage = (damage + boost) * 1;
+			if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+					&& (immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit) {
+				if ((entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+						? _livingEntity8.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+						: 0) != 1.5) {
+					damage = (damage + boost) * (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+							? _livingEntity9.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+							: 0);
 				} else {
 					damage = damage + 1.5 * boost;
 				}

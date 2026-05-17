@@ -21,6 +21,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -43,14 +44,20 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 		double distance = 0;
 		if ((immediatesourceentity.getCapability(BetterToolsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BetterToolsModVariables.PlayerVariables())).critical_hit
 				&& !damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:damage_overrides")))) {
-			if (immediatesourceentity instanceof Player && 1 != 1.5) {
+			if (immediatesourceentity instanceof Player && (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+					? _livingEntity2.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+					: 0) != 1.5) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
 				} else if (event != null && event.hasResult()) {
 					event.setResult(Event.Result.DENY);
 				}
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:override_weapon_damage"))),
-						immediatesourceentity, immediatesourceentity), (float) (amount * 1));
+				entity.hurt(
+						new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("better_tools:override_weapon_damage"))), immediatesourceentity,
+								immediatesourceentity),
+						(float) (amount * (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+								? _livingEntity3.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+								: 0)));
 				if (!(immediatesourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					{
 						ItemStack _ist = (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -70,7 +77,10 @@ public class CrystalliteSwordSkyCritDamageProcedure {
 						}
 					}
 				}
-				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), amount * 1);
+				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(),
+						amount * (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get())
+								? _livingEntity13.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER.get()).getValue()
+								: 0));
 			}
 		}
 	}

@@ -1,0 +1,13 @@
+{
+  "_fv": 69,
+  "_type": "attribute",
+  "definition": {
+    "name": "Critical Hit Multiplier",
+    "minValue": 0.0,
+    "maxValue": 10.0,
+    "defaultValue": 1.5,
+    "addToAllEntities": false,
+    "addToPlayers": true,
+    "entities": []
+  }
+}

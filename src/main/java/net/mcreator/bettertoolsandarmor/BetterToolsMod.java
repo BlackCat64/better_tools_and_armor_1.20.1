@@ -36,6 +36,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModFeatures;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 import net.mcreator.bettertoolsandarmor.block.entity.BetterToolsModBlockEntities;
 
 import java.util.function.Supplier;
@@ -70,6 +71,7 @@ public class BetterToolsMod {
 		BetterToolsModParticleTypes.REGISTRY.register(bus);
 		BetterToolsModVillagerProfessions.PROFESSIONS.register(bus);
 		BetterToolsModMenus.REGISTRY.register(bus);
+		BetterToolsModAttributes.REGISTRY.register(bus);
 		// Start of user code block mod init
 		CustomCreativeTabItems.REGISTRY.register(bus);
 		BetterToolsModBlockEntities.REGISTRY.register(bus);
