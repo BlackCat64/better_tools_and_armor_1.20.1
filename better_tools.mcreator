@@ -30840,6 +30840,17 @@
         "files": []
       },
       "path": "~/Sapphire"
+    },
+    {
+      "name": "LightningThornsChance",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_thorns_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
@@ -34629,6 +34640,7 @@
       "item.better_tools.crystallite_axe_sky": "Crystallite Axe",
       "item.better_tools.ultra_enriched_blaze_powder": "Ultra Enriched Blaze Powder",
       "item.better_tools.crystallite_axe_diamond": "Crystallite Axe",
+      "attribute.better_tools.lightning_thorns_chance": "Lightning Thorns Chance",
       "enchantment.better_tools.ensorcellation.desc": "Enhances the effects of Magic Staffs",
       "advancements.ruby_pickaxe_adv.title": "Ruby-fficiency",
       "death.attack.armor_thorns.player": "%1$s was pricked to death whilst trying to escape %2$s",
