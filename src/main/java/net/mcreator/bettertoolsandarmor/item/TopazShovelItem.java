@@ -54,6 +54,6 @@ public class TopazShovelItem extends ShovelItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		TopazToolsFortuneProcedure.execute(entity, itemstack);
+		TopazToolsFortuneProcedure.execute(world, entity, itemstack);
 	}
 }

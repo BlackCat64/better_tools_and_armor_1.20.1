@@ -424,6 +424,7 @@ public class BetterToolsModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
 			tabData.accept(BetterToolsModItems.FLINT_SWORD.get());
 			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
 			tabData.accept(BetterToolsModItems.FLINT_DAGGER.get());
@@ -450,14 +451,18 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get());
 			tabData.accept(BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get());
 			tabData.accept(BetterToolsModItems.DRIPSTONE_BOOTS.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+
 			tabData.accept(BetterToolsModItems.FLINT_PICKAXE.get());
 			tabData.accept(BetterToolsModItems.FLINT_AXE.get());
 			tabData.accept(BetterToolsModItems.FLINT_SHOVEL.get());
 			tabData.accept(BetterToolsModItems.FLINT_HOE.get());
 			tabData.accept(BetterToolsModItems.AMETHYST_HELMET.get());
 			tabData.accept(BetterToolsModItems.HONEYCOMB_HELMET.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+
 			tabData.accept(BetterToolsModItems.SUGAR_CLUMP.get());
 			tabData.accept(BetterToolsModItems.GOLDEN_POTATO.get());
 			tabData.accept(BetterToolsModItems.BERRY_PIE.get());
@@ -470,6 +475,7 @@ public class BetterToolsModTabs {
 			tabData.accept(BetterToolsModItems.RECALL_POTION.get());
 			tabData.accept(BetterToolsModItems.LOST_SOULS_POTION.get());
 			tabData.accept(BetterToolsModItems.MYSTIC_POTION.get());
+
 		}
 	}
 }

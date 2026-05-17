@@ -2789,6 +2789,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9074,6 +9078,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9093,6 +9101,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9240,6 +9252,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9968,6 +9984,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -10000,6 +10020,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -20181,6 +20205,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -23144,6 +23172,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -29301,6 +29333,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -29531,6 +29567,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -31003,12 +31043,6 @@
     "ITEMS:forge:ores_in_ground/end_stone": [
       "CUSTOM:EndTitaniumOre"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:ClimbableWall",
-      "~CUSTOM:CrystalliteClusterAir",
-      "~CUSTOM:FourLeafClover",
-      "~CUSTOM:PurpleMushroom"
-    ],
     "ITEMS:curios:charm": [
       "CUSTOM:HeartCharm",
       "CUSTOM:PoisonCharm",
@@ -31021,6 +31055,12 @@
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
       "CUSTOM:PoisonMushroomDamage"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:ClimbableWall",
+      "~CUSTOM:CrystalliteClusterAir",
+      "~CUSTOM:FourLeafClover",
+      "~CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:magnetic_tools": [
       "CUSTOM:CrystallitePickaxeIron",
@@ -35245,5 +35285,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400342716
 }

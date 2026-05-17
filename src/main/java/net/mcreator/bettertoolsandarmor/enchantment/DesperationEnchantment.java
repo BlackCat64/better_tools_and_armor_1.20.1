@@ -14,17 +14,24 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import java.util.List;
 
 public class DesperationEnchantment extends Enchantment {
-	public DesperationEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.ARMOR_CHEST, slots);
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("better_tools_desperation", item -> Ingredient.of(ItemTags.create(new ResourceLocation("forge:armors/chestplates"))).test(new ItemStack(item)));
+
+	public DesperationEnchantment() {
+		super(Enchantment.Rarity.UNCOMMON, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.CHEST});
 	}
 
 	@Override
-	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(BetterToolsModEnchantments.LIFE_AURA.get()).contains(ench);
+	public int getMinCost(int level) {
+		return 1 + level * 10;
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(ItemTags.create(new ResourceLocation("forge:armors/chestplates"))).test(itemstack);
+	public int getMaxCost(int level) {
+		return 6 + level * 10;
+	}
+
+	@Override
+	protected boolean checkCompatibility(Enchantment enchantment) {
+		return super.checkCompatibility(enchantment) && !List.of(BetterToolsModEnchantments.LIFE_AURA.get()).contains(enchantment);
 	}
 }

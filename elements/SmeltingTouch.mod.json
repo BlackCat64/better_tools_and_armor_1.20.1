@@ -1,27 +1,25 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "enchantment",
   "definition": {
     "name": "Smelting Touch",
-    "type": "DIGGER",
-    "rarity": "VERY_RARE",
+    "supportedSlots": "mainhand",
+    "weight": 1,
+    "anvilCost": 8,
     "maxLevel": 1,
     "damageModifier": 0,
-    "compatibleEnchantments": [
+    "incompatibleEnchantments": [
       {
         "value": "SILK_TOUCH"
       }
     ],
-    "excludeEnchantments": true,
-    "compatibleItems": [
+    "supportedItems": [
       {
         "value": "TAG:minecraft:pickaxes"
       }
     ],
-    "excludeItems": false,
     "isTreasureEnchantment": true,
     "isCurse": false,
-    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }

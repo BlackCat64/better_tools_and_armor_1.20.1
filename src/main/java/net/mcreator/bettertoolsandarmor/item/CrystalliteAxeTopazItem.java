@@ -57,6 +57,6 @@ public class CrystalliteAxeTopazItem extends AxeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CrystalliteTopazFortuneProcedureProcedure.execute(entity, itemstack);
+		CrystalliteTopazFortuneProcedureProcedure.execute(world, entity, itemstack);
 	}
 }

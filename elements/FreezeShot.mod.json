@@ -1,13 +1,14 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "enchantment",
   "definition": {
     "name": "Freeze Shot",
-    "type": "BREAKABLE",
-    "rarity": "UNCOMMON",
+    "supportedSlots": "any",
+    "weight": 5,
+    "anvilCost": 2,
     "maxLevel": 3,
     "damageModifier": 0,
-    "compatibleEnchantments": [
+    "incompatibleEnchantments": [
       {
         "value": "CUSTOM:ThunderShot"
       },
@@ -15,22 +16,16 @@
         "value": "FLAME"
       }
     ],
-    "excludeEnchantments": true,
-    "compatibleItems": [
+    "supportedItems": [
       {
         "value": "Items.BOW"
       },
       {
         "value": "Items.CROSSBOW"
-      },
-      {
-        "value": "TAG:better_tools:crystallite_bows"
       }
     ],
-    "excludeItems": false,
     "isTreasureEnchantment": false,
     "isCurse": false,
-    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }

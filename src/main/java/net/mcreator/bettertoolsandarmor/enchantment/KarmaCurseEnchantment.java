@@ -1,8 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.enchantment;
 
-import net.minecraftforge.common.crafting.CompoundIngredient;
-
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -12,15 +10,20 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 public class KarmaCurseEnchantment extends Enchantment {
-	public KarmaCurseEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, slots);
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("better_tools_karma_curse", item -> Ingredient.of(ItemTags.create(new ResourceLocation("enchantable/weapon"))).test(new ItemStack(item)));
+
+	public KarmaCurseEnchantment() {
+		super(Enchantment.Rarity.RARE, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return CompoundIngredient
-				.of(Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:swords"))), Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:axes"))), Ingredient.of(ItemTags.create(new ResourceLocation("better_tools:daggers"))))
-				.test(itemstack);
+	public int getMinCost(int level) {
+		return 1 + level * 10;
+	}
+
+	@Override
+	public int getMaxCost(int level) {
+		return 6 + level * 10;
 	}
 
 	@Override

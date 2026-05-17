@@ -14,17 +14,24 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 import java.util.List;
 
 public class LifeAuraEnchantment extends Enchantment {
-	public LifeAuraEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.RARE, EnchantmentCategory.ARMOR_CHEST, slots);
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("better_tools_life_aura", item -> Ingredient.of(ItemTags.create(new ResourceLocation("forge:armors/chestplates"))).test(new ItemStack(item)));
+
+	public LifeAuraEnchantment() {
+		super(Enchantment.Rarity.RARE, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.CHEST});
 	}
 
 	@Override
-	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(BetterToolsModEnchantments.DESPERATION.get()).contains(ench);
+	public int getMinCost(int level) {
+		return 1 + level * 10;
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(ItemTags.create(new ResourceLocation("forge:armors/chestplates"))).test(itemstack);
+	public int getMaxCost(int level) {
+		return 6 + level * 10;
+	}
+
+	@Override
+	protected boolean checkCompatibility(Enchantment enchantment) {
+		return super.checkCompatibility(enchantment) && !List.of(BetterToolsModEnchantments.DESPERATION.get()).contains(enchantment);
 	}
 }

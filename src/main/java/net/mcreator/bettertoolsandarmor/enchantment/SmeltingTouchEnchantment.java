@@ -13,18 +13,25 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 
 public class SmeltingTouchEnchantment extends Enchantment {
-	public SmeltingTouchEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.VERY_RARE, EnchantmentCategory.DIGGER, slots);
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("better_tools_smelting_touch", item -> Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:pickaxes"))).test(new ItemStack(item)));
+
+	public SmeltingTouchEnchantment() {
+		super(Enchantment.Rarity.VERY_RARE, ENCHANTMENT_CATEGORY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
 	}
 
 	@Override
-	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(Enchantments.SILK_TOUCH).contains(ench);
+	public int getMinCost(int level) {
+		return 1 + level * 10;
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:pickaxes"))).test(itemstack);
+	public int getMaxCost(int level) {
+		return 6 + level * 10;
+	}
+
+	@Override
+	protected boolean checkCompatibility(Enchantment enchantment) {
+		return super.checkCompatibility(enchantment) && !List.of(Enchantments.SILK_TOUCH).contains(enchantment);
 	}
 
 	@Override

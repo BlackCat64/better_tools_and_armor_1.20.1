@@ -1,8 +1,6 @@
 
 package net.mcreator.bettertoolsandarmor.enchantment;
 
-import net.minecraftforge.common.crafting.CompoundIngredient;
-
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -10,16 +8,26 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModEnchantments;
 
 import java.util.List;
 
 public class FreezeShotEnchantment extends Enchantment {
-	public FreezeShotEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.BREAKABLE, slots);
+	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.create("better_tools_freeze_shot", item -> Ingredient.of(new ItemStack(Items.BOW), new ItemStack(Items.CROSSBOW)).test(new ItemStack(item)));
+
+	public FreezeShotEnchantment() {
+		super(Enchantment.Rarity.UNCOMMON, ENCHANTMENT_CATEGORY, EquipmentSlot.values());
+	}
+
+	@Override
+	public int getMinCost(int level) {
+		return 1 + level * 10;
+	}
+
+	@Override
+	public int getMaxCost(int level) {
+		return 6 + level * 10;
 	}
 
 	@Override
@@ -28,12 +36,7 @@ public class FreezeShotEnchantment extends Enchantment {
 	}
 
 	@Override
-	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(BetterToolsModEnchantments.THUNDER_SHOT.get(), Enchantments.FLAMING_ARROWS).contains(ench);
-	}
-
-	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return CompoundIngredient.of(Ingredient.of(new ItemStack(Items.BOW)), Ingredient.of(new ItemStack(Items.CROSSBOW)), Ingredient.of(ItemTags.create(new ResourceLocation("better_tools:crystallite_bows")))).test(itemstack);
+	protected boolean checkCompatibility(Enchantment enchantment) {
+		return super.checkCompatibility(enchantment) && !List.of(BetterToolsModEnchantments.THUNDER_SHOT.get(), Enchantments.FLAMING_ARROWS).contains(enchantment);
 	}
 }

@@ -1,23 +1,21 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "enchantment",
   "definition": {
     "name": "Ensorcellation",
-    "type": "BOW",
-    "rarity": "RARE",
+    "supportedSlots": "mainhand",
+    "weight": 2,
+    "anvilCost": 4,
     "maxLevel": 3,
     "damageModifier": 0,
-    "compatibleEnchantments": [],
-    "excludeEnchantments": false,
-    "compatibleItems": [
+    "incompatibleEnchantments": [],
+    "supportedItems": [
       {
         "value": "TAG:better_tools:staffs"
       }
     ],
-    "excludeItems": false,
     "isTreasureEnchantment": false,
     "isCurse": false,
-    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }

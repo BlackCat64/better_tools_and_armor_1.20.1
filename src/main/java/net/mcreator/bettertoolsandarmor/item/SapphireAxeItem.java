@@ -55,6 +55,6 @@ public class SapphireAxeItem extends AxeItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		SapphireToolsSilkTouchProcedure.execute(entity, itemstack);
+		SapphireToolsSilkTouchProcedure.execute(world, entity, itemstack);
 	}
 }

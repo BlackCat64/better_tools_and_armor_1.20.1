@@ -18,7 +18,7 @@ public class LightningStaffApplyEnchantmentsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		StaffSaveDurabilityProcedureProcedure.execute(entity);
+		StaffSaveDurabilityProcedureProcedure.execute(world, entity);
 		BetterToolsMod.queueServerWork(1, () -> {
 			{
 				final Vec3 _center = new Vec3(

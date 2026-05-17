@@ -19,7 +19,7 @@ public class IceStaffApplyEnchantmentsProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		StaffSaveDurabilityProcedureProcedure.execute(entity);
+		StaffSaveDurabilityProcedureProcedure.execute(world, entity);
 		BetterToolsMod.queueServerWork(1, () -> {
 			{
 				final Vec3 _center = new Vec3(
