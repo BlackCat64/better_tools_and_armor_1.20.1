@@ -13,7 +13,6 @@ import net.minecraft.client.gui.components.Checkbox;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -84,7 +83,6 @@ public class EnergyVialGuiUpdateProcedure {
 				final boolean _tagValue = boots_active;
 				CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
-			BetterToolsMod.PACKET_HANDLER.sendToServer(new net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSyncMessage(helmet_active, chestplate_active, leggings_active, boots_active)); // Send data to server, to avoid desync issues
 		}
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_to_update.applyComponents(vial.getComponents());

@@ -1,28 +1,6 @@
 {
-  "parent": "item/bow",
+  "parent": "item/generated",
   "textures": {
     "layer0": "better_tools:item/crystallite_bow_ruby"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "minecraft:pulling": 1
-      },
-      "model": "better_tools:item/crystallite_bow_ruby_pulling_0"
-    },
-    {
-      "predicate": {
-        "minecraft:pulling": 1,
-        "minecraft:pull": 0.3
-      },
-      "model": "better_tools:item/crystallite_bow_ruby_pulling_1"
-    },
-    {
-      "predicate": {
-        "minecraft:pulling": 1,
-        "minecraft:pull": 0.5
-      },
-      "model": "better_tools:item/crystallite_bow_ruby_pulling_2"
-    }
-  ]
+  }
 }

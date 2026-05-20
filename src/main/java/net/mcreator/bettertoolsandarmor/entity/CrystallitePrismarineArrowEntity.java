@@ -19,9 +19,9 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
 public class CrystallitePrismarineArrowEntity extends Arrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Items.ARROW);
 
-	public CrystallitePrismarineArrowEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(BetterToolsModEntities.CRYSTALLITE_PRISMARINE_ARROW.get(), world);
-	}
+//	public CrystallitePrismarineArrowEntity(PlayMessages.SpawnEntity packet, Level world) {
+//		super(BetterToolsModEntities.CRYSTALLITE_PRISMARINE_ARROW.get(), world);
+//	}
 
 	public CrystallitePrismarineArrowEntity(EntityType<? extends CrystallitePrismarineArrowEntity> type, Level level) {
 		super(type, level);

@@ -38,9 +38,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onStoppedUsing": {
-      "name": "BowPullTimeTest"
-    },
     "enableRanged": true,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -58,6 +55,10 @@
     "isAlwaysEdible": false,
     "animation": "bow",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

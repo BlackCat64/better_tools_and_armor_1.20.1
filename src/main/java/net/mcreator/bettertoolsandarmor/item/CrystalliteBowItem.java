@@ -1,29 +1,42 @@
 
 package net.mcreator.bettertoolsandarmor.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.ArrowItem;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.util.Unit;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.sounds.SoundEvents;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 
 import java.util.List;
 
-public class CrystalliteBowItem extends BowItem {
+public class CrystalliteBowItem extends Item {
 	public CrystalliteBowItem() {
-		super(new Item.Properties().durability(2400).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(1800).fireResistant().rarity(Rarity.COMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
 	}
 
 	@Override
@@ -32,65 +45,68 @@ public class CrystalliteBowItem extends BowItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A77Upgrade: \u00A7rNone"));
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 72000;
 	}
 
 	@Override
-	public void releaseUsing(ItemStack p_40667_, Level p_40668_, LivingEntity p_40669_, int p_40670_) {
-		if (p_40669_ instanceof Player player) {
-			boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, p_40667_) > 0;
-			ItemStack itemstack = player.getProjectile(p_40667_);
-			int i = this.getUseDuration(p_40667_) - p_40670_;
-			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(p_40667_, p_40668_, player, i, !itemstack.isEmpty() || flag);
-			if (i < 0)
-				return;
-			if (!itemstack.isEmpty() || flag) {
-				if (itemstack.isEmpty()) {
-					itemstack = new ItemStack(Items.ARROW);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("item.better_tools.crystallite_bow.description_0"));
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			entity.startUsingItem(hand);
+		}
+		return ar;
+	}
+
+	@Override
+	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
+		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
+			ItemStack stack = findAmmo(player);
+			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
+				ItemStack arrowPickupStack = stack;
+				if (arrowPickupStack.isEmpty()) {
+					arrowPickupStack = new ItemStack(Items.ARROW);
+					arrowPickupStack.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
 				}
-				float f = getPowerForTime(i);
-				if (!((double) f < 0.1D)) {
-					boolean flag1 = player.getAbilities().instabuild || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem) itemstack.getItem()).isInfinite(itemstack, p_40667_, player));
-					if (!p_40668_.isClientSide) {
-						ArrowItem arrowitem = (ArrowItem) (itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
-						AbstractArrow abstractarrow = arrowitem.createArrow(p_40668_, itemstack, player);
-						abstractarrow = customArrow(abstractarrow);
-						abstractarrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, f * 3.0F, 1.0F);
-						if (f == 1.0F) {
-							abstractarrow.setCritArrow(true);
-						}
-						int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, p_40667_);
-						if (j > 0) {
-							abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double) j * 0.5D + 0.5D);
-						}
-						abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + 1); // +1 Damage Boost for all Crystallite Bows
-						int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
-						if (k > 0) {
-							abstractarrow.setKnockback(k);
-						}
-						if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, p_40667_) > 0) {
-							abstractarrow.setSecondsOnFire(100);
-						}
-						p_40667_.hurtAndBreak(1, player, (p_289501_) -> {
-							p_289501_.broadcastBreakEvent(player.getUsedItemHand());
-						});
-						if (flag1 || player.getAbilities().instabuild && (itemstack.is(Items.SPECTRAL_ARROW) || itemstack.is(Items.TIPPED_ARROW))) {
-							abstractarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
-						}
-						p_40668_.addFreshEntity(abstractarrow);
+				Arrow projectile = new Arrow(world, entity, arrowPickupStack, itemstack);
+				projectile.shootFromRotation(entity, entity.getXRot(), entity.getYRot(), 0, 3.15f, 1.0F);
+				world.addFreshEntity(projectile);
+				world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (world.getRandom().nextFloat() * 0.5f + 1));
+				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
+				if (player.getAbilities().instabuild) {
+					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
+				} else {
+					if (stack.isDamageableItem()) {
+						if (world instanceof ServerLevel serverLevel)
+							stack.hurtAndBreak(1, serverLevel, player, _stkprov -> {
+							});
+					} else {
+						stack.shrink(1);
 					}
-					p_40668_.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (p_40668_.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-					if (!flag1 && !player.getAbilities().instabuild) {
-						itemstack.shrink(1);
-						if (itemstack.isEmpty()) {
-							player.getInventory().removeItem(itemstack);
-						}
-					}
-					player.awardStat(Stats.ITEM_USED.get(this));
 				}
 			}
 		}
+	}
+
+	private ItemStack findAmmo(Player player) {
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == Items.ARROW);
+		if (stack == ItemStack.EMPTY) {
+			for (int i = 0; i < player.getInventory().items.size(); i++) {
+				ItemStack teststack = player.getInventory().items.get(i);
+				if (teststack != null && teststack.getItem() == Items.ARROW) {
+					stack = teststack;
+					break;
+				}
+			}
+		}
+		return stack;
 	}
 }
