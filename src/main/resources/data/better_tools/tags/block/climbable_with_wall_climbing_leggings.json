@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:leaves",
-    "#forge:chests"
+    {
+      "id": "#forge:chests",
+      "required": false
+    },
+    {
+      "id": "#minecraft:leaves",
+      "required": false
+    }
   ]
 }

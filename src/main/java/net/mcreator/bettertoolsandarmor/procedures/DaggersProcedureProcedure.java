@@ -21,17 +21,17 @@ public class DaggersProcedureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("better_tools:daggers_adv"))).isDone())) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.STONE_DAGGER.get())) : false) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_DAGGER.get())) : false) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.IRON_DAGGER.get())) : false) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.GOLD_DAGGER.get())) : false) {
-							if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.RUBY_DAGGER.get())) : false) {
-								if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.DIAMOND_DAGGER.get())) : false) {
-									if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.NETHERITE_DAGGER.get())) : false) {
-										if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.NETHER_DIAMOND_DAGGER.get())) : false) {
-											if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.END_TITANIUM_DAGGER.get())) : false) {
-												if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.SAPPHIRE_DAGGER.get())) : false) {
-													if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.TOPAZ_DAGGER.get())) : false) {
+			if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.STONE_DAGGER.get()))) {
+				if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.FLINT_DAGGER.get()))) {
+					if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.IRON_DAGGER.get()))) {
+						if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.GOLD_DAGGER.get()))) {
+							if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.RUBY_DAGGER.get()))) {
+								if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.DIAMOND_DAGGER.get()))) {
+									if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.NETHERITE_DAGGER.get()))) {
+										if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.NETHER_DIAMOND_DAGGER.get()))) {
+											if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.END_TITANIUM_DAGGER.get()))) {
+												if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.SAPPHIRE_DAGGER.get()))) {
+													if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.TOPAZ_DAGGER.get()))) {
 														if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
 															for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 																ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
@@ -61,5 +61,11 @@ public class DaggersProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

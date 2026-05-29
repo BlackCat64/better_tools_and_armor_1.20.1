@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.entity;
 
 import net.neoforged.api.distmarker.OnlyIn;

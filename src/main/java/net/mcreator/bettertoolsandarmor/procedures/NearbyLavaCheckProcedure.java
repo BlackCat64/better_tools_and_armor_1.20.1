@@ -16,7 +16,7 @@ public class NearbyLavaCheckProcedure {
 		for (int index0 = 0; index0 < 5; index0++) {
 			for (int index1 = 0; index1 < 5; index1++) {
 				for (int index2 = 0; index2 < 5; index2++) {
-					if ((world.getBlockState(BlockPos.containing(x_iterator, y_iterator, z_iterator))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x_iterator, y_iterator, z_iterator))).getBlock() == Blocks.LAVA) {
+					if ((world.getBlockState(BlockPos.containing(x_iterator, y_iterator, z_iterator))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x_iterator, y_iterator, z_iterator))).getBlock() == Blocks.AIR) {
 						found = true;
 					}
 					x_iterator = x_iterator + 1;

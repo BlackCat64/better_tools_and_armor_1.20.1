@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -21,7 +20,7 @@ import java.util.List;
 
 public class ChargedIceOnBlock extends Block {
 	public ChargedIceOnBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.GLASS).strength(0.5f).requiresCorrectToolForDrops().friction(0.25f));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.GLASS).strength(0.5f).requiresCorrectToolForDrops().friction(0.25f).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

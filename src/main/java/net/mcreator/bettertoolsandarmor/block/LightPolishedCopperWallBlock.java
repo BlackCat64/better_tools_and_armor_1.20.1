@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -9,6 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class LightPolishedCopperWallBlock extends WallBlock {
 	public LightPolishedCopperWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().forceSolidOn());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM).forceSolidOn());
 	}
 }

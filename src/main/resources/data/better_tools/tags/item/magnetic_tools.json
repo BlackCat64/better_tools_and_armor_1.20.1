@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "better_tools:crystallite_pickaxe_iron",
-    "better_tools:crystallite_axe_iron",
     "better_tools:crystallite_shovel_iron",
+    "better_tools:crystallite_axe_iron",
     "better_tools:crystallite_hoe_iron"
   ]
 }

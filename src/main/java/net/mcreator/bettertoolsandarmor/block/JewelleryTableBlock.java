@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class JewelleryTableBlock extends Block {
 	public JewelleryTableBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.DEEPSLATE).sound(SoundType.NETHERITE_BLOCK).strength(3f));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).sound(SoundType.NETHERITE_BLOCK).strength(3f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

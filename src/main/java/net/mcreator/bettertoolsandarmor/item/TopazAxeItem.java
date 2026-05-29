@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;

@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -6,7 +5,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
@@ -15,7 +13,7 @@ import java.util.List;
 
 public class SkyCrystalItem extends Item {
 	public SkyCrystalItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().fireResistant());
 	}
 
 	@Override

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:hoes"
+    {
+      "id": "#minecraft:hoes",
+      "required": false
+    }
   ]
 }

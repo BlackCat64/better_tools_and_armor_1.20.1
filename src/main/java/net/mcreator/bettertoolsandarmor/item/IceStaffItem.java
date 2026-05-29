@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -8,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -28,7 +26,7 @@ import java.util.List;
 
 public class IceStaffItem extends Item {
 	public IceStaffItem() {
-		super(new Item.Properties().durability(250).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(250));
 	}
 
 	@Override

@@ -1,15 +1,13 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
 public class BerryPieItem extends Item {
 	public BerryPieItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationModifier(0.75f).build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(8).saturationModifier(0.75f).build()));
 	}
 
 	@Override

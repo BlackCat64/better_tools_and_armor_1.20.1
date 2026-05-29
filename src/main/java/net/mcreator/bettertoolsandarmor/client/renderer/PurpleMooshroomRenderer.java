@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

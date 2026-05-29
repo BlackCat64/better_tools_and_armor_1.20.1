@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:tools"
+    {
+      "id": "#minecraft:tools",
+      "required": false
+    }
   ]
 }

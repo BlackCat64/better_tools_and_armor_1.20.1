@@ -1,9 +1,7 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -13,7 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class AppleJuiceItem extends Item {
 	public AppleJuiceItem() {
-		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).build()));
+		super(new Item.Properties().stacksTo(16).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).build()));
 	}
 
 	@Override

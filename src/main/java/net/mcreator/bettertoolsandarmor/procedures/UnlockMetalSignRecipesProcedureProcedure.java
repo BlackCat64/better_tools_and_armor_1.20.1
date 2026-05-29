@@ -37,8 +37,7 @@ public class UnlockMetalSignRecipesProcedureProcedure {
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
 				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("better_tools:unlock_metal_sign_recipes"))).isDone())) {
-			if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_INGOT)) : false)
-					|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.IRON_NUGGET)) : false)) {
+			if (hasEntityInInventory(entity, new ItemStack(Items.IRON_INGOT)) || hasEntityInInventory(entity, new ItemStack(Items.IRON_NUGGET))) {
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:unlock_metal_sign_recipes"));
 					if (_adv != null) {
@@ -70,5 +69,11 @@ public class UnlockMetalSignRecipesProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

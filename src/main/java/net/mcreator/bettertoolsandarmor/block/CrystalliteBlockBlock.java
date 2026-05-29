@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -28,11 +27,12 @@ import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProc
 
 public class CrystalliteBlockBlock extends Block {
 	public CrystalliteBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.ICE)
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.ICE)
 				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_step")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_place")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_shimmer")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break"))))
-				.strength(20f, 600f).lightLevel(s -> 8).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+				.strength(20f, 600f).lightLevel(s -> 8).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
+				.instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

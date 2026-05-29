@@ -50,7 +50,8 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 				_cancellable.setCanceled(true);
 			}
 			damage = amount;
-			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER) && immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
+			if (immediatesourceentity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+					&& immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
 				if ((immediatesourceentity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
 						? _livingEntity4.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
 						: 0) != 1.5) {

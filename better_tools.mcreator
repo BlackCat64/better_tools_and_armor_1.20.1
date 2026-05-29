@@ -27200,10 +27200,6 @@
             "type": "entity"
           },
           {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -35897,6 +35893,42 @@
       "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign"
     }
   },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/bettertoolsandarmor/network/BetterToolsModVariables.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModModels.java",
+      "src/main/resources/assets/better_tools/sounds.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/BetterToolsMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/better_tools.mixins.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTabs.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModAttributes.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBiomes.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModScreens.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMenus.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModGameRules.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModKeyMappings.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticles.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticleTypes.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMobEffects.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModPotions.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModVillagerProfessions.java",
+      "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTrades.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBlocks.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModItems.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModEntityRenderers.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModEntities.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModFeatures.java"
+    ]
+  },
   "foldersRoot": {
     "name": "~",
     "children": [
@@ -36292,5 +36324,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202500113416
+  "mcreatorVersion": 202500228610
 }

@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:shovels",
-    "better_tools:crystallite_pickaxe_emerald"
+    "better_tools:crystallite_pickaxe_emerald",
+    {
+      "id": "#minecraft:shovels",
+      "required": false
+    }
   ]
 }

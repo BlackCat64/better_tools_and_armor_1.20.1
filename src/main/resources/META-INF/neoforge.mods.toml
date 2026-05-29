@@ -15,10 +15,16 @@ description="Adds many new ores and resources which improve the progression and 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
+    [[mixins]]
+    config = "better_tools.mixins.json"
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
 [[dependencies.better_tools]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.92,)"
+    versionRange="[21.1.176,)"
     ordering="AFTER"
     side="BOTH"
 

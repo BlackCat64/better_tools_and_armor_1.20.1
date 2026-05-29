@@ -35,7 +35,7 @@ public class CrystalliteHelmetEmeraldProcedureProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_EMERALD_HELMET.get()) {
 			if (itemstack.has(DataComponents.FOOD)) {
 				if (entity instanceof Player _player)
-					_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 2));
+					_player.getFoodData().setFoodLevel((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 2);
 			}
 		}
 	}

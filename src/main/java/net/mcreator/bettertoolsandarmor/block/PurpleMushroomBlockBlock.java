@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -23,7 +22,7 @@ import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomBlockParticlesP
 
 public class PurpleMushroomBlockBlock extends Block {
 	public PurpleMushroomBlockBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(0.2f).lightLevel(s -> 4).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(0.2f).lightLevel(s -> 4).requiresCorrectToolForDrops().ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

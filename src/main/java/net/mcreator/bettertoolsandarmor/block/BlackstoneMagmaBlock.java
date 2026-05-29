@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -20,8 +19,8 @@ import net.mcreator.bettertoolsandarmor.procedures.MagmaDamageProcedureProcedure
 
 public class BlackstoneMagmaBlock extends Block {
 	public BlackstoneMagmaBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_ORANGE).sound(SoundType.NETHERRACK).strength(0.5f).lightLevel(s -> 3).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.NETHERRACK).strength(0.5f).lightLevel(s -> 3).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+				.instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -15,7 +14,7 @@ import java.util.List;
 
 public class AmogusItem extends Item {
 	public AmogusItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().rarity(Rarity.RARE));
 	}
 
 	@Override

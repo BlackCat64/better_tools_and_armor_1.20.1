@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:mineable/hoe",
-    "#minecraft:wool"
+    {
+      "id": "#minecraft:mineable/hoe",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wool",
+      "required": false
+    }
   ]
 }

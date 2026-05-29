@@ -57,8 +57,8 @@ public class WardenStaffSonicBoomProcedure {
 				final Vec3 _center = new Vec3(look_x, look_y, look_z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity)) {
-						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.SONIC_BOOM), null, entity), (float) (10
-								+ 2 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))))));
+						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.SONIC_BOOM), null, entity),
+								10 + 2 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation")))));
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:warden_staff_adv"));
 							if (_adv != null) {
@@ -99,7 +99,7 @@ public class WardenStaffSonicBoomProcedure {
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(),
-						(int) (200 - 30 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast"))))));
+						200 - 30 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast")))));
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 			if (entity instanceof LivingEntity _entity)

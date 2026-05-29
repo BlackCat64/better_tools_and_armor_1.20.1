@@ -29,10 +29,10 @@ public class CrystalliteBowRedstoneHealProcedure {
 		if (immediatesourceentity.getPersistentData().getBoolean("crystallite_redstone_upgrade")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 0.25 * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 				if (sourceentity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));
+					_entity.setHealth((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2);
 			} else {
 				if (sourceentity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
+					_entity.setHealth((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1);
 			}
 		}
 	}

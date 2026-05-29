@@ -16,10 +16,10 @@ public class FlintToolsProcedureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("better_tools:flint_tools_adv"))).isDone())) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_PICKAXE.get())) : false) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_AXE.get())) : false) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_SHOVEL.get())) : false) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.FLINT_HOE.get())) : false) {
+			if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.FLINT_PICKAXE.get()))) {
+				if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.FLINT_AXE.get()))) {
+					if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.FLINT_SHOVEL.get()))) {
+						if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.FLINT_HOE.get()))) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:flint_tools_adv"));
 								if (_adv != null) {
@@ -35,5 +35,11 @@ public class FlintToolsProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

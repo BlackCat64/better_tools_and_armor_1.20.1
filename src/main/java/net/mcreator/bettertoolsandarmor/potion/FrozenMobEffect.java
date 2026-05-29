@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.potion;
 
 import net.minecraft.world.entity.LivingEntity;

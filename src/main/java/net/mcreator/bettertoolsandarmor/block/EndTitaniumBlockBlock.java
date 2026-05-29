@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -17,7 +16,7 @@ import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProc
 
 public class EndTitaniumBlockBlock extends Block {
 	public EndTitaniumBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(s -> 4));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(s -> 4).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

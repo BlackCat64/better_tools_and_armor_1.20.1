@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;

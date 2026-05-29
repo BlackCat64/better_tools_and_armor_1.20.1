@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:dirt_path",
-    "minecraft:mycelium",
+    "minecraft:podzol",
     "minecraft:dirt",
     "minecraft:coarse_dirt",
-    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:dirt_path",
     "minecraft:rooted_dirt"
   ]
 }

@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
-    "#better_tools:diamond_glass_armor",
-    "#better_tools:diamond_tier_effect_armor",
+    {
+      "id": "#better_tools:diamond_tier_effect_armor",
+      "required": false
+    },
+    {
+      "id": "#better_tools:diamond_glass_armor",
+      "required": false
+    },
     "better_tools:diamond_crying_obsidian_helmet",
     "better_tools:diamond_cactus_chestplate"
   ]

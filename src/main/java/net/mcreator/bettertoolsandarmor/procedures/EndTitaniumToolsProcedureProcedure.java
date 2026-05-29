@@ -16,10 +16,10 @@ public class EndTitaniumToolsProcedureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("better_tools:end_titanium_tools_adv"))).isDone())) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())) : false) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.END_TITANIUM_AXE.get())) : false) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.END_TITANIUM_SHOVEL.get())) : false) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(BetterToolsModItems.END_TITANIUM_HOE.get())) : false) {
+			if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get()))) {
+				if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.END_TITANIUM_AXE.get()))) {
+					if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.END_TITANIUM_SHOVEL.get()))) {
+						if (hasEntityInInventory(entity, new ItemStack(BetterToolsModItems.END_TITANIUM_HOE.get()))) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:end_titanium_tools_adv"));
 								if (_adv != null) {
@@ -35,5 +35,11 @@ public class EndTitaniumToolsProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

@@ -1,11 +1,9 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
@@ -14,7 +12,7 @@ import java.util.List;
 
 public class CrystalliteBowDiamondItem extends Item {
 	public CrystalliteBowDiamondItem() {
-		super(new Item.Properties().durability(3600).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(3600).fireResistant());
 	}
 
 	@Override

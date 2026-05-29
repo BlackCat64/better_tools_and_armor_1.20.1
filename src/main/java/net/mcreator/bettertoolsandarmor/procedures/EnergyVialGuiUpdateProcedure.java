@@ -5,22 +5,17 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.client.gui.components.Checkbox;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
-import java.util.function.Supplier;
-import java.util.Map;
-import java.util.HashMap;
-
 public class EnergyVialGuiUpdateProcedure {
-	public static void execute(LevelAccessor world, Entity entity, HashMap guistate) {
-		if (entity == null || guistate == null)
+	public static void execute(LevelAccessor world, Entity entity) {
+		if (entity == null)
 			return;
 		double energy = 0;
 		double energy_gain = 0;
@@ -31,8 +26,8 @@ public class EnergyVialGuiUpdateProcedure {
 		boolean boots_active = false;
 		ItemStack fuel = ItemStack.EMPTY;
 		ItemStack vial = ItemStack.EMPTY;
-		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
-		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).copy();
+		fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu0 ? _menu0.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
+		vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(1).getItem() : ItemStack.EMPTY).copy();
 		if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 			energy = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_to_update.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
 		} else {
@@ -59,10 +54,10 @@ public class EnergyVialGuiUpdateProcedure {
 			}
 		}
 		if (world.isClientSide()) {
-			helmet_active = guistate.containsKey("checkbox:helmet_active") && ((Checkbox) guistate.get("checkbox:helmet_active")).selected();
-			chestplate_active = guistate.containsKey("checkbox:chestplate_active") && ((Checkbox) guistate.get("checkbox:chestplate_active")).selected();
-			leggings_active = guistate.containsKey("checkbox:leggings_active") && ((Checkbox) guistate.get("checkbox:leggings_active")).selected();
-			boots_active = guistate.containsKey("checkbox:boots_active") && ((Checkbox) guistate.get("checkbox:boots_active")).selected();
+			helmet_active = (entity instanceof Player _entity12 && _entity12.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu12) ? _menu12.getMenuState(1, "helmet_active", false) : false;
+			chestplate_active = (entity instanceof Player _entity13 && _entity13.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu13) ? _menu13.getMenuState(1, "chestplate_active", false) : false;
+			leggings_active = (entity instanceof Player _entity14 && _entity14.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu14) ? _menu14.getMenuState(1, "leggings_active", false) : false;
+			boots_active = (entity instanceof Player _entity15 && _entity15.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu15) ? _menu15.getMenuState(1, "boots_active", false) : false;
 			{
 				final String _tagName = "helmet_active";
 				final boolean _tagValue = helmet_active;

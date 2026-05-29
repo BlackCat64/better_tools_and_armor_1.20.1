@@ -1,7 +1,8 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"text\" x=\"494\" y=\"101\"><field name=\"TEXT\">273bf762-4a3d-4feb-a00f-0cb3a0866f5f</field></block><block type=\"text\" x=\"498\" y=\"136\"><field name=\"TEXT\">speedy_necklace</field></block><block type=\"math_number\" x=\"504\" y=\"178\"><field name=\"NUM\">0.01</field></block></xml>"
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"text\" x=\"494\" y=\"101\"><field name=\"TEXT\">273bf762-4a3d-4feb-a00f-0cb3a0866f5f</field></block><block type=\"text\" x=\"498\" y=\"136\"><field name=\"TEXT\">speedy_necklace</field></block><block type=\"math_number\" x=\"504\" y=\"178\"><field name=\"NUM\">0.01</field></block></xml>",
+    "skipDependencyNullCheck": false
   }
 }

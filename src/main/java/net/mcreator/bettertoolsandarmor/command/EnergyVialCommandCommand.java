@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.command;
 
 import net.neoforged.neoforge.event.RegisterCommandsEvent;

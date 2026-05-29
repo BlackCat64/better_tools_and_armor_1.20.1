@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -7,7 +6,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -31,7 +29,7 @@ import java.util.List;
 
 public class CrystalliteBowItem extends Item {
 	public CrystalliteBowItem() {
-		super(new Item.Properties().durability(1800).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(1800).fireResistant());
 	}
 
 	@Override

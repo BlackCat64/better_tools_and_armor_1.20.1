@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#better_tools:daggers"
+    {
+      "id": "#better_tools:daggers",
+      "required": false
+    }
   ]
 }

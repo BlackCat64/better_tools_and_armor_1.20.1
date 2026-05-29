@@ -19,7 +19,7 @@ public class CrystalliteShovelLapisProcedureProcedure {
 		if (Math.random() < chance) {
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()),
-						Mth.nextInt(RandomSource.create(), 1, (int) (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1))));
+						Mth.nextInt(RandomSource.create(), 1, itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1)));
 		}
 	}
 }

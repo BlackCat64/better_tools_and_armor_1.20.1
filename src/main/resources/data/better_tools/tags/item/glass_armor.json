@@ -1,8 +1,17 @@
 {
   "replace": false,
   "values": [
-    "#better_tools:base_glass_armor",
-    "#better_tools:iron_glass_armor",
-    "#better_tools:diamond_glass_armor"
+    {
+      "id": "#better_tools:diamond_glass_armor",
+      "required": false
+    },
+    {
+      "id": "#better_tools:base_glass_armor",
+      "required": false
+    },
+    {
+      "id": "#better_tools:iron_glass_armor",
+      "required": false
+    }
   ]
 }

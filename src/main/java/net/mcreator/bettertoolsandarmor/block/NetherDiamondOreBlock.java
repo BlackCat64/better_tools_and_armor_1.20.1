@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -17,7 +16,7 @@ import net.mcreator.bettertoolsandarmor.procedures.NetherDiamondOreXpProcedure;
 
 public class NetherDiamondOreBlock extends Block {
 	public NetherDiamondOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_BLACK).sound(SoundType.GILDED_BLACKSTONE).strength(4.5f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.GILDED_BLACKSTONE).strength(4.5f, 6f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

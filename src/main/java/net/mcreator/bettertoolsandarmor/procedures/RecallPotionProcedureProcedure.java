@@ -78,7 +78,7 @@ public class RecallPotionProcedureProcedure {
 											.getValue(_getip13)
 									: -1) > 0) {
 						{
-							int _value = (int) (((world.getBlockState(BlockPos.containing(
+							int _value = ((world.getBlockState(BlockPos.containing(
 									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
 											: 0,
@@ -107,7 +107,7 @@ public class RecallPotionProcedureProcedure {
 															: 0)))
 													.getValue(_getip21)
 											: -1)
-									- 1);
+									- 1;
 							BlockPos _pos = BlockPos.containing(
 									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())

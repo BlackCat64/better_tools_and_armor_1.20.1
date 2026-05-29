@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.world.features;
 
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;

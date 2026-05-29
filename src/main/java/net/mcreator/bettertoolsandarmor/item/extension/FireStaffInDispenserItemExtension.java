@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.item.extension;
 
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;

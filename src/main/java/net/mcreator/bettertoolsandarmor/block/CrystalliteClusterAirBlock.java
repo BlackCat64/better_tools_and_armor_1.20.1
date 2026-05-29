@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -19,21 +18,19 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.procedures.RemoveCrystalliteClusterAirProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.CrystalliteClusterParticlesProcedureProcedure;
 
 public class CrystalliteClusterAirBlock extends Block {
 	public CrystalliteClusterAirBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.NONE).sound(SoundType.GLASS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.GLASS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).replaceable().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
@@ -62,25 +59,16 @@ public class CrystalliteClusterAirBlock extends Block {
 	}
 
 	@Override
-	public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-		return context.getItemInHand().getItem() != this.asItem();
-	}
-
-	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		RemoveCrystalliteClusterAirProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		CrystalliteClusterParticlesProcedureProcedure.execute(world, x, y, z);
+		CrystalliteClusterParticlesProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

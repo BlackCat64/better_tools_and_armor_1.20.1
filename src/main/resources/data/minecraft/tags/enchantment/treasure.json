@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "better_tools:smelting_touch",
-    "better_tools:thunder_shot"
+    "better_tools:thunder_shot",
+    "better_tools:smelting_touch"
   ]
 }

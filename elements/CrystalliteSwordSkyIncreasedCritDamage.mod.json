@@ -1,7 +1,8 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"128\" y=\"109\"><field name=\"trigger\">player_ticks</field></block><block type=\"text\" x=\"651\" y=\"141\"><field name=\"TEXT\">1bdaa54a-b347-4111-85e1-2e2bc6528571</field></block><block type=\"text\" x=\"660\" y=\"177\"><field name=\"TEXT\">increased_crit_damage</field></block><block type=\"math_number\" x=\"667\" y=\"221\"><field name=\"NUM\">0.5</field></block><block type=\"controls_if\" x=\"150\" y=\"287\"><mutation else=\"1\"/><value name=\"IF0\"><block type=\"compare_mcitems_oredictionary\"><value name=\"a\"><block type=\"entity_iteminhand\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"b\"><block type=\"text\"><field name=\"TEXT\">better_tools:increased_crit_multiplier_weapons</field></block></value></block></value></block></xml>"
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"128\" y=\"109\"><field name=\"trigger\">player_ticks</field></block><block type=\"text\" x=\"651\" y=\"141\"><field name=\"TEXT\">1bdaa54a-b347-4111-85e1-2e2bc6528571</field></block><block type=\"text\" x=\"660\" y=\"177\"><field name=\"TEXT\">increased_crit_damage</field></block><block type=\"math_number\" x=\"667\" y=\"221\"><field name=\"NUM\">0.5</field></block><block type=\"controls_if\" x=\"150\" y=\"287\"><mutation else=\"1\"/><value name=\"IF0\"><block type=\"compare_mcitems_oredictionary\"><value name=\"a\"><block type=\"entity_iteminhand\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"b\"><block type=\"text\"><field name=\"TEXT\">better_tools:increased_crit_multiplier_weapons</field></block></value></block></value></block></xml>",
+    "skipDependencyNullCheck": false
   }
 }

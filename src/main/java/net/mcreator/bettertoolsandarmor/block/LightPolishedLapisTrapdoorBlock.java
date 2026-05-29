@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -10,6 +9,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class LightPolishedLapisTrapdoorBlock extends TrapDoorBlock {
 	public LightPolishedLapisTrapdoorBlock() {
-		super(BlockSetType.STONE, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.CRIMSON_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops());
+		super(BlockSetType.STONE, BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).sound(SoundType.METAL).strength(2.5f, 6f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 }

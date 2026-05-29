@@ -1,4 +1,3 @@
-
 package net.mcreator.bettertoolsandarmor.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class BlueMushroomBlockBlock extends Block {
 	public BlueMushroomBlockBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.DIAMOND).sound(SoundType.WOOD).strength(0.2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.WOOD).strength(0.2f).requiresCorrectToolForDrops().ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

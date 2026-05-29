@@ -2,7 +2,6 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -20,10 +19,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
-
-import java.util.function.Supplier;
-import java.util.Map;
 
 import io.netty.buffer.Unpooled;
 
@@ -54,10 +51,10 @@ public class EnergyVialOpenGuiProcedure {
 			}
 			if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
 				vial = GetEquippedVialProcedure.execute().copy();
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 					ItemStack _setstack = vial.copy();
 					_setstack.setCount(1);
-					((Slot) _slots.get(1)).set(_setstack);
+					_menu.getSlots().get(1).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				{
@@ -68,38 +65,38 @@ public class EnergyVialOpenGuiProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 					ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 					_setstack.setCount(1);
-					((Slot) _slots.get(1)).set(_setstack);
+					_menu.getSlots().get(1).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				BetterToolsMod.queueServerWork(1, () -> {
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 				});
 			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
 				_setstack.setCount(1);
-				((Slot) _slots.get(2)).set(_setstack);
+				_menu.getSlots().get(2).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
 				_setstack.setCount(1);
-				((Slot) _slots.get(3)).set(_setstack);
+				_menu.getSlots().get(3).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
 				_setstack.setCount(1);
-				((Slot) _slots.get(4)).set(_setstack);
+				_menu.getSlots().get(4).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
 				ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
 				_setstack.setCount(1);
-				((Slot) _slots.get(5)).set(_setstack);
+				_menu.getSlots().get(5).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
