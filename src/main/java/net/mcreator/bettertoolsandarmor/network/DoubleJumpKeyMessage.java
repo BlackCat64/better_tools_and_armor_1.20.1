@@ -17,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.bettertoolsandarmor.procedures.DoubleJumpKeyPressProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record DoubleJumpKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<DoubleJumpKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "key_double_jump_key"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, DoubleJumpKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DoubleJumpKeyMessage message) -> {

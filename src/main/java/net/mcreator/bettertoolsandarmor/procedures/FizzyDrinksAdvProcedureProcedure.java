@@ -47,7 +47,7 @@ public class FizzyDrinksAdvProcedureProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.time_since_non_carbonated_food_eaten = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

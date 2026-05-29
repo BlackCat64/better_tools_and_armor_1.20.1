@@ -22,7 +22,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class FlamingCircletProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -40,7 +40,7 @@ public class FlamingCircletProcedureProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.flaming_circlet_cooldown = 200;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(BetterToolsModItems.NETHER_DIAMOND.get(), 200);

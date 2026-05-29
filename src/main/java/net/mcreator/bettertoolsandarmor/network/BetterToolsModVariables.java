@@ -4,6 +4,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -18,7 +20,6 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -36,7 +37,7 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.function.Supplier;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class BetterToolsModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, BetterToolsMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
@@ -47,91 +48,113 @@ public class BetterToolsModVariables {
 		BetterToolsMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@EventBusSubscriber
-	public static class EventBusVariableHandlers {
-		@SubscribeEvent
-		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void clonePlayer(PlayerEvent.Clone event) {
-			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
-			PlayerVariables clone = new PlayerVariables();
-			clone.respawn_xp = original.respawn_xp;
-			clone.extra_jumps = original.extra_jumps;
-			clone.charms_equipped = original.charms_equipped;
-			clone.last_on_ground_x = original.last_on_ground_x;
-			clone.last_on_ground_y = original.last_on_ground_y;
-			clone.last_on_ground_z = original.last_on_ground_z;
-			clone.save_from_void_cooldown = original.save_from_void_cooldown;
-			clone.last_food_eaten = original.last_food_eaten;
-			clone.last_food_was_carbonated = original.last_food_was_carbonated;
-			if (!event.isWasDeath()) {
-				clone.time_since_last_hurt = original.time_since_last_hurt;
-				clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
-				clone.critical_hit = original.critical_hit;
-				clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
-				clone.time_since_last_attacked = original.time_since_last_attacked;
-				clone.time_since_last_mined = original.time_since_last_mined;
-				clone.last_mined_block = original.last_mined_block;
-				clone.block_mining_combo = original.block_mining_combo;
-				clone.stick_to_ceiling = original.stick_to_ceiling;
-				clone.crystallite_honey_absorption_timer = original.crystallite_honey_absorption_timer;
-				clone.time_since_last_jumped = original.time_since_last_jumped;
-				clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
-				clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
-				clone.nature_ring_equipped = original.nature_ring_equipped;
-				clone.effect_energy_timer = original.effect_energy_timer;
-				clone.energy_vial_to_update = original.energy_vial_to_update;
-				clone.effect_energy_cost = original.effect_energy_cost;
-				clone.time_since_on_ground = original.time_since_on_ground;
-				clone.time_since_shot_bow = original.time_since_shot_bow;
-				clone.time_on_fire = original.time_on_fire;
-				clone.nether_diamond_armor_fire_res_cooldown = original.nether_diamond_armor_fire_res_cooldown;
-				clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
-				clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
+	@SubscribeEvent
+	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
+		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			player.getData(PLAYER_VARIABLES)._syncDirty = false;
+		}
+	}
+
+	@SubscribeEvent
+	public static void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+		PlayerVariables clone = new PlayerVariables();
+		clone.respawn_xp = original.respawn_xp;
+		clone.extra_jumps = original.extra_jumps;
+		clone.charms_equipped = original.charms_equipped;
+		clone.last_on_ground_x = original.last_on_ground_x;
+		clone.last_on_ground_y = original.last_on_ground_y;
+		clone.last_on_ground_z = original.last_on_ground_z;
+		clone.save_from_void_cooldown = original.save_from_void_cooldown;
+		clone.last_food_eaten = original.last_food_eaten;
+		clone.last_food_was_carbonated = original.last_food_was_carbonated;
+		if (!event.isWasDeath()) {
+			clone.time_since_last_hurt = original.time_since_last_hurt;
+			clone.crystallite_emerald_heal_timer = original.crystallite_emerald_heal_timer;
+			clone.critical_hit = original.critical_hit;
+			clone.flaming_circlet_cooldown = original.flaming_circlet_cooldown;
+			clone.time_since_last_attacked = original.time_since_last_attacked;
+			clone.time_since_last_mined = original.time_since_last_mined;
+			clone.last_mined_block = original.last_mined_block;
+			clone.block_mining_combo = original.block_mining_combo;
+			clone.stick_to_ceiling = original.stick_to_ceiling;
+			clone.crystallite_honey_absorption_timer = original.crystallite_honey_absorption_timer;
+			clone.time_since_last_jumped = original.time_since_last_jumped;
+			clone.ender_titanium_boots_cooldown = original.ender_titanium_boots_cooldown;
+			clone.time_since_non_carbonated_food_eaten = original.time_since_non_carbonated_food_eaten;
+			clone.nature_ring_equipped = original.nature_ring_equipped;
+			clone.effect_energy_timer = original.effect_energy_timer;
+			clone.energy_vial_to_update = original.energy_vial_to_update;
+			clone.effect_energy_cost = original.effect_energy_cost;
+			clone.time_since_on_ground = original.time_since_on_ground;
+			clone.time_since_shot_bow = original.time_since_shot_bow;
+			clone.time_on_fire = original.time_on_fire;
+			clone.nether_diamond_armor_fire_res_cooldown = original.nether_diamond_armor_fire_res_cooldown;
+			clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
+			clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
+		}
+		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
+	@SubscribeEvent
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData mapdata = MapVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (mapdata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onWorldTick(LevelTickEvent.Post event) {
+		if (event.getLevel() instanceof ServerLevel level) {
+			WorldVariables worldVariables = WorldVariables.get(level);
+			if (worldVariables._syncDirty) {
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, worldVariables));
+				worldVariables._syncDirty = false;
 			}
-			event.getEntity().setData(PLAYER_VARIABLES, clone);
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level());
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (mapdata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+			MapVariables mapVariables = MapVariables.get(level);
+			if (mapVariables._syncDirty) {
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, mapVariables));
+				mapVariables._syncDirty = false;
 			}
 		}
 	}
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "better_tools_worldvars";
+		boolean _syncDirty = false;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -147,10 +170,9 @@ public class BetterToolsModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof ServerLevel level)
-				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
+			this._syncDirty = true;
 		}
 
 		static WorldVariables clientSide = new WorldVariables();
@@ -166,6 +188,7 @@ public class BetterToolsModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "better_tools_mapvars";
+		boolean _syncDirty = false;
 		public double crystallite_shimmer_timer = 0;
 		public double stealth_armor_timer = 0;
 
@@ -187,10 +210,9 @@ public class BetterToolsModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
+			_syncDirty = true;
 		}
 
 		static MapVariables clientSide = new MapVariables();
@@ -245,6 +267,7 @@ public class BetterToolsModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		boolean _syncDirty = false;
 		public double respawn_xp = 0.0;
 		public double extra_jumps = 0.0;
 		public double charms_equipped = 0.0;
@@ -352,9 +375,8 @@ public class BetterToolsModVariables {
 			crystallite_amethyst_ore_highlight_cooldown = nbt.getDouble("crystallite_amethyst_ore_highlight_cooldown");
 		}
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		public void markSyncDirty() {
+			_syncDirty = true;
 		}
 	}
 

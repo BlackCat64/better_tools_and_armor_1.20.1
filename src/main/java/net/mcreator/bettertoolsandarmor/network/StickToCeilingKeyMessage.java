@@ -18,7 +18,7 @@ import net.mcreator.bettertoolsandarmor.procedures.StickToCeilingKeyUpProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.StickToCeilingKeyDownProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record StickToCeilingKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<StickToCeilingKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "key_stick_to_ceiling_key"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, StickToCeilingKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, StickToCeilingKeyMessage message) -> {

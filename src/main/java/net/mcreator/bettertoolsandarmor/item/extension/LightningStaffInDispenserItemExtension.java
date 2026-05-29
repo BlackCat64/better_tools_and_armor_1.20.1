@@ -14,7 +14,7 @@ import net.minecraft.core.Direction;
 import net.mcreator.bettertoolsandarmor.procedures.LightningStaffDispensedProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class LightningStaffInDispenserItemExtension {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

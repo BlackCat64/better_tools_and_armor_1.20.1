@@ -10,15 +10,9 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.bettertoolsandarmor.client.renderer.PurpleMooshroomRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.LightningStaffDispenserProjectileRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.IceStaffProjectileRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.IceStaffProjectileFromDispenserRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.FireStaffProjectileRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.FireStaffDispenserProjectileRenderer;
-import net.mcreator.bettertoolsandarmor.client.renderer.ElectricStaffProjectileRenderer;
+import net.mcreator.bettertoolsandarmor.client.renderer.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {

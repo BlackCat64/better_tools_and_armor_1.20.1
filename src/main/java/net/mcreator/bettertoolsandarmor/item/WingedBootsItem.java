@@ -21,7 +21,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import java.util.List;
 import java.util.EnumMap;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public abstract class WingedBootsItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 

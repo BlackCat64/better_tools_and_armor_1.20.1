@@ -37,7 +37,7 @@ public class ResetPlayerEffectEnergyCostProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.effect_energy_cost = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

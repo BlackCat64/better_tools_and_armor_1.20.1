@@ -13,7 +13,7 @@ import net.mcreator.bettertoolsandarmor.client.model.Modelice_staff_projectile;
 import net.mcreator.bettertoolsandarmor.client.model.Modelgolden_carrot_hat;
 import net.mcreator.bettertoolsandarmor.client.model.Modelfire_staff_projectile;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

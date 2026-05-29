@@ -18,13 +18,7 @@ import net.mcreator.bettertoolsandarmor.procedures.SwiftSwimExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.PitfallEffectExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.FrozenEffectExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.CriticalHitEffectExpiresProcedure;
-import net.mcreator.bettertoolsandarmor.potion.SwiftSwimMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.PitfallMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.OreVisionMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.KarmaPotionMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.FrozenMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.DoubleJumpMobEffect;
-import net.mcreator.bettertoolsandarmor.potion.CriticalityMobEffect;
+import net.mcreator.bettertoolsandarmor.potion.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 @EventBusSubscriber

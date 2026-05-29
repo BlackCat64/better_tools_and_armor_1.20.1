@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class FreezingWeaponsProcedureProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
 		}

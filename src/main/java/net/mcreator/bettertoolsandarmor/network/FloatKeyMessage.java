@@ -17,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.bettertoolsandarmor.procedures.EnderTitaniumBootsFloatProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record FloatKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<FloatKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "key_float_key"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, FloatKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, FloatKeyMessage message) -> {

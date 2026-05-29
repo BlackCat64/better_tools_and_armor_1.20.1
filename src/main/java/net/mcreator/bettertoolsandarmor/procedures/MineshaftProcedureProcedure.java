@@ -8,6 +8,7 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.vehicle.MinecartChest;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
@@ -28,8 +29,9 @@ public class MineshaftProcedureProcedure {
 			return;
 		if (false) {
 			if (entity instanceof MinecartChest) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Mineshaft at: " + "X = " + x + ", Y = " + y + ", Z = " + z)), false);
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Mineshaft at: " + "X = " + x + ", Y = " + y + ", Z = " + z)), false);
+				}
 			}
 		}
 	}

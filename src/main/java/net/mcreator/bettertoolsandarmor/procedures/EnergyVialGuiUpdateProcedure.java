@@ -54,10 +54,10 @@ public class EnergyVialGuiUpdateProcedure {
 			}
 		}
 		if (world.isClientSide()) {
-			helmet_active = (entity instanceof Player _entity12 && _entity12.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu12) ? _menu12.getMenuState(1, "helmet_active", false) : false;
-			chestplate_active = (entity instanceof Player _entity13 && _entity13.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu13) ? _menu13.getMenuState(1, "chestplate_active", false) : false;
-			leggings_active = (entity instanceof Player _entity14 && _entity14.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu14) ? _menu14.getMenuState(1, "leggings_active", false) : false;
-			boots_active = (entity instanceof Player _entity15 && _entity15.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu15) ? _menu15.getMenuState(1, "boots_active", false) : false;
+			helmet_active = (entity instanceof Player _entity12 && _entity12.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu12) && _menu12.getMenuState(1, "helmet_active", false);
+			chestplate_active = (entity instanceof Player _entity13 && _entity13.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu13) && _menu13.getMenuState(1, "chestplate_active", false);
+			leggings_active = (entity instanceof Player _entity14 && _entity14.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu14) && _menu14.getMenuState(1, "leggings_active", false);
+			boots_active = (entity instanceof Player _entity15 && _entity15.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu15) && _menu15.getMenuState(1, "boots_active", false);
 			{
 				final String _tagName = "helmet_active";
 				final boolean _tagValue = helmet_active;
@@ -85,7 +85,7 @@ public class EnergyVialGuiUpdateProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.energy_vial_to_update = vial.copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

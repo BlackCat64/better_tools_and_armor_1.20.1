@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class DamageTrackerProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity(), event.getOriginalDamage());
 		}
@@ -43,7 +43,7 @@ public class DamageTrackerProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.time_since_last_hurt = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

@@ -14,7 +14,7 @@ import net.minecraft.core.Direction;
 import net.mcreator.bettertoolsandarmor.procedures.IceStaffDispensedProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class IceStaffInDispenserItemExtension {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

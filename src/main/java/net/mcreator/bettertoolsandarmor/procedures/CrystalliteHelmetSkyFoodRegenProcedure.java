@@ -44,7 +44,7 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.last_food_was_carbonated = true;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			} else if (itemstack.has(DataComponents.FOOD) && !(itemstack.getItem() == Items.ROTTEN_FLESH || itemstack.getItem() == Items.SPIDER_EYE || itemstack.getItem() == Items.PUFFERFISH || itemstack.getItem() == Items.POISONOUS_POTATO)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -52,20 +52,20 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.last_food_was_carbonated = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			} else {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.last_food_was_carbonated = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			}
 		} else if (itemstack.has(DataComponents.FOOD)) {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.last_food_was_carbonated = false;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

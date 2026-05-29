@@ -21,7 +21,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
 import java.util.List;
 import java.util.EnumMap;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public abstract class MagmaBodyItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 

@@ -54,7 +54,7 @@ public class CrystalliteChestplateEmeraldProcedureProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.crystallite_emerald_heal_timer = time_delay;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			}
 		}

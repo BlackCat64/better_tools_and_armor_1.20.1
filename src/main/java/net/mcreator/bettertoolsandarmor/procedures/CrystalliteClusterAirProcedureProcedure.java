@@ -58,7 +58,7 @@ public class CrystalliteClusterAirProcedureProcedure {
 			} else if (BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer == 0) {
 				found = false;
 				BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer = 200;
-				BetterToolsModVariables.MapVariables.get(world).syncData(world);
+				BetterToolsModVariables.MapVariables.get(world).markSyncDirty();
 				sx = -40;
 				for (int index0 = 0; index0 < 80; index0++) {
 					sy = -40;

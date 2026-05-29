@@ -8,22 +8,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.bettertoolsandarmor.client.particle.WindBurstParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.OreVisionParticleParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.OreLocationParticleParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.IceParticleParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.GuardianStaffBeamParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoom6Particle;
-import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoom5Particle;
-import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoom4Particle;
-import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoom3Particle;
-import net.mcreator.bettertoolsandarmor.client.particle.FreezeBoom2Particle;
-import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSplashDamageParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSpinThornsParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.CrystalliteSparkleParticle;
-import net.mcreator.bettertoolsandarmor.client.particle.ArrowHomingParticleParticle;
+import net.mcreator.bettertoolsandarmor.client.particle.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {

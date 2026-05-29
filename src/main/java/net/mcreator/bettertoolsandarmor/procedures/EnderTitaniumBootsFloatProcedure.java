@@ -34,7 +34,7 @@ public class EnderTitaniumBootsFloatProcedure {
 							{
 								BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 								_vars.ender_titanium_boots_cooldown = 400;
-								_vars.syncPlayerVariables(entity);
+								_vars.markSyncDirty();
 							}
 						}
 					}

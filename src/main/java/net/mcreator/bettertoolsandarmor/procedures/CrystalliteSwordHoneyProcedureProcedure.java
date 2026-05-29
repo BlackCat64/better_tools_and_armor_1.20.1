@@ -34,7 +34,7 @@ public class CrystalliteSwordHoneyProcedureProcedure {
 		{
 			BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.time_since_last_attacked = 0;
-			_vars.syncPlayerVariables(sourceentity);
+			_vars.markSyncDirty();
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_weapons")))) {
 			if (sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_attacked <= 40) {

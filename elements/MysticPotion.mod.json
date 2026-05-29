@@ -7,6 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
+    "animations": [],
     "name": "Mystic Potion",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -27,6 +28,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

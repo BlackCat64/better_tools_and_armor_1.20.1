@@ -17,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialKeybindOpenGuiProcedure;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record EnergyVialToggleKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<EnergyVialToggleKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "key_energy_vial_toggle_key"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, EnergyVialToggleKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, EnergyVialToggleKeyMessage message) -> {

@@ -15,17 +15,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.entity.PurpleMooshroomEntity;
-import net.mcreator.bettertoolsandarmor.entity.LightningStaffDispenserProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileFromDispenserEntity;
-import net.mcreator.bettertoolsandarmor.entity.IceStaffProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.FireStaffDispenserProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.ElectricStaffProjectileEntity;
-import net.mcreator.bettertoolsandarmor.entity.CrystallitePrismarineArrowEntity;
+import net.mcreator.bettertoolsandarmor.entity.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class BetterToolsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, BetterToolsMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<PurpleMooshroomEntity>> PURPLE_MOOSHROOM = register("purple_mooshroom",

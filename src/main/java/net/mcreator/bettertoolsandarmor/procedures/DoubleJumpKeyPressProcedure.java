@@ -38,13 +38,13 @@ public class DoubleJumpKeyPressProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.extra_jumps = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).extra_jumps - 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			}
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.time_since_last_jumped = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			entity.fallDistance = 0;
 			if (entity instanceof ServerPlayer _player) {

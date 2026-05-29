@@ -25,19 +25,7 @@ import net.minecraft.client.renderer.Sheets;
 
 import net.mcreator.bettertoolsandarmor.world.features.StructureFeature;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModWoodTypes;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModVillagerProfessions;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModTabs;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModSounds;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModPotions;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModFeatures;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModEntities;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModBlocks;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
+import net.mcreator.bettertoolsandarmor.init.*;
 import net.mcreator.bettertoolsandarmor.block.entity.BetterToolsModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;

@@ -25,14 +25,14 @@ public class EffectEnergyApplyCostProcedure {
 		{
 			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.effect_energy_cost = CalculateEffectEnergyCostProcedure.execute(entity, itemstack);
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (EnergyVialActiveProcedure.execute(entity, itemstack) > 0) {
 			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_timer <= 0) {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.effect_energy_timer = 100;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					{
@@ -113,14 +113,14 @@ public class EffectEnergyApplyCostProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.effect_energy_timer = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_timer - 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			}
 		} else {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.effect_energy_timer = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

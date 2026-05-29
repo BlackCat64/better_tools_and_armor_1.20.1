@@ -11,7 +11,7 @@ public class StickToCeilingKeyDownProcedure {
 		{
 			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.stick_to_ceiling = true;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

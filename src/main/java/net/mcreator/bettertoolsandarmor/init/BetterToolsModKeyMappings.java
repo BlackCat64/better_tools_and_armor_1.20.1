@@ -20,7 +20,7 @@ import net.mcreator.bettertoolsandarmor.network.FloatKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.EnergyVialToggleKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModKeyMappings {
 	public static final KeyMapping DOUBLE_JUMP_KEY = new KeyMapping("key.better_tools.double_jump_key", GLFW.GLFW_KEY_SPACE, "key.categories.better_tools") {
 		private boolean isDownOld = false;
@@ -89,7 +89,7 @@ public class BetterToolsModKeyMappings {
 		event.register(ENERGY_VIAL_TOGGLE_KEY);
 	}
 
-	@EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class KeyEventListener {
 		@SubscribeEvent
 		public static void onClientTick(ClientTickEvent.Post event) {

@@ -52,7 +52,7 @@ public class EarthCircletOreIlluminationProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.crystallite_amethyst_ore_highlight_cooldown = Mth.nextInt(RandomSource.create(), 40, 60);
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			radius = 24;
 			sx = radius * (-1);

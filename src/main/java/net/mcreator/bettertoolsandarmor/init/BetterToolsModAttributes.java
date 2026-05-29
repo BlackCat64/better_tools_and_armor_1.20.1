@@ -16,7 +16,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class BetterToolsModAttributes {
 	public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, BetterToolsMod.MODID);
 	public static final DeferredHolder<Attribute, Attribute> CRITICAL_HIT_MULTIPLIER = REGISTRY.register("critical_hit_multiplier", () -> new RangedAttribute("attribute.better_tools.critical_hit_multiplier", 1.5, 0, 10).setSyncable(true));

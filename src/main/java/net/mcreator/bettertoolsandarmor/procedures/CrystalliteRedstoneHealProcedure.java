@@ -40,7 +40,7 @@ public class CrystalliteRedstoneHealProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.crystallite_redstone_sword_heal_cooldown = 20;
-				_vars.syncPlayerVariables(sourceentity);
+				_vars.markSyncDirty();
 			}
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 20);

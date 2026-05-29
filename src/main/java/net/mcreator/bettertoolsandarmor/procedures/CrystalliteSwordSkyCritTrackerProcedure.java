@@ -33,7 +33,7 @@ public class CrystalliteSwordSkyCritTrackerProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.critical_hit = true;
-				_vars.syncPlayerVariables(sourceentity);
+				_vars.markSyncDirty();
 			}
 			if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
 					? _livingEntity0.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
@@ -45,7 +45,7 @@ public class CrystalliteSwordSkyCritTrackerProcedure {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = sourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 					_vars.critical_hit = false;
-					_vars.syncPlayerVariables(sourceentity);
+					_vars.markSyncDirty();
 				}
 			});
 		}

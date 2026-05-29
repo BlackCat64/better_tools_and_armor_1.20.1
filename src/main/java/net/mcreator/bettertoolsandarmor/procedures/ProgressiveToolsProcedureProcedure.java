@@ -81,9 +81,9 @@ public class ProgressiveToolsProcedureProcedure {
 			if (new_pickaxe.is(ItemTags.create(ResourceLocation.parse("better_tools:progressive_tools")))) {
 				new_pickaxe.applyComponents((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getComponents());
 				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new_pickaxe.copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					ItemStack _setstack51 = new_pickaxe.copy();
+					_setstack51.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack51);
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
 				}

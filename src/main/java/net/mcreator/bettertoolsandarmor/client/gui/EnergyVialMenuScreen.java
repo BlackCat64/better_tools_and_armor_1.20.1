@@ -10,15 +10,7 @@ import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
-import net.mcreator.bettertoolsandarmor.procedures.LeggingsCheckboxTooltipProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.LeggingsActiveWhenGuiOpenedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.HelmetCheckboxTooltipProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.HelmetActiveWhenGuiOpenedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.EnergyVialShowFuelTooltipProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.ChestplateCheckboxTooltipProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.ChestplateActiveWhenGuiOpenedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.BootsCheckboxTooltipProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.BootsActiveWhenGuiOpenedProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.*;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModScreens;
 
 import java.util.stream.Collectors;
@@ -31,10 +23,10 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	Checkbox helmet_active;
-	Checkbox chestplate_active;
-	Checkbox leggings_active;
-	Checkbox boots_active;
+	private Checkbox helmet_active;
+	private Checkbox chestplate_active;
+	private Checkbox leggings_active;
+	private Checkbox boots_active;
 
 	public EnergyVialMenuScreen(EnergyVialMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,6 +42,21 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 	@Override
 	public void updateMenuState(int elementType, String name, Object elementState) {
 		menuStateUpdateActive = true;
+		if (elementType == 1 && elementState instanceof Boolean logicState) {
+			if (name.equals("helmet_active")) {
+				if (helmet_active.selected() != logicState)
+					helmet_active.onPress();
+			} else if (name.equals("chestplate_active")) {
+				if (chestplate_active.selected() != logicState)
+					chestplate_active.onPress();
+			} else if (name.equals("leggings_active")) {
+				if (leggings_active.selected() != logicState)
+					leggings_active.onPress();
+			} else if (name.equals("boots_active")) {
+				if (boots_active.selected() != logicState)
+					boots_active.onPress();
+			}
+		}
 		menuStateUpdateActive = false;
 	}
 

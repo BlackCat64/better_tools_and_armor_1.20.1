@@ -37,7 +37,7 @@ public class CrystalliteArmorXPProcedure {
 		{
 			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.respawn_xp = 0;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		original_xp = entity instanceof Player _plr ? _plr.experienceLevel : 0;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_HELMET.get()) {
@@ -59,13 +59,13 @@ public class CrystalliteArmorXPProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.respawn_xp = original_xp;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		} else {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.respawn_xp = Math.round(armor_pieces * original_xp * 0.2);
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

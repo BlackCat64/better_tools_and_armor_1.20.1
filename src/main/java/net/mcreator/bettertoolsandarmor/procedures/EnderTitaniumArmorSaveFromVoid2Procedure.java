@@ -40,7 +40,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class EnderTitaniumArmorSaveFromVoid2Procedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getSource(), event.getEntity());
 		}
@@ -92,7 +92,7 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 					{
 						BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 						_vars.save_from_void_cooldown = 12000;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.DRAGON_BREATH, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y + 0.25),

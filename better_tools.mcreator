@@ -35895,16 +35895,6 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/bettertoolsandarmor/network/BetterToolsModVariables.java",
-      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModModels.java",
-      "src/main/resources/assets/better_tools/sounds.json",
-      "src/main/java/net/mcreator/bettertoolsandarmor/BetterToolsMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/better_tools.mixins.json",
-      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTabs.java",
-      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModSounds.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModAttributes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBiomes.java",
@@ -35926,7 +35916,17 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModItems.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModEntityRenderers.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModEntities.java",
-      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModFeatures.java"
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModFeatures.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/network/BetterToolsModVariables.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModModels.java",
+      "src/main/resources/assets/better_tools/sounds.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/BetterToolsMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/better_tools.mixins.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTabs.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
@@ -36324,5 +36324,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202500228610
+  "mcreatorVersion": 202500345720
 }

@@ -114,7 +114,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 					{
 						BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 						_vars.nether_diamond_armor_fire_res_cooldown = 1200;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					i = 0;
 					for (int index1 = 0; index1 < 4; index1++) {

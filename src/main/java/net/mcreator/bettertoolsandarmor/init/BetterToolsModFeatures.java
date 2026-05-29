@@ -9,19 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.world.features.TopazOreFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.RubyOreFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.DeepslateRubyOreFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster36FeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster36DeepslateFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster34FeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster34DeepslateFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster32FeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster32DeepslateFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster30FeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.CrystalliteCluster30DeepslateFeatureFeature;
-import net.mcreator.bettertoolsandarmor.world.features.BlackstoneMagmaReplaceNormalMagmaFeature;
-import net.mcreator.bettertoolsandarmor.world.features.BlackstoneMagmaFeatureFeature;
+import net.mcreator.bettertoolsandarmor.world.features.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 public class BetterToolsModFeatures {

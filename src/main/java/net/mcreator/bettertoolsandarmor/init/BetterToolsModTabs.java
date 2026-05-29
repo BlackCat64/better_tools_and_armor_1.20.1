@@ -17,7 +17,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class BetterToolsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BetterToolsMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BETTER_TOOLS_AND_ARMOR_MISC = REGISTRY.register("better_tools_and_armor_misc",

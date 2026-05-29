@@ -10,7 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.bettertoolsandarmor.client.gui.EnergyVialMenuScreen;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {

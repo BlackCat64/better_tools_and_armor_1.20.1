@@ -9,7 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.GameRules;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class BetterToolsModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> DISPLAY_DAMAGE_VALUES;
 	public static GameRules.Key<GameRules.BooleanValue> DISPLAY_XP_DROP_VALUES;

@@ -42,7 +42,7 @@ public class CrystalliteSculkArmorReducedDetectionRangeProcedure {
 		double default_range = 0;
 		if (BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer == 0) {
 			BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer = 20;
-			BetterToolsModVariables.MapVariables.get(world).syncData(world);
+			BetterToolsModVariables.MapVariables.get(world).markSyncDirty();
 			armor_pieces = 0;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()) {
 				armor_pieces = armor_pieces + 1;

@@ -14,7 +14,7 @@ import net.minecraft.core.Direction;
 import net.mcreator.bettertoolsandarmor.procedures.FireStaffDispensedProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class FireStaffInDispenserItemExtension {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

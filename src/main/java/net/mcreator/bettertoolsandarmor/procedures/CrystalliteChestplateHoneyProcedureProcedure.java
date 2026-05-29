@@ -42,7 +42,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 							{
 								BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 								_vars.crystallite_honey_absorption_timer = 200;
-								_vars.syncPlayerVariables(entity);
+								_vars.markSyncDirty();
 							}
 						}
 					}

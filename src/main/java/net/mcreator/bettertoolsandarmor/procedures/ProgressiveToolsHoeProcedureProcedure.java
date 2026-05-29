@@ -78,17 +78,17 @@ public class ProgressiveToolsHoeProcedureProcedure {
 					new_pickaxe.applyComponents(hoe.getComponents());
 					if (off_hand) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new_pickaxe.copy();
-							_setstack.setCount(1);
-							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+							ItemStack _setstack30 = new_pickaxe.copy();
+							_setstack30.setCount(1);
+							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack30);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}
 					} else {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new_pickaxe.copy();
-							_setstack.setCount(1);
-							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							ItemStack _setstack31 = new_pickaxe.copy();
+							_setstack31.setCount(1);
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack31);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}

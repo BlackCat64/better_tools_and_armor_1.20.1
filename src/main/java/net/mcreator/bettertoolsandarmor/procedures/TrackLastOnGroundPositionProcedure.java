@@ -29,17 +29,9 @@ public class TrackLastOnGroundPositionProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.last_on_ground_x = Math.floor(x) + 0.5;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.last_on_ground_y = y;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.last_on_ground_z = Math.floor(z) + 0.5;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}
