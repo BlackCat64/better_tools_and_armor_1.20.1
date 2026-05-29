@@ -9,12 +9,14 @@ import net.minecraft.client.model.CowModel;
 import net.mcreator.bettertoolsandarmor.entity.PurpleMooshroomEntity;
 
 public class PurpleMooshroomRenderer extends MobRenderer<PurpleMooshroomEntity, CowModel<PurpleMooshroomEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("better_tools:textures/entities/purple_mooshroom.png");
+
 	public PurpleMooshroomRenderer(EntityRendererProvider.Context context) {
 		super(context, new CowModel<PurpleMooshroomEntity>(context.bakeLayer(ModelLayers.COW)), 0.5f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(PurpleMooshroomEntity entity) {
-		return ResourceLocation.parse("better_tools:textures/entities/purple_mooshroom.png");
+		return entityTexture;
 	}
 }

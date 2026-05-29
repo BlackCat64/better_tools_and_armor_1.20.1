@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,12 +14,7 @@ import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProc
 
 public class EndTitaniumBlockBlock extends Block {
 	public EndTitaniumBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(s -> 4).instrument(NoteBlockInstrument.BASEDRUM));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.NETHERITE_BLOCK).strength(60f, 1500f).lightLevel(blockstate -> 4).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

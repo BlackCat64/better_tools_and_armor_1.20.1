@@ -20,9 +20,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "better_tools:ruby_pickaxe"
-            ],
+            "items": "better_tools:ruby_pickaxe",
             "count": {
               "min": 1,
               "max": 64

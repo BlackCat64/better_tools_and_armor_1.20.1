@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"123\" y=\"77\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"procedure_retval_logic\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"undefined\"/><field name=\"procedure\">PlayerHasEnergyVialEquipped</field></block></value><statement name=\"DO0\"><block type=\"call_procedure\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"procedure\">EnergyVialOpenGui</field></block></statement></block></next></block></xml>",

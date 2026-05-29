@@ -20,9 +20,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "better_tools:nether_diamond"
-            ],
+            "items": "better_tools:nether_diamond",
             "count": {
               "min": 1,
               "max": 64

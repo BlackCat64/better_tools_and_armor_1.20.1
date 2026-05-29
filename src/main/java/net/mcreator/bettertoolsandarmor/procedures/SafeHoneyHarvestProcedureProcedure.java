@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -42,7 +43,7 @@ public class SafeHoneyHarvestProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, Entity entity) {
 		if (direction == null || entity == null)
 			return;
-		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:beehives"))) && (blockstate.getBlock().getStateDefinition().getProperty("honey_level") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 5
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:beehives"))) && (getPropertyByName(blockstate, "honey_level") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 5
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))) {
 			{
 				int _value = 0;
@@ -72,5 +73,14 @@ public class SafeHoneyHarvestProcedureProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 		}
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

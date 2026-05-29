@@ -20412,9 +20412,7 @@
       "locked_code": false,
       "registry_name": "fire_staff_in_dispenser",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/FireStaffInDispenserItemExtension.java"
-        ]
+        "files": []
       },
       "path": "~/Staffs/Fire"
     },
@@ -20478,9 +20476,7 @@
       "locked_code": false,
       "registry_name": "ice_staff_in_dispenser",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/IceStaffInDispenserItemExtension.java"
-        ]
+        "files": []
       },
       "path": "~/Staffs/Ice"
     },
@@ -20632,9 +20628,7 @@
       "locked_code": false,
       "registry_name": "lightning_staff_in_dispenser",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/extension/LightningStaffInDispenserItemExtension.java"
-        ]
+        "files": []
       },
       "path": "~/Staffs/Lightning"
     },
@@ -35924,6 +35918,7 @@
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/better_tools.mixins.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTabs.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModDispenseBehaviors.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModSounds.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
@@ -36324,5 +36319,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600114619
 }

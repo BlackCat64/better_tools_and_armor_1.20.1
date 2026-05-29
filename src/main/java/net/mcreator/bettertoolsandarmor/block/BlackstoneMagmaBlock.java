@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -19,13 +17,8 @@ import net.mcreator.bettertoolsandarmor.procedures.MagmaDamageProcedureProcedure
 
 public class BlackstoneMagmaBlock extends Block {
 	public BlackstoneMagmaBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.NETHERRACK).strength(0.5f).lightLevel(s -> 3).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
-				.instrument(NoteBlockInstrument.BASEDRUM));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.NETHERRACK).strength(0.5f).lightLevel(blockstate -> 3).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true)
+				.emissiveRendering((bs, br, bp) -> true).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

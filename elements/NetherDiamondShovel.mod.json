@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -9,6 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Nether Diamond Shovel",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§4Plants may drop Charcoal"
@@ -35,6 +36,7 @@
     "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

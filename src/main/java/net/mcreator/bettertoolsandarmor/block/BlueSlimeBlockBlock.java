@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
@@ -26,7 +24,7 @@ import java.util.List;
 
 public class BlueSlimeBlockBlock extends Block {
 	public BlueSlimeBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.SLIME_BLOCK).instabreak().lightLevel(s -> 3).friction(0.8f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.SLIME_BLOCK).instabreak().lightLevel(blockstate -> 3).friction(0.8f).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

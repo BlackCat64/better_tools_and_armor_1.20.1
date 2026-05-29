@@ -19,9 +19,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "better_tools:berry_pie"
-          ]
+          "items": "better_tools:berry_pie"
         }
       }
     }

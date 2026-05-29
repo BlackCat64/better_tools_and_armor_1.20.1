@@ -27,6 +27,9 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 	private Checkbox chestplate_active;
 	private Checkbox leggings_active;
 	private Checkbox boots_active;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("better_tools:textures/screens/energy_vial_menu.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png");
+	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png");
 
 	public EnergyVialMenuScreen(EnergyVialMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -59,8 +62,6 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		}
 		menuStateUpdateActive = false;
 	}
-
-	private static final ResourceLocation texture = ResourceLocation.parse("better_tools:textures/screens/energy_vial_menu.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -108,9 +109,9 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 32, this.topPos + 50, 0, 0, 22, 15, 22, 15);
-		guiGraphics.blit(ResourceLocation.parse("better_tools:textures/screens/gui_arrow.png"), this.leftPos + 86, this.topPos + 50, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 32, this.topPos + 50, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 86, this.topPos + 50, 0, 0, 22, 15, 22, 15);
 		RenderSystem.disableBlend();
 	}
 

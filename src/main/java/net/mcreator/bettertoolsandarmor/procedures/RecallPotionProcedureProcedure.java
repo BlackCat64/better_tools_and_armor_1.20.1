@@ -2,6 +2,7 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.neoforged.neoforge.items.ItemHandlerHelper;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
@@ -51,17 +52,18 @@ public class RecallPotionProcedureProcedure {
 								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
 								: 0)))
 						.getBlock() == Blocks.RESPAWN_ANCHOR) {
-					if (((world.getBlockState(BlockPos.containing(
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
-									: 0,
-							(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-									: 0)))
-							.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip13
+					if ((getPropertyByName(
+							(world.getBlockState(BlockPos.containing(
+									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
+											: 0,
+									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
+											: 0,
+									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
+											: 0))),
+							"charges") instanceof IntegerProperty _getip13
 									? (world.getBlockState(BlockPos.containing((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
 											: 0,
@@ -78,7 +80,7 @@ public class RecallPotionProcedureProcedure {
 											.getValue(_getip13)
 									: -1) > 0) {
 						{
-							int _value = ((world.getBlockState(BlockPos.containing(
+							int _value = (getPropertyByName((world.getBlockState(BlockPos.containing(
 									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
 											: 0,
@@ -87,8 +89,8 @@ public class RecallPotionProcedureProcedure {
 											: 0,
 									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-											: 0)))
-									.getBlock().getStateDefinition().getProperty("charges") instanceof IntegerProperty _getip21
+											: 0))),
+									"charges") instanceof IntegerProperty _getip21
 											? (world.getBlockState(BlockPos.containing(
 													(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 															? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
@@ -311,5 +313,14 @@ public class RecallPotionProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

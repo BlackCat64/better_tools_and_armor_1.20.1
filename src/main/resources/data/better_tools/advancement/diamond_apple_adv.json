@@ -19,9 +19,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "better_tools:diamond_apple"
-          ]
+          "items": "better_tools:diamond_apple"
         }
       }
     }

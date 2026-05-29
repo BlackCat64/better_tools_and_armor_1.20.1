@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -9,6 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Ender Titanium Shovel",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§5Mines End Stone instantly"
@@ -135,6 +136,7 @@
         "value": "Blocks.CONCRETE_POWDER#15"
       }
     ],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

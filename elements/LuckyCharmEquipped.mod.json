@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"text\" x=\"492\" y=\"317\"><field name=\"TEXT\">20174daf-d532-4c70-b15d-a32ee360384d</field></block><block type=\"text\" x=\"495\" y=\"354\"><field name=\"TEXT\">lucky_charm</field></block><block type=\"math_number\" x=\"514\" y=\"416\"><field name=\"NUM\">1</field></block></xml>",

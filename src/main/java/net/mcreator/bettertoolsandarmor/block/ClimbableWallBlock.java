@@ -18,27 +18,19 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.bettertoolsandarmor.procedures.ClimbableWallDeleteProcedureProcedure;
 
 public class ClimbableWallBlock extends Block {
+	private static final VoxelShape SHAPE = Shapes.empty();
+
 	public ClimbableWallBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.LADDER).strength(-1, 3600000).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).replaceable());
-	}
-
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.LADDER).strength(-1, 3600000).requiresCorrectToolForDrops().noCollission().isRedstoneConductor((bs, br, bp) -> false).replaceable());
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
 	}
 

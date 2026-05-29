@@ -29,8 +29,15 @@ import net.mcreator.bettertoolsandarmor.procedures.RemoveCrystalliteClusterAirPr
 import net.mcreator.bettertoolsandarmor.procedures.CrystalliteClusterParticlesProcedureProcedure;
 
 public class CrystalliteClusterAirBlock extends Block {
+	private static final VoxelShape SHAPE = box(4, 4, 4, 12, 12, 12);
+
 	public CrystalliteClusterAirBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.GLASS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).replaceable().instrument(NoteBlockInstrument.BASEDRUM));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.GLASS).strength(1f).noCollission().randomTicks().isRedstoneConductor((bs, br, bp) -> false).replaceable().instrument(NoteBlockInstrument.BASEDRUM));
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
 	}
 
 	@Override
@@ -39,23 +46,8 @@ public class CrystalliteClusterAirBlock extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(4, 4, 4, 12, 12, 12);
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "particle",
   "definition": {
     "texture": "crystallite_ore_location_particle",
@@ -10,6 +10,7 @@
     "scale": {
       "fixedValue": 1.0
     },
+    "fixedScale": false,
     "speedFactor": 1.0,
     "gravity": 0.0,
     "maxAge": 200,

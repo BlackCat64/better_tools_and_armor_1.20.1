@@ -19,9 +19,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "better_tools:sugar_clump"
-          ]
+          "items": "better_tools:sugar_clump"
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -9,6 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Nether Diamond Dagger",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§4Sets the target on fire"
@@ -35,6 +36,7 @@
     "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

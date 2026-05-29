@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 85,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -9,6 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Nether Diamond Pickaxe",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§4Smelts all raw ore drops"
@@ -35,6 +36,7 @@
     "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }
