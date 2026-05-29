@@ -23,7 +23,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class WardenStaffSonicBoomProcedure {
@@ -56,8 +55,7 @@ public class WardenStaffSonicBoomProcedure {
 				_level.sendParticles(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 1, 0, 0, 0, 0);
 			{
 				final Vec3 _center = new Vec3(look_x, look_y, look_z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.SONIC_BOOM), null, entity), (float) (10
 								+ 2 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))))));

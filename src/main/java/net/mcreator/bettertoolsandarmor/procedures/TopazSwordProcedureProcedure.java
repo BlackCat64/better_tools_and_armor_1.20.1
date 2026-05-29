@@ -24,7 +24,6 @@ import net.minecraft.advancements.AdvancementHolder;
 
 import javax.annotation.Nullable;
 
-import java.util.List;
 import java.util.Comparator;
 
 @EventBusSubscriber
@@ -75,8 +74,8 @@ public class TopazSwordProcedureProcedure {
 				success = false;
 				{
 					final Vec3 _center = new Vec3((closest.getX()), (closest.getY()), (closest.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((range * 2) / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((range * 2) / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.toList()) {
 						if (entityiterator.getPersistentData().getBoolean("can_electric_chain") && entityiterator instanceof LivingEntity && !(entityiterator == sourceentity || entityiterator == closest)) {
 							success = true;
 							ElectricChainParticlesProcedure.execute(world, entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), closest.getX(), closest.getY() + closest.getBbHeight() / 2, closest.getZ());

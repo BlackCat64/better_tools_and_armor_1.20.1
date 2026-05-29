@@ -28,11 +28,7 @@ public class TrappedInGroundStopMovementProcedure {
 				entity.setDeltaMovement(new Vec3(0, (-2), 0));
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.ASH, x, ((y + entity.getBbHeight()) / 2), z, 1, 0.33, 0.5, 0.33, 0.015);
-				display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null);
+				display = findEntityInWorldRange(world, Display.BlockDisplay.class, x, y, z, 4);
 				if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("trapped_in_ground")) {
 					{
 						Entity _ent = display;
@@ -64,5 +60,9 @@ public class TrappedInGroundStopMovementProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(BetterToolsModMobEffects.PITFALL);
 		}
+	}
+
+	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
+		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

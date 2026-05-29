@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-    "better_tools:guardian_staff",
-    "better_tools:warden_staff",
-    "better_tools:electric_staff",
-    "better_tools:ice_staff",
-    "better_tools:fire_staff",
-    "better_tools:crystallite_bow",
     "better_tools:crystallite_bow_honey",
     "better_tools:crystallite_bow_prismarine",
     "better_tools:crystallite_bow_amethyst",
@@ -22,6 +16,12 @@
     "better_tools:crystallite_bow_redstone",
     "better_tools:crystallite_bow_lapis",
     "better_tools:crystallite_bow_gold",
-    "better_tools:crystallite_bow_iron"
+    "better_tools:crystallite_bow_iron",
+    "better_tools:crystallite_bow",
+    "better_tools:guardian_staff",
+    "better_tools:warden_staff",
+    "better_tools:fire_staff",
+    "better_tools:ice_staff",
+    "better_tools:electric_staff"
   ]
 }

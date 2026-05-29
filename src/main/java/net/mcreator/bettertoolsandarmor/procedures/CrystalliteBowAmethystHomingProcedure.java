@@ -21,7 +21,6 @@ import net.minecraft.advancements.AdvancementHolder;
 import javax.annotation.Nullable;
 
 import java.util.UUID;
-import java.util.List;
 import java.util.Comparator;
 
 @EventBusSubscriber
@@ -64,9 +63,8 @@ public class CrystalliteBowAmethystHomingProcedure {
 					}
 					{
 						final Vec3 _center = new Vec3((arrow.getX()), (arrow.getY()), (arrow.getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((entity.getPersistentData().getDouble("homing_radius") * 2) / 2d), e -> true).stream()
-								.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((entity.getPersistentData().getDouble("homing_radius") * 2) / 2d), e -> true).stream()
+								.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 							if (!(entityiterator == null || entityiterator == player) && (entityiterator instanceof Mob || entityiterator instanceof Player) && !entityiterator.isInvisible()) {
 								ArrowHomingProcedureProcedure.execute(world, arrow, entityiterator);
 								HomingArrowParticlesProcedure.execute(world, arrow.getX(), arrow.getY(), arrow.getZ(), entityiterator.getX(), entityiterator.getY() + entityiterator.getBbHeight() / 2, entityiterator.getZ());

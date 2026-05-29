@@ -30,7 +30,6 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
 
-import java.util.List;
 import java.util.Comparator;
 
 @EventBusSubscriber
@@ -80,8 +79,7 @@ public class OreBreakEffectsProcedureProcedure {
 				BetterToolsMod.queueServerWork(2, () -> {
 					{
 						final Vec3 _center = new Vec3((x + 0.5), (y + 0.8), (z + 0.5));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 							if (entityiterator instanceof ItemEntity) {
 								if (!entityiterator.level().isClientSide())
 									entityiterator.discard();

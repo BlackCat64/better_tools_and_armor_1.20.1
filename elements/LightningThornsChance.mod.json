@@ -1,11 +1,12 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "attribute",
   "definition": {
     "name": "Lightning Thorns Chance",
     "minValue": 0.0,
     "maxValue": 1.0,
     "defaultValue": 0.0,
+    "sentiment": "POSITIVE",
     "addToAllEntities": true,
     "addToPlayers": false,
     "entities": []

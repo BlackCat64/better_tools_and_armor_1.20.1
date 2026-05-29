@@ -31688,12 +31688,6 @@
       "CUSTOM:CrystalliteHoeNetherite"
     ],
     "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:GuardianStaff",
-      "~CUSTOM:WardenStaff",
-      "~CUSTOM:ElectricStaff",
-      "~CUSTOM:IceStaff",
-      "~CUSTOM:FireStaff",
-      "~CUSTOM:CrystalliteBow",
       "~CUSTOM:CrystalliteBowHoney",
       "~CUSTOM:CrystalliteBowPrismarine",
       "~CUSTOM:CrystalliteBowAmethyst",
@@ -31709,7 +31703,13 @@
       "~CUSTOM:CrystalliteBowRedstone",
       "~CUSTOM:CrystalliteBowLapis",
       "~CUSTOM:CrystalliteBowGold",
-      "~CUSTOM:CrystalliteBowIron"
+      "~CUSTOM:CrystalliteBowIron",
+      "~CUSTOM:CrystalliteBow",
+      "~CUSTOM:GuardianStaff",
+      "~CUSTOM:WardenStaff",
+      "~CUSTOM:FireStaff",
+      "~CUSTOM:IceStaff",
+      "~CUSTOM:ElectricStaff"
     ],
     "ITEMS:forge:armors/helmets": [
       "CUSTOM:NetherDiamondArmor.helmet",
@@ -36292,5 +36292,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500113416
 }

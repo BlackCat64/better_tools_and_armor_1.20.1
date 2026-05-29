@@ -21,7 +21,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class CrystalliteSwordGoldSplashDamageProcedure {
@@ -46,8 +45,7 @@ public class CrystalliteSwordGoldSplashDamageProcedure {
 			}
 			{
 				final Vec3 _center = new Vec3(x, (y + 1), z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity)) {
 						if (Math.abs(entity.getY() - entityiterator.getY()) <= 1) {
 							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity, entity), (float) (sword_damage * multiplier));

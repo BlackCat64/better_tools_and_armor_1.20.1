@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"text\" x=\"422\" y=\"40\"><field name=\"TEXT\">73f6614b-58c6-409d-953c-c2eb877d2e91</field></block><block type=\"text\" x=\"441\" y=\"82\"><field name=\"TEXT\">diamond_hard_plate_armor</field></block><block type=\"math_number\" x=\"457\" y=\"141\"><field name=\"NUM\">2</field></block><block type=\"text\" x=\"430\" y=\"198\"><field name=\"TEXT\">7746ac65-5e7c-48bd-a21b-5de649aa31d0</field></block><block type=\"text\" x=\"440\" y=\"235\"><field name=\"TEXT\">diamond_hard_plate_toughness</field></block><block type=\"math_number\" x=\"438\" y=\"281\"><field name=\"NUM\">2</field></block></xml>"

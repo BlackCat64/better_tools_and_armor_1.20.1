@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -37,16 +38,7 @@ public class CrystalliteNetheriteHoeProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:mines_nether_wood_instantly"))) && !(new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-				}
-				return false;
-			}
-		}.checkGamemode(entity))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:mines_nether_wood_instantly"))) && !(getEntityGameType(entity) == GameType.CREATIVE)) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:warped_stems")))
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:crimson_stems")))
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:wart_blocks")))
@@ -63,5 +55,16 @@ public class CrystalliteNetheriteHoeProcedureProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

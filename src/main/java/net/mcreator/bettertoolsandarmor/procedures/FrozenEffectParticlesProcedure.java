@@ -32,11 +32,7 @@ public class FrozenEffectParticlesProcedure {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				entity.setTicksFrozen(135);
 				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				display = (Entity) world.getEntitiesOfClass(Display.BlockDisplay.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null);
+				display = findEntityInWorldRange(world, Display.BlockDisplay.class, x, y, z, 4);
 				if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("freeze_effect")) {
 					{
 						Entity _ent = display;
@@ -65,5 +61,9 @@ public class FrozenEffectParticlesProcedure {
 				DeleteEntityIceBlockDisplayProcedure.execute(entity);
 			}
 		}
+	}
+
+	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
+		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

@@ -22,6 +22,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -56,17 +57,7 @@ public class CrystalliteHoeEmeraldDirtToGrassProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 1.25), (z + 0.5), 3, 0.5, 0.25, 0.5, 0.1);
-					if (!(new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-							}
-							return false;
-						}
-					}.checkGamemode(entity))) {
+					if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 						if (world instanceof ServerLevel _level) {
 							(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
 							});
@@ -82,5 +73,16 @@ public class CrystalliteHoeEmeraldDirtToGrassProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }
