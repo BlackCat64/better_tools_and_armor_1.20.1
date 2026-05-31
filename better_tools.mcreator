@@ -30841,6 +30841,87 @@
         ]
       },
       "path": "~/Staffs/Guardian"
+    },
+    {
+      "name": "ToughNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tough_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/tough_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ToughNecklaceItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "ToughNecklaceCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tough_necklace_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "HasCuriosItemEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_curios_item_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "curiosItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HasCuriosItemEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "GetEquippedCuriosItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_equipped_curios_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "curiosItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEquippedCuriosItemProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
     }
   ],
   "variable_elements": [
@@ -34032,7 +34113,8 @@
       "CrystalliteHoeHoney",
       "CrystalliteDaggerHoney",
       "CrystalliteBowHoney",
-      "CrystalliteArmorHoney"
+      "CrystalliteArmorHoney",
+      "ToughNecklace"
     ],
     "CUSTOM:ToolsAndArmorTab": [
       "NetherDiamond",
@@ -35884,7 +35966,10 @@
       "item.better_tools.ruby_shovel": "Ruby Shovel",
       "item.better_tools.crystallite_shovel_honey.description_2": "§6Pollinator - Breaking the same plant many times in a row may drop Bone Meal",
       "advancements.max_knockback_resistance_adv.title": "Immovable Object",
-      "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign"
+      "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign",
+      "item.better_tools.tough_necklace.description_0": "§7When worn:",
+      "item.better_tools.tough_necklace.description_1": "§9+1.5 Knockback Resistance",
+      "item.better_tools.tough_necklace": "Tough Necklace"
     }
   },
   "metadata": {
@@ -35892,6 +35977,10 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModAttributes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBiomes.java",
+      "src/main/resources/data/curios/tags/item/necklace.json",
+      "src/main/resources/data/better_tools/curios/entities/slots.json",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModCuriosCompat.java",
+      "src/main/resources/data/better_tools/curios/slots/necklace.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/network/MenuStateUpdateMessage.java",

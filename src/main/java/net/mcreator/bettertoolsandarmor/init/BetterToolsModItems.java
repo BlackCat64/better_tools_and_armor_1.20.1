@@ -512,6 +512,7 @@ public class BetterToolsModItems {
 	public static final DeferredItem<Item> LAPIS_DAGGER;
 	public static final DeferredItem<Item> EMERALD_SWORD;
 	public static final DeferredItem<Item> EMERALD_DAGGER;
+	public static final DeferredItem<Item> TOUGH_NECKLACE;
 	static {
 		NETHER_DIAMOND = REGISTRY.register("nether_diamond", NetherDiamondItem::new);
 		NETHER_DIAMOND_SWORD = REGISTRY.register("nether_diamond_sword", NetherDiamondSwordItem::new);
@@ -1006,6 +1007,7 @@ public class BetterToolsModItems {
 		LAPIS_DAGGER = REGISTRY.register("lapis_dagger", LapisDaggerItem::new);
 		EMERALD_SWORD = REGISTRY.register("emerald_sword", EmeraldSwordItem::new);
 		EMERALD_DAGGER = REGISTRY.register("emerald_dagger", EmeraldDaggerItem::new);
+		TOUGH_NECKLACE = REGISTRY.register("tough_necklace", ToughNecklaceItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",

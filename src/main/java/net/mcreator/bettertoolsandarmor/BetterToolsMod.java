@@ -55,6 +55,9 @@ public class BetterToolsMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		if (ModList.get().isLoaded("curios")) {
+			modEventBus.addListener(BetterToolsModCuriosCompat::registerCapabilities);
+		}
 		BetterToolsModSounds.REGISTRY.register(modEventBus);
 		BetterToolsModBlocks.REGISTRY.register(modEventBus);
 		BetterToolsModItems.REGISTRY.register(modEventBus);

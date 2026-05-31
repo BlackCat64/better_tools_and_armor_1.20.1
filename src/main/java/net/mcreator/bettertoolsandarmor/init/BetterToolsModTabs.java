@@ -270,6 +270,7 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
+				tabData.accept(BetterToolsModItems.TOUGH_NECKLACE.get());
 			}).withTabsBefore(BETTER_TOOLS_AND_ARMOR_MISC.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {

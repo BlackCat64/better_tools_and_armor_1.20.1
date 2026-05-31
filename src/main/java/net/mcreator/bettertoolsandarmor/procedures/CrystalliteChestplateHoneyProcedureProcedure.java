@@ -48,7 +48,7 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 					}
 				}
 			}
-		} else if (true) {
+		} else if (false) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(
 						(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + Math.min(entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)));

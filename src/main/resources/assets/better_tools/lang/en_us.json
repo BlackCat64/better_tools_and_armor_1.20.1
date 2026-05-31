@@ -1717,5 +1717,8 @@
   "item.better_tools.ruby_shovel": "Ruby Shovel",
   "item.better_tools.crystallite_shovel_honey.description_2": "§6Pollinator - Breaking the same plant many times in a row may drop Bone Meal",
   "advancements.max_knockback_resistance_adv.title": "Immovable Object",
-  "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign"
+  "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign",
+  "item.better_tools.tough_necklace.description_0": "§7When worn:",
+  "item.better_tools.tough_necklace.description_1": "§9+1.5 Knockback Resistance",
+  "item.better_tools.tough_necklace": "Tough Necklace"
 }
