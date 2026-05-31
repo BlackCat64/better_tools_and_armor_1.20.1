@@ -30922,6 +30922,60 @@
         ]
       },
       "path": "~/Utility Procedures"
+    },
+    {
+      "name": "MigrateEntityDataTo121",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "migrate_entity_data_to_121",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MigrateEntityDataTo121Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MigrateEntityDataOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "migrate_entity_data_on_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MigrateEntityDataOnSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MigratePlayerDataOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "migrate_player_data_on_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MigratePlayerDataOnSpawnProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
