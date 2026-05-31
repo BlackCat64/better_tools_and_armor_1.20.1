@@ -35903,6 +35903,7 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticleTypes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMobEffects.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModPotions.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBrewingRecipes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModVillagerProfessions.java",
       "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModTrades.java",
@@ -36311,10 +36312,14 @@
     "modPicture": "new_mod_logo_curseforge",
     "requiredMods": [],
     "dependencies": [
+      "curios",
       "jei"
     ],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "jei"
+    ],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bettertoolsandarmor"
