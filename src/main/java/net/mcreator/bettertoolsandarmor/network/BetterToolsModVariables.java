@@ -80,7 +80,6 @@ public class BetterToolsModVariables {
 		PlayerVariables clone = new PlayerVariables();
 		clone.respawn_xp = original.respawn_xp;
 		clone.extra_jumps = original.extra_jumps;
-		clone.charms_equipped = original.charms_equipped;
 		clone.last_on_ground_x = original.last_on_ground_x;
 		clone.last_on_ground_y = original.last_on_ground_y;
 		clone.last_on_ground_z = original.last_on_ground_z;
@@ -270,7 +269,6 @@ public class BetterToolsModVariables {
 		boolean _syncDirty = false;
 		public double respawn_xp = 0.0;
 		public double extra_jumps = 0.0;
-		public double charms_equipped = 0.0;
 		public double time_since_last_hurt = 0;
 		public double crystallite_emerald_heal_timer = 0.0;
 		public boolean critical_hit = false;
@@ -306,7 +304,6 @@ public class BetterToolsModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("respawn_xp", respawn_xp);
 			nbt.putDouble("extra_jumps", extra_jumps);
-			nbt.putDouble("charms_equipped", charms_equipped);
 			nbt.putDouble("time_since_last_hurt", time_since_last_hurt);
 			nbt.putDouble("crystallite_emerald_heal_timer", crystallite_emerald_heal_timer);
 			nbt.putBoolean("critical_hit", critical_hit);
@@ -343,7 +340,6 @@ public class BetterToolsModVariables {
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			respawn_xp = nbt.getDouble("respawn_xp");
 			extra_jumps = nbt.getDouble("extra_jumps");
-			charms_equipped = nbt.getDouble("charms_equipped");
 			time_since_last_hurt = nbt.getDouble("time_since_last_hurt");
 			crystallite_emerald_heal_timer = nbt.getDouble("crystallite_emerald_heal_timer");
 			critical_hit = nbt.getBoolean("critical_hit");

@@ -8,9 +8,11 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -76,10 +78,28 @@ public class SapphireArmorSetAttributesProcedure {
 				chance = chance * (crystallite ? 1.5 : 2);
 				time = time * (crystallite ? 1.5 : 2);
 			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).removeModifier(ResourceLocation.parse("better_tools:sapphire_armor"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).removeModifier(ResourceLocation.parse("better_tools:sapphire_armor"));
+			}
 			if (chance > 0) {
-				chance = chance + (entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity17.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
-				if (true) {
+				chance = chance + (entity instanceof LivingEntity _livingEntity19 && _livingEntity19.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity19.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {
 					chance = chance + 0.1;
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), chance, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).hasModifier(modifier.id())) {
+							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).addTransientModifier(modifier);
+						}
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), time, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).hasModifier(modifier.id())) {
+							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).addTransientModifier(modifier);
+						}
+					}
 				}
 			}
 		}

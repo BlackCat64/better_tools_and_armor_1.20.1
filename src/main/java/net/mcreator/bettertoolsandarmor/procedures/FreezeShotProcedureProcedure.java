@@ -8,6 +8,7 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -19,6 +20,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -47,7 +49,7 @@ public class FreezeShotProcedureProcedure {
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 0.1;
 			freeze_time = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 66;
-			if (true) {
+			if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {
 				FreezeShotChance = FreezeShotChance + 0.1;
 			}
 			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_sapphire_upgrade")) {
@@ -58,9 +60,7 @@ public class FreezeShotProcedureProcedure {
 				FreezeShotChance = FreezeShotChance * 2;
 			}
 			if (FreezeShotChance > 0) {
-				if (false) {
-					FreezeShotChance = FreezeShotChance + 1 * 0.05;
-				}
+				FreezeShotChance = FreezeShotChance + (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity9.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (Math.random() < FreezeShotChance) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, false));

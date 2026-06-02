@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -21,15 +22,15 @@ public class CrystalliteArmorXPProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event.getEntity() != null) {
-			execute(event, event.getEntity());
+			execute(event, event.getEntity().level(), event.getEntity());
 		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double original_xp = 0;
@@ -52,7 +53,7 @@ public class CrystalliteArmorXPProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_BOOTS.get()) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if (true) {
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.MAGIC_RING.get()))) {
 			armor_pieces = armor_pieces + 1;
 		}
 		if (armor_pieces >= 4) {

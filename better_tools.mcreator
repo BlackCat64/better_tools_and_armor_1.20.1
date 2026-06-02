@@ -6986,6 +6986,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -17349,6 +17353,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -21526,25 +21534,6 @@
         ]
       },
       "path": "~/Crystallite/Lapis"
-    },
-    {
-      "name": "CharmAdvBugfix",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "charm_adv_bugfix",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CharmAdvBugfixProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
     },
     {
       "name": "RecallPotion",
@@ -28518,20 +28507,6 @@
       "path": "~/Utility Procedures"
     },
     {
-      "name": "TrackCharmsEquipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "track_charms_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TrackCharmsEquippedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Utility Procedures/Tracking Variables"
-    },
-    {
       "name": "FortuneGetNumOfDrops",
       "type": "procedure",
       "compiles": true,
@@ -31467,12 +31442,6 @@
     },
     {
       "name": "extra_jumps",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
-    },
-    {
-      "name": "charms_equipped",
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
