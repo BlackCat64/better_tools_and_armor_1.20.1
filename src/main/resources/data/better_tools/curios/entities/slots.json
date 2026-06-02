@@ -4,6 +4,9 @@
     "player"
   ],
   "slots": [
-    "necklace"
+    "necklace",
+    "hands",
+    "charm",
+    "head"
   ]
 }

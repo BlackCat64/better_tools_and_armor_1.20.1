@@ -513,6 +513,25 @@ public class BetterToolsModItems {
 	public static final DeferredItem<Item> EMERALD_SWORD;
 	public static final DeferredItem<Item> EMERALD_DAGGER;
 	public static final DeferredItem<Item> TOUGH_NECKLACE;
+	public static final DeferredItem<Item> GILDED_BRACELET;
+	public static final DeferredItem<Item> MAGIC_RING;
+	public static final DeferredItem<Item> HEART_CHARM;
+	public static final DeferredItem<Item> DIAMOND_HARD_PLATE;
+	public static final DeferredItem<Item> WITHERED_GAUNTLET;
+	public static final DeferredItem<Item> SPEEDY_NECKLACE;
+	public static final DeferredItem<Item> ICY_BRACELET;
+	public static final DeferredItem<Item> ELECTRIC_NECKLACE;
+	public static final DeferredItem<Item> FLAMING_CIRCLET;
+	public static final DeferredItem<Item> NATURE_RING;
+	public static final DeferredItem<Item> WARDEN_HEADBAND;
+	public static final DeferredItem<Item> REFLECT_CHARM;
+	public static final DeferredItem<Item> EARTH_CIRCLET;
+	public static final DeferredItem<Item> GUARDIAN_NECKLACE;
+	public static final DeferredItem<Item> CURING_CHARM;
+	public static final DeferredItem<Item> BOUNCY_BRACELET;
+	public static final DeferredItem<Item> LUCKY_CHARM;
+	public static final DeferredItem<Item> ENDER_GOGGLES;
+	public static final DeferredItem<Item> POISON_CHARM;
 	static {
 		NETHER_DIAMOND = REGISTRY.register("nether_diamond", NetherDiamondItem::new);
 		NETHER_DIAMOND_SWORD = REGISTRY.register("nether_diamond_sword", NetherDiamondSwordItem::new);
@@ -1008,6 +1027,25 @@ public class BetterToolsModItems {
 		EMERALD_SWORD = REGISTRY.register("emerald_sword", EmeraldSwordItem::new);
 		EMERALD_DAGGER = REGISTRY.register("emerald_dagger", EmeraldDaggerItem::new);
 		TOUGH_NECKLACE = REGISTRY.register("tough_necklace", ToughNecklaceItem::new);
+		GILDED_BRACELET = REGISTRY.register("gilded_bracelet", GildedBraceletItem::new);
+		MAGIC_RING = REGISTRY.register("magic_ring", MagicRingItem::new);
+		HEART_CHARM = REGISTRY.register("heart_charm", HeartCharmItem::new);
+		DIAMOND_HARD_PLATE = REGISTRY.register("diamond_hard_plate", DiamondHardPlateItem::new);
+		WITHERED_GAUNTLET = REGISTRY.register("withered_gauntlet", WitheredGauntletItem::new);
+		SPEEDY_NECKLACE = REGISTRY.register("speedy_necklace", SpeedyNecklaceItem::new);
+		ICY_BRACELET = REGISTRY.register("icy_bracelet", IcyBraceletItem::new);
+		ELECTRIC_NECKLACE = REGISTRY.register("electric_necklace", ElectricNecklaceItem::new);
+		FLAMING_CIRCLET = REGISTRY.register("flaming_circlet", FlamingCircletItem::new);
+		NATURE_RING = REGISTRY.register("nature_ring", NatureRingItem::new);
+		WARDEN_HEADBAND = REGISTRY.register("warden_headband", WardenHeadbandItem::new);
+		REFLECT_CHARM = REGISTRY.register("reflect_charm", ReflectCharmItem::new);
+		EARTH_CIRCLET = REGISTRY.register("earth_circlet", EarthCircletItem::new);
+		GUARDIAN_NECKLACE = REGISTRY.register("guardian_necklace", GuardianNecklaceItem::new);
+		CURING_CHARM = REGISTRY.register("curing_charm", CuringCharmItem::new);
+		BOUNCY_BRACELET = REGISTRY.register("bouncy_bracelet", BouncyBraceletItem::new);
+		LUCKY_CHARM = REGISTRY.register("lucky_charm", LuckyCharmItem::new);
+		ENDER_GOGGLES = REGISTRY.register("ender_goggles", EnderGogglesItem::new);
+		POISON_CHARM = REGISTRY.register("poison_charm", PoisonCharmItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",

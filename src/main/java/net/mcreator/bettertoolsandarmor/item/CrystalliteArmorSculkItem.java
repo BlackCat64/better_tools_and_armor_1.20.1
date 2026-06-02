@@ -7,11 +7,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
@@ -19,13 +16,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteHelmetSculkProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
 import java.util.EnumMap;
-
-import com.google.common.collect.Iterables;
 
 @EventBusSubscriber
 public abstract class CrystalliteArmorSculkItem extends ArmorItem {
@@ -66,14 +60,6 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_2"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_3"));
 			list.add(Component.translatable("item.better_tools.crystallite_armor_sculk_helmet.description_4"));
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CrystalliteHelmetSculkProcedureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
-			}
 		}
 	}
 

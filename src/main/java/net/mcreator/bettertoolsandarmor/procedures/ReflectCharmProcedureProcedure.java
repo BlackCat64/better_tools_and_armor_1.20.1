@@ -25,6 +25,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
@@ -44,8 +46,8 @@ public class ReflectCharmProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double projectile_speed = 0;
-		if (true && sourceentity instanceof LivingEntity) {
-			if (true) {
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get())) && sourceentity instanceof LivingEntity) {
+			if (!HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get()))) {
 				projectile_speed = 0;
 			} else {
 				if ((immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0) > 0) {

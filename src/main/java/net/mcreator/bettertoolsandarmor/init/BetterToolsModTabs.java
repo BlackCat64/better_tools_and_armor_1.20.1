@@ -271,6 +271,25 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get());
 				tabData.accept(BetterToolsModItems.TOUGH_NECKLACE.get());
+				tabData.accept(BetterToolsModItems.GILDED_BRACELET.get());
+				tabData.accept(BetterToolsModItems.MAGIC_RING.get());
+				tabData.accept(BetterToolsModItems.HEART_CHARM.get());
+				tabData.accept(BetterToolsModItems.DIAMOND_HARD_PLATE.get());
+				tabData.accept(BetterToolsModItems.WITHERED_GAUNTLET.get());
+				tabData.accept(BetterToolsModItems.SPEEDY_NECKLACE.get());
+				tabData.accept(BetterToolsModItems.ICY_BRACELET.get());
+				tabData.accept(BetterToolsModItems.ELECTRIC_NECKLACE.get());
+				tabData.accept(BetterToolsModItems.FLAMING_CIRCLET.get());
+				tabData.accept(BetterToolsModItems.NATURE_RING.get());
+				tabData.accept(BetterToolsModItems.WARDEN_HEADBAND.get());
+				tabData.accept(BetterToolsModItems.REFLECT_CHARM.get());
+				tabData.accept(BetterToolsModItems.EARTH_CIRCLET.get());
+				tabData.accept(BetterToolsModItems.GUARDIAN_NECKLACE.get());
+				tabData.accept(BetterToolsModItems.CURING_CHARM.get());
+				tabData.accept(BetterToolsModItems.BOUNCY_BRACELET.get());
+				tabData.accept(BetterToolsModItems.LUCKY_CHARM.get());
+				tabData.accept(BetterToolsModItems.ENDER_GOGGLES.get());
+				tabData.accept(BetterToolsModItems.POISON_CHARM.get());
 			}).withTabsBefore(BETTER_TOOLS_AND_ARMOR_MISC.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOLS_AND_ARMOR_TAB = REGISTRY.register("tools_and_armor_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.better_tools.tools_and_armor_tab")).icon(() -> new ItemStack(BetterToolsModItems.END_TITANIUM_PICKAXE.get())).displayItems((parameters, tabData) -> {

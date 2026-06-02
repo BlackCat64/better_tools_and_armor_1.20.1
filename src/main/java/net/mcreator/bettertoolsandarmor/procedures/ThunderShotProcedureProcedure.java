@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -20,6 +21,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -43,7 +46,7 @@ public class ThunderShotProcedureProcedure {
 		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity) {
 			LightningChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) * 0.1;
-			if (true) {
+			if (HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.ELECTRIC_NECKLACE.get()))) {
 				LightningChance = LightningChance + 0.1;
 			}
 			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_topaz_upgrade")) {
@@ -53,9 +56,7 @@ public class ThunderShotProcedureProcedure {
 				LightningChance = LightningChance * 2;
 			}
 			if (LightningChance > 0) {
-				if (false) {
-					LightningChance = LightningChance + 1 * 0.05;
-				}
+				LightningChance = LightningChance + (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity5.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (Math.random() < LightningChance) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);

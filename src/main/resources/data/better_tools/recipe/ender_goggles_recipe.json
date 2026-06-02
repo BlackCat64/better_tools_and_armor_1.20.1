@@ -7,11 +7,11 @@
       "item": "better_tools:crystallite_charm_base"
     },
     {
-      "item": "better_tools:end_titanium_ingot"
+      "item": "better_tools:end_titanium_scrap"
     }
   ],
   "result": {
-    "id": "better_tools:deleted_mod_element",
+    "id": "better_tools:ender_goggles",
     "count": 1
   }
 }

@@ -10,9 +10,6 @@
     "textureLeggings": "crystallite_leggings_sculk",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_sculk",
-    "onHelmetTick": {
-      "name": "CrystalliteHelmetSculkProcedure"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:CrystalliteTab"

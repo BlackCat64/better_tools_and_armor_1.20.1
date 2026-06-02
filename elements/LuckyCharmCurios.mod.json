@@ -1,0 +1,32 @@
+{
+  "_fv": 85,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "LuckyCharm",
+    "slotType": "CHARM",
+    "slotAmount": 1,
+    "addSlot": false,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": {
+      "value": "CUSTOM:crystallite_place"
+    },
+    "hasModel": false,
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "onEquip": {
+      "name": "LuckyCharmEquipped"
+    },
+    "onUnequip": {
+      "name": "LuckyCharmUnequipped"
+    },
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Empty",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": []
+  }
+}

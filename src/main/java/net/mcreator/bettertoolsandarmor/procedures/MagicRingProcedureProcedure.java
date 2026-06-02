@@ -6,12 +6,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
 
 import javax.annotation.Nullable;
@@ -21,19 +23,19 @@ public class MagicRingProcedureProcedure {
 	@SubscribeEvent
 	public static void onLivingDropXp(LivingExperienceDropEvent event) {
 		if (event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getAttackingPlayer(), event.getDroppedExperience());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getAttackingPlayer(), event.getDroppedExperience());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity, double droppedexperience) {
-		execute(null, world, x, y, z, sourceentity, droppedexperience);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, double droppedexperience) {
+		execute(null, world, x, y, z, entity, sourceentity, droppedexperience);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity sourceentity, double droppedexperience) {
-		if (sourceentity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, double droppedexperience) {
+		if (entity == null || sourceentity == null)
 			return;
 		double amount = 0;
-		if (sourceentity instanceof Player && true) {
+		if (sourceentity instanceof Player && HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.MAGIC_RING.get()))) {
 			amount = Math.round(0.2 * droppedexperience);
 			if (world instanceof ServerLevel _level)
 				_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) amount));

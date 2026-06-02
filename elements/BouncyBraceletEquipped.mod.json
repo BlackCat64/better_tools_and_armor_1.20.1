@@ -2,7 +2,7 @@
   "_fv": 85,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"text\" x=\"476\" y=\"217\"><field name=\"TEXT\">78907ff0-98e5-4349-b8a4-d43e27bbdd7e</field></block><block type=\"text\" x=\"478\" y=\"258\"><field name=\"TEXT\">bouncy_bracelet</field></block><block type=\"math_number\" x=\"484\" y=\"291\"><field name=\"NUM\">2</field></block></xml>",
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"121\" y=\"79\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_add_modifier\"><field name=\"name\">bouncy_bracelet</field><field name=\"attribute\">ATTACK_KNOCKBACK</field><field name=\"operation\">ADD_VALUE</field><field name=\"permanent\">FALSE</field><value name=\"value\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block></xml>",
     "skipDependencyNullCheck": false
   }
 }

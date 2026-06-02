@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "better_tools:earth_circlet",
+    "better_tools:warden_headband",
+    "better_tools:ender_goggles",
+    "better_tools:flaming_circlet"
+  ]
 }

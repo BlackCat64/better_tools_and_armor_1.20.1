@@ -1,8 +1,0 @@
-{
-  "_fv": 85,
-  "_type": "procedure",
-  "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">player_ticks</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field><comment h=\"80\" pinned=\"false\" w=\"160\">warden headband</comment></block></value><statement name=\"DO0\"><block type=\"call_procedure\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"undefined\"/><field name=\"procedure\">CrystalliteHelmetSculkProcedure</field></block></statement></block></next></block></xml>",
-    "skipDependencyNullCheck": false
-  }
-}

@@ -47,7 +47,8 @@ public class EarthCircletOreIlluminationProcedure {
 		double block_y = 0;
 		double block_z = 0;
 		double radius = 0;
-		if ((true || (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
+		if ((HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.EARTH_CIRCLET.get()))
+				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.AMETHYST_HELMET.get()
 				|| entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(BetterToolsModMobEffects.ORE_VISION)) && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_amethyst_ore_highlight_cooldown == 0) {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);

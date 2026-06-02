@@ -16487,7 +16487,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ToughNecklaceEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Iron"
     },
@@ -16501,7 +16506,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ToughNecklaceUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Iron"
     },
@@ -16515,7 +16525,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GildedBraceletEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Gold"
     },
@@ -16529,7 +16544,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GildedBraceletUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Gold"
     },
@@ -16544,6 +16564,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MagicRingProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -16582,7 +16606,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartCharmEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Redstone"
     },
@@ -16596,7 +16625,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartCharmUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Redstone"
     },
@@ -16610,7 +16644,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DiamondHardPlateEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Diamond"
     },
@@ -16624,7 +16663,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DiamondHardPlateUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Diamond"
     },
@@ -16644,8 +16688,16 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "isvanillacritical",
             "type": "logic"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -16661,7 +16713,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SpeedyNecklaceEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Ruby"
     },
@@ -16675,7 +16732,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SpeedyNecklaceUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Ruby"
     },
@@ -16759,7 +16821,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BouncyBraceletEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16773,7 +16840,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BouncyBraceletUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16787,7 +16859,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LuckyCharmEquippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -16801,7 +16878,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LuckyCharmUnequippedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Misc. Charms"
     },
@@ -21260,6 +21342,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -21733,25 +21819,6 @@
       "path": "~/Advancements/Crystallite Upgrades"
     },
     {
-      "name": "NaturalRegenAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "natural_regen_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NaturalRegenAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements/Crystallite Upgrades"
-    },
-    {
       "name": "VeinMiningAdv",
       "type": "achievement",
       "compiles": true,
@@ -21981,79 +22048,6 @@
         ]
       },
       "path": "~/Crystallite"
-    },
-    {
-      "name": "NatureRingEquipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nature_ring_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NatureRingEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
-      "name": "NatureRingUnequipped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nature_ring_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NatureRingUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Emerald"
-    },
-    {
-      "name": "WardenHeadbandProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warden_headband_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WardenHeadbandProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sculk"
     },
     {
       "name": "EnderTitaniumUpgradeSmithingTemplate",
@@ -30926,7 +30920,7 @@
     {
       "name": "MigrateEntityDataTo121",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "migrate_entity_data_to_121",
       "metadata": {
@@ -30976,6 +30970,481 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MigratePlayerDataOnSpawnProcedure.java"
         ]
       }
+    },
+    {
+      "name": "GildedBracelet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bracelet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/gilded_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GildedBraceletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "GildedBraceletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bracelet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "MagicRing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/MagicRingItem.java",
+          "src/main/resources/assets/better_tools/models/item/magic_ring.json"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "MagicRingCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_ring_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "HeartCharm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_charm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/heart_charm.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/HeartCharmItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "HeartCharmCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_charm_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "DiamondHardPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hard_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/diamond_hard_plate.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/DiamondHardPlateItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "DiamondHardPlateCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hard_plate_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "WitheredGauntlet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withered_gauntlet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/withered_gauntlet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/WitheredGauntletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "WitheredGauntletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withered_gauntlet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "SpeedyNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speedy_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/speedy_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/SpeedyNecklaceItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "SpeedyNecklaceCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speedy_necklace_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "IcyBracelet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_bracelet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/icy_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/IcyBraceletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "IcyBraceletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_bracelet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "ElectricNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_necklace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ElectricNecklaceItem.java",
+          "src/main/resources/assets/better_tools/models/item/electric_necklace.json"
+        ]
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "ElectricNecklaceCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_necklace_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "FlamingCirclet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_circlet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/flaming_circlet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/FlamingCircletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "FlamingCircletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flaming_circlet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "NatureRing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NatureRingItem.java",
+          "src/main/resources/assets/better_tools/models/item/nature_ring.json"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "NatureRingCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_ring_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "WardenHeadband",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_headband",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/WardenHeadbandItem.java",
+          "src/main/resources/assets/better_tools/models/item/warden_headband.json"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "WardenHeadbandCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_headband_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "ReflectCharm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_charm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/ReflectCharmItem.java",
+          "src/main/resources/assets/better_tools/models/item/reflect_charm.json"
+        ]
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "ReflectCharmCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reflect_charm_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "EarthCirclet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_circlet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/earth_circlet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EarthCircletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "EarthCircletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_circlet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "GuardianNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/guardian_necklace.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/GuardianNecklaceItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "GuardianNecklaceCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_necklace_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CuringCharm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_charm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CuringCharmItem.java",
+          "src/main/resources/assets/better_tools/models/item/curing_charm.json"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CuringCharmCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_charm_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "BouncyBracelet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncy_bracelet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/bouncy_bracelet.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/BouncyBraceletItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "BouncyBraceletCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncy_bracelet_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "LuckyCharm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucky_charm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/LuckyCharmItem.java",
+          "src/main/resources/assets/better_tools/models/item/lucky_charm.json"
+        ]
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "LuckyCharmCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucky_charm_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "EnderGoggles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_goggles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnderGogglesItem.java",
+          "src/main/resources/assets/better_tools/models/item/ender_goggles.json"
+        ]
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "EnderGogglesCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_goggles_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "PoisonCharm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_charm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/poison_charm.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/PoisonCharmItem.java"
+        ]
+      },
+      "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "PoisonCharmCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_charm_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Misc. Charms"
     }
   ],
   "variable_elements": [
@@ -34168,7 +34637,26 @@
       "CrystalliteDaggerHoney",
       "CrystalliteBowHoney",
       "CrystalliteArmorHoney",
-      "ToughNecklace"
+      "ToughNecklace",
+      "GildedBracelet",
+      "MagicRing",
+      "HeartCharm",
+      "DiamondHardPlate",
+      "WitheredGauntlet",
+      "SpeedyNecklace",
+      "IcyBracelet",
+      "ElectricNecklace",
+      "FlamingCirclet",
+      "NatureRing",
+      "WardenHeadband",
+      "ReflectCharm",
+      "EarthCirclet",
+      "GuardianNecklace",
+      "CuringCharm",
+      "BouncyBracelet",
+      "LuckyCharm",
+      "EnderGoggles",
+      "PoisonCharm"
     ],
     "CUSTOM:ToolsAndArmorTab": [
       "NetherDiamond",
@@ -36023,7 +36511,69 @@
       "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign",
       "item.better_tools.tough_necklace.description_0": "§7When worn:",
       "item.better_tools.tough_necklace.description_1": "§9+1.5 Knockback Resistance",
-      "item.better_tools.tough_necklace": "Tough Necklace"
+      "item.better_tools.tough_necklace": "§7Tough Necklace",
+      "item.better_tools.gilded_bracelet.description_1": "§9+1 Block Reach",
+      "item.better_tools.gilded_bracelet.description_0": "§7When worn:",
+      "item.better_tools.gilded_bracelet.description_2": "§9Makes Piglins neutral",
+      "item.better_tools.gilded_bracelet": "§eGilded Bracelet",
+      "item.better_tools.magic_ring.description_2": "§9+20% XP drops from mobs",
+      "item.better_tools.magic_ring.description_1": "§9+20% XP Levels kept upon death",
+      "item.better_tools.magic_ring.description_0": "§7When worn:",
+      "item.better_tools.magic_ring": "§9Magic Ring",
+      "item.better_tools.heart_charm.description_1": "§9+2 Max Health",
+      "item.better_tools.heart_charm.description_0": "§7When worn:",
+      "item.better_tools.heart_charm": "§cHeart Charm",
+      "item.better_tools.diamond_hard_plate.description_0": "§7When worn:",
+      "item.better_tools.diamond_hard_plate.description_1": "§9+2 Armor",
+      "item.better_tools.diamond_hard_plate": "§bDiamond Hard Plate",
+      "item.better_tools.diamond_hard_plate.description_2": "§9+2 Armor Toughness",
+      "item.better_tools.withered_gauntlet.description_1": "§9Critical hits inflict Wither III for 2s",
+      "item.better_tools.withered_gauntlet.description_0": "§7When worn:",
+      "item.better_tools.withered_gauntlet": "§8Withered Gauntlet",
+      "item.better_tools.speedy_necklace": "§cSpeedy Necklace",
+      "item.better_tools.speedy_necklace.description_0": "§7When worn:",
+      "item.better_tools.speedy_necklace.description_1": "§9+10% Speed",
+      "item.better_tools.icy_bracelet.description_1": "§9+10% Attack Freeze Chance",
+      "item.better_tools.icy_bracelet.description_0": "§7When worn:",
+      "item.better_tools.icy_bracelet": "§bIcy Bracelet",
+      "item.better_tools.electric_necklace": "§6Electric Necklace",
+      "item.better_tools.electric_necklace.description_1": "§9Arrows may summon lightning on the target",
+      "item.better_tools.electric_necklace.description_0": "§7When worn:",
+      "item.better_tools.flaming_circlet.description_0": "§7When worn:",
+      "item.better_tools.flaming_circlet.description_2": "§cCooldown: 10s",
+      "item.better_tools.flaming_circlet.description_1": "§9Sets attackers on fire for 3s",
+      "item.better_tools.flaming_circlet": "§4Flaming Circlet",
+      "item.better_tools.nature_ring": "§aNature Ring",
+      "item.better_tools.nature_ring.description_1": "§9Regenerates HP over time",
+      "item.better_tools.nature_ring.description_0": "§7When worn:",
+      "item.better_tools.warden_headband.description_2": "§9Immunity to Darkness effect",
+      "item.better_tools.warden_headband.description_1": "§9Gain night vision when in the dark",
+      "item.better_tools.warden_headband.description_0": "§7When worn:",
+      "item.better_tools.warden_headband": "§3Warden Headband",
+      "item.better_tools.reflect_charm": "§fReflect Charm",
+      "item.better_tools.reflect_charm.description_1": "§fReflects projectiles",
+      "item.better_tools.reflect_charm.description_0": "§7When worn:",
+      "item.better_tools.earth_circlet.description_1": "§dHighlights nearby ores",
+      "item.better_tools.earth_circlet.description_0": "§7When worn:",
+      "item.better_tools.earth_circlet": "§dEarth Circlet",
+      "item.better_tools.guardian_necklace.description_0": "§7When worn:",
+      "item.better_tools.guardian_necklace.description_1": "§9Automatically damages nearby hostile mobs",
+      "item.better_tools.guardian_necklace": "§3Guardian Necklace",
+      "item.better_tools.curing_charm.description_0": "§7When worn:",
+      "item.better_tools.curing_charm": "§6Curing Charm",
+      "item.better_tools.curing_charm.description_1": "§9Shortens the duration of negative effects",
+      "item.better_tools.bouncy_bracelet.description_1": "§9+2 Attack Knockback",
+      "item.better_tools.bouncy_bracelet.description_0": "§7When worn:",
+      "item.better_tools.bouncy_bracelet": "§bBouncy Bracelet",
+      "item.better_tools.lucky_charm.description_1": "§9+1 Luck",
+      "item.better_tools.lucky_charm.description_0": "§7When worn:",
+      "item.better_tools.lucky_charm": "§2Lucky Charm",
+      "item.better_tools.ender_goggles.description_1": "§9Looking at Endermen will not anger them",
+      "item.better_tools.ender_goggles": "§5Ender Goggles",
+      "item.better_tools.ender_goggles.description_0": "§7When worn:",
+      "item.better_tools.poison_charm.description_0": "§7When worn:",
+      "item.better_tools.poison_charm": "§5Poison Charm",
+      "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers"
     }
   },
   "metadata": {
@@ -36031,10 +36581,16 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModAttributes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBiomes.java",
+      "src/main/resources/data/better_tools/curios/slots/head.json",
+      "src/main/resources/data/curios/tags/item/hands.json",
+      "src/main/resources/data/better_tools/curios/slots/hands.json",
       "src/main/resources/data/curios/tags/item/necklace.json",
       "src/main/resources/data/better_tools/curios/entities/slots.json",
+      "src/main/resources/data/better_tools/curios/slots/charm.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModCuriosCompat.java",
+      "src/main/resources/data/curios/tags/item/charm.json",
       "src/main/resources/data/better_tools/curios/slots/necklace.json",
+      "src/main/resources/data/curios/tags/item/head.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/network/MenuStateUpdateMessage.java",

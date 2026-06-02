@@ -7,6 +7,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
@@ -35,26 +36,24 @@ public class FlamingCircletProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (true) {
-			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).flaming_circlet_cooldown == 0 && !sourceentity.fireImmune()) {
-				{
-					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-					_vars.flaming_circlet_cooldown = 200;
-					_vars.markSyncDirty();
-				}
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.NETHER_DIAMOND.get(), 200);
-				if ((entity.level().dimension()) == Level.NETHER) {
-					sourceentity.igniteForSeconds(6);
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.FLAMING_CIRCLET.get())) && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).flaming_circlet_cooldown == 0 && !sourceentity.fireImmune()) {
+			{
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.flaming_circlet_cooldown = 200;
+				_vars.markSyncDirty();
+			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(BetterToolsModItems.FLAMING_CIRCLET.get(), 200);
+			if ((entity.level().dimension()) == Level.NETHER) {
+				sourceentity.igniteForSeconds(6);
+			} else {
+				sourceentity.igniteForSeconds(3);
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.shoot")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					sourceentity.igniteForSeconds(3);
-				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.shoot")), SoundSource.NEUTRAL, 1, 1);
-					} else {
-						_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.shoot")), SoundSource.NEUTRAL, 1, 1, false);
-					}
+					_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.blaze.shoot")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 		}
