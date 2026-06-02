@@ -31445,6 +31445,17 @@
         "files": []
       },
       "path": "~/Crystallite/Misc. Charms"
+    },
+    {
+      "name": "JewellerTrades",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jeweller_trades",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
