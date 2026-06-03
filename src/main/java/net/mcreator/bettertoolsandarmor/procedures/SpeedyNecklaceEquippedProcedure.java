@@ -13,7 +13,7 @@ public class SpeedyNecklaceEquippedProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:speedy_necklace"), 0.01, AttributeModifier.Operation.ADD_VALUE);
 			if (!_entity.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(modifier.id())) {
-				_entity.getAttribute(Attributes.MOVEMENT_SPEED).addTransientModifier(modifier);
+				_entity.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(modifier);
 			}
 		}
 	}

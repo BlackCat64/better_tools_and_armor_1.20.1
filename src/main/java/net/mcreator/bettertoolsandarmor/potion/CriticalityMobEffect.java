@@ -13,6 +13,6 @@ public class CriticalityMobEffect extends MobEffect {
 
 	@Override
 	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		CriticalHitEffectAppliedProcedure.execute();
+		CriticalHitEffectAppliedProcedure.execute(entity);
 	}
 }

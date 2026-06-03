@@ -13,7 +13,7 @@ public class ToughNecklaceEquippedProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:tough_necklace"), 0.15, AttributeModifier.Operation.ADD_VALUE);
 			if (!_entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).hasModifier(modifier.id())) {
-				_entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addTransientModifier(modifier);
+				_entity.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addPermanentModifier(modifier);
 			}
 		}
 	}

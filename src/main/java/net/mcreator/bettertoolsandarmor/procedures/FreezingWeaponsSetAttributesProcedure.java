@@ -63,13 +63,13 @@ public class FreezingWeaponsSetAttributesProcedure {
 				if (entity instanceof LivingEntity _entity) {
 					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:freezing_weapons"), chance, AttributeModifier.Operation.ADD_VALUE);
 					if (!_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).hasModifier(modifier.id())) {
-						_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).addTransientModifier(modifier);
+						_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).addPermanentModifier(modifier);
 					}
 				}
 				if (entity instanceof LivingEntity _entity) {
 					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:freezing_weapons"), time, AttributeModifier.Operation.ADD_VALUE);
 					if (!_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).hasModifier(modifier.id())) {
-						_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).addTransientModifier(modifier);
+						_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).addPermanentModifier(modifier);
 					}
 				}
 			}

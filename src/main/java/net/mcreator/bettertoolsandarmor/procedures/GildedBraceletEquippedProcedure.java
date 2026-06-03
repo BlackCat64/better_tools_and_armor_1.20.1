@@ -13,7 +13,7 @@ public class GildedBraceletEquippedProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:gilded_bracelet"), 1, AttributeModifier.Operation.ADD_VALUE);
 			if (!_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).hasModifier(modifier.id())) {
-				_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).addTransientModifier(modifier);
+				_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).addPermanentModifier(modifier);
 			}
 		}
 	}

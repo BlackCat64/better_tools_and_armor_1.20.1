@@ -17598,72 +17598,6 @@
       "path": "~/Crystallite/Sky"
     },
     {
-      "name": "CrystalliteSwordSkyCritTracker",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_sky_crit_tracker",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyCritTrackerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "isvanillacritical",
-            "type": "logic"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Critical Hit Multiplier"
-    },
-    {
-      "name": "CrystalliteSwordSkyCritDamage",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_sky_crit_damage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyCritDamageProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Critical Hit Multiplier"
-    },
-    {
       "name": "Criticality",
       "type": "potioneffect",
       "compiles": true,
@@ -17686,7 +17620,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectAppliedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Critical Hit Multiplier"
     },
@@ -17700,7 +17639,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectExpiresProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Critical Hit Multiplier"
     },
@@ -23527,10 +23471,6 @@
         ],
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
             "name": "entity",
             "type": "entity"
           },
@@ -23541,10 +23481,6 @@
           {
             "name": "amount",
             "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -29182,7 +29118,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsIncreasedCritDamageProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Flint Tools"
     },
@@ -29196,7 +29137,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyIncreasedCritDamageProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Sky"
     },
@@ -31431,6 +31377,33 @@
         "files": []
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "CritTracker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_tracker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "isvanillacritical",
+            "type": "logic"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CritTrackerProcedure.java"
+        ]
+      },
+      "path": "~/Critical Hit Multiplier"
     }
   ],
   "variable_elements": [

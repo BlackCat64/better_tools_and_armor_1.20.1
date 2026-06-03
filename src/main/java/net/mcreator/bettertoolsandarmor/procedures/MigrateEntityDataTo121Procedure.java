@@ -19,6 +19,7 @@ public class MigrateEntityDataTo121Procedure {
 						} // New modifiers should be re-applied every tick, so this shouldn't cause issues
 					}
 				}
+//				System.out.println("Migrated " + _livingEntity.getName().getString());
 				_livingEntity.getPersistentData().putBoolean("better_tools_migrated", true);
 			}
 		}

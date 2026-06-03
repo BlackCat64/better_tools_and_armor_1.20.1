@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModGameRules;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
 
@@ -32,12 +33,14 @@ public class DamageTrackerProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity, double amount) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_DAMAGE_VALUES) && sourceentity.hasPermissions(2) && sourceentity instanceof Player
-				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(amount) + " damage dealt to " + entity.getDisplayName().getString() + " ("
-						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) + "/"
-						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) + ")")), false);
+		if (world.getLevelData().getGameRules().getBoolean(BetterToolsModGameRules.DISPLAY_DAMAGE_VALUES) && sourceentity.hasPermissions(2) && sourceentity instanceof Player) {
+			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(amount) + " damage dealt to " + entity.getDisplayName().getString())), false);
+			BetterToolsMod.queueServerWork(1, () -> {
+				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((" (" + (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) + "/"
+							+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) + ")")), false);
+			});
 		}
 		if (entity instanceof Player) {
 			{

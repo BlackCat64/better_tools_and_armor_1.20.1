@@ -13,7 +13,7 @@ public class BouncyBraceletEquippedProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:bouncy_bracelet"), 2, AttributeModifier.Operation.ADD_VALUE);
 			if (!_entity.getAttribute(Attributes.ATTACK_KNOCKBACK).hasModifier(modifier.id())) {
-				_entity.getAttribute(Attributes.ATTACK_KNOCKBACK).addTransientModifier(modifier);
+				_entity.getAttribute(Attributes.ATTACK_KNOCKBACK).addPermanentModifier(modifier);
 			}
 		}
 	}

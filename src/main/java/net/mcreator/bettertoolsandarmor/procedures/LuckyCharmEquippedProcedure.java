@@ -14,7 +14,7 @@ public class LuckyCharmEquippedProcedure {
 			if (entity instanceof LivingEntity _entity) {
 				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:lucky_charm"), 1, AttributeModifier.Operation.ADD_VALUE);
 				if (!_entity.getAttribute(Attributes.LUCK).hasModifier(modifier.id())) {
-					_entity.getAttribute(Attributes.LUCK).addTransientModifier(modifier);
+					_entity.getAttribute(Attributes.LUCK).addPermanentModifier(modifier);
 				}
 			}
 		}

@@ -13,7 +13,7 @@ public class HeartCharmEquippedProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:heart_charm"), 2, AttributeModifier.Operation.ADD_VALUE);
 			if (!_entity.getAttribute(Attributes.MAX_HEALTH).hasModifier(modifier.id())) {
-				_entity.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(modifier);
+				_entity.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(modifier);
 			}
 		}
 	}

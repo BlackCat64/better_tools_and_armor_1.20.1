@@ -49,19 +49,11 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
-			damage = amount;
-			if (immediatesourceentity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:magic_weapon_damage"))), immediatesourceentity, immediatesourceentity), (float) amount);
+			if (immediatesourceentity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
 					&& immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
-				if ((immediatesourceentity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
-						? _livingEntity4.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
-						: 0) != 1.5) {
-					damage = damage * (immediatesourceentity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
-							? _livingEntity5.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
-							: 0);
-				}
 				CriticalHitParticlesProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), amount);
 			}
-			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:magic_weapon_damage"))), immediatesourceentity, immediatesourceentity), (float) damage);
 			if (!(immediatesourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (world instanceof ServerLevel _level) {
 					(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
