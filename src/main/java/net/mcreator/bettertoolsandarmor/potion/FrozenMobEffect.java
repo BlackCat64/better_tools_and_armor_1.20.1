@@ -14,7 +14,7 @@ public class FrozenMobEffect extends MobEffect {
 
 	@Override
 	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		FrozenEffectAppliedProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity);
+		FrozenEffectAppliedProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

@@ -4,6 +4,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.nbt.CompoundTag;
 
 public class MigrateEntityDataTo121Procedure {
 	public static void execute(Entity entity) {
@@ -19,7 +20,22 @@ public class MigrateEntityDataTo121Procedure {
 						} // New modifiers should be re-applied every tick, so this shouldn't cause issues
 					}
 				}
-//				System.out.println("Migrated " + _livingEntity.getName().getString());
+				CompoundTag persistentData = entity.getPersistentData();
+
+				if (persistentData.contains("ForgeData")) {
+					CompoundTag forgeData = persistentData.getCompound("ForgeData");
+					CompoundTag neoForgeData = persistentData.getCompound("NeoForgeData");
+
+					// Copy all ForgeData keys into NeoForgeData
+					for (String key : forgeData.getAllKeys()) {
+						if (!neoForgeData.contains(key)) {
+							neoForgeData.put(key, forgeData.get(key).copy());
+						}
+					}
+					persistentData.put("NeoForgeData", neoForgeData);
+
+				}
+				//				System.out.println("Migrated " + _livingEntity.getName().getString());
 				_livingEntity.getPersistentData().putBoolean("better_tools_migrated", true);
 			}
 		}
