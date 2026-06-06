@@ -9,6 +9,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -61,8 +62,8 @@ public class TopazSwordProcedureProcedure {
 				chance = chance * 1.5;
 				range = range * 2;
 			}
-			if (false) {
-				chance = chance + 1 * 0.05;
+			if (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.LUCK)) {
+				chance = chance + (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity6.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			}
 			closest = entity;
 			if (Math.random() < chance) {

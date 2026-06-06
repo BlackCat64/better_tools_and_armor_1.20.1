@@ -19150,20 +19150,12 @@
         ],
         "dependencies": [
           {
-            "name": "sourceentity",
+            "name": "entity",
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "sourceentity",
+            "type": "entity"
           },
           {
             "name": "world",

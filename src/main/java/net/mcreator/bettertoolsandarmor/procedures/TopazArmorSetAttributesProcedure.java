@@ -8,9 +8,11 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
@@ -73,8 +75,17 @@ public class TopazArmorSetAttributesProcedure {
 			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
 				chance = chance * (crystallite_worn ? 1.5 : 2);
 			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).removeModifier(ResourceLocation.parse("better_tools:topaz_armor"));
+			}
 			if (chance > 0) {
-				chance = chance + (entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity17.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				chance = chance + (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity18.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:topaz_armor"), chance, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).hasModifier(modifier.id())) {
+						_entity.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).addPermanentModifier(modifier);
+					}
+				}
 			}
 		}
 	}
