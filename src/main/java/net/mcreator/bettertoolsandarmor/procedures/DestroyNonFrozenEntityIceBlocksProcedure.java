@@ -1,12 +1,11 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.neoforged.neoforge.event.entity.EntityMobGriefingEvent;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
@@ -15,9 +14,9 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class FrozenCreeperExplodesBugfixProcedure {
+public class DestroyNonFrozenEntityIceBlocksProcedure {
 	@SubscribeEvent
-	public static void onEntityGrief(EntityMobGriefingEvent event) {
+	public static void onEntityTick(EntityTickEvent.Pre event) {
 		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
@@ -28,9 +27,7 @@ public class FrozenCreeperExplodesBugfixProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Creeper && entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(BetterToolsModMobEffects.FROZEN)) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN))) {
 			DeleteEntityIceBlockDisplayProcedure.execute(world, entity, true);
 		}
 	}

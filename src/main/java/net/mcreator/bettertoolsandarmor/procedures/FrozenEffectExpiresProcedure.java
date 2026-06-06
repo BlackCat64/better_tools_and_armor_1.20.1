@@ -16,7 +16,16 @@ public class FrozenEffectExpiresProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("better_tools:frozen_effect"));
 		}
-		DeleteEntityIceBlockDisplayProcedure.execute(world, entity);
+		if (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.FLYING_SPEED)) {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.FLYING_SPEED).removeModifier(ResourceLocation.parse("better_tools:frozen_effect"));
+			}
+		}
+		if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.JUMP_STRENGTH)) {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:frozen_effect"));
+			}
+		}
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			BetterToolsMod.queueServerWork(5, () -> {
 				entity.setTicksFrozen(55);

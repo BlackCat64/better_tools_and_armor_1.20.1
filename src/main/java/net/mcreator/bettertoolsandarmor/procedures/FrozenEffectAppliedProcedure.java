@@ -20,7 +20,7 @@ public class FrozenEffectAppliedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double speed = 0;
+		double speed = 0, flying_speed = 0, jump_strength = 0;
 		if (false) {
 			if (world instanceof ServerLevel _level) {
 				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("add world dep"), false);
@@ -29,10 +29,24 @@ public class FrozenEffectAppliedProcedure {
 		entity.clearFire();
 		if ((entity instanceof Mob || entity instanceof Player) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			speed = entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity6.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0;
+			flying_speed = entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.FLYING_SPEED) ? _livingEntity6.getAttribute(Attributes.FLYING_SPEED).getValue() : 0;
+			jump_strength = entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.JUMP_STRENGTH) ? _livingEntity6.getAttribute(Attributes.JUMP_STRENGTH).getValue() : 0;
 			if (entity instanceof LivingEntity _entity) {
-				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:frozen_effect"), (speed * (-1)), AttributeModifier.Operation.ADD_VALUE);
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:frozen_effect"), -speed, AttributeModifier.Operation.ADD_VALUE);
 				if (!_entity.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(modifier.id())) {
 					_entity.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(modifier);
+				}
+				if (_entity.getAttributes().hasAttribute(Attributes.FLYING_SPEED)) {
+					AttributeModifier modifier2 = new AttributeModifier(ResourceLocation.parse("better_tools:frozen_effect"), -flying_speed, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(Attributes.FLYING_SPEED).hasModifier(modifier2.id())) {
+						_entity.getAttribute(Attributes.FLYING_SPEED).addPermanentModifier(modifier2);
+					}
+				}
+				if (_entity.getAttributes().hasAttribute(Attributes.JUMP_STRENGTH)) {
+					AttributeModifier modifier3 = new AttributeModifier(ResourceLocation.parse("better_tools:frozen_effect"), 0.01-jump_strength, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(modifier3.id())) {
+						_entity.getAttribute(Attributes.JUMP_STRENGTH).addPermanentModifier(modifier3);
+					}
 				}
 			}
 			if (world instanceof ServerLevel level) {

@@ -55,7 +55,7 @@ public class FrozenEffectParticlesProcedure {
 			}
 			if (GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"), entity.getPersistentData().getDouble("frozen_at_y"),
 					entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
-				DeleteEntityIceBlockDisplayProcedure.execute(world, entity);
+				DeleteEntityIceBlockDisplayProcedure.execute(world, entity, true);
 			}
 		}
 	}

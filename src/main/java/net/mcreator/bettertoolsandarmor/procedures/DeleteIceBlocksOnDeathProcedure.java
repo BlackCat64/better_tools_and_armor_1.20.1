@@ -32,7 +32,9 @@ public class DeleteIceBlocksOnDeathProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN) && (entity instanceof Mob || entity instanceof Player)) {
-			DeleteEntityIceBlockDisplayProcedure.execute(world, entity);
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
+			DeleteEntityIceBlockDisplayProcedure.execute(world, entity, true);
 		}
 	}
 }

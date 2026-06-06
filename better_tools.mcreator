@@ -17198,6 +17198,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -20020,18 +20024,6 @@
           },
           {
             "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
             "type": "number"
           },
           {
@@ -24555,6 +24547,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "particles",
+            "type": "logic"
           },
           {
             "name": "world",
@@ -31424,6 +31420,29 @@
         ]
       },
       "path": "~/Critical Hit Multiplier"
+    },
+    {
+      "name": "DestroyNonFrozenEntityIceBlocks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destroy_non_frozen_entity_ice_blocks",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DestroyNonFrozenEntityIceBlocksProcedure.java"
+        ]
+      },
+      "path": "~/Frozen Effect"
     }
   ],
   "variable_elements": [
