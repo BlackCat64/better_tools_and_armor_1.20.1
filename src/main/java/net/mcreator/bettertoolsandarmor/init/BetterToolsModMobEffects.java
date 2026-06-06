@@ -56,7 +56,7 @@ public class BetterToolsModMobEffects {
 		} else if (effectInstance.getEffect().is(CRITICALITY)) {
 			CriticalHitEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(PITFALL)) {
-			PitfallEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+			PitfallEffectExpiresProcedure.execute(entity.level(), entity);
 		}
 	}
 }

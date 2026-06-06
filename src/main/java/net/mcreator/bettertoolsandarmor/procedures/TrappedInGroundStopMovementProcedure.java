@@ -1,60 +1,49 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Display;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
-import java.util.Comparator;
+import java.util.UUID;
 
 public class TrappedInGroundStopMovementProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		Entity display = null;
-		if (entity.onGround()) {
-			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				entity.setDeltaMovement(new Vec3(0, (-2), 0));
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.ASH, x, ((y + entity.getBbHeight()) / 2), z, 1, 0.33, 0.5, 0.33, 0.015);
-				display = findEntityInWorldRange(world, Display.BlockDisplay.class, x, y, z, 4);
-				if (display instanceof Display.BlockDisplay && display.getPersistentData().getBoolean("trapped_in_ground")) {
-					{
-						Entity _ent = display;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-									_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("tp @s " + display.getPersistentData().getString("trapped_entity")));
-						}
-					}
-					{
-						Entity _ent = display;
-						_ent.setYRot(0);
-						_ent.setXRot(0);
-						_ent.setYBodyRot(_ent.getYRot());
-						_ent.setYHeadRot(_ent.getYRot());
-						_ent.yRotO = _ent.getYRot();
-						_ent.xRotO = _ent.getXRot();
-						if (_ent instanceof LivingEntity _entity) {
-							_entity.yBodyRotO = _entity.getYRot();
-							_entity.yHeadRotO = _entity.getYRot();
-						}
+		if (entity.onGround() && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"),
+				entity.getPersistentData().getDouble("frozen_at_y"), entity.getPersistentData().getDouble("frozen_at_z")) <= 2) {
+			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+			entity.setDeltaMovement(new Vec3(0, (-2), 0));
+			display = world instanceof ServerLevel _level11 ? getEntityFromUUID(_level11, (entity.getPersistentData().getString("pitfall_block_display"))) : null;
+			if (display instanceof Display.BlockDisplay) {
+				{
+					Entity _ent = display;
+					_ent.teleportTo((entity.getX()), (entity.getY()), (entity.getZ()));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((entity.getX()), (entity.getY()), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
+				}
+				{
+					Entity _ent = display;
+					_ent.setYRot(0);
+					_ent.setXRot(0);
+					_ent.setYBodyRot(_ent.getYRot());
+					_ent.setYHeadRot(_ent.getYRot());
+					_ent.yRotO = _ent.getYRot();
+					_ent.xRotO = _ent.getXRot();
+					if (_ent instanceof LivingEntity _entity) {
+						_entity.yBodyRotO = _entity.getYRot();
+						_entity.yHeadRotO = _entity.getYRot();
 					}
 				}
-			}
-			if (GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity.getPersistentData().getDouble("frozen_at_x"), entity.getPersistentData().getDouble("frozen_at_y"),
-					entity.getPersistentData().getDouble("frozen_at_z")) > 2) {
-				DeleteEntityPitfallBlockDisplayProcedure.execute(entity);
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)
@@ -62,7 +51,11 @@ public class TrappedInGroundStopMovementProcedure {
 		}
 	}
 
-	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
-		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
+	private static Entity getEntityFromUUID(ServerLevel level, String uuid) {
+		try {
+			return level.getEntity(UUID.fromString(uuid));
+		} catch (IllegalArgumentException e) {
+			return null;
+		}
 	}
 }

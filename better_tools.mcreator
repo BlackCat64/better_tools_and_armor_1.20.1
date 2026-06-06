@@ -23386,53 +23386,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Pitfall Effect"
-    },
-    {
-      "name": "TrappedInGroundOnDeath",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trapped_in_ground_on_death",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TrappedInGroundOnDeathProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -24110,29 +24063,6 @@
           {
             "name": "z",
             "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Frozen Effect"
-    },
-    {
-      "name": "DeleteIceBlocksOnDeath",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "delete_ice_blocks_on_death",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteIceBlocksOnDeathProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           },
           {
             "name": "world",
@@ -30176,61 +30106,11 @@
       "name": "PitfallEffectApplied",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "pitfall_effect_applied",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PitfallEffectAppliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Pitfall Effect"
-    },
-    {
-      "name": "DeleteEntityPitfallBlockDisplay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "delete_entity_pitfall_block_display",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteEntityPitfallBlockDisplayProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Pitfall Effect"
-    },
-    {
-      "name": "PitfallEffectExpires",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pitfall_effect_expires",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PitfallEffectExpiresProcedure.java"
         ],
         "dependencies": [
           {
@@ -30258,6 +30138,29 @@
       "path": "~/Pitfall Effect"
     },
     {
+      "name": "PitfallEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitfall_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PitfallEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
       "name": "TrappedCreeperExplodes",
       "type": "procedure",
       "compiles": true,
@@ -30271,6 +30174,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -31422,11 +31329,11 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "DestroyNonFrozenEntityIceBlocks",
+      "name": "DeleteEntityMudBlockDisplay",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "destroy_non_frozen_entity_ice_blocks",
+      "registry_name": "delete_entity_mud_block_display",
       "metadata": {
         "dependencies": [
           {
@@ -31439,7 +31346,53 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DestroyNonFrozenEntityIceBlocksProcedure.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteEntityMudBlockDisplayProcedure.java"
+        ]
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "DeleteIceBlocksOnDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_ice_blocks_on_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteIceBlocksOnDeathProcedure.java"
+        ]
+      },
+      "path": "~/Frozen Effect"
+    },
+    {
+      "name": "DeleteOldBlockDisplays",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_old_block_displays",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DeleteOldBlockDisplaysProcedure.java"
         ]
       },
       "path": "~/Frozen Effect"

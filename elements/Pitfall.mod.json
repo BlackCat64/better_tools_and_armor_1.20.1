@@ -8,6 +8,9 @@
       "value": -12961731,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
@@ -22,6 +25,9 @@
     },
     "onExpired": {
       "name": "PitfallEffectExpires"
+    },
+    "onMobRemoved": {
+      "name": "DeleteEntityMudBlockDisplay"
     }
   }
 }

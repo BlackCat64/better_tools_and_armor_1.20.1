@@ -14,7 +14,7 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class DestroyNonFrozenEntityIceBlocksProcedure {
+public class DeleteOldBlockDisplaysProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(EntityTickEvent.Pre event) {
 		execute(event, event.getEntity().level(), event.getEntity());
@@ -29,6 +29,9 @@ public class DestroyNonFrozenEntityIceBlocksProcedure {
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(BetterToolsModMobEffects.FROZEN))) {
 			DeleteEntityIceBlockDisplayProcedure.execute(world, entity, true);
+		}
+		if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(BetterToolsModMobEffects.PITFALL))) {
+			DeleteEntityMudBlockDisplayProcedure.execute(world, entity);
 		}
 	}
 }
