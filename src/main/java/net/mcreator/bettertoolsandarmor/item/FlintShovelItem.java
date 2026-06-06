@@ -2,9 +2,21 @@ package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 public class FlintShovelItem extends ShovelItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -40,6 +52,9 @@ public class FlintShovelItem extends ShovelItem {
 	};
 
 	public FlintShovelItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -3f)));
+		super(TOOL_TIER, new Item.Properties().attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+				.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+				.add(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "flint_shovel_0"), 0.25, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+				.build()));
 	}
 }

@@ -6,8 +6,11 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -34,6 +37,18 @@ public class CrystalliteSwordPrismarineProcedureProcedure {
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_PRISMARINE.get()) {
 			dmg_boost = 2.5;
+		}
+		if (dmg_boost > 0 && entity.isInWaterRainOrBubble()) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"), dmg_boost, AttributeModifier.Operation.ADD_VALUE);
+				if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"));
+			}
 		}
 	}
 }

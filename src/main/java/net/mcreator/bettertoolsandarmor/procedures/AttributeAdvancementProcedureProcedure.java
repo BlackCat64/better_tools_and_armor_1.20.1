@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -28,7 +30,7 @@ public class AttributeAdvancementProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (0 >= 1) {
+		if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.KNOCKBACK_RESISTANCE) ? _livingEntity0.getAttribute(Attributes.KNOCKBACK_RESISTANCE).getValue() : 0) >= 1) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:max_knockback_resistance_adv"));
 				if (_adv != null) {
@@ -40,7 +42,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (0 >= 8) {
+		if ((entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity2.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0) >= 8) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:far_block_reach_adv"));
 				if (_adv != null) {
@@ -52,7 +54,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (0 >= 30) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) >= 30) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:high_armor_points_adv"));
 				if (_adv != null) {
@@ -64,7 +66,7 @@ public class AttributeAdvancementProcedureProcedure {
 				}
 			}
 		}
-		if (0 >= 30) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) >= 30) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:high_max_hp_adv"));
 				if (_adv != null) {

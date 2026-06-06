@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -47,9 +48,7 @@ public class EndTitaniumChestplateProcedureProcedure {
 		double chance = 0;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
 			chance = 0.2;
-			if (false) {
-				chance = chance + 1 * 0.05;
-			}
+			chance = chance + (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity2.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			if (!(sourceentity instanceof Player) && Math.random() <= chance) {
 				for (int index0 = 0; index0 < 40; index0++) {
 					rndx = sourceentity.getX() - 20 + Mth.nextInt(RandomSource.create(), 0, 40);

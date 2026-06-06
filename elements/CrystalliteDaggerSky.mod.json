@@ -8,6 +8,7 @@
     "texture": "crystallite_dagger_sky",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Dagger",
     "rarity": "COMMON",
     "specialInformation": {
@@ -44,7 +45,16 @@
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
-    "attributeModifiers": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "CUSTOM:CriticalHitMultiplier"
+        },
+        "amount": 0.5,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

@@ -41,7 +41,8 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).stick_to_ceiling
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sticky_helmets"))) && !entity.onGround()
 				&& world.getBlockState(BlockPos.containing(x, y + 2, z)).isFaceSturdy(world, BlockPos.containing(x, y + 2, z), Direction.DOWN)) {
-			if (false) {
+			if (!entity.isNoGravity()) {
+				entity.setNoGravity(true);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y + 2, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1);
@@ -54,6 +55,8 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 1.9), z, 1, 0.5, 0.5, 0.5, 0.025);
 			}
+		} else {
+			entity.setNoGravity(false);
 		}
 	}
 }

@@ -2926,20 +2926,6 @@
       "path": "~/Blue Mushrooms"
     },
     {
-      "name": "BlueSlimeStickProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_slime_stick_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BlueSlimeStickProcedureProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Blue Mushrooms"
-    },
-    {
       "name": "BlueSlimeStickRecipe",
       "type": "recipe",
       "compiles": true,
@@ -6196,20 +6182,6 @@
       "path": "~/Crystallite/Iron"
     },
     {
-      "name": "CrystalliteIronKnockback",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_iron_knockback",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteIronKnockbackProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Crystallite/Iron"
-    },
-    {
       "name": "CrystalliteSwordIronRecipe",
       "type": "recipe",
       "compiles": true,
@@ -6460,20 +6432,6 @@
           "src/main/resources/assets/better_tools/models/item/crystallite_sword_gold.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteSwordGoldItem.java"
         ]
-      },
-      "path": "~/Crystallite/Gold"
-    },
-    {
-      "name": "CrystalliteGoldReach",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_gold_reach",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteGoldReachProcedure.java"
-        ],
-        "dependencies": []
       },
       "path": "~/Crystallite/Gold"
     },
@@ -8823,7 +8781,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumSwordProcedureProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Ender Titanium"
     },
@@ -9118,7 +9081,7 @@
       "name": "BlueSlimeStick",
       "type": "item",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "blue_slime_stick",
       "metadata": {
         "files": [
@@ -15565,7 +15528,28 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsEmeraldProcedureProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Crystallite/Emerald"
     },
@@ -15619,6 +15603,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -15904,6 +15904,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelLapisProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -17805,7 +17809,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSkyProcedureProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Sky"
     },
@@ -18923,7 +18932,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsPrismarineSpeedBoostProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Crystallite/Prismarine"
     },
@@ -19076,7 +19090,28 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsSculkSpeedBoostProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Crystallite/Sculk"
     },
@@ -21676,7 +21711,7 @@
           }
         ]
       },
-      "path": "~/Advancements/Crystallite Upgrades"
+      "path": "~/Advancements"
     },
     {
       "name": "FarBlockReachAdv",
@@ -29047,44 +29082,6 @@
       "path": "~/Crystallite/Amethyst"
     },
     {
-      "name": "FlintToolsIncreasedCritDamage",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_tools_increased_crit_damage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsIncreasedCritDamageProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Flint Tools"
-    },
-    {
-      "name": "CrystalliteSwordSkyIncreasedCritDamage",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_sky_increased_crit_damage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSkyIncreasedCritDamageProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "ElectricChainParticles",
       "type": "procedure",
       "compiles": true,
@@ -34349,6 +34346,33 @@
       "CUSTOM:CrystallitePickaxeHoney",
       "CUSTOM:CrystalliteAxeHoney",
       "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:mod:increased_reach_armor": [
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorGold.boots"
+    ],
+    "ITEMS:mod:respawn_with_xp_armor": [
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorLapis.boots"
+    ],
+    "ITEMS:mod:increased_health_armor": [
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots"
+    ],
+    "ITEMS:mod:speed_boosting_armor": [
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots"
+    ],
+    "ITEMS:mod:poison_thorns_armor": [
+      "CUSTOM:CrystalliteArmorEmerald.legs"
     ]
   },
   "tab_element_order": {
@@ -36510,7 +36534,8 @@
       "item.better_tools.ender_goggles.description_0": "§7When worn:",
       "item.better_tools.poison_charm.description_0": "§7When worn:",
       "item.better_tools.poison_charm": "§5Poison Charm",
-      "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers"
+      "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers",
+      "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!"
     }
   },
   "metadata": {

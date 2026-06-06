@@ -5,19 +5,45 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class EndTitaniumSwordProcedureProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event);
+		execute(event, event.getEntity());
 	}
 
-	public static void execute() {
-		execute(null);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event) {
+	private static void execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
+			return;
+		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_SWORD.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_DAGGER.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_AXE.get()) && (entity.level().dimension()) == Level.END) {
+			if (entity instanceof LivingEntity _entity) {
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:ender_titanium_sword"), 3, AttributeModifier.Operation.ADD_VALUE);
+				if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
+					_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
+				}
+			}
+		} else {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:ender_titanium_sword"));
+			}
+		}
 	}
 }

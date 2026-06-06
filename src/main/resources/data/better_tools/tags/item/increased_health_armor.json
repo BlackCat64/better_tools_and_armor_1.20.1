@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_armor_redstone_boots",
+    "better_tools:crystallite_armor_redstone_helmet",
+    "better_tools:crystallite_armor_redstone_chestplate",
+    "better_tools:crystallite_armor_redstone_leggings"
+  ]
+}

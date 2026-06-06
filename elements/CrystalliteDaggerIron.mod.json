@@ -8,6 +8,7 @@
     "texture": "crystallite_dagger_iron",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Dagger",
     "rarity": "COMMON",
     "specialInformation": {
@@ -41,7 +42,16 @@
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
-    "attributeModifiers": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "ATTACK_KNOCKBACK"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

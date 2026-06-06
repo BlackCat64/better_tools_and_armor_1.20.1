@@ -1782,5 +1782,6 @@
   "item.better_tools.ender_goggles.description_0": "§7When worn:",
   "item.better_tools.poison_charm.description_0": "§7When worn:",
   "item.better_tools.poison_charm": "§5Poison Charm",
-  "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers"
+  "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers",
+  "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!"
 }

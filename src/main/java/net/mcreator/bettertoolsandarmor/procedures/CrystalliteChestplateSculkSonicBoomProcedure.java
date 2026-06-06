@@ -8,6 +8,7 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -46,9 +47,7 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 		double chance = 0;
 		if (!damagesource.is(DamageTypes.SONIC_BOOM) && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
 			chance = 0.2;
-			if (true) {
-				chance = chance + 0 * 0.05;
-			}
+			chance = chance + (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity3.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			if (Math.random() < chance) {
 				distance = GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), sourceentity.getX(), sourceentity.getY(), sourceentity.getZ());
 				if (distance >= 4 && distance <= 40) {

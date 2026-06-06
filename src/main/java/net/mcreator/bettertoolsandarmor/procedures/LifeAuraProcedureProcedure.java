@@ -7,6 +7,8 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -34,6 +36,9 @@ public class LifeAuraProcedureProcedure {
 		if (entity == null)
 			return;
 		double damage_boost = 0;
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:life_aura_ench"));
+		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:life_aura")))) != 0) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
@@ -49,7 +54,15 @@ public class LifeAuraProcedureProcedure {
 					}
 				}
 			} else {
-				damage_boost = Math.floor(3 * ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) - 1;
+				damage_boost = Math.floor(3 * ((double) (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) - 1;
+			}
+			if (damage_boost != 0) {
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:life_aura_ench"), damage_boost, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
+					}
+				}
 			}
 		}
 	}

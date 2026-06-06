@@ -1,6 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.ICancellableEvent;
@@ -40,7 +40,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class EnderTitaniumArmorSaveFromVoid2Procedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getSource(), event.getEntity());
 		}
@@ -53,7 +53,7 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity) {
 		if (damagesource == null || entity == null)
 			return;
-		if (damagesource.is(DamageTypes.FELL_OUT_OF_WORLD) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 0.5 * (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
+		if (damagesource.is(DamageTypes.FELL_OUT_OF_WORLD)) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()

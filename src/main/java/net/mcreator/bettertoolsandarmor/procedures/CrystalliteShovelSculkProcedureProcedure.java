@@ -19,50 +19,48 @@ public class CrystalliteShovelSculkProcedureProcedure {
 		x_disp = 0;
 		y_disp = 0;
 		z_disp = 0;
-		if (!entity.isShiftKeyDown()) {
-			if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
-				if (entity.getXRot() > 40 || entity.getXRot() < -40) {
-					x_disp = -1;
-					for (int index0 = 0; index0 < 3; index0++) {
-						z_disp = -1;
-						for (int index1 = 0; index1 < 3; index1++) {
-							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
-								if ((world.getBlockState(BlockPos.containing(x + x_disp, y, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
-									BreakBlockWithShovelProcedure.execute(world, x + x_disp, y, z + z_disp, entity, itemstack);
-								}
-							}
-							z_disp = z_disp + 1;
-						}
-						x_disp = x_disp + 1;
-					}
-				} else if ((entity.getDirection()) == Direction.NORTH || (entity.getDirection()) == Direction.SOUTH) {
-					x_disp = -1;
-					for (int index2 = 0; index2 < 3; index2++) {
-						y_disp = -1;
-						for (int index3 = 0; index3 < 3; index3++) {
-							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
-								if ((world.getBlockState(BlockPos.containing(x + x_disp, y + y_disp, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
-									BreakBlockWithShovelProcedure.execute(world, x + x_disp, y + y_disp, z, entity, itemstack);
-								}
-							}
-							y_disp = y_disp + 1;
-						}
-						x_disp = x_disp + 1;
-					}
-				} else if ((entity.getDirection()) == Direction.WEST || (entity.getDirection()) == Direction.EAST) {
+		if (!entity.isShiftKeyDown() && blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
+			if (entity.getXRot() > 40 || entity.getXRot() < -40) {
+				x_disp = -1;
+				for (int index0 = 0; index0 < 3; index0++) {
 					z_disp = -1;
-					for (int index4 = 0; index4 < 3; index4++) {
-						y_disp = -1;
-						for (int index5 = 0; index5 < 3; index5++) {
-							if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
-								if ((world.getBlockState(BlockPos.containing(x, y + y_disp, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
-									BreakBlockWithShovelProcedure.execute(world, x, y + y_disp, z + z_disp, entity, itemstack);
-								}
+					for (int index1 = 0; index1 < 3; index1++) {
+						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
+							if ((world.getBlockState(BlockPos.containing(x + x_disp, y, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
+								BreakBlockWithShovelProcedure.execute(world, x + x_disp, y, z + z_disp, entity, itemstack);
 							}
-							y_disp = y_disp + 1;
 						}
 						z_disp = z_disp + 1;
 					}
+					x_disp = x_disp + 1;
+				}
+			} else if ((entity.getDirection()) == Direction.NORTH || (entity.getDirection()) == Direction.SOUTH) {
+				x_disp = -1;
+				for (int index2 = 0; index2 < 3; index2++) {
+					y_disp = -1;
+					for (int index3 = 0; index3 < 3; index3++) {
+						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
+							if ((world.getBlockState(BlockPos.containing(x + x_disp, y + y_disp, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
+								BreakBlockWithShovelProcedure.execute(world, x + x_disp, y + y_disp, z, entity, itemstack);
+							}
+						}
+						y_disp = y_disp + 1;
+					}
+					x_disp = x_disp + 1;
+				}
+			} else if ((entity.getDirection()) == Direction.WEST || (entity.getDirection()) == Direction.EAST) {
+				z_disp = -1;
+				for (int index4 = 0; index4 < 3; index4++) {
+					y_disp = -1;
+					for (int index5 = 0; index5 < 3; index5++) {
+						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
+							if ((world.getBlockState(BlockPos.containing(x, y + y_disp, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
+								BreakBlockWithShovelProcedure.execute(world, x, y + y_disp, z + z_disp, entity, itemstack);
+							}
+						}
+						y_disp = y_disp + 1;
+					}
+					z_disp = z_disp + 1;
 				}
 			}
 		}

@@ -2,6 +2,7 @@ package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.ModList;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -52,7 +53,7 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND || (BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString()).equals("aquaculture:farmland")
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.DIRT || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
-				aquaculture = !(BuiltInRegistries.BLOCK.get(ResourceLocation.parse("aquaculture:farmland")) == Blocks.AIR);
+				aquaculture = ModList.get().isLoaded("aquaculture");
 				sx = -1;
 				sz = -1;
 				tilled = 0;

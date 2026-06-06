@@ -4,7 +4,8 @@
   "definition": {
     "renderType": 0,
     "texture": "blue_slime_stick2",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -37,6 +38,9 @@
         "§bSend your enemies flying!"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "openGUIOnRightClick": {
       "fixedValue": false
     },
@@ -45,6 +49,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:ElectricStaffProjectile"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -56,9 +63,22 @@
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "ATTACK_KNOCKBACK"
+        },
+        "amount": 5.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
   }
 }

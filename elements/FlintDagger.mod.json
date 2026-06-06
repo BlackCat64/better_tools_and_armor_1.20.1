@@ -8,6 +8,7 @@
     "texture": "flint_dagger",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Flint Dagger",
     "rarity": "COMMON",
     "specialInformation": {
@@ -37,7 +38,16 @@
     "immuneToFire": false,
     "blockDropsTier": "STONE",
     "blocksAffected": [],
-    "attributeModifiers": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "CUSTOM:CriticalHitMultiplier"
+        },
+        "amount": 0.25,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInInventoryTick": {
