@@ -298,7 +298,7 @@ public class EnergyVialMenuMenu extends AbstractContainerMenu implements BetterT
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		EnergyVialMenuClosedProcedure.execute(entity);
+		EnergyVialMenuClosedProcedure.execute(world, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

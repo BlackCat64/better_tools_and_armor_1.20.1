@@ -132,7 +132,7 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 	@Override
 	public void init() {
 		super.init();
-		boolean helmet_activeSelected = HelmetActiveWhenGuiOpenedProcedure.execute(entity);
+		boolean helmet_activeSelected = HelmetActiveWhenGuiOpenedProcedure.execute(world, entity);
 		helmet_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.helmet_active"), this.font).pos(this.leftPos + 141, this.topPos + 16).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "helmet_active", value, false);
@@ -140,7 +140,7 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		if (helmet_activeSelected)
 			menu.sendMenuStateUpdate(entity, 1, "helmet_active", true, false);
 		this.addRenderableWidget(helmet_active);
-		boolean chestplate_activeSelected = ChestplateActiveWhenGuiOpenedProcedure.execute(entity);
+		boolean chestplate_activeSelected = ChestplateActiveWhenGuiOpenedProcedure.execute(world, entity);
 		chestplate_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.chestplate_active"), this.font).pos(this.leftPos + 141, this.topPos + 37).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "chestplate_active", value, false);
@@ -148,7 +148,7 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		if (chestplate_activeSelected)
 			menu.sendMenuStateUpdate(entity, 1, "chestplate_active", true, false);
 		this.addRenderableWidget(chestplate_active);
-		boolean leggings_activeSelected = LeggingsActiveWhenGuiOpenedProcedure.execute(entity);
+		boolean leggings_activeSelected = LeggingsActiveWhenGuiOpenedProcedure.execute(world, entity);
 		leggings_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.leggings_active"), this.font).pos(this.leftPos + 141, this.topPos + 58).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "leggings_active", value, false);
@@ -156,7 +156,7 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		if (leggings_activeSelected)
 			menu.sendMenuStateUpdate(entity, 1, "leggings_active", true, false);
 		this.addRenderableWidget(leggings_active);
-		boolean boots_activeSelected = BootsActiveWhenGuiOpenedProcedure.execute(entity);
+		boolean boots_activeSelected = BootsActiveWhenGuiOpenedProcedure.execute(world, entity);
 		boots_active = Checkbox.builder(Component.translatable("gui.better_tools.energy_vial_menu.boots_active"), this.font).pos(this.leftPos + 141, this.topPos + 79).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "boots_active", value, false);

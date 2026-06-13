@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -19,13 +20,13 @@ import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class DoubleJumpKeyPressProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		boolean boots = false;
 		ItemStack vial = ItemStack.EMPTY;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get() && PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-			vial = GetEquippedVialProcedure.execute().copy();
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get() && PlayerHasEnergyVialEquippedProcedure.execute(world, entity)) {
+			vial = GetEquippedVialProcedure.execute(world, entity).copy();
 			if (vial.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy") >= 50 && vial.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("boots_active")) {
 				boots = true;
 			}

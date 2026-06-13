@@ -321,5 +321,38 @@ public class BetterToolsModCuriosCompat {
 				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.POISON_CHARM.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				EffectEnergyApplyCostProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+		}, BetterToolsModItems.ENERGY_VIAL.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				EffectEnergyApplyCostProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+		}, BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				EffectEnergyApplyCostProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+		}, BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
 	}
 }

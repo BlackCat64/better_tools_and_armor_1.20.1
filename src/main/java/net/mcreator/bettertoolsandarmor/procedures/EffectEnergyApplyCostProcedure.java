@@ -1,5 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -17,7 +18,7 @@ import net.minecraft.advancements.AdvancementHolder;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 
 public class EffectEnergyApplyCostProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double timer = 0;
@@ -27,7 +28,7 @@ public class EffectEnergyApplyCostProcedure {
 			_vars.effect_energy_cost = CalculateEffectEnergyCostProcedure.execute(entity, itemstack);
 			_vars.markSyncDirty();
 		}
-		if (EnergyVialActiveProcedure.execute(entity, itemstack) > 0) {
+		if (EnergyVialActiveProcedure.execute(world, entity, itemstack) > 0) {
 			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_timer <= 0) {
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);

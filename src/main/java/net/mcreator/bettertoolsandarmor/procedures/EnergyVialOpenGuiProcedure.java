@@ -49,26 +49,26 @@ public class EnergyVialOpenGuiProcedure {
 					}
 				}, _bpos);
 			}
-			if (PlayerHasEnergyVialEquippedProcedure.execute(entity)) {
-				vial = GetEquippedVialProcedure.execute().copy();
+			if (PlayerHasEnergyVialEquippedProcedure.execute(world, entity)) {
+				vial = GetEquippedVialProcedure.execute(world, entity);
 				if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
-					ItemStack _setstack2 = vial.copy();
-					_setstack2.setCount(1);
-					_menu.getSlots().get(1).set(_setstack2);
+					ItemStack _setstack3 = vial.copy();
+					_setstack3.setCount(1);
+					_menu.getSlots().get(1).set(_setstack3);
 					_player.containerMenu.broadcastChanges();
 				}
 				{
 					BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-					_vars.energy_vial_to_update = vial.copy();
+					_vars.energy_vial_to_update = vial;
 					_vars.markSyncDirty();
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
-					ItemStack _setstack7 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
-					_setstack7.setCount(1);
-					_menu.getSlots().get(1).set(_setstack7);
+					ItemStack _setstack9 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+					_setstack9.setCount(1);
+					_menu.getSlots().get(1).set(_setstack9);
 					_player.containerMenu.broadcastChanges();
 				}
 				BetterToolsMod.queueServerWork(1, () -> {
@@ -76,18 +76,18 @@ public class EnergyVialOpenGuiProcedure {
 				});
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu) {
-				ItemStack _setstack12 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
-				_setstack12.setCount(1);
-				_menu.getSlots().get(2).set(_setstack12);
-				ItemStack _setstack14 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
+				ItemStack _setstack14 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy();
 				_setstack14.setCount(1);
-				_menu.getSlots().get(3).set(_setstack14);
-				ItemStack _setstack16 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
+				_menu.getSlots().get(2).set(_setstack14);
+				ItemStack _setstack16 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy();
 				_setstack16.setCount(1);
-				_menu.getSlots().get(4).set(_setstack16);
-				ItemStack _setstack18 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
+				_menu.getSlots().get(3).set(_setstack16);
+				ItemStack _setstack18 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy();
 				_setstack18.setCount(1);
-				_menu.getSlots().get(5).set(_setstack18);
+				_menu.getSlots().get(4).set(_setstack18);
+				ItemStack _setstack20 = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy();
+				_setstack20.setCount(1);
+				_menu.getSlots().get(5).set(_setstack20);
 				_player.containerMenu.broadcastChanges();
 			}
 		}

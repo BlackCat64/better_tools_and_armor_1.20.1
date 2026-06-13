@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "better_tools:emerald_energy_vial",
+    "better_tools:netherite_energy_vial",
+    "better_tools:energy_vial"
+  ]
 }

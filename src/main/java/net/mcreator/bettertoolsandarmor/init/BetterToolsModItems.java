@@ -7,13 +7,22 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.bettertoolsandarmor.procedures.EnergyVialEnergyValueProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.EnergyVialActiveProcedure;
 import net.mcreator.bettertoolsandarmor.item.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -532,6 +541,9 @@ public class BetterToolsModItems {
 	public static final DeferredItem<Item> LUCKY_CHARM;
 	public static final DeferredItem<Item> ENDER_GOGGLES;
 	public static final DeferredItem<Item> POISON_CHARM;
+	public static final DeferredItem<Item> ENERGY_VIAL;
+	public static final DeferredItem<Item> EMERALD_ENERGY_VIAL;
+	public static final DeferredItem<Item> NETHERITE_ENERGY_VIAL;
 	static {
 		NETHER_DIAMOND = REGISTRY.register("nether_diamond", NetherDiamondItem::new);
 		NETHER_DIAMOND_SWORD = REGISTRY.register("nether_diamond_sword", NetherDiamondSwordItem::new);
@@ -1046,6 +1058,9 @@ public class BetterToolsModItems {
 		LUCKY_CHARM = REGISTRY.register("lucky_charm", LuckyCharmItem::new);
 		ENDER_GOGGLES = REGISTRY.register("ender_goggles", EnderGogglesItem::new);
 		POISON_CHARM = REGISTRY.register("poison_charm", PoisonCharmItem::new);
+		ENERGY_VIAL = REGISTRY.register("energy_vial", EnergyVialItem::new);
+		EMERALD_ENERGY_VIAL = REGISTRY.register("emerald_energy_vial", EmeraldEnergyVialItem::new);
+		NETHERITE_ENERGY_VIAL = REGISTRY.register("netherite_energy_vial", NetheriteEnergyVialItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<Item> BLACK_METAL_SIGN = REGISTRY.register("black_metal_sign",
@@ -1130,5 +1145,26 @@ public class BetterToolsModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
+	}
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class ItemsClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void clientLoad(FMLClientSetupEvent event) {
+			event.enqueueWork(() -> {
+				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_energy"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
+				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_active"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity != null ? entity.level() : clientWorld, entity, itemStackToRender));
+				ItemProperties.register(EMERALD_ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:emerald_energy_vial_energy"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
+				ItemProperties.register(EMERALD_ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:emerald_energy_vial_active"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity != null ? entity.level() : clientWorld, entity, itemStackToRender));
+				ItemProperties.register(NETHERITE_ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:netherite_energy_vial_energy"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
+				ItemProperties.register(NETHERITE_ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:netherite_energy_vial_active"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity != null ? entity.level() : clientWorld, entity, itemStackToRender));
+			});
+		}
 	}
 }

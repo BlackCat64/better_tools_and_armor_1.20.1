@@ -430,6 +430,9 @@ public class BetterToolsModTabs {
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_CHESTPLATE.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_LEGGINGS.get());
 				tabData.accept(BetterToolsModItems.DIAMOND_GLASS_ARMOR_BOOTS.get());
+				tabData.accept(BetterToolsModItems.ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.EMERALD_ENERGY_VIAL.get());
+				tabData.accept(BetterToolsModItems.NETHERITE_ENERGY_VIAL.get());
 			}).withTabsBefore(TOOLS_AND_ARMOR_TAB.getId()).build());
 
 	@SubscribeEvent

@@ -52,7 +52,7 @@ public record DoubleJumpKeyMessage(int eventType, int pressedms) implements Cust
 			return;
 		if (type == 0) {
 
-			DoubleJumpKeyPressProcedure.execute(entity);
+			DoubleJumpKeyPressProcedure.execute(world, entity);
 		}
 	}
 

@@ -5516,6 +5516,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -26932,6 +26936,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -26968,6 +26976,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27103,6 +27115,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27146,6 +27162,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27170,6 +27190,10 @@
           {
             "name": "armor",
             "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27190,6 +27214,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27210,6 +27238,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27230,6 +27262,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27534,7 +27570,16 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlayerEffectEnergyValueProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Effect Armor"
     },
@@ -27549,7 +27594,16 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEquippedVialProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Effect Armor"
     },
@@ -27671,7 +27725,12 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetEnergyVialCapacityProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
       },
       "path": "~/Effect Armor"
     },
@@ -27690,6 +27749,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -27864,6 +27927,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -31385,6 +31452,99 @@
         ]
       },
       "path": "~/Frozen Effect"
+    },
+    {
+      "name": "EnergyVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EnergyVialItem.java",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_4.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_3.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_2.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_0.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_1.json",
+          "src/main/resources/assets/better_tools/models/item/energy_vial_5.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnergyVialCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EmeraldEnergyVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_energy_vial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial.json",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_1.json",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_5.json",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_0.json",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_4.json",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_2.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/EmeraldEnergyVialItem.java",
+          "src/main/resources/assets/better_tools/models/item/emerald_energy_vial_3.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EmeraldEnergyVialCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_energy_vial_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "NetheriteEnergyVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_energy_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/NetheriteEnergyVialItem.java",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_3.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_0.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_4.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_5.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_2.json",
+          "src/main/resources/assets/better_tools/models/item/netherite_energy_vial_1.json"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "NetheriteEnergyVialCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_energy_vial_curios",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
@@ -34732,7 +34892,10 @@
       "WingedBoots",
       "GlassArmor",
       "IronGlassArmor",
-      "DiamondGlassArmor"
+      "DiamondGlassArmor",
+      "EnergyVial",
+      "EmeraldEnergyVial",
+      "NetheriteEnergyVial"
     ],
     "FOOD": [
       "SugarClump",
@@ -36535,7 +36698,10 @@
       "item.better_tools.poison_charm.description_0": "§7When worn:",
       "item.better_tools.poison_charm": "§5Poison Charm",
       "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers",
-      "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!"
+      "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!",
+      "item.better_tools.energy_vial": "Energy Vial",
+      "item.better_tools.emerald_energy_vial": "Emerald Energy Vial",
+      "item.better_tools.netherite_energy_vial": "Netherite Energy Vial"
     }
   },
   "metadata": {
@@ -36543,6 +36709,7 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModAttributes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModBiomes.java",
+      "src/main/resources/data/curios/tags/item/belt.json",
       "src/main/resources/data/better_tools/curios/slots/head.json",
       "src/main/resources/data/curios/tags/item/hands.json",
       "src/main/resources/data/better_tools/curios/slots/hands.json",
@@ -36551,6 +36718,7 @@
       "src/main/resources/data/better_tools/curios/slots/charm.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModCuriosCompat.java",
       "src/main/resources/data/curios/tags/item/charm.json",
+      "src/main/resources/data/better_tools/curios/slots/belt.json",
       "src/main/resources/data/better_tools/curios/slots/necklace.json",
       "src/main/resources/data/curios/tags/item/head.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/world/features/configurations/StructureFeatureConfiguration.java",

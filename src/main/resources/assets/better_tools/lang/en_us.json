@@ -1783,5 +1783,8 @@
   "item.better_tools.poison_charm.description_0": "§7When worn:",
   "item.better_tools.poison_charm": "§5Poison Charm",
   "item.better_tools.poison_charm.description_1": "§9+1 Karma Damage to all attackers",
-  "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!"
+  "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!",
+  "item.better_tools.energy_vial": "Energy Vial",
+  "item.better_tools.emerald_energy_vial": "Emerald Energy Vial",
+  "item.better_tools.netherite_energy_vial": "Netherite Energy Vial"
 }
