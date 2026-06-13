@@ -1,6 +1,7 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
@@ -16,7 +17,8 @@ public class ApplyKnockbackProcedure {
 		double z_velocity = 0;
 		double x_velocity = 0;
 		if (entity instanceof LivingEntity) {
-			knockback_power = Math.max(power * (1 - 0), 0);
+			knockback_power = Math
+					.max(power * (1 - (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.KNOCKBACK_RESISTANCE) ? _livingEntity1.getAttribute(Attributes.KNOCKBACK_RESISTANCE).getValue() : 0)), 0);
 			x_diff = entity.getX() - x;
 			z_diff = entity.getZ() - z;
 			distance = Math.sqrt(Math.pow(x_diff, 2) + Math.pow(z_diff, 2));

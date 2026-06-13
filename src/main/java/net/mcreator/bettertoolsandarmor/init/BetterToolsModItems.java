@@ -659,7 +659,7 @@ public class BetterToolsModItems {
 		ELECTRIC_CRYSTAL = REGISTRY.register("electric_crystal", ElectricCoreItem::new);
 		FOUR_LEAF_CLOVER = block(BetterToolsModBlocks.FOUR_LEAF_CLOVER);
 		NETHER_DIAMOND_ORE = block(BetterToolsModBlocks.NETHER_DIAMOND_ORE);
-		CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CRYSTALLITE_BLOCK);
+		CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CRYSTALLITE_BLOCK, new Item.Properties().fireResistant());
 		CRYSTALLITE_SHARDS = REGISTRY.register("crystallite_shards", CrystalliteShardsItem::new);
 		CRYSTALLITE_GEM = REGISTRY.register("crystallite_gem", CrystaliteGemItem::new);
 		CRYSTALLITE_SWORD = REGISTRY.register("crystallite_sword", CrystalliteSwordItem::new);
@@ -672,7 +672,7 @@ public class BetterToolsModItems {
 		CRYSTALLITE_CHESTPLATE = REGISTRY.register("crystallite_chestplate", CrystalliteArmorItem.Chestplate::new);
 		CRYSTALLITE_LEGGINGS = REGISTRY.register("crystallite_leggings", CrystalliteArmorItem.Leggings::new);
 		CRYSTALLITE_BOOTS = REGISTRY.register("crystallite_boots", CrystalliteArmorItem.Boots::new);
-		CUT_CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK);
+		CUT_CRYSTALLITE_BLOCK = block(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK, new Item.Properties().fireResistant());
 		TOUGH_CRYSTAL = REGISTRY.register("tough_crystal", ToughCrystalItem::new);
 		GILDED_CRYSTAL = REGISTRY.register("gilded_crystal", GildedCrystalItem::new);
 		MAGIC_CRYSTAL = REGISTRY.register("magic_crystal", MagicCrystalItem::new);
