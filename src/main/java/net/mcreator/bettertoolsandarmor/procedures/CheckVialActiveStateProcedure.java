@@ -13,10 +13,8 @@ public class CheckVialActiveStateProcedure {
 			return false;
 		ItemStack vial = ItemStack.EMPTY;
 		if (PlayerHasEnergyVialEquippedProcedure.execute(world, entity)) {
-			vial = GetEquippedVialProcedure.execute(world, entity).copy();
-		} else {
-			vial = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+			return GetEquippedVialProcedure.execute(world, entity).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean((armor + "_active"));
 		}
-		return vial.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean((armor + "_active"));
+		return (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean((armor + "_active"));
 	}
 }

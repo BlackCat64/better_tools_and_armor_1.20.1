@@ -5,10 +5,7 @@ import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -26,8 +23,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.bettertoolsandarmor.procedures.EnergyVialMenuClosedProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.EnergyVialGuiUpdateProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
 
 import java.util.function.Supplier;
@@ -35,7 +30,6 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-@EventBusSubscriber
 public class EnergyVialMenuMenu extends AbstractContainerMenu implements BetterToolsModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
@@ -298,7 +292,6 @@ public class EnergyVialMenuMenu extends AbstractContainerMenu implements BetterT
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		EnergyVialMenuClosedProcedure.execute(world, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -344,17 +337,5 @@ public class EnergyVialMenuMenu extends AbstractContainerMenu implements BetterT
 	@Override
 	public Map<String, Object> getMenuState() {
 		return menuState;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		Player entity = event.getEntity();
-		if (entity.containerMenu instanceof EnergyVialMenuMenu menu) {
-			Level world = menu.world;
-			double x = menu.x;
-			double y = menu.y;
-			double z = menu.z;
-			EnergyVialGuiUpdateProcedure.execute(world, entity);
-		}
 	}
 }

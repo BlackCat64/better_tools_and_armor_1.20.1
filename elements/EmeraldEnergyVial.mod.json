@@ -182,10 +182,10 @@
     "openGUIOnRightClick": {
       "fixedValue": false
     },
-    "inventorySize": 9,
-    "inventoryStackSize": 99,
+    "inventorySize": 6,
+    "inventoryStackSize": 1,
     "onRightClickedInAir": {
-      "name": "EnergyVialInHandOpenGui"
+      "name": "EnergyVialOpenGui"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -27115,10 +27115,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -31545,6 +31541,29 @@
         "files": []
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnergyVialTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor"
     }
   ],
   "variable_elements": [
@@ -31744,7 +31763,13 @@
       "name": "stealth_armor_timer",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
+    },
+    {
+      "name": "energy_vial_slot",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "-1.0"
     }
   ],
   "sound_elements": [

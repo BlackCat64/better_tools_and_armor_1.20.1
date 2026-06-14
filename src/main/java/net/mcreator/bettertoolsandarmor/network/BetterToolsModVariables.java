@@ -110,6 +110,7 @@ public class BetterToolsModVariables {
 			clone.nether_diamond_armor_fire_res_cooldown = original.nether_diamond_armor_fire_res_cooldown;
 			clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
 			clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
+			clone.energy_vial_slot = original.energy_vial_slot;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -189,7 +190,7 @@ public class BetterToolsModVariables {
 		public static final String DATA_NAME = "better_tools_mapvars";
 		boolean _syncDirty = false;
 		public double crystallite_shimmer_timer = 0;
-		public double stealth_armor_timer = 0;
+		public double stealth_armor_timer = 0.0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -298,6 +299,7 @@ public class BetterToolsModVariables {
 		public double nether_diamond_armor_fire_res_cooldown = 0;
 		public double crystallite_redstone_sword_heal_cooldown = 0;
 		public double crystallite_amethyst_ore_highlight_cooldown = 0;
+		public double energy_vial_slot = -1.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -333,6 +335,7 @@ public class BetterToolsModVariables {
 			nbt.putDouble("nether_diamond_armor_fire_res_cooldown", nether_diamond_armor_fire_res_cooldown);
 			nbt.putDouble("crystallite_redstone_sword_heal_cooldown", crystallite_redstone_sword_heal_cooldown);
 			nbt.putDouble("crystallite_amethyst_ore_highlight_cooldown", crystallite_amethyst_ore_highlight_cooldown);
+			nbt.putDouble("energy_vial_slot", energy_vial_slot);
 			return nbt;
 		}
 
@@ -369,6 +372,7 @@ public class BetterToolsModVariables {
 			nether_diamond_armor_fire_res_cooldown = nbt.getDouble("nether_diamond_armor_fire_res_cooldown");
 			crystallite_redstone_sword_heal_cooldown = nbt.getDouble("crystallite_redstone_sword_heal_cooldown");
 			crystallite_amethyst_ore_highlight_cooldown = nbt.getDouble("crystallite_amethyst_ore_highlight_cooldown");
+			energy_vial_slot = nbt.getDouble("energy_vial_slot");
 		}
 
 		public void markSyncDirty() {

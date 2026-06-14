@@ -16,13 +16,13 @@ public class GetEquippedVialProcedure {
 		if (entity == null)
 			return ItemStack.EMPTY;
 		ItemStack vial = ItemStack.EMPTY;
-		if (entity instanceof Player player3) {
-			IItemHandler inventory3 = BetterToolsMod.CuriosApiHelper.getCuriosInventory(player3);
-			if (inventory3 != null) {
-				for (int i = 0; i < inventory3.getSlots(); i++) {
-					ItemStack itemstackiterator = inventory3.getStackInSlot(i);
+		if (entity instanceof Player player4) {
+			IItemHandler inventory4 = BetterToolsMod.CuriosApiHelper.getCuriosInventory(player4);
+			if (inventory4 != null) {
+				for (int i = 0; i < inventory4.getSlots(); i++) {
+					ItemStack itemstackiterator = inventory4.getStackInSlot(i);
 					if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
-						vial = itemstackiterator.copy();
+						vial = itemstackiterator;
 					}
 				}
 			}
