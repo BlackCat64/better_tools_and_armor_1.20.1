@@ -11,7 +11,6 @@ import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.capabilities.EntityCapability;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -75,21 +74,10 @@ public class BetterToolsMod {
 		// Start of user code block mod init
 		CustomCreativeTabItems.REGISTRY.register(modEventBus);
 		BetterToolsModBlockEntities.REGISTRY.register(modEventBus);
-		modEventBus.addListener(this::commonSetup);
 		// End of user code block mod init
 	}
 
 	// Start of user code block mod methods
-	public static void registerMessages() {
-		//		addNetworkMessage(EnergyVialGuiSyncMessage.class, EnergyVialGuiSyncMessage::buffer, EnergyVialGuiSyncMessage::decode, EnergyVialGuiSyncMessage::handler);
-	}
-
-	private void commonSetup(final FMLCommonSetupEvent event) {
-		event.enqueueWork(() -> {
-			registerMessages();
-		});
-	}
-
 	@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientModEvents {
 		@SubscribeEvent

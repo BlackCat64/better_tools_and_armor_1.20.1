@@ -1,5 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -18,10 +19,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.bettertoolsandarmor.world.inventory.EnergyVialMenuMenu;
+import net.mcreator.bettertoolsandarmor.network.EnergyVialGuiSync;
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMenus;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
-import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
 
@@ -51,7 +52,6 @@ public class EnergyVialGuiUpdateProcedure {
 		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof EnergyVialMenuMenu) {
 			fuel = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(0).getItem() : ItemStack.EMPTY);
 			vial = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof BetterToolsModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(1).getItem() : ItemStack.EMPTY);
-			BetterToolsMod.LOGGER.info("" + entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_slot);
 			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_slot >= 0 && !((BuiltInRegistries.ITEM.getKey((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler5
 					? _modHandler5.getStackInSlot((int) entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).energy_vial_slot).copy()
 					: ItemStack.EMPTY).getItem()).toString()).equals(BuiltInRegistries.ITEM.getKey(vial.getItem()).toString()))) {
@@ -105,11 +105,7 @@ public class EnergyVialGuiUpdateProcedure {
 					final boolean _tagValue = boots_active;
 					CustomData.update(DataComponents.CUSTOM_DATA, vial, tag -> tag.putBoolean(_tagName, _tagValue));
 				}
-				BetterToolsMod.LOGGER.info("" + helmet_active);
-				BetterToolsMod.LOGGER.info("" + chestplate_active);
-				BetterToolsMod.LOGGER.info("" + leggings_active);
-				BetterToolsMod.LOGGER.info("" + boots_active);
-				BetterToolsMod.LOGGER.info("========================================");
+				PacketDistributor.sendToServer(new EnergyVialGuiSync(helmet_active, chestplate_active, leggings_active, boots_active));
 			}
 			if (PlayerHasEnergyVialEquippedProcedure.execute(world, entity)) {
 				GetEquippedVialProcedure.execute(world, entity).applyComponents(vial.getComponents());
