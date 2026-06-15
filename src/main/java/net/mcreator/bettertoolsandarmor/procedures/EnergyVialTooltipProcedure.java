@@ -9,10 +9,16 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
+
+import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -23,38 +29,40 @@ public class EnergyVialTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
+		double energy = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
-			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("helmet_active")) {
-				tooltip.add(Component.literal("\u00A7aHelmet"));
-			} else {
-				tooltip.add(Component.literal("\u00A7cHelmet"));
+			energy = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
+			tooltip.add(Component.literal(""));
+			tooltip.add(Component.literal(("\u00A77Energy: \u00A76" + new java.text.DecimalFormat("#").format(energy) + " / " + new java.text.DecimalFormat("#").format(GetEnergyVialCapacityProcedure.execute(itemstack)))));
+			tooltip.add(Component.literal(("\u00A77Cost: \u00A7c" + new java.text.DecimalFormat("#").format(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_cost) + "\u00A76 / 5s")));
+			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).effect_energy_cost > 0) {
+				tooltip.add(Component.literal(("\u00A77Estimated Time Remaining: \u00A76" + EnergyTimeDisplayProcedure.execute(entity, itemstack))));
 			}
-			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("chestplate_active")) {
-				tooltip.add(Component.literal("\u00A7aChestplate"));
-			} else {
-				tooltip.add(Component.literal("\u00A7cChestplate"));
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
+				tooltip.add(Component.literal(("\u00A77Estimated Jumps Remaining: \u00A76" + new java.text.DecimalFormat("#").format(energy / 50))));
 			}
-			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("leggings_active")) {
-				tooltip.add(Component.literal("\u00A7aLeggings"));
-			} else {
-				tooltip.add(Component.literal("\u00A7cLeggings"));
+			tooltip.add(Component.literal(("\u00A77Active: " + (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("helmet_active") ? "\u00A7a" : "\u00A7c") + "\uD83E\uDE96 "
+					+ (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("chestplate_active") ? "\u00A7a" : "\u00A7c") + "\uD83D\uDC55 "
+					+ (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("leggings_active") ? "\u00A7a" : "\u00A7c") + "\uD83D\uDC56 "
+					+ (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("boots_active") ? "\u00A7a" : "\u00A7c") + "\uD83E\uDD7E " + "\u00A7r")));
+			if (!IsWearingGlassArmorFullSetProcedure.execute(entity)) {
+				if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) == 2) {
+					tooltip.add(Component.literal("\u00A772-piece bonus: \u00A7a2/3 Energy Cost"));
+				} else if (EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack) >= 3) {
+					tooltip.add(Component.literal("\u00A773-piece bonus: \u00A7a1/2 Energy Cost"));
+				}
 			}
-			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("boots_active")) {
-				tooltip.add(Component.literal("\u00A7aBoots"));
-			} else {
-				tooltip.add(Component.literal("\u00A7cBoots"));
-			}
-			tooltip.add(Component.literal((new java.text.DecimalFormat("#").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy")))));
+			tooltip.add(Component.literal("\u00A78Press \u00A77[V]\u00A78 while equipped to access menu"));
 		}
 	}
 }

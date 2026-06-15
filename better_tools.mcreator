@@ -31551,6 +31551,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -31561,6 +31565,33 @@
         ],
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnergyVialFuelTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vial_fuel_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnergyVialFuelTooltipProcedure.java"
         ]
       },
       "path": "~/Effect Armor"
