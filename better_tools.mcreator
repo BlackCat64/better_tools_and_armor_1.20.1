@@ -31595,6 +31595,986 @@
         ]
       },
       "path": "~/Effect Armor"
+    },
+    {
+      "name": "BowArrowDamageTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bow_arrow_damage_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BowArrowDamageTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "BowKnockbackTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bow_knockback_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BowKnockbackTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CactusShirtTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_shirt_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CactusShirtTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Cactus Shirt"
+    },
+    {
+      "name": "ComboWeaponsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_weapons_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ComboWeaponsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CriticalityWeaponTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criticality_weapon_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalityWeaponTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Critical Hit Multiplier"
+    },
+    {
+      "name": "CryingObsidianHelmetTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crying_obsidian_helmet_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CryingObsidianHelmetTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Crying Obsidian Helmet"
+    },
+    {
+      "name": "CrystalliteAxeEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteAxeEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteAxeSculkTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_sculk_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteAxeSculkTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "CrystalliteBootsEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteBootsPrismarineTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_boots_prismarine_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsPrismarineTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteBowAmethystTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_amethyst_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowAmethystTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteBowHoneyTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_honey_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowHoneyTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteBowRedstoneTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_redstone_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowRedstoneTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteChestplateAmethystTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_chestplate_amethyst_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteChestplateAmethystTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteChestplateEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_chestplate_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteChestplateEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteChestplateHoneyTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_chestplate_honey_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteChestplateHoneyTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteGoldArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_gold_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteGoldArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteGoldPickaxeTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_gold_pickaxe_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteGoldPickaxeTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteHelmetEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_helmet_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHelmetEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteHoeEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHoeEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteLapisArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_lapis_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLapisArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "CrystalliteLapisPickaxeTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_lapis_pickaxe_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLapisPickaxeTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "CrystalliteLeggingsEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_leggings_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteLeggingsHoneyTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_leggings_honey_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsHoneyTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteLeggingsPrismarineTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_leggings_prismarine_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsPrismarineTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteLeggingsSkyTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_leggings_sky_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSkyTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "CrystalliteNetheriteArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_netherite_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteNetheriteArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystallitePickaxeAmethystTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_amethyst_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePickaxeAmethystTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteRedstoneArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_redstone_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteRedstoneArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteRedstoneSwordTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_redstone_sword_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteRedstoneSwordTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteRubyArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_ruby_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteRubyArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "CrystalliteSculkArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sculk_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSculkArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "CrystalliteShovelLapisTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_lapis_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelLapisTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "CrystalliteShovelNetheriteTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_netherite_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelNetheriteTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystalliteSwordAmethystTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_amethyst_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordAmethystTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "CrystalliteSwordDiamondTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_diamond_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordDiamondTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "CrystalliteSwordEmeraldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_emerald_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordEmeraldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "CrystalliteSwordGoldTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_gold_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordGoldTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteSwordPrismarineTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_prismarine_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordPrismarineTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteSwordSculkTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_sculk_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSculkTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "EffectArmorTooltips",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_armor_tooltips",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EffectArmorTooltipsProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EffectArmorWarning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_armor_warning",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EffectArmorWarningProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "ElectricNecklaceTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_necklace_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ElectricNecklaceTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "EnderTitaniumArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnderTitaniumArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnderTitaniumSwordTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_sword_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnderTitaniumSwordTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "ExperiencedTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experienced_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ExperiencedTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "FireAspectTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_aspect_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireAspectTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "FireStaffTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FlameEnchTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_ench_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlameEnchTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "FreezeShotEnchTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeze_shot_ench_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FreezeShotEnchTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "GlassArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GlassArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Glass Armor"
+    },
+    {
+      "name": "GuardianNecklaceTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_necklace_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GuardianNecklaceTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "GuardianStaffTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_staff_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GuardianStaffTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Staffs/Guardian"
+    },
+    {
+      "name": "HeartyShirtTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hearty_shirt_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/HeartyShirtTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Hearty Shirt"
+    },
+    {
+      "name": "IceStaffTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "KnockbackTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockback_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/KnockbackTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "LightningStaffTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "NatureRingTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_ring_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NatureRingTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "NetherDiamondArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "NetherDiamondSwordTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_sword_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondSwordTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "NetherDiamondToolsPlantsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_tools_plants_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondToolsPlantsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "ProgressiveToolsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "SapphireArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "SapphireSwordTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_sword_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireSwordTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "ThunderShotTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_shot_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ThunderShotTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "TopazArmorTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_armor_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazArmorTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "TopazPickaxeTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_pickaxe_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazPickaxeTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "TopazSwordTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_sword_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazSwordTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "WardenStaffTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_staff_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WardenStaffTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Staffs/Warden"
+    },
+    {
+      "name": "WingedBootsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_boots_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WingedBootsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Winged Boots"
     }
   ],
   "variable_elements": [
