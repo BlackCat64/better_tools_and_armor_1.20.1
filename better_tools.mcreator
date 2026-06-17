@@ -31707,7 +31707,7 @@
     {
       "name": "CriticalityWeaponTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "criticality_weapon_tooltip",
       "metadata": {
@@ -31803,7 +31803,7 @@
     {
       "name": "CrystalliteBootsEmeraldTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_boots_emerald_tooltip",
       "metadata": {
@@ -31830,7 +31830,7 @@
     {
       "name": "CrystalliteBootsPrismarineTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_boots_prismarine_tooltip",
       "metadata": {
@@ -31957,7 +31957,7 @@
     {
       "name": "CrystalliteChestplateEmeraldTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_chestplate_emerald_tooltip",
       "metadata": {
@@ -31973,6 +31973,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -32107,7 +32111,7 @@
     {
       "name": "CrystalliteLapisArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_lapis_armor_tooltip",
       "metadata": {
@@ -32123,6 +32127,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -32253,7 +32261,7 @@
     {
       "name": "CrystalliteNetheriteArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_netherite_armor_tooltip",
       "metadata": {
@@ -32349,7 +32357,7 @@
     {
       "name": "CrystalliteRubyArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_ruby_armor_tooltip",
       "metadata": {
@@ -32376,7 +32384,7 @@
     {
       "name": "CrystalliteSculkArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystallite_sculk_armor_tooltip",
       "metadata": {
@@ -32829,7 +32837,7 @@
     {
       "name": "FreezeShotEnchTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "freeze_shot_ench_tooltip",
       "metadata": {
@@ -32995,11 +33003,15 @@
     {
       "name": "KnockbackTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "knockback_tooltip",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -33184,7 +33196,7 @@
     {
       "name": "SapphireArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sapphire_armor_tooltip",
       "metadata": {
@@ -33211,7 +33223,7 @@
     {
       "name": "SapphireSwordTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sapphire_sword_tooltip",
       "metadata": {
@@ -33238,11 +33250,15 @@
     {
       "name": "ThunderShotTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "thunder_shot_tooltip",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -33265,7 +33281,7 @@
     {
       "name": "TopazArmorTooltip",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "topaz_armor_tooltip",
       "metadata": {

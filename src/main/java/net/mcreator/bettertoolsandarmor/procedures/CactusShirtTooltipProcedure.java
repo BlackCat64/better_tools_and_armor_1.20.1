@@ -14,6 +14,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
 
@@ -36,7 +37,9 @@ public class CactusShirtTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CACTUS_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.IRON_CACTUS_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.DIAMOND_CACTUS_CHESTPLATE.get()) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format() + " Thorns Damage")));
+				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##").format(
+						entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE) ? _livingEntity9.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue() : 0))
+						+ " Thorns Damage")));
 			} else {
 				if (itemstack.getItem() == BetterToolsModItems.CACTUS_CHESTPLATE.get()) {
 					tooltip.add(Component.literal("\u00A79+2 Thorns Damage"));

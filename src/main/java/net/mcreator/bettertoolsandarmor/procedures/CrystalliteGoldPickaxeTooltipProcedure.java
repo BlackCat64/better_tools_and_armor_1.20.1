@@ -8,6 +8,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
@@ -35,7 +36,10 @@ public class CrystalliteGoldPickaxeTooltipProcedure {
 			return;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_tools")))) {
 			if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format() + " Block Reach")));
+				tooltip.add(Component.literal(("\u00A72 "
+						+ (new java.text.DecimalFormat("##.#").format(
+								entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity5.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
+						+ " Block Reach")));
 			} else {
 				tooltip.add(Component.literal("\u00A79+3 Block Reach"));
 			}

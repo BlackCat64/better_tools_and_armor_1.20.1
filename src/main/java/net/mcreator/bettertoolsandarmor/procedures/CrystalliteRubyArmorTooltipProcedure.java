@@ -8,6 +8,8 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
@@ -29,16 +31,19 @@ public class CrystalliteRubyArmorTooltipProcedure {
 		execute(null, entity, itemstack, tooltip);
 	}
 
-private static void execute(
-@Nullable Event event,
-Entity entity,
-ItemStack itemstack,
-List<Component> tooltip ) {
-if (
-entity == null ||
-tooltip == null ) return ;
-if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get()) {if (
-IsPlayerWearingItemProcedure.execute(entity,itemstack)
-) {tooltip.add(Component.literal(("\u00A72 "+new java.text.DecimalFormat("##.#").format(*1000)+"% Movement Speed")));}else{tooltip.add(Component.literal("\u00A79+10% Speed"));}}
-}
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
+			return;
+		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()
+				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get()) {
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+				tooltip.add(Component.literal(("\u00A72 "
+						+ (new java.text.DecimalFormat("##.#")
+								.format((entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity8.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
+						+ "% Movement Speed")));
+			} else {
+				tooltip.add(Component.literal("\u00A79+10% Speed"));
+			}
+		}
+	}
 }

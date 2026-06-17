@@ -8,6 +8,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -40,7 +41,10 @@ public class CrystalliteGoldArmorTooltipProcedure {
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
 					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format() + " Block Reach")));
+				tooltip.add(Component.literal(("\u00A72 "
+						+ (new java.text.DecimalFormat("##.#").format(
+								entity instanceof LivingEntity _livingEntity20 && _livingEntity20.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity20.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
+						+ " Block Reach")));
 			} else {
 				tooltip.add(Component.literal("\u00A79+1 Block Reach"));
 			}

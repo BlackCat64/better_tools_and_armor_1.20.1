@@ -8,6 +8,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -31,21 +32,51 @@ public class CrystalliteSculkArmorTooltipProcedure {
 		execute(null, entity, itemstack, tooltip);
 	}
 
-private static void execute(
-@Nullable Event event,
-Entity entity,
-ItemStack itemstack,
-List<Component> tooltip ) {
-if (
-entity == null ||
-tooltip == null ) return ;
-double range = 0;
-if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()||itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {tooltip.add(Component.literal("\u00A72 20% Sonic Boom Chance"));tooltip.add(Component.literal("\u00A72 10 Sonic Boom Damage"));}if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {tooltip.add(Component.literal("\u00A791.3x Sneaking Speed"));}range = 100;if (
-IsPlayerWearingItemProcedure.execute(entity,itemstack)
-) {if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD):ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()) {range = range-10;}if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST):ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {range = range-10;}if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS):ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {range = range-10;}if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET):ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {range = range-10;}if (range<=60) {range = 50;}tooltip.add(Component.literal(("\u00A72 "+new java.text.DecimalFormat("##.#").format(range)+"% Detection Range")));}else{tooltip.add(Component.literal("\u00A79-10% Detection Range"));}if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {if (
-IsPlayerWearingItemProcedure.execute(entity,itemstack)
-&&
-IsPlayerInTheDarkProcedure.execute(entity.level(),entity.getX(),entity.getY(),entity.getZ(),entity)
-) {tooltip.add(Component.literal(("\u00A72 "+new java.text.DecimalFormat("##").format(*1000)+"% Movement Speed")));}else{tooltip.add(Component.literal("\u00A77When in the dark:"));tooltip.add(Component.literal("\u00A79+30% Speed"));}}}
-}
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
+			return;
+		double range = 0;
+		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()
+				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
+				tooltip.add(Component.literal("\u00A72 20% Sonic Boom Chance"));
+				tooltip.add(Component.literal("\u00A72 10 Sonic Boom Damage"));
+			}
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
+				tooltip.add(Component.literal("\u00A791.3x Sneaking Speed"));
+			}
+			range = 100;
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get()) {
+					range = range - 10;
+				}
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
+					range = range - 10;
+				}
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
+					range = range - 10;
+				}
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+					range = range - 10;
+				}
+				if (range <= 60) {
+					range = 50;
+				}
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(range) + "% Detection Range")));
+			} else {
+				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
+			}
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
+				if (IsPlayerWearingItemProcedure.execute(entity, itemstack) && IsPlayerInTheDarkProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
+					tooltip.add(Component.literal(("\u00A72 "
+							+ (new java.text.DecimalFormat("##")
+									.format((entity instanceof LivingEntity _livingEntity30 && _livingEntity30.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity30.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
+							+ "% Movement Speed")));
+				} else {
+					tooltip.add(Component.literal("\u00A77When in the dark:"));
+					tooltip.add(Component.literal("\u00A79+30% Speed"));
+				}
+			}
+		}
+	}
 }
