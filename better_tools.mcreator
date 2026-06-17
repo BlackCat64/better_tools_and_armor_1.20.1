@@ -33400,6 +33400,132 @@
         ]
       },
       "path": "~/Effect Armor/Winged Boots"
+    },
+    {
+      "name": "CharmBaseInBastionTreasure",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_bastion_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_bastion_treasure.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CharmBaseInDesertTemple",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_desert_temple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_desert_temple.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CharmBaseInJungleTemple",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_jungle_temple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_jungle_temple.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CharmBaseInShipwreck",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_shipwreck",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_shipwreck.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CharmBaseInWoodlandMansion",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_base_in_woodland_mansion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/charm_base_in_woodland_mansion.json"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "EndCityLootModifier",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_city_loot_modifier",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/end_city_loot_modifier.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "ModifyQuarkMonsterBoxLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_quark_monster_box_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_quark_monster_box_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyMineshaftLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_mineshaft_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_mineshaft_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyDungeonLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_dungeon_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_dungeon_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifyAncientCityLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_ancient_city_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_ancient_city_loot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -38589,6 +38715,7 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMenus.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModGameRules.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModKeyMappings.java",
+      "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticles.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticleTypes.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMobEffects.java",
