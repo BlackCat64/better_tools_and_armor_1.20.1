@@ -1,0 +1,63 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:ElectricStaff"
+      },
+      {
+        "value": "CUSTOM:TopazSword"
+      },
+      {
+        "value": "CUSTOM:TopazAxe"
+      },
+      {
+        "value": "CUSTOM:TopazDagger"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.body"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.legs"
+      },
+      {
+        "value": "CUSTOM:TopazArmor.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteSwordTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteDaggerTopaz"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      },
+      {
+        "value": "CUSTOM:CrystalliteBowTopaz"
+      },
+      {
+        "value": "CUSTOM:ElectricNecklace"
+      }
+    ],
+    "information": [
+      "Effect improves when used in a thunderstorm",
+      "(Must be in a location which can see the sky)"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:RandomOre"
+      }
+    ],
+    "information": [
+      "Chance - Item",
+      "30%   -   §8Coal§r",
+      "25%   -   §cRedstone§r",
+      "15%   -   §9Lapis Lazuli§r",
+      "15%   -   §6Gold§r",
+      "10%   -   §2Emerald§r",
+      "5%     -   §3Diamond§r"
+    ]
+  }
+}

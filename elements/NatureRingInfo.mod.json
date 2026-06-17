@@ -1,0 +1,23 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorEmerald.body"
+      },
+      {
+        "value": "CUSTOM:NatureRing"
+      }
+    ],
+    "information": [
+      "Base healing rate: §91HP every 8s§r",
+      "",
+      "Healing is §ltwice as fast§r when:",
+      "- Under 50% HP",
+      "- In Sunlight",
+      "- Both items are worn",
+      "(These x2 multipliers can stack for up to §91s Regen Speed§r)"
+    ]
+  }
+}

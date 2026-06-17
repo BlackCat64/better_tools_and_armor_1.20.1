@@ -1,0 +1,18 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:WardenStaff"
+      }
+    ],
+    "information": [
+      "§1When enchanted with Ensorcellation:§r",
+      "Increases the damage and range of the Sonic Boom.",
+      "",
+      "Damage: +2 per level.",
+      "Range: +3 per level."
+    ]
+  }
+}

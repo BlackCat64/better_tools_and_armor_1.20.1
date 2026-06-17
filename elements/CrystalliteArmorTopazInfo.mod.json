@@ -1,0 +1,25 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "§9+8% Lightning Chance§r",
+      "(for a total of §940%§r)"
+    ]
+  }
+}

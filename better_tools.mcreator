@@ -33526,6 +33526,1023 @@
           "src/main/resources/data/better_tools/loot_modifiers/modify_ancient_city_loot.json"
         ]
       }
+    },
+    {
+      "name": "BarkInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bark_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Wood Armor"
+    },
+    {
+      "name": "AmethystCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Amethyst"
+    },
+    {
+      "name": "BeaconBaseBlocksInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_blocks_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BeaconPaymentItemsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_payment_items_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BlackstoneMagmaInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackstone_magma_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BlueMushroomInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_mushroom_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blue Mushrooms"
+    },
+    {
+      "name": "ComboMiningInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_mining_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CryingObsidianHelmetInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crying_obsidian_helmet_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor/Crying Obsidian Helmet"
+    },
+    {
+      "name": "CrystalliteArmorGoldInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_gold_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteArmorHoneyInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_honey_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteArmorIronInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_iron_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "CrystalliteArmorLapisInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_lapis_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "CrystalliteArmorNetherDiamondInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_nether_diamond_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteArmorNetheriteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_netherite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystalliteArmorRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteArmorRubyInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_ruby_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "CrystalliteArmorSapphireInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_sapphire_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "CrystalliteArmorSculkInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_sculk_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "CrystalliteArmorTopazInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_armor_topaz_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "CrystalliteAxeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_axe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteBowNetherDiamondInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_nether_diamond_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "CrystalliteBowPrismarineInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_prismarine_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "CrystalliteCharmBaseInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_charm_base_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteHoeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_hoe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystallitePickaxeRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_pickaxe_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteShovelRedstoneInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_redstone_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "CrystalliteSwordGoldInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_gold_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteSwordHoneyInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_honey_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "CrystalliteUpgradeInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_upgrade_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "DeepslateMixedOreInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mixed_ore_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mixed Ore"
+    },
+    {
+      "name": "DiamondCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Diamond"
+    },
+    {
+      "name": "EffectArmorJEIInformation",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_armor_jei_information",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "ElectricChainingInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_chaining_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "ElementalCrystalsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_crystals_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "EmeraldCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "EnderTitaniumOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnderTitaniumUpgradeInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_upgrade_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnergyVialsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_vials_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "EnrichedBlazePowderInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_blaze_powder_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor"
+    },
+    {
+      "name": "FireEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "FireStaffInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Fire"
+    },
+    {
+      "name": "FrozenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "GoldCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "GuardianStaffInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Guardian"
+    },
+    {
+      "name": "HoneyCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honey_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "IceEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "IceStaffInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Ice"
+    },
+    {
+      "name": "IcyBraceletInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_bracelet_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "ImprovedLuckInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "improved_luck_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "InfiniteArrowsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_arrows_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "IronCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "JewelleryTableInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jewellery_table_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "LapisCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Lapis"
+    },
+    {
+      "name": "LightningEffectsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_effects_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "LightningStaffInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Lightning"
+    },
+    {
+      "name": "LostSoulsPotionInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_souls_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "MetalBlocksInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_blocks_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Polished Gem Blocks"
+    },
+    {
+      "name": "MixedOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixed_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mixed Ore"
+    },
+    {
+      "name": "MultiBlockMiningToolsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multi_block_mining_tools_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "MysticPotionInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "NatureRingInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_ring_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Emerald"
+    },
+    {
+      "name": "NetherDiamondArmorInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_armor_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "NetherDiamondCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Nether Diamond"
+    },
+    {
+      "name": "NetherDiamondOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_diamond_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Nether Diamond"
+    },
+    {
+      "name": "NetheriteCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "ObtainingCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtaining_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "OreVisionInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_vision_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ore Vision Effect"
+    },
+    {
+      "name": "PrismarineCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prismarine_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "ProgressiveToolsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "PurpleMushroomInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_mushroom_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Purple Mushrooms"
+    },
+    {
+      "name": "QuarkMonsterBoxInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quark_monster_box_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RecallPotionInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recall_potion_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "RedstoneCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ReducedDetectionRangeInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_detection_range_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "RubyCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Ruby"
+    },
+    {
+      "name": "RubyOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Ruby"
+    },
+    {
+      "name": "SafeHoneyHarvestersInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_honey_harvesters_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "SapphireArmorInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_armor_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "SapphireCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sapphire"
+    },
+    {
+      "name": "SapphireOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "SculkCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sculk"
+    },
+    {
+      "name": "SkyCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "StuckInMudInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuck_in_mud_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Pitfall Effect"
+    },
+    {
+      "name": "SugarClumpInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_clump_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "SupplementariesUrnsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supplementaries_urns_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ThornsDamageInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorns_damage_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor/Cactus Shirt"
+    },
+    {
+      "name": "TopazArmorInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_armor_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "TopazCrystalliteInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_crystallite_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Crystallite/Topaz"
+    },
+    {
+      "name": "TopazOreGenInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_ore_gen_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "TopazPickaxeInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_pickaxe_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Topaz"
+    },
+    {
+      "name": "UtilityPotionsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utility_potions_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Consumables"
+    },
+    {
+      "name": "WardenStaffInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_staff_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Staffs/Warden"
+    },
+    {
+      "name": "WingedBootsInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_boots_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor/Winged Boots"
     }
   ],
   "variable_elements": [
@@ -38688,7 +39705,100 @@
       "item.better_tools.blue_slime_stick.description_0": "§bSend your enemies flying!",
       "item.better_tools.energy_vial": "Energy Vial",
       "item.better_tools.emerald_energy_vial": "Emerald Energy Vial",
-      "item.better_tools.netherite_energy_vial": "Netherite Energy Vial"
+      "item.better_tools.netherite_energy_vial": "Netherite Energy Vial",
+      "jei.better_tools.bark_info": "Obtained by stripping any Log with an Axe.\n\nUse on any Stripped Log to turn it back into a regular Log.",
+      "jei.better_tools.amethyst_crystallite_info": "§lCrystallite Upgrades: \n§dAmethyst§r\n\nTheme:\nEarth and Echolocation",
+      "jei.better_tools.beacon_base_blocks_info": "Better Tools and Armor allows these blocks to be used as Beacon bases.",
+      "jei.better_tools.beacon_payment_items_info": "Better Tools and Armor allows these items to be used as Beacon payment items.",
+      "jei.better_tools.blackstone_magma_info": "Generates in the Nether, only in §4Basalt Deltas§r.\nOnly spawns near lava, in place of regular Magma Blocks.",
+      "jei.better_tools.blue_mushroom_info": "Blue Mushrooms generate exclusively on Mushroom Islands, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.",
+      "jei.better_tools.combo_mining_info": "Mining Combo will be lost after 2s of not mining the same block.",
+      "jei.better_tools.crying_obsidian_helmet_info": "Acts like a Totem of Undying, but worn on your head.\nThe helmet must have enough durability remaining for the effect to work.\nUpgrade it with diamonds to prevent the helmet from breaking when the effect is used.",
+      "jei.better_tools.crystallite_armor_gold_info": "§lFull-set bonus:§r\n§9+1 Block Reach§r\n(for a total of §9+5§r)",
+      "jei.better_tools.crystallite_armor_honey_info": "§lFull-set bonus:§r\nCalms all nearby bees",
+      "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
+      "jei.better_tools.crystallite_armor_lapis_info": "§lFull-set bonus:§r\nAll XP is kept on death\n(also works when 3 pieces are worn and a Magic Ring is equipped)",
+      "jei.better_tools.crystallite_armor_nether_diamond_info": "§lFull-set bonus:§r\n§9+3s Fire Resistance§r when on fire\n(for a total of §915s§r)",
+      "jei.better_tools.crystallite_armor_netherite_info": "§lFull-set bonus:§r\nDamages all mobs within a radius",
+      "jei.better_tools.crystallite_armor_redstone_info": "§lFull-set bonus:§r\n§9+2 Max Health§r\n(for a total of §9+10§r)",
+      "jei.better_tools.crystallite_armor_ruby_info": "§lFull-set bonus:§r\n§9+10% Movement Speed§r\n(for a total of §9+50%§r)",
+      "jei.better_tools.crystallite_armor_sapphire_info": "§lFull-set bonus:§r\n§9+8% Freeze Chance§r\n(for a total of §940%§r)",
+      "jei.better_tools.crystallite_armor_sculk_info": "§lFull-set bonus:§r\n§9-10% Detection Range§r\n(for a total of §9-50%§r)",
+      "jei.better_tools.crystallite_armor_topaz_info": "§lFull-set bonus:§r\n§9+8% Lightning Chance§r\n(for a total of §940%§r)",
+      "jei.better_tools.crystallite_axe_redstone_info": "After 1000 blocks have been mined:\n§92x Base Mining Speed§r\n\nAfter 4000 blocks have been mined:\n§93x Base Mining Speed§r",
+      "jei.better_tools.crystallite_bow_nether_diamond_info": "If Tipped Arrows are used:\nSummons a Lingering Potion at the explosion\u0027s center.",
+      "jei.better_tools.crystallite_bow_prismarine_info": "Arrow damage increases when the target is in rain, or in water.\nArrows are not slowed down when moving through water.\nThese effects are not applied to Tipped or Spectral Arrows.",
+      "jei.better_tools.crystallite_charm_base_info": "Used to craft Crystallite Charms.\nCan be found rarely in Dungeon and Mineshaft chests.\nUse Crystallite Shards to duplicate.\nCan also be duplicated without using Crystallite, through trading with a Jeweller villager.\nSpawns with a 1% chance in chests in these structures:\n\nDesert Temples, Jungle Temples, Woodland Mansions, Shipwrecks and Bastions.",
+      "jei.better_tools.crystallite_hoe_redstone_info": "After 1000 uses:\n§910% Bone Meal Chance§r\n\nAfter 3000 uses:\n§920% Bone Meal Chance§r",
+      "jei.better_tools.crystallite_pickaxe_redstone_info": "After 5000 blocks have been mined:\n§91.5x Base Mining Speed§r\n\nAfter 20,000 blocks have been mined:\n§92x Base Mining Speed§r",
+      "jei.better_tools.crystallite_shovel_redstone_info": "After 10,000 blocks have been mined:\n§910% Bone Meal Chance§r\n\nAfter 30,000 blocks have been mined:\n§920% Bone Meal Chance§r",
+      "jei.better_tools.crystallite_sword_gold_info": "Spin Attack damage increases by 10% per level of Sweeping Edge.",
+      "jei.better_tools.crystallite_sword_honey_info": "Attack Damage Combo will be lost after 2s of no attacks.",
+      "jei.better_tools.crystallite_upgrade_info": "Initially obtained through trading a Crystallite Gem with a Jeweller Villager.\nCan be duplicated using Crystallite Shards and 7 Diamonds.",
+      "jei.better_tools.deepslate_mixed_ore_info": "Chance - Item\n28%   -   §8Coal§r\n25%   -   §cRedstone§r\n15%   -   §9Lapis Lazuli§r\n15%   -   §6Gold§r\n10%   -   §2Emerald§r\n7%     -   §3Diamond§r",
+      "jei.better_tools.diamond_crystallite_info": "§lCrystallite Upgrades: \n§bDiamond§r\n\nTheme:\nProtection and Durability\nAll other stats increase slightly too!",
+      "jei.better_tools.effect_armor_jei_information": "§lEffect Armor§r\n\nApplies an effect to the wearer, as long as they don\u0027t already have the effect.\nAn Energy Vial must be equipped to supply Effect Energy to the armor.\n\nWhen there is sufficient energy, the effect is applied every 5 seconds.\nUpgraded Effect Armor pieces have lower energy costs and stronger effects.\nWearing multiple pieces of Effect Armor at once gives a discount in energy cost.",
+      "jei.better_tools.electric_chaining_info": "§6Electric Chaining§r\nAn Electric Chain damages any mobs it touches.\nAny mob hit by an Electric Chain has a chance to continue the chain.",
+      "jei.better_tools.elemental_crystals_info": "§lElemental Crystals§r\n\nUse in a Smithing Table to upgrade Crystallite equipment with different elemental effects!\nThey can also be used to craft Crystallite Charms.",
+      "jei.better_tools.emerald_crystallite_info": "§lCrystallite Upgrades: \n§aEmerald§r\n\nTheme:\nNature and Regeneration",
+      "jei.better_tools.ender_titanium_ore_gen_info": "§lOre Generation§r\n§5Ender Titanium Ore§r\n\nGenerates below y\u003d30, in the End Islands.\nSpawns rarely, in small groups.",
+      "jei.better_tools.ender_titanium_upgrade_info": "Found with a 1/16 chance in End City chest loot.",
+      "jei.better_tools.energy_vials_info": "Store Effect Energy in this vial to power your Effect Armor.\nAccess the Energy Vial Menu by pressing §3[V]§r with the vial equipped, or by right-clicking with the vial in your main hand.\nIn this menu, you can fuel the vial with Effect Energy using Enriched Blaze Powder.\nYou can also configure which armor pieces this vial should power.\nThis allows the effects of Effect Armor to be toggled on/off freely, without needing to take the armor off!",
+      "jei.better_tools.enriched_blaze_powder_info": "Use this to fuel an Energy Vial with Effect Energy.\nThis is essential for using Effect Armor.",
+      "jei.better_tools.fire_effects_info": "Effect improves when used in the Nether",
+      "jei.better_tools.fire_staff_info": "§4When enchanted with Ensorcellation:§r\nProjectiles become explosive.\nExplosion Power increases with level, and when in the Nether.",
+      "jei.better_tools.frozen_info": "§bFrozen Mobs§r\nFrozen mobs cannot move or jump.\nAttack them to shatter the ice, dealing §9+3 Damage§r.\nFrozen Players can jump repeatedly to shorten the effect time.",
+      "jei.better_tools.gold_crystallite_info": "§lCrystallite Upgrades: \n§eGold§r\n\nTheme:\nReach Distance",
+      "jei.better_tools.guardian_staff_info": "§3When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Water Pulse.\n\nDamage: +1 per level.\nRadius: +2 per level.\n\n\n§3When it is wet:§r\nDamage and Range both increase by 50%",
+      "jei.better_tools.honey_crystallite_info": "§lCrystallite Upgrades: \n§6Honey§r\n\nTheme:\nCombos and Bees",
+      "jei.better_tools.ice_effects_info": "Effect improves when used in a cold biome",
+      "jei.better_tools.ice_staff_info": "§9When enchanted with Ensorcellation:§r\nProjectiles freeze all mobs in a radius.\nThis applies even when no mob is directly hit.\nRadius increases with level, and in a cold biome.",
+      "jei.better_tools.icy_bracelet_info": "Adds §9+10% Freeze Chance§r for any melee attacks.\nThis stacks with any Sapphire weapons, and any Bows enchanted with Freeze Shot.\nIn a cold biome, this chance doubles.",
+      "jei.better_tools.improved_luck_info": "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.\nFour Leaf Clovers can be bone-mealed to grow more of them.\n\n\n§lImproved Luck Effect§r\nHaving an increased Luck value gives a chance for ores to drop double!\nIt also increases the chance for additional effects of items to activate.\nThe chance increase is +5% per +1 Luck",
+      "jei.better_tools.infinite_arrows_info": "When no Arrows are in the user\u0027s inventory, this bow will shoot regular Arrows.\nIf any regular Arrows are in the inventory, they will not be used up.\nTipped and Spectral Arrows are used up normally.",
+      "jei.better_tools.iron_crystallite_info": "§lCrystallite Upgrades:\n§fIron§r\n\nTheme:\nKnockback and Magnetism",
+      "jei.better_tools.jewellery_table_info": "This is the workstation for the Jeweller Villager profession.\nTrade with this villager to get Crystallite Charms, or duplicate Charm Bases, without even needing any Crystallite!\nAlso sells Crystallite Upgrade Smithing Templates.",
+      "jei.better_tools.lapis_crystallite_info": "§lCrystallite Upgrades: \n§9Lapis Lazuli§r\n\nTheme:\nMagic and Enchanting\nAll items in this set have very high enchantability!",
+      "jei.better_tools.lightning_effects_info": "Effect improves when used in a thunderstorm\n(Must be in a location which can see the sky)",
+      "jei.better_tools.lightning_staff_info": "§6When enchanted with Ensorcellation:§r\nIncreases the number of Lightning Strikes.\nIncreases the radius where the strikes can hit.\nNumber of strikes increases with level, and when in a thunderstorm.\nWhen the projectile hits a Lightning Rod, a lightning bolt will be summoned.",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
+      "jei.better_tools.metal_blocks_info": "To use Metal Blocks, first use a Stonecutter to make White Metal Blocks, then dye them into your desired colour.",
+      "jei.better_tools.mixed_ore_gen_info": "§lOre Generation§r\n§cM§6i§ax§be§9d §aO§6r§ce§r\n\nGenerates below y\u003d40\nBecomes more common the deeper you go.\nSpawns in small veins.",
+      "jei.better_tools.multi_block_mining_tools_info": "Multi-block mining effect is disabled while crouching",
+      "jei.better_tools.mystic_potion_info": "Use this potion to brew powerful utility potions.\nApplies a random effect for up to 30s when consumed.\nCareful - the effects may be helpful or harmful!",
+      "jei.better_tools.nature_ring_info": "Base healing rate: §91HP every 8s§r\n\nHealing is §ltwice as fast§r when:\n- Under 50% HP\n- In Sunlight\n- Both items are worn\n(These x2 multipliers can stack for up to §91s Regen Speed§r)",
+      "jei.better_tools.nether_diamond_armor_info": "Max Burn Time decreases when more armor pieces are worn.",
+      "jei.better_tools.nether_diamond_crystallite_info": "§lCrystallite Upgrades: \n§4Nether Diamond§r\n\nTheme:\nFire",
+      "jei.better_tools.nether_diamond_ore_gen_info": "§lOre Generation§r\n§4Nether Diamond Ore§r\n\nGenerates at any y-level, in §4Basalt Deltas§r only.\nOnly generates inside of §8Blackstone§r clumps.\nSpawns in medium-sized veins.",
+      "jei.better_tools.netherite_crystallite_info": "§lCrystallite Upgrades: \n§8Netherite§r\n\nTheme:\nDamage and The Nether\nAll stats increase slightly too!",
+      "jei.better_tools.obtaining_crystallite_info": "§lObtaining Crystallite§r\n\nFind Crystallite Clusters underground by listening out for their sparkle!\nThey spawn rarely between y\u003d-48 and y\u003d46.\nThey do not spawn above y\u003d0 in oceans.\nMine Crystallite Blocks with a §lNetherite Pickaxe§r or better.\nEach block drops 1 Crystallite Shards item, which can be used to craft Gems for crafting tools and armor.\nCrystallite Gems are also used to craft Elemental Crystals.",
+      "jei.better_tools.ore_vision_info": "§lOre Vision Effect§r\nDisplays particles on all ores within a 24 block radius",
+      "jei.better_tools.prismarine_crystallite_info": "§lCrystallite Upgrades: \n§3Prismarine§r\n\nTheme:\nWater",
+      "jei.better_tools.progressive_tools_info": "These tools have improved abilities after they have been used for a while.\nFor all tools, breaking any correct block for that tool counts as a use.\nFor hoes, tilling farmland also counts as a use.",
+      "jei.better_tools.purple_mushroom_info": "Purple Mushrooms generate in Fungal Caves, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.\nStanding on one makes you take damage, however!",
+      "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.",
+      "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
+      "jei.better_tools.redstone_crystallite_info": "§lCrystallite Upgrades: \n§cRedstone§r\n\nTheme:\nHP and Growth",
+      "jei.better_tools.reduced_detection_range_info": "Reduced Detection Range effect only works in singleplayer worlds.",
+      "jei.better_tools.ruby_crystallite_info": "§lCrystallite Upgrades: \n§cRuby§r\n\nTheme:\nSpeed",
+      "jei.better_tools.ruby_ore_gen_info": "§lOre Generation§r\n§cRuby Ore§r\n\nGenerates between y\u003d-32 and y\u003d32\nMost common at y\u003d-32 and y\u003d32\nSpawns in small veins.",
+      "jei.better_tools.safe_honey_harvesters_info": "Can safely harvest honey from beehives, without angering nearby bees.",
+      "jei.better_tools.sapphire_armor_info": "§lFull-set bonus:§r\n§9+4% Freeze Chance§r\n(for a total of §920%§r)",
+      "jei.better_tools.sapphire_crystallite_info": "§lCrystallite Upgrades: \n§bSapphire§r\n\nTheme:\nIce",
+      "jei.better_tools.sapphire_ore_gen_info": "§lOre Generation§r\n§bSapphire Ore§r\n\nGenerates above y\u003d100\nMost common at y\u003d180\nSpawns rarely, in large veins.",
+      "jei.better_tools.sculk_crystallite_info": "§lCrystallite Upgrades: \n§3Sculk§r\n\nTheme:\nStealth and Mining\nAll stats increase slightly too!",
+      "jei.better_tools.sky_crystallite_info": "§lCrystallite Upgrades: \n§fSky§r\n\nTheme:\nAir",
+      "jei.better_tools.stuck_in_mud_info": "§lPitfall Effect§r\nIf the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.\nWhen a mob is stuck in the ground, it cannot move.\nIt can still attack, however.\nIf a player jumps, they are instantly freed from the effect.",
+      "jei.better_tools.sugar_clump_info": "When multiple Sugar Clumps are eaten in a row, the duration of the Speed effect increases accordingly.",
+      "jei.better_tools.supplementaries_urns_info": "If Supplementaries is installed:\nCan drop from Cave Urns.",
+      "jei.better_tools.thorns_damage_info": "§lThorns Damage§r\n\nSome armor pieces deal Thorns damage 100% of the time.\nThis only applies to §lmelee attackers.",
+      "jei.better_tools.topaz_armor_info": "§lFull-set bonus:§r\n§9+4% Lightning Chance§r\n(for a total of §920%§r)",
+      "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
+      "jei.better_tools.topaz_ore_gen_info": "§lOre Generation§r\n§6Topaz Ore§r\n\nGenerates between y\u003d0 and y\u003d75, in §6Desert biomes§r only.\nMost common at y\u003d60\nSpawns frequently, in small groups.",
+      "jei.better_tools.topaz_pickaxe_info": "May duplicate drops from ores, as long as the ore block itself is not dropped.\nStacks with Fortune.",
+      "jei.better_tools.utility_potions_info": "§lUtility Potions§r\n\nThese give various one-off effects when consumed.\nThey spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually.",
+      "jei.better_tools.warden_staff_info": "§1When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Sonic Boom.\n\nDamage: +2 per level.\nRange: +3 per level.",
+      "jei.better_tools.winged_boots_info": "Allows double jumping in mid-air.\nUses up Effect Energy for each jump, so an Energy Vial must be equipped with sufficient energy."
     }
   },
   "metadata": {
@@ -38714,6 +39824,7 @@
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModScreens.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModMenus.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModGameRules.java",
+      "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModJeiInformation.java",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModKeyMappings.java",
       "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
       "src/main/java/net/mcreator/bettertoolsandarmor/init/BetterToolsModParticles.java",

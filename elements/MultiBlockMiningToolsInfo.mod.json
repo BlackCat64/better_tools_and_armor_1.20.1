@@ -1,0 +1,29 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteAxeEmerald"
+      },
+      {
+        "value": "CUSTOM:CrystallitePickaxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteAxeSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSculk"
+      },
+      {
+        "value": "CUSTOM:CrystalliteShovelSapphire"
+      },
+      {
+        "value": "CUSTOM:CrystalliteHoeSapphire"
+      }
+    ],
+    "information": [
+      "Multi-block mining effect is disabled while crouching"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteBowPrismarine"
+      }
+    ],
+    "information": [
+      "Arrow damage increases when the target is in rain, or in water.",
+      "Arrows are not slowed down when moving through water.",
+      "These effects are not applied to Tipped or Spectral Arrows."
+    ]
+  }
+}

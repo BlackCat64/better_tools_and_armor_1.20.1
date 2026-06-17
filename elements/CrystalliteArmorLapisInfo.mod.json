@@ -1,0 +1,25 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.helmet"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.body"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.legs"
+      },
+      {
+        "value": "CUSTOM:CrystalliteArmorLapis.boots"
+      }
+    ],
+    "information": [
+      "§lFull-set bonus:§r",
+      "All XP is kept on death",
+      "(also works when 3 pieces are worn and a Magic Ring is equipped)"
+    ]
+  }
+}
