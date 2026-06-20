@@ -13,10 +13,10 @@
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
+        "§7Upgrade: §fAir",
         "§7Abilities:",
-        "§fAir Affinity - Mines at the same speed while airborne",
-        "§fAir Proficiency - Increased critical hit damage"
+        "§fGraceful - Removes airborne and underwater mining penalties",
+        "§fAerodynamic - Increased critical hit damage"
       ]
     },
     "creativeTabs": [
@@ -53,6 +53,14 @@
           "value": "CUSTOM:CriticalHitMultiplier"
         },
         "amount": 0.5,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "SUBMERGED_MINING_SPEED"
+        },
+        "amount": 0.8,
         "operation": "ADD_VALUE"
       }
     ],

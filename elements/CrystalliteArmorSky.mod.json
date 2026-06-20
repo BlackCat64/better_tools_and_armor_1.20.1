@@ -22,7 +22,7 @@
     "bootsName": "Crystallite Boots",
     "helmetSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
+        "§7Upgrade: §fAir",
         "§7Ability:",
         "§fCarbonated - Eating gives a Regeneration effect",
         "Drinking gives a level II effect"
@@ -30,21 +30,21 @@
     },
     "bodySpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
+        "§7Upgrade: §fAir",
         "§7Ability:",
         "§fGusty - Knocks back nearby mobs when attacked"
       ]
     },
     "leggingsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
+        "§7Upgrade: §fAir",
         "§7Ability:",
         "§fFloaty - Gain Low Gravity"
       ]
     },
     "bootsSpecialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fSky",
+        "§7Upgrade: §fAir",
         "§7Ability:",
         "§fAir Affinity - Fall damage starts at a higher height"
       ]

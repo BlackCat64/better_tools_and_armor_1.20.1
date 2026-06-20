@@ -33,7 +33,7 @@ public class CrystalliteLeggingsSkyProcedureProcedure {
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_LEGGINGS.get()) {
 			if (entity instanceof LivingEntity _entity) {
-				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sky"), (-0.04), AttributeModifier.Operation.ADD_VALUE);
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sky"), (-0.5), AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 				if (!_entity.getAttribute(Attributes.GRAVITY).hasModifier(modifier.id())) {
 					_entity.getAttribute(Attributes.GRAVITY).addPermanentModifier(modifier);
 				}

@@ -56,13 +56,12 @@ public class CrystalliteAxeSkyItem extends AxeItem {
 
 	public CrystalliteAxeSkyItem() {
 		super(TOOL_TIER,
-				new Item.Properties()
-						.attributes(
-								ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 9.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-										.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).add(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER,
-												new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_axe_sky_0"), 0.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-										.build())
-						.fireResistant());
+				new Item.Properties().attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 9.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+						.add(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_axe_sky_0"), 0.5, AttributeModifier.Operation.ADD_VALUE),
+								EquipmentSlotGroup.MAINHAND)
+						.add(Attributes.SUBMERGED_MINING_SPEED, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_axe_sky_1"), 0.8, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+						.build()).fireResistant());
 	}
 
 	@Override

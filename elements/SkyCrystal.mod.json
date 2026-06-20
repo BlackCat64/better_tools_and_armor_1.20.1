@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "sky_crystal_new",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -34,7 +35,7 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "§7Element: §fSky"
+        "§7Element: §fAir"
       ]
     },
     "glowCondition": {
@@ -62,6 +63,10 @@
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
