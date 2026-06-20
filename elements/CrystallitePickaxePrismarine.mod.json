@@ -8,6 +8,7 @@
     "texture": "crystallite_pickaxe_prismarine",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Pickaxe",
     "rarity": "COMMON",
     "specialInformation": {
@@ -48,11 +49,17 @@
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
-    "attributeModifiers": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "mainhand",
+        "attribute": {
+          "value": "SUBMERGED_MINING_SPEED"
+        },
+        "amount": 0.8,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onItemInUseTick": {
-      "name": "CrystallitePickaxePrismarineProcedure"
-    }
+    "damageOnCrafting": false
   }
 }

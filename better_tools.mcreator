@@ -18719,41 +18719,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
-      "name": "CrystalliteShovelPrismarineProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_shovel_prismarine_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelPrismarineProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
             "name": "blockstate",
             "type": "blockstate"
           },
@@ -18762,20 +18727,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
+            "name": "breakSpeed",
             "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -37602,6 +37555,12 @@
       "CUSTOM:CrystalliteSwordSculk",
       "CUSTOM:CrystalliteAxeSculk",
       "CUSTOM:CrystalliteDaggerSculk"
+    ],
+    "ITEMS:mod:water_efficient_tools": [
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteHoePrismarine"
     ]
   },
   "tab_element_order": {
@@ -39852,7 +39811,7 @@
       "jei.better_tools.sapphire_crystallite_info": "§lCrystallite Upgrades: \n§bSapphire§r\n\nTheme:\nIce",
       "jei.better_tools.sapphire_ore_gen_info": "§lOre Generation§r\n§bSapphire Ore§r\n\nGenerates above y\u003d100\nMost common at y\u003d180\nSpawns rarely, in large veins.",
       "jei.better_tools.sculk_crystallite_info": "§lCrystallite Upgrades: \n§3Sculk§r\n\nTheme:\nStealth and Mining\nAll stats increase slightly too!",
-      "jei.better_tools.sky_crystallite_info": "§lCrystallite Upgrades: \n§fAir§r\n\nTheme:\nAir",
+      "jei.better_tools.sky_crystallite_info": "§lCrystallite Upgrades: \n§fAir§r\n\nTheme:\nAir and Wind",
       "jei.better_tools.stuck_in_mud_info": "§lPitfall Effect§r\nIf the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.\nWhen a mob is stuck in the ground, it cannot move.\nIt can still attack, however.\nIf a player jumps, they are instantly freed from the effect.",
       "jei.better_tools.sugar_clump_info": "When multiple Sugar Clumps are eaten in a row, the duration of the Speed effect increases accordingly.",
       "jei.better_tools.supplementaries_urns_info": "If Supplementaries is installed:\nCan drop from Cave Urns.",

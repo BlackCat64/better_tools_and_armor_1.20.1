@@ -4,16 +4,19 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystallitePickaxePrismarineProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.List;
 
@@ -51,7 +54,13 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 	};
 
 	public CrystalliteHoePrismarineItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 1.5f, 0f)).fireResistant());
+		super(TOOL_TIER,
+				new Item.Properties()
+						.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 1.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+								.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, 0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).add(Attributes.SUBMERGED_MINING_SPEED,
+										new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_hoe_prismarine_0"), 0.8, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+								.build())
+						.fireResistant());
 	}
 
 	@Override
@@ -61,12 +70,5 @@ public class CrystalliteHoePrismarineItem extends HoeItem {
 		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_0"));
 		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_hoe_prismarine.description_2"));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			CrystallitePickaxePrismarineProcedureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 }
