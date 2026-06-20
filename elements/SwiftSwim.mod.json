@@ -3,22 +3,28 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Swift Swim",
-    "icon": "swift_swim.png",
+    "icon": "swift_swim",
     "color": {
       "value": -9263976,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onStarted": {
-      "name": "SwiftSwimProcedure"
-    },
-    "onExpired": {
-      "name": "SwiftSwimExpires"
-    }
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": 0.5,
+        "operation": "ADD_VALUE"
+      }
+    ]
   }
 }

@@ -3,22 +3,28 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Criticality",
-    "icon": "criticality.png",
+    "icon": "criticality",
     "color": {
       "value": -3975635,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onStarted": {
-      "name": "CriticalHitEffectApplied"
-    },
-    "onExpired": {
-      "name": "CriticalHitEffectExpires"
-    }
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "CUSTOM:CriticalHitMultiplier"
+        },
+        "amount": 0.25,
+        "operation": "ADD_VALUE"
+      }
+    ]
   }
 }

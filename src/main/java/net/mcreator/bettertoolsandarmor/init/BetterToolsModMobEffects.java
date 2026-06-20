@@ -14,10 +14,8 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.bettertoolsandarmor.procedures.SwiftSwimExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.PitfallEffectExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.FrozenEffectExpiresProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CriticalHitEffectExpiresProcedure;
 import net.mcreator.bettertoolsandarmor.potion.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -49,12 +47,8 @@ public class BetterToolsModMobEffects {
 	}
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
-		if (effectInstance.getEffect().is(SWIFT_SWIM)) {
-			SwiftSwimExpiresProcedure.execute();
-		} else if (effectInstance.getEffect().is(FROZEN)) {
+		if (effectInstance.getEffect().is(FROZEN)) {
 			FrozenEffectExpiresProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(CRITICALITY)) {
-			CriticalHitEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(PITFALL)) {
 			PitfallEffectExpiresProcedure.execute(entity.level(), entity);
 		}

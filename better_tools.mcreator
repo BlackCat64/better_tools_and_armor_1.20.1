@@ -16476,20 +16476,6 @@
       "path": "~/Swift Swim"
     },
     {
-      "name": "SwiftSwimProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "swift_swim_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SwiftSwimProcedureProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Swift Swim"
-    },
-    {
       "name": "ToughNecklaceEquipped",
       "type": "procedure",
       "compiles": true,
@@ -17627,44 +17613,6 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "CriticalHitEffectApplied",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "critical_hit_effect_applied",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectAppliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Critical Hit Multiplier"
-    },
-    {
-      "name": "CriticalHitEffectExpires",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "critical_hit_effect_expires",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CriticalHitEffectExpiresProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Critical Hit Multiplier"
-    },
-    {
       "name": "CriticalityPotion",
       "type": "potion",
       "compiles": true,
@@ -17788,20 +17736,6 @@
         ]
       },
       "path": "~/Critical Hit Multiplier"
-    },
-    {
-      "name": "SwiftSwimExpires",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "swift_swim_expires",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SwiftSwimExpiresProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Swift Swim"
     },
     {
       "name": "CrystalliteLeggingsSkyProcedure",
