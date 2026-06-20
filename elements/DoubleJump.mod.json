@@ -8,11 +8,23 @@
       "value": -3355444,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "SAFE_FALL_DISTANCE"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
   }
 }
