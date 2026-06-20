@@ -32524,12 +32524,20 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -34477,6 +34485,84 @@
         "files": []
       },
       "path": "~/Effect Armor/Winged Boots"
+    },
+    {
+      "name": "GetTooltipLineContaining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tooltip_line_containing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetTooltipLineContainingProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "ReplaceTooltipLine",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replace_tooltip_line",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "line",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ReplaceTooltipLineProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "ReplaceTooltipLineWithComponent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replace_tooltip_line_with_component",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "component",
+            "type": "mutablecomponent"
+          },
+          {
+            "name": "line",
+            "type": "number"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ReplaceTooltipLineWithComponentProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
     }
   ],
   "variable_elements": [
@@ -37471,6 +37557,11 @@
     ],
     "ITEMS:mod:poison_thorns_armor": [
       "CUSTOM:CrystalliteArmorEmerald.legs"
+    ],
+    "ITEMS:mod:dark_damage_boost_weapons": [
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteDaggerSculk"
     ]
   },
   "tab_element_order": {

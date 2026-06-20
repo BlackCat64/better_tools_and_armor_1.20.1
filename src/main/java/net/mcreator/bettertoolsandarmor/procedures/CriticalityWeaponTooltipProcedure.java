@@ -35,12 +35,17 @@ public class CriticalityWeaponTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
+		double replaceLine = 0;
+		String tooltipText = "";
 		if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
 				? _livingEntity0.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
 				: 0) != 1.5 && itemstack.is(ItemTags.create(ResourceLocation.parse("forge:tools"))) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-			tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
-					? _livingEntity6.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
-					: 0)) + "x Critical Hit Multiplier")));
+			replaceLine = GetTooltipLineContainingProcedure.execute("Critical Hit Multiplier", tooltip);
+			ReplaceTooltipLineProcedure.execute(replaceLine,
+					"\u00A72 " + (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER)
+							? _livingEntity6.getAttribute(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER).getValue()
+							: 0)) + "x Critical Hit Multiplier",
+					tooltip);
 		}
 	}
 }

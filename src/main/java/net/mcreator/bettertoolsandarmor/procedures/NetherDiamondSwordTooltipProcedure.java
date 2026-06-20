@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
+import net.minecraft.ChatFormatting;
 
 import javax.annotation.Nullable;
 
@@ -37,11 +38,10 @@ public class NetherDiamondSwordTooltipProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		String damage_str = "";
 		double fire_chance = 0;
 		double dmg_boost = 0;
 		double damage = 0;
-		double initial_lines = 0;
+		double replaceLine = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_tools"))) && !(itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) != 0)) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				fire_chance = 5;
@@ -59,7 +59,7 @@ public class NetherDiamondSwordTooltipProcedure {
 				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_axes")))) {
 					damage = 10.5;
 					dmg_boost = 2.5;
-				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:daggers")))) {
+				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_daggers")))) {
 					damage = 7;
 					dmg_boost = 3;
 				}
@@ -68,15 +68,13 @@ public class NetherDiamondSwordTooltipProcedure {
 					if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 						damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));
 					}
-					damage_str = new java.text.DecimalFormat("##.#").format(damage);
-					initial_lines = tooltip.size();
-					if (((ItemTooltipEvent) event).getFlags().isAdvanced()) {
-						initial_lines = initial_lines - 2;
-					}
-					tooltip.set((int) (initial_lines - 2), Component.literal("\u00A72 " + damage_str + " Attack Damage"));
+					replaceLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
+					ReplaceTooltipLineWithComponentProcedure.execute(
+							Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor(0xde2030)).append(Component.literal(" Attack Damage")).withColor(0x00aa00),
+							replaceLine, tooltip);
 				} else {
 					tooltip.add(Component.literal("\u00A77When in The Nether:"));
-					tooltip.add(Component.literal(("\u00A79+" + new java.text.DecimalFormat("##.#").format(dmg_boost) + " Attack Damage")));
+					tooltip.add(Component.literal(("\u00A79+" + new java.text.DecimalFormat("##.##").format(dmg_boost) + " Attack Damage")));
 				}
 			}
 		}

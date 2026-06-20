@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
+import net.minecraft.ChatFormatting;
 
 import javax.annotation.Nullable;
 
@@ -39,7 +40,8 @@ public class EnderTitaniumSwordTooltipProcedure {
 			return;
 		String damage_str = "";
 		double damage = 0;
-		double initial_lines = 0;
+		double replaceLine = 0;
+		double dmg_boost = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_weapons")))) {
 			if ((entity.level().dimension()) == Level.END) {
 				if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")))) {
@@ -53,12 +55,10 @@ public class EnderTitaniumSwordTooltipProcedure {
 				if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 					damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));
 				}
-				damage_str = new java.text.DecimalFormat("##.#").format(damage);
-				initial_lines = tooltip.size();
-				if (((ItemTooltipEvent) event).getFlags().isAdvanced()) {
-					initial_lines = initial_lines - 2;
-				}
-				tooltip.set((int) (initial_lines - 2), Component.literal("\u00A72 " + damage_str + " Attack Damage"));
+				replaceLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
+				ReplaceTooltipLineWithComponentProcedure.execute(
+						Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor(0xa62bff)).append(Component.literal(" Attack Damage")).withColor(0x00aa00),
+						replaceLine, tooltip);
 			} else {
 				tooltip.add(Component.literal("\u00A77When in The End:"));
 				tooltip.add(Component.literal("\u00A79+3 Attack Damage"));
