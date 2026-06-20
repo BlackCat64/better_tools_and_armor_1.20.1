@@ -8,6 +8,12 @@
       "value": -5650177,
       "falpha": 0.0
     },
+    "particle": {
+      "value": "CUSTOM:IceParticle"
+    },
+    "onAddedSound": {
+      "value": "item.trident.return"
+    },
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,

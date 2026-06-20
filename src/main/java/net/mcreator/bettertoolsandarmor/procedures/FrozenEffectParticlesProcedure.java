@@ -9,15 +9,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Display;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModParticleTypes;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
 import java.util.UUID;
 
 public class FrozenEffectParticlesProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		Entity display = null;
@@ -25,12 +23,10 @@ public class FrozenEffectParticlesProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
 		} else {
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ICE_PARTICLE.get()), x, (y + entity.getBbHeight()), z, 1, 0.33, 0.5, 0.33, 0.015);
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				entity.setTicksFrozen(135);
 				entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
-				display = world instanceof ServerLevel _level8 ? getEntityFromUUID(_level8, (entity.getPersistentData().getString("frozen_block_display"))) : null;
+				display = world instanceof ServerLevel _level6 ? getEntityFromUUID(_level6, (entity.getPersistentData().getString("frozen_block_display"))) : null;
 				if (display instanceof Display.BlockDisplay) {
 					{
 						Entity _ent = display;
