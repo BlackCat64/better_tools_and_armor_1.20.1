@@ -7,12 +7,16 @@ import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -25,17 +29,19 @@ public class CrystalliteSculkArmorTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
+		execute(event, Minecraft.getInstance().level, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
-		execute(null, entity, itemstack, tooltip);
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, world, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
 		double range = 0;
+		double replaceLine = 0;
+		double speed = 0;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
@@ -43,7 +49,9 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				tooltip.add(Component.literal("\u00A72 10 Sonic Boom Damage"));
 			}
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
-				tooltip.add(Component.literal("\u00A791.3x Sneaking Speed"));
+				speed = itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SWIFT_SNEAK)) * 0.15 + 0.4;
+				replaceLine = GetTooltipLineContainingProcedure.execute(" Sneaking Speed", tooltip);
+				ReplaceTooltipLineProcedure.execute(replaceLine, "\u00A79+" + new java.text.DecimalFormat("##.##").format(speed) + " Sneaking Speed", tooltip);
 			}
 			range = 100;
 			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
@@ -70,7 +78,7 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				if (IsPlayerWearingItemProcedure.execute(entity, itemstack) && IsPlayerInTheDarkProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
 					tooltip.add(Component.literal(("\u00A72 "
 							+ (new java.text.DecimalFormat("##")
-									.format((entity instanceof LivingEntity _livingEntity30 && _livingEntity30.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity30.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
+									.format((entity instanceof LivingEntity _livingEntity31 && _livingEntity31.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity31.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
 							+ "% Movement Speed")));
 				} else {
 					tooltip.add(Component.literal("\u00A77When in the dark:"));

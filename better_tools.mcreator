@@ -15985,7 +15985,16 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSculkProcedureProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Crystallite/Sculk"
     },
@@ -32334,6 +32343,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
