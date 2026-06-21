@@ -19355,7 +19355,7 @@
       "name": "ElectricStaff",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "electric_staff",
       "metadata": {
         "files": [
@@ -19383,7 +19383,7 @@
       "name": "IceStaff",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ice_staff",
       "metadata": {
         "files": [
@@ -19411,7 +19411,7 @@
       "name": "FireStaff",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "fire_staff",
       "metadata": {
         "files": [
@@ -19577,7 +19577,7 @@
       "name": "WardenStaff",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "warden_staff",
       "metadata": {
         "files": [
@@ -19591,7 +19591,7 @@
       "name": "GuardianStaff",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "guardian_staff",
       "metadata": {
         "files": [
@@ -22816,20 +22816,6 @@
         ]
       },
       "path": "~/Effect Armor/Cactus Shirt"
-    },
-    {
-      "name": "LightningStaffApplyEnchantments",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightning_staff_apply_enchantments",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffApplyEnchantmentsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Staffs/Lightning"
     },
     {
       "name": "CrystalliteBowAdv",
