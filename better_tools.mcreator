@@ -28401,29 +28401,6 @@
       "path": "~/Utility Procedures/Tracking Variables"
     },
     {
-      "name": "BowShootTracker",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bow_shoot_tracker",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/BowShootTrackerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Utility Procedures/Tracking Variables"
-    },
-    {
       "name": "SetEntityLogicData",
       "type": "procedure",
       "compiles": true,
@@ -34550,22 +34527,10 @@
       "value": "false"
     },
     {
-      "name": "nature_ring_equipped",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
       "name": "effect_energy_timer",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
-    },
-    {
-      "name": "energy_vial_to_update",
-      "type": "itemstack",
-      "scope": "player_lifetime",
-      "value": "ItemStack.EMPTY"
     },
     {
       "name": "effect_energy_cost",
@@ -34575,12 +34540,6 @@
     },
     {
       "name": "time_since_on_ground",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "time_since_shot_bow",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

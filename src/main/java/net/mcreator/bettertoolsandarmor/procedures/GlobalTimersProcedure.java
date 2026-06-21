@@ -35,7 +35,6 @@ public class GlobalTimersProcedure {
 			_vars.time_since_last_mined = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_mined);
 			_vars.time_since_last_jumped = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped);
 			_vars.time_since_non_carbonated_food_eaten = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_non_carbonated_food_eaten);
-			_vars.time_since_shot_bow = SafeIncrementProcedure.execute(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_shot_bow);
 			_vars.markSyncDirty();
 		}
 		if (entity.onGround()) {
