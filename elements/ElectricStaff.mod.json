@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "electric_staff",
     "customModelName": "Ranged item",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -52,10 +53,7 @@
     "projectile": {
       "value": "CUSTOM:ElectricStaffProjectile"
     },
-    "projectileDisableAmmoCheck": false,
-    "onRangedItemUsed": {
-      "name": "LightningStaffApplyEnchantments"
-    },
+    "projectileDisableAmmoCheck": true,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
@@ -66,6 +64,10 @@
     "isAlwaysEdible": false,
     "animation": "spear",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],

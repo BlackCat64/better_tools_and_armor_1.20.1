@@ -100,7 +100,7 @@ public class LightningStaffDispenserProjectileEntity extends AbstractArrow imple
 	@Override
 	public void tick() {
 		super.tick();
-		LightningStaffProjectileParticlesProcedure.execute(this.level(), this);
+		LightningStaffProjectileParticlesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}

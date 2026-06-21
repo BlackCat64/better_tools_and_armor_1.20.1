@@ -20241,8 +20241,24 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "immediatesourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -22648,20 +22664,6 @@
       "path": "~/Enchantments"
     },
     {
-      "name": "IceStaffApplyEnchantments",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_staff_apply_enchantments",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffApplyEnchantmentsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Staffs/Ice"
-    },
-    {
       "name": "SapphireArmorSetAttributes",
       "type": "procedure",
       "compiles": true,
@@ -22825,32 +22827,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/LightningStaffApplyEnchantmentsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Staffs/Lightning"
     },
