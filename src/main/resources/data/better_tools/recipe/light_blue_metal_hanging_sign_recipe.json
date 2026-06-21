@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "metal_hanging_signs",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:chain"
+    },
+    "b": {
+      "item": "better_tools:polished_diamond_block"
+    }
+  },
+  "result": {
+    "id": "better_tools:light_blue_metal_hanging_sign",
+    "count": 6
+  }
+}

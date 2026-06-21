@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_one_line_sign",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "big_signs:one_line_white_metal_hanging_sign"
+    }
+  ],
+  "result": {
+    "id": "better_tools:white_metal_hanging_sign",
+    "count": 1
+  }
+}

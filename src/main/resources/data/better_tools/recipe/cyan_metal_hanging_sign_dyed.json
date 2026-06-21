@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_sign_dyed",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "tag": "better_tools:metal_hanging_signs"
+    }
+  ],
+  "result": {
+    "id": "better_tools:cyan_metal_hanging_sign",
+    "count": 1
+  }
+}

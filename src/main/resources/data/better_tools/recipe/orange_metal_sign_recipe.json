@@ -9,14 +9,14 @@
   ],
   "key": {
     "a": {
-      "item": "better_tools:dark_polished_lapis_block"
+      "item": "better_tools:polished_topaz_block"
     },
     "b": {
       "item": "minecraft:iron_nugget"
     }
   },
   "result": {
-    "item": "better_tools:blue_metal_sign",
+    "id": "better_tools:orange_metal_sign",
     "count": 6
   }
 }

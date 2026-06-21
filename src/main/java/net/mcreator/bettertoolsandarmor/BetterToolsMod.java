@@ -102,7 +102,7 @@ public class BetterToolsMod {
 			Sheets.addWoodType(BetterToolsModWoodTypes.RED_METAL_SIGN);
 			Sheets.addWoodType(BetterToolsModWoodTypes.WHITE_METAL_SIGN);
 			Sheets.addWoodType(BetterToolsModWoodTypes.YELLOW_METAL_SIGN);
-			ModItemProperties.addCustomItemProperties();
+			//			ModItemProperties.addCustomItemProperties();
 			// enables Crystallite Bow pulling animation
 		}
 	}

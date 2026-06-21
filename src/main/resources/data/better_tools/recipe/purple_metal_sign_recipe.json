@@ -9,14 +9,14 @@
   ],
   "key": {
     "a": {
-      "item": "better_tools:dark_polished_coal_block"
+      "item": "better_tools:polished_amethyst_block"
     },
     "b": {
       "item": "minecraft:iron_nugget"
     }
   },
   "result": {
-    "item": "better_tools:black_metal_sign",
+    "id": "better_tools:purple_metal_sign",
     "count": 6
   }
 }
