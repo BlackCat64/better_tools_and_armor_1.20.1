@@ -1,14 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
@@ -18,14 +14,7 @@ public class IceStaffProjectileFromDispenserHitsProcedure {
 		if (entity == null || immediatesourceentity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f < 0.15 ? 300 : 200), 0, false, false));
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")), SoundSource.NEUTRAL, 2, 1);
-			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")), SoundSource.NEUTRAL, 2, 1, false);
-			}
-		}
+			_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f < 0.15 ? 300 : 200), 0, false, true));
 		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
 			if (!immediatesourceentity.level().isClientSide())
 				immediatesourceentity.discard();

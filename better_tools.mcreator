@@ -20175,6 +20175,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "immediatesourceentity",
             "type": "entity"
           },
@@ -22653,20 +22657,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IceStaffApplyEnchantmentsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Staffs/Ice"
     },

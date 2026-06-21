@@ -33,8 +33,6 @@ public class FireStaffProjectileParticlesProcedure {
 					if ((entity.level().dimension()) == Level.NETHER) {
 						immediatesourceentity.getPersistentData().putDouble("explosion_power", (immediatesourceentity.getPersistentData().getDouble("explosion_power") * 2));
 					}
-				} else {
-					immediatesourceentity.getPersistentData().putDouble("explosion_power", (-1));
 				}
 				immediatesourceentity.getPersistentData().putDouble("cooldown_ticks_on_hit",
 						(200 - 30 * staff.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast"))))));

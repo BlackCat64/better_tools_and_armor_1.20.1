@@ -100,7 +100,7 @@ public class IceStaffProjectileEntity extends AbstractArrow implements ItemSuppl
 	@Override
 	public void tick() {
 		super.tick();
-		IceStaffProjectileParticlesProcedure.execute(this.level(), this);
+		IceStaffProjectileParticlesProcedure.execute(this.level(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}
