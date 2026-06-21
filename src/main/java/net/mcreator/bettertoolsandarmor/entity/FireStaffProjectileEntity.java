@@ -100,7 +100,7 @@ public class FireStaffProjectileEntity extends AbstractArrow implements ItemSupp
 	@Override
 	public void tick() {
 		super.tick();
-		FireStaffProjectileParticlesProcedure.execute(this.level(), this);
+		FireStaffProjectileParticlesProcedure.execute(this.level(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}

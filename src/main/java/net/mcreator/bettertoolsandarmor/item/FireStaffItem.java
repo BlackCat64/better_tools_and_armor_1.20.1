@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -19,7 +18,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.FireStaffApplyEnchantmentsProcedure;
 import net.mcreator.bettertoolsandarmor.entity.FireStaffProjectileEntity;
 
 import java.util.List;
@@ -85,22 +83,11 @@ public class FireStaffItem extends Item {
 						stack.shrink(1);
 					}
 				}
-				FireStaffApplyEnchantmentsProcedure.execute(world, entity, itemstack);
 			}
 		}
 	}
 
 	private ItemStack findAmmo(Player player) {
-		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == FireStaffProjectileEntity.PROJECTILE_ITEM.getItem());
-		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == FireStaffProjectileEntity.PROJECTILE_ITEM.getItem()) {
-					stack = teststack;
-					break;
-				}
-			}
-		}
-		return stack;
+		return new ItemStack(FireStaffProjectileEntity.PROJECTILE_ITEM.getItem());
 	}
 }

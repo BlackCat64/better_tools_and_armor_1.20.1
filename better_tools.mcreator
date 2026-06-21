@@ -20098,29 +20098,6 @@
       "path": "~/Crystallite/Lapis"
     },
     {
-      "name": "StaffSaveDurabilityProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "staff_save_durability_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StaffSaveDurabilityProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Staffs"
-    },
-    {
       "name": "FireStaffProjectileParticles",
       "type": "procedure",
       "compiles": true,
@@ -20131,6 +20108,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffProjectileParticlesProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "immediatesourceentity",
             "type": "entity"
@@ -22661,33 +22642,6 @@
         ]
       },
       "path": "~/Enchantments"
-    },
-    {
-      "name": "FireStaffApplyEnchantments",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_staff_apply_enchantments",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FireStaffApplyEnchantmentsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Staffs/Fire"
     },
     {
       "name": "IceStaffApplyEnchantments",
