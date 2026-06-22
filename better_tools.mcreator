@@ -21957,12 +21957,16 @@
       "name": "CrystalliteBow",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_2.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowItem.java"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_1.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_0.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_3.json"
         ]
       },
       "path": "~/Crystallite"
@@ -34397,6 +34401,53 @@
         ]
       },
       "path": "~/Crystallite/Sky"
+    },
+    {
+      "name": "CrystalliteBowPullState",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_pull_state",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowPullStateProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteBowGetPullTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_bow_get_pull_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "time",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowGetPullTimeProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite"
     }
   ],
   "variable_elements": [
@@ -34585,6 +34636,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "-1.0"
+    },
+    {
+      "name": "crystallite_bow_pull_time",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [

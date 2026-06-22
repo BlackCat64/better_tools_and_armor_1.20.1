@@ -5,8 +5,78 @@
     "renderType": 0,
     "texture": "crystallite_bow",
     "customModelName": "Ranged item",
-    "customProperties": {},
-    "states": [],
+    "guiTexture": "",
+    "customProperties": {
+      "pulling": {
+        "name": "CrystalliteBowPullState"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_pulling_0",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_pulling_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_pulling_2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      }
+    ],
     "animations": [],
     "name": "Crystallite Bow",
     "rarity": "COMMON",
@@ -19,7 +89,7 @@
     "enchantability": 20,
     "useDuration": 72000,
     "toolType": 1.0,
-    "damageCount": 1800,
+    "damageCount": 2400,
     "recipeRemainder": {
       "value": ""
     },
@@ -45,9 +115,12 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "everyTickWhileUsing": {
+      "name": "CrystalliteBowGetPullTime"
+    },
     "enableRanged": true,
     "shootConstantly": false,
-    "rangedItemChargesPower": false,
+    "rangedItemChargesPower": true,
     "projectile": {
       "value": "Arrow"
     },

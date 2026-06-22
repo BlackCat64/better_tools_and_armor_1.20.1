@@ -1,76 +1,32 @@
 {
-  "parent": "item/generated",
+  "parent": "item/bow",
   "textures": {
     "layer0": "better_tools:item/crystallite_bow"
   },
-  "display": {
-    "thirdperson_righthand": {
-      "rotation": [
-        -80,
-        260,
-        -40
-      ],
-      "translation": [
-        -1,
-        -2,
-        2.5
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ]
+  "overrides": [
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_pulling": 0
+      },
+      "model": "better_tools:item/crystallite_bow_0"
     },
-    "thirdperson_lefthand": {
-      "rotation": [
-        -80,
-        -280,
-        40
-      ],
-      "translation": [
-        -1,
-        -2,
-        2.5
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ]
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_pulling": 1
+      },
+      "model": "better_tools:item/crystallite_bow_1"
     },
-    "firstperson_righthand": {
-      "rotation": [
-        0,
-        -90,
-        25
-      ],
-      "translation": [
-        1.13,
-        3.2,
-        1.13
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ]
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_pulling": 2
+      },
+      "model": "better_tools:item/crystallite_bow_2"
     },
-    "firstperson_lefthand": {
-      "rotation": [
-        0,
-        90,
-        -25
-      ],
-      "translation": [
-        1.13,
-        3.2,
-        1.13
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ]
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_pulling": 3
+      },
+      "model": "better_tools:item/crystallite_bow_3"
     }
-  }
+  ]
 }

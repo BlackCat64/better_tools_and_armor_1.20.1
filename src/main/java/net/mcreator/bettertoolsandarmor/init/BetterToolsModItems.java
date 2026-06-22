@@ -23,6 +23,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialEnergyValueProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.EnergyVialActiveProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.CrystalliteBowPullStateProcedure;
 import net.mcreator.bettertoolsandarmor.item.*;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -1153,6 +1154,8 @@ public class BetterToolsModItems {
 		@OnlyIn(Dist.CLIENT)
 		public static void clientLoad(FMLClientSetupEvent event) {
 			event.enqueueWork(() -> {
+				ItemProperties.register(CRYSTALLITE_BOW.get(), ResourceLocation.parse("better_tools:crystallite_bow_pulling"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CrystalliteBowPullStateProcedure.execute(entity, itemStackToRender));
 				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_energy"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
 				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_active"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity != null ? entity.level() : clientWorld, entity, itemStackToRender));
