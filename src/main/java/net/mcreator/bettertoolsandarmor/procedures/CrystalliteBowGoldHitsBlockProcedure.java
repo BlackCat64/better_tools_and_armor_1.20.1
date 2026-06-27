@@ -35,32 +35,32 @@ public class CrystalliteBowGoldHitsBlockProcedure {
 		String player_uuid = "";
 		if (entity instanceof ArmorStand && entity.getPersistentData().getBoolean("crystallite_bow_gold")) {
 			uuid = entity.getPersistentData().getString("arrow");
-			if (!(uuid).isEmpty()) {
-				if (world instanceof ServerLevel serverLevel) {
-					arrow = serverLevel.getEntity(UUID.fromString(uuid));
-					if (!(arrow == null)) {
-						{
-							Entity _ent = entity;
-							_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
-							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
-						}
-						if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
-							player_uuid = entity.getPersistentData().getString("player");
-							shooter = serverLevel.getEntity(UUID.fromString(player_uuid));
-							CrystalliteBowGoldFireworkProcedure.execute(world, x, y, z, shooter);
-							if (!entity.level().isClientSide())
-								entity.discard();
-						}
-					} else {
-						if (!entity.level().isClientSide())
-							entity.discard();
-					}
+			arrow = world instanceof ServerLevel _level3 ? getEntityFromUUID(_level3, uuid) : null;
+			if (!(arrow == null)) {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
+				}
+				if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
+					player_uuid = entity.getPersistentData().getString("player");
+					CrystalliteBowGoldFireworkProcedure.execute(world, x, y, z, world instanceof ServerLevel _level10 ? getEntityFromUUID(_level10, player_uuid) : null);
+					if (!entity.level().isClientSide())
+						entity.discard();
 				}
 			} else {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
+		}
+	}
+
+	private static Entity getEntityFromUUID(ServerLevel level, String uuid) {
+		try {
+			return level.getEntity(UUID.fromString(uuid));
+		} catch (IllegalArgumentException e) {
+			return null;
 		}
 	}
 }

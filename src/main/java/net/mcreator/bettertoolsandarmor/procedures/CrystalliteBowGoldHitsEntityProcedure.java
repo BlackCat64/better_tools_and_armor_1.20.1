@@ -27,7 +27,7 @@ public class CrystalliteBowGoldHitsEntityProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity immediatesourceentity, Entity sourceentity) {
 		if (immediatesourceentity == null || sourceentity == null)
 			return;
-		if (immediatesourceentity instanceof Arrow && immediatesourceentity.getPersistentData().getBoolean("crystallite_gold_upgrade")) {
+		if (immediatesourceentity instanceof Arrow && immediatesourceentity.getPersistentData().getBoolean("crystallite_bow_gold")) {
 			CrystalliteBowGoldFireworkProcedure.execute(world, immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ(), sourceentity);
 			if (!immediatesourceentity.level().isClientSide())
 				immediatesourceentity.discard();

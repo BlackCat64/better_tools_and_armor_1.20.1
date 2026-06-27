@@ -1158,6 +1158,8 @@ public class BetterToolsModItems {
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CrystalliteBowPullStateProcedure.execute(entity, itemStackToRender));
 				ItemProperties.register(CRYSTALLITE_BOW_IRON.get(), ResourceLocation.parse("better_tools:crystallite_bow_iron_pulling"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CrystalliteBowPullStateProcedure.execute(entity, itemStackToRender));
+				ItemProperties.register(CRYSTALLITE_BOW_GOLD.get(), ResourceLocation.parse("better_tools:crystallite_bow_gold_pulling"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CrystalliteBowPullStateProcedure.execute(entity, itemStackToRender));
 				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_energy"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialEnergyValueProcedure.execute(itemStackToRender));
 				ItemProperties.register(ENERGY_VIAL.get(), ResourceLocation.parse("better_tools:energy_vial_active"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnergyVialActiveProcedure.execute(entity != null ? entity.level() : clientWorld, entity, itemStackToRender));

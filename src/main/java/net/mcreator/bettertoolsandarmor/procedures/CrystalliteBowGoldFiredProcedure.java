@@ -1,7 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -13,17 +12,7 @@ public class CrystalliteBowGoldFiredProcedure {
 		if (arrow == null || player == null)
 			return;
 		Entity armor_stand = null;
-		if (false) {
-			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.ARMOR_STAND.spawn(_level, BlockPos.containing(arrow.getX(), arrow.getY(), arrow.getZ()), MobSpawnType.MOB_SUMMONED);
-				if (entityToSpawn != null) {
-					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-				}
-			}
-		}
-		if (world instanceof ServerLevel _level) {
-			armor_stand = new ArmorStand(_level, arrow.getX(), arrow.getY(), arrow.getZ());
-		}
+		armor_stand = world instanceof ServerLevel _level3 ? EntityType.ARMOR_STAND.spawn(_level3, BlockPos.containing(arrow.getX(), arrow.getY(), arrow.getZ()), MobSpawnType.MOB_SUMMONED) : null;
 		if (!(armor_stand == null)) {
 			armor_stand.setInvisible(true);
 			armor_stand.setNoGravity(true);
@@ -33,7 +22,6 @@ public class CrystalliteBowGoldFiredProcedure {
 			armor_stand.getPersistentData().putBoolean("crystallite_bow_gold", true);
 			armor_stand.getPersistentData().putString("arrow", (arrow.getStringUUID()));
 			armor_stand.getPersistentData().putString("player", (player.getStringUUID()));
-			((ServerLevel) world).addFreshEntity(armor_stand);
 		}
 	}
 }

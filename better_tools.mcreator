@@ -22062,11 +22062,15 @@
       "name": "CrystalliteBowGold",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_gold",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_3.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_0.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_1.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_2.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowGoldItem.java"
         ]
       },
@@ -38129,7 +38133,7 @@
       "item.better_tools.crystallite_armor_ruby_helmet.description_1": "§7Ability:",
       "item.better_tools.crystallite_armor_topaz_leggings": "Crystallite Leggings",
       "death.attack.karma_curse_damage": "%1$s got instant karma",
-      "item.better_tools.crystallite_bow_gold.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_gold.description_0": "§7Upgrade: §eGold",
       "item.better_tools.crystallite_helmet.description_0": "§7Upgrade: §rNone",
       "block.better_tools.light_blue_metal_wall_sign": "Light Blue Metal Wall Sign",
       "item.better_tools.netherite_dagger": "Netherite Dagger",
