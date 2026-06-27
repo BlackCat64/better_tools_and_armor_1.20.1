@@ -29644,12 +29644,8 @@
             "type": "number"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "direction",
+            "type": "vector"
           }
         ]
       },
@@ -34470,14 +34466,24 @@
       "path": "~/Crystallite"
     },
     {
-      "name": "CrystalliteIronArrow",
-      "type": "projectile",
+      "name": "CrystalliteBowIronArrowHits",
+      "type": "procedure",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "crystallite_iron_arrow",
+      "locked_code": false,
+      "registry_name": "crystallite_bow_iron_arrow_hits",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
         "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/entity/CrystalliteIronArrowEntity.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowIronArrowHitsProcedure.java"
         ]
       },
       "path": "~/Crystallite/Iron"

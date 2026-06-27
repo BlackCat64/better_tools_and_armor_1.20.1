@@ -24,6 +24,5 @@ public class BetterToolsModEntityRenderers {
 		event.registerEntityRenderer(BetterToolsModEntities.ICE_STAFF_PROJECTILE_FROM_DISPENSER.get(), IceStaffProjectileFromDispenserRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.LIGHTNING_STAFF_DISPENSER_PROJECTILE.get(), LightningStaffDispenserProjectileRenderer::new);
 		event.registerEntityRenderer(BetterToolsModEntities.CRYSTALLITE_PRISMARINE_ARROW.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(BetterToolsModEntities.CRYSTALLITE_IRON_ARROW.get(), ThrownItemRenderer::new);
 	}
 }

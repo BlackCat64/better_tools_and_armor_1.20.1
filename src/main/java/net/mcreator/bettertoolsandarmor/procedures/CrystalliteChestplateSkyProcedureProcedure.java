@@ -60,12 +60,12 @@ public class CrystalliteChestplateSkyProcedureProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:wind_burst")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
-			ApplyKnockbackProcedure.execute(entity.getX(), entity.getZ(), immediatesourceentity, 0.75);
+			ApplyKnockbackProcedure.execute(immediatesourceentity, 0.75, (entity.position()).subtract((immediatesourceentity.position())));
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entityiterator instanceof LivingEntity) {
-						ApplyKnockbackProcedure.execute(entity.getX(), entity.getZ(), entityiterator, 0.75);
+						ApplyKnockbackProcedure.execute(entityiterator, 0.75, (entity.position()).subtract((entityiterator.position())));
 					}
 				}
 			}

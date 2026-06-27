@@ -6,28 +6,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 public class ApplyKnockbackProcedure {
-	public static void execute(double x, double z, Entity entity, double power) {
-		if (entity == null)
+	public static void execute(Entity entity, double power, Vec3 direction) {
+		if (entity == null || direction == null)
 			return;
-		double knockback_power = 0;
-		double y_velocity = 0;
-		double x_diff = 0;
-		double z_diff = 0;
-		double distance = 0;
-		double z_velocity = 0;
-		double x_velocity = 0;
-		if (entity instanceof LivingEntity) {
-			knockback_power = Math
-					.max(power * (1 - (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.KNOCKBACK_RESISTANCE) ? _livingEntity1.getAttribute(Attributes.KNOCKBACK_RESISTANCE).getValue() : 0)), 0);
-			x_diff = entity.getX() - x;
-			z_diff = entity.getZ() - z;
-			distance = Math.sqrt(Math.pow(x_diff, 2) + Math.pow(z_diff, 2));
-			x_velocity = (x_diff / distance) * knockback_power;
-			y_velocity = 0.5 * knockback_power;
-			z_velocity = (z_diff / distance) * knockback_power;
-			if (knockback_power > 0) {
-				entity.setDeltaMovement(new Vec3(x_velocity, y_velocity, z_velocity));
-			}
+		double resistance = 0;
+		Vec3 dir = Vec3.ZERO;
+		Vec3 knockback = Vec3.ZERO;
+		if (entity instanceof LivingEntity && direction.length() > 0.000001) {
+			dir = direction.normalize();
+			resistance = Math.max(1 - (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.KNOCKBACK_RESISTANCE) ? _livingEntity3.getAttribute(Attributes.KNOCKBACK_RESISTANCE).getValue() : 0), 0);
+			knockback = dir.scale((power * resistance));
+			entity.push(knockback.x, 0.1, knockback.z);
 		}
 	}
 }

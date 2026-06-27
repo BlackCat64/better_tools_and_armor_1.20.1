@@ -39,8 +39,6 @@ public class BetterToolsModEntities {
 			EntityType.Builder.<LightningStaffDispenserProjectileEntity>of(LightningStaffDispenserProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CrystallitePrismarineArrowEntity>> CRYSTALLITE_PRISMARINE_ARROW = register("crystallite_prismarine_arrow",
 			EntityType.Builder.<CrystallitePrismarineArrowEntity>of(CrystallitePrismarineArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<CrystalliteIronArrowEntity>> CRYSTALLITE_IRON_ARROW = register("crystallite_iron_arrow",
-			EntityType.Builder.<CrystalliteIronArrowEntity>of(CrystalliteIronArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
