@@ -22044,12 +22044,16 @@
       "name": "CrystalliteBowIron",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_iron",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_2.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowIronItem.java"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_3.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_1.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowIronItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_0.json"
         ]
       },
       "path": "~/Crystallite/Iron"
@@ -34417,6 +34421,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "return_type": "number",
@@ -34448,6 +34468,19 @@
         ]
       },
       "path": "~/Crystallite"
+    },
+    {
+      "name": "CrystalliteIronArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystallite_iron_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/entity/CrystalliteIronArrowEntity.java"
+        ]
+      },
+      "path": "~/Crystallite/Iron"
     }
   ],
   "variable_elements": [
@@ -37441,6 +37474,9 @@
       "CUSTOM:CrystalliteAxePrismarine",
       "CUSTOM:CrystalliteShovelPrismarine",
       "CUSTOM:CrystalliteHoePrismarine"
+    ],
+    "ITEMS:minecraft:enchantable/bow": [
+      "TAG:better_tools:crystallite_bows"
     ]
   },
   "tab_element_order": {

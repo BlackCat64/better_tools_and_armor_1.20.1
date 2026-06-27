@@ -18,10 +18,7 @@
     ],
     "supportedItems": [
       {
-        "value": "Items.BOW"
-      },
-      {
-        "value": "Items.CROSSBOW"
+        "value": "TAG:minecraft:enchantable/bow"
       }
     ],
     "isTreasureEnchantment": false,

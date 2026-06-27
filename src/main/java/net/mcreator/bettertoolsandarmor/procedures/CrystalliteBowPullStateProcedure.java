@@ -10,7 +10,10 @@ public class CrystalliteBowPullStateProcedure {
 	public static double execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return 0;
-		if ((entity instanceof LivingEntity _entUseItem0 ? _entUseItem0.getUseItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+		if (false) {
+			itemstack.shrink(1);
+		}
+		if ((entity instanceof LivingEntity _entUseItem0 ? _entUseItem0.getUseItem() : ItemStack.EMPTY) == itemstack) {
 			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_bow_pull_time <= 71980) {
 				return 3;
 			} else if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_bow_pull_time <= 71984) {

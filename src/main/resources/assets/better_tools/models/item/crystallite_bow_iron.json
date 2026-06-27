@@ -1,6 +1,32 @@
 {
-  "parent": "item/generated",
+  "parent": "item/bow",
   "textures": {
     "layer0": "better_tools:item/crystallite_bow_iron"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_iron_pulling": 0
+      },
+      "model": "better_tools:item/crystallite_bow_iron_0"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_iron_pulling": 1
+      },
+      "model": "better_tools:item/crystallite_bow_iron_1"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_iron_pulling": 2
+      },
+      "model": "better_tools:item/crystallite_bow_iron_2"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_iron_pulling": 3
+      },
+      "model": "better_tools:item/crystallite_bow_iron_3"
+    }
+  ]
 }

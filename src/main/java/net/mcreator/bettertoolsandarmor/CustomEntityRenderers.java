@@ -15,6 +15,7 @@ public class CustomEntityRenderers {
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
+			EntityRenderers.register(BetterToolsModEntities.CRYSTALLITE_IRON_ARROW.get(), TippableArrowRenderer::new);
 			EntityRenderers.register(BetterToolsModEntities.CRYSTALLITE_PRISMARINE_ARROW.get(), TippableArrowRenderer::new);
 		});
 	}

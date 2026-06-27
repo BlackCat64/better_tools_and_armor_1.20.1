@@ -2,10 +2,7 @@
   "description": {
     "translate": "enchantment.better_tools.thunder_shot"
   },
-  "supported_items": [
-    "minecraft:bow",
-    "minecraft:crossbow"
-  ],
+  "supported_items": "#minecraft:enchantable/bow",
   "weight": 2,
   "max_level": 3,
   "min_cost": {
