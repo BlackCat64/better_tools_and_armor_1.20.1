@@ -33,8 +33,8 @@ public class CrystalliteBowLapisXPDropsProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double distance = 0;
-		if (immediatesourceentity.getPersistentData().getBoolean("crystallite_lapis_upgrade") && !(entity instanceof Player)) {
-			distance = GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), sourceentity.getX(), sourceentity.getY(), sourceentity.getZ());
+		if (immediatesourceentity.getPersistentData().getBoolean("crystallite_bow_lapis") && !(entity instanceof Player)) {
+			distance = sourceentity != null ? entity.distanceTo(sourceentity) : -1;
 			if (distance >= 5) {
 				if (world instanceof ServerLevel _level)
 					_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + 1), (z + Math.random()), (int) Math.floor(distance)));

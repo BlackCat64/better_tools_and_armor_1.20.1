@@ -1461,7 +1461,7 @@
   "item.better_tools.crystallite_hoe_sculk.description_0": "§7Upgrade: §3Sculk",
   "item.better_tools.crystallite_hoe_sculk.description_3": "§3Magnetic - Block drops go straight into your inventory",
   "item.better_tools.crystallite_hoe_sculk.description_2": "§3Sneaky - Mines blocks silently",
-  "item.better_tools.crystallite_bow_lapis.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_lapis.description_0": "§7Upgrade: §9Lapis Lazuli",
   "item.better_tools.crystallite_armor_diamond_boots": "Crystallite Boots",
   "block.better_tools.end_titanium_block": "Ender Titanium Block",
   "block.better_tools.cyan_metal_hanging_sign": "Cyan Metal Hanging Sign",
@@ -1879,5 +1879,11 @@
   "jei.better_tools.topaz_pickaxe_info": "May duplicate drops from ores, as long as the ore block itself is not dropped.\nStacks with Fortune.",
   "jei.better_tools.utility_potions_info": "§lUtility Potions§r\n\nThese give various one-off effects when consumed.\nThey spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually.",
   "jei.better_tools.warden_staff_info": "§1When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Sonic Boom.\n\nDamage: +2 per level.\nRange: +3 per level.",
-  "jei.better_tools.winged_boots_info": "Allows double jumping in mid-air.\nUses up Effect Energy for each jump, so an Energy Vial must be equipped with sufficient energy."
+  "jei.better_tools.winged_boots_info": "Allows double jumping in mid-air.\nUses up Effect Energy for each jump, so an Energy Vial must be equipped with sufficient energy.",
+  "item.better_tools.crystallite_bow_iron.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_iron.description_2": "§fTough - Increased arrow knockback",
+  "item.better_tools.crystallite_bow_upgraded.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_gold.description_2": "§eOutburst - Arrows deal splash damage",
+  "item.better_tools.crystallite_bow_lapis.description_2": "§9Magic - XP drops increase with distance from the target",
+  "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:"
 }

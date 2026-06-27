@@ -39,6 +39,9 @@ public class CrystalliteBowIronItem extends BowItem {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.better_tools.crystallite_bow_iron.description_0"));
+		list.add(Component.translatable("item.better_tools.crystallite_bow_upgraded.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_bow_iron.description_2"));
+
 	}
 
 	@Override
