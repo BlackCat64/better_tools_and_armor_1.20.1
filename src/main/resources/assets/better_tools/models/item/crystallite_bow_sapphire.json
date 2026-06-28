@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "better_tools:item/crystallite_bow_sapphire"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_sapphire_pulling": 1
+      },
+      "model": "better_tools:item/crystallite_bow_sapphire_0"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_sapphire_pulling": 16
+      },
+      "model": "better_tools:item/crystallite_bow_sapphire_1"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_sapphire_pulling": 20
+      },
+      "model": "better_tools:item/crystallite_bow_sapphire_2"
+    }
+  ]
 }

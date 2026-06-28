@@ -395,7 +395,7 @@
   "block.better_tools.dark_pink_metal_sign": "Dark Pink Metal Sign",
   "item.better_tools.sapphire_axe": "Sapphire Axe",
   "item.better_tools.crystallite_shovel_prismarine.description_0": "§7Upgrade: §3Prismarine",
-  "item.better_tools.crystallite_bow_sapphire.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_sapphire.description_0": "§7Upgrade: §bSapphire",
   "block.better_tools.dark_polished_copper_block": "Brown Metal Block",
   "death.attack.electric_chain_damage.item": "%1$s was shocked to death by %2$s using %3$s",
   "gamerule.displayXpDropValues.description": "Used for debugging - Displays the amount of XP dropped by mobs who are killed by players with OP permissions",
@@ -1895,5 +1895,7 @@
   "item.better_tools.crystallite_bow_netherite.description_2": "§8Sharp - Arrows deal more damage",
   "item.better_tools.crystallite_bow_netherite.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_ruby.description_2": "§cSpeedy - Charge time is halved, but deals less damage",
-  "item.better_tools.crystallite_bow_ruby.description_1": "§7Ability:"
+  "item.better_tools.crystallite_bow_ruby.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_sapphire.description_2": "§bFreezing - Arrows may freeze the target",
+  "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:"
 }
