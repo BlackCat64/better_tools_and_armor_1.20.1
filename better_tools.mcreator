@@ -22128,11 +22128,14 @@
       "name": "CrystalliteBowNetherite",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_netherite",
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_netherite.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_netherite_1.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_netherite_2.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_netherite_0.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowNetheriteItem.java"
         ]
       },
@@ -38263,7 +38266,7 @@
       "item.better_tools.blue_slime_stick": "Blue Slime Stick",
       "advancements.all_crystallite_armor_adv.title": "Sparkling Success",
       "block.better_tools.light_polished_iron_trapdoor": "White Metal Trapdoor",
-      "item.better_tools.crystallite_bow_netherite.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_netherite.description_0": "§7Upgrade: §8Netherite",
       "advancements.flint_axe_adv.title": "Flintstone",
       "block.better_tools.light_gray_metal_hanging_sign": "Light Gray Metal Hanging Sign",
       "item.better_tools.crystallite_shovel_nether_diamond.description_0": "§7Upgrade: §4Nether Diamond",
@@ -39733,7 +39736,9 @@
       "item.better_tools.crystallite_bow_redstone.description_2": "§cLeech - Heals you a little when a shot hits",
       "item.better_tools.crystallite_bow_diamond.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_diamond.description_2": "§bCritical - Arrows sometimes deal very high damage",
-      "item.better_tools.crystallite_bow_diamond.description_3": "§bDiamond Hard - Increased Durability"
+      "item.better_tools.crystallite_bow_diamond.description_3": "§bDiamond Hard - Increased Durability",
+      "item.better_tools.crystallite_bow_netherite.description_2": "§8Sharp - Arrows deal more damage",
+      "item.better_tools.crystallite_bow_netherite.description_1": "§7Ability:"
     }
   },
   "metadata": {
