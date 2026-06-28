@@ -48,7 +48,7 @@ public class ThunderShotArrowShotProcedure {
 							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
 							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-						if (entityiterator instanceof Arrow && entityiterator.tickCount < 5 && !entityiterator.getPersistentData().getBoolean("being_tracked") && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
+						if (entityiterator instanceof Arrow && entityiterator.tickCount < 5 && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
 							ThunderShotSpawnArmorStandProcedure.execute(world, entityiterator);
 						}
 					}

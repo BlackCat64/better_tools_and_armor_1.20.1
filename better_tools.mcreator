@@ -22196,12 +22196,15 @@
       "name": "CrystalliteBowNetherDiamond",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_nether_diamond",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowNetherDiamondItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond_0.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond_2.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_nether_diamond_1.json"
         ]
       },
       "path": "~/Crystallite/Nether Diamond"
@@ -28465,6 +28468,10 @@
             "type": "entity"
           },
           {
+            "name": "player",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -28476,7 +28483,7 @@
       "name": "ArrowExplosion",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "arrow_explosion",
       "metadata": {
         "files": [
@@ -28484,7 +28491,15 @@
         ],
         "dependencies": [
           {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "player",
             "type": "entity"
           },
           {
@@ -28519,7 +28534,15 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -38681,7 +38704,7 @@
       "gui.better_tools.attributes_viewer.label_empty": "|",
       "advancements.vein_mining_adv.descr": "Mine 10 ore blocks at once",
       "item.better_tools.end_titanium_chestplate": "Ender Titanium Chestplate",
-      "item.better_tools.crystallite_bow_nether_diamond.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_nether_diamond.description_0": "§7Upgrade: §4Nether Diamond",
       "item.better_tools.crystallite_axe_netherite": "Crystallite Axe",
       "item.minecraft.potion.effect.swift_swim_potion_long": "Potion of Rapidity",
       "item.better_tools.honeycomb_helmet.description_0": "§6Can stick to ceilings by holding §b[SPACE]",
@@ -39768,7 +39791,10 @@
       "item.better_tools.crystallite_bow_sapphire.description_2": "§bFreezing - Arrows may freeze the target",
       "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_topaz.description_1": "§7Ability:",
-      "item.better_tools.crystallite_bow_topaz.description_2": "§6Shocking - Arrows may summon lightning on the target"
+      "item.better_tools.crystallite_bow_topaz.description_2": "§6Shocking - Arrows may summon lightning on the target",
+      "item.better_tools.crystallite_bow_nether_diamond.description_3": "§cEffect does not work when wet",
+      "item.better_tools.crystallite_bow_nether_diamond.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_nether_diamond.description_2": "§4Pyromaniac - Fires explosive arrows"
     }
   },
   "metadata": {

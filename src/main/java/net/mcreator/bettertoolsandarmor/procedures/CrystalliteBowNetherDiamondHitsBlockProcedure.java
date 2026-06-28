@@ -6,7 +6,9 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.decoration.ArmorStand;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -30,31 +32,27 @@ public class CrystalliteBowNetherDiamondHitsBlockProcedure {
 		if (entity == null)
 			return;
 		Entity arrow = null;
+		Entity player = null;
 		String uuid = "";
-		String potion = "";
+		String playerUUID = "";
 		if (entity instanceof ArmorStand && entity.getPersistentData().getBoolean("crystallite_bow_nether_diamond")) {
 			uuid = entity.getPersistentData().getString("arrow");
-			if (!(uuid).isEmpty()) {
-				if (world instanceof ServerLevel serverLevel) {
-					arrow = serverLevel.getEntity(UUID.fromString(uuid));
+			arrow = world instanceof ServerLevel _level3 ? getEntityFromUUID(_level3, uuid) : null;
+			if (arrow instanceof Arrow) {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
 				}
-				if (!(arrow == null)) {
-					{
-						Entity _ent = entity;
-						_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
+				if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
+					playerUUID = entity.getPersistentData().getString("player");
+					player = world instanceof ServerLevel _level10 ? getEntityFromUUID(_level10, playerUUID) : null;
+					if (player instanceof LivingEntity && !arrow.isInWaterRainOrBubble()) {
+						ArrowExplosionProcedure.execute(world, x, y, z, arrow, entity, player);
+						if (!arrow.level().isClientSide())
+							arrow.discard();
 					}
-					if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
-						if (!entity.level().isClientSide())
-							entity.discard();
-						if (!arrow.isInWaterRainOrBubble()) {
-							ArrowExplosionProcedure.execute(world, x, y, z, arrow);
-							if (!arrow.level().isClientSide())
-								arrow.discard();
-						}
-					}
-				} else {
 					if (!entity.level().isClientSide())
 						entity.discard();
 				}
@@ -62,6 +60,14 @@ public class CrystalliteBowNetherDiamondHitsBlockProcedure {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
+		}
+	}
+
+	private static Entity getEntityFromUUID(ServerLevel level, String uuid) {
+		try {
+			return level.getEntity(UUID.fromString(uuid));
+		} catch (IllegalArgumentException e) {
+			return null;
 		}
 	}
 }

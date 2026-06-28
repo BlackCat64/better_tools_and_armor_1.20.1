@@ -40,7 +40,6 @@ public class ThunderShotLightningRodProcedure {
 			uuid = entity.getPersistentData().getString("arrow");
 			arrow = world instanceof ServerLevel _level3 ? getEntityFromUUID(_level3, uuid) : null;
 			if (arrow instanceof Arrow) {
-				arrow.getPersistentData().putBoolean("being_tracked", true);
 				{
 					Entity _ent = entity;
 					_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));

@@ -7,6 +7,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
@@ -16,20 +17,20 @@ public class CrystalliteBowNetherDiamondHitsEntityProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getDirectEntity());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
-		execute(null, world, x, y, z, immediatesourceentity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+		execute(null, world, x, y, z, entity, immediatesourceentity, sourceentity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
-		if (immediatesourceentity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
+		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
-		if (immediatesourceentity instanceof Arrow && immediatesourceentity.getPersistentData().getBoolean("crystallite_nether_diamond_upgrade")) {
+		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity && immediatesourceentity.getPersistentData().getBoolean("crystallite_bow_nether_diamond")) {
 			if (!immediatesourceentity.isInWaterRainOrBubble()) {
-				ArrowExplosionProcedure.execute(world, x, y, z, immediatesourceentity);
+				ArrowExplosionProcedure.execute(world, x, y, z, immediatesourceentity, entity, sourceentity);
 			}
 			if (!immediatesourceentity.level().isClientSide())
 				immediatesourceentity.discard();
