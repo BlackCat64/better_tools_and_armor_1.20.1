@@ -16,6 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
@@ -38,7 +39,8 @@ public class ThunderShotArrowShotProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0) {
+		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
+				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
 			BetterToolsMod.queueServerWork(1, () -> {
 				{
 					final Vec3 _center = new Vec3(
@@ -46,8 +48,8 @@ public class ThunderShotArrowShotProcedure {
 							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
 							(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-						if (!(entityiterator == entity) && entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
-							entityiterator.getPersistentData().putBoolean("thunder_shot", true);
+						if (entityiterator instanceof Arrow && entityiterator.tickCount < 5 && !entityiterator.getPersistentData().getBoolean("being_tracked") && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
+							ThunderShotSpawnArmorStandProcedure.execute(world, entityiterator);
 						}
 					}
 				}

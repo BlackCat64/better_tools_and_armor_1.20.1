@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
@@ -43,32 +44,36 @@ public class ThunderShotProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double LightningChance = 0;
+		ItemStack bow = ItemStack.EMPTY;
 		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity) {
-			LightningChance = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) * 0.1;
-			if (HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.ELECTRIC_NECKLACE.get()))) {
-				LightningChance = LightningChance + 0.1;
-			}
-			if (immediatesourceentity.getPersistentData().getBoolean("crystallite_topaz_upgrade")) {
-				LightningChance = LightningChance + 0.2;
-			}
-			if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
-				LightningChance = LightningChance * 2;
-			}
-			if (LightningChance > 0) {
-				LightningChance = LightningChance + (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity5.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
-				if (Math.random() < LightningChance) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+			bow = ((AbstractArrow) immediatesourceentity).getWeaponItem();
+			if (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
+					|| bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
+				LightningChance = bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) * 0.1;
+				if (HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.ELECTRIC_NECKLACE.get()))) {
+					LightningChance = LightningChance + 0.1;
+				}
+				if (bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
+					LightningChance = LightningChance + 0.2;
+				}
+				if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
+					LightningChance = LightningChance * 2;
+				}
+				if (LightningChance > 0) {
+					LightningChance = LightningChance + (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity6.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+					if (Math.random() < LightningChance) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
 						}
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1);
-						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1, false);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1);
+							} else {
+								_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.elder_guardian.curse")), SoundSource.NEUTRAL, (float) 0.75, 1, false);
+							}
 						}
 					}
 				}

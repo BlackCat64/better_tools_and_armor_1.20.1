@@ -510,7 +510,7 @@
   "item.better_tools.crystallite_pickaxe_netherite.description_1": "§7Ability:",
   "item.better_tools.crystallite_pickaxe_netherite.description_2": "§8Deep Miner - Mines all natural stones instantly when enchanted with Efficiency V",
   "item.better_tools.crystallite_armor_honey_leggings.description_2": "§6Sticky - Slows melee attackers",
-  "item.better_tools.crystallite_bow_topaz.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_topaz.description_0": "§7Upgrade: §6Topaz",
   "item.better_tools.crystallite_armor_honey_leggings.description_1": "§7Ability:",
   "item.minecraft.potion.effect.criticality_potion": "Potion of Criticality",
   "block.better_tools.polished_nether_diamond_stairs": "Dark Pink Metal Stairs",
@@ -1897,5 +1897,7 @@
   "item.better_tools.crystallite_bow_ruby.description_2": "§cSpeedy - Charge time is halved, but deals less damage",
   "item.better_tools.crystallite_bow_ruby.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_sapphire.description_2": "§bFreezing - Arrows may freeze the target",
-  "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:"
+  "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_topaz.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_topaz.description_2": "§6Shocking - Arrows may summon lightning on the target"
 }

@@ -22179,11 +22179,14 @@
       "name": "CrystalliteBowTopaz",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_topaz",
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_topaz.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_topaz_2.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_topaz_1.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_topaz_0.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowTopazItem.java"
         ]
       },
@@ -22645,16 +22648,8 @@
         ],
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -34479,6 +34474,29 @@
         ]
       },
       "path": "~/Crystallite/Iron"
+    },
+    {
+      "name": "ThunderShotSpawnArmorStand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_shot_spawn_armor_stand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arrow",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ThunderShotSpawnArmorStandProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -38361,7 +38379,7 @@
       "item.better_tools.crystallite_pickaxe_netherite.description_1": "§7Ability:",
       "item.better_tools.crystallite_pickaxe_netherite.description_2": "§8Deep Miner - Mines all natural stones instantly when enchanted with Efficiency V",
       "item.better_tools.crystallite_armor_honey_leggings.description_2": "§6Sticky - Slows melee attackers",
-      "item.better_tools.crystallite_bow_topaz.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_topaz.description_0": "§7Upgrade: §6Topaz",
       "item.better_tools.crystallite_armor_honey_leggings.description_1": "§7Ability:",
       "item.minecraft.potion.effect.criticality_potion": "Potion of Criticality",
       "block.better_tools.polished_nether_diamond_stairs": "Dark Pink Metal Stairs",
@@ -39748,7 +39766,9 @@
       "item.better_tools.crystallite_bow_ruby.description_2": "§cSpeedy - Charge time is halved, but deals less damage",
       "item.better_tools.crystallite_bow_ruby.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_sapphire.description_2": "§bFreezing - Arrows may freeze the target",
-      "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:"
+      "item.better_tools.crystallite_bow_sapphire.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_topaz.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_topaz.description_2": "§6Shocking - Arrows may summon lightning on the target"
     }
   },
   "metadata": {
