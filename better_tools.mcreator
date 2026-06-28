@@ -22145,12 +22145,15 @@
       "name": "CrystalliteBowRuby",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_ruby",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowRubyItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby_0.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby_1.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_ruby_2.json"
         ]
       },
       "path": "~/Crystallite/Ruby"
@@ -39259,7 +39262,7 @@
       "item.better_tools.crystallite_dagger_honey.description_2": "§6Swarm - Consecutive hits deal more damage",
       "item.better_tools.nether_diamond_helmet.description_0": "§4Reduces maximum burn time",
       "item.better_tools.magic_crystal.description_0": "§7Element: §9Lapis Lazuli",
-      "item.better_tools.crystallite_bow_ruby.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_ruby.description_0": "§7Upgrade: §cRuby",
       "advancements.crystallite_sword_emerald_adv.title": "Stuck in the Mud",
       "item.better_tools.crystallite_armor_nether_diamond_boots": "Crystallite Boots",
       "item.better_tools.crystallite_dagger_prismarine": "Crystallite Dagger",
@@ -39738,7 +39741,9 @@
       "item.better_tools.crystallite_bow_diamond.description_2": "§bCritical - Arrows sometimes deal very high damage",
       "item.better_tools.crystallite_bow_diamond.description_3": "§bDiamond Hard - Increased Durability",
       "item.better_tools.crystallite_bow_netherite.description_2": "§8Sharp - Arrows deal more damage",
-      "item.better_tools.crystallite_bow_netherite.description_1": "§7Ability:"
+      "item.better_tools.crystallite_bow_netherite.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_ruby.description_2": "§cSpeedy - Charge time is halved, but deals less damage",
+      "item.better_tools.crystallite_bow_ruby.description_1": "§7Ability:"
     }
   },
   "metadata": {

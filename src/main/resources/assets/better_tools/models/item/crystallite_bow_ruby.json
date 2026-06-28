@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "better_tools:item/crystallite_bow_ruby"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_ruby_pulling": 1
+      },
+      "model": "better_tools:item/crystallite_bow_ruby_0"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_ruby_pulling": 8
+      },
+      "model": "better_tools:item/crystallite_bow_ruby_1"
+    },
+    {
+      "predicate": {
+        "better_tools:crystallite_bow_ruby_pulling": 10
+      },
+      "model": "better_tools:item/crystallite_bow_ruby_2"
+    }
+  ]
 }
