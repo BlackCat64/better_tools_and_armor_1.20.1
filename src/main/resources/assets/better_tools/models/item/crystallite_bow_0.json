@@ -1,6 +1,6 @@
 {
   "parent": "item/bow",
   "textures": {
-    "layer0": "better_tools:item/crystallite_bow"
+    "layer0": "better_tools:item/crystallite_bow_pulling_0"
   }
 }

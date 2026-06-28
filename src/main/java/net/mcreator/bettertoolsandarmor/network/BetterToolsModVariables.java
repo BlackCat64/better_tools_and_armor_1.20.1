@@ -108,7 +108,6 @@ public class BetterToolsModVariables {
 			clone.crystallite_redstone_sword_heal_cooldown = original.crystallite_redstone_sword_heal_cooldown;
 			clone.crystallite_amethyst_ore_highlight_cooldown = original.crystallite_amethyst_ore_highlight_cooldown;
 			clone.energy_vial_slot = original.energy_vial_slot;
-			clone.crystallite_bow_pull_time = original.crystallite_bow_pull_time;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -295,7 +294,6 @@ public class BetterToolsModVariables {
 		public double crystallite_redstone_sword_heal_cooldown = 0;
 		public double crystallite_amethyst_ore_highlight_cooldown = 0;
 		public double energy_vial_slot = -1.0;
-		public double crystallite_bow_pull_time = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -329,7 +327,6 @@ public class BetterToolsModVariables {
 			nbt.putDouble("crystallite_redstone_sword_heal_cooldown", crystallite_redstone_sword_heal_cooldown);
 			nbt.putDouble("crystallite_amethyst_ore_highlight_cooldown", crystallite_amethyst_ore_highlight_cooldown);
 			nbt.putDouble("energy_vial_slot", energy_vial_slot);
-			nbt.putDouble("crystallite_bow_pull_time", crystallite_bow_pull_time);
 			return nbt;
 		}
 
@@ -364,7 +361,6 @@ public class BetterToolsModVariables {
 			crystallite_redstone_sword_heal_cooldown = nbt.getDouble("crystallite_redstone_sword_heal_cooldown");
 			crystallite_amethyst_ore_highlight_cooldown = nbt.getDouble("crystallite_amethyst_ore_highlight_cooldown");
 			energy_vial_slot = nbt.getDouble("energy_vial_slot");
-			crystallite_bow_pull_time = nbt.getDouble("crystallite_bow_pull_time");
 		}
 
 		public void markSyncDirty() {

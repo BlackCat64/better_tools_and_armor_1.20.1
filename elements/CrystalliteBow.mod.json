@@ -14,22 +14,6 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "crystallite_bow",
-        "customModelName": "Ranged item",
-        "stateMap": [
-          {
-            "property": {
-              "min": -1.7976931348623157E308,
-              "max": 1.7976931348623157E308,
-              "name": "CUSTOM:pulling",
-              "type": "number"
-            },
-            "value": 0.0
-          }
-        ]
-      },
-      {
-        "renderType": 0,
         "texture": "crystallite_bow_pulling_0",
         "customModelName": "Normal",
         "stateMap": [
@@ -56,7 +40,7 @@
               "name": "CUSTOM:pulling",
               "type": "number"
             },
-            "value": 2.0
+            "value": 16.0
           }
         ]
       },
@@ -72,7 +56,7 @@
               "name": "CUSTOM:pulling",
               "type": "number"
             },
-            "value": 3.0
+            "value": 20.0
           }
         ]
       }
@@ -118,7 +102,7 @@
     "everyTickWhileUsing": {
       "name": "CrystalliteBowGetPullTime"
     },
-    "enableRanged": true,
+    "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": true,
     "projectile": {

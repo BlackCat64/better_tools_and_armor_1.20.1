@@ -3,17 +3,14 @@ package net.mcreator.bettertoolsandarmor.item;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteBowGetPullTimeProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -44,11 +41,6 @@ public class CrystalliteBowItem extends BowItem {
 	public AbstractArrow customArrow(AbstractArrow arrow, ItemStack projectileStack, ItemStack weaponStack) {
 		arrow.setBaseDamage(arrow.getBaseDamage() + 1.0);
 		return arrow;
-	}
-
-	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int time) {
-		CrystalliteBowGetPullTimeProcedure.execute(entity, time);
 	}
 	//	@Override
 	//	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {

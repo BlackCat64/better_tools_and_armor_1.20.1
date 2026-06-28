@@ -3,7 +3,6 @@ package net.mcreator.bettertoolsandarmor.item;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Items;
@@ -11,10 +10,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteBowGetPullTimeProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -41,11 +38,6 @@ public class CrystalliteBowLapisItem extends BowItem {
 		list.add(Component.translatable("item.better_tools.crystallite_bow_lapis.description_0"));
 		list.add(Component.translatable("item.better_tools.crystallite_bow_lapis.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_bow_lapis.description_2"));
-	}
-
-	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int time) {
-		CrystalliteBowGetPullTimeProcedure.execute(entity, time);
 	}
 
 	@Override

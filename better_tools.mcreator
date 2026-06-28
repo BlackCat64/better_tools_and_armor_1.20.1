@@ -21965,8 +21965,7 @@
           "src/main/resources/assets/better_tools/models/item/crystallite_bow.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_1.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_0.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_3.json"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_0.json"
         ]
       },
       "path": "~/Crystallite"
@@ -22050,7 +22049,6 @@
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_2.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron.json",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_3.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_1.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowIronItem.java",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_iron_0.json"
@@ -22066,7 +22064,6 @@
       "registry_name": "crystallite_bow_gold",
       "metadata": {
         "files": [
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_3.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_0.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold_1.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_gold.json",
@@ -22085,7 +22082,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowLapisItem.java",
-          "src/main/resources/assets/better_tools/models/item/crystallite_bow_lapis_3.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_lapis_0.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_lapis_1.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_lapis.json",
@@ -22098,12 +22094,15 @@
       "name": "CrystalliteBowRedstone",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_redstone",
       "metadata": {
         "files": [
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_redstone.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowRedstoneItem.java"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_redstone_2.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowRedstoneItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_redstone_0.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_redstone_1.json"
         ]
       },
       "path": "~/Crystallite/Redstone"
@@ -34425,50 +34424,11 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowPullStateProcedure.java"
-        ]
-      },
-      "path": "~/Crystallite"
-    },
-    {
-      "name": "CrystalliteBowGetPullTime",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_bow_get_pull_time",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "time",
-            "type": "number"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBowGetPullTimeProcedure.java"
         ]
       },
       "path": "~/Crystallite"
@@ -34683,12 +34643,6 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "-1.0"
-    },
-    {
-      "name": "crystallite_bow_pull_time",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
     }
   ],
   "sound_elements": [
@@ -38966,7 +38920,7 @@
       "item.better_tools.iron_phantom_boots": "Phantom Boots",
       "advancements.all_crystallite_tools_adv.descr": "Upgrade a full set of Crystallite tools",
       "item.better_tools.amogus": "Amogus",
-      "item.better_tools.crystallite_bow_redstone.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_redstone.description_0": "§7Upgrade: §cRedstone",
       "advancements.topaz_sword_adv.descr": "Attack 3 mobs with a single chain of lightning, using a Topaz weapon",
       "item.copper_tools_and_armor.copper_axe": "Copper Axe",
       "item.better_tools.recall_potion": "Recall Potion",
@@ -39758,7 +39712,10 @@
       "item.better_tools.crystallite_bow_upgraded.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_gold.description_2": "§eOutburst - Arrows deal splash damage",
       "item.better_tools.crystallite_bow_lapis.description_2": "§9Magic - XP drops increase with distance from the target",
-      "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:"
+      "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_gold.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_redstone.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_redstone.description_2": "§cLeech - Heals you a little when a shot hits"
     }
   },
   "metadata": {

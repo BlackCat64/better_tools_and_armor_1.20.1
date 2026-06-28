@@ -1093,7 +1093,7 @@
   "item.better_tools.iron_phantom_boots": "Phantom Boots",
   "advancements.all_crystallite_tools_adv.descr": "Upgrade a full set of Crystallite tools",
   "item.better_tools.amogus": "Amogus",
-  "item.better_tools.crystallite_bow_redstone.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_redstone.description_0": "§7Upgrade: §cRedstone",
   "advancements.topaz_sword_adv.descr": "Attack 3 mobs with a single chain of lightning, using a Topaz weapon",
   "item.copper_tools_and_armor.copper_axe": "Copper Axe",
   "item.better_tools.recall_potion": "Recall Potion",
@@ -1885,5 +1885,8 @@
   "item.better_tools.crystallite_bow_upgraded.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_gold.description_2": "§eOutburst - Arrows deal splash damage",
   "item.better_tools.crystallite_bow_lapis.description_2": "§9Magic - XP drops increase with distance from the target",
-  "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:"
+  "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_gold.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_redstone.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_redstone.description_2": "§cLeech - Heals you a little when a shot hits"
 }

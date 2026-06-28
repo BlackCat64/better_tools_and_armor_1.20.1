@@ -26,7 +26,7 @@ public class CrystalliteBowRedstoneHealProcedure {
 	private static void execute(@Nullable Event event, Entity immediatesourceentity, Entity sourceentity) {
 		if (immediatesourceentity == null || sourceentity == null)
 			return;
-		if (immediatesourceentity.getPersistentData().getBoolean("crystallite_redstone_upgrade")) {
+		if (immediatesourceentity.getPersistentData().getBoolean("crystallite_bow_redstone")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 0.25 * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.setHealth((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2);

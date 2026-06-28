@@ -16,7 +16,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.procedures.CrystalliteBowGoldFiredProcedure;
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteBowGetPullTimeProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -43,13 +42,8 @@ public class CrystalliteBowGoldItem extends BowItem {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.better_tools.crystallite_bow_gold.description_0"));
-		list.add(Component.translatable("item.better_tools.crystallite_bow_upgraded.description_1"));
+		list.add(Component.translatable("item.better_tools.crystallite_bow_gold.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_bow_gold.description_2"));
-	}
-
-	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int time) {
-		CrystalliteBowGetPullTimeProcedure.execute(entity, time);
 	}
 
 	@Override
