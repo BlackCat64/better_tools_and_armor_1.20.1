@@ -994,7 +994,7 @@
   "item.better_tools.crystallite_armor_prismarine_leggings.description_3": "§3Gain Zero Gravity in water",
   "block.better_tools.dark_polished_lapis_slab": "Blue Metal Slab",
   "block.better_tools.cream_metal_sign": "Cream Metal Sign",
-  "item.better_tools.crystallite_bow_sculk.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_sculk.description_0": "§7Upgrade: §3Sculk",
   "item.better_tools.crystallite_armor_lapis_helmet": "Crystallite Helmet",
   "item.better_tools.phantom_boots": "Phantom Boots",
   "item.better_tools.crystallite_boots": "Crystallite Boots",
@@ -1905,5 +1905,7 @@
   "item.better_tools.crystallite_bow_nether_diamond.description_2": "§4Pyromaniac - Fires explosive arrows",
   "item.better_tools.crystallite_bow_emerald.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_emerald.description_3": "§aNo arrows required in inventory",
-  "item.better_tools.crystallite_bow_emerald.description_2": "§aRenewable - Has infinite ammo"
+  "item.better_tools.crystallite_bow_emerald.description_2": "§aRenewable - Has infinite ammo",
+  "item.better_tools.crystallite_bow_sculk.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_sculk.description_2": "§3Resonance - Arrows pierce through all targets"
 }
