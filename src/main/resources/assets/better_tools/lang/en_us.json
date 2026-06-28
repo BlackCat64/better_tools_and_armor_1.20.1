@@ -1076,7 +1076,7 @@
   "item.better_tools.crystallite_upgrade_smithing_template.description_5": "§9Elemental Crystals",
   "item.better_tools.diamond_dagger": "Diamond Dagger",
   "item.better_tools.diamond_sugar_boots.description_0": "§bDiamond Encrusted",
-  "item.better_tools.crystallite_bow_emerald.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_emerald.description_0": "§7Upgrade: §aEmerald",
   "block.better_tools.sapphire_ore": "Sapphire Ore",
   "item.better_tools.crystallite_axe_honey.description_0": "§7Upgrade: §6Honey",
   "advancements.high_armor_points_adv.title": "\u0027Tis but a scratch!",
@@ -1902,5 +1902,8 @@
   "item.better_tools.crystallite_bow_topaz.description_2": "§6Shocking - Arrows may summon lightning on the target",
   "item.better_tools.crystallite_bow_nether_diamond.description_3": "§cEffect does not work when wet",
   "item.better_tools.crystallite_bow_nether_diamond.description_1": "§7Ability:",
-  "item.better_tools.crystallite_bow_nether_diamond.description_2": "§4Pyromaniac - Fires explosive arrows"
+  "item.better_tools.crystallite_bow_nether_diamond.description_2": "§4Pyromaniac - Fires explosive arrows",
+  "item.better_tools.crystallite_bow_emerald.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_emerald.description_3": "§aNo arrows required in inventory",
+  "item.better_tools.crystallite_bow_emerald.description_2": "§aRenewable - Has infinite ammo"
 }

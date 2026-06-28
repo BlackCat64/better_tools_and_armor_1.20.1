@@ -5,8 +5,62 @@
     "renderType": 0,
     "texture": "crystallite_bow_emerald",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "guiTexture": "",
+    "customProperties": {
+      "pulling": {
+        "name": "CrystalliteBowPullState"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_emerald_pulling_0",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_emerald_pulling_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 16.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "crystallite_bow_emerald_pulling_2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 20.0
+          }
+        ]
+      }
+    ],
     "animations": [],
     "name": "Crystallite Bow",
     "rarity": "COMMON",
@@ -19,14 +73,24 @@
     "enchantability": 20,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 1800,
+    "damageCount": 2400,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": true,
     "isPiglinCurrency": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:CrystalliteShards"
+      },
+      {
+        "value": "CUSTOM:CrystaliteGem"
+      },
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -34,7 +98,10 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "§7Upgrade: §fTemp"
+        "§7Upgrade: §aEmerald",
+        "§7Ability:",
+        "§aRenewable - Has infinite ammo",
+        "§aNo arrows required in inventory"
       ]
     },
     "glowCondition": {
@@ -45,13 +112,13 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": false,
+    "enableRanged": true,
     "shootConstantly": false,
-    "rangedItemChargesPower": false,
+    "rangedItemChargesPower": true,
     "projectile": {
-      "value": "CUSTOM:ElectricStaffProjectile"
+      "value": "Arrow"
     },
-    "projectileDisableAmmoCheck": false,
+    "projectileDisableAmmoCheck": true,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
@@ -62,6 +129,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
