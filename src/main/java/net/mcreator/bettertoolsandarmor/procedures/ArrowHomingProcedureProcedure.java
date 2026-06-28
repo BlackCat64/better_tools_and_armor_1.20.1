@@ -15,7 +15,7 @@ public class ArrowHomingProcedureProcedure {
 		double new_vz = 0;
 		if (!world.isClientSide()) {
 			arrow_speed = GetEntitySpeedProcedure.execute(arrow);
-			distance = GetDistanceBetweenPointsProcedure.execute(arrow.getX(), arrow.getY(), arrow.getZ(), entity.getX(), entity.getY(), entity.getZ());
+			distance = entity != null ? arrow.distanceTo(entity) : -1;
 			new_vx = ((entity.getX() - arrow.getX()) / distance) * arrow_speed;
 			new_vy = (((entity.getY() + entity.getBbHeight() / 2) - arrow.getY()) / distance) * arrow_speed;
 			new_vz = ((entity.getZ() - arrow.getZ()) / distance) * arrow_speed;

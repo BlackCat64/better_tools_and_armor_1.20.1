@@ -1267,7 +1267,7 @@
   "item.better_tools.crystallite_sword_topaz": "Crystallite Sword",
   "item.better_tools.crystallite_armor_topaz_helmet": "Crystallite Helmet",
   "block.better_tools.blue_metal_hanging_sign": "Blue Metal Hanging Sign",
-  "item.better_tools.crystallite_bow_amethyst.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_amethyst.description_0": "§7Upgrade: §dAmethyst",
   "item.minecraft.lingering_potion.effect.karma_potion_long": "Lingering Potion of Karma",
   "item.better_tools.crystallite_shovel_topaz": "Crystallite Shovel",
   "block.better_tools.flint_blockwood": "Flint Blockwood",
@@ -1909,5 +1909,7 @@
   "item.better_tools.crystallite_bow_sculk.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_sculk.description_2": "§3Resonance - Arrows pierce through all targets",
   "item.better_tools.crystallite_bow_sky.description_1": "§7Ability:",
-  "item.better_tools.crystallite_bow_sky.description_2": "§fFloaty - Arrows have zero gravity"
+  "item.better_tools.crystallite_bow_sky.description_2": "§fFloaty - Arrows have zero gravity",
+  "item.better_tools.crystallite_bow_amethyst.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_amethyst.description_2": "§dEcholocation - Arrows home in on nearby mobs"
 }

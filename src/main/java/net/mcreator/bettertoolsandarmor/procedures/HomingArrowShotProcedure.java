@@ -9,7 +9,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,6 +17,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import javax.annotation.Nullable;
@@ -42,9 +42,8 @@ public class HomingArrowShotProcedure {
 			return;
 		double charge_time = 0;
 		double radius = 0;
-		if ((itemstack.getItem() == Items.BOW || itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_bows"))))
-				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))
-						|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items"))))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:tools/bow"))) && !(itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get())
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ruby_upgraded_crystallite_items")))) {
 				charge_time = 71990;
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:honey_upgraded_crystallite_items")))) {
@@ -60,10 +59,8 @@ public class HomingArrowShotProcedure {
 								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getY()),
 								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entity)).getBlockPos().getZ()));
 						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-							if (!(entityiterator == entity) && entityiterator instanceof Arrow && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
-								CrystalliteBowAmethystFiredProcedure.execute(world, entityiterator, entity,
-										(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))
-												&& itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items"))) ? 3 : 1.5);
+							if (entityiterator instanceof Arrow && entityiterator.tickCount < 5 && !GetEntityLogicDataProcedure.execute(entityiterator, "inGround")) {
+								CrystalliteBowAmethystFiredProcedure.execute(world, entityiterator, entity, 1.5);
 							}
 						}
 					}
