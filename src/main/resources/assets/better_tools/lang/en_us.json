@@ -517,7 +517,7 @@
   "block.better_tools.cyan_metal_sign": "Cyan Metal Sign",
   "advancements.frozen_adv.title": "Stop right there, criminal scum!",
   "item.better_tools.emerald_dagger.description_0": "§aCritical hits trap the target in the ground",
-  "item.better_tools.crystallite_bow_diamond.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_diamond.description_0": "§7Upgrade: §bDiamond",
   "item.better_tools.crystallite_axe_gold.description_0": "§7Upgrade: §eGold",
   "item.better_tools.crystallite_axe_gold.description_1": "§7Ability:",
   "item.better_tools.crystallite_axe_gold.description_2": "§eGilded - Increased block reach",
@@ -1888,5 +1888,8 @@
   "item.better_tools.crystallite_bow_lapis.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_gold.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_redstone.description_1": "§7Ability:",
-  "item.better_tools.crystallite_bow_redstone.description_2": "§cLeech - Heals you a little when a shot hits"
+  "item.better_tools.crystallite_bow_redstone.description_2": "§cLeech - Heals you a little when a shot hits",
+  "item.better_tools.crystallite_bow_diamond.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_diamond.description_2": "§bCritical - Arrows sometimes deal very high damage",
+  "item.better_tools.crystallite_bow_diamond.description_3": "§bDiamond Hard - Increased Durability"
 }
