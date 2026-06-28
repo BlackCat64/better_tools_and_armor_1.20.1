@@ -47,8 +47,8 @@ public class FreezeShotProcedureProcedure {
 		ItemStack bow = ItemStack.EMPTY;
 		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity) {
 			bow = ((AbstractArrow) immediatesourceentity).getWeaponItem();
-			if (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) != 0
-					|| bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
+			if (bow != null && (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) != 0
+					|| bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get())) {
 				FreezeShotChance = bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 0.1;
 				freeze_time = bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 66;
 				if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {

@@ -22281,12 +22281,15 @@
       "name": "CrystalliteBowPrismarine",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_prismarine",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_prismarine_0.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_prismarine.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowPrismarineItem.java"
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_prismarine_2.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowPrismarineItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_prismarine_1.json"
         ]
       },
       "path": "~/Crystallite/Prismarine"
@@ -34520,6 +34523,33 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "CrystallitePrismarineArrowHits",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_prismarine_arrow_hits",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePrismarineArrowHitsProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
     }
   ],
   "variable_elements": [
@@ -38896,7 +38926,7 @@
       "item.better_tools.crystallite_boots": "Crystallite Boots",
       "block.better_tools.lime_metal_hanging_sign": "Lime Metal Hanging Sign",
       "item.better_tools.iron_sugar_boots": "Sugar Boots",
-      "item.better_tools.crystallite_bow_prismarine.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_prismarine.description_0": "§7Upgrade: §3Prismarine",
       "item.better_tools.guardian_staff": "Guardian Staff",
       "enchantment.better_tools.freeze_shot": "Freeze Shot",
       "item.better_tools.crystallite_pickaxe_lapis.description_0": "§7Upgrade: §9Lapis Lazuli",
@@ -39807,7 +39837,10 @@
       "item.better_tools.crystallite_bow_sky.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_sky.description_2": "§fFloaty - Arrows have zero gravity",
       "item.better_tools.crystallite_bow_amethyst.description_1": "§7Ability:",
-      "item.better_tools.crystallite_bow_amethyst.description_2": "§dEcholocation - Arrows home in on nearby mobs"
+      "item.better_tools.crystallite_bow_amethyst.description_2": "§dEcholocation - Arrows home in on nearby mobs",
+      "item.better_tools.crystallite_bow_prismarine.description_3": "§3Arrows deal more damage when wet",
+      "item.better_tools.crystallite_bow_prismarine.description_2": "§3Streamlined - Arrows are not slowed by water",
+      "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:"
     }
   },
   "metadata": {

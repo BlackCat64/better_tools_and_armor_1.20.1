@@ -47,8 +47,8 @@ public class ThunderShotProcedureProcedure {
 		ItemStack bow = ItemStack.EMPTY;
 		if (immediatesourceentity instanceof Arrow && sourceentity instanceof LivingEntity) {
 			bow = ((AbstractArrow) immediatesourceentity).getWeaponItem();
-			if (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
-					|| bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
+			if (bow != null && (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
+					|| bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get())) {
 				LightningChance = bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) * 0.1;
 				if (HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.ELECTRIC_NECKLACE.get()))) {
 					LightningChance = LightningChance + 0.1;

@@ -29,7 +29,7 @@ public class CrystalliteBowIronArrowHitsProcedure {
 			return;
 		ItemStack weapon = ItemStack.EMPTY;
 		if (immediatesourceentity instanceof Arrow && immediatesourceentity.getPersistentData().getBoolean("crystallite_bow_iron")) {
-			ApplyKnockbackProcedure.execute(entity, 2, ((Arrow) immediatesourceentity).getDeltaMovement());
+			ApplyKnockbackProcedure.execute(entity, 2, immediatesourceentity.getDeltaMovement());
 		}
 	}
 }
