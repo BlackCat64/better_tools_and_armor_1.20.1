@@ -22247,12 +22247,15 @@
       "name": "CrystalliteBowSky",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_sky",
       "metadata": {
         "files": [
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sky_0.json",
           "src/main/resources/assets/better_tools/models/item/crystallite_bow_sky.json",
-          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowSkyItem.java"
+          "src/main/java/net/mcreator/bettertoolsandarmor/item/CrystalliteBowSkyItem.java",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sky_1.json",
+          "src/main/resources/assets/better_tools/models/item/crystallite_bow_sky_2.json"
         ]
       },
       "path": "~/Crystallite/Sky"
@@ -38129,7 +38132,7 @@
       "item.better_tools.crystallite_hoe_sky.description_2": "§fGraceful - Removes airborne and underwater mining penalties",
       "item.better_tools.crystallite_hoe_sky.description_1": "§7Ability:",
       "item.better_tools.crystallite_hoe_sky.description_0": "§7Upgrade: §fAir",
-      "item.better_tools.crystallite_bow_sky.description_0": "§7Upgrade: §fTemp",
+      "item.better_tools.crystallite_bow_sky.description_0": "§7Upgrade: §fAir",
       "item.better_tools.end_titanium_hoe.description_0": "§5Mines Purpur instantly",
       "enchantment.better_tools.ensorcellation": "Ensorcellation",
       "advancements.end_titanium_tools_adv.descr": "Smith a full set of Ender Titanium tools",
@@ -39805,7 +39808,9 @@
       "item.better_tools.crystallite_bow_emerald.description_3": "§aNo arrows required in inventory",
       "item.better_tools.crystallite_bow_emerald.description_2": "§aRenewable - Has infinite ammo",
       "item.better_tools.crystallite_bow_sculk.description_1": "§7Ability:",
-      "item.better_tools.crystallite_bow_sculk.description_2": "§3Resonance - Arrows pierce through all targets"
+      "item.better_tools.crystallite_bow_sculk.description_2": "§3Resonance - Arrows pierce through all targets",
+      "item.better_tools.crystallite_bow_sky.description_1": "§7Ability:",
+      "item.better_tools.crystallite_bow_sky.description_2": "§fFloaty - Arrows have zero gravity"
     }
   },
   "metadata": {
