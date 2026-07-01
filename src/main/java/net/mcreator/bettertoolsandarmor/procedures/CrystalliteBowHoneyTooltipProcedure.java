@@ -38,7 +38,8 @@ public class CrystalliteBowHoneyTooltipProcedure {
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_HONEY.get()) {
 			tooltip.add(Component.literal(" "));
 			tooltip.add(Component.literal("\u00A77When shot:"));
-			tooltip.add(Component.literal(("\u00A72 " + (1 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.POWER)) * 0.4) + " Arrow Damage")));
+			tooltip.add(Component
+					.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(1 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.POWER)) * 0.4) + " Arrow Damage")));
 		}
 	}
 }

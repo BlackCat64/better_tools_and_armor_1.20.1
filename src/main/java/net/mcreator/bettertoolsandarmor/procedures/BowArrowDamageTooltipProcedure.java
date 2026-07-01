@@ -59,13 +59,13 @@ public class BowArrowDamageTooltipProcedure {
 			damage = itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.POWER)) != 0
 					? base_damage + 0.5 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.POWER)) * 0.5
 					: base_damage;
-			tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage)).replace(".0", "") + " Arrow Damage")));
+			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(damage) + " Arrow Damage")));
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:diamond_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal("\u00A7725% chance for:"));
-				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage + 2.5)).replace(".0", "") + " Arrow Damage")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(damage + 2.5) + " Arrow Damage")));
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:prismarine_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal("\u00A77When it is wet:"));
-				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.##").format(damage + 1)).replace(".0", "") + " Arrow Damage")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(damage + 1) + " Arrow Damage")));
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal((((entity.level().dimension()) == Level.NETHER ? "\u00A72 4" : "\u00A72 2.5") + " Explosion Power")));
 			}

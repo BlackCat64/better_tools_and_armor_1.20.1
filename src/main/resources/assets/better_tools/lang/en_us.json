@@ -433,7 +433,7 @@
   "item.better_tools.crystallite_armor_redstone_chestplate.description_2": "§cHearty - Increases max health",
   "block.better_tools.blue_metal_sign": "Blue Metal Sign",
   "item.better_tools.topaz": "Topaz",
-  "item.better_tools.crystallite_bow_honey.description_0": "§7Upgrade: §fTemp",
+  "item.better_tools.crystallite_bow_honey.description_0": "§7Upgrade: §6Honey",
   "item.better_tools.crystallite_armor_iron_chestplate.description_1": "§7Ability:",
   "item.better_tools.crystallite_armor_iron_chestplate.description_2": "§fTough - Increased knockback resistance",
   "item.better_tools.crystallite_hoe_sapphire": "Crystallite Hoe",
@@ -1914,5 +1914,7 @@
   "item.better_tools.crystallite_bow_amethyst.description_2": "§dEcholocation - Arrows home in on nearby mobs",
   "item.better_tools.crystallite_bow_prismarine.description_3": "§3Arrows deal more damage when wet",
   "item.better_tools.crystallite_bow_prismarine.description_2": "§3Streamlined - Arrows are not slowed by water",
-  "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:"
+  "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:",
+  "item.better_tools.crystallite_bow_honey.description_2": "§6Swarm - Fires arrows rapidly, but deals less damage",
+  "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:"
 }
