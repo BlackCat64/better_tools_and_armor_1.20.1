@@ -68,6 +68,8 @@ public class BowArrowDamageTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.##").format(damage + 1) + " Arrow Damage")));
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				tooltip.add(Component.literal((((entity.level().dimension()) == Level.NETHER ? "\u00A72 4" : "\u00A72 2.5") + " Explosion Power")));
+			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ruby_upgraded_crystallite_items")))) {
+				tooltip.add(Component.literal("\u00A72 0.5x Charge Time"));
 			}
 		}
 	}

@@ -6,7 +6,11 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
@@ -78,7 +82,7 @@ public class CrystalliteBowHoneyItem extends BowItem {
 			useTime = net.neoforged.neoforge.event.EventHooks.onArrowLoose(itemstack, world, player, useTime, !itemstack.isEmpty());
 			// Fire every 0.25s
 			if (useTime % 5 == 0 && useTime > 0) {
-				float pullingPower = 0.5f; // Fixed pull power
+				float pullingPower = 0.6f; // Fixed 60% pull power
 				ItemStack arrowItem = player.getProjectile(itemstack);
 				if (player.getAbilities().instabuild || arrowItem != ItemStack.EMPTY) {
 					List<ItemStack> list = draw(itemstack, arrowItem, player);
@@ -90,10 +94,6 @@ public class CrystalliteBowHoneyItem extends BowItem {
 				}
 			}
 		}
-	}
-
-	private ItemStack findAmmo(Player player) {
-		return new ItemStack(Items.ARROW);
 	}
 
 	// Disable normal bow behaviour

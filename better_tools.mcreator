@@ -31692,10 +31692,6 @@
           {
             "name": "tooltip",
             "type": "tooltip"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
