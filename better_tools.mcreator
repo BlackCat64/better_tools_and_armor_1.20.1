@@ -34378,6 +34378,19 @@
         ]
       },
       "path": "~/Sapphire"
+    },
+    {
+      "name": "EnderTitaniumBlockReverseRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_block_reverse_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipes/ender_titanium_block_reverse_recipe.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
     }
   ],
   "variable_elements": [
