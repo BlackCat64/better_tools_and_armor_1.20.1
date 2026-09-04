@@ -6566,45 +6566,6 @@
       "path": "~/Crystallite/Lapis"
     },
     {
-      "name": "CrystallitePickaxeLapisXP",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_pickaxe_lapis_xp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePickaxeLapisXPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
-    },
-    {
       "name": "CrystallitePickaxeLapisRecipe",
       "type": "recipe",
       "compiles": true,
