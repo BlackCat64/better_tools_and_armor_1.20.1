@@ -26086,7 +26086,7 @@
       "name": "CheckForNetheriteTierTool",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "check_for_netherite_tier_tool",
       "metadata": {
         "return_type": "logic",
@@ -35915,26 +35915,6 @@
     ],
     "ITEMS:forge:tools/knives": [
       "TAG:better_tools:daggers"
-    ],
-    "ITEMS:mod:netherite_tier_tools": [
-      "Items.NETHERITE_SWORD",
-      "Items.NETHERITE_SHOVEL",
-      "Items.NETHERITE_PICKAXE",
-      "Items.NETHERITE_AXE",
-      "Items.NETHERITE_HOE",
-      "CUSTOM:NetheriteDagger",
-      "CUSTOM:EndTitaniumSword",
-      "CUSTOM:EndTitaniumPickaxe",
-      "CUSTOM:EndTitaniumAxe",
-      "CUSTOM:EndTitaniumShovel",
-      "CUSTOM:EndTitaniumHoe",
-      "CUSTOM:EndTitaniumDagger",
-      "TAG:better_tools:crystallite_swords",
-      "TAG:better_tools:crystallite_pickaxes",
-      "TAG:better_tools:crystallite_axes",
-      "TAG:better_tools:crystallite_shovels",
-      "TAG:better_tools:crystallite_hoes",
-      "TAG:better_tools:crystallite_daggers"
     ],
     "ITEMS:mod:iron_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordIron",

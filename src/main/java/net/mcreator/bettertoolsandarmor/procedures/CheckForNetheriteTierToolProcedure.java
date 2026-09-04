@@ -1,15 +1,23 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 public class CheckForNetheriteTierToolProcedure {
 	public static boolean execute(Entity entity) {
-		if (entity == null)
-			return false;
-		return (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:netherite_tier_tools")));
+		if (entity instanceof LivingEntity livEnt) {
+			ItemStack tool = livEnt.getMainHandItem();
+			if (tool.getItem() instanceof TieredItem tiered) {
+				Tier toolTier = tiered.getTier();
+				if (toolTier != null) {
+					return toolTier.getLevel() >= Tiers.NETHERITE.getLevel();
+				}
+			}
+		}
+		return false;
 	}
 }

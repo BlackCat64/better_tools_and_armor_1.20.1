@@ -21,6 +21,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -34,10 +35,16 @@ public class BreakBlockWithPickaxeProcedure {
 			return;
 		ItemStack item_to_drop = ItemStack.EMPTY;
 		String reg_name = "";
-		boolean dropped_self = false;
 		double count_to_drop = 0;
 		double blockXP = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem().isCorrectToolForDrops(blockstate)) {
+		boolean dropped_self = false;
+		boolean canHarvest = false;
+		if (blockstate.is(BlockTags.create(new ResourceLocation("forge:needs_netherite_tool")))) {
+			canHarvest = CheckForNetheriteTierToolProcedure.execute(entity);
+		} else {
+			canHarvest = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem().isCorrectToolForDrops(blockstate);
+		}
+		if (canHarvest) {
 			reg_name = ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString();
 			if (!world.isClientSide() && world.getServer() != null) {
 				BlockPos _bpLootTblWorld = BlockPos.containing(x, y, z);
@@ -45,7 +52,7 @@ public class BreakBlockWithPickaxeProcedure {
 						.getRandomItems(new LootParams.Builder((ServerLevel) world).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(_bpLootTblWorld)).withParameter(LootContextParams.BLOCK_STATE, world.getBlockState(_bpLootTblWorld))
 								.withOptionalParameter(LootContextParams.BLOCK_ENTITY, world.getBlockEntity(_bpLootTblWorld)).create(LootContextParamSets.EMPTY))) {
 					item_to_drop = itemstackiterator;
-					if (world instanceof Level _level6 && _level6.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(item_to_drop), _level6).isPresent()
+					if (world instanceof Level _level8 && _level8.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(item_to_drop), _level8).isPresent()
 							&& (EnchantmentHelper.getItemEnchantmentLevel(BetterToolsModEnchantments.SMELTING_TOUCH.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
 									|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("better_tools:smelting_touch_tools"))))) {
 						item_to_drop = (world instanceof Level _lvlSmeltResult
