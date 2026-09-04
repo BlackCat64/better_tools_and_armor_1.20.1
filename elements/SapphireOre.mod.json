@@ -51,7 +51,7 @@
       "value": "CUSTOM:Sapphire"
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -122,7 +122,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
-      "name": "SapphireOreXpProcedure"
+      "name": "DropOreXP"
     },
     "generateFeature": true,
     "restrictionBiomes": [

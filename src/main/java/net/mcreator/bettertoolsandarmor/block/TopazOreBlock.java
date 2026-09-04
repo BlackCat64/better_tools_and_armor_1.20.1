@@ -13,7 +13,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.bettertoolsandarmor.procedures.TopazOreXpProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.DropOreXPProcedure;
 
 public class TopazOreBlock extends Block {
 	public TopazOreBlock() {
@@ -28,7 +28,7 @@ public class TopazOreBlock extends Block {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		TopazOreXpProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		DropOreXPProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity);
 		return retval;
 	}
 }

@@ -122,7 +122,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
-      "name": "TopazOreXpProcedure"
+      "name": "DropOreXP"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

@@ -14,20 +14,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Sapphire"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 2
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:SapphireOre"
             },
             "weight": 1,
@@ -38,6 +24,20 @@
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 1
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Sapphire"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": true,
+            "explosionDecay": false,
+            "silkTouchMode": 2
           }
         ]
       }

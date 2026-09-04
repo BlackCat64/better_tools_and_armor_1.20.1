@@ -2795,76 +2795,6 @@
       "path": "~/Advancements/Consumables"
     },
     {
-      "name": "RandomOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RandomOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mixed Ore"
-    },
-    {
-      "name": "RubyOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RubyOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Ruby"
-    },
-    {
       "name": "BlueSlimeball",
       "type": "item",
       "compiles": true,
@@ -3450,7 +3380,6 @@
           "src/main/resources/data/better_tools/worldgen/configured_feature/sapphire_ore.json",
           "src/main/resources/data/better_tools/worldgen/placed_feature/sapphire_ore.json",
           "src/main/resources/assets/better_tools/models/item/sapphire_ore.json",
-          "src/main/resources/data/better_tools/loot_tables/blocks/sapphire_ore.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/SapphireOreBlock.java",
           "src/main/resources/assets/better_tools/blockstates/sapphire_ore.json"
         ]
@@ -3564,19 +3493,6 @@
       "path": "~/Topaz"
     },
     {
-      "name": "SapphireOreLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_tables/blocks/sapphire_ore.json"
-        ]
-      },
-      "path": "~/Sapphire"
-    },
-    {
       "name": "SapphireOreSmelt",
       "type": "recipe",
       "compiles": true,
@@ -3667,76 +3583,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipes/topaz_block_reverse_recipe.json"
-        ]
-      },
-      "path": "~/Topaz"
-    },
-    {
-      "name": "SapphireOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sapphire"
-    },
-    {
-      "name": "TopazOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "topaz_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Topaz"
@@ -4972,41 +4818,6 @@
           "src/main/resources/data/better_tools/worldgen/placed_feature/nether_diamond_ore.json",
           "src/main/resources/assets/better_tools/models/item/nether_diamond_ore.json",
           "src/main/resources/data/better_tools/forge/biome_modifier/nether_diamond_ore_biome_modifier.json"
-        ]
-      },
-      "path": "~/Nether Diamond"
-    },
-    {
-      "name": "NetherDiamondOreXp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_ore_xp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondOreXpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Nether Diamond"
@@ -34460,6 +34271,152 @@
         "files": []
       },
       "path": "~/Ore Vision Effect"
+    },
+    {
+      "name": "GetBlockXPDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_block_xp_drop",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetBlockXPDropProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "TestMessageDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_message_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TestMessageDisplayProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "GetVanillaBlockXPDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "get_vanilla_block_xp_drop",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetVanillaBlockXPDropProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "DropOreXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_ore_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DropOreXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "SapphireOreDrops",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_ore_drops",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_tables/blocks/sapphire_ore.json"
+        ]
+      },
+      "path": "~/Sapphire"
     }
   ],
   "variable_elements": [
