@@ -26469,7 +26469,7 @@
       "name": "StrippedWoodProcedure",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "stripped_wood_procedure",
       "metadata": {
         "files": [

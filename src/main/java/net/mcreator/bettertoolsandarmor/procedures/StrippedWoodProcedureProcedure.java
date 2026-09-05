@@ -11,8 +11,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
@@ -27,25 +27,21 @@ import javax.annotation.Nullable;
 public class StrippedWoodProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
-			return;
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getLevel().getBlockState(event.getPos()), event.getFace(), event.getEntity());
+//		if (event.getHand() != event.getEntity().getUsedItemHand())
+//			return;
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getLevel().getBlockState(event.getPos()), event.getFace(), event.getEntity(), event.getHand());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, Entity entity) {
-		execute(null, world, x, y, z, blockstate, direction, entity);
+		execute(null, world, x, y, z, blockstate, direction, entity, InteractionHand.MAIN_HAND);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, Entity entity) {
-		if (direction == null || entity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, Entity entity, InteractionHand hand) {
+		if (direction == null || entity == null || !(entity instanceof Player plr))
 			return;
-		ItemStack tool = ItemStack.EMPTY;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))) {
-			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:axes")))
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
-			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-		}
+		ItemStack tool = plr.getItemInHand(hand);
+		if (!tool.is(ItemTags.AXES))
+			return;
 		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(new ResourceLocation("minecraft:pickaxes"))) || tool.is(ItemTags.create(new ResourceLocation("minecraft:shovels"))))
 				&& blockstate.is(BlockTags.create(new ResourceLocation("minecraft:logs"))) && !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains(":stripped_")
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
