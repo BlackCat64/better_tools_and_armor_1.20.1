@@ -30,7 +30,7 @@ public abstract class SapphireArmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{3, 5, 7, 3}[type.getSlot().getIndex()];
+				return new int[]{3, 5, 6, 3}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -60,7 +60,7 @@ public abstract class SapphireArmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.03f;
 			}
 		}, type, properties);
 	}

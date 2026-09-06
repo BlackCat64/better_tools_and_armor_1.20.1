@@ -99,7 +99,7 @@
     "damageValueBoots": 3,
     "enchantability": 16,
     "toughness": 0.5,
-    "knockbackResistance": 0.03,
+    "knockbackResistance": 0.0,
     "equipSound": {
       "value": "item.armor.equip_iron"
     },

@@ -31,7 +31,7 @@ public class CrystallitePickaxeAmethystItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 5f;
 			}
 
 			public int getLevel() {

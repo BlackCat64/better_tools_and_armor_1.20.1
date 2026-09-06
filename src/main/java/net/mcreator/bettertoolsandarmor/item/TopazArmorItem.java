@@ -60,7 +60,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.03f;
+				return 0f;
 			}
 		}, type, properties);
 	}

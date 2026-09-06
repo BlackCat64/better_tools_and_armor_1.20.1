@@ -94,12 +94,12 @@
     },
     "maxDamage": 20,
     "damageValueHelmet": 3,
-    "damageValueBody": 7,
+    "damageValueBody": 6,
     "damageValueLeggings": 5,
     "damageValueBoots": 3,
     "enchantability": 10,
     "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.03,
     "equipSound": {
       "value": "item.armor.equip_iron"
     },

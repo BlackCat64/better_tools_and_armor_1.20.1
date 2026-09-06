@@ -21,7 +21,7 @@ public class RubyToolsHoeItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 1f;
 			}
 
 			public int getLevel() {
@@ -35,6 +35,6 @@ public class RubyToolsHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(BetterToolsModItems.RUBY.get()));
 			}
-		}, 0, -2f, new Item.Properties());
+		}, 0, 0f, new Item.Properties());
 	}
 }
